@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAS Wealth Advisory | Financial Continuity</title>
+    <style>
+        :root {
+            --emerald: #064e3b; /* Deep Emerald */
+            --gold: #d4af37;    /* Polished Gold */
+            --white: #ffffff;
+            --text-dark: #1f2937;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            display: flex;
+            align-items: center;
+            min-height: 80vh;
+            background: url('YOUR_IMAGE_URL_HERE') no-repeat right center;
+            background-size: contain;
+            padding: 2rem;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--emerald);
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #4b5563;
+        }
+
+        /* --- Audit Section --- */
+        .audit-container {
+            max-width: 800px;
+            margin: -50px auto 100px;
+            padding: 3rem;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid var(--gold);
+        }
+
+        .question { display: none; }
+        .question.active { display: block; }
+
+        .btn {
+            background: var(--emerald);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .option-btn {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #e5e7eb;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .option-btn:hover {
+            border-color: var(--gold);
+            background: #f9fafb;
+        }
+
+        #result { display: none; text-align: center; }
+
+        @media (max-width: 768px) {
+            .hero { background-position: top center; background-size: cover; padding-top: 300px; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fortifying Your Financial Continuity</h1>
+            <p>Strategic Shariah-compliant protection for your family’s greatest asset.</p>
+            <a href="#audit" class="btn">Assess My Continuity Gap</a>
+        </div>
+    </section>
+
+    <section id="audit" class="audit-container">
+        <div class="question active" id="q1">
+            <h3>1. The Income Firewall</h3>
+            <p>If your income stopped today due to illness, how long could your family maintain their lifestyle?</p>
+            <button class="option-btn" onclick="next(0, 'q1', 'q2')">Less than 1 month</button>
+            <button class="option-btn" onclick="next(1, 'q1', 'q2')">1 to 3 months</button>
+            <button class="option-btn" onclick="next(2, 'q1', 'q2')">More than 3 months</button>
+        </div>
+
+        <div class="question" id="q2">
+            <h3>2. The Dignity Pillar</h3>
+            <p>Which best describes your plan for your 'Golden Years'?</p>
+            <button class="option-btn" onclick="next(0, 'q2', 'q3')">I’ll have to keep working to survive.</button>
+            <button class="option-btn" onclick="next(1, 'q2', 'q3')">Relying on EPF and hoping it’s enough.</button>
+            <button class="option-btn" onclick="next(2, 'q2', 'q3')">I have a guaranteed Shariah-compliant income stream.</button>
+        </div>
+
+        <div class="question" id="q3">
+            <h3>3. The Legacy Shield</h3>
+            <p>How quickly will your family receive funds if you are no longer here?</p>
+            <button class="option-btn" onclick="showResult(0)">Wait for Faraid/Probate (Months/Years)</button>
+            <button class="option-btn" onclick="showResult(1)">I have Takaful, but no Hibah nomination</button>
+            <button class="option-btn" onclick="showResult(2)">Immediate liquidity via Hibah (Days)</button>
+        </div>
+
+        <div id="result">
+            <h2 id="score-text"></h2>
+            <p id="feedback-text"></p>
+            <a href="#" id="wa-link" class="btn" target="_blank">Get My Personalized Roadmap</a>
+        </div>
+    </section>
+
+    <script>
+        let totalScore = 0;
+
+        function next(points, currentId, nextId) {
+            totalScore += points;
+            document.getElementById(currentId).classList.remove('active');
+            document.getElementById(nextId).classList.add('active');
+        }
+
+        function showResult(points) {
+            totalScore += points;
+            document.getElementById('q3').classList.remove('active');
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+
+            let status = "";
+            let feedback = "";
+
+            if (totalScore <= 2) {
+                status = "Critical Gap";
+                feedback = "Your financial firewall is currently down. Immediate action is needed.";
+            } else if (totalScore <= 4) {
+                status = "Foundation Needed";
+                feedback = "You have basic protection, but your retirement and legacy liquidity are at risk.";
+            } else {
+                status = "Resilient";
+                feedback = "Excellent! You are well-prepared. Let’s focus on optimization.";
+            }
+
+            document.getElementById('score-text').innerText = `Your Continuity Score: ${totalScore}/6`;
+            document.getElementById('feedback-text').innerText = `${status}: ${feedback}`;
+            
+            // Generate WhatsApp Link
+            const phone = "601127657730"; // Replace with your WhatsApp Number
+            const message = encodeURIComponent(`Hi Hairulanuar, I finished the Continuity Audit for HAS Wealth Advisory. My score was ${totalScore}/6. I'd like to discuss my roadmap.`);
+            document.getElementById('wa-link').href = `https://wa.me/${phone}?text=${message}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,272 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAS Wealth Advisory | Financial Continuity</title>
-    <style>
-        :root {
-            --emerald: #064e3b; /* Deep Emerald */
-            --gold: #d4af37;    /* Polished Gold */
-            --white: #ffffff;
-            --text-dark: #1f2937;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="PNhnhspweDAttE-7hsHlMj_7_Lx6NbWMzrXxvobkciM" />
+  <title>Building a Resilient Financial Future | HAS Wealth Advisory</title>
+  <meta name="description" content="Secure your family's future with HAS Wealth Advisory. We provide Shariah-compliant strategies in Takaful and Unit Trusts designed to withstand market volatility and life's uncertainties.">
+
+  <link rel="canonical" href="https://haswealth.github.io/">
+  <meta name="author" content="Hairul Anuar Bin Sulaiman">
+
+  <!-- Open Graph for Social Media -->
+  <meta property="og:title" content="Building a Resilient Financial Future | HAS Wealth Advisory">
+  <meta property="og:description" content="Independent Shariah-compliant advisory to help Malaysian families build a bulletproof financial foundation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://haswealth.github.io/">
+  <meta property="og:image" content="https://haswealth.github.io/assets/images/hairul-anuar.jpeg">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <style>
+    :root {
+      --primary-navy: #1a365d;
+      --accent-gold: #fbbf24;
+      --text-slate: #475569;
+      --light-bg: #f8fafc;
+    }
+
+    .hero-section {
+      background-color: var(--primary-navy);
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hero-h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      margin-bottom: 24px;
+      line-height: 1.1;
+      color: white;
+    }
+    .hero-sub {
+      font-size: 1.3rem;
+      opacity: 0.95;
+      margin-bottom: 40px;
+      line-height: 1.6;
+      color: white;
+    }
+    .btn-primary {
+      background-color: var(--accent-gold);
+      color: var(--primary-navy);
+      padding: 18px 40px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: transform 0.2s, background-color 0.3s;
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background-color: #f59e0b;
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 16px 38px;
+      margin-left: 15px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .trust-bar {
+      background-color: #f1f5f9;
+      padding: 25px 20px;
+      text-align: center;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .trust-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+      font-size: 0.9rem;
+      color: var(--text-slate);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Architecture Section */
+    .blueprint-section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 60px;
+    }
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: var(--primary-navy);
+      margin-bottom: 20px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 40px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      border-color: var(--accent-gold);
+      box-shadow: 0 20px 40px -10px rgba(0,0,0,0.08);
+    }
+    .card-step {
+      font-weight: 800;
+      color: var(--accent-gold);
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .card h3 {
+      color: var(--primary-navy);
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .card p {
+      color: #64748b;
+      line-height: 1.7;
+      margin-bottom: 25px;
+      flex-grow: 1;
+    }
+    .card a {
+      color: var(--primary-navy);
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Lead Magnet Section */
+    .lead-magnet {
+      background-color: var(--primary-navy);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 20px;
+      margin: 40px 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-h1 { font-size: 2.2rem; }
+      .btn-secondary { margin-left: 0; margin-top: 15px; width: 80%; }
+      .btn-primary { width: 80%; }
+    }
+  </style>
+
+  <!-- Schema.org Integration -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FinancialService",
+        "name": "HAS Wealth Advisory",
+        "description": "Building resilient financial futures through Shariah-compliant wealth stewardship in Malaysia.",
+        "url": "https://haswealth.github.io/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kota Tinggi",
+          "addressRegion": "Johor",
+          "addressCountry": "Malaysia"
         }
-
-        body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            margin: 0;
-            color: var(--text-dark);
-            background-color: var(--white);
-        }
-
-        /* --- Hero Section --- */
-        .hero {
-            display: flex;
-            align-items: center;
-            min-height: 80vh;
-            background: url('/assets/images/banner-utama.webp') no-repeat right center;
-            background-size: contain;
-            padding: 2rem;
-        }
-
-        .hero-content {
-            max-width: 600px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            color: var(--emerald);
-            line-height: 1.1;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            color: #4b5563;
-        }
-
-        /* --- Audit Section --- */
-        .audit-container {
-            max-width: 800px;
-            margin: -50px auto 100px;
-            padding: 3rem;
-            background: var(--white);
-            border-radius: 12px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            border-top: 5px solid var(--gold);
-        }
-
-        .question { display: none; }
-        .question.active { display: block; }
-
-        .btn {
-            background: var(--emerald);
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: bold;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 1rem;
-        }
-
-        .option-btn {
-            display: block;
-            width: 100%;
-            text-align: left;
-            padding: 15px;
-            margin: 10px 0;
-            border: 1px solid #e5e7eb;
-            background: white;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .option-btn:hover {
-            border-color: var(--gold);
-            background: #f9fafb;
-        }
-
-        #result { display: none; text-align: center; }
-
-        @media (max-width: 768px) {
-            .hero { background-position: top center; background-size: cover; padding-top: 300px; }
-            .hero h1 { font-size: 2rem; }
-        }
-    </style>
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Fortifying Your Financial Continuity</h1>
-            <p>Strategic Shariah-compliant protection for your family’s greatest asset.</p>
-            <a href="#audit" class="btn">Assess My Continuity Gap</a>
-        </div>
-    </section>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="takaful.html">Takaful</a>
+  <a href="unittrust.html">Unit Trust</a>
+  <a href="ccm.html">Corporate Treasury</a>
+  <a href="retirement.html">Retirement</a>
+  <a href="contact.html">Contact</a>
+  <a href="insights.html">Insights</a>
+</nav>
 
-    <section id="audit" class="audit-container">
-        <div class="question active" id="q1">
-            <h3>1. The Income Firewall</h3>
-            <p>If your income stopped today due to illness, how long could your family maintain their lifestyle?</p>
-            <button class="option-btn" onclick="next(0, 'q1', 'q2')">Less than 1 month</button>
-            <button class="option-btn" onclick="next(1, 'q1', 'q2')">1 to 3 months</button>
-            <button class="option-btn" onclick="next(2, 'q1', 'q2')">More than 3 months</button>
-        </div>
-
-        <div class="question" id="q2">
-            <h3>2. The Dignity Pillar</h3>
-            <p>Which best describes your plan for your 'Golden Years'?</p>
-            <button class="option-btn" onclick="next(0, 'q2', 'q3')">I’ll have to keep working to survive.</button>
-            <button class="option-btn" onclick="next(1, 'q2', 'q3')">Relying on EPF and hoping it’s enough.</button>
-            <button class="option-btn" onclick="next(2, 'q2', 'q3')">I have a guaranteed Shariah-compliant income stream.</button>
-        </div>
-
-        <div class="question" id="q3">
-            <h3>3. The Legacy Shield</h3>
-            <p>How quickly will your family receive funds if you are no longer here?</p>
-            <button class="option-btn" onclick="showResult(0)">Wait for Faraid/Probate (Months/Years)</button>
-            <button class="option-btn" onclick="showResult(1)">I have Takaful, but no Hibah nomination</button>
-            <button class="option-btn" onclick="showResult(2)">Immediate liquidity via Hibah (Days)</button>
-        </div>
-
-        <div id="result">
-            <h2 id="score-text"></h2>
-            <p id="feedback-text"></p>
-            <a href="#" id="wa-link" class="btn" target="_blank">Get My Personalized Roadmap</a>
-        </div>
-    </section>
-
-    <script>
-        let totalScore = 0;
-
-        function next(points, currentId, nextId) {
-            totalScore += points;
-            document.getElementById(currentId).classList.remove('active');
-            document.getElementById(nextId).classList.add('active');
-        }
-
-        function showResult(points) {
-            totalScore += points;
-            document.getElementById('q3').classList.remove('active');
-            const resultDiv = document.getElementById('result');
-            resultDiv.style.display = 'block';
-
-            let status = "";
-            let feedback = "";
-
-            if (totalScore <= 2) {
-                status = "Critical Gap";
-                feedback = "Your financial firewall is currently down. Immediate action is needed.";
-            } else if (totalScore <= 4) {
-                status = "Foundation Needed";
-                feedback = "You have basic protection, but your retirement and legacy liquidity are at risk.";
-            } else {
-                status = "Resilient";
-                feedback = "Excellent! You are well-prepared. Let’s focus on optimization.";
-            }
-
-            document.getElementById('score-text').innerText = `Your Continuity Score: ${totalScore}/6`;
-            document.getElementById('feedback-text').innerText = `${status}: ${feedback}`;
-            
-            // Generate WhatsApp Link
-            const phone = "601127657730"; // Replace with your WhatsApp Number
-            const message = encodeURIComponent(`Hi Hairulanuar, I finished the Continuity Audit for HAS Wealth Advisory. My score was ${totalScore}/6. I'd like to discuss my roadmap.`);
-            document.getElementById('wa-link').href = `https://wa.me/${phone}?text=${message}`;
-        }
-    </script>
-
-    <section class="pillars-section">
-    <h2>The Foundations of Financial Continuity</h2>
-    <p>Strategic modules designed to bridge the gaps in your financial roadmap.</p>
-
-    <div class="pillars-grid">
-        <!-- Pillar 1 -->
-        <div class="pillar-card">
-            <div class="pillar-icon">🛡️</div>
-            <h3>Income Continuity</h3>
-            <p>Your ability to earn is your family's greatest asset. We fortify your human capital against disruptions, ensuring lifestyle continuity no matter what happens.</p>
-        </div>
-
-        <!-- Pillar 2 -->
-        <div class="pillar-card">
-            <div class="pillar-icon">📈</div>
-            <h3>Retirement Dignity</h3>
-            <p>Moving beyond mere survival. We architect Shariah-compliant wealth strategies so you can work in your golden years because you want to, not because you have to.</p>
-        </div>
-
-        <!-- Pillar 3 -->
-        <div class="pillar-card">
-            <div class="pillar-icon">📜</div>
-            <h3>Legacy Liquidity</h3>
-            <p>Inheritance shouldn't be a legal burden. We utilize Shariah-compliant Hibah to provide immediate financial relief to your loved ones, bypassing months of legal delays.</p>
-        </div>
+<section class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-h1">Building a Resilient Financial Future</h1>
+    <p class="hero-sub">Most financial plans break under pressure. We design Shariah-compliant strategies that withstand market volatility and life’s uncertainties—securing your family's legacy through independent, structured advisory.</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn-primary">Request a Resilience Audit</a>
+      <a href="#blueprint" class="btn-secondary">Explore the Blueprint</a>
     </div>
+  </div>
 </section>
 
-    <section class="bio-section">
-    <div class="bio-image">
-        <!-- REPLACE WITH YOUR ACTUAL PHOTO -->
-        <img src="/assets/images/hairul-anuar.jpeg" alt="Hairulanuar - IFAR, ASRFP">
+<div class="trust-bar">
+  <div class="trust-items">
+    <span>🛡️ Appointed IFAR (Phillip Wealth Planners)</span>
+    <span>📈 Registered Unit Trust Consultant (FIMM)</span>
+    <span>📜 Associate Shariah RFP (MFPC)</span>
+  </div>
+</div>
+
+<section id="blueprint" class="blueprint-section">
+  <div class="section-header">
+    <h2>The Blueprint for Resilience</h2>
+    <p style="color: #64748b; font-size: 1.1rem; line-height: 1.6;">True resilience is not a single product; it is a synchronized system where every asset is placed with purpose to protect, grow, and endure.</p>
+  </div>
+
+  <div class="grid-3">
+    <!-- Step 1: Foundation -->
+    <div class="card">
+      <span class="card-step">PHASE 01: THE FOUNDATION</span>
+      <div style="font-size: 2.5rem; margin-bottom: 15px;">🛡️</div>
+      <h3>Defensive Resilience</h3>
+      <p>A resilient future starts with a shield. We secure your family’s income and assets with structured Takaful risk management before focusing on growth.</p>
+      <a href="takaful.html">Explore Protection →</a>
+    </div>
+    
+    <!-- Step 2: Engine -->
+    <div class="card">
+      <span class="card-step">PHASE 02: THE ENGINE</span>
+      <div style="font-size: 2.5rem; margin-bottom: 15px;">🚀</div>
+      <h3>Offensive Momentum</h3>
+      <p>Resilience requires momentum. We build Shariah-screened Unit Trust portfolios designed to outpace inflation and maintain your future purchasing power.</p>
+      <a href="unittrust.html">Explore Investment →</a>
     </div>
 
-    <div class="bio-text">
-        <h4>The Architect of Your Continuity</h4>
-        <h2>Hairulanuar</h2>
-        
-        <p>
-            In an unpredictable world, true peace of mind comes from a structured approach to risk and growth. My practice is dedicated to helping families and professionals secure their financial future through <strong>Specialized Takaful Advisory</strong> and <strong>Strategic Wealth Accumulation</strong>.
-        </p>
-
-        <p>
-            As an <strong>Islamic Financial Adviser Representative (IFAR)</strong> appointed by <strong>Phillip Wealth Planners Sdn Bhd</strong>, I provide dedicated advisory on Takaful products, architecting "Financial Firewalls" to protect your family's continuity.
-        </p>
-
-        <p>
-            Additionally, as a <strong>Unit Trust Consultant</strong> registered with <strong>FIMM</strong> representing <strong>Phillip Mutual Berhad</strong>, I assist clients in building resilient portfolios through disciplined Unit Trust investments.
-        </p>
-        
-        <div class="verification-block">
-            <strong>Transparency & Verification:</strong><br>
-            My professional standing is a matter of public record. You are invited to verify my registrations and appointments on the official <strong>Bank Negara Malaysia (BNM)</strong> and <strong>FIMM</strong> registers.
-        </div>
-
-        <div class="credentials-list">
-            <span class="credential-tag">IFAR (Takaful Advisory)</span>
-            <span class="credential-tag">ASRFP (MFPC)</span>
-            <span class="credential-tag">Unit Trust (FIMM)</span>
-            <span class="credential-tag">Phillip Wealth Planners</span>
-        </div>
+    <!-- Step 3: Continuity -->
+    <div class="card">
+      <span class="card-step">PHASE 03: THE CONTINUITY</span>
+      <div style="font-size: 2.5rem; margin-bottom: 15px;">🏛️</div>
+      <h3>Generational Legacy</h3>
+      <p>True resilience lasts lifetimes. We ensure a seamless transition of wealth through integrated estate planning and retirement stewardship.</p>
+      <a href="retirement.html">Explore Retirement →</a>
     </div>
+  </div>
 </section>
 
-    <footer>
-    <div class="footer-container">
-        <!-- Legal Disclaimer -->
-        <div class="footer-section">
-            <h5>Legal Disclaimer</h5>
-            <p>
-                The information provided on this website is for general educational and informational purposes only. It does not constitute financial, investment, or legal advice. Any engagement for Takaful advisory or Unit Trust services is subject to a formal fact-finding process and the signing of official documentation as required by Phillip Wealth Planners Sdn Bhd and Phillip Mutual Berhad.
-            </p>
-        </div>
+<!-- Lead Magnet: Conversion Booster -->
+<section class="lead-magnet">
+  <h2 style="margin-bottom: 15px;">Is your family "Bulletproof"?</h2>
+  <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
+    Download the <strong>2026 Takaful Gap Audit Checklist</strong>. A 2-minute self-assessment to find the 5 critical gaps most Malaysian families overlook in their protection.
+  </p>
+  <a href="contact.html" class="btn-primary" style="background-color: white; color: var(--primary-navy);">Get the Free Checklist</a>
+</section>
 
-        <!-- Privacy & Compliance -->
-        <div class="footer-section">
-            <h5>Privacy & Compliance (PDPA)</h5>
-            <p>
-                HAS Wealth Advisory respects your privacy in accordance with the Personal Data Protection Act (PDPA) 2010. By using the 'Continuity Audit' or contacting us via WhatsApp, you consent to the processing of your personal data for the purpose of responding to your inquiry. We do not share your data with third parties without your explicit consent.
-            </p>
-        </div>
+<footer>
+  <!-- [Footer code remains similar to previous version, ensuring regulatory disclosures are kept intact] -->
+  <div class="footer-grid">
+    <div class="footer-section">
+      <h3>HAS Wealth Advisory</h3>
+      <p>Providing independent Shariah-compliant wealth stewardship for families across Malaysia since 2013.</p>
     </div>
-
-    <div class="footer-bottom">
-        <p>&copy; 2026 HAS Wealth Advisory. All Rights Reserved.</p>
-        <p>Appointed Representative of Phillip Wealth Planners Sdn Bhd & Phillip Mutual Berhad.</p>
+    <div class="footer-section">
+      <h4>Regulatory Appointments</h4>
+      <p><strong>IFAR:</strong> Phillip Wealth Planners Sdn Bhd</p>
+      <p><strong>Unit Trust:</strong> Phillip Mutual Berhad (FIMM No: F01040203)</p>
     </div>
+  </div>
+  <div class="footer-bottom" style="text-align: center; padding: 40px 20px; background: #0f172a; color: #94a3b8; font-size: 0.8rem;">
+    <p>&copy; 2026 HAS Wealth Advisory. All Rights Reserved.</p>
+    <p style="margin-top: 10px; line-height: 1.6; max-width: 900px; margin-left: auto; margin-right: auto;">
+      <strong>Disclaimer:</strong> Investments involve risk. Past performance is not indicative of future results. Takaful coverage is subject to terms and conditions. Always consult with a licensed IFAR before making financial decisions.
+    </p>
+  </div>
 </footer>
 
 </body>

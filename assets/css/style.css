@@ -1,33 +1,49 @@
-/* 1. Modern Variables */
+/* HAS WEALTH ADVISORY - MASTER STYLESHEET 2026
+  Theme: Building a Resilient Financial Future
+*/
+
+/* 1. MODERN VARIABLES */
 :root {
   --navy: #1a365d;
   --gold: #fbbf24;
+  --gold-dark: #d97706;
+  --white: #ffffff;
   --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
   --slate-200: #e2e8f0;
+  --slate-400: #94a3b8;
   --slate-600: #475569;
-  --slate-900: #0f172a;
+  --slate-900: #0f172a; /* Footer Background */
+  
   --shadow-iso: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* 2. Global Base Styles */
+/* 2. GLOBAL RESET & BASE */
+* { box-sizing: border-box; }
+
 body {
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.7;
   color: var(--slate-900);
+  background-color: var(--white);
   margin: 0;
-  overflow-x: hidden;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll on mobile animations */
 }
 
-/* 3. Mobile-First Navigation */
+h1, h2, h3, h4 { color: var(--navy); margin-top: 0; }
+a { color: var(--navy); transition: var(--transition); }
+
+/* 3. MOBILE-FIRST NAVIGATION */
 nav {
   background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--slate-200);
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .nav-container {
@@ -39,34 +55,54 @@ nav {
   padding: 0 20px;
 }
 
-.logo { font-weight: 800; color: var(--navy); text-decoration: none; font-size: 1.2rem; }
+.logo { 
+  font-weight: 800; 
+  color: var(--navy); 
+  text-decoration: none; 
+  font-size: 1.3rem; 
+  letter-spacing: -0.5px;
+}
 
 .nav-links {
   display: flex;
   gap: 20px;
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--slate-600);
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
-/* 4. Hero Section & Staggered Animations */
+.nav-links a:hover { color: var(--gold-dark); }
+
+/* 4. HERO SECTION & ANIMATIONS */
 .hero-section {
   background: var(--navy);
   color: white;
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
 }
 
-.hero-h1 { font-size: 3rem; margin-bottom: 20px; }
-.hero-sub { font-size: 1.2rem; opacity: 0.9; max-width: 800px; margin: 0 auto 40px; }
+.hero-content { max-width: 850px; margin: 0 auto; }
 
+.hero-h1 { 
+  font-size: 3.5rem; 
+  margin-bottom: 24px; 
+  line-height: 1.1; 
+  color: white;
+}
+
+.hero-sub { 
+  font-size: 1.3rem; 
+  opacity: 0.9; 
+  margin-bottom: 40px; 
+  line-height: 1.6;
+  color: white;
+}
+
+/* Staggered Fade-In Keyframes */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
@@ -77,172 +113,213 @@ nav {
 .delay-2 { animation-delay: 0.4s; }
 .delay-3 { animation-delay: 0.6s; }
 
-/* 5. Buttons with 3D Depth */
+/* 5. BUTTONS (3D DEPTH) */
 .btn-primary {
   background: var(--gold);
   color: var(--navy);
-  padding: 16px 32px;
+  padding: 18px 40px;
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 4px 0 #d97706;
+  box-shadow: 0 4px 0 var(--gold-dark);
   transition: var(--transition);
 }
 
-.btn-primary:active { transform: translateY(2px); box-shadow: 0 2px 0 #d97706; }
+.btn-primary:hover { background: #fcc44d; transform: translateY(-2px); }
+.btn-primary:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--gold-dark); }
 
 .btn-secondary {
   border: 2px solid white;
   color: white;
-  padding: 14px 30px;
+  padding: 16px 38px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 700;
-  margin-left: 10px;
+  margin-left: 15px;
+  display: inline-block;
 }
 
-/* 6. Blueprint Cards (Isometric Feel) */
-.container { max-width: 1100px; margin: 80px auto; padding: 0 20px; }
-.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+/* 6. TRUST BAR */
+.trust-bar {
+  background-color: var(--slate-100);
+  padding: 25px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--slate-200);
+}
+
+.trust-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  color: var(--slate-600);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 7. THE BLUEPRINT (CARDS) */
+.container { max-width: 1150px; margin: 100px auto; padding: 0 20px; }
+
+.section-header { text-align: center; max-width: 750px; margin: 0 auto 60px; }
+.section-header h2 { font-size: 2.5rem; margin-bottom: 20px; }
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
 
 .card {
-  background: white;
+  background: var(--white);
   border: 1px solid var(--slate-200);
-  padding: 40px;
+  padding: 50px 40px;
   border-radius: 20px;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
-  transform: translateY(-10px) rotateX(2deg);
+  transform: translateY(-12px) rotateX(2deg);
   box-shadow: var(--shadow-iso);
   border-color: var(--gold);
 }
 
-.card-step { color: var(--gold); font-weight: 800; font-size: 0.75rem; margin-bottom: 10px; display: block; }
-.icon-box { font-size: 2.5rem; margin-bottom: 15px; }
+.card-step { color: var(--gold-dark); font-weight: 800; font-size: 0.8rem; margin-bottom: 12px; display: block; }
+.icon-box { font-size: 3rem; margin-bottom: 20px; }
+.card p { color: var(--slate-600); flex-grow: 1; margin-bottom: 30px; }
 
-/* 7. Lead Magnet */
-.lead-magnet-container { padding: 0 20px; }
+.text-link {
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 8. LEAD MAGNET */
+.lead-magnet-container { padding: 0 20px; margin-bottom: 100px; }
+
 .lead-magnet {
   background: var(--navy);
   color: white;
-  padding: 60px;
+  padding: 80px 40px;
   border-radius: 24px;
   text-align: center;
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
-/* 8. Mobile Fixes */
-@media (max-width: 768px) {
-  .hero-h1 { font-size: 2.2rem; }
-  .nav-links { padding: 10px 0; gap: 15px; }
-  .btn-secondary { margin-left: 0; margin-top: 15px; width: 100%; box-sizing: border-box; display: block; }
-  .btn-primary { width: 100%; box-sizing: border-box; text-align: center; }
-  .trust-items { flex-direction: column; gap: 10px; }
-  .card { padding: 30px; }
-}
+.lead-magnet h2 { color: white; font-size: 2.2rem; margin-bottom: 15px; }
 
-/* --- FOOTER UPGRADE --- */
+/* 9. UNIVERSAL SITE FOOTER (IPAD & DESKTOP FIX) */
 .site-footer {
-  background-color: #0f172a; /* Deep Slate Navy */
-  color: #f1f5f9;
+  background-color: var(--slate-900);
+  color: var(--slate-100);
   padding: 80px 0 40px;
-  margin-top: 60px;
+  margin-top: 0;
 }
 
-.footer-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 25px;
-}
+.footer-container { max-width: 1100px; margin: 0 auto; padding: 0 30px; }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  margin-bottom: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  margin-bottom: 60px;
 }
 
-.footer-logo {
-  color: #fbbf24; /* Accent Gold */
-  font-size: 1.5rem;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
+.footer-logo { color: var(--gold); font-size: 1.6rem; font-weight: 800; margin-bottom: 20px; }
 
 .footer-section h4 {
-  color: #fff;
+  color: var(--white);
   font-size: 1.1rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* Remove those dated bullet points */
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 15px; }
+.footer-links a { color: var(--slate-400); text-decoration: none; font-weight: 500; }
+.footer-links a:hover { color: var(--gold); }
 
-.footer-links li {
-  margin-bottom: 12px;
-}
+.regulatory-info p { font-size: 0.95rem; margin-bottom: 10px; color: var(--slate-400); }
 
-.footer-links a {
-  color: #cbd5e1;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+.footer-divider { height: 1px; background: rgba(255, 255, 255, 0.1); margin-bottom: 30px; }
 
-.footer-links a:hover {
-  color: #fbbf24;
-}
-
-.regulatory-info p {
-  font-size: 0.9rem;
-  margin-bottom: 8px;
-  color: #94a3b8;
-}
-
-/* Bottom Bar & Disclaimer */
-.footer-divider {
-  height: 1px;
-  background: rgba(255, 255, 255, 0.1);
-  margin-bottom: 30px;
-}
-
-.footer-bottom {
-  text-align: center;
-  font-size: 0.85rem;
-}
+.footer-bottom { text-align: center; font-size: 0.9rem; color: var(--slate-600); }
 
 .disclaimer-box {
   background: rgba(255, 255, 255, 0.03);
-  padding: 20px;
+  padding: 30px;
   border-radius: 12px;
-  margin-top: 25px;
-  border-left: 3px solid #fbbf24;
+  margin-top: 40px;
+  border-left: 4px solid var(--gold);
+  text-align: left;
 }
 
-.disclaimer-box p {
-  color: #64748b;
-  line-height: 1.6;
-  margin: 0;
+.disclaimer-box p { font-size: 0.85rem; color: var(--slate-600); line-height: 1.6; }
+
+/* 10. RESPONSIVE MEDIA QUERIES */
+
+/* IPAD & TABLET TWEAKS */
+@media (max-width: 1024px) {
+  .hero-h1 { font-size: 2.8rem; }
+  .grid-3 { gap: 20px; }
 }
 
-/* Mobile Specific Fix */
+/* MOBILE "THUMB ZONE" OPTIMIZATION */
 @media (max-width: 768px) {
-  .site-footer {
-    padding: 60px 0 30px;
-    text-align: left; /* Keep it left-aligned for readability */
-  }
+  nav { padding: 8px 0; }
   
-  .footer-grid {
-    gap: 35px;
+  .nav-links {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    gap: 15px;
+    -webkit-overflow-scrolling: touch;
+    width: auto;
   }
+
+  .hero-section { padding: 80px 20px; }
+  .hero-h1 { font-size: 2.2rem; }
+  
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    max-width: 320px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .trust-items { flex-direction: column; gap: 12px; }
+  
+  .card { padding: 40px 30px; }
+  
+  .site-footer { text-align: left; }
+  
+  .lead-magnet { padding: 50px 25px; }
 }
 
+/* REDUCED MOTION PREFERENCE */
+@media (prefers-reduced-motion: reduce) {
+  .animate-resilience {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

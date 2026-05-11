@@ -3,202 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="PNhnhspweDAttE-7hsHlMj_7_Lx6NbWMzrXxvobkciM" />
-  <title>Building a Resilient Financial Future | HAS Wealth Advisory</title>
-  <meta name="description" content="Secure your family's future with HAS Wealth Advisory. We provide Shariah-compliant strategies in Takaful and Unit Trusts designed to withstand market volatility and life's uncertainties.">
-
-  <link rel="canonical" href="https://haswealth.github.io/">
-  <meta name="author" content="Hairul Anuar Bin Sulaiman">
-
-  <!-- Open Graph for Social Media -->
-  <meta property="og:title" content="Building a Resilient Financial Future | HAS Wealth Advisory">
-  <meta property="og:description" content="Independent Shariah-compliant advisory to help Malaysian families build a bulletproof financial foundation.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://haswealth.github.io/">
-  <meta property="og:image" content="https://haswealth.github.io/assets/images/hairul-anuar.jpeg">
+  <title>Defensive Resilience & Takaful Advisory | HAS Wealth Advisory</title>
+  <meta name="description" content="Build a bulletproof financial foundation. Independent Shariah-compliant Takaful advisory focused on income protection, medical shielding, and legacy continuity.">
 
   <link rel="stylesheet" href="assets/css/style.css">
-  
+
   <style>
     :root {
       --primary-navy: #1a365d;
       --accent-gold: #fbbf24;
-      --text-slate: #475569;
-      --light-bg: #f8fafc;
+      --slate-600: #475569;
+      --slate-50: #f8fafc;
     }
 
-    .hero-section {
-      background-color: var(--primary-navy);
+    header.resilience-header {
+      background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), url('assets/images/abstract-shield.jpg');
+      background-size: cover;
       color: white;
-      padding: 120px 20px;
+      padding: 100px 20px;
       text-align: center;
     }
-    .hero-content {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .hero-h1 {
-      font-size: 3.2rem;
-      font-weight: 800;
-      margin-bottom: 24px;
-      line-height: 1.1;
-      color: white;
-    }
-    .hero-sub {
-      font-size: 1.3rem;
-      opacity: 0.95;
-      margin-bottom: 40px;
-      line-height: 1.6;
-      color: white;
-    }
-    .btn-primary {
+
+    .phase-badge {
       background-color: var(--accent-gold);
       color: var(--primary-navy);
-      padding: 18px 40px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: transform 0.2s, background-color 0.3s;
-      display: inline-block;
-    }
-    .btn-primary:hover {
-      background-color: #f59e0b;
-      transform: translateY(-2px);
-    }
-    .btn-secondary {
-      background: transparent;
-      border: 2px solid white;
-      color: white;
-      padding: 16px 38px;
-      margin-left: 15px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      display: inline-block;
-    }
-
-    .trust-bar {
-      background-color: #f1f5f9;
-      padding: 25px 20px;
-      text-align: center;
-      border-bottom: 1px solid #e2e8f0;
-    }
-    .trust-items {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      max-width: 1100px;
-      margin: 0 auto;
-      font-size: 0.9rem;
-      color: var(--text-slate);
-      font-weight: 600;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: 800;
+      font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    /* Architecture Section */
-    .blueprint-section {
-      padding: 80px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .section-header {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto 60px;
-    }
-    .section-header h2 {
-      font-size: 2.5rem;
-      color: var(--primary-navy);
+      display: inline-block;
       margin-bottom: 20px;
     }
 
-    .grid-3 {
+    .resilience-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
+      margin: 60px 0;
     }
-    .card {
+
+    .pillar-card {
       background: white;
       border: 1px solid #e2e8f0;
-      border-radius: 16px;
       padding: 40px;
-      transition: all 0.3s ease;
-      display: flex;
-      flex-direction: column;
+      border-radius: 16px;
+      transition: transform 0.3s ease;
     }
-    .card:hover {
+
+    .pillar-card:hover {
+      transform: translateY(-5px);
       border-color: var(--accent-gold);
-      box-shadow: 0 20px 40px -10px rgba(0,0,0,0.08);
-    }
-    .card-step {
-      font-weight: 800;
-      color: var(--accent-gold);
-      font-size: 0.9rem;
-      margin-bottom: 10px;
-      display: block;
-    }
-    .card h3 {
-      color: var(--primary-navy);
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-    }
-    .card p {
-      color: #64748b;
-      line-height: 1.7;
-      margin-bottom: 25px;
-      flex-grow: 1;
-    }
-    .card a {
-      color: var(--primary-navy);
-      font-weight: bold;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
 
-    /* Lead Magnet Section */
-    .lead-magnet {
-      background-color: var(--primary-navy);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
+    .icon-box {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .audit-box {
+      background: var(--slate-50);
       border-radius: 20px;
-      margin: 40px 20px;
+      padding: 50px;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
     }
 
-    @media (max-width: 768px) {
-      .hero-h1 { font-size: 2.2rem; }
-      .btn-secondary { margin-left: 0; margin-top: 15px; width: 80%; }
-      .btn-primary { width: 80%; }
+    .cta-banner {
+      background: var(--primary-navy);
+      color: white;
+      padding: 60px 40px;
+      border-radius: 20px;
+      text-align: center;
+      margin-top: 80px;
     }
   </style>
 
-  <!-- Schema.org Integration -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "FinancialService",
-        "name": "HAS Wealth Advisory",
-        "description": "Building resilient financial futures through Shariah-compliant wealth stewardship in Malaysia.",
-        "url": "https://haswealth.github.io/",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Kota Tinggi",
-          "addressRegion": "Johor",
-          "addressCountry": "Malaysia"
-        }
-      }
-    ]
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://haswealth.github.io/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Defensive Resilience",
+      "item": "https://haswealth.github.io/takaful.html"
+    }]
   }
   </script>
 </head>
-
 <body>
 
 <nav>
@@ -212,88 +113,92 @@
   <a href="insights.html">Insights</a>
 </nav>
 
-<section class="hero-section">
-  <div class="hero-content">
-    <h1 class="hero-h1">Building a Resilient Financial Future</h1>
-    <p class="hero-sub">Most financial plans break under pressure. We design Shariah-compliant strategies that withstand market volatility and life’s uncertainties—securing your family's legacy through independent, structured advisory.</p>
-    <div class="hero-btns">
-      <a href="contact.html" class="btn-primary">Request a Resilience Audit</a>
-      <a href="#blueprint" class="btn-secondary">Explore the Blueprint</a>
-    </div>
-  </div>
-</section>
+<header class="resilience-header">
+  <span class="phase-badge">Phase 01: The Foundation</span>
+  <h1 style="font-size: 3rem; margin-top: 0;">Defensive Resilience</h1>
+  <p style="max-width: 800px; margin: 0 auto; font-size: 1.2rem; opacity: 0.9;">Optimizing your "Shield" to protect your human capital, liquidate liabilities, and ensure your family's future isn't derailed by life's inevitable shocks.</p>
+</header>
 
-<div class="trust-bar">
-  <div class="trust-items">
-    <span>🛡️ Appointed IFAR (Phillip Wealth Planners)</span>
-    <span>📈 Registered Unit Trust Consultant (FIMM)</span>
-    <span>📜 Associate Shariah RFP (MFPC)</span>
-  </div>
-</div>
+<main style="max-width: 1100px; margin: 0 auto; padding: 80px 20px;">
 
-<section id="blueprint" class="blueprint-section">
-  <div class="section-header">
-    <h2>The Blueprint for Resilience</h2>
-    <p style="color: #64748b; font-size: 1.1rem; line-height: 1.6;">True resilience is not a single product; it is a synchronized system where every asset is placed with purpose to protect, grow, and endure.</p>
-  </div>
+  <section id="philosophy" style="text-align: center; max-width: 800px; margin: 0 auto 80px;">
+    <h2 style="color: var(--primary-navy); font-size: 2.2rem;">Why Resilience Starts with Protection</h2>
+    <p style="color: var(--slate-600); font-size: 1.1rem; line-height: 1.8;">
+      In an era of rising medical costs and economic volatility, a single health crisis or the loss of a breadwinner can liquidate a lifetime of savings in months. We don't just "sell policies"; we <strong>engineer defensive systems</strong> using Shariah-compliant Takaful instruments to ensure that no matter the turbulence, your wealth growth (Phase 02) remains uninterrupted.
+    </p>
+  </section>
 
-  <div class="grid-3">
-    <!-- Step 1: Foundation -->
-    <div class="card">
-      <span class="card-step">PHASE 01: THE FOUNDATION</span>
-      <div style="font-size: 2.5rem; margin-bottom: 15px;">🛡️</div>
-      <h3>Defensive Resilience</h3>
-      <p>A resilient future starts with a shield. We secure your family’s income and assets with structured Takaful risk management before focusing on growth.</p>
-      <a href="takaful.html">Explore Protection →</a>
-    </div>
-    
-    <!-- Step 2: Engine -->
-    <div class="card">
-      <span class="card-step">PHASE 02: THE ENGINE</span>
-      <div style="font-size: 2.5rem; margin-bottom: 15px;">🚀</div>
-      <h3>Offensive Momentum</h3>
-      <p>Resilience requires momentum. We build Shariah-screened Unit Trust portfolios designed to outpace inflation and maintain your future purchasing power.</p>
-      <a href="unittrust.html">Explore Investment →</a>
+  <div class="resilience-grid">
+    <!-- Pillar 1 -->
+    <div class="pillar-card">
+      <div class="icon-box">🛡️</div>
+      <h3 style="color: var(--primary-navy);">Income Resilience</h3>
+      <p style="color: var(--slate-600);">Your ability to earn is your greatest asset. We structure high-limit income replacement strategies that keep your family's lifestyle and your son's education fully funded if your "human capital" is ever disrupted.</p>
     </div>
 
-    <!-- Step 3: Continuity -->
-    <div class="card">
-      <span class="card-step">PHASE 03: THE CONTINUITY</span>
-      <div style="font-size: 2.5rem; margin-bottom: 15px;">🏛️</div>
-      <h3>Generational Legacy</h3>
-      <p>True resilience lasts lifetimes. We ensure a seamless transition of wealth through integrated estate planning and retirement stewardship.</p>
-      <a href="retirement.html">Explore Retirement →</a>
+    <!-- Pillar 2 -->
+    <div class="pillar-card">
+      <div class="icon-box">📜</div>
+      <h3 style="color: var(--primary-navy);">Hibah & Liquidity</h3>
+      <p style="color: var(--slate-600);">Faraid processes can freeze wealth for years. By integrating Takaful with Hibah, we provide your heirs with immediate, tax-free cash to settle debts and maintain liquidity while the estate is settled.</p>
+    </div>
+
+    <!-- Pillar 3 -->
+    <div class="pillar-card">
+      <div class="icon-box">🏥</div>
+      <h3 style="color: var(--primary-navy);">Portfolio Shielding</h3>
+      <p style="color: var(--slate-600);">Prevent "Medical Leakage." We deploy medical Takaful as a defensive layer to absorb the shock of private healthcare costs, ensuring you never have to sell your Unit Trust portfolios at a loss to pay hospital bills.</p>
+    </div>
+
+    <!-- Pillar 4 -->
+    <div class="pillar-card">
+      <div class="icon-box">💼</div>
+      <h3 style="color: var(--primary-navy);">Business Continuity</h3>
+      <p style="color: var(--slate-600);">For directors and founders, we secure company solvency through Keyman Takaful and Buy-Sell agreement funding—ensuring your family receives the fair value of your shares without legal struggle.</p>
     </div>
   </div>
-</section>
 
-<!-- Lead Magnet: Conversion Booster -->
-<section class="lead-magnet">
-  <h2 style="margin-bottom: 15px;">Is your family "Bulletproof"?</h2>
-  <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
-    Download the <strong>2026 Takaful Gap Audit Checklist</strong>. A 2-minute self-assessment to find the 5 critical gaps most Malaysian families overlook in their protection.
-  </p>
-  <a href="contact.html" class="btn-primary" style="background-color: white; color: var(--primary-navy);">Get the Free Checklist</a>
-</section>
+  <section class="audit-box">
+    <div style="flex: 1; min-width: 300px;">
+      <h2 style="color: var(--primary-navy); margin-top: 0;">The IFAR Advantage: <br>Objective Optimization</h2>
+      <p style="color: var(--slate-600); line-height: 1.7;">A tied-agent is limited to a single company's catalog. As an <strong>Islamic Financial Adviser Representative (IFAR)</strong>, I have an "Open-Architecture" mandate. I source and compare Takaful instruments from across Malaysia's tier-one providers to find the most efficient fit for your resilience blueprint.</p>
+    </div>
+    <div style="flex: 1; min-width: 300px; background: white; padding: 35px; border-radius: 12px; border-left: 5px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+      <h4 style="margin-top: 0; color: var(--primary-navy);">The Resilience Audit Process:</h4>
+      <ul style="padding-left: 20px; color: var(--slate-600); line-height: 2;">
+        <li><strong>Exposure Audit:</strong> Identifying hidden gaps in current policies.</li>
+        <li><strong>Market Sourcing:</strong> Comparing multiple Takaful providers for value.</li>
+        <li><strong>Hibah Structuring:</strong> Ensuring legally airtight wealth transfer.</li>
+        <li><strong>Annual Recalibration:</strong> Adjusting as your net worth grows.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2 style="font-size: 2.2rem; margin-bottom: 15px;">Secure Your Foundation Today</h2>
+    <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 35px; max-width: 600px; margin-left: auto; margin-right: auto;">
+      Don't leave your family's future to chance. Let's conduct a <strong>Phase 01 Resilience Audit</strong> to ensure your shield is strong enough for the years ahead.
+    </p>
+    <a href="contact.html" class="btn-primary" style="background: var(--accent-gold); color: var(--primary-navy); padding: 18px 45px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">Request Your Free Resilience Audit</a>
+  </div>
+
+</main>
 
 <footer>
-  <!-- [Footer code remains similar to previous version, ensuring regulatory disclosures are kept intact] -->
+  <!-- Footer content remains the same for regulatory compliance -->
   <div class="footer-grid">
     <div class="footer-section">
       <h3>HAS Wealth Advisory</h3>
-      <p>Providing independent Shariah-compliant wealth stewardship for families across Malaysia since 2013.</p>
+      <p>Building resilient financial futures for families across Malaysia through independent Shariah-compliant advisory.</p>
     </div>
     <div class="footer-section">
-      <h4>Regulatory Appointments</h4>
+      <h4>Regulatory</h4>
       <p><strong>IFAR:</strong> Phillip Wealth Planners Sdn Bhd</p>
-      <p><strong>Unit Trust:</strong> Phillip Mutual Berhad (FIMM No: F01040203)</p>
+      <p><strong>MFPC:</strong> Associate Shariah RFP Pathway</p>
     </div>
   </div>
-  <div class="footer-bottom" style="text-align: center; padding: 40px 20px; background: #0f172a; color: #94a3b8; font-size: 0.8rem;">
-    <p>&copy; 2026 HAS Wealth Advisory. All Rights Reserved.</p>
-    <p style="margin-top: 10px; line-height: 1.6; max-width: 900px; margin-left: auto; margin-right: auto;">
-      <strong>Disclaimer:</strong> Investments involve risk. Past performance is not indicative of future results. Takaful coverage is subject to terms and conditions. Always consult with a licensed IFAR before making financial decisions.
-    </p>
+  <div style="text-align: center; padding: 20px; border-top: 1px solid #e2e8f0; font-size: 0.8rem; color: #94a3b8;">
+    &copy; 2026 HAS Wealth Advisory. All rights reserved.
   </div>
 </footer>
 

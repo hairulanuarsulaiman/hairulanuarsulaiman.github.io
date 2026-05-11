@@ -144,3 +144,105 @@ nav {
   .trust-items { flex-direction: column; gap: 10px; }
   .card { padding: 30px; }
 }
+
+/* --- FOOTER UPGRADE --- */
+.site-footer {
+  background-color: #0f172a; /* Deep Slate Navy */
+  color: #f1f5f9;
+  padding: 80px 0 40px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-logo {
+  color: #fbbf24; /* Accent Gold */
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Remove those dated bullet points */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fbbf24;
+}
+
+.regulatory-info p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #94a3b8;
+}
+
+/* Bottom Bar & Disclaimer */
+.footer-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.disclaimer-box {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 25px;
+  border-left: 3px solid #fbbf24;
+}
+
+.disclaimer-box p {
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Mobile Specific Fix */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 60px 0 30px;
+    text-align: left; /* Keep it left-aligned for readability */
+  }
+  
+  .footer-grid {
+    gap: 35px;
+  }
+}
+

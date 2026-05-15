@@ -115,10 +115,26 @@
 </section>
 
 <section class="lead-magnet-container">
-  <div class="lead-magnet">
-    <h2>Is your family "Bulletproof"?</h2>
-    <p>Download the <strong>2026 Takaful Gap Audit Checklist</strong>. A 2-minute self-assessment to find the 5 critical gaps most Malaysian families overlook in their protection.</p>
-    <a href="contact.html" class="btn-primary" style="background-color: white; color: #1a365d; box-shadow: none;">Get the Free Checklist</a>
+  <div class="lead-magnet" style="text-align: center; padding: 60px 20px;">
+    <h2>Assess Your Financial Architecture</h2>
+    <p>Download the **2026 Shariah Financial Resilience Checklist** instantly and grade your defense, growth, and legacy readiness.</p>
+    
+    <form id="lead-magnet-form" action="https://api.web3forms.com/submit" method="POST" style="max-width: 450px; margin: 30px auto; display: flex; flex-direction: column; gap: 15px;">
+      <input type="hidden" name="access_key" value="075d23be-667c-4d60-8301-66ec3731d89d">
+      
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+      <input type="text" name="name" placeholder="Your Full Name" required 
+             style="padding: 14px; border-radius: 6px; border: 1px solid #cbd5e1; font-size: 1rem;">
+             
+      <input type="email" name="email" placeholder="Professional Email Address" required 
+             style="padding: 14px; border-radius: x6px; border: 1px solid #cbd5e1; font-size: 1rem;">
+      
+      <button type="submit" class="btn-primary" style="background-color: #fbbf24; color: #1a365d; font-weight: bold; padding: 16px; border: none; border-radius: 6px; cursor: pointer;">
+        Instantly Download Checklist PDF →
+      </button>
+    </form>
+    <div id="form-result" style="margin-top: 20px; font-weight: bold;"></div>
   </div>
 </section>
 
@@ -162,6 +178,55 @@
   </div>
 </footer>
 
+<script>
+const form = document.getElementById('lead-magnet-form');
+const result = document.getElementById('form-result');
 
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+
+  result.innerHTML = "Processing your secure blueprint...";
+  result.style.color = "#1a365d";
+
+  fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: json
+  })
+  .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+          // 1. Success Message
+          result.style.color = "#fbbf24";
+          result.innerHTML = "✓ Download started automatically! Check your browser's folder.";
+          
+          // 2. Trigger the PDF Download
+          const downloadLink = document.createElement('a');
+          downloadLink.href = 'assets/docs/shariah-financial-resilience-checklist-2026.pdf'; 
+          downloadLink.download = 'shariah-financial-resilience-checklist-2026.pdf';
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+          document.body.removeChild(downloadLink);
+          
+          // 3. Reset form
+          form.reset();
+          setTimeout(() => { result.style.display = "none"; }, 5000);
+      } else {
+          result.style.color = "#ef4444";
+          result.innerHTML = json.message;
+      }
+  })
+  .catch(error => {
+      result.innerHTML = "Something went wrong. Please try again later.";
+  });
+});
+</script>
+  
 </body>
 </html>

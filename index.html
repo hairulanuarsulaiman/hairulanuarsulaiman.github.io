@@ -199,14 +199,9 @@ form.addEventListener('submit', function(e) {
       },
       body: json
   })
-  .then(async (response) => {
-      let json = await response.json();
+ .then(async (response) => {
       if (response.status == 200) {
-          // 1. Success Message
-          result.style.color = "#fbbf24";
-          result.innerHTML = "✓ Download started automatically! Check your browser's folder.";
-          
-          // 2. Trigger the PDF Download
+          // 1. Trigger the PDF Download
           const downloadLink = document.createElement('a');
           downloadLink.href = 'assets/docs/shariah-financial-resilience-checklist-2026.pdf'; 
           downloadLink.download = 'shariah-financial-resilience-checklist-2026.pdf';
@@ -214,12 +209,11 @@ form.addEventListener('submit', function(e) {
           downloadLink.click();
           document.body.removeChild(downloadLink);
           
-          // 3. Reset form
-          form.reset();
-          setTimeout(() => { result.style.display = "none"; }, 5000);
-      } else {
-          result.style.color = "#ef4444";
-          result.innerHTML = json.message;
+          // 2. Short delay then Redirect to Thank You Page
+          result.innerHTML = "✓ Success! Redirecting you now...";
+          setTimeout(() => {
+              window.location.href = 'thank-you.html';
+          }, 2000); 
       }
   })
   .catch(error => {

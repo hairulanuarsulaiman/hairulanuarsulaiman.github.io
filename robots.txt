@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Gated Funnel Defense
+Disallow: /thank-you.html
+Disallow: /assets/docs/shariah-financial-resilience-checklist-2026.pdf
+
 Sitemap: https://haswealth.github.io/sitemap.xml

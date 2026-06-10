@@ -439,3 +439,17 @@ nav {
     transform: none;
   }
 }
+
+/* Responsive two-column grid that becomes single column on mobile */
+.why-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Force two columns when the screen is wide enough */
+@media (min-width: 769px) {
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

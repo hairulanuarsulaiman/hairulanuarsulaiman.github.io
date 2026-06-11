@@ -158,10 +158,9 @@
 
 <section class="lead-magnet-container" id="semakan-percuma">
   <div class="lead-magnet" style="text-align: center; padding: 60px 20px;">
-    <h2>Dapatkan Panduan “Optimumkan Tunai & Lindungi Bisnes Anda”</h2>
+    <h2>Muat Turun “Panduan Optimumkan Tunai & Lindungi Bisnes Anda”</h2>
     <p>
-      Muat turun <strong>“Senarai Semak Ketahanan Kewangan Syariah 2026”</strong> secara percuma.
-      Ketahui potensi pulangan lebihan tunai syarikat, jurang perlindungan bisnes, dan langkah seterusnya – dalam masa 5 minit.
+      Dapatkan <strong>panduan percuma</strong> ini untuk mempelajari cara menilai potensi lebihan tunai syarikat, mengesan jurang perlindungan bisnes, dan merangka langkah seterusnya — semuanya dalam pendekatan yang patuh Syariah.
     </p>
 
     <form id="lead-magnet-form" action="https://api.web3forms.com/submit" method="POST" style="max-width: 450px; margin: 30px auto; display: flex; flex-direction: column; gap: 15px;">
@@ -179,7 +178,7 @@
       </button>
     </form>
     <p style="font-size:0.9rem; color:#64748b; margin-top: 15px;">
-      Emel anda selamat dan tidak akan dikongsi. Saya hanya akan menghantar panduan berguna – tanpa spam.
+      Emel anda selamat dan tidak akan dikongsi. Saya hanya akan menghantar panduan berguna — tanpa spam.
     </p>
     <div id="form-result" style="margin-top: 20px; font-weight: bold;"></div>
   </div>
@@ -264,8 +263,8 @@ form.addEventListener('submit', function(e) {
  .then(async (response) => {
       if (response.status == 200) {
           const downloadLink = document.createElement('a');
-          downloadLink.href = 'assets/docs/senarai-semak-kekukuhan-kewangan-syariah-2026.pdf'; 
-          downloadLink.download = 'senarai-semak-kekukuhan-kewangan-syariah-2026.pdf';
+         downloadLink.href = 'assets/docs/panduan-optimumkan-tunai-lindungi-bisnes.pdf';
+          downloadLink.download = 'panduan-optimumkan-tunai-lindungi-bisnes.pdf';
           document.body.appendChild(downloadLink);
           downloadLink.click();
           document.body.removeChild(downloadLink);

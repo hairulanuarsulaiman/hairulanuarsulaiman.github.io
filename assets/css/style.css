@@ -1,7 +1,7 @@
 /* ============================================
    HAIRUL ANUAR SULAIMAN - MASTER STYLESHEET
    Perunding Kewangan Islam & Unit Trust
-   Swiss-inspired, navy-only accent
+   Swiss-inspired, navy-only, bold typography
    ============================================ */
 
 /* 1. MODERN VARIABLES – NAVY ONLY */
@@ -26,15 +26,21 @@
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.05rem;                /* slightly larger body */
   line-height: 1.7;
-  color: var(--slate-600);           /* slightly softer than old slate-900 */
+  color: var(--slate-600);
   background-color: var(--white);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4 { color: var(--navy); margin-top: 0; }
+h1, h2, h3, h4 {
+  color: var(--navy);
+  margin-top: 0;
+  font-weight: 700;
+}
+
 a { color: var(--navy); transition: var(--transition); }
 
 /* 3. NAVIGATION (DESKTOP + HAMBURGER SETUP) */
@@ -59,9 +65,9 @@ nav {
 
 .logo {
   font-weight: 800;
+  font-size: 1.4rem;                /* bigger */
   color: var(--navy);
   text-decoration: none;
-  font-size: 1.3rem;
   letter-spacing: -0.5px;
 }
 
@@ -82,7 +88,7 @@ nav {
   height: 3px;
   width: 100%;
   background: var(--navy);
-  border-radius: 2px;              /* sharper */
+  border-radius: 2px;
   transition: var(--transition);
   margin-bottom: 5px;
 }
@@ -99,14 +105,12 @@ nav {
   text-decoration: none;
   color: var(--slate-600);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1rem;                  /* slightly larger */
   white-space: nowrap;
 }
 
 .nav-links a:hover,
-.nav-links a.active {
-  color: var(--navy);              /* gold removed */
-}
+.nav-links a.active { color: var(--navy); }
 
 /* 4. HAMBURGER TRANSFORMATIONS (MOBILE) */
 @media (max-width: 768px) {
@@ -123,7 +127,7 @@ nav {
     padding: 20px 30px;
     gap: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-bottom: 2px solid var(--navy);   /* gold → navy */
+    border-bottom: 2px solid var(--navy);
     transform: translateY(-120%);
     opacity: 0;
     transition: transform 0.4s ease, opacity 0.3s ease;
@@ -153,7 +157,7 @@ nav {
   }
 }
 
-/* 5. HERO SECTION */
+/* 5. HERO SECTION – BOLD & MASSIVE */
 .hero-section {
   background: var(--navy);
   color: white;
@@ -164,9 +168,11 @@ nav {
 .hero-content { max-width: 850px; margin: 0 auto; }
 
 .hero-h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);  /* bigger */
+  font-weight: 800;
+  line-height: 1.05;                      /* tighter */
+  letter-spacing: -0.02em;
   margin-bottom: 24px;
-  line-height: 1.1;
   color: white;
 }
 
@@ -188,13 +194,14 @@ nav {
 .delay-2 { animation-delay: 0.4s; }
 .delay-3 { animation-delay: 0.6s; }
 
-/* 6. BUTTONS – PURE NAVY */
+/* 6. BUTTONS – PURE NAVY, STRONG */
 .btn-primary {
   background: var(--navy);
   color: white;
   padding: 16px 36px;
-  border-radius: 4px;                     /* Swiss sharpness */
-  font-weight: 600;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
   text-decoration: none;
   display: inline-block;
   border: 1px solid var(--navy);
@@ -214,7 +221,8 @@ nav {
   padding: 14px 34px;
   border-radius: 4px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1rem;
   margin-left: 15px;
   display: inline-block;
   transition: var(--transition);
@@ -224,7 +232,7 @@ nav {
   background: rgba(255,255,255,0.1);
 }
 
-/* 7. TRUST BAR – clean light background, navy text */
+/* 7. TRUST BAR */
 .trust-bar {
   background-color: var(--slate-100);
   padding: 25px 20px;
@@ -240,17 +248,24 @@ nav {
   max-width: 1100px;
   margin: 0 auto;
   font-size: 0.9rem;
-  color: var(--navy);                    /* gold → navy */
+  color: var(--navy);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* 8. THE BLUEPRINT (CARDS) – Swiss minimal */
+/* 8. THE BLUEPRINT (CARDS) */
 .container { max-width: 1150px; margin: 100px auto; padding: 0 20px; }
 
 .section-header { text-align: center; max-width: 750px; margin: 0 auto 60px; }
-.section-header h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 20px; }
+
+.section-header h2 {
+  font-size: clamp(2rem, 5vw, 3rem);     /* larger */
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
 
 .grid-3 {
   display: grid;
@@ -262,27 +277,36 @@ nav {
   background: var(--white);
   border: 1px solid var(--border-color);
   padding: 50px 40px;
-  border-radius: 4px;                    /* sharp Swiss corners */
+  border-radius: 4px;
   transition: var(--transition);
   display: flex;
   flex-direction: column;
 }
 
 .card:hover {
-  border-color: var(--navy);             /* navy accent only */
+  border-color: var(--navy);
   box-shadow: var(--shadow-subtle);
-  transform: translateY(-2px);           /* subtle, no rotation */
+  transform: translateY(-2px);
 }
 
 .card-step {
-  color: var(--navy);                    /* gold → navy */
-  font-weight: 800;
-  font-size: 0.8rem;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.85rem;                /* larger label */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   margin-bottom: 12px;
   display: block;
 }
 
+.card h3 {
+  font-size: 1.5rem;                 /* larger card title */
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
 .icon-box { font-size: 3rem; margin-bottom: 20px; }
+
 .card p { color: var(--slate-600); flex-grow: 1; margin-bottom: 30px; }
 
 .text-link {
@@ -295,18 +319,16 @@ nav {
   transition: var(--transition);
 }
 
-.text-link:hover {
-  color: var(--navy-light);
-}
+.text-link:hover { color: var(--navy-light); }
 
-/* 9. LEAD MAGNET – navy block with white button */
+/* 9. LEAD MAGNET */
 .lead-magnet-container { padding: 0 20px; margin-bottom: 100px; }
 
 .lead-magnet {
   background: var(--navy);
   color: white;
   padding: clamp(40px, 8vw, 80px) 40px;
-  border-radius: 4px;                    /* sharper */
+  border-radius: 4px;
   text-align: center;
   max-width: 950px;
   margin: 0 auto;
@@ -315,6 +337,7 @@ nav {
 .lead-magnet h2 {
   color: white;
   font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
@@ -332,7 +355,7 @@ nav {
   border-color: var(--slate-100);
 }
 
-/* 10. UNIVERSAL SITE FOOTER – dark, clean */
+/* 10. UNIVERSAL SITE FOOTER */
 .site-footer {
   background-color: var(--slate-900);
   color: var(--slate-100);
@@ -350,7 +373,7 @@ nav {
 }
 
 .footer-logo {
-  color: white;                         /* no more gold */
+  color: white;
   font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 20px;
@@ -367,7 +390,7 @@ nav {
 .footer-links { list-style: none; padding: 0; margin: 0; }
 .footer-links li { margin-bottom: 15px; }
 .footer-links a { color: var(--slate-400); text-decoration: none; font-weight: 500; }
-.footer-links a:hover { color: white; }  /* gold → white */
+.footer-links a:hover { color: white; }
 
 .footer-bottom { text-align: center; font-size: 0.9rem; color: var(--slate-600); }
 
@@ -381,9 +404,10 @@ nav {
 .testimonial-grid blockquote {
   background: #f8fafc;
   padding: 20px;
-  border-left: 4px solid var(--navy);    /* right → left, gold → navy */
+  border-left: 4px solid var(--navy);
   font-style: italic;
-  border-radius: 4px;                   /* sharper */
+  font-size: 1.1rem;               /* larger quotes */
+  border-radius: 4px;
 }
 .testimonial-grid footer {
   margin-top: 10px;
@@ -401,11 +425,11 @@ nav {
   opacity: 0.9;
 }
 
-/* Floating WhatsApp button – keep brand green, but minimal */
+/* Floating WhatsApp button */
 .floating-whatsapp {
   background: #25D366;
   color: white;
-  border-radius: 4px;                   /* less rounded */
+  border-radius: 4px;
   box-shadow: var(--shadow-subtle);
 }
 
@@ -451,7 +475,7 @@ nav {
   body { padding-bottom: 80px; }
 }
 
-/* SMALL MOBILE (e.g., iPhone SE) */
+/* SMALL MOBILE */
 @media (max-width: 480px) {
   .logo { font-size: 1.1rem; }
 
@@ -474,7 +498,7 @@ nav {
   }
 }
 
-/* Utility grid – unchanged */
+/* Utility grid (unchanged) */
 .why-grid {
   display: grid;
   gap: 20px;

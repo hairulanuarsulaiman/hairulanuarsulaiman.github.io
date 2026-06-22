@@ -1,13 +1,13 @@
 /* ============================================
    HAIRUL ANUAR SULAIMAN - MASTER STYLESHEET
    Perunding Kewangan Islam & Unit Trust
+   Swiss-inspired, navy-only accent
    ============================================ */
 
-/* 1. MODERN VARIABLES */
+/* 1. MODERN VARIABLES – NAVY ONLY */
 :root {
   --navy: #1a365d;
-  --gold: #fbbf24;
-  --gold-dark: #d97706;
+  --navy-light: #2b4a7a;  /* hover states */
   --white: #ffffff;
   --slate-50: #f8fafc;
   --slate-100: #f1f5f9;
@@ -16,8 +16,9 @@
   --slate-600: #475569;
   --slate-900: #0f172a;
 
-  --shadow-iso: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --border-color: #e2e8f0;          /* replaces gold borders */
+  --shadow-subtle: 0 1px 3px rgba(0,0,0,0.04);
+  --transition: all 0.25s ease;
 }
 
 /* 2. GLOBAL RESET & BASE */
@@ -26,7 +27,7 @@
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.7;
-  color: var(--slate-900);
+  color: var(--slate-600);           /* slightly softer than old slate-900 */
   background-color: var(--white);
   margin: 0;
   padding: 0;
@@ -40,7 +41,7 @@ a { color: var(--navy); transition: var(--transition); }
 nav {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--slate-200);
+  border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -64,10 +65,7 @@ nav {
   letter-spacing: -0.5px;
 }
 
-/* Hamburger checkbox & label (hidden on desktop) */
-#menu-toggle {
-  display: none;
-}
+#menu-toggle { display: none; }
 
 .menu-icon {
   display: none;
@@ -84,14 +82,13 @@ nav {
   height: 3px;
   width: 100%;
   background: var(--navy);
-  border-radius: 3px;
+  border-radius: 2px;              /* sharper */
   transition: var(--transition);
   margin-bottom: 5px;
 }
 
 .menu-icon span:last-child { margin-bottom: 0; }
 
-/* Navigation links */
 .nav-links {
   display: flex;
   gap: 20px;
@@ -107,13 +104,13 @@ nav {
 }
 
 .nav-links a:hover,
-.nav-links a.active { color: var(--gold-dark); }
+.nav-links a.active {
+  color: var(--navy);              /* gold removed */
+}
 
 /* 4. HAMBURGER TRANSFORMATIONS (MOBILE) */
 @media (max-width: 768px) {
-  .menu-icon {
-    display: flex;
-  }
+  .menu-icon { display: flex; }
 
   .nav-links {
     position: absolute;
@@ -126,27 +123,23 @@ nav {
     padding: 20px 30px;
     gap: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-bottom: 2px solid var(--gold);
+    border-bottom: 2px solid var(--navy);   /* gold → navy */
     transform: translateY(-120%);
     opacity: 0;
     transition: transform 0.4s ease, opacity 0.3s ease;
     z-index: 999;
   }
 
-  /* Show menu when checkbox is checked */
   #menu-toggle:checked ~ .nav-links {
     transform: translateY(0);
     opacity: 1;
   }
 
-  /* Animate hamburger to X */
   #menu-toggle:checked ~ .menu-icon span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
 
-  #menu-toggle:checked ~ .menu-icon span:nth-child(2) {
-    opacity: 0;
-  }
+  #menu-toggle:checked ~ .menu-icon span:nth-child(2) { opacity: 0; }
 
   #menu-toggle:checked ~ .menu-icon span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
@@ -160,7 +153,7 @@ nav {
   }
 }
 
-/* 5. HERO SECTION & ANIMATIONS */
+/* 5. HERO SECTION */
 .hero-section {
   background: var(--navy);
   color: white;
@@ -195,41 +188,48 @@ nav {
 .delay-2 { animation-delay: 0.4s; }
 .delay-3 { animation-delay: 0.6s; }
 
-/* 6. BUTTONS */
+/* 6. BUTTONS – PURE NAVY */
 .btn-primary {
-  background: var(--gold);
-  color: var(--navy);
-  padding: 18px 40px;
-  border-radius: 8px;
-  font-weight: 700;
+  background: var(--navy);
+  color: white;
+  padding: 16px 36px;
+  border-radius: 4px;                     /* Swiss sharpness */
+  font-weight: 600;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 4px 0 var(--gold-dark);
+  border: 1px solid var(--navy);
   transition: var(--transition);
 }
 
-.btn-primary:hover { background: #fcc44d; transform: translateY(-2px); }
-.btn-primary:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--gold-dark); }
-
-.btn-secondary {
-  border: 2px solid white;
-  color: white;
-  padding: 16px 38px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 700;
-  margin-left: 15px;
-  display: inline-block;
+.btn-primary:hover {
+  background: var(--navy-light);
+  border-color: var(--navy-light);
+  transform: translateY(-1px);
 }
 
-.btn-secondary:hover { background: rgba(255,255,255,0.1); }
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 14px 34px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 15px;
+  display: inline-block;
+  transition: var(--transition);
+}
 
-/* 7. TRUST BAR */
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* 7. TRUST BAR – clean light background, navy text */
 .trust-bar {
   background-color: var(--slate-100);
   padding: 25px 20px;
   text-align: center;
-  border-bottom: 1px solid var(--slate-200);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .trust-items {
@@ -240,13 +240,13 @@ nav {
   max-width: 1100px;
   margin: 0 auto;
   font-size: 0.9rem;
-  color: var(--slate-600);
+  color: var(--navy);                    /* gold → navy */
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* 8. THE BLUEPRINT (CARDS) */
+/* 8. THE BLUEPRINT (CARDS) – Swiss minimal */
 .container { max-width: 1150px; margin: 100px auto; padding: 0 20px; }
 
 .section-header { text-align: center; max-width: 750px; margin: 0 auto 60px; }
@@ -260,48 +260,79 @@ nav {
 
 .card {
   background: var(--white);
-  border: 1px solid var(--slate-200);
+  border: 1px solid var(--border-color);
   padding: 50px 40px;
-  border-radius: 20px;
+  border-radius: 4px;                    /* sharp Swiss corners */
   transition: var(--transition);
   display: flex;
   flex-direction: column;
 }
 
 .card:hover {
-  transform: translateY(-12px) rotateX(2deg);
-  box-shadow: var(--shadow-iso);
-  border-color: var(--gold);
+  border-color: var(--navy);             /* navy accent only */
+  box-shadow: var(--shadow-subtle);
+  transform: translateY(-2px);           /* subtle, no rotation */
 }
 
-.card-step { color: var(--gold-dark); font-weight: 800; font-size: 0.8rem; margin-bottom: 12px; display: block; }
+.card-step {
+  color: var(--navy);                    /* gold → navy */
+  font-weight: 800;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
 .icon-box { font-size: 3rem; margin-bottom: 20px; }
 .card p { color: var(--slate-600); flex-grow: 1; margin-bottom: 30px; }
 
 .text-link {
   font-weight: 700;
   text-decoration: none;
+  color: var(--navy);
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: var(--transition);
 }
 
-/* 9. LEAD MAGNET */
+.text-link:hover {
+  color: var(--navy-light);
+}
+
+/* 9. LEAD MAGNET – navy block with white button */
 .lead-magnet-container { padding: 0 20px; margin-bottom: 100px; }
 
 .lead-magnet {
   background: var(--navy);
   color: white;
   padding: clamp(40px, 8vw, 80px) 40px;
-  border-radius: 24px;
+  border-radius: 4px;                    /* sharper */
   text-align: center;
   max-width: 950px;
   margin: 0 auto;
 }
 
-.lead-magnet h2 { color: white; font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 15px; }
+.lead-magnet h2 {
+  color: white;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 15px;
+}
 
-/* 10. UNIVERSAL SITE FOOTER */
+.lead-magnet .btn-primary {
+  background: white;
+  color: var(--navy);
+  border: 1px solid white;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 4px;
+}
+
+.lead-magnet .btn-primary:hover {
+  background: var(--slate-100);
+  border-color: var(--slate-100);
+}
+
+/* 10. UNIVERSAL SITE FOOTER – dark, clean */
 .site-footer {
   background-color: var(--slate-900);
   color: var(--slate-100);
@@ -318,7 +349,12 @@ nav {
   margin-bottom: 60px;
 }
 
-.footer-logo { color: var(--gold); font-size: 1.6rem; font-weight: 800; margin-bottom: 20px; }
+.footer-logo {
+  color: white;                         /* no more gold */
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
 
 .footer-section h4 {
   color: var(--white);
@@ -331,30 +367,29 @@ nav {
 .footer-links { list-style: none; padding: 0; margin: 0; }
 .footer-links li { margin-bottom: 15px; }
 .footer-links a { color: var(--slate-400); text-decoration: none; font-weight: 500; }
-.footer-links a:hover { color: var(--gold); }
+.footer-links a:hover { color: white; }  /* gold → white */
 
 .footer-bottom { text-align: center; font-size: 0.9rem; color: var(--slate-600); }
 
 /* 11. ADDITIONAL COMPONENTS */
-/* Hero photo */
 .hero-photo {
   display: block;
   margin: 0 auto 25px;
 }
 
-/* Testimonial grid */
+/* Testimonials – navy accent */
 .testimonial-grid blockquote {
   background: #f8fafc;
   padding: 20px;
-  border-right: 4px solid #fbbf24;
+  border-left: 4px solid var(--navy);    /* right → left, gold → navy */
   font-style: italic;
-  border-radius: 8px;
+  border-radius: 4px;                   /* sharper */
 }
 .testimonial-grid footer {
   margin-top: 10px;
   font-weight: bold;
   font-style: normal;
-  color: #1a365d;
+  color: var(--navy);
 }
 
 /* CTA section button hover */
@@ -366,7 +401,14 @@ nav {
   opacity: 0.9;
 }
 
-/* Floating WhatsApp button hover */
+/* Floating WhatsApp button – keep brand green, but minimal */
+.floating-whatsapp {
+  background: #25D366;
+  color: white;
+  border-radius: 4px;                   /* less rounded */
+  box-shadow: var(--shadow-subtle);
+}
+
 .floating-whatsapp:hover {
   background: #1ebd54;
 }
@@ -380,13 +422,10 @@ nav {
 
 /* MOBILE OPTIMIZATION */
 @media (max-width: 768px) {
-  /* Reduce container padding */
   .container { padding: 0 15px; }
 
-  /* Hero adjustments */
   .hero-sub { font-size: 1.1rem; }
 
-  /* Buttons stack */
   .hero-btns {
     display: flex;
     flex-direction: column;
@@ -401,19 +440,14 @@ nav {
     text-align: center;
   }
 
-  /* Trust bar items stack */
   .trust-items { flex-direction: column; gap: 12px; }
 
-  /* Cards padding */
   .card { padding: 40px 30px; }
 
-  /* Lead magnet */
   .lead-magnet { padding: 50px 25px; }
 
-  /* Footer alignment */
   .site-footer { text-align: left; }
 
-  /* Add bottom padding to body so WhatsApp button doesn't overlap footer */
   body { padding-bottom: 80px; }
 }
 
@@ -440,14 +474,13 @@ nav {
   }
 }
 
-/* Responsive two-column grid that becomes single column on mobile */
+/* Utility grid – unchanged */
 .why-grid {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-/* Force two columns when the screen is wide enough */
 @media (min-width: 769px) {
   .why-grid {
     grid-template-columns: 1fr 1fr;

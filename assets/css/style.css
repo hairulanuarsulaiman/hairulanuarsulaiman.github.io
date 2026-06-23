@@ -257,34 +257,21 @@ nav {
 }
 
 /* 8. ALTERNATING SECTION BACKGROUNDS — Zurich rhythm */
-.container { max-width: 1150px; margin: 0 auto; padding: 100px 20px; }
-
-/* Every even section (like the blueprint and testimonials) gets a light grey background */
-section:nth-of-type(even) .container {
-  background-color: var(--grey-bg);
-  max-width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* But we need the actual container inside those full-width stripes */
-section:nth-of-type(even) .container > * {
+.container {
   max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
+  padding: 100px 20px;
 }
 
-/* Keep section-header styling clean */
-.section-header { text-align: center; max-width: 750px; margin: 0 auto 60px; }
+/* Full-width grey stripe for sections with the class .section-grey */
+.section-grey {
+  background-color: var(--grey-bg);
+  padding: 100px 0;
+}
 
-.section-header h2 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-  margin-bottom: 24px;
+.section-grey .container {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* 9. CARDS — structured, soft shadow on hover, Zurich feel */

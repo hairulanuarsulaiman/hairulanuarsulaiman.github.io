@@ -1,14 +1,15 @@
 /* ============================================
    HAIRUL ANUAR SULAIMAN - MASTER STYLESHEET
    Perunding Kewangan Islam & Unit Trust
-   Swiss-inspired, navy-only, bold typography
+   Zurich-inspired Swiss design, navy accent
    ============================================ */
 
-/* 1. MODERN VARIABLES – NAVY ONLY */
+/* 1. MODERN VARIABLES */
 :root {
   --navy: #1a365d;
-  --navy-light: #2b4a7a;  /* hover states */
+  --navy-light: #2b4a7a;          /* hover states */
   --white: #ffffff;
+  --grey-bg: #f7f8fa;             /* Zurich-like alternating section background */
   --slate-50: #f8fafc;
   --slate-100: #f1f5f9;
   --slate-200: #e2e8f0;
@@ -16,8 +17,9 @@
   --slate-600: #475569;
   --slate-900: #0f172a;
 
-  --border-color: #e2e8f0;          /* replaces gold borders */
-  --shadow-subtle: 0 1px 3px rgba(0,0,0,0.04);
+  --border-color: #e2e8f0;
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-card-hover: 0 8px 24px rgba(0,0,0,0.08);
   --transition: all 0.25s ease;
 }
 
@@ -26,7 +28,7 @@
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 1.05rem;                /* slightly larger body */
+  font-size: 1.05rem;
   line-height: 1.7;
   color: var(--slate-600);
   background-color: var(--white);
@@ -35,18 +37,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
-  color: var(--navy);
-  margin-top: 0;
-  font-weight: 700;
-}
-
+h1, h2, h3, h4 { color: var(--navy); margin-top: 0; font-weight: 700; }
 a { color: var(--navy); transition: var(--transition); }
 
-/* 3. NAVIGATION (DESKTOP + HAMBURGER SETUP) */
+/* 3. NAVIGATION — solid white, Zurich-clean */
 nav {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background: var(--white);
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
@@ -65,7 +61,7 @@ nav {
 
 .logo {
   font-weight: 800;
-  font-size: 1.4rem;                /* bigger */
+  font-size: 1.4rem;
   color: var(--navy);
   text-decoration: none;
   letter-spacing: -0.5px;
@@ -105,12 +101,18 @@ nav {
   text-decoration: none;
   color: var(--slate-600);
   font-weight: 600;
-  font-size: 1rem;                  /* slightly larger */
+  font-size: 1rem;
   white-space: nowrap;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: var(--transition);
 }
 
 .nav-links a:hover,
-.nav-links a.active { color: var(--navy); }
+.nav-links a.active {
+  color: var(--navy);
+  border-bottom-color: var(--navy);
+}
 
 /* 4. HAMBURGER TRANSFORMATIONS (MOBILE) */
 @media (max-width: 768px) {
@@ -157,7 +159,7 @@ nav {
   }
 }
 
-/* 5. HERO SECTION – BOLD & MASSIVE */
+/* 5. HERO SECTION — anchored navy, confident */
 .hero-section {
   background: var(--navy);
   color: white;
@@ -168,9 +170,9 @@ nav {
 .hero-content { max-width: 850px; margin: 0 auto; }
 
 .hero-h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);  /* bigger */
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 800;
-  line-height: 1.05;                      /* tighter */
+  line-height: 1.05;
   letter-spacing: -0.02em;
   margin-bottom: 24px;
   color: white;
@@ -194,12 +196,12 @@ nav {
 .delay-2 { animation-delay: 0.4s; }
 .delay-3 { animation-delay: 0.6s; }
 
-/* 6. BUTTONS – PURE NAVY, STRONG */
+/* 6. BUTTONS — solid, Zurich-style */
 .btn-primary {
   background: var(--navy);
   color: white;
   padding: 16px 36px;
-  border-radius: 4px;
+  border-radius: 6px;                 /* slightly softer */
   font-weight: 700;
   font-size: 1rem;
   text-decoration: none;
@@ -219,7 +221,7 @@ nav {
   border: 2px solid white;
   color: white;
   padding: 14px 34px;
-  border-radius: 4px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 700;
   font-size: 1rem;
@@ -232,10 +234,10 @@ nav {
   background: rgba(255,255,255,0.1);
 }
 
-/* 7. TRUST BAR */
+/* 7. TRUST BAR — minimal, light grey background */
 .trust-bar {
-  background-color: var(--slate-100);
-  padding: 25px 20px;
+  background-color: var(--grey-bg);
+  padding: 30px 20px;
   text-align: center;
   border-bottom: 1px solid var(--border-color);
 }
@@ -254,19 +256,38 @@ nav {
   letter-spacing: 0.5px;
 }
 
-/* 8. THE BLUEPRINT (CARDS) */
-.container { max-width: 1150px; margin: 100px auto; padding: 0 20px; }
+/* 8. ALTERNATING SECTION BACKGROUNDS — Zurich rhythm */
+.container { max-width: 1150px; margin: 0 auto; padding: 100px 20px; }
 
+/* Every even section (like the blueprint and testimonials) gets a light grey background */
+section:nth-of-type(even) .container {
+  background-color: var(--grey-bg);
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* But we need the actual container inside those full-width stripes */
+section:nth-of-type(even) .container > * {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Keep section-header styling clean */
 .section-header { text-align: center; max-width: 750px; margin: 0 auto 60px; }
 
 .section-header h2 {
-  font-size: clamp(2rem, 5vw, 3rem);     /* larger */
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.01em;
   margin-bottom: 24px;
 }
 
+/* 9. CARDS — structured, soft shadow on hover, Zurich feel */
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -276,23 +297,24 @@ nav {
 .card {
   background: var(--white);
   border: 1px solid var(--border-color);
-  padding: 50px 40px;
-  border-radius: 4px;
+  padding: 40px 35px;
+  border-radius: 6px;
   transition: var(--transition);
   display: flex;
   flex-direction: column;
+  box-shadow: var(--shadow-card);
 }
 
 .card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
   border-color: var(--navy);
-  box-shadow: var(--shadow-subtle);
-  transform: translateY(-2px);
 }
 
 .card-step {
   color: var(--navy);
   font-weight: 700;
-  font-size: 0.85rem;                /* larger label */
+  font-size: 0.85rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -300,7 +322,7 @@ nav {
 }
 
 .card h3 {
-  font-size: 1.5rem;                 /* larger card title */
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -321,14 +343,31 @@ nav {
 
 .text-link:hover { color: var(--navy-light); }
 
-/* 9. LEAD MAGNET */
+/* 10. TESTIMONIALS — Zurich-style simple quotes */
+.testimonial-grid blockquote {
+  background: var(--white);
+  padding: 20px;
+  border-left: 4px solid var(--navy);
+  font-style: italic;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  box-shadow: var(--shadow-card);
+}
+.testimonial-grid footer {
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--navy);
+}
+
+/* 11. LEAD MAGNET — prominent navy card */
 .lead-magnet-container { padding: 0 20px; margin-bottom: 100px; }
 
 .lead-magnet {
   background: var(--navy);
   color: white;
   padding: clamp(40px, 8vw, 80px) 40px;
-  border-radius: 4px;
+  border-radius: 8px;                 /* slightly softer, still structured */
   text-align: center;
   max-width: 950px;
   margin: 0 auto;
@@ -347,7 +386,7 @@ nav {
   border: 1px solid white;
   font-weight: 700;
   padding: 16px 36px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .lead-magnet .btn-primary:hover {
@@ -355,7 +394,7 @@ nav {
   border-color: var(--slate-100);
 }
 
-/* 10. UNIVERSAL SITE FOOTER */
+/* 12. UNIVERSAL SITE FOOTER */
 .site-footer {
   background-color: var(--slate-900);
   color: var(--slate-100);
@@ -394,50 +433,30 @@ nav {
 
 .footer-bottom { text-align: center; font-size: 0.9rem; color: var(--slate-600); }
 
-/* 11. ADDITIONAL COMPONENTS */
-.hero-photo {
-  display: block;
-  margin: 0 auto 25px;
-}
-
-/* Testimonials – navy accent */
-.testimonial-grid blockquote {
-  background: #f8fafc;
-  padding: 20px;
-  border-left: 4px solid var(--navy);
-  font-style: italic;
-  font-size: 1.1rem;               /* larger quotes */
-  border-radius: 4px;
-}
-.testimonial-grid footer {
-  margin-top: 10px;
-  font-weight: bold;
-  font-style: normal;
-  color: var(--navy);
-}
-
-/* CTA section button hover */
-.cta-section a.btn-primary,
-.cta-section a.btn-secondary {
+/* 13. CTA section */
+.cta-section { background: var(--navy); }
+.cta-section .btn-primary,
+.cta-section .btn-secondary {
   transition: opacity 0.2s;
 }
-.cta-section a:hover {
+.cta-section .btn-primary:hover,
+.cta-section .btn-secondary:hover {
   opacity: 0.9;
 }
 
-/* Floating WhatsApp button */
+/* 14. Floating WhatsApp button */
 .floating-whatsapp {
   background: #25D366;
   color: white;
-  border-radius: 4px;
-  box-shadow: var(--shadow-subtle);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .floating-whatsapp:hover {
   background: #1ebd54;
 }
 
-/* 12. RESPONSIVE MEDIA QUERIES */
+/* 15. RESPONSIVE MEDIA QUERIES */
 
 /* IPAD & TABLET */
 @media (max-width: 1024px) {
@@ -446,7 +465,7 @@ nav {
 
 /* MOBILE OPTIMIZATION */
 @media (max-width: 768px) {
-  .container { padding: 0 15px; }
+  .container { padding: 60px 15px; }
 
   .hero-sub { font-size: 1.1rem; }
 
@@ -466,13 +485,18 @@ nav {
 
   .trust-items { flex-direction: column; gap: 12px; }
 
-  .card { padding: 40px 30px; }
+  .card { padding: 30px 25px; }
 
   .lead-magnet { padding: 50px 25px; }
 
   .site-footer { text-align: left; }
 
   body { padding-bottom: 80px; }
+
+  /* Reset alternating backgrounds on mobile for simplicity */
+  section:nth-of-type(even) .container {
+    background-color: transparent;
+  }
 }
 
 /* SMALL MOBILE */

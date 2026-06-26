@@ -11,7 +11,6 @@
   <meta property="og:title" content="Kit Permulaan Kewangan Halal – Muat Turun Percuma | Hairul Anuar Sulaiman">
   <meta property="og:description" content="Kit percuma untuk profesional muda Muslim – semak simpanan, faham takaful, dan mula melabur dari RM100/bln.">
   <meta property="og:url" content="https://hairulanuarsulaiman.github.io/kit-permulaan.html">
-  <!-- Replace this OG image with your Kit cover or a navy graphic -->
   <meta property="og:image" content="https://hairulanuarsulaiman.github.io/assets/images/kit-cover.png">
   
   <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon.png">
@@ -48,7 +47,7 @@
 
 <main class="container" style="padding-top: 80px; padding-bottom: 80px; text-align: center; max-width: 700px; margin: 0 auto;">
 
-  <!-- Kit cover or icon -->
+  <!-- Kit cover image -->
   <div style="margin-bottom: 25px;">
     <img src="assets/images/kit-cover.png" alt="Kit Permulaan Kewangan Halal" style="max-width: 250px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </div>
@@ -83,10 +82,65 @@
   </a>
 
   <p style="font-size: 0.9rem; color: var(--slate-400); margin-bottom: 40px;">
-    Tiada spam. Emel anda tidak diperlukan di sini — hanya muat turun dan baca.
+    Tiada spam. Anda tidak perlu isi apa‑apa — terus muat turun.
   </p>
 
-  <hr style="border: none; border-top: 1px solid var(--border-color); max-width: 300px; margin: 30px auto;">
+  <!-- Optional email opt‑in: calm, no pressure -->
+  <div style="background: var(--slate-50); border-radius: 6px; padding: 25px 20px; max-width: 450px; margin: 0 auto 40px; text-align: center; border: 1px solid var(--border-color);">
+    <p style="font-weight: 600; color: var(--navy); margin-bottom: 8px;">Mahu tip kewangan halal percuma?</p>
+    <p style="font-size: 0.9rem; color: var(--slate-600); margin-bottom: 15px;">Saya kongsikan panduan ringkas melalui emel — sekali sekala, tanpa spam.</p>
+
+    <form id="opt-in-form" action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+      <input type="hidden" name="access_key" value="075d23be-667c-4d60-8301-66ec3731d89d">
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+      <input type="email" name="email" placeholder="Alamat emel anda" required
+             style="padding: 12px 14px; border-radius: 6px; border: 1px solid var(--border-color); font-size: 1rem; width: 100%; max-width: 300px; font-family: inherit;">
+
+      <button type="submit" class="btn-primary" style="background: var(--navy); color: white; padding: 12px 24px; border-radius: 6px; font-weight: 600; cursor: pointer; border: none; width: 100%; max-width: 300px;">
+        Hantar
+      </button>
+    </form>
+    <p id="opt-in-result" style="font-size: 0.85rem; margin-top: 10px; color: var(--slate-600);"></p>
+  </div>
+
+  <!-- Simple script to handle the optional form without redirect -->
+  <script>
+  const optForm = document.getElementById('opt-in-form');
+  const optResult = document.getElementById('opt-in-result');
+
+  if (optForm) {
+    optForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(optForm);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      optResult.innerHTML = "Sedang dihantar...";
+      optResult.style.color = "var(--navy)";
+
+      fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+          },
+          body: json
+      })
+      .then(async (response) => {
+          if (response.status == 200) {
+              optResult.innerHTML = "✓ Terima kasih! Saya akan hantar tip pertama tidak lama lagi.";
+              optForm.reset();
+          } else {
+              optResult.innerHTML = "Maaf, ada ralat. Sila cuba lagi.";
+          }
+      })
+      .catch(error => {
+          optResult.innerHTML = "Maaf, ada ralat. Sila cuba lagi.";
+      });
+    });
+  }
+  </script>
 
   <p style="font-size: 1rem; color: var(--slate-600); margin-bottom: 20px;">
     Mahu berbual selepas membacanya?

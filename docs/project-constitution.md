@@ -23,3 +23,5 @@ To become the most trusted Bahasa Melayu resource helping young Muslim professio
 7. Keep the website fast, accessible, and easy to navigate.
 
 8. Maintain consistent writing and design across all pages.
+
+9. Understand before implementing.

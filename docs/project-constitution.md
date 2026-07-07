@@ -58,9 +58,18 @@ Gunakan Bahasa Melayu yang semula jadi, dengan istilah industri yang lazim digun
 Artikel harus terus memberi manfaat walaupun dibaca beberapa tahun kemudian.
 
 ⸻
+
 Principle 9
 
 Setiap cadangan bermula dengan kefahaman.
+
+______
+
+Principle 10 — Regulatory Precision
+
+Every professional designation, appointment and regulatory reference on this website must follow the official wording issued by the relevant regulator or licensing body. Marketing language must never overstate or imply qualifications beyond those officially granted.
+
+_______
 
 Design Philosophy
 

@@ -196,11 +196,13 @@ nav {
 }
 
 .hero-outcomes li{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .check{
-    margin-right: 8px;
+    display: inline-block;
+    width: 1.5rem;
+    color: #E8D7A5;
 }
 
 @keyframes fadeInUp {

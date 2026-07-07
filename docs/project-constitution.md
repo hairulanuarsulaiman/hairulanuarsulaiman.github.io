@@ -1,27 +1,94 @@
-# Hairul Knowledge Base
+##Website Constitution v1.0
 
-## Mission
+Hairul Anuar Bin Sulaiman
+Islamic Financial Adviser Representative (IFAR) & Unit Trust Consultant
 
-To become the most trusted Bahasa Melayu resource helping young Muslim professionals build a halal financial foundation.
+Purpose
 
----
+Membantu individu dan keluarga di Malaysia membuat keputusan kewangan yang lebih yakin melalui pendidikan, perancangan yang teliti, dan hubungan jangka panjang yang patuh Syariah.
 
-## Principles
+⸻
 
-1. Education before selling.
+Guiding Principles
 
-2. Every article must genuinely help readers.
+1. Kepercayaan mengatasi populariti.
 
-3. Explain concepts in plain Bahasa Melayu.
+Saya memilih untuk menjadi penasihat yang dipercayai, bukan yang paling lantang.
 
-4. Recommend only Shariah-compliant solutions where appropriate.
+⸻
 
-5. Be transparent about risks.
+2. Pendidikan mendahului cadangan.
 
-6. Prioritize long-term trust over short-term conversions.
+Saya menerangkan konsep, pilihan dan risiko supaya pembaca memahami sebelum membuat keputusan.
 
-7. Keep the website fast, accessible, and easy to navigate.
+⸻
 
-8. Maintain consistent writing and design across all pages.
+3. Manusia didahulukan, produk kemudian.
 
-9. Understand before implementing.
+Saya bermula dengan matlamat, keluarga dan keperluan seseorang—bukan dengan produk.
+
+⸻
+
+4. Kejelasan mengatasi kerumitan.
+
+Bahasa yang mudah difahami lebih bernilai daripada istilah yang mengelirukan.
+
+⸻
+
+5. Hubungan jangka panjang mengatasi jualan jangka pendek.
+
+Kepercayaan dibina melalui konsistensi, bukan tekanan.
+
+⸻
+
+6. Setiap halaman mesti membantu pembaca membuat keputusan yang lebih baik.
+
+Jika sesuatu halaman tidak membantu pembaca memahami sesuatu, ia perlu diperbaiki.
+
+⸻
+
+7. Tulis untuk rakyat Malaysia.
+
+Gunakan Bahasa Melayu yang semula jadi, dengan istilah industri yang lazim digunakan apabila sesuai.
+
+⸻
+
+8. Tulis kandungan yang kekal relevan.
+
+Artikel harus terus memberi manfaat walaupun dibaca beberapa tahun kemudian.
+
+⸻
+
+Design Philosophy
+
+Your website should feel like this:
+
+* Calm, not noisy.
+* Professional, not flashy.
+* Educational, not promotional.
+* Confident, not arrogant.
+* Human, not corporate.
+
+When someone visits your website, I want them to think:
+
+“Saya rasa lebih yakin selepas membaca laman ini.”
+
+Not:
+
+“Saya rasa sedang dijual sesuatu.”
+
+⸻
+
+The North Star
+
+If I had to reduce your entire website to one sentence, it would be this:
+
+“Setiap halaman membantu seseorang membuat keputusan kewangan yang lebih baik.”
+
+That sentence is simple enough to remember, but powerful enough to guide hundreds of future decisions.
+
+⸻
+
+My proposal
+
+I think this constitution deserves its own place in your repository.

@@ -546,3 +546,17 @@ nav {
     border:1px solid rgba(255,255,255,.25);
 
 }
+
+/* Hero Photo Homepage */
+.hero-photo{
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:24px;
+
+    border:3px solid rgba(255,255,255,.15);
+}

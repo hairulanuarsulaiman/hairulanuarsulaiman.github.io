@@ -58,6 +58,9 @@ Gunakan Bahasa Melayu yang semula jadi, dengan istilah industri yang lazim digun
 Artikel harus terus memberi manfaat walaupun dibaca beberapa tahun kemudian.
 
 ⸻
+Principle 9
+
+Setiap cadangan bermula dengan kefahaman.
 
 Design Philosophy
 

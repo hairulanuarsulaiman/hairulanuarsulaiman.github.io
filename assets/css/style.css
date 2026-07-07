@@ -521,3 +521,28 @@ nav {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* Hero Eyebrow*/
+.hero-eyebrow{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    font-size:0.85rem;
+
+    font-weight:600;
+
+    letter-spacing:0.08em;
+
+    text-transform:uppercase;
+
+    color:#E8D7A5;
+
+    border:1px solid rgba(255,255,255,.25);
+
+}

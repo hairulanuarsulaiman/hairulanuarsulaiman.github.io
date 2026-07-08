@@ -278,51 +278,18 @@ nav {
     color: var(--navy);
 }
 
-.credentials-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
+.credentials-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:50px;
 }
 
-.credentials-card{
-    background: white;
-    border: 1px solid var(--slate-200);
-    border-radius: 12px;
-    padding: 30px;
-}
-
-.credentials-card h3{
-    margin-top: 0;
-    margin-bottom: 12px;
-    color: var(--navy);
-    font-size: 1.15rem;
-}
-
-.credentials-card p{
-    margin: 0;
-    color: var(--slate-600);
-    line-height: 1.7;
-}
-
-.trust-bar {
-  background-color: var(--grey-bg);
-  padding: 30px 20px;
-  text-align: center;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.trust-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: clamp(15px, 5vw, 40px);
-  max-width: 1100px;
-  margin: 0 auto;
-  font-size: 0.9rem;
-  color: var(--navy);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.credentials-card {
+    background:white;
+    border:1px solid var(--slate-200);
+    border-radius:12px;
+    padding:30px;
 }
 
 /* 8. ALTERNATING SECTION BACKGROUNDS — Zurich rhythm */

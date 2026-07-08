@@ -253,24 +253,22 @@ nav {
   background: rgba(255,255,255,0.1);
 }
 
-/* 7. TRUST BAR — minimal, light grey background */
-
 /* ==========================================
    Professional Credentials
 ========================================== */
 
-.credentials-section{
+.credentials-section {
     padding: 80px 20px;
     background: var(--slate-50);
 }
 
-.credentials-heading{
+.credentials-heading {
     max-width: 720px;
     margin: 0 auto 60px;
     text-align: center;
 }
 
-.credentials-eyebrow{
+.credentials-eyebrow {
     display: inline-block;
     margin-bottom: 16px;
     font-size: 0.85rem;

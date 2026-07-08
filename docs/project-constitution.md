@@ -71,6 +71,13 @@ Every professional designation, appointment and regulatory reference on this web
 
 _______
 
+
+Principle 11 — Process Before Products
+
+The website explains the financial planning process before introducing financial solutions. Products are presented as tools within a broader planning journey, not as the starting point of the conversation.
+
+--------
+
 Design Philosophy
 
 Your website should feel like this:

@@ -111,3 +111,17 @@ That sentence is simple enough to remember, but powerful enough to guide hundred
 My proposal
 
 I think this constitution deserves its own place in your repository.
+
+
+Milestone 2 — Homepage Foundation (Completed)
+
+The homepage now establishes a clear narrative before introducing any financial solutions:
+
+1. Purpose
+2. Trust
+3. Process
+
+Only after these foundations are established are the core planning areas introduced.
+
+This architecture reflects the principle:
+"Memahami dahulu. Membuat keputusan kemudian."

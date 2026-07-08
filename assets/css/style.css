@@ -227,6 +227,7 @@ nav {
   display: inline-block;
   border: 1px solid var(--navy);
   transition: var(--transition);
+  cursor:pointer;
 }
 
 .btn-primary:hover {
@@ -236,21 +237,25 @@ nav {
 }
 
 .btn-secondary {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 14px 34px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
-  margin-left: 15px;
-  display: inline-block;
-  transition: var(--transition);
+   background: transparent;
+   color: var(--navy);
+   padding: 14px 34px;
+   border-radius: 6px;
+   font-weight: 700;
+   font-size: 1rem;
+   text-decoration: none;
+   display: inline-block;
+   border: 2px solid var(--navy);
+   transition: var(--transition);
+   cursor:pointer;
+
 }
 
 .btn-secondary:hover {
-  background: rgba(255,255,255,0.1);
+   background: var(--navy);
+   color: #fff;
+   transform: translateY(-1px);
+
 }
 
 /* ==========================================

@@ -456,15 +456,78 @@ nav {
 
 .footer-bottom { text-align: center; font-size: 0.9rem; color: var(--slate-600); }
 
-/* 13. CTA section */
-.cta-section { background: var(--navy); }
-.cta-section .btn-primary,
-.cta-section .btn-secondary {
-  transition: opacity 0.2s;
+/* Final Call to Action */
+
+.cta-section{
+
+    padding:80px 20px;
+
+    background:#ffffff;
+
 }
-.cta-section .btn-primary:hover,
-.cta-section .btn-secondary:hover {
-  opacity: 0.9;
+
+.cta-content{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+.cta-eyebrow{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    color:#B08D57;
+
+    border:1px solid rgba(0,0,0,.08);
+
+}
+
+.cta-content h2{
+
+    margin-bottom:24px;
+
+}
+
+.cta-content p{
+
+    max-width:620px;
+
+    margin:0 auto 40px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
 }
 
 /* 14. Floating WhatsApp button */

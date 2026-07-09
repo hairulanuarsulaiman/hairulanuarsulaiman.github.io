@@ -422,44 +422,163 @@ nav {
   border-color: var(--slate-100);
 }
 
-/* 12. UNIVERSAL SITE FOOTER */
-.site-footer {
-  background-color: var(--slate-900);
-  color: var(--slate-100);
-  padding: 80px 0 40px;
-  margin-top: 0;
+/* FOOTER */
+
+.site-footer{
+
+    background:var(--navy);
+
+    color:rgba(255,255,255,.85);
+
+    padding:80px 20px 32px;
+
 }
 
-.footer-container { max-width: 1100px; margin: 0 auto; padding: 0 30px; }
+.footer-container{
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 50px;
-  margin-bottom: 60px;
+    max-width:1200px;
+
+    margin:0 auto;
+
 }
 
-.footer-logo {
-  color: white;
-  font-size: 1.6rem;
-  font-weight: 800;
-  margin-bottom: 20px;
+.footer-grid{
+
+    display:grid;
+
+    gap:48px;
+
 }
 
-.footer-section h4 {
-  color: var(--white);
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+@media(min-width:768px){
+
+.footer-grid{
+
+    grid-template-columns:2fr 1fr 1fr;
+
 }
 
-.footer-links { list-style: none; padding: 0; margin: 0; }
-.footer-links li { margin-bottom: 15px; }
-.footer-links a { color: var(--slate-400); text-decoration: none; font-weight: 500; }
-.footer-links a:hover { color: white; }
+}
 
-.footer-bottom { text-align: center; font-size: 0.9rem; color: var(--slate-600); }
+.footer-name{
+
+    margin-bottom:12px;
+
+    font-size:1.5rem;
+
+    color:#fff;
+
+}
+
+.footer-role{
+
+    margin-bottom:22px;
+
+    color:var(--gold);
+
+    font-weight:600;
+
+    line-height:1.7;
+
+}
+
+.footer-section h4{
+
+    margin-bottom:22px;
+
+    color:#fff;
+
+    font-size:1rem;
+
+}
+
+.footer-section p{
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.72);
+
+}
+
+.footer-links{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:14px;
+
+}
+
+.footer-links a{
+
+    color:rgba(255,255,255,.72);
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+.footer-links a:hover{
+
+    color:#fff;
+
+}
+
+.footer-bottom{
+
+    margin-top:56px;
+
+    padding-top:28px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+.footer-disclaimer{
+
+    color:rgba(255,255,255,.65);
+
+    font-size:.92rem;
+
+    line-height:1.8;
+
+}
+
+.footer-copyright{
+
+    margin-top:18px;
+
+    font-size:.85rem;
+
+    color:rgba(255,255,255,.45);
+
+}
+
+@media(max-width:767px){
+
+.footer-section{
+
+    text-align:center;
+
+}
+
+.footer-links li{
+
+    margin-bottom:16px;
+
+}
+
+}
 
 /* Final Call to Action */
 

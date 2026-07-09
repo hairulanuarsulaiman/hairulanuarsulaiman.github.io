@@ -303,14 +303,18 @@ nav {
     text-align: center;
 }
 
-.credentials-eyebrow {
-    display: inline-block;
-    margin-bottom: 16px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--navy);
+.credentials-eyebrow{
+   display:inline-block;
+   margin-bottom:18px;
+   padding:6px 14px;
+   border-radius:999px;
+   font-size:.85rem;
+   font-weight:600;
+   letter-spacing:.08em;
+   text-transform:uppercase;
+   color:#B08D57;
+   border:1px solid rgba(0,0,0,.08);
+
 }
 
 .credentials-grid {

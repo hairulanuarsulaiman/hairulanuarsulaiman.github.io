@@ -258,6 +258,36 @@ nav {
 
 }
 
+.hero-btns{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
+
+.hero-btns .btn-secondary{
+
+    color:#fff;
+
+    border-color:#fff;
+
+}
+
+.hero-btns .btn-secondary:hover{
+
+    background:rgba(255,255,255,.10);
+
+    color:#fff;
+
+}
+
 /* ==========================================
    Professional Credentials
 ========================================== */

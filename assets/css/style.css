@@ -1131,8 +1131,13 @@ nav {
 }
 
 .article-content h2{
-   margin-top:56px;
-   margin-bottom:18px;
+   margin-top:60px;
+   margin-bottom:20px;
+}
+
+.article-content strong{
+   color:var(--navy);
+   font-weight:700;
 }
 
 .article-content ul,
@@ -1140,6 +1145,10 @@ nav {
    margin-bottom:28px;
    padding-left:24px;
    line-height:1.9;
+}
+
+.article-content li{
+   margin-bottom:10px;
 }
 
 .article-callout{
@@ -1157,6 +1166,10 @@ nav {
    font-style:italic;
 }
 
+.article-quote p{
+   margin:0;
+}
+
 .article-cta{
    margin-top:60px;
    padding:40px;
@@ -1164,6 +1177,17 @@ nav {
    color:white;
    border-radius:12px;
    text-align:center;
+}
+
+.article-cta p{
+   max-width:620px;
+   margin:18px auto 30px;
+}
+
+@media (max-width:768px){
+   .article-cta{
+      padding:30px 24px;
+   }
 }
 
 .article-disclaimer{

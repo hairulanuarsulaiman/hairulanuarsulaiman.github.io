@@ -1213,4 +1213,16 @@ nav {
     object-fit:cover;
 }
 
+.article-quote cite{
+
+display:block;
+
+margin-top:1rem;
+
+font-style:normal;
+
+font-weight:600;
+
+}
+
  

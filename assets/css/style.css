@@ -1190,6 +1190,13 @@ nav {
    }
 }
 
+.article-cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+}
+
 .article-disclaimer{
    margin-top:40px;
    font-size:.9rem;

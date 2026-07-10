@@ -1204,5 +1204,13 @@ nav {
    font-style:italic;
 }
 
+.author-photo{
+    display:block;
+    width:130px;
+    height:130px;
+    margin:0 auto 40px;
+    border-radius:50%;
+    object-fit:cover;
+}
 
  

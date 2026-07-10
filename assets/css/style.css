@@ -1112,6 +1112,7 @@ nav {
 .article-cover{
     display:block;
     width:100%;
+    max-width:850px;
     height:auto;
     margin:0 auto 40px;
     border-radius:12px;

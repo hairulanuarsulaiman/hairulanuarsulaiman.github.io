@@ -1110,12 +1110,12 @@ nav {
 }
 
 .article-cover{
-   display:block;
-   width:130px;
-   height:130px;
-   margin:0 auto 40px;
-   border-radius:50%;
-   object-fit:cover;
+    display:block;
+    width:100%;
+    max-width:850px;
+    height:auto;
+    margin:0 auto 40px;
+    border-radius:12px;
 }
 
 .article-intro{

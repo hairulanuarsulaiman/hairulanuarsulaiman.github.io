@@ -41,7 +41,7 @@ h1, h2, h3, h4 { color: var(--navy); margin-top: 0; font-weight: 700; }
 a { color: var(--navy); transition: var(--transition); }
 
 /* 3. NAVIGATION — solid white, Zurich-clean */
-nav {
+header nav {
   background: var(--white);
   border-bottom: 1px solid var(--border-color);
   position: sticky;

@@ -641,10 +641,20 @@ header nav {
 
 /* 14. Floating WhatsApp button */
 .floating-whatsapp {
+  position: fixed;        /* Makes it float over the page */
+  bottom: 20px;           /* Distance from bottom */
+  right: 20px;            /* Distance from right */
+  z-index: 9999;          /* Ensures it stays on top of other content */
   background: #25D366;
   color: white;
+  padding: 12px 20px;     /* Added padding to make it a button */
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  text-decoration: none;  /* Removes underline */
+  font-weight: bold;
+  display: flex;          /* Helps center the icon and text */
+  align-items: center;
+  transition: background 0.3s ease;
 }
 
 .floating-whatsapp:hover {

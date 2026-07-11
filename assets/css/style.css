@@ -1225,4 +1225,89 @@ font-weight:600;
 
 }
 
+/* ========================================== */
+/* Author Box (Article Page)                  */
+/* ========================================== */
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 30px;
+  background-color: var(--slate-50);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-top: 60px;
+}
+
+.author-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevents the image from being squished */
+}
+
+.author-details h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  color: var(--navy);
+}
+
+.author-details p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--slate-600);
+  line-height: 1.6;
+}
+
+/* Mobile responsiveness for the author box */
+@media (max-width: 600px) {
+  .author-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 20px;
+  }
+}
+
+/* ========================================== */
+/* Contact Form (Hubungi Page)                */
+/* ========================================== */
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--navy);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover & Focus States (For good User Experience) */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1); /* Subtle navy glow */
+}
+
+/* Placeholder text color */
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #94a3b8; /* Slate-400 equivalent */
+}
+
+/* Specific styling for the text area */
+.form-textarea {
+  resize: vertical; /* Prevents user from breaking the layout horizontally */
+  min-height: 120px;
+}
  

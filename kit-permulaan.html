@@ -16,93 +16,119 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Page-Specific Styles (Replaces Inline CSS) -->
+  <style>
+    .kit-container { padding: 80px 20px; text-align: center; max-width: 700px; margin: 0 auto; }
+    .kit-cover-wrapper { margin-bottom: 25px; }
+    .kit-cover-img { max-width: 250px; width: 100%; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    
+    .kit-subtitle { font-size: 1.2rem; color: var(--slate-600); margin-bottom: 15px; }
+    .kit-intro { font-size: 1.1rem; color: var(--slate-600); margin-bottom: 25px; }
+    
+    .kit-benefits-list { list-style: none; padding: 0; margin: 0 auto 30px; max-width: 400px; text-align: left; }
+    .kit-benefits-list li { margin-bottom: 12px; color: var(--slate-600); }
+    .kit-benefits-list .check { color: var(--navy); font-weight: bold; margin-right: 8px; }
+    
+    .kit-download-btn { display: inline-block; margin-bottom: 30px; padding: 16px 40px; }
+    .kit-spam-note { font-size: 0.9rem; color: var(--slate-400); margin-bottom: 40px; }
+    
+    .opt-in-container { background: var(--slate-50); border-radius: 6px; padding: 25px 20px; max-width: 450px; margin: 0 auto 40px; text-align: center; border: 1px solid var(--border-color); }
+    .opt-in-heading { font-weight: 600; color: var(--navy); margin-bottom: 8px; font-size: 1.1rem; }
+    .opt-in-desc { font-size: 0.9rem; color: var(--slate-600); margin-bottom: 15px; }
+    .opt-in-form { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+    .opt-in-input { padding: 12px 14px; border-radius: 6px; border: 1px solid var(--border-color); font-size: 1rem; width: 100%; max-width: 300px; font-family: inherit; }
+    .opt-in-submit { background: var(--navy); color: white; padding: 12px 24px; border-radius: 6px; font-weight: 600; cursor: pointer; border: none; width: 100%; max-width: 300px; }
+    .opt-in-result { font-size: 0.85rem; margin-top: 10px; color: var(--slate-600); }
+    
+    .kit-bottom-cta { font-size: 1rem; color: var(--slate-600); margin-bottom: 20px; }
+    .btn-whatsapp-inline { background: #25D366; border-color: #25D366; margin-bottom: 10px; color: white; }
+    .btn-whatsapp-inline:hover { background: #1ebd5a; border-color: #1ebd5a; }
+    .kit-bottom-note { font-size: 0.9rem; color: var(--slate-400); }
+    .kit-back-link { margin-top: 40px; }
+    .kit-back-link a { color: var(--navy); text-decoration: underline; }
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <div class="nav-container">
-    <a href="index.html" class="logo">Hairul Anuar Sulaiman</a>
-    
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+<header>
+  <nav aria-label="Navigasi Utama">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Hairul Anuar Sulaiman</a>
+      
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="tentang.html">Tentang Saya</a>
-      <a href="takaful.html">Takaful</a>
-      <a href="unittrust.html">Unit Trust</a>
-      <a href="persaraan.html">Persaraan</a>
-      <a href="faq.html">FAQ</a>
-      <a href="kit-permulaan.html" class="active">Kit Percuma</a>
-      <a href="hubungi.html">Hubungi Saya</a>
-      <a href="artikel.html">Artikel</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang Saya</a>
+        <a href="takaful.html">Takaful</a>
+        <a href="unittrust.html">Unit Trust</a>
+        <a href="persaraan.html">Persaraan</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kit-permulaan.html" class="active">Kit Percuma</a>
+        <a href="hubungi.html">Hubungi Saya</a>
+        <a href="artikel.html">Artikel</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<main class="container" style="padding-top: 80px; padding-bottom: 80px; text-align: center; max-width: 700px; margin: 0 auto;">
+<main class="kit-container">
 
   <!-- Kit cover image -->
-  <div style="margin-bottom: 25px;">
-    <img src="assets/images/kit-cover.png" alt="Kit Permulaan Kewangan Halal" style="max-width: 250px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+  <div class="kit-cover-wrapper">
+    <img src="assets/images/kit-cover.png" alt="Muka depan Kit Permulaan Kewangan Halal" class="kit-cover-img">
   </div>
 
-  <h1>Muat Turun Kit Permulaan Kewangan Halal</h1>
-  
-  <p style="font-size: 1.2rem; color: var(--slate-600); margin-bottom: 15px;">
-    Panduan ringkas khas untuk profesional muda berusia 20‑an & 30‑an di Johor.
-  </p>
+  <header>
+    <h1 class="article-title">Muat Turun Kit Permulaan Kewangan Halal</h1>
+    <p class="kit-subtitle">
+      Panduan ringkas khas untuk profesional muda berusia 20‑an & 30‑an di Johor.
+    </p>
+  </header>
 
-  <p style="font-size: 1.1rem; color: var(--slate-600); margin-bottom: 25px;">
+  <p class="kit-intro">
     Di dalam kit ini, anda akan dapat:
   </p>
 
-  <ul style="list-style: none; padding: 0; margin: 0 auto 30px; max-width: 400px; text-align: left;">
-    <li style="margin-bottom: 12px; color: var(--slate-600);">
-      <span style="color: var(--navy); font-weight: bold;">✔</span> Senarai Semak – Adakah simpanan anda bebas riba?
-    </li>
-    <li style="margin-bottom: 12px; color: var(--slate-600);">
-      <span style="color: var(--navy); font-weight: bold;">✔</span> Panduan ringkas berapa perlindungan takaful yang anda benar‑benar perlu
-    </li>
-    <li style="margin-bottom: 12px; color: var(--slate-600);">
-      <span style="color: var(--navy); font-weight: bold;">✔</span> 3 contoh dana unit trust Islamik sesuai untuk pemula
-    </li>
-    <li style="margin-bottom: 12px; color: var(--slate-600);">
-      <span style="color: var(--navy); font-weight: bold;">✔</span> 5‑Minit Semakan Kesihatan Kewangan
-    </li>
+  <ul class="kit-benefits-list">
+    <li><span class="check" aria-hidden="true">✔</span> Senarai Semak – Adakah simpanan anda bebas riba?</li>
+    <li><span class="check" aria-hidden="true">✔</span> Panduan ringkas berapa perlindungan takaful yang anda benar‑benar perlu</li>
+    <li><span class="check" aria-hidden="true">✔</span> 3 contoh dana unit trust Islamik sesuai untuk pemula</li>
+    <li><span class="check" aria-hidden="true">✔</span> 5‑Minit Semakan Kesihatan Kewangan</li>
   </ul>
 
-  <a href="assets/docs/kit-permulaan-kewangan-halal.pdf" download class="btn-primary" style="display: inline-block; margin-bottom: 30px; padding: 16px 40px;">
+  <a href="assets/docs/kit-permulaan-kewangan-halal.pdf" download class="btn-primary kit-download-btn">
     Muat Turun Kit Percuma →
   </a>
 
-  <p style="font-size: 0.9rem; color: var(--slate-400); margin-bottom: 40px;">
+  <p class="kit-spam-note">
     Tiada spam. Anda tidak perlu isi apa‑apa — terus muat turun.
   </p>
 
   <!-- Optional email opt‑in: calm, no pressure -->
-  <div style="background: var(--slate-50); border-radius: 6px; padding: 25px 20px; max-width: 450px; margin: 0 auto 40px; text-align: center; border: 1px solid var(--border-color);">
-    <p style="font-weight: 600; color: var(--navy); margin-bottom: 8px;">Mahu tip kewangan halal percuma?</p>
-    <p style="font-size: 0.9rem; color: var(--slate-600); margin-bottom: 15px;">Saya kongsikan panduan ringkas melalui emel — sekali sekala, tanpa spam.</p>
+  <section class="opt-in-container" aria-labelledby="opt-in-title">
+    <h2 id="opt-in-title" class="opt-in-heading">Mahu tip kewangan halal percuma?</h2>
+    <p class="opt-in-desc">Saya kongsikan panduan ringkas melalui emel — sekali sekala, tanpa spam.</p>
 
-    <form id="opt-in-form" action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+    <form id="opt-in-form" action="https://api.web3forms.com/submit" method="POST" class="opt-in-form">
       <input type="hidden" name="access_key" value="075d23be-667c-4d60-8301-66ec3731d89d">
       <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-      <input type="email" name="email" placeholder="Alamat emel anda" required
-             style="padding: 12px 14px; border-radius: 6px; border: 1px solid var(--border-color); font-size: 1rem; width: 100%; max-width: 300px; font-family: inherit;">
+      <input type="email" name="email" placeholder="Alamat emel anda" required class="opt-in-input" aria-label="Alamat emel anda">
 
-      <button type="submit" class="btn-primary" style="background: var(--navy); color: white; padding: 12px 24px; border-radius: 6px; font-weight: 600; cursor: pointer; border: none; width: 100%; max-width: 300px;">
+      <button type="submit" class="opt-in-submit">
         Hantar
       </button>
     </form>
-    <p id="opt-in-result" style="font-size: 0.85rem; margin-top: 10px; color: var(--slate-600);"></p>
-  </div>
+    <div id="opt-in-result" class="opt-in-result" aria-live="polite"></div>
+  </section>
 
   <!-- Simple script to handle the optional form without redirect -->
   <script>
@@ -130,105 +156,83 @@
       .then(async (response) => {
           if (response.status == 200) {
               optResult.innerHTML = "✓ Terima kasih! Saya akan hantar tip pertama tidak lama lagi.";
+              optResult.style.color = "#25D366"; /* Success Green */
               optForm.reset();
           } else {
               optResult.innerHTML = "Maaf, ada ralat. Sila cuba lagi.";
+              optResult.style.color = "red";
           }
       })
       .catch(error => {
           optResult.innerHTML = "Maaf, ada ralat. Sila cuba lagi.";
+          optResult.style.color = "red";
       });
     });
   }
   </script>
 
-  <p style="font-size: 1rem; color: var(--slate-600); margin-bottom: 20px;">
+  <p class="kit-bottom-cta">
     Mahu berbual selepas membacanya?
   </p>
-  <a href="https://wa.me/601127657730" class="btn-primary" style="background: #25D366; border-color: #25D366; margin-bottom: 10px;">💬 WhatsApp Saya</a>
-  <p style="font-size: 0.9rem; color: var(--slate-400);">
+  <a href="https://wa.me/601127657730" class="btn-primary btn-whatsapp-inline" target="_blank" rel="noopener noreferrer">💬 WhatsApp Saya</a>
+  <p class="kit-bottom-note">
     Sesi 30 minit pertama adalah percuma.
   </p>
 
-  <p style="margin-top: 40px;">
-    <a href="index.html" style="color: var(--navy); text-decoration: underline;">← Kembali ke Laman Utama</a>
-  </p>
+  <div class="kit-back-link">
+    <a href="index.html">← Kembali ke Laman Utama</a>
+  </div>
 
 </main>
 
 <!-- ========================================== -->
-<!-- 08. Footer -->
+<!-- 08. Footer (Updated & Compliant) -->
 <!-- ========================================== -->
-
 <footer class="site-footer">
   <div class="footer-container">
-
     <div class="footer-grid">
-
       <div class="footer-section">
-
-        <h3 class="footer-name">
-          Hairul Anuar Bin Sulaiman
-        </h3>
-
+        <h3 class="footer-name">Hairul Anuar Bin Sulaiman</h3>
         <p class="footer-role">
           Islamic Financial Adviser Representative (IFAR)<br>
           Unit Trust Scheme Consultant
         </p>
-
-        <p>
-          Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin melalui perlindungan, 
-          pelaburan dan perancangan persaraan berlandaskan prinsip Syariah.
-        </p>
-
+        <p>Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin berlandaskan prinsip Syariah.</p>
       </div>
-
       <div class="footer-section">
-
         <h4>Terokai</h4>
-
-        <ul class="footer-links">
-          <li><a href="tentang.html">Tentang Saya</a></li>
-          <li><a href="takaful.html">Perlindungan Kewangan</a></li>
-          <li><a href="unittrust.html">Pelaburan</a></li>
-          <li><a href="persaraan.html">Persaraan</a></li>
-          <li><a href="artikel.html">Artikel</a></li>
-          <li><a href="hubungi.html">Hubungi</a></li>
-        </ul>
-
+        <nav aria-label="Navigasi Pengaki">
+          <ul class="footer-links">
+            <li><a href="tentang.html">Tentang Saya</a></li>
+            <li><a href="takaful.html">Perlindungan Kewangan</a></li>
+            <li><a href="unittrust.html">Pelaburan</a></li>
+            <li><a href="persaraan.html">Persaraan</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="hubungi.html">Hubungi</a></li>
+          </ul>
+        </nav>
       </div>
-
       <div class="footer-section">
-
         <h4>Maklumat & Pendedahan</h4>
-
-        <ul class="footer-links">
-          <li><a href="pendedahan.html">Pendedahan Kawal Selia</a></li>
-          <li><a href="privasi.html">Dasar Privasi</a></li>
-          <li><a href="penafian.html">Penafian</a></li>
-        </ul>
-
+        <nav aria-label="Navigasi Pendedahan">
+          <ul class="footer-links">
+            <li><a href="pendedahan.html">Pendedahan Kawal Selia</a></li>
+            <li><a href="privasi.html">Dasar Privasi</a></li>
+            <li><a href="penafian.html">Penafian</a></li>
+          </ul>
+        </nav>
       </div>
-
     </div>
-
     <div class="footer-bottom">
-
-      <p class="footer-disclaimer">
-        Pelaburan melibatkan risiko. Sila baca dokumen berkaitan sebelum membuat sebarang keputusan kewangan.
-      </p>
-
-      <p class="footer-copyright">
-        &copy; 2026 Hairul Anuar Bin Sulaiman. Hak Cipta Terpelihara.
-      </p>
-
+      <p class="footer-disclaimer">Pelaburan melibatkan risiko. Sila baca dokumen berkaitan sebelum membuat sebarang keputusan kewangan.</p>
+      <p class="footer-copyright">&copy; 2026 Hairul Anuar Bin Sulaiman. Hak Cipta Terpelihara.</p>
     </div>
-
   </div>
 </footer>
 
-
-<a href="https://wa.me/601127657730" class="floating-whatsapp" style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:12px 20px; border-radius:6px; text-decoration:none; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:999;">💬 WhatsApp</a>
+<aside>
+  <a href="https://wa.me/601127657730" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Hubungi saya melalui WhatsApp">💬 WhatsApp</a>
+</aside>
 
 </body>
 </html>

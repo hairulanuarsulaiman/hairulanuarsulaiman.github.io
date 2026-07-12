@@ -17,6 +17,27 @@
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css">
 
+  <!-- Page-Specific Styles (Replaces Inline CSS) -->
+  <style>
+    .contact-header { text-align: center; margin-bottom: 40px; }
+    .contact-grid { margin-bottom: 50px; }
+    .contact-card { text-align: center; }
+    .contact-icon { font-size: 2.5rem; margin-bottom: 15px; }
+    .btn-whatsapp { background: #25D366; border-color: #25D366; color: white; }
+    .btn-whatsapp:hover { background: #1ebd5a; border-color: #1ebd5a; }
+    
+    .contact-form-section { text-align: center; }
+    .contact-form-section h2 { margin-bottom: 25px; }
+    .form-layout { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto; text-align: left; }
+    .form-submit-btn { width: 100%; margin-top: 10px; }
+    .form-privacy-note { text-align: center; font-size: 0.9rem; color: var(--slate-400); margin-top: 15px; }
+    .form-result-msg { text-align: center; margin-top: 15px; font-weight: bold; }
+    
+    .consultation-info { text-align: center; margin-top: 50px; }
+    .consultation-info h2 { margin-bottom: 15px; }
+    .free-session-badge { background: var(--navy); color: white; padding: 8px 16px; border-radius: 20px; font-weight: bold; font-size: 0.95rem; display: inline-block; margin: 20px 0; }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,7 +58,6 @@
 
 <body>
 
-<!-- PAGE HEADER -->
 <header>
   <nav aria-label="Navigasi Utama">
     <div class="nav-container">
@@ -68,7 +88,7 @@
 <main class="article-container">
 
   <!-- Hero Section -->
-  <header style="text-align: center; margin-bottom: 40px;">
+  <header class="contact-header">
     <h1 class="article-title">Mari Bincangkan Langkah Pertama Anda</h1>
     <p class="article-intro">
       Tiada tekanan, tiada komitmen serta-merta. Hanya perbualan telus untuk melihat kedudukan kewangan anda sekarang, dan merangka langkah yang paling sesuai—sama ada perlindungan takaful, pelaburan, atau persaraan.
@@ -76,36 +96,35 @@
   </header>
 
   <!-- Contact Methods Grid -->
-  <div class="expect-grid" style="margin-bottom: 50px;">
-    
-    <article class="expect-card" style="text-align: center;">
-      <div style="font-size: 2.5rem; margin-bottom: 15px;" aria-hidden="true">💬</div>
+  <div class="expect-grid contact-grid">
+    <article class="expect-card contact-card">
+      <div class="contact-icon" aria-hidden="true">💬</div>
       <h3>WhatsApp</h3>
       <p>Respon pantas. Tanya soalan, minta pandangan awal, atau terus tetapkan masa untuk bersua.</p>
-      <a href="https://wa.me/601127657730" class="btn-primary" target="_blank" rel="noopener noreferrer" style="background: #25D366; border-color: #25D366; color: white;">WhatsApp Saya</a>
+      <a href="https://wa.me/601127657730" class="btn-primary btn-whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp Saya</a>
     </article>
 
-    <article class="expect-card" style="text-align: center;">
-      <div style="font-size: 2.5rem; margin-bottom: 15px;" aria-hidden="true">📧</div>
+    <article class="expect-card contact-card">
+      <div class="contact-icon" aria-hidden="true">📧</div>
       <h3>E-mel</h3>
       <p>Lebih selesa secara rasmi? Hantarkan butiran pertanyaan anda dan saya akan balas dalam masa 24 jam.</p>
       <a href="mailto:hairul.financial@gmail.com" class="btn-primary">Hantar Emel</a>
     </article>
-    
   </div>
 
   <!-- Contact Form Section -->
-  <section class="article-content" aria-labelledby="form-heading">
-    <h2 id="form-heading" style="text-align: center; margin-bottom: 25px;">Tinggalkan Pesanan Ringkas</h2>
+  <section class="article-content contact-form-section" aria-labelledby="form-heading">
+    <h2 id="form-heading">Tinggalkan Pesanan Ringkas</h2>
     
-    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="form-container" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto;">
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="form-layout">
       <input type="hidden" name="access_key" value="075d23be-667c-4d60-8301-66ec3731d89d">
       <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
       
-      <input type="text" name="name" placeholder="Nama Penuh Anda" required class="form-input">
-      <input type="email" name="email" placeholder="Alamat Emel Anda" required class="form-input">
+      <!-- Added aria-labels for accessibility -->
+      <input type="text" name="name" placeholder="Nama Penuh Anda" required class="form-input" aria-label="Nama Penuh Anda">
+      <input type="email" name="email" placeholder="Alamat Emel Anda" required class="form-input" aria-label="Alamat Emel Anda">
       
-      <select name="service" required class="form-select">
+      <select name="service" required class="form-select" aria-label="Pilih jenis perkhidmatan">
         <option value="">Saya ingin tahu lebih lanjut tentang...</option>
         <option value="Takaful Perlindungan">Takaful – Perlindungan Pendapatan & Hayat</option>
         <option value="Unit Trust">Unit Trust Islamik – Simpanan Berkala</option>
@@ -114,28 +133,28 @@
         <option value="Umum">Pertanyaan Umum</option>
       </select>
       
-      <textarea name="message" placeholder="Ceritakan serba sedikit tentang keperluan atau soalan anda..." rows="5" required class="form-textarea"></textarea>
+      <textarea name="message" placeholder="Ceritakan serba sedikit tentang keperluan atau soalan anda..." rows="5" required class="form-textarea" aria-label="Mesej atau pertanyaan anda"></textarea>
       
-      <button type="submit" class="btn-primary" style="width: 100%;">Hantar Pertanyaan →</button>
-      <div id="form-result" style="text-align: center; margin-top: 15px; font-weight: bold;"></div>
+      <button type="submit" class="btn-primary form-submit-btn">Hantar Pertanyaan →</button>
+      <div id="form-result" class="form-result-msg" aria-live="polite"></div>
     </form>
     
-    <p style="text-align: center; font-size: 0.9rem; color: var(--slate-400); margin-top: 10px;">
+    <p class="form-privacy-note">
       Maklumat anda dirahsiakan dan dilindungi sepenuhnya.
     </p>
   </section>
 
   <!-- Location & Credentials Info -->
-  <section class="article-callout" style="text-align: center; margin-top: 50px;">
-    <h2 style="margin-bottom: 15px;">Maklumat Konsultasi</h2>
+  <section class="article-callout consultation-info" aria-labelledby="consultation-heading">
+    <h2 id="consultation-heading">Maklumat Konsultasi</h2>
     <p><strong>Konsultasi Atas Talian:</strong> Seluruh Malaysia (Google Meet / Zoom)</p>
     <p><strong>Kawasan Bersemuka:</strong> Kota Tinggi, Johor Bahru, Kluang</p>
-    <p style="margin: 20px 0;">
-      <span style="background: var(--navy); color: white; padding: 8px 16px; border-radius: 20px; font-weight: bold; font-size: 0.95rem;">
-        🕒 Sesi 30 minit pertama adalah PERCUMA
-      </span>
-    </p>
-    <p class="article-disclaimer" style="margin-top: 20px;">
+    
+    <div class="free-session-badge">
+      🕒 Sesi 30 minit pertama adalah PERCUMA
+    </div>
+    
+    <p class="article-disclaimer">
       Pendaftaran FIMM: <strong>F01040203</strong> | Lantikan IFAR: Phillip Wealth Planners Sdn Bhd<br>
       <a href="https://www.bnm.gov.my/regulations/fsp-directory/far" target="_blank" rel="noopener noreferrer">Semak status IFAR saya di Direktori FAR BNM</a>
     </p>
@@ -144,7 +163,7 @@
 </main>
 
 <!-- ========================================== -->
-<!-- 08. Footer -->
+<!-- 08. Footer (Updated & Compliant) -->
 <!-- ========================================== -->
 <footer class="site-footer">
   <div class="footer-container">
@@ -155,7 +174,7 @@
           Islamic Financial Adviser Representative (IFAR)<br>
           Unit Trust Scheme Consultant
         </p>
-        <p>Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin melalui perlindungan, pelaburan dan perancangan persaraan berlandaskan prinsip Syariah.</p>
+        <p>Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin berlandaskan prinsip Syariah.</p>
       </div>
       <div class="footer-section">
         <h4>Terokai</h4>
@@ -166,7 +185,7 @@
             <li><a href="unittrust.html">Pelaburan</a></li>
             <li><a href="persaraan.html">Persaraan</a></li>
             <li><a href="artikel.html">Artikel</a></li>
-            <li><a href="hubungi.html">Hubungi</a></li>
+            <li><a href="hubungi.html" class="active">Hubungi</a></li>
           </ul>
         </nav>
       </div>

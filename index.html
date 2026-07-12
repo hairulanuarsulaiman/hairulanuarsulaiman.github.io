@@ -41,12 +41,17 @@
 
 <body>
 
-<!-- PAGE HEADER -->
+<!-- ========================================== -->
+<!-- PAGE HEADER (Upgraded with Dropdowns)      -->
+<!-- ========================================== -->
 <header>
   <nav aria-label="Navigasi Utama">
     <div class="nav-container">
+      
+      <!-- Logo -->
       <a href="index.html" class="logo">Hairul Anuar Sulaiman</a>
       
+      <!-- Hamburger Toggle (Mobile) -->
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
         <span></span>
@@ -54,18 +59,50 @@
         <span></span>
       </label>
 
+      <!-- Navigation Links -->
       <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="tentang.html">Tentang Saya</a>
-        <a href="takaful.html">Takaful</a>
-        <a href="unittrust.html">Unit Trust</a>
-        <a href="persaraan.html">Persaraan</a>
-        <a href="faq.html">FAQ</a>
-        <a href="kit-permulaan.html">Kit Percuma</a>
-        <a href="hubungi.html">Hubungi Saya</a>
-        <a href="artikel.html">Artikel</a>
+        <ul class="nav-list">
+          
+          <!-- 1. Utama -->
+          <li><a href="index.html" class="active">Utama</a></li>
+          
+          <!-- 2. Tentang Saya -->
+          <li><a href="tentang.html">Tentang Saya</a></li>
+          
+          <!-- 3. PERKHIDMATAN (Dropdown) -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+              Perkhidmatan <span class="caret">▾</span>
+            </a>
+            <ul class="dropdown-menu" aria-label="Submenu Perkhidmatan">
+              <li><a href="takaful.html">🛡 Perlindungan (Takaful)</a></li>
+              <li><a href="unittrust.html">📈 Pelaburan (Unit Trust)</a></li>
+              <li><a href="persaraan.html">🌿 Strategi Persaraan</a></li>
+            </ul>
+          </li>
+
+          <!-- 4. SUMBER (Dropdown) -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+              Sumber <span class="caret">▾</span>
+            </a>
+            <ul class="dropdown-menu" aria-label="Submenu Sumber">
+              <li><a href="artikel.html">📖 Artikel</a></li>
+              <li><a href="faq.html">❓ FAQ</a></li>
+            </ul>
+          </li>
+
+          <!-- 5. Hubungi -->
+          <li><a href="hubungi.html">Hubungi</a></li>
+          
+          <!-- 6. Kit Percuma (Highlighted CTA Button) -->
+          <li><a href="kit-permulaan.html" class="btn-nav-cta">📥 Kit Percuma</a></li>
+          
+        </ul>
       </div>
+      <!-- End .nav-links -->
     </div>
+    <!-- End .nav-container -->
   </nav>
 </header>
 
@@ -533,6 +570,63 @@
 </aside>
     
 <script>
+
+  // ==========================================
+// MOBILE DROPDOWN TOGGLE & NAV BEHAVIOR
+// ==========================================
+document.addEventListener('DOMContentLoaded', function() {
+
+  // 1. Toggle dropdown on click (for mobile)
+  const toggleButtons = document.querySelectorAll('.dropdown-toggle');
+  
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      const parentLi = this.closest('.dropdown');
+      const isCurrentlyOpen = parentLi.classList.contains('open');
+      
+      // Tutup dropdown lain yang terbuka (agar kemas)
+      document.querySelectorAll('.dropdown.open').forEach(d => {
+        if (d !== parentLi) {
+          d.classList.remove('open');
+          d.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      // Toggle dropdown ini
+      if (isCurrentlyOpen) {
+        parentLi.classList.remove('open');
+        this.setAttribute('aria-expanded', 'false');
+      } else {
+        parentLi.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+      
+      e.preventDefault(); // Halang lompat ke atas halaman
+    });
+  });
+
+  // 2. Tutup dropdown jika pengguna klik di luar nav
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown') && !e.target.closest('.menu-icon')) {
+      document.querySelectorAll('.dropdown.open').forEach(d => {
+        d.classList.remove('open');
+        d.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  // 3. Tutup menu hamburger apabila link diklik (untuk UX lebih baik)
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function() {
+      const checkbox = document.getElementById('menu-toggle');
+      if (checkbox && checkbox.checked) {
+        checkbox.checked = false;
+      }
+    });
+  });
+
+});
+  
 /* 
   NOTE: This code is commented out because the ID 'lead-magnet-form' 
   does not exist in the HTML above. If this form belongs on a separate page 

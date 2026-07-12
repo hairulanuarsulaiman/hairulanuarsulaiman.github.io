@@ -17,7 +17,21 @@
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- FAQPage Schema (questions mirror the visible content) -->
+  <!-- Page-Specific Styles (Replaces Inline CSS) -->
+  <style>
+    .faq-container { padding-top: 60px; padding-bottom: 60px; max-width: 800px; margin: 0 auto; }
+    .faq-header { text-align: center; margin-bottom: 40px; }
+    .faq-intro { font-size: 1.1rem; color: var(--slate-600); }
+    .faq-list { display: flex; flex-direction: column; gap: 25px; }
+    .faq-card { background: var(--slate-50); padding: 25px; border-radius: 6px; border-left: 4px solid var(--navy); }
+    .faq-card h2 { margin-top: 0; font-size: 1.25rem; }
+    .faq-cta-section { text-align: center; margin-top: 50px; }
+    .faq-cta-section p { font-size: 1.1rem; color: var(--slate-600); margin-bottom: 15px; }
+    .btn-whatsapp { background: #25D366; border-color: #25D366; color: white; }
+    .btn-whatsapp:hover { background: #1ebd5a; border-color: #1ebd5a; }
+  </style>
+
+  <!-- FAQPage Schema (Updated for Compliance) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,10 +71,10 @@
       },
       {
         "@type": "Question",
-        "name": "Bagaimana cara mengesahkan lesen Hairul?",
+        "name": "Bagaimana cara mengesahkan status pendaftaran Hairul?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Anda boleh menyemak lesen saya secara dalam talian. Saya Perunding Unit Trust berdaftar dengan FIMM (nombor F01040203) dan Wakil IFAR dilantik oleh Phillip Wealth Planners Sdn Bhd – status boleh disemak di direktori FAR Bank Negara Malaysia."
+          "text": "Anda boleh menyemak status saya secara dalam talian. Saya Perunding Unit Trust berdaftar dengan FIMM (nombor F01040203) dan Wakil IFAR dilantik oleh Phillip Wealth Planners Sdn Bhd – status boleh disemak di direktori FAR Bank Negara Malaysia."
         }
       },
       {
@@ -102,175 +116,156 @@
 
 <body>
 
-<nav>
-  <div class="nav-container">
-    <a href="index.html" class="logo">Hairul Anuar Sulaiman</a>
-    
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+<header>
+  <nav aria-label="Navigasi Utama">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Hairul Anuar Sulaiman</a>
+      
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="tentang.html">Tentang Saya</a>
-      <a href="takaful.html">Takaful</a>
-      <a href="unittrust.html">Unit Trust</a>
-      <a href="persaraan.html">Persaraan</a>
-      <a href="faq.html" class="active">FAQ</a>
-      <a href="kit-permulaan.html">Kit Percuma</a>
-      <a href="hubungi.html">Hubungi Saya</a>
-      <a href="artikel.html">Artikel</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang Saya</a>
+        <a href="takaful.html">Takaful</a>
+        <a href="unittrust.html">Unit Trust</a>
+        <a href="persaraan.html">Persaraan</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="kit-permulaan.html">Kit Percuma</a>
+        <a href="hubungi.html">Hubungi Saya</a>
+        <a href="artikel.html">Artikel</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<main class="container" style="padding-top: 60px; padding-bottom: 60px; max-width: 800px; margin: 0 auto;">
+<main class="faq-container">
 
-  <h1>Soalan Lazim (FAQ)</h1>
-  <p style="font-size: 1.1rem; color: var(--slate-600); margin-bottom: 40px;">
-    Jawapan ringkas untuk soalan yang paling kerap ditanya oleh profesional muda yang baru mula meneroka takaful, pelaburan unit trust Islamik, dan perancangan persaraan patuh Syariah.
-  </p>
+  <header class="faq-header">
+    <h1>Soalan Lazim (FAQ)</h1>
+    <p class="faq-intro">
+      Jawapan ringkas untuk soalan yang paling kerap ditanya oleh profesional muda yang baru mula meneroka takaful, pelaburan unit trust Islamik, dan perancangan persaraan patuh Syariah.
+    </p>
+  </header>
 
-  <div style="display: flex; flex-direction: column; gap: 25px;">
+  <section class="faq-list" aria-label="Senarai Soalan Lazim">
 
     <!-- Q1: Takaful starter -->
-    <div style="background: var(--slate-50); padding: 25px; border-radius: 6px; border-left: 4px solid var(--navy);">
-      <h2 style="margin-top: 0;">Saya baru bekerja dan belum berkahwin. Perlukah saya ambil takaful sekarang?</h2>
+    <article class="faq-card">
+      <h2>Saya baru bekerja dan belum berkahwin. Perlukah saya ambil takaful sekarang?</h2>
       <p>Ya. Walaupun anda masih bujang, pendapatan anda adalah aset terbesar. Takaful starter melindungi anda jika berlaku kehilangan upaya atau penyakit kritikal, dan boleh ditingkatkan apabila anda berkahwin. Sumbangan bulanan juga bermula dari serendah RM30–RM50.</p>
-    </div>
+    </article>
 
     <!-- Q2: Unit trust minimum -->
-    <div style="background: var(--slate-50); padding: 25px; border-radius: 6px; border-left: 4px solid var(--navy);">
-      <h2 style="margin-top: 0;">Berapa minimum saya boleh mula melabur dalam unit trust Islamik?</h2>
+    <article class="faq-card">
+      <h2>Berapa minimum saya boleh mula melabur dalam unit trust Islamik?</h2>
       <p>Anda boleh mula dengan RM100 sebulan melalui Regular Savings Plan (RSP) Phillip Mutual Berhad. Wang didebitkan automatik setiap bulan, membolehkan anda membina asas pelaburan patuh Syariah secara konsisten – sesuai untuk matlamat jangka panjang.</p>
-    </div>
+    </article>
 
     <!-- Q3: Patuh Syariah verification -->
-    <div style="background: var(--slate-50); padding: 25px; border-radius: 6px; border-left: 4px solid var(--navy);">
-      <h2 style="margin-top: 0;">Adakah unit trust yang Hairul tawarkan benar‑benar patuh Syariah?</h2>
+    <article class="faq-card">
+      <h2>Adakah unit trust yang Hairul tawarkan benar‑benar patuh Syariah?</h2>
       <p>Ya. Semua dana yang saya cadangkan disaring oleh Penasihat Syariah bertauliah seperti Amanie Advisors Sdn Bhd. Hanya aset yang melepasi tapisan kewangan dan aktiviti Islam dimasukkan. Bebas riba, perjudian, arak, dan perbankan konvensional.</p>
-    </div>
+    </article>
 
     <!-- Q4: Too early for retirement? -->
-    <div style="background: var(--slate-50); padding: 25px; border-radius: 6px; border-left: 4px solid var(--navy);">
-      <h2 style="margin-top: 0;">Saya baru 30 tahun. Adakah terlalu awal untuk merancang persaraan?</h2>
+    <article class="faq-card">
+      <h2>Saya baru 30 tahun. Adakah terlalu awal untuk merancang persaraan?</h2>
       <p>Tidak. Semakin awal anda bermula, semakin besar kesan faedah berganda. Dengan disiplin kecil setiap bulan, anda boleh membina dana persaraan yang mencukupi tanpa perlu bergantung sepenuhnya pada KWSP atau anak.</p>
-    </div>
+    </article>
 
-    <!-- Q5: License verification -->
-    <div style="background: var(--slate-50); padding: 25px; border-radius: 6px; border-left: 4px solid var(--navy);">
-      <h2 style="margin-top: 0;">Bagaimana cara mengesahkan lesen Hairul?</h2>
-      <p>Anda boleh menyemak lesen saya secara dalam talian. Saya Perunding Unit Trust berdaftar dengan FIMM (nombor F01040203) dan Wakil IFAR dilantik oleh Phillip Wealth Planners Sdn Bhd – status boleh disemak di direktori FAR Bank Negara Malaysia.</p>
-    </div>
+    <!-- Q5: License verification (Compliance Updated) -->
+    <article class="faq-card">
+      <h2>Bagaimana cara mengesahkan status pendaftaran Hairul?</h2>
+      <p>Anda boleh menyemak status saya secara dalam talian. Saya Perunding Unit Trust berdaftar dengan FIMM (nombor F01040203) dan Wakil IFAR dilantik oleh Phillip Wealth Planners Sdn Bhd – status boleh disemak di direktori FAR Bank Negara Malaysia.</p>
+    </article>
 
     <!-- Q6: Fees -->
-    <div style="background: var(--slate-50); padding: 25px; border-radius: 6px; border-left: 4px solid var(--navy);">
-      <h2 style="margin-top: 0;">Apakah yuran atau caj yang dikenakan untuk sesi nasihat?</h2>
+    <article class="faq-card">
+      <h2>Apakah yuran atau caj yang dikenakan untuk sesi nasihat?</h2>
       <p>Sesi 30 minit pertama adalah percuma sepenuhnya. Untuk pelaburan unit trust, yuran dijelaskan dalam prospektus dana. Tiada kos tersembunyi – semuanya diterangkan dengan telus sebelum anda membuat sebarang keputusan.</p>
-    </div>
+    </article>
 
     <!-- Q7: Johor only? -->
-    <div style="background: var(--slate-50); padding: 25px; border-radius: 6px; border-left: 4px solid var(--navy);">
-      <h2 style="margin-top: 0;">Adakah Hairul hanya membantu pelanggan di Johor?</h2>
+    <article class="faq-card">
+      <h2>Adakah Hairul hanya membantu pelanggan di Johor?</h2>
       <p>Saya berkhidmat secara bersemuka di Kota Tinggi, Johor Bahru, dan Kluang. Bagi pelanggan di luar kawasan ini, sesi konsultasi boleh dilakukan secara atas talian melalui panggilan video.</p>
-    </div>
+    </article>
 
     <!-- Q8: Takaful vs conventional -->
-    <div style="background: var(--slate-50); padding: 25px; border-radius: 6px; border-left: 4px solid var(--navy);">
-      <h2 style="margin-top: 0;">Apakah perbezaan antara takaful dan insurans konvensional?</h2>
+    <article class="faq-card">
+      <h2>Apakah perbezaan antara takaful dan insurans konvensional?</h2>
       <p>Takaful berasaskan semangat saling bantu (tabarru‘) – peserta saling menderma untuk membantu sesama yang ditimpa musibah. Ia bebas riba, gharar, dan dikawal selia oleh Majlis Penasihat Syariah. Insurans konvensional pula adalah kontrak jual beli yang mungkin mengandungi unsur riba dan ketidakpastian.</p>
-    </div>
+    </article>
 
     <!-- Q9: How to start -->
-    <div style="background: var(--slate-50); padding: 25px; border-radius: 6px; border-left: 4px solid var(--navy);">
-      <h2 style="margin-top: 0;">Bagaimana untuk memulakan sesi konsultasi pertama?</h2>
+    <article class="faq-card">
+      <h2>Bagaimana untuk memulakan sesi konsultasi pertama?</h2>
       <p>Mudah. Hubungi saya melalui WhatsApp di 011-27657730 atau gunakan butang ‘Hubungi Saya’. Sesi pertama adalah percuma – kita bincangkan matlamat anda dan langkah kecil yang boleh diambil segera, tanpa tekanan.</p>
-    </div>
+    </article>
 
-  </div>
+  </section>
 
-  <div style="text-align: center; margin-top: 50px;">
-    <p style="font-size: 1.1rem; color: var(--slate-600);">Soalan lain? Saya sedia berbual.</p>
-    <a href="https://wa.me/601127657730" class="btn-primary" style="background: #25D366; border-color: #25D366; color: white;">💬 WhatsApp Saya</a>
-  </div>
+  <section class="faq-cta-section" aria-label="Tindakan Seterusnya">
+    <p>Soalan lain? Saya sedia berbual.</p>
+    <a href="https://wa.me/601127657730" class="btn-primary btn-whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp Saya</a>
+  </section>
 
 </main>
 
 <!-- ========================================== -->
-<!-- 08. Footer -->
+<!-- 08. Footer (Updated & Compliant) -->
 <!-- ========================================== -->
-
 <footer class="site-footer">
   <div class="footer-container">
-
     <div class="footer-grid">
-
       <div class="footer-section">
-
-        <h3 class="footer-name">
-          Hairul Anuar Bin Sulaiman
-        </h3>
-
+        <h3 class="footer-name">Hairul Anuar Bin Sulaiman</h3>
         <p class="footer-role">
           Islamic Financial Adviser Representative (IFAR)<br>
           Unit Trust Scheme Consultant
         </p>
-
-        <p>
-          Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin melalui perlindungan, 
-          pelaburan dan perancangan persaraan berlandaskan prinsip Syariah.
-        </p>
-
+        <p>Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin berlandaskan prinsip Syariah.</p>
       </div>
-
       <div class="footer-section">
-
         <h4>Terokai</h4>
-
-        <ul class="footer-links">
-          <li><a href="tentang.html">Tentang Saya</a></li>
-          <li><a href="takaful.html">Perlindungan Kewangan</a></li>
-          <li><a href="unittrust.html">Pelaburan</a></li>
-          <li><a href="persaraan.html">Persaraan</a></li>
-          <li><a href="artikel.html">Artikel</a></li>
-          <li><a href="hubungi.html">Hubungi</a></li>
-        </ul>
-
+        <nav aria-label="Navigasi Pengaki">
+          <ul class="footer-links">
+            <li><a href="tentang.html">Tentang Saya</a></li>
+            <li><a href="takaful.html">Perlindungan Kewangan</a></li>
+            <li><a href="unittrust.html">Pelaburan</a></li>
+            <li><a href="persaraan.html">Persaraan</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="hubungi.html">Hubungi</a></li>
+          </ul>
+        </nav>
       </div>
-
       <div class="footer-section">
-
         <h4>Maklumat & Pendedahan</h4>
-
-        <ul class="footer-links">
-          <li><a href="pendedahan.html">Pendedahan Kawal Selia</a></li>
-          <li><a href="privasi.html">Dasar Privasi</a></li>
-          <li><a href="penafian.html">Penafian</a></li>
-        </ul>
-
+        <nav aria-label="Navigasi Pendedahan">
+          <ul class="footer-links">
+            <li><a href="pendedahan.html">Pendedahan Kawal Selia</a></li>
+            <li><a href="privasi.html">Dasar Privasi</a></li>
+            <li><a href="penafian.html">Penafian</a></li>
+          </ul>
+        </nav>
       </div>
-
     </div>
-
     <div class="footer-bottom">
-
-      <p class="footer-disclaimer">
-        Pelaburan melibatkan risiko. Sila baca dokumen berkaitan sebelum membuat sebarang keputusan kewangan.
-      </p>
-
-      <p class="footer-copyright">
-        &copy; 2026 Hairul Anuar Bin Sulaiman. Hak Cipta Terpelihara.
-      </p>
-
+      <p class="footer-disclaimer">Pelaburan melibatkan risiko. Sila baca dokumen berkaitan sebelum membuat sebarang keputusan kewangan.</p>
+      <p class="footer-copyright">&copy; 2026 Hairul Anuar Bin Sulaiman. Hak Cipta Terpelihara.</p>
     </div>
-
   </div>
 </footer>
 
-<a href="https://wa.me/601127657730" class="floating-whatsapp" style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:12px 20px; border-radius:6px; text-decoration:none; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:999;">💬 WhatsApp</a>
+<!-- Floating WhatsApp Button -->
+<aside>
+  <a href="https://wa.me/601127657730" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Hubungi saya melalui WhatsApp">💬 WhatsApp</a>
+</aside>
 
 </body>
 </html>

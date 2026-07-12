@@ -16,159 +16,160 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Page-Specific Styles (Replaces Inline CSS) -->
+  <style>
+    .privacy-container { padding-top: 60px; padding-bottom: 60px; max-width: 800px; margin: 0 auto; }
+    .privacy-section { margin-bottom: 40px; }
+    .privacy-text { font-size: 1.1rem; line-height: 1.9; margin-bottom: 20px; color: var(--slate-600); }
+    .privacy-list { font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; padding-left: 25px; color: var(--slate-600); }
+    .privacy-list li { margin-bottom: 8px; }
+    .privacy-date { font-size: 1rem; color: var(--slate-400); margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 20px; }
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <div class="nav-container">
-    <a href="index.html" class="logo">Hairul Anuar Sulaiman</a>
-    
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+<header>
+  <nav aria-label="Navigasi Utama">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Hairul Anuar Sulaiman</a>
+      
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="tentang.html">Tentang Saya</a>
-      <a href="takaful.html">Takaful</a>
-      <a href="unittrust.html">Unit Trust</a>
-      <a href="persaraan.html">Persaraan</a>
-      <a href="hubungi.html">Hubungi Saya</a>
-      <a href="artikel.html">Artikel</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang Saya</a>
+        <a href="takaful.html">Takaful</a>
+        <a href="unittrust.html">Unit Trust</a>
+        <a href="persaraan.html">Persaraan</a>
+        <a href="faq.html">FAQ</a>
+        <a href="hubungi.html">Hubungi Saya</a>
+        <a href="artikel.html">Artikel</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<main class="container" style="padding-top: 60px; padding-bottom: 60px; max-width: 800px; margin: 0 auto;">
-  <h1>Dasar Privasi</h1>
-  <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; color: var(--slate-600);">
-    Laman web ini diuruskan oleh <strong>Hairul Anuar Bin Sulaiman</strong>. Privasi anda amat penting. Dasar ini menerangkan bagaimana saya mengendalikan maklumat peribadi yang anda berikan melalui laman web ini.
-  </p>
+<main class="privacy-container">
+  
+  <header>
+    <h1>Dasar Privasi</h1>
+    <p class="privacy-text">
+      Laman web ini diuruskan oleh <strong>Hairul Anuar Bin Sulaiman</strong>. Privasi anda amat penting. Dasar ini menerangkan bagaimana saya mengendalikan maklumat peribadi yang anda berikan melalui laman web ini.
+    </p>
+  </header>
 
-  <h2>Maklumat yang Dikumpul</h2>
-  <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; color: var(--slate-600);">
-    Apabila anda mengisi borang (seperti muat turun senarai semak atau menghubungi saya), saya mungkin mengumpul:
-  </p>
-  <ul style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; padding-left: 25px; color: var(--slate-600);">
-    <li>Nama penuh</li>
-    <li>Alamat emel</li>
-    <li>Nombor telefon (jika diberikan)</li>
-    <li>Mesej atau pertanyaan anda</li>
-  </ul>
-  <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; color: var(--slate-600);">
-    Data ini diberikan secara sukarela oleh anda.
-  </p>
+  <section class="privacy-section" aria-labelledby="kumpul-heading">
+    <h2 id="kumpul-heading">Maklumat yang Dikumpul</h2>
+    <p class="privacy-text">
+      Apabila anda mengisi borang (seperti muat turun senarai semak atau menghubungi saya), saya mungkin mengumpul:
+    </p>
+    <ul class="privacy-list">
+      <li>Nama penuh</li>
+      <li>Alamat emel</li>
+      <li>Nombor telefon (jika diberikan)</li>
+      <li>Mesej atau pertanyaan anda</li>
+    </ul>
+    <p class="privacy-text">
+      Data ini diberikan secara sukarela oleh anda.
+    </p>
+  </section>
 
-  <h2>Tujuan Pengumpulan</h2>
-  <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; color: var(--slate-600);">
-    Maklumat anda digunakan untuk:
-  </p>
-  <ul style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; padding-left: 25px; color: var(--slate-600);">
-    <li>Menghantar bahan pendidikan yang anda minta (seperti PDF senarai semak).</li>
-    <li>Menghubungi anda berkaitan perkhidmatan kewangan Islam yang saya tawarkan.</li>
-    <li>Menambah baik kandungan laman web dan perkhidmatan pelanggan.</li>
-  </ul>
+  <section class="privacy-section" aria-labelledby="tujuan-heading">
+    <h2 id="tujuan-heading">Tujuan Pengumpulan</h2>
+    <p class="privacy-text">
+      Maklumat anda digunakan untuk:
+    </p>
+    <ul class="privacy-list">
+      <li>Menghantar bahan pendidikan yang anda minta (seperti PDF senarai semak).</li>
+      <li>Menghubungi anda berkaitan perkhidmatan kewangan Islam yang saya tawarkan.</li>
+      <li>Menambah baik kandungan laman web dan perkhidmatan pelanggan.</li>
+    </ul>
+  </section>
 
-  <h2>Perkongsian & Keselamatan</h2>
-  <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; color: var(--slate-600);">
-    Saya TIDAK akan menjual, menyewa, atau berkongsi maklumat peribadi anda kepada pihak ketiga untuk tujuan pemasaran. Data anda hanya boleh diakses oleh saya dan penyedia perkhidmatan pemprosesan borang (Web3Forms) yang terikat dengan obligasi kerahsiaan.
-  </p>
-  <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; color: var(--slate-600);">
-    Saya mengambil langkah keselamatan yang munasabah untuk melindungi data anda. Walau bagaimanapun, tiada kaedah penghantaran melalui internet yang 100% selamat.
-  </p>
+  <section class="privacy-section" aria-labelledby="kongsi-heading">
+    <h2 id="kongsi-heading">Perkongsian & Keselamatan</h2>
+    <p class="privacy-text">
+      Saya TIDAK akan menjual, menyewa, atau berkongsi maklumat peribadi anda kepada pihak ketiga untuk tujuan pemasaran. Data anda hanya boleh diakses oleh saya dan penyedia perkhidmatan pemprosesan borang (Web3Forms) yang terikat dengan obligasi kerahsiaan.
+    </p>
+    <p class="privacy-text">
+      Saya mengambil langkah keselamatan yang munasabah untuk melindungi data anda. Walau bagaimanapun, tiada kaedah penghantaran melalui internet yang 100% selamat.
+    </p>
+  </section>
 
-  <h2>Kuki (Cookies)</h2>
-  <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; color: var(--slate-600);">
-    Laman web ini mungkin menggunakan kuki asas untuk tujuan analitik tanpa nama. Anda boleh menyekat kuki melalui tetapan pelayar anda.
-  </p>
+  <section class="privacy-section" aria-labelledby="kuki-heading">
+    <h2 id="kuki-heading">Kuki (Cookies)</h2>
+    <p class="privacy-text">
+      Laman web ini mungkin menggunakan kuki asas untuk tujuan analitik tanpa nama. Anda boleh menyekat kuki melalui tetapan pelayar anda.
+    </p>
+  </section>
 
-  <h2>Hak Anda</h2>
-  <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 25px; color: var(--slate-600);">
-    Anda berhak meminta salinan data peribadi yang saya pegang, atau meminta data tersebut dipadamkan. Hubungi saya melalui WhatsApp atau emel untuk sebarang pertanyaan privasi.
-  </p>
+  <section class="privacy-section" aria-labelledby="hak-heading">
+    <h2 id="hak-heading">Hak Anda</h2>
+    <p class="privacy-text">
+      Anda berhak meminta salinan data peribadi yang saya pegang, atau meminta data tersebut dipadamkan. Hubungi saya melalui WhatsApp atau emel untuk sebarang pertanyaan privasi.
+    </p>
+  </section>
 
-  <p style="font-size: 1rem; color: var(--slate-400); margin-top: 30px;">
+  <p class="privacy-date">
     Dasar ini dikemas kini pada 9 Jun 2026.
   </p>
 </main>
 
 <!-- ========================================== -->
-<!-- 08. Footer -->
+<!-- 08. Footer (Updated & Compliant) -->
 <!-- ========================================== -->
-
 <footer class="site-footer">
   <div class="footer-container">
-
     <div class="footer-grid">
-
       <div class="footer-section">
-
-        <h3 class="footer-name">
-          Hairul Anuar Bin Sulaiman
-        </h3>
-
+        <h3 class="footer-name">Hairul Anuar Bin Sulaiman</h3>
         <p class="footer-role">
           Islamic Financial Adviser Representative (IFAR)<br>
           Unit Trust Scheme Consultant
         </p>
-
-        <p>
-          Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin melalui perlindungan, 
-          pelaburan dan perancangan persaraan berlandaskan prinsip Syariah.
-        </p>
-
+        <p>Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin berlandaskan prinsip Syariah.</p>
       </div>
-
       <div class="footer-section">
-
         <h4>Terokai</h4>
-
-        <ul class="footer-links">
-          <li><a href="tentang.html">Tentang Saya</a></li>
-          <li><a href="takaful.html">Perlindungan Kewangan</a></li>
-          <li><a href="unittrust.html">Pelaburan</a></li>
-          <li><a href="persaraan.html">Persaraan</a></li>
-          <li><a href="artikel.html">Artikel</a></li>
-          <li><a href="hubungi.html">Hubungi</a></li>
-        </ul>
-
+        <nav aria-label="Navigasi Pengaki">
+          <ul class="footer-links">
+            <li><a href="tentang.html">Tentang Saya</a></li>
+            <li><a href="takaful.html">Perlindungan Kewangan</a></li>
+            <li><a href="unittrust.html">Pelaburan</a></li>
+            <li><a href="persaraan.html">Persaraan</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="hubungi.html">Hubungi</a></li>
+          </ul>
+        </nav>
       </div>
-
       <div class="footer-section">
-
         <h4>Maklumat & Pendedahan</h4>
-
-        <ul class="footer-links">
-          <li><a href="pendedahan.html">Pendedahan Kawal Selia</a></li>
-          <li><a href="privasi.html">Dasar Privasi</a></li>
-          <li><a href="penafian.html">Penafian</a></li>
-        </ul>
-
+        <nav aria-label="Navigasi Pendedahan">
+          <ul class="footer-links">
+            <li><a href="pendedahan.html">Pendedahan Kawal Selia</a></li>
+            <li><a href="privasi.html" class="active">Dasar Privasi</a></li>
+            <li><a href="penafian.html">Penafian</a></li>
+          </ul>
+        </nav>
       </div>
-
     </div>
-
     <div class="footer-bottom">
-
-      <p class="footer-disclaimer">
-        Pelaburan melibatkan risiko. Sila baca dokumen berkaitan sebelum membuat sebarang keputusan kewangan.
-      </p>
-
-      <p class="footer-copyright">
-        &copy; 2026 Hairul Anuar Bin Sulaiman. Hak Cipta Terpelihara.
-      </p>
-
+      <p class="footer-disclaimer">Pelaburan melibatkan risiko. Sila baca dokumen berkaitan sebelum membuat sebarang keputusan kewangan.</p>
+      <p class="footer-copyright">&copy; 2026 Hairul Anuar Bin Sulaiman. Hak Cipta Terpelihara.</p>
     </div>
-
   </div>
 </footer>
 
-
-<a href="https://wa.me/601127657730" class="floating-whatsapp" style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:12px 20px; border-radius:6px; text-decoration:none; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:999;">💬 WhatsApp</a>
+<aside>
+  <a href="https://wa.me/601127657730" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Hubungi saya melalui WhatsApp">💬 WhatsApp</a>
+</aside>
 
 </body>
 </html>

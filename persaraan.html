@@ -72,7 +72,6 @@
 
 <body>
 
-<!-- PAGE HEADER -->
 <header>
   <nav aria-label="Navigasi Utama">
     <div class="nav-container">
@@ -102,13 +101,13 @@
   <article class="article-container">
     
     <!-- Hero Section -->
-    <div class="cta-content" aria-labelledby="persaraan-heading">
+    <header class="cta-content" aria-labelledby="persaraan-heading">
       <p class="section-eyebrow">Perancangan Jangka Panjang</p>
       <h1 id="persaraan-heading" class="article-title">Persaraan Bebas Riba, Bermula Dari Sekarang</h1>
       <p class="article-intro">
         Anda tidak perlu menunggu sehingga penghujung kerjaya untuk mula merancang. Saya membantu anda membina pelan persaraan patuh Syariah yang menyasarkan pendapatan pasif bulanan—bersih, teratur, dan mampan.
       </p>
-    </div>
+    </header>
 
     <div class="article-content">
       
@@ -168,28 +167,28 @@
       
       <ol class="journey-steps">
         <li class="journey-step">
-          <div class="step-number"><span>1</span></div>
+          <div class="step-number" aria-hidden="true"><span>1</span></div>
           <div class="step-content">
             <h3>Kenal Pasti Sasaran Pendapatan</h3>
             <p>Kita tentukan sasaran "gaji bulanan" yang anda perlukan untuk menampung kos sara hidup dengan selesa selepas berhenti bekerja.</p>
           </div>
         </li>
         <li class="journey-step">
-          <div class="step-number"><span>2</span></div>
+          <div class="step-number" aria-hidden="true"><span>2</span></div>
           <div class="step-content">
             <h3>Nilaikan Aset & Jurang Semasa</h3>
             <p>Saya akan membuat analisis menyeluruh mengenai unjuran KWSP, simpanan, perlindungan, dan pelaburan sedia ada anda untuk mengenalpasti jurang perbezaan.</p>
           </div>
         </li>
         <li class="journey-step">
-          <div class="step-number"><span>3</span></div>
+          <div class="step-number" aria-hidden="true"><span>3</span></div>
           <div class="step-content">
             <h3>Bina Pelan Tindakan Bersepadu</h3>
             <p>Saya merangka cadangan strategi yang menggabungkan peruntukan aset yang tepat menggunakan platform pengurusan kekayaan patuh Syariah yang bereputasi.</p>
           </div>
         </li>
         <li class="journey-step">
-          <div class="step-number"><span>4</span></div>
+          <div class="step-number" aria-hidden="true"><span>4</span></div>
           <div class="step-content">
             <h3>Laksana & Pantau Berkala</h3>
             <p>Selepas pelaksanaan, saya akan mendampingi anda membuat semakan berkala secara tahunan bagi memastikan strategi selari dengan perubahan kehidupan anda.</p>
@@ -199,22 +198,22 @@
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- Semantic CTA Section -->
   <section class="cta-section" aria-labelledby="cta-heading">
     <div class="cta-content">
       <p class="section-eyebrow">Langkah Pertama</p>
       <h2 id="cta-heading">Adakah Persaraan Anda Sudah Terjamin?</h2>
       <p>Ketahui posisi kewangan anda dalam sesi konsultasi awal yang diberikan percuma. Kita nilai, rancang, dan bina keyakinan – tanpa sebarang paksaan.</p>
-      <div class="cta-buttons">
+      <nav class="cta-buttons" aria-label="Pilihan Konsultasi">
         <a href="https://wa.me/601127657730" class="btn-primary" target="_blank" rel="noopener noreferrer">💬 WhatsApp Saya</a>
         <a href="hubungi.html" class="btn-secondary">📅 Tempah Janji Temu</a>
-      </div>
+      </nav>
     </div>
   </section>
 </main>
 
 <!-- ========================================== -->
-<!-- 08. Footer -->
+<!-- 08. Footer (Updated & Compliant) -->
 <!-- ========================================== -->
 <footer class="site-footer">
   <div class="footer-container">
@@ -225,14 +224,11 @@
           Islamic Financial Adviser Representative (IFAR)<br>
           Unit Trust Scheme Consultant
         </p>
-        <p>
-          Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin melalui perlindungan, 
-          pelaburan dan perancangan persaraan berlandaskan prinsip Syariah.
-        </p>
+        <p>Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin berlandaskan prinsip Syariah.</p>
       </div>
       <div class="footer-section">
         <h4>Terokai</h4>
-        
+        <nav aria-label="Navigasi Pengaki">
           <ul class="footer-links">
             <li><a href="tentang.html">Tentang Saya</a></li>
             <li><a href="takaful.html">Perlindungan Kewangan</a></li>
@@ -241,32 +237,28 @@
             <li><a href="artikel.html">Artikel</a></li>
             <li><a href="hubungi.html">Hubungi</a></li>
           </ul>
-        
+        </nav>
       </div>
       <div class="footer-section">
         <h4>Maklumat & Pendedahan</h4>
-        
+        <nav aria-label="Navigasi Pendedahan">
           <ul class="footer-links">
             <li><a href="pendedahan.html">Pendedahan Kawal Selia</a></li>
             <li><a href="privasi.html">Dasar Privasi</a></li>
             <li><a href="penafian.html">Penafian</a></li>
           </ul>
-        
+        </nav>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-disclaimer">
-        Pelaburan melibatkan risiko. Sila baca dokumen berkaitan sebelum membuat sebarang keputusan kewangan.
-      </p>
-      <p class="footer-copyright">
-        &copy; 2026 Hairul Anuar Bin Sulaiman. Hak Cipta Terpelihara.
-      </p>
+      <p class="footer-disclaimer">Pelaburan melibatkan risiko. Sila baca dokumen berkaitan sebelum membuat sebarang keputusan kewangan.</p>
+      <p class="footer-copyright">&copy; 2026 Hairul Anuar Bin Sulaiman. Hak Cipta Terpelihara.</p>
     </div>
   </div>
 </footer>
 
 <aside>
-  <a href="https://wa.me/601127657730" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Hubungi saya melalui WhatsApp" style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:12px 20px; border-radius:6px; text-decoration:none; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:999;">💬 WhatsApp</a>
+  <a href="https://wa.me/601127657730" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Hubungi saya melalui WhatsApp">💬 WhatsApp</a>
 </aside>
 
 </body>

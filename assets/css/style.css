@@ -1329,4 +1329,185 @@ font-weight:600;
   resize: vertical; /* Prevents user from breaking the layout horizontally */
   min-height: 120px;
 }
+
+/* ========================================== */
+/* NAVIGATION WITH DROPDOWN (Upgrade)        */
+/* ========================================== */
+
+/* Reset list style for nav */
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #1a3a3a;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  color: #1a7a5a;
+}
+
+/* Dropdown Parent */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.caret {
+  font-size: 0.65rem;
+  transition: transform 0.25s ease;
+  margin-left: 2px;
+}
+
+.dropdown.open .caret {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu (Desktop) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 230px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.10);
+  border-radius: 12px;
+  padding: 0.5rem 0;
+  list-style: none;
+  margin: 0.5rem 0 0 0;
+  z-index: 1000;
+  border: 1px solid #eef2f0;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1.5rem;
+  color: #1a3a3a;
+  font-weight: 400;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+  font-size: 0.95rem;
+}
+
+.dropdown-menu a:hover {
+  background: #f4f8f6;
+  color: #1a7a5a;
+}
+
+/* Show dropdown on HOVER (Desktop) AND when .open class toggled (Mobile) */
+.dropdown:hover .dropdown-menu,
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+/* CTA Button in Nav - Stands out */
+.btn-nav-cta {
+  background-color: #1a7a5a;
+  color: #ffffff !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.btn-nav-cta:hover {
+  background-color: #135f45 !important;
+  color: #ffffff !important;
+  transform: scale(1.03);
+}
+
+/* ========================================== */
+/* MOBILE RESPONSIVE (Hamburger Menu)        */
+/* ========================================== */
+
+@media (max-width: 768px) {
+  /* Hide desktop nav links by default */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    border-top: 1px solid #e2e8f0;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  /* Show when hamburger checked */
+  #menu-toggle:checked ~ .nav-links {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .nav-list a {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #f0f3f2;
+    white-space: normal;
+    font-size: 1rem;
+  }
+
+  .btn-nav-cta {
+    text-align: center;
+    margin-top: 0.5rem;
+    border-bottom: none !important;
+  }
+
+  /* Mobile Dropdown Menu - Static (not absolute) */
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0 0 0 1.2rem;
+    margin: 0.2rem 0 0 0;
+    border-left: 3px solid #1a7a5a;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .dropdown-menu a {
+    padding: 0.5rem 0;
+    border-bottom: none !important;
+    font-size: 0.95rem;
+  }
+
+  .dropdown-menu a:hover {
+    background: transparent;
+    color: #1a7a5a;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}
  

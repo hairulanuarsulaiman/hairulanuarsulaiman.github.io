@@ -1119,13 +1119,22 @@ header nav {
    font-size:clamp(2rem,4vw,3rem);
 }
 
-.article-cover{
-    display:block;
-    width:100%;
-    max-width:850px;
-    height:auto;
-    margin:0 auto 40px;
-    border-radius:12px;
+/* 1. Style the container (<figure>) */
+.article-cover {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 40px;
+    border-radius: 12px;
+    overflow: hidden; /* Forces the image inside to respect the curved corners */
+}
+
+/* 2. Style the actual image (<img>) inside the container */
+.article-cover img {
+    display: block; /* Removes the tiny white gap browsers put below images */
+    width: 100%;    /* Forces the image to shrink/grow to fit the container */
+    height: auto;   /* Maintains perfect aspect ratio so it doesn't stretch */
+    object-fit: cover;
 }
 
 .article-intro{

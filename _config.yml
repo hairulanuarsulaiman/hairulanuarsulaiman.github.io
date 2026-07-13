@@ -1,0 +1,43 @@
+# Site settings
+title: Hairul Anuar Sulaiman
+author: Hairul Anuar Bin Sulaiman
+email: hairul@example.com  # Update with your email
+description: >-
+  Membantu individu dan keluarga di Malaysia membuat keputusan 
+  kewangan yang lebih yakin berlandaskan prinsip Syariah.
+
+# URL settings
+url: "https://hairulanuarsulaiman.github.io"
+baseurl: ""  # Leave empty for root domain
+phone: "+601127657730"
+city: "Kota Tinggi"
+state: "Johor"
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+
+# Exclude these files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+
+# Collections (for services, if needed)
+collections:
+  services:
+    output: true
+    permalink: /:collection/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      type: "posts"
+    values:
+      layout: post

@@ -72,26 +72,54 @@
 
 <body>
 
+<!-- ========================================== -->
+<!-- PAGE HEADER (Updated - Copy this EXACT)   -->
+<!-- ========================================== -->
 <header>
   <nav aria-label="Navigasi Utama">
     <div class="nav-container">
       <a href="index.html" class="logo">Hairul Anuar Sulaiman</a>
+      
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
       </label>
+
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="tentang.html">Tentang Saya</a>
-        <a href="takaful.html">Takaful</a>
-        <a href="unittrust.html">Unit Trust</a>
-        <a href="persaraan.html" class="active">Persaraan</a>
-        <a href="faq.html">FAQ</a>
-        <a href="kit-permulaan.html">Kit Percuma</a>
-        <a href="hubungi.html">Hubungi Saya</a>
-        <a href="artikel.html">Artikel</a>
+        <ul class="nav-list">
+          <li><a href="index.html">Utama</a></li>
+          <li><a href="tentang.html">Tentang Saya</a></li>
+          
+          <!-- PERKHIDMATAN (Dropdown) -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+              Perkhidmatan <span class="caret">▾</span>
+            </a>
+            <ul class="dropdown-menu" aria-label="Submenu Perkhidmatan">
+              <li><a href="perkhidmatan.html">📋 Lihat Semua Perkhidmatan</a></li>
+              <li><a href="takaful.html">🛡 Perlindungan (Takaful)</a></li>
+              <li><a href="unittrust.html">📈 Pelaburan (Unit Trust)</a></li>
+              <li><a href="persaraan.html">🌿 Strategi Persaraan</a></li>
+            </ul>
+          </li>
+
+          <!-- SUMBER (Dropdown) -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+              Sumber <span class="caret">▾</span>
+            </a>
+            <ul class="dropdown-menu" aria-label="Submenu Sumber">
+              <li><a href="sumber.html">📚 Semua Sumber & Artikel</a></li>
+              <li><a href="artikel.html">📖 Artikel</a></li>
+              <li><a href="faq.html">❓ FAQ</a></li>
+            </ul>
+          </li>
+
+          <li><a href="hubungi.html">Hubungi</a></li>
+          <li><a href="kit-permulaan.html" class="btn-nav-cta">📥 Kit Percuma</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -261,5 +289,56 @@
   <a href="https://wa.me/601127657730" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Hubungi saya melalui WhatsApp">💬 WhatsApp</a>
 </aside>
 
+<script>
+// ==========================================
+// MOBILE DROPDOWN TOGGLE & NAV BEHAVIOR
+// ==========================================
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButtons = document.querySelectorAll('.dropdown-toggle');
+  
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      const parentLi = this.closest('.dropdown');
+      const isCurrentlyOpen = parentLi.classList.contains('open');
+      
+      document.querySelectorAll('.dropdown.open').forEach(d => {
+        if (d !== parentLi) {
+          d.classList.remove('open');
+          d.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      if (isCurrentlyOpen) {
+        parentLi.classList.remove('open');
+        this.setAttribute('aria-expanded', 'false');
+      } else {
+        parentLi.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+      
+      e.preventDefault();
+    });
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown') && !e.target.closest('.menu-icon')) {
+      document.querySelectorAll('.dropdown.open').forEach(d => {
+        d.classList.remove('open');
+        d.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function() {
+      const checkbox = document.getElementById('menu-toggle');
+      if (checkbox && checkbox.checked) {
+        checkbox.checked = false;
+      }
+    });
+  });
+});
+</script>
+  
 </body>
 </html>

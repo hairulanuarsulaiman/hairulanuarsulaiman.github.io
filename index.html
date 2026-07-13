@@ -156,7 +156,7 @@
   <section class="hero-section" aria-labelledby="hero-heading">
     <div class="hero-content">
       
-      <picture>
+   <picture>
   <!-- AVIF (smallest, best quality) -->
   <source 
     srcset="assets/images/hero-320.avif 320w,
@@ -181,12 +181,12 @@
            1920px"
     type="image/webp">
 
-  <!-- Fallback JPEG (for old browsers) -->
+  <!-- Fallback JPEG (for old browsers) - UPDATED WITH fetchpriority -->
   <img 
     src="assets/images/hairul-anuar.jpeg" 
     alt="Hairul Anuar Sulaiman - Perunding Kewangan Islam & Unit Trust berdaftar FIMM" 
     class="hero-photo"
-    loading="lazy"
+    fetchpriority="high"
     decoding="async"
     width="1920"
     height="1080">

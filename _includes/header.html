@@ -1,0 +1,52 @@
+<!-- ========================================== -->
+<!-- PAGE HEADER (Updated - Copy this EXACT)   -->
+<!-- ========================================== -->
+<header>
+  <nav aria-label="Navigasi Utama">
+    <div class="nav-container">
+      <a href="{{ site.baseurl }}/" class="logo">Hairul Anuar Sulaiman</a>
+      
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-links">
+        <ul class="nav-list">
+          <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Utama</a></li>
+          <li><a href="{{ site.baseurl }}/tentang.html" {% if page.url contains "tentang" %}class="active"{% endif %}>Tentang Saya</a></li>
+          
+          <!-- PERKHIDMATAN (Dropdown) -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+              Perkhidmatan <span class="caret">▾</span>
+            </a>
+            <ul class="dropdown-menu" aria-label="Submenu Perkhidmatan">
+              <li><a href="{{ site.baseurl }}/perkhidmatan.html">📋 Lihat Semua Perkhidmatan</a></li>
+              <li><a href="{{ site.baseurl }}/takaful.html">🛡 Perlindungan (Takaful)</a></li>
+              <li><a href="{{ site.baseurl }}/unittrust.html">📈 Pelaburan (Unit Trust)</a></li>
+              <li><a href="{{ site.baseurl }}/persaraan.html">🌿 Strategi Persaraan</a></li>
+            </ul>
+          </li>
+
+          <!-- SUMBER (Dropdown) -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+              Sumber <span class="caret">▾</span>
+            </a>
+            <ul class="dropdown-menu" aria-label="Submenu Sumber">
+              <li><a href="{{ site.baseurl }}/sumber.html">📚 Semua Sumber & Artikel</a></li>
+              <li><a href="{{ site.baseurl }}/artikel.html">📖 Artikel</a></li>
+              <li><a href="{{ site.baseurl }}/faq.html">❓ FAQ</a></li>
+            </ul>
+          </li>
+
+          <li><a href="{{ site.baseurl }}/hubungi.html">Hubungi</a></li>
+          <li><a href="{{ site.baseurl }}/kit-permulaan.html" class="btn-nav-cta">📥 Kit Percuma</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

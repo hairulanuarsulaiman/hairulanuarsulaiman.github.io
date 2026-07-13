@@ -16,15 +16,37 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hairulanuarsulaiman.github.io/">
   <meta property="og:image" content="https://hairulanuarsulaiman.github.io/assets/images/hairul-anuar.jpeg">
+  <meta property="og:locale" content="ms_MY">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FinancialService",
-    "@type": "FAQPage",
-    "mainEntity": [
+ <!-- ====== SCHEMA 1: FinancialService (For Local SEO) ====== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Hairul Anuar Bin Sulaiman – Islamic Financial Adviser Representative & Unit Trust Scheme Consultant",
+  "description": "Membantu individu dan keluarga di Malaysia membuat keputusan kewangan yang lebih yakin melalui pendidikan dan penyelesaian yang teliti. Pengkhususan dalam penasihatan Takaful dan pelaburan unit amanah. Lantikan IFAR oleh Phillip Wealth Planners & perunding berdaftar FIMM (F01040203).",
+  "url": "https://hairulanuarsulaiman.github.io/",
+  "image": "https://hairulanuarsulaiman.github.io/assets/images/hairul-anuar.jpeg",
+  "telephone": "+601127657730",
+  "areaServed": "Malaysia",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kota Tinggi",
+    "addressRegion": "Johor",
+    "addressCountry": "Malaysia"
+  }
+}
+</script>
+
+<!-- ====== SCHEMA 2: FAQPage (For Generative AI / GEO) ====== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
       "@type": "Question",
       "name": "Apakah itu IFAR dan mengapa saya perlu berurusan dengan IFAR yang dilantik oleh Phillip Wealth Planners?",
@@ -66,20 +88,8 @@
       }
     }
   ]
-    "name": "Hairul Anuar Bin Sulaiman – Islamic Financial Adviser Representative & Unit Trust Scheme Consultant",
-    "description": "Membantu individu dan keluarga di Malaysia membuat keputusan kewangan yang lebih yakin melalui pendidikan dan penyelesaian yang teliti. Pengkhususan dalam penasihatan Takaful dan pelaburan unit amanah. Lantikan IFAR oleh Phillip Wealth Planners & perunding berdaftar FIMM (F01040203).",
-    "url": "https://hairulanuarsulaiman.github.io/",
-    "image": "https://hairulanuarsulaiman.github.io/assets/images/hairul-anuar.jpeg",
-    "telephone": "+601127657730",
-    "areaServed": "Malaysia",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Kota Tinggi",
-      "addressRegion": "Johor",
-      "addressCountry": "Malaysia"
-    }
-  }
-  </script>
+}
+</script>
 </head>
 
 <body>
@@ -745,54 +755,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
   
-/* 
-  NOTE: This code is commented out because the ID 'lead-magnet-form' 
-  does not exist in the HTML above. If this form belongs on a separate page 
-  (like kit-permulaan.html), move this script there. If you add the form 
-  to this homepage later, you can uncomment this code.
-*/
-
-/*
-const form = document.getElementById('lead-magnet-form');
-const result = document.getElementById('form-result');
-
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
-
-  result.innerHTML = "Sedang diproses...";
-  result.style.color = "#1a365d";
-
-  fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-      },
-      body: json
-  })
- .then(async (response) => {
-      if (response.status == 200) {
-          const downloadLink = document.createElement('a');
-          downloadLink.href = 'assets/docs/kit-permulaan-kewangan-halal.pdf';
-          downloadLink.download = 'kit-permulaan-kewangan-halal.pdf';
-          document.body.appendChild(downloadLink);
-          downloadLink.click();
-          document.body.removeChild(downloadLink);
-          
-          result.innerHTML = "✓ Berjaya! Muat turun bermula. Saya akan hubungi anda melalui emel dalam masa 24 jam.";
-          setTimeout(() => {
-              window.location.href = 'terima-kasih.html';
-          }, 2000); 
-      }
-  })
-  .catch(error => {
-      result.innerHTML = "Maaf, ada ralat. Sila cuba lagi nanti.";
-  });
-});
-*/
 </script>
 
 </body>

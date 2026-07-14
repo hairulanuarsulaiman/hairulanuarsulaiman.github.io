@@ -4,7 +4,7 @@ title: "Adakah Saya Sudah Bersedia Untuk Bersara?"
 category: Persaraan
 date: 2026-07-14
 permalink: /artikel/adakah-saya-sudah-bersedia-untuk-bersara/
-description: Persaraan bukan sekadar tentang berhenti bekerja. Ia tentang kebebasan untuk memilih bagaimana anda mahu menjalani kehidupan. Temui 5 soalan penting untuk membantu anda menilai kesediaan persaraan anda.
+description: Persaraan bukan sekadar tentang berhenti bekerja. Ia tentang kebebasan untuk memilih bagaimana anda mahu menjalani kehidupan. Ketahui 5 soalan penting untuk membantu anda menilai kesediaan persaraan anda.
 ---
 
 {% include image.html 

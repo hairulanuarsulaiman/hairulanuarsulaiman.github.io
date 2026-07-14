@@ -7,6 +7,10 @@ permalink: /artikel/adakah-saya-sudah-bersedia-untuk-bersara/
 description: Persaraan bukan sekadar tentang berhenti bekerja. Ia tentang kebebasan untuk memilih bagaimana anda mahu menjalani kehidupan. Temui 5 soalan penting untuk membantu anda menilai kesediaan persaraan anda.
 ---
 
+{% include image.html 
+   src="/assets/images/artikel/article-04-bersedia-untuk-bersara.webp" 
+   alt="Pokok matang berdiri di tengah padang hijau yang luas pada waktu pagi dengan cahaya keemasan." %}
+
 Ramai orang menganggap persaraan hanya berkaitan dengan umur atau jumlah simpanan yang dimiliki. Ada juga yang beranggapan bahawa apabila simpanan persaraan mencukupi, mereka sudah bersedia untuk berhenti bekerja.
 
 Hakikatnya, persaraan bukan sekadar tentang berhenti bekerja.

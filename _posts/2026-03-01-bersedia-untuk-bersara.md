@@ -11,11 +11,11 @@ description: Persaraan bukan sekadar tentang berhenti bekerja. Ia tentang kebeba
    src="/assets/images/artikel/article-04-bersedia-untuk-bersara.webp" 
    alt="Pokok matang berdiri di tengah padang hijau yang luas pada waktu pagi dengan cahaya keemasan." %}
 
-Ramai orang menganggap persaraan hanya berkaitan dengan umur atau jumlah simpanan yang dimiliki. Ada juga yang beranggapan bahawa apabila simpanan persaraan mencukupi, mereka sudah bersedia untuk berhenti bekerja.
-
 Hakikatnya, persaraan bukan sekadar tentang berhenti bekerja.
 
-Persaraan ialah fasa kehidupan di mana aset dan sumber kewangan anda mampu menyokong gaya hidup tanpa bergantung kepada gaji bulanan. Ia bukan sekadar tentang mempunyai wang yang mencukupi, tetapi tentang mempunyai kebebasan untuk memilih bagaimana anda mahu menjalani kehidupan pada masa hadapan.
+Ia ialah fasa kehidupan di mana aset dan sumber kewangan anda mampu menyokong gaya hidup tanpa bergantung kepada gaji bulanan.
+
+Persaraan bukan sekadar tentang mempunyai wang yang mencukupi. Ia juga tentang mempunyai kebebasan untuk memilih bagaimana anda mahu menjalani kehidupan pada masa hadapan.
 
 Sebelum membuat sebarang perancangan, luangkan sedikit masa untuk bertanya beberapa soalan kepada diri sendiri.
 
@@ -33,7 +33,7 @@ Memahami gaya hidup yang anda inginkan akan membantu menentukan jumlah pendapata
 
 #### 2. Berapakah Perbelanjaan Bulanan Saya Sebenarnya?
 
-Ramai yang mengetahui jumlah pendapatan mereka, tetapi tidak benar-benar mengetahui jumlah perbelanjaan bulanan yang diperlukan untuk mengekalkan gaya hidup semasa.
+Ramai yang tahu jumlah pendapatan mereka, tetapi tidak benar-benar mengetahui jumlah perbelanjaan bulanan yang diperlukan untuk mengekalkan gaya hidup semasa.
 
 Memahami aliran tunai hari ini ialah langkah pertama untuk merancang keperluan kewangan pada masa hadapan.
 
@@ -57,7 +57,7 @@ Pertimbangkan sama ada anda mempunyai sumber pendapatan lain seperti pelaburan p
 
 #### 5. Bilakah Masa Terbaik Untuk Mula Merancang?
 
-Jawapannya berbeza bagi setiap orang.
+Tiada satu jawapan yang sama untuk semua orang.
 
 Namun, semakin awal anda mula merancang, semakin banyak pilihan yang anda miliki. Perancangan yang bermula lebih awal memberi lebih banyak masa untuk membina simpanan, mengurus risiko dan menyesuaikan pelan mengikut perubahan kehidupan.
 
@@ -74,3 +74,4 @@ Persaraan bukanlah hasil daripada satu keputusan besar, tetapi hasil daripada ke
 ---
 
 Jika anda ingin memahami kedudukan kewangan anda dan berbincang tentang langkah-langkah yang sesuai dengan matlamat serta keadaan semasa, saya sedia membantu anda memulakan perbualan.
+

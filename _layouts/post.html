@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article class="article-container">
+  
+  <header class="cta-content" aria-labelledby="post-heading">
+    <p class="section-eyebrow">{{ page.category }}</p>
+    <h1 id="post-heading" class="article-title">{{ page.title }}</h1>
+    <p class="article-intro">
+      <time datetime="{{ page.date | date_to_xmlschema }}" style="color: var(--slate-400);">
+        {{ page.date | date: "%-d %B %Y" }}
+      </time>
+    </p>
+    {% if page.description %}
+    <p class="article-intro">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="article-content">
+    {{ content }}
+  </div>
+
+</article>
+
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-content">
+      <p class="section-eyebrow">Berminat dengan Artikel Ini?</p>
+      <h2 id="cta-heading">Mahu Berbincang Tentang Topik Ini?</h2>
+      <p>
+        Setiap situasi kewangan adalah unik. Mari bincangkan bagaimana ilmu dalam artikel ini 
+        boleh diaplikasikan kepada keadaan anda secara peribadi. Sesi 30 minit pertama adalah percuma.
+      </p>
+      <nav class="cta-buttons" aria-label="Pilihan Konsultasi">
+        <a href="https://wa.me/601127657730" class="btn-primary" target="_blank" rel="noopener noreferrer">💬 WhatsApp Saya</a>
+        <a href="/hubungi/" class="btn-secondary">📅 Tempah Janji Temu</a>
+      </nav>
+    </div>
+  </div>
+</section>

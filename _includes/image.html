@@ -1,0 +1,13 @@
+{% assign alt = include.alt | default: "Ilustrasi untuk artikel" %}
+
+<figure class="article-figure" style="margin: 0 0 30px 0;">
+
+  <img 
+    src="{{ include.src }}" 
+    alt="{{ alt }}" 
+    loading="lazy"
+    width="800"
+    height="450"
+    style="border-radius: 8px; width: 100%; height: auto;">
+
+</figure>

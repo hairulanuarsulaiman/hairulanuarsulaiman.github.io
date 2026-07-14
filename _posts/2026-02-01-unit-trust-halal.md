@@ -2,53 +2,74 @@
 layout: post
 title: "Adakah Pelaburan Unit Trust Itu Halal?"
 category: Pelaburan
-date: 2026-02-01
+date: 2026-05-02
 permalink: /artikel/unit-trust-halal/
-description: Ketahui bagaimana dana patuh Syariah disaring serta perkara penting yang perlu diketahui sebelum memulakan pelaburan unit trust Islamik.
+description: Fahami bagaimana dana unit trust patuh Syariah disaring dan dipantau supaya anda dapat membuat keputusan pelaburan yang lebih yakin.
 ---
 
-Soalan ini sering ditanya oleh mereka yang ingin mula melabur tetapi ingin memastikan pelaburan mereka patuh Syariah. Jawapannya: **Ya, jika dana tersebut telah disahkan oleh Penasihat Syariah yang bertauliah.**
+<!-- Featured Image -->
+{% include image.html 
+   src="/assets/images/artikel/article-03-unit-trust-halal.webp" 
+   alt="Sungai yang tenang mengalir perlahan pada waktu pagi" %}
 
-## Bagaimana Dana Unit Trust Disaring?
+Ramai pelabur Muslim tertanya-tanya sama ada semua dana unit trust adalah patuh Syariah. Hakikatnya, tidak semua dana unit trust adalah patuh Syariah.
 
-Proses saringan Syariah melibatkan dua aspek utama:
+Memahami bagaimana sesuatu dana disaring dan dipantau membantu anda membuat keputusan pelaburan yang lebih yakin.
 
-### 1. Saringan Aktiviti Perniagaan
+---
 
-Dana hanya akan melabur dalam syarikat yang perniagaannya **tidak bertentangan** dengan prinsip Islam, seperti:
-- Bebas daripada perjudian
-- Bebas daripada arak dan minuman keras
-- Bebas daripada daging babi
-- Bebas daripada perbankan konvensional (riba)
-- Bebas daripada aktiviti haram lain
+## Bukan Semua Unit Trust Dicipta Sama
 
-### 2. Saringan Kewangan
+Secara asas, unit trust adalah dana yang mengumpul wang daripada ramai pelabur untuk dilaburkan dalam portfolio aset — saham, bon, dan instrumen kewangan lain. 
+Di sinilah titik kritikalnya: **aset apakah yang dibeli?**
 
-Syarikat juga perlu memenuhi nisbah kewangan yang ditetapkan, seperti:
-- Nisbah hutang kepada aset tidak melebihi 33%
-- Nisbah pendapatan bukan halal tidak melebihi 5%
+Unit trust konvensional mungkin melabur dalam syarikat perbankan riba, arak, judi, insurans konvensional, atau bon berasaskan faedah. Pulangan pelaburan anda mungkin datang daripada aktiviti atau instrumen yang tidak mematuhi prinsip Syariah.
 
-## Siapa Yang Menjalankan Saringan?
+Unit trust **patuh Syariah** pula hanya melabur dalam syarikat dan instrumen yang melepasi tapisan ketat yang ditetapkan oleh Majlis Penasihat Syariah. 
+Ini membantu memastikan pelaburan anda kekal selari dengan prinsip Syariah.
 
-Di Malaysia, saringan dijalankan oleh **Lembaga Penasihat Syariah** yang dilantik oleh:
-- Suruhanjaya Sekuriti Malaysia (untuk dana unit trust)
-- Bank Negara Malaysia (untuk produk takaful)
+---
 
-Bagi dana dalaman Phillip Mutual Berhad, Penasihat Syariah yang dilantik ialah **Amanie Advisors Sdn Bhd**, sebuah firma penasihat Syariah yang terkenal di peringkat antarabangsa.
+## Dua Peringkat Saringan Syariah
 
-## Dana Patuh Syariah di Malaysia
+Di Malaysia, Suruhanjaya Sekuriti (SC) menerbitkan senarai saham patuh Syariah yang dikemas kini dua kali setahun. Proses tapisan ada dua peringkat:
 
-Terdapat pelbagai pilihan dana unit trust patuh Syariah di Malaysia, termasuk:
-- Dana ekuiti Islamik
-- Dana sukuk (bon Islam)
-- Dana campuran Islamik
-- Dana sektor Islamik
+1. **Saringan Aktiviti:** Syarikat tidak boleh terlibat dalam aktiviti haram seperti arak, judi, riba, insurans konvensional, makanan tidak halal, dan sebagainya.
+2. **Saringan Kewangan:** Nisbah hutang berasaskan riba dan aset tidak patuh Syariah mestilah di bawah paras yang ditetapkan.
 
-## Perkara Penting Sebelum Melabur
+Hanya saham yang melepasi kedua-dua tapisan ini layak dimasukkan ke dalam dana unit trust Syariah.
 
-1. **Baca prospektus** — fahami objektif dana, risiko, dan yuran
-2. **Fahami profil risiko** — pastikan dana sesuai dengan tahap keselesaan anda
-3. **Pulangan bukan dijamin** — prestasi lampau bukan jaminan masa hadapan
-4. **Rujuk penasihat** — dapatkan nasihat profesional sebelum membuat keputusan
+---
 
-Berminat untuk memulakan pelaburan unit trust patuh Syariah? Hubungi saya untuk perbincangan lanjut.
+## Peranan Penasihat Syariah
+
+Setiap dana unit trust Islamik mesti mempunyai Penasihat Syariah yang berdaftar. 
+Mereka memastikan pelaburan dana kekal patuh Syariah sepanjang masa. 
+Sebagai contoh, dana Islamik yang ditawarkan oleh Phillip Mutual Berhad dipantau oleh Amanie Advisors Sdn. Bhd., sebuah firma penasihat Syariah yang diiktiraf di peringkat global.
+
+Jika sesuatu saham yang dipegang dana itu kemudiannya disenaraikan semula sebagai tidak patuh Syariah, 
+Penasihat Syariah akan mengarahkan pengurus dana untuk melupuskannya dalam tempoh tertentu. 
+Sebarang keuntungan daripada pelupusan itu akan disalurkan untuk tujuan kebajikan mengikut garis panduan Syariah yang berkenaan.
+
+---
+
+## Bagaimana Memastikan Pelaburan Unit Trust Anda Patuh Syariah?
+
+Sebagai pelabur, anda boleh mengambil langkah mudah:
+
+- **Semak label "Syariah"** pada prospektus dana.
+- **Baca nama Penasihat Syariah** yang disenaraikan.
+- Pastikan anda mendapatkan nasihat daripada **Perunding Unit Trust yang berdaftar** dengan FIMM dan memahami produk yang dicadangkan.
+
+---
+
+## Kesimpulan: Melabur dengan Lebih Yakin
+
+Memilih dana yang patuh Syariah membantu memastikan pelaburan anda selari dengan prinsip yang anda pegang. 
+Sebelum membuat keputusan, luangkan masa untuk memahami bagaimana sesuatu dana disaring dan dipantau supaya anda dapat melabur dengan lebih yakin.
+
+---
+
+*Penafian: Artikel ini adalah untuk tujuan pendidikan sahaja dan tidak merupakan nasihat kewangan peribadi. 
+Keputusan kewangan hendaklah dibuat berdasarkan keadaan, objektif dan toleransi risiko anda sendiri. 
+Pelaburan melibatkan risiko. Prestasi lampau bukan penunjuk prestasi masa hadapan.*

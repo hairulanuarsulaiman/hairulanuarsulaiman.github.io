@@ -88,3 +88,5 @@ Walaupun jumlah yang dilaburkan setiap bulan mungkin kelihatan kecil pada permul
 Setiap perjalanan pelaburan bermula dengan satu langkah kecil. Yang penting bukanlah seberapa besar langkah pertama itu, tetapi kesediaan untuk terus melangkah secara konsisten.
 
 ---
+
+{% include disclaimer.md %}

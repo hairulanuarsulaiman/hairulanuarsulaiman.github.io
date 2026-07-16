@@ -89,4 +89,4 @@ Setiap perjalanan pelaburan bermula dengan satu langkah kecil. Yang penting buka
 
 ---
 
-{% include disclaimer.md %}
+{% includes disclaimer.md %}

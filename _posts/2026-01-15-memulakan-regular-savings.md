@@ -88,7 +88,3 @@ Ia tentang membina satu tabiat yang boleh dikekalkan dalam jangka panjang.
 Walaupun jumlah yang dilaburkan setiap bulan mungkin kelihatan kecil pada permulaannya, disiplin dan konsistensi merupakan asas yang membantu seseorang membina simpanan secara beransur-ansur mengikut kemampuan dan matlamat kewangan masing-masing.
 
 Setiap perjalanan pelaburan bermula dengan satu langkah kecil. Yang penting bukanlah seberapa besar langkah pertama itu, tetapi kesediaan untuk terus melangkah secara konsisten.
-
----
-
-{% include disclaimer.md %}

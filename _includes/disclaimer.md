@@ -1,0 +1,1 @@
+*Penafian: Artikel ini adalah untuk tujuan pendidikan sahaja dan tidak merupakan nasihat kewangan peribadi. Keputusan kewangan hendaklah dibuat berdasarkan keadaan, objektif dan toleransi risiko anda sendiri. Pelaburan melibatkan risiko. Prestasi lampau bukan penunjuk prestasi masa hadapan.*

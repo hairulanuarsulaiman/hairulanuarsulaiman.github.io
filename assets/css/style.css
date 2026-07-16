@@ -1660,4 +1660,22 @@ font-weight:600;
 .article-figure img:hover {
   opacity: 0.95;
 }
+
+/* ========================================== */
+/* Disclaimer — Article Footer                */
+/* ========================================== */
+
+.disclaimer-container {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.disclaimer-container p {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #6a8a8a;
+  line-height: 1.7;
+  margin: 0;
+}
  

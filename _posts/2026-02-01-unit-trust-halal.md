@@ -67,9 +67,3 @@ Sebagai pelabur, anda boleh mengambil langkah mudah:
 
 Memilih dana yang patuh Syariah membantu memastikan pelaburan anda selari dengan prinsip yang anda pegang. 
 Sebelum membuat keputusan, luangkan masa untuk memahami bagaimana sesuatu dana disaring dan dipantau supaya anda dapat melabur dengan lebih yakin.
-
----
-
-*Penafian: Artikel ini adalah untuk tujuan pendidikan sahaja dan tidak merupakan nasihat kewangan peribadi. 
-Keputusan kewangan hendaklah dibuat berdasarkan keadaan, objektif dan toleransi risiko anda sendiri. 
-Pelaburan melibatkan risiko. Prestasi lampau bukan penunjuk prestasi masa hadapan.*

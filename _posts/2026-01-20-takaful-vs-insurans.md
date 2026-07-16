@@ -62,7 +62,3 @@ Walaupun kedua-duanya bertujuan memberikan perlindungan kewangan, takaful dan in
 ## Kesimpulan: Membuat Pilihan yang Lebih Yakin
 
 Kedua-dua takaful dan insurans bertujuan memberikan perlindungan kewangan. Namun, bagi individu Muslim yang ingin memastikan perlindungan mereka selari dengan prinsip Syariah, memahami perbezaan antara kedua-duanya merupakan langkah yang penting. Jika anda masih mempunyai polisi sedia ada, ia tidak semestinya bermaksud anda perlu membuat perubahan dengan segera. Sebaliknya, luangkan masa untuk menyemak sama ada perlindungan tersebut masih sesuai dengan keperluan hidup anda hari ini serta selari dengan prinsip yang anda pegang.
-
----
-
-*Penafian: Artikel ini adalah untuk tujuan pendidikan sahaja dan tidak merupakan nasihat kewangan peribadi. Keputusan kewangan hendaklah dibuat berdasarkan keadaan, objektif dan toleransi risiko anda sendiri. Pelaburan melibatkan risiko. Prestasi lampau bukan penunjuk prestasi masa hadapan.*

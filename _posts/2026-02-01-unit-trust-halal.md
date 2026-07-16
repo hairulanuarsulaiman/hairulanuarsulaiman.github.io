@@ -16,8 +16,6 @@ Ramai pelabur Muslim tertanya-tanya sama ada semua dana unit trust adalah patuh 
 
 Memahami bagaimana sesuatu dana disaring dan dipantau membantu anda membuat keputusan pelaburan yang lebih yakin.
 
----
-
 ## Bukan Semua Unit Trust Dicipta Sama
 
 Secara asas, unit trust adalah dana yang mengumpul wang daripada ramai pelabur untuk dilaburkan dalam portfolio aset — saham, bon, dan instrumen kewangan lain. 
@@ -28,8 +26,6 @@ Unit trust konvensional mungkin melabur dalam syarikat perbankan riba, arak, jud
 Unit trust **patuh Syariah** pula hanya melabur dalam syarikat dan instrumen yang melepasi tapisan ketat yang ditetapkan oleh Majlis Penasihat Syariah. 
 Ini membantu memastikan pelaburan anda kekal selari dengan prinsip Syariah.
 
----
-
 ## Dua Peringkat Saringan Syariah
 
 Di Malaysia, Suruhanjaya Sekuriti (SC) menerbitkan senarai saham patuh Syariah yang dikemas kini dua kali setahun. Proses tapisan ada dua peringkat:
@@ -38,8 +34,6 @@ Di Malaysia, Suruhanjaya Sekuriti (SC) menerbitkan senarai saham patuh Syariah y
 2. **Saringan Kewangan:** Nisbah hutang berasaskan riba dan aset tidak patuh Syariah mestilah di bawah paras yang ditetapkan.
 
 Hanya saham yang melepasi kedua-dua tapisan ini layak dimasukkan ke dalam dana unit trust Syariah.
-
----
 
 ## Peranan Penasihat Syariah
 
@@ -51,8 +45,6 @@ Jika sesuatu saham yang dipegang dana itu kemudiannya disenaraikan semula sebaga
 Penasihat Syariah akan mengarahkan pengurus dana untuk melupuskannya dalam tempoh tertentu. 
 Sebarang keuntungan daripada pelupusan itu akan disalurkan untuk tujuan kebajikan mengikut garis panduan Syariah yang berkenaan.
 
----
-
 ## Bagaimana Memastikan Pelaburan Unit Trust Anda Patuh Syariah?
 
 Sebagai pelabur, anda boleh mengambil langkah mudah:
@@ -60,8 +52,6 @@ Sebagai pelabur, anda boleh mengambil langkah mudah:
 - **Semak label "Syariah"** pada prospektus dana.
 - **Baca nama Penasihat Syariah** yang disenaraikan.
 - Pastikan anda mendapatkan nasihat daripada **Perunding Unit Trust yang berdaftar** dengan FIMM dan memahami produk yang dicadangkan.
-
----
 
 ## Kesimpulan: Melabur dengan Lebih Yakin
 

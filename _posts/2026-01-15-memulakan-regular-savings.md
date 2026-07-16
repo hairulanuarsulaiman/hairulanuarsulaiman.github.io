@@ -7,7 +7,7 @@ permalink: /artikel/memulakan-regular-savings/
 description: Ketahui bagaimana Regular Savings Plan membantu anda membina tabiat melabur secara konsisten mengikut kemampuan dan matlamat kewangan anda. 
 ---
 
-{% include image.html
+{% includes image.html
    src="/assets/images/artikel/article-01-memulakan-regular-savings.webp"
    alt="Anak pokok yang sihat tumbuh di padang hijau yang luas pada waktu pagi dengan cahaya keemasan."
 %}

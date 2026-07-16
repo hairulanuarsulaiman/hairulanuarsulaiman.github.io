@@ -1666,9 +1666,7 @@ font-weight:600;
 /* ========================================== */
 
 .disclaimer-container {
-  margin-top: 32px;
-  padding-top: 20px;
-  border-top: 1px solid #e5e7eb;
+  margin-top: 24px;
 }
 
 .disclaimer-container p {

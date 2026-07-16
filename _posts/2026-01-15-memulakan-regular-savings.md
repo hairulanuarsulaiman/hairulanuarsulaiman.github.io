@@ -88,5 +88,3 @@ Walaupun jumlah yang dilaburkan setiap bulan mungkin kelihatan kecil pada permul
 Setiap perjalanan pelaburan bermula dengan satu langkah kecil. Yang penting bukanlah seberapa besar langkah pertama itu, tetapi kesediaan untuk terus melangkah secara konsisten.
 
 ---
-
-*Penafian: Artikel ini adalah untuk tujuan pendidikan sahaja dan tidak merupakan nasihat kewangan peribadi. Keputusan kewangan hendaklah dibuat berdasarkan keadaan, objektif dan toleransi risiko anda sendiri. Pelaburan melibatkan risiko. Prestasi lampau bukan penunjuk prestasi masa hadapan.*

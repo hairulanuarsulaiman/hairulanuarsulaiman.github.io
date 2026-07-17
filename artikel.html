@@ -33,37 +33,14 @@ description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berk
 
     <div class="articles-grid">
 
-      <!-- Article 1 -->
+      {% for post in site.posts %}
       <article class="article-card">
-        <span class="article-category">Perlindungan</span>
-        <h3>Memahami Perbezaan Antara Takaful dan Insurans Konvensional</h3>
-        <p>Fahami perbezaan utama antara takaful dan insurans konvensional supaya anda dapat memilih perlindungan yang lebih yakin, patuh Syariah dan sesuai dengan matlamat kewangan anda.</p>
-        <a href="/artikel/takaful-vs-insurans/">Baca Artikel →</a>
+        <span class="article-category">{{ post.category }}</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description }}</p>
+        <a href="{{ post.url | relative_url }}">Baca Artikel →</a>
       </article>
-
-      <!-- Article 2 -->
-      <article class="article-card">
-        <span class="article-category">Pelaburan</span>
-        <h3>Bagaimana Regular Savings Plan Membantu Anda Membina Simpanan Secara Berdisiplin</h3>
-        <p>Ketahui bagaimana Regular Savings Plan membantu anda membina tabiat melabur secara konsisten mengikut kemampuan dan matlamat kewangan anda.</p>
-        <a href="/artikel/memulakan-regular-savings/">Baca Artikel →</a>
-      </article>
-
-      <!-- Article 3 -->
-      <article class="article-card">
-        <span class="article-category">Pelaburan</span>
-        <h3>Adakah Pelaburan Unit Trust Itu Halal?</h3>
-        <p>Fahami bagaimana dana unit trust patuh Syariah disaring dan dipantau supaya anda dapat membuat keputusan pelaburan yang lebih yakin.</p>
-        <a href="/artikel/unit-trust-halal/">Baca Artikel →</a>
-      </article>
-
-      <!-- Article 4 -->
-      <article class="article-card">
-        <span class="article-category">Persaraan</span>
-        <h3>Adakah Saya Sudah Bersedia Untuk Bersara?</h3>
-        <p>Persaraan bukan sekadar tentang berhenti bekerja. Ia tentang kebebasan untuk memilih bagaimana anda mahu menjalani kehidupan. Temui 5 soalan penting untuk membantu anda menilai kesediaan persaraan anda.</p>
-        <a href="/artikel/adakah-saya-sudah-bersedia-untuk-bersara/">Baca Artikel →</a>
-      </article>
+      {% endfor %}
 
     </div>
 

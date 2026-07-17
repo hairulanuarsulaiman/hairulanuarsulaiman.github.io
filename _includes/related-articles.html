@@ -1,0 +1,37 @@
+<!-- Related Articles -->
+{% assign current_category = page.category %}
+{% assign related_posts = "" | split: "" %}
+
+{% for post in site.posts %}
+  {% if post.category == current_category and post.url != page.url %}
+    {% assign related_posts = related_posts | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% if related_posts.size > 0 %}
+<section class="related-articles" aria-labelledby="related-heading">
+  <div class="related-container">
+    
+    <h3 id="related-heading" class="related-title">
+      Artikel Berkaitan
+    </h3>
+    
+    <ul class="related-list">
+      {% assign max_related = 3 %}
+      {% assign counter = 0 %}
+      {% for post in related_posts %}
+        {% if counter < max_related %}
+          <li class="related-item">
+            <a href="{{ post.url | relative_url }}" class="related-link">
+              <span class="related-category">{{ post.category }}</span>
+              <span class="related-post-title">{{ post.title }}</span>
+            </a>
+          </li>
+          {% assign counter = counter | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+    
+  </div>
+</section>
+{% endif %}

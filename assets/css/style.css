@@ -1802,4 +1802,309 @@ font-weight:600;
     font-size: 0.9rem;
   }
 }
- 
+
+/* ========================================== */
+/* ChromeOS-Inspired Styles for takaful.html  */
+/* ========================================== */
+
+/* Hero Section */
+.page-hero-section {
+  padding: 60px 0 40px 0;
+  background: #ffffff;
+}
+
+.page-hero-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-hero-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #1a3a3a;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
+}
+
+.page-hero-description {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #4a6a6a;
+  margin: 0 0 28px 0;
+}
+
+.page-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a3a3a;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4a6a6a;
+  max-width: 640px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+
+.section-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1a7a5a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px 0;
+}
+
+/* Concept Grid */
+.section-concept {
+  padding: 48px 0;
+  background: #f8faf9;
+}
+
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.concept-card {
+  background: #ffffff;
+  padding: 28px 24px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e8edec;
+}
+
+.concept-icon {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.concept-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a3a3a;
+  margin: 0 0 8px 0;
+}
+
+.concept-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a6a6a;
+  margin: 0;
+}
+
+/* Goals Grid */
+.section-goals {
+  padding: 48px 0;
+  background: #ffffff;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.goal-card {
+  background: #f8faf9;
+  padding: 24px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.goal-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.goal-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a3a3a;
+  margin: 0 0 6px 0;
+}
+
+.goal-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4a6a6a;
+  margin: 0;
+}
+
+/* Plans Grid */
+.section-plans {
+  padding: 48px 0;
+  background: #f8faf9;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.plan-card {
+  background: #ffffff;
+  padding: 28px 24px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e8edec;
+}
+
+.plan-icon {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.plan-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a3a3a;
+  margin: 0 0 8px 0;
+}
+
+.plan-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a6a6a;
+  margin: 0;
+}
+
+/* Process Section */
+.section-process {
+  padding: 48px 0;
+  background: #ffffff;
+}
+
+.process-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 40px auto;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.process-step {
+  background: #f8faf9;
+  padding: 24px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.step-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a7a5a;
+  margin-bottom: 8px;
+}
+
+.process-step h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a3a3a;
+  margin: 0 0 6px 0;
+}
+
+.process-step p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4a6a6a;
+  margin: 0;
+}
+
+/* Providers Section */
+.section-providers {
+  padding: 48px 0;
+  background: #f8faf9;
+}
+
+.providers-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 24px;
+  max-width: 720px;
+  margin: 24px auto;
+  list-style: none;
+  padding: 0;
+}
+
+.providers-list li {
+  font-size: 0.95rem;
+  color: #1a3a3a;
+  padding: 6px 0;
+  border-bottom: 1px solid #e8edec;
+}
+
+.providers-disclaimer {
+  font-size: 0.85rem;
+  color: #6a8a8a;
+  text-align: center;
+  max-width: 640px;
+  margin: 16px auto 0 auto;
+  font-style: italic;
+}
+
+/* ========================================== */
+/* Responsive                                 */
+/* ========================================== */
+
+@media (max-width: 768px) {
+  .page-hero-title {
+    font-size: 2rem;
+  }
+  
+  .concept-grid,
+  .goals-grid,
+  .plans-grid,
+  .process-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .providers-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero-title {
+    font-size: 1.6rem;
+  }
+  
+  .concept-grid,
+  .goals-grid,
+  .plans-grid,
+  .process-steps,
+  .providers-list {
+    grid-template-columns: 1fr;
+  }
+}

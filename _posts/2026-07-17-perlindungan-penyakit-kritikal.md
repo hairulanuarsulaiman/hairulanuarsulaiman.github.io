@@ -8,7 +8,7 @@ description: Fahami bagaimana perlindungan penyakit kritikal membantu melindungi
 
 ---
 
-{% include image.html src="/assets/images/artikel/article-05-penyakit-kritikal.webp" alt="Seseorang sedang duduk di kerusi hospital melihat ke luar tingkap yang terang, menggambarkan harapan dan pemulihan." %}
+{% include image.html src="/assets/images/artikel/article-05-penyakit-kritikal.webp" alt="Pemandangan cahaya matahari pagi memasuki bilik hospital yang tenang melalui tingkap besar." %}
 
 Ramai orang menganggap penyakit kritikal sebagai sesuatu yang hanya berlaku kepada orang lain. Ada juga yang beranggapan bahawa memiliki kad perubatan sudah memadai untuk menghadapi sebarang masalah kesihatan.
 

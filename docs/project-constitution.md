@@ -1,127 +1,207 @@
-##Website Constitution v1.0
+⸻
 
-Hairul Anuar Bin Sulaiman
-Islamic Financial Adviser Representative (IFAR) & Unit Trust Consultant
+Editorial Principles
 
 Purpose
 
-Membantu individu dan keluarga di Malaysia membuat keputusan kewangan yang lebih yakin melalui pendidikan, perancangan yang teliti, dan hubungan jangka panjang yang patuh Syariah.
+This document defines the editorial philosophy for the Hairul Anuar Bin Sulaiman website.
+
+Its purpose is to ensure every article remains consistent in tone, quality and purpose, regardless of when it is written or who assists in writing it.
+
+The objective is not simply to publish financial content. The objective is to build long-term trust through clear, honest and educational writing.
 
 ⸻
 
-Guiding Principles
+1. Educate Before Recommending
 
-1. Kepercayaan mengatasi populariti.
+People should understand a financial concept before they are introduced to a possible solution.
 
-Saya memilih untuk menjadi penasihat yang dipercayai, bukan yang paling lantang.
+An informed reader is more likely to make confident and appropriate decisions. Recommendations should arise naturally from understanding, not from persuasion.
 
-⸻
+Ask yourself:
 
-2. Pendidikan mendahului cadangan.
-
-Saya menerangkan konsep, pilihan dan risiko supaya pembaca memahami sebelum membuat keputusan.
+Have I explained the problem before mentioning a product or service?
 
 ⸻
 
-3. Manusia didahulukan, produk kemudian.
+2. Explain Before Persuading
 
-Saya bermula dengan matlamat, keluarga dan keperluan seseorang—bukan dengan produk.
+Articles should help readers think, not pressure them to act.
 
-⸻
+The purpose is to clarify financial concepts so readers can evaluate their own circumstances.
 
-4. Kejelasan mengatasi kerumitan.
+Avoid urgency, fear, or emotional pressure.
 
-Bahasa yang mudah difahami lebih bernilai daripada istilah yang mengelirukan.
+Ask yourself:
 
-⸻
-
-5. Hubungan jangka panjang mengatasi jualan jangka pendek.
-
-Kepercayaan dibina melalui konsistensi, bukan tekanan.
+Am I helping the reader understand rather than convincing them?
 
 ⸻
 
-6. Setiap halaman mesti membantu pembaca membuat keputusan yang lebih baik.
+3. Write for People, Not Search Engines
 
-Jika sesuatu halaman tidak membantu pembaca memahami sesuatu, ia perlu diperbaiki.
+SEO is important, but readability always comes first.
 
-⸻
+Use natural Malaysian Bahasa Melayu.
 
-7. Tulis untuk rakyat Malaysia.
+Avoid keyword stuffing or writing purely to rank.
 
-Gunakan Bahasa Melayu yang semula jadi, dengan istilah industri yang lazim digunakan apabila sesuai.
+If the article genuinely answers readers’ questions, search engines will usually reward it over time.
 
-⸻
+Ask yourself:
 
-8. Tulis kandungan yang kekal relevan.
-
-Artikel harus terus memberi manfaat walaupun dibaca beberapa tahun kemudian.
+Would I enjoy reading this if Google didn’t exist?
 
 ⸻
 
-Principle 9
+4. Be Accurate, Even When Simplicity Is Tempting
 
-Setiap cadangan bermula dengan kefahaman.
+Financial topics often involve nuance.
 
-______
+Prefer “usually”, “may”, or “depends” where appropriate instead of making absolute statements.
 
-Principle 10 — Regulatory Precision
+Avoid oversimplifying concepts that could mislead readers.
 
-Every professional designation, appointment and regulatory reference on this website must follow the official wording issued by the relevant regulator or licensing body. Marketing language must never overstate or imply qualifications beyond those officially granted.
+Ask yourself:
 
-_______
-
-
-Principle 11 — Process Before Products
-
-The website explains the financial planning process before introducing financial solutions. Products are presented as tools within a broader planning journey, not as the starting point of the conversation.
-
---------
-
-Design Philosophy
-
-Your website should feel like this:
-
-* Calm, not noisy.
-* Professional, not flashy.
-* Educational, not promotional.
-* Confident, not arrogant.
-* Human, not corporate.
-
-When someone visits your website, I want them to think:
-
-“Saya rasa lebih yakin selepas membaca laman ini.”
-
-Not:
-
-“Saya rasa sedang dijual sesuatu.”
+Is this both easy to understand and technically accurate?
 
 ⸻
 
-The North Star
+5. Avoid Fear-Based Messaging
 
-If I had to reduce your entire website to one sentence, it would be this:
+Readers should make financial decisions because they understand the value—not because they feel frightened.
 
-“Setiap halaman membantu seseorang membuat keputusan kewangan yang lebih baik.”
+Avoid phrases that exaggerate risk or create unnecessary urgency.
 
-That sentence is simple enough to remember, but powerful enough to guide hundreds of future decisions.
+Confidence is built through understanding.
+
+Ask yourself:
+
+Am I educating or creating anxiety?
 
 ⸻
 
-My proposal
+6. Focus on Timeless Principles
 
-I think this constitution deserves its own place in your repository.
+Most articles should still be useful five years from now.
 
+Prioritise enduring concepts such as protection, discipline, diversification, risk management and financial planning.
 
-Milestone 2 — Homepage Foundation (Completed)
+Avoid writing content that becomes outdated quickly unless necessary.
 
-The homepage now establishes a clear narrative before introducing any financial solutions:
+Ask yourself:
 
-1. Purpose
-2. Trust
-3. Process
+Will this article still be valuable several years from now?
 
-Only after these foundations are established are the core planning areas introduced.
+⸻
 
-This architecture reflects the principle:
-"Memahami dahulu. Membuat keputusan kemudian."
+7. Use Clear, Natural Bahasa Melayu
+
+Write as an educated Malaysian speaks.
+
+Avoid unnecessary English where good Malay exists.
+
+Retain established financial terms where they improve clarity.
+
+Sentences should feel conversational without becoming overly casual.
+
+Ask yourself:
+
+Would I explain it this way during a client conversation?
+
+⸻
+
+8. Products Are Tools, Not the Destination
+
+Readers visit the website to solve financial problems.
+
+Products exist only to support those solutions.
+
+Never allow the discussion of products to overshadow the financial planning objective.
+
+Ask yourself:
+
+Am I discussing the product or the problem it helps solve?
+
+⸻
+
+9. Respect the Reader
+
+Assume readers are intelligent.
+
+Provide enough information for them to think critically.
+
+Avoid exaggeration, manipulation or unrealistic promises.
+
+Trust grows when readers feel respected.
+
+Ask yourself:
+
+Does this article treat the reader like an equal?
+
+⸻
+
+10. Maintain a Calm, Professional Voice
+
+The tone should be reassuring without becoming promotional.
+
+Write as a trusted adviser, not as a salesperson.
+
+Readers should finish an article feeling more informed and more confident.
+
+Ask yourself:
+
+Would this still sound appropriate ten years from now?
+
+⸻
+
+11. Reflect Shariah Principles Naturally
+
+The website exists to support Shariah-compliant financial planning.
+
+However, articles should educate rather than preach.
+
+Where relevant, explain how Shariah principles influence financial decisions without assuming prior knowledge.
+
+Ask yourself:
+
+Am I explaining the principle instead of merely stating it?
+
+⸻
+
+12. Help Readers Make Better Financial Decisions
+
+Every article should leave readers better informed than they were before they started reading.
+
+Whether or not they ever become a client is secondary.
+
+If readers gain clarity, avoid a costly mistake, or feel more confident discussing their finances, the article has achieved its purpose.
+
+Business relationships are built on trust, and trust grows when education comes before promotion.
+
+Ask yourself:
+
+If this reader never contacts me, have I still genuinely helped them make a better financial decision?
+
+⸻
+
+One more suggestion
+
+I’d add a final section that serves as your editorial checklist before you publish.
+
+Before Publishing
+
+Every article should answer “Yes” to these questions:
+
+* □ Does the article educate before recommending?
+* □ Have I explained the problem before discussing solutions?
+* □ Is the language clear, natural and respectful?
+* □ Have I avoided fear-based or sales-driven messaging?
+* □ Is every factual statement accurate?
+* □ Will this article still be useful in several years?
+* □ Does the article reflect Shariah principles appropriately?
+* □ Does the article help readers make better financial decisions?
+* □ Would I be proud for this article to represent my professional reputation five years from now?
+
+⸻

@@ -1676,4 +1676,97 @@ font-weight:600;
   line-height: 1.7;
   margin: 0;
 }
+
+/* ========================================== */
+/* Related Articles — Xubuntu-Inspired        */
+/* ========================================== */
+
+.related-articles {
+  margin: 40px 0 0 0;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.related-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a3a3a;
+  margin: 0 0 16px 0;
+}
+
+.related-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.related-item {
+  padding: 12px 16px;
+  background: #f8faf9;
+  border-radius: 8px;
+  transition: background 0.15s ease;
+}
+
+.related-item:hover {
+  background: #f0f4f8;
+}
+
+.related-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.related-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1a7a5a;
+  background: #e8f0ee;
+  padding: 2px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.related-post-title {
+  font-size: 0.95rem;
+  color: #1a3a3a;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.related-link:hover .related-post-title {
+  color: #1a7a5a;
+}
+
+/* ========================================== */
+/* Responsive (Mobile)                        */
+/* ========================================== */
+
+@media (max-width: 550px) {
+  .related-articles {
+    margin: 32px 0 0 0;
+    padding-top: 20px;
+  }
+  
+  .related-item {
+    padding: 10px 14px;
+  }
+  
+  .related-link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .related-post-title {
+    font-size: 0.9rem;
+  }
+}
  

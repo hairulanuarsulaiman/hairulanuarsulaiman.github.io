@@ -9,29 +9,38 @@
 {% endfor %}
 
 {% if related_posts.size > 0 %}
+
+<!-- Sort related posts by date (newest first) -->
+{% assign sorted_related = related_posts | sort: 'date' | reverse %}
+
 <section class="related-articles" aria-labelledby="related-heading">
   <div class="related-container">
     
     <h3 id="related-heading" class="related-title">
-      Artikel Berkaitan
+      Bacaan Lanjut
     </h3>
     
-    <ul class="related-list">
-      {% assign max_related = 3 %}
+    <p class="related-intro">
+      Jika anda ingin memahami topik ini dengan lebih mendalam, artikel berikut mungkin membantu.
+    </p>
+    
+    <div class="related-grid">
       {% assign counter = 0 %}
-      {% for post in related_posts %}
-        {% if counter < max_related %}
-          <li class="related-item">
-            <a href="{{ post.url | relative_url }}" class="related-link">
-              <span class="related-category">{{ post.category }}</span>
-              <span class="related-post-title">{{ post.title }}</span>
+      {% for post in sorted_related %}
+        {% if counter < 3 %}
+          <article class="related-card">
+            <a href="{{ post.url | relative_url }}" class="related-card-link">
+              <span class="related-card-category">{{ post.category }}</span>
+              <h4 class="related-card-title">{{ post.title }}</h4>
+              <p class="related-card-excerpt">{{ post.description | truncate: 100 }}</p>
             </a>
-          </li>
+          </article>
           {% assign counter = counter | plus: 1 %}
         {% endif %}
       {% endfor %}
-    </ul>
+    </div>
     
   </div>
 </section>
+
 {% endif %}

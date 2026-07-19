@@ -1,11 +1,11 @@
 <header class="google-site-header">
   <nav class="google-nav-container" aria-label="Navigasi Utama">
-    <!-- Brand Logo/Name -->
-    <a href="/index/" class="google-nav-logo">
+    <!-- Nama Jenama / Logo -->
+    <a href="/index.html" class="google-nav-logo">
       Hairul Anuar Sulaiman
     </a>
     
-    <!-- Hidden checkbox for standard mobile menu toggle -->
+    <!-- Mekanisme Toggle Menu Mudah Alih (CSS Only) -->
     <input type="checkbox" id="menu-toggle" class="google-menu-checkbox">
     <label for="menu-toggle" class="google-menu-icon" aria-label="Buka Menu">
       <span></span>
@@ -13,18 +13,34 @@
       <span></span>
     </label>
 
-    <!-- Navigation Links Links -->
+    <!-- Senarai Pautan Navigasi -->
     <div class="google-nav-links">
       <ul class="google-nav-list">
-        <li><a href="/index/" class="{% if page.url == '/index.html' %}active{% endif %}">Home</a></li>
-        <li><a href="/tentang/" class="{% if page.url == '/tentang.html' %}active{% endif %}">Tentang Saya</a></li>
-        <li><a href="/takaful/" class="{% if page.url == '/takaful.html' %}active{% endif %}">Takaful</a></li>
-        <li><a href="/unittrust/" class="{% if page.url == '/unittrust.html' %}active{% endif %}">Unit Trust</a></li>
-        <li><a href="/persaraan/" class="{% if page.url == '/persaraan.html' %}active{% endif %}">Persaraan</a></li>
-        <li><a href="/faq/" class="{% if page.url == '/faq.html' %}active{% endif %}">FAQ</a></li>
-        <li><a href="/artikel/" class="{% if page.url == '/artikel.html' %}active{% endif %}">Artikel</a></li>
-        <!-- Premium Pill Action Button -->
-        <li><a href="/hubungi/" class="google-btn-nav">Hubungi</a></li>
+        <li>
+          <a href="/index.html" class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}">Home</a>
+        </li>
+        <li>
+          <a href="/tentang.html" class="{% if page.url == '/tentang.html' %}active{% endif %}">Tentang Saya</a>
+        </li>
+        <li>
+          <a href="/takaful.html" class="{% if page.url == '/takaful.html' %}active{% endif %}">Takaful</a>
+        </li>
+        <li>
+          <a href="/unittrust.html" class="{% if page.url == '/unittrust.html' %}active{% endif %}">Unit Trust</a>
+        </li>
+        <li>
+          <a href="/persaraan.html" class="{% if page.url == '/persaraan.html' %}active{% endif %}">Persaraan</a>
+        </li>
+        <li>
+          <a href="/faq.html" class="{% if page.url == '/faq.html' %}active{% endif %}">FAQ</a>
+        </li>
+        <li>
+          <a href="/artikel.html" class="{% if page.url contains '/artikel' %}active{% endif %}">Artikel</a>
+        </li>
+        <!-- Butang Tindakan Khas (Pill Button) -->
+        <li>
+          <a href="/hubungi.html" class="google-btn-nav">Hubungi</a>
+        </li>
       </ul>
     </div>
   </nav>

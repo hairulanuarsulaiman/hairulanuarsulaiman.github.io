@@ -1,4 +1,4 @@
-<!-- Related Articles -->
+<!-- Related Articles — Google Minimalist Stream -->
 {% assign current_category = page.category %}
 {% assign related_posts = "" | split: "" %}
 
@@ -9,38 +9,32 @@
 {% endfor %}
 
 {% if related_posts.size > 0 %}
-
-<!-- Sort related posts by date (newest first) -->
 {% assign sorted_related = related_posts | sort: 'date' | reverse %}
 
-<section class="related-articles" aria-labelledby="related-heading">
-  <div class="related-container">
-    
-    <h3 id="related-heading" class="related-title">
-      Bacaan Lanjut
-    </h3>
-    
-    <p class="related-intro">
-      Jika anda ingin memahami topik ini dengan lebih mendalam, artikel berikut mungkin membantu.
+<section class="google-layout-section" style="border-top: 1px solid var(--border-subtle); padding-top: 64px;" aria-labelledby="related-heading">
+  <div class="google-related-header">
+    <p class="google-eyebrow">Hub Pengetahuan</p>
+    <h3 id="related-heading" class="google-related-main-title">Bacaan Lanjut</h3>
+    <p class="google-related-intro">
+      Artikel pilihan untuk membantu anda memahami pengurusan risiko dan perancangan kewangan dengan lebih mendalam.
     </p>
-    
-    <div class="related-grid">
-      {% assign counter = 0 %}
-      {% for post in sorted_related %}
-        {% if counter < 3 %}
-          <article class="related-card">
-            <a href="{{ post.url | relative_url }}" class="related-card-link">
-              <span class="related-card-category">{{ post.category }}</span>
-              <h4 class="related-card-title">{{ post.title }}</h4>
-              <p class="related-card-excerpt">{{ post.description | truncate: 100 }}</p>
-            </a>
-          </article>
-          {% assign counter = counter | plus: 1 %}
-        {% endif %}
-      {% endfor %}
-    </div>
-    
+  </div>
+  
+  <div class="google-flex-grid">
+    {% assign counter = 0 %}
+    {% for post in sorted_related %}
+      {% if counter < 3 %}
+        <article class="google-minimal-card google-related-card">
+          <a href="{{ post.url | relative_url }}" class="google-related-link-wrapper">
+            <span class="google-related-category">{{ post.category }}</span>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.description | truncate: 110 }}</p>
+            <span class="google-related-action-text">Baca Artikel →</span>
+          </a>
+        </article>
+        {% assign counter = counter | plus: 1 %}
+      {% endif %}
+    {% endfor %}
   </div>
 </section>
-
 {% endif %}

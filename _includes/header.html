@@ -17,29 +17,28 @@
     <div class="google-nav-links">
       <ul class="google-nav-list">
         <li>
-          <a href="/index.html" class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}">Home</a>
+          <a href="{{ '/' | relative_url }}" class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}">Home</a>
         </li>
         <li>
-          <a href="/tentang.html" class="{% if page.url == '/tentang.html' %}active{% endif %}">Tentang Saya</a>
+          <a href="{{ '/tentang/' | relative_url }}" class="{% if page.url contains '/tentang/' %}active{% endif %}">Tentang Saya</a>
         </li>
         <li>
-          <a href="/takaful.html" class="{% if page.url == '/takaful.html' %}active{% endif %}">Takaful</a>
+          <a href="{{ '/takaful/' | relative_url }}" class="{% if page.url contains '/takaful/' %}active{% endif %}">Takaful</a>
         </li>
         <li>
-          <a href="/unittrust.html" class="{% if page.url == '/unittrust.html' %}active{% endif %}">Unit Trust</a>
+          <a href="{{ '/unittrust/' | relative_url }}" class="{% if page.url contains '/unittrust/' %}active{% endif %}">Unit Trust</a>
         </li>
         <li>
-          <a href="/persaraan.html" class="{% if page.url == '/persaraan.html' %}active{% endif %}">Persaraan</a>
+          <a href="{{ '/persaraan/' | relative_url }}" class="{% if page.url contains '/persaraan/' %}active{% endif %}">Persaraan</a>
         </li>
         <li>
-          <a href="/faq.html" class="{% if page.url == '/faq.html' %}active{% endif %}">FAQ</a>
+          <a href="{{ '/faq/' | relative_url }}" class="{% if page.url contains '/faq/' %}active{% endif %}">FAQ</a>
         </li>
         <li>
-          <a href="/artikel.html" class="{% if page.url contains '/artikel' %}active{% endif %}">Artikel</a>
+          <a href="{{ '/artikel/' | relative_url }}" class="{% if page.url contains '/artikel' %}active{% endif %}">Artikel</a>
         </li>
-        <!-- Butang Tindakan Khas (Pill Button) -->
         <li>
-          <a href="/hubungi.html" class="google-btn-nav">Hubungi</a>
+          <a href="{{ '/hubungi/' | relative_url }}" class="google-btn-nav">Hubungi</a>
         </li>
       </ul>
     </div>

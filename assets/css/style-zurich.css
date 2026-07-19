@@ -1,0 +1,511 @@
+/* ========================================== */
+/* ZURICH-INSPIRED DESIGN                     */
+/* ========================================== */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Colours — Zurich-Inspired */
+  --zurich-bg: #FAFAF8;
+  --zurich-bg-warm: #F5F0E8;
+  --zurich-text-primary: #1F2937;
+  --zurich-text-secondary: #6B7280;
+  --zurich-accent: #1A7A5A;
+  --zurich-accent-hover: #135F45;
+  --zurich-white: #FFFFFF;
+  --zurich-border: #E8E0D8;
+  --zurich-card-bg: #F5F0E8;
+
+  /* Typography */
+  --zurich-font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --zurich-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+/* ========================================== */
+/* HERO SECTION                              */
+/* ========================================== */
+
+.hero-zurich {
+  padding: 80px 0 60px 0;
+  background: var(--zurich-bg);
+}
+
+.hero-zurich-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-zurich-title {
+  font-family: var(--zurich-font-serif);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--zurich-text-primary);
+  line-height: 1.15;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-zurich-description {
+  font-family: var(--zurich-font-sans);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--zurich-text-secondary);
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-zurich-description strong {
+  color: var(--zurich-text-primary);
+  font-weight: 600;
+}
+
+.hero-zurich-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+/* ========================================== */
+/* BUTTONS                                   */
+/* ========================================== */
+
+.btn-zurich-primary {
+  display: inline-block;
+  font-family: var(--zurich-font-sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--zurich-white);
+  background: var(--zurich-accent);
+  padding: 14px 32px;
+  border-radius: 0;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.btn-zurich-primary:hover {
+  background: var(--zurich-accent-hover);
+}
+
+.btn-zurich-secondary {
+  display: inline-block;
+  font-family: var(--zurich-font-sans);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--zurich-text-primary);
+  background: transparent;
+  padding: 14px 32px;
+  border: 1px solid var(--zurich-text-primary);
+  border-radius: 0;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-zurich-secondary:hover {
+  background: var(--zurich-text-primary);
+  color: var(--zurich-white);
+}
+
+/* ========================================== */
+/* SECTION TITLES                            */
+/* ========================================== */
+
+.section-title-zurich {
+  font-family: var(--zurich-font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--zurich-text-primary);
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.section-body-zurich {
+  font-family: var(--zurich-font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--zurich-text-secondary);
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto 12px auto;
+  text-align: center;
+}
+
+/* ========================================== */
+/* SECTION: MENGAPA PERLINDUNGAN PENTING?    */
+/* ========================================== */
+
+.section-why-zurich {
+  padding: 60px 0;
+  background: var(--zurich-white);
+}
+
+/* ========================================== */
+/* SECTION: PANDANGAN SAYA                    */
+/* ========================================== */
+
+.section-philosophy-zurich {
+  padding: 60px 0;
+  background: var(--zurich-bg-warm);
+}
+
+.philosophy-eyebrow-zurich {
+  font-family: var(--zurich-font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--zurich-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+
+/* ========================================== */
+/* SECTION: MEMAHAMI TAKAFUL                 */
+/* ========================================== */
+
+.section-concept-zurich {
+  padding: 60px 0;
+  background: var(--zurich-white);
+}
+
+.section-link-zurich {
+  font-family: var(--zurich-font-sans);
+  font-size: 0.95rem;
+  color: var(--zurich-accent);
+  text-align: center;
+  margin-top: 16px;
+}
+
+.section-link-zurich a {
+  color: var(--zurich-accent);
+  text-decoration: underline;
+}
+
+.section-link-zurich a:hover {
+  color: var(--zurich-accent-hover);
+}
+
+/* ========================================== */
+/* SECTION: APAKAH YANG INGIN DILINDUNGI?    */
+/* ========================================== */
+
+.section-goals-zurich {
+  padding: 60px 0;
+  background: var(--zurich-bg-warm);
+}
+
+.goals-zurich-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 24px auto 0 auto;
+}
+
+.goal-zurich-card {
+  background: var(--zurich-white);
+  padding: 32px 24px;
+  text-align: center;
+  border: 1px solid var(--zurich-border);
+}
+
+.goal-zurich-icon {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.goal-zurich-card h3 {
+  font-family: var(--zurich-font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--zurich-text-primary);
+  margin: 0 0 8px 0;
+}
+
+.goal-zurich-card p {
+  font-family: var(--zurich-font-sans);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--zurich-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========================================== */
+/* SECTION: PERLINDUNGAN DALAM PELAN         */
+/* ========================================== */
+
+.section-integration-zurich {
+  padding: 60px 0;
+  background: var(--zurich-white);
+}
+
+/* ========================================== */
+/* SECTION: BAGAIMANA SAYA MEMBANTU          */
+/* ========================================== */
+
+.section-process-zurich {
+  padding: 60px 0;
+  background: var(--zurich-bg-warm);
+}
+
+.process-zurich-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 24px auto 0 auto;
+}
+
+.process-zurich-step {
+  background: var(--zurich-white);
+  padding: 32px 24px;
+  text-align: center;
+  border: 1px solid var(--zurich-border);
+}
+
+.step-zurich-number {
+  font-family: var(--zurich-font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--zurich-accent);
+  margin-bottom: 8px;
+}
+
+.process-zurich-step h3 {
+  font-family: var(--zurich-font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--zurich-text-primary);
+  margin: 0 0 8px 0;
+}
+
+.process-zurich-step p {
+  font-family: var(--zurich-font-sans);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--zurich-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ========================================== */
+/* SECTION: PERKARA YANG SELALU DIBIMBANGKAN */
+/* ========================================== */
+
+.section-concerns-zurich {
+  padding: 60px 0;
+  background: var(--zurich-white);
+}
+
+.concern-zurich-item {
+  max-width: 640px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--zurich-border);
+}
+
+.concern-zurich-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.concern-zurich-item h3 {
+  font-family: var(--zurich-font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--zurich-text-primary);
+  margin: 0 0 6px 0;
+}
+
+.concern-zurich-item p {
+  font-family: var(--zurich-font-sans);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--zurich-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========================================== */
+/* SECTION: MENGAPA SAYA TIDAK TERIKAT       */
+/* ========================================== */
+
+.section-providers-zurich {
+  padding: 60px 0;
+  background: var(--zurich-bg-warm);
+}
+
+/* ========================================== */
+/* SECTION: LUANGKAN BEBERAPA MINIT          */
+/* ========================================== */
+
+.section-reflection-zurich {
+  padding: 60px 0;
+  background: var(--zurich-white);
+}
+
+.reflection-zurich-list {
+  max-width: 480px;
+  margin: 16px auto 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.reflection-zurich-list li {
+  font-family: var(--zurich-font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--zurich-text-secondary);
+  padding: 8px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--zurich-border);
+}
+
+.reflection-zurich-list li:last-child {
+  border-bottom: none;
+}
+
+/* ========================================== */
+/* SECTION: FAQ                               */
+/* ========================================== */
+
+.section-faq-zurich {
+  padding: 60px 0;
+  background: var(--zurich-bg-warm);
+}
+
+.faq-zurich-item {
+  max-width: 640px;
+  margin: 0 auto 24px auto;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--zurich-border);
+}
+
+.faq-zurich-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.faq-zurich-item h3 {
+  font-family: var(--zurich-font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--zurich-text-primary);
+  margin: 0 0 8px 0;
+}
+
+.faq-zurich-item p {
+  font-family: var(--zurich-font-sans);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--zurich-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========================================== */
+/* FINAL CTA                                  */
+/* ========================================== */
+
+.cta-final-zurich {
+  padding: 80px 0;
+  background: var(--zurich-text-primary);
+}
+
+.cta-final-zurich-content {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-final-zurich-title {
+  font-family: var(--zurich-font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--zurich-white);
+  margin: 0 0 16px 0;
+}
+
+.cta-final-zurich-description {
+  font-family: var(--zurich-font-sans);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+}
+
+.cta-final-zurich-actions {
+  margin-top: 24px;
+}
+
+.cta-final-zurich-actions .btn-zurich-primary {
+  background: var(--zurich-white);
+  color: var(--zurich-text-primary);
+}
+
+.cta-final-zurich-actions .btn-zurich-primary:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* ========================================== */
+/* RESPONSIVE                                 */
+/* ========================================== */
+
+@media (max-width: 768px) {
+  .hero-zurich-title {
+    font-size: 2.2rem;
+  }
+
+  .goals-zurich-grid,
+  .process-zurich-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-zurich-description {
+    font-size: 1rem;
+  }
+
+  .section-title-zurich {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-zurich-title {
+    font-size: 1.8rem;
+  }
+
+  .goals-zurich-grid,
+  .process-zurich-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-zurich-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-zurich-primary,
+  .btn-zurich-secondary {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .cta-final-zurich-title {
+    font-size: 1.6rem;
+  }
+}

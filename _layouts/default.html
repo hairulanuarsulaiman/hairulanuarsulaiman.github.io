@@ -14,33 +14,35 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
   <meta name="author" content="{{ site.author }}">
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Meta Sosial Gaya Google Corporate -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}Hairul Anuar Sulaiman">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
-  <meta property="og:image" content="{{ site.url }}/assets/images/hairul-anuar.jpeg">
+  <!-- Menggunakan imej 16:9 yang lebih berautoriti tinggi sebagai paparan media sosial default -->
+  <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/assets/images/perlindungan-takaful-pendapatan-sedia-hadapi-risiko.webp{% endif %}">
   <meta property="og:locale" content="ms_MY">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Fail CSS Utama Baharu -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 
   {% if page.schema %}
-  <!-- Page-specific JSON-LD -->
+  <!-- Page-specific JSON-LD (Skema Khusus Halaman) -->
   {{ page.schema }}
   {% endif %}
 
   {% if page.faq_schema %}
-  <!-- FAQ Page JSON-LD -->
+  <!-- FAQ Page JSON-LD (Skema FAQ Google AI-Friendly) -->
   {{ page.faq_schema }}
   {% endif %}
 
-  <!-- Global Site Schema -->
+  <!-- Global Site Schema (Skema Standard Kewangan) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "name": "{{ site.title }}",
+    "name": "Hairul Anuar Sulaiman",
     "description": "{{ site.description }}",
     "url": "{{ site.url }}",
     "image": "{{ site.url }}/assets/images/hairul-anuar.jpeg",
@@ -58,71 +60,35 @@
 
 <body>
 
-  <!-- PAGE HEADER -->
+  <!-- NAVIGASI UTAMA (GAYA ABOUT.GOOGLE) -->
   {% include header.html %}
 
-  <!-- UNIQUE PAGE CONTENT -->
-  <main>
+  <!-- KANDUNGAN UNIK HALAMAN -->
+  <main class="google-main-content">
     {{ content }}
   </main>
 
-  <!-- FOOTER -->
+  <!-- PENGAKI HALAMAN MINIMALIS -->
   {% include footer.html %}
 
-  <!-- Floating WhatsApp -->
+  <!-- Floating WhatsApp Action Button -->
   <aside>
     <a href="https://wa.me/{{ site.phone }}" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Hubungi saya melalui WhatsApp">💬 WhatsApp</a>
   </aside>
 
+  <!-- Skrip Ringkas Mengawal Penutupan Menu Drawer Selepas Pautan Ditekan -->
   <script>
-  // ==========================================
-  // MOBILE DROPDOWN TOGGLE & NAV BEHAVIOR
-  // ==========================================
-  document.addEventListener('DOMContentLoaded', function() {
-    const toggleButtons = document.querySelectorAll('.dropdown-toggle');
-    
-    toggleButtons.forEach(button => {
-      button.addEventListener('click', function(e) {
-        const parentLi = this.closest('.dropdown');
-        const isCurrentlyOpen = parentLi.classList.contains('open');
-        
-        document.querySelectorAll('.dropdown.open').forEach(d => {
-          if (d !== parentLi) {
-            d.classList.remove('open');
-            d.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuLinks = document.querySelectorAll('.google-nav-list a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          const checkbox = document.getElementById('menu-toggle');
+          if (checkbox && checkbox.checked) {
+            checkbox.checked = false;
           }
         });
-        
-        if (isCurrentlyOpen) {
-          parentLi.classList.remove('open');
-          this.setAttribute('aria-expanded', 'false');
-        } else {
-          parentLi.classList.add('open');
-          this.setAttribute('aria-expanded', 'true');
-        }
-        
-        e.preventDefault();
       });
     });
-
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.dropdown') && !e.target.closest('.menu-icon')) {
-        document.querySelectorAll('.dropdown.open').forEach(d => {
-          d.classList.remove('open');
-          d.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
-        });
-      }
-    });
-
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', function() {
-        const checkbox = document.getElementById('menu-toggle');
-        if (checkbox && checkbox.checked) {
-          checkbox.checked = false;
-        }
-      });
-    });
-  });
   </script>
 
 </body>

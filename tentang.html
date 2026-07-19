@@ -4,106 +4,175 @@ title: Tentang Saya | Hairul Anuar Sulaiman
 description: Kenali Hairul Anuar Bin Sulaiman. Membantu individu dan keluarga di Malaysia membuat keputusan kewangan yang lebih yakin berlandaskan prinsip Syariah. Islamic Financial Adviser Representative (IFAR) yang dilantik oleh Phillip Wealth Planners dan Unit Trust Scheme Consultant berdaftar dengan FIMM.
 ---
 
-<article class="article-container">
-  
-  <header class="cta-content" aria-labelledby="about-heading">
+<!-- ========================================== -->
+<!-- 1. HERO PROFILE SECTION (GAYA ABOUT.GOOGLE)-->
+<!-- ========================================== -->
+<section class="google-hero" aria-labelledby="about-heading">
+  <div class="google-hero-container" style="grid-template-columns: 0.8fr 1.2fr; gap: 48px;">
     
-    <picture>
-      <!-- AVIF -->
-      <source 
-        srcset="/assets/images/hero-320.avif 320w,
-                /assets/images/hero-640.avif 640w"
-        sizes="(max-width: 480px) 320px, 640px"
-        type="image/avif">
+    <!-- Lajur Visual: Gambar Profil Responsif -->
+    <div class="google-hero-visual">
+      <figure class="google-hero-image-container" style="max-width: 320px; aspect-ratio: 1 / 1; border-radius: 50%;">
+        <picture>
+          <!-- AVIF -->
+          <source 
+            srcset="{{ '/assets/images/hero-320.avif' | relative_url }} 320w,
+                    {{ '/assets/images/hero-640.avif' | relative_url }} 640w"
+            sizes="(max-width: 480px) 320px, 640px"
+            type="image/avif">
 
-      <!-- WebP -->
-      <source 
-        srcset="/assets/images/hero-320.webp 320w,
-                /assets/images/hero-640.webp 640w"
-        sizes="(max-width: 480px) 320px, 640px"
-        type="image/webp">
+          <!-- WebP -->
+          <source 
+            srcset="{{ '/assets/images/hero-320.webp' | relative_url }} 320w,
+                    {{ '/assets/images/hero-640.webp' | relative_url }} 640w"
+            sizes="(max-width: 480px) 320px, 640px"
+            type="image/webp">
 
-      <!-- Fallback JPEG -->
-      <img 
-        src="/assets/images/hairul-anuar.jpeg" 
-        alt="Hairul Anuar Sulaiman - Perunding Kewangan Islam & Unit Trust berdaftar FIMM" 
-        class="author-photo"
-        loading="lazy"
-        decoding="async"
-        width="640"
-        height="640">
-    </picture>
-    
-    <h1 id="about-heading" class="article-title">Hairul Anuar Bin Sulaiman</h1>
-    <p class="article-intro">
-      Islamic Financial Adviser Representative (IFAR)<br>
-      Unit Trust Scheme Consultant<br>
-      Associate Shariah Registered Financial Planner
-    </p>
-  </header>
-
-  <div class="article-content">
-    
-    <h2 id="mission-heading">Misi Saya</h2>
-    <p>
-      Saya percaya setiap individu dan keluarga di Malaysia berhak mendapat bimbingan kewangan yang jujur dan patuh Syariah – tanpa tekanan, tanpa istilah rumit, dan tanpa produk yang bercampur riba.
-    </p>
-    <p>
-      Sejak 2013, saya telah membantu ramai klien – daripada profesional muda yang baru membina kerjaya hinggalah ketua keluarga yang mencari ketenangan hari tua – menavigasi perjalanan kewangan mereka dengan betul. Saya tunjukkan bagaimana takaful bukan sekadar polisi tetapi jaring keselamatan, dan bagaimana pelaburan Islamik boleh dimulakan dengan berdisiplin.
-    </p>
-    <p>
-      Setiap klien membawa cerita unik. Ada yang tertanya‑tanya dari mana untuk bermula, ada yang risau tentang bebanan komitmen, dan ada yang ingin memastikan harta mereka diuruskan mengikut kehendak Syariah. Saya di sini untuk mendengar, menasihati, dan mendampingi – bukan semata-mata untuk menjual.
-    </p>
-
-    <h2 id="approach-heading">Bagaimana Saya Bekerja</h2>
-    <div class="expect-grid">
-      <article class="expect-card">
-        <h3>Dengar Dahulu</h3>
-        <p>Setiap perbincangan bermula dengan memahami matlamat hidup, komitmen, dan kebimbangan anda. Tiada templat pukal untuk semua orang.</p>
-      </article>
-      <article class="expect-card">
-        <h3>Patuh Syariah</h3>
-        <p>Saya hanya menawarkan instrumen yang disahkan oleh Penasihat Syariah bertauliah – bebas riba, gharar, dan unsur haram.</p>
-      </article>
-      <article class="expect-card">
-        <h3>Telus & Jelas</h3>
-        <p>Semua struktur, risiko, dan proses dijelaskan dari awal. Anda tidak akan terperangkap dalam istilah yang mengelirukan.</p>
-      </article>
-      <article class="expect-card">
-        <h3>Dampingan Berterusan</h3>
-        <p>Hubungan kita bukan sekadar transaksi. Saya akan bersama anda menyemak semula keperluan kewangan apabila fasa kehidupan anda berubah.</p>
-      </article>
+          <!-- Fallback JPEG -->
+          <img 
+            src="{{ '/assets/images/hairul-anuar.jpeg' | relative_url }}" 
+            alt="Hairul Anuar Sulaiman - Perunding Kewangan Islam & Unit Trust" 
+            class="google-hero-flagship-img"
+            style="border-radius: 50%; aspect-ratio: 1 / 1;"
+            loading="eager"
+            decoding="async"
+            width="640"
+            height="640"
+          >
+        </picture>
+      </figure>
     </div>
 
-    <h2 id="credentials-heading">Status Pendaftaran & Tauliah Rasmi</h2>
-    <div class="article-callout">
-      <ul>
-        <li><span class="check" aria-hidden="true">✔</span> <strong>Islamic Financial Adviser Representative (IFAR):</strong> Dilantik oleh <strong>Phillip Wealth Planners Sdn Bhd</strong>, dengan pengkhususan penasihatan kewangan bagi penyelesaian Takaful. Status boleh disemak di <a href="https://www.bnm.gov.my/regulations/fsp-directory/far" target="_blank" rel="noopener noreferrer">Direktori FAR Bank Negara Malaysia</a>.</li>
-        <li><span class="check" aria-hidden="true">✔</span> <strong>Unit Trust Scheme Consultant:</strong> Berdaftar dengan FIMM di bawah nombor <strong>F01040203</strong>. Dana unit trust diedarkan melalui platform <strong>Phillip Mutual Berhad</strong>.</li>
-        <li><span class="check" aria-hidden="true">✔</span> <strong>Associate Shariah Registered Financial Planner:</strong> Ahli Bersekutu Malaysian Financial Planning Council (MFPC).</li>
-      </ul>
-      <p class="article-disclaimer">Pelabur dinasihatkan membaca prospektus sebelum melabur. Pelaburan tertakluk kepada risiko pasaran.</p>
+    <!-- Lajur Teks: Nama & Jawatan Rasmi -->
+    <div class="google-hero-content" style="text-align: left;">
+      <span class="google-hero-eyebrow">Profil Profesional</span>
+      <h1 id="about-heading" class="google-hero-title" style="font-size: clamp(2.25rem, 4vw, 3.25rem); margin-bottom: 16px;">
+        Hairul Anuar Bin Sulaiman
+      </h1>
+      <p style="font-size: 1.15rem; line-height: 1.6; color: var(--accent-action); font-weight: 600; margin: 0 0 24px 0;">
+        Islamic Financial Adviser Representative (IFAR)<br>
+        Unit Trust Scheme Consultant<br>
+        Associate Shariah Registered Financial Planner
+      </p>
+      <div class="google-hero-actions">
+        <a href="https://wa.me/{{ site.phone | remove: '+' | remove: ' ' }}" class="google-btn-hero-primary" target="_blank" rel="noopener noreferrer">Hubungi Saya</a>
+        <a href="#misi" class="google-btn-hero-secondary">Baca Misi Saya ↓</a>
+      </div>
     </div>
 
-    <h2 id="service-area-heading">Kawasan Khidmat</h2>
-    <p>Sesi pertemuan boleh diatur secara fizikal di kawasan berikut:</p>
-    <ul>
-      <li><span class="check" aria-hidden="true">✔</span> <strong>Johor:</strong> Kota Tinggi, Johor Bahru, Kluang</li>
-      <li><span class="check" aria-hidden="true">✔</span> <strong>Atas Talian:</strong> Seluruh Malaysia (Google Meet / Zoom)</li>
-    </ul>
-    <p>Bagi memastikan anda menerima tumpuan penuh, semua konsultasi—sama ada secara bersemuka atau melalui panggilan video—dijalankan melalui temu janji berjadual.</p>
-    
-  </div>
-</article>
-
-<section class="cta-section" aria-labelledby="cta-heading">
-  <div class="cta-content">
-    <p class="section-eyebrow">Mulakan Perbualan</p>
-    <h2 id="cta-heading">Berminat untuk Berbual?</h2>
-    <p>Sesi 30 minit pertama adalah percuma. Saya dengar, saya faham, baru saya cadangkan. Mari luangkan masa berbincang tanpa sebarang komitmen.</p>
-    <nav class="cta-buttons" aria-label="Pilihan Konsultasi">
-      <a href="https://wa.me/601127657730" class="btn-primary" target="_blank" rel="noopener noreferrer">💬 WhatsApp Saya</a>
-      <a href="/hubungi/" class="btn-secondary">📅 Tempah Janji Temu</a>
-    </nav>
   </div>
 </section>
+
+<!-- ========================================== -->
+<!-- 2. MISI SAYA                               -->
+<!-- ========================================== -->
+<section class="google-layout-section" style="background-color: var(--bg-track);" id="misi" aria-labelledby="mission-heading">
+  <div class="google-center-header" style="max-width: 720px; margin: 0 auto; text-align: left;">
+    <p class="google-eyebrow">Prinsip & Kepercayaan</p>
+    <h2 id="mission-heading" style="font-size: 2rem; margin-bottom: 24px;">Misi Saya</h2>
+    <div style="font-size: 1.1rem; color: var(--text-main); line-height: 1.8;">
+      <p style="margin-bottom: 20px;">Saya percaya setiap individu dan keluarga di Malaysia berhak mendapat bimbingan kewangan yang jujur dan patuh Syariah – tanpa desakan tekanan, tanpa istilah teknikal yang rumit, dan tanpa produk yang bercampur riba.</p>
+      <p style="margin-bottom: 20px;">Sejak tahun 2013, saya telah mendampingi ramai klien – daripada profesional muda yang baru membina tapak kerjaya sehinggalah ketua keluarga yang mencari ketenangan aliran tunai di hari tua. Saya membantu menavigasi perjalanan aset mereka dengan betul, menjelaskan bagaimana Takaful bertindak sebagai jaring keselamatan risiko dan bagaimana Unit Trust boleh dikumpul secara berdisiplin.</p>
+      <p style="margin-bottom: 0;">Setiap klien membawa naratif unik. Ada yang keliru tentang titik permulaan, ada yang terbeban dengan komitmen bulanan, dan ada yang mahu memastikan pengurusan harta diurus mengikut hukum syarak. Peranan saya adalah untuk mendengar dan menasihati — bukan semata-mata mengejar transaksi penjualan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 3. BAGAIMANA SAYA BEKERJA (GRID KAD)       -->
+<!-- ========================================== -->
+<section class="google-layout-section" aria-labelledby="approach-heading">
+  <div class="google-center-header">
+    <p class="google-eyebrow">Aliran Budaya Kerja</p>
+    <h2 id="approach-heading">Bagaimana Saya Bekerja</h2>
+  </div>
+
+  <div class="google-flex-grid">
+    <article class="google-minimal-card">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">01</div>
+      <h3>Dengar Dahulu</h3>
+      <p>Setiap perbincangan bermula dengan memahami matlamat hidup, komitmen, dan kebimbangan anda secara mendalam. Tiada templat pukal untuk semua orang.</p>
+    </article>
+    <article class="google-minimal-card">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">02</div>
+      <h3>Ketulenan Syariah</h3>
+      <p>Saya hanya menawarkan instrumen kewangan yang disaring dan disahkan oleh Penasihat Syariah bertauliah – bebas daripada unsur riba, gharar, dan maisir.</p>
+    </article>
+    <article class="google-minimal-card">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">03</div>
+      <h3>Ketelusan Mutlak</h3>
+      <p>Semua struktur kos, unjuran risiko pasaran, dan proses kerja dijelaskan secara terbuka dari awal. Anda tidak akan terperangkap dengan terma yang mengelirukan.</p>
+    </article>
+    <article class="google-minimal-card">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">04</div>
+      <h3>Dampingan Berkala</h3>
+      <p>Hubungan kita bukan sekadar transaksi satu kali. Portfolio anda akan disemak secara berkala bagi memastikan ia sentiasa selari apabila fasa kehidupan berubah.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 4. STATUS PENDAFTARAN & TAULIAH KAWAL SELIA-->
+<!-- ========================================== -->
+<section class="google-layout-section" style="background-color: var(--bg-track);" aria-labelledby="credentials-heading">
+  <div class="google-center-header" style="max-width: 720px; margin: 0 auto; text-align: left; margin-bottom: 40px;">
+    <p class="google-eyebrow">Pematuhan Undang-Undang</p>
+    <h2 id="credentials-heading" style="font-size: 2rem;">Status Pendaftaran & Tauliah Rasmi</h2>
+  </div>
+
+  <div class="google-flex-grid" style="grid-template-columns: 1fr; max-width: 850px; margin: 0 auto; gap: 20px;">
+    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px;">
+      <p style="margin: 0; line-height: 1.7;">
+        🛡️ <strong>Islamic Financial Adviser Representative (IFAR):</strong> Merupakan pelantikan rasmi di bawah perkhidmatan korporat <strong>Phillip Wealth Planners Sdn Bhd</strong>, dengan skop tugasan yang difokuskan khusus bagi penyelesaian produk Takaful sahaja. Status pelantikan boleh disemak secara sah di <a href="https://www.bnm.gov.my/regulations/fsp-directory/far" target="_blank" rel="noopener noreferrer" style="color: var(--navy); font-weight: 600;">Direktori FAR Bank Negara Malaysia</a>.
+      </p>
+    </article>
+    
+    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px;">
+      <p style="margin: 0; line-height: 1.7;">
+        💼 <strong>Unit Trust Scheme Consultant:</strong> Berdaftar secara sah dengan Federation of Investment Managers Malaysia (FIMM) di bawah nombor pendaftaran korporat <strong>F01040203</strong>. Pengedaran dana unit trust Islamik diuruskan melalui platform penasihatan <strong>Phillip Mutual Berhad</strong>.
+      </p>
+    </article>
+    
+    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px;">
+      <p style="margin: 0; line-height: 1.7;">
+        📜 <strong>Associate Shariah Registered Financial Planner:</strong> Memegang status keahlian profesional bersekutu yang diiktiraf oleh <strong>Malaysian Financial Planning Council (MFPC)</strong>.
+      </p>
+    </article>
+  </div>
+
+  <div style="max-width: 850px; margin: 32px auto 0 auto; font-style: italic; font-size: 0.85rem; color: var(--text-secondary); text-align: center;">
+    <p>Pelaburan dana unit trust melibatkan risiko pasaran. Pelabur dinasihatkan untuk meneliti Prospektus rasmi sebelum mengambil sebarang keputusan pelaburan.</p>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 5. KAWASAN KHIDMAT                         -->
+<!-- ========================================== -->
+<section class="google-layout-section" aria-labelledby="service-area-heading">
+  <div class="google-center-header" style="max-width: 720px; margin: 0 auto; text-align: left;">
+    <p class="google-eyebrow">Lokasi & Capaian</p>
+    <h2 id="service-area-heading" style="font-size: 2rem; margin-bottom: 24px;">Kawasan Khidmat Konsultasi</h2>
+    <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main); margin-bottom: 32px;">
+      Bagi memastikan anda menerima tumpuan pengiraan yang optimum, semua sesi perbincangan dijalankan secara eksklusif melalui temu janji berjadual.
+    </p>
+  </div>
+
+  <div class="google-flex-grid" style="max-width: 850px; margin: 0 auto; gap: 32px;">
+    <article class="google-minimal-card" style="text-align: center;">
+      <span style="font-size: 2.5rem; display: block; margin-bottom: 12px;" aria-hidden="true">📍</span>
+      <h3>Pertemuan Fizikal</h3>
+      <p>Sesi konsultasi secara bersemuka boleh diatur secara berjadual di sekitar kawasan <strong>Johor (Kota Tinggi, Johor Bahru, dan Kluang)</strong>.</p>
+    </article>
+    
+    <article class="google-minimal-card" style="text-align: center;">
+      <span style="font-size: 2.5rem; display: block; margin-bottom: 12px;" aria-hidden="true">💻</span>
+      <h3>Sesi Atas Talian</h3>
+      <p>Bagi profesional di luar kawasan Johor, sesi pemetaan portfolio dijalankan secara digital ke seluruh Malaysia menggunakan <strong>Google Meet atau Zoom</strong>.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 6. DYNAMIC GLOBAL CALL TO ACTION           -->
+<!-- ========================================== -->
+{% include cta-section.html %}

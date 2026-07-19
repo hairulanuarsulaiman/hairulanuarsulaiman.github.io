@@ -1,4 +1,4 @@
-<!-- Related Articles — Google Minimalist Stream -->
+<!-- Related Articles — Inside Article Stream (Max 680px Alignment) -->
 {% assign current_category = page.category %}
 {% assign related_posts = "" | split: "" %}
 
@@ -11,30 +11,31 @@
 {% if related_posts.size > 0 %}
 {% assign sorted_related = related_posts | sort: 'date' | reverse %}
 
-<section class="google-layout-section" style="border-top: 1px solid var(--border-subtle); padding-top: 64px;" aria-labelledby="related-heading">
-  <div class="google-related-header">
-    <p class="google-eyebrow">Hub Pengetahuan</p>
-    <h3 id="related-heading" class="google-related-main-title">Bacaan Lanjut</h3>
-    <p class="google-related-intro">
+<div style="margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border-subtle); box-sizing: border-box;">
+  <div style="margin-bottom: 24px;">
+    <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; margin-bottom: 4px;">Hub Pengetahuan</span>
+    <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--navy); margin: 0 0 6px 0; letter-spacing: -0.02em;">Bacaan Lanjut</h3>
+    <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
       Artikel pilihan untuk membantu anda memahami pengurusan risiko dan perancangan kewangan dengan lebih mendalam.
     </p>
   </div>
   
-  <div class="google-flex-grid">
+  <!-- Grid Khas Padat untuk Lebar Teks 680px (2 Lajur Maksimum) -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
     {% assign counter = 0 %}
     {% for post in sorted_related %}
-      {% if counter < 3 %}
-        <article class="google-minimal-card google-related-card">
-          <a href="{{ post.url | relative_url }}" class="google-related-link-wrapper">
-            <span class="google-related-category">{{ post.category }}</span>
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.description | truncate: 110 }}</p>
-            <span class="google-related-action-text">Baca Artikel →</span>
+      {% if counter < 2 %} <!-- Kita hadkan kepada 2 kad sahaja supaya tidak terlalu padat dalam ruang 680px -->
+        <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 24px; border-left: 3px solid var(--navy); box-sizing: border-box; display: flex; flex-direction: column; height: 100%;">
+          <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%; flex-grow: 1;">
+            <span style="font-size: 0.75rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; display: block; margin-bottom: 8px;">{{ post.category }}</span>
+            <h4 style="font-size: 1.1rem; font-weight: 700; line-height: 1.4; color: var(--navy); margin: 0 0 8px 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; letter-spacing: -0.01em;">{{ post.title }}</h4>
+            <p style="font-size: 0.85rem; color: var(--text-main); line-height: 1.5; margin: 0 0 16px 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; flex-grow: 1;">{{ post.description | truncate: 90 }}</p>
+            <span style="font-size: 0.85rem; font-weight: 600; color: var(--navy); margin-top: auto; display: inline-block;">Baca Artikel →</span>
           </a>
         </article>
         {% assign counter = counter | plus: 1 %}
       {% endif %}
     {% endfor %}
   </div>
-</section>
+</div>
 {% endif %}

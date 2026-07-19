@@ -1462,124 +1462,102 @@ h1, h2, h3, h4 {
   }
 }
 
-/* ========================================== */
-/* Author Box — Xubuntu-Inspired Minimalist   */
-/* ========================================== */
-
-.author-box {
-  margin: 48px 0 0 0;
-  padding: 24px 32px;
-  background: #1a2a3a;  /* Heavy Navy */
-  border-radius: 8px;
-}
-
-.author-box-inner {
+/* ==========================================================================
+   GOOGLE-INSPIRED AUTHOR BOX COMPONENT
+   ========================================================================== */
+.google-author-box {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 32px;
+  background-color: var(--bg-track);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card); /* Memakai standard bucu bulat 24px */
+  padding: 40px;
+  margin: 64px 0 40px 0;
 }
 
-/* Avatar */
-.author-avatar {
+/* Avatar Layout */
+.google-author-avatar-container {
   flex-shrink: 0;
 }
 
-.author-avatar img {
+.google-author-img {
   display: block;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Gambar penulis kekal bulat untuk identiti profesional */
   object-fit: cover;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--border-subtle);
 }
 
-/* Details — All White Text */
-.author-details {
+/* Details Layout */
+.google-author-details {
   flex: 1;
-  min-width: 0;
 }
 
-.author-name {
-  margin: 0 0 2px 0;
-  font-size: 1rem;
-  color: #ffffff;  /* White */
+.google-author-name {
+  font-family: var(--font-global) !important; /* Menggunakan sans-serif untuk E-E-A-T metadata */
+  font-size: 1.15rem !important;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 8px 0 !important;
+  letter-spacing: -0.02em;
 }
 
-.author-name strong {
-  font-weight: 600;
-}
-
-.author-bio {
-  margin: 0 0 2px 0;
-  font-size: 0.9rem;
-  color: #ffffff;  /* White */
-  line-height: 1.6;
-}
-
-.author-description {
-  margin: 4px 0 8px 0;
-  font-size: 0.9rem;
-  color: #ffffff;  /* White */
+.google-author-bio {
+  font-size: 0.95rem;
+  color: var(--navy);
+  margin: 0 0 6px 0 !important;
   line-height: 1.5;
 }
 
-.author-link {
-  margin: 0;
-  font-size: 0.85rem;
+.google-author-bio strong {
+  color: var(--accent-action); /* Highlight jawatan rasmi dengan warna Sage Green */
+  font-weight: 600;
 }
 
-.author-link a {
-  color: #ffffff;  /* White */
+.google-author-desc {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0 0 20px 0 !important;
+}
+
+/* Action Link */
+.google-author-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
   text-decoration: none;
-  font-weight: 500;
-  transition: opacity 0.15s ease;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: var(--transition-smooth);
 }
 
-.author-link a:hover {
-  opacity: 0.7;
-  border-bottom-color: rgba(255, 255, 255, 0.5);
+.google-author-link:hover {
+  color: var(--accent-action);
 }
 
-/* ========================================== */
-/* Responsive (Mobile)                        */
-/* ========================================== */
-
-@media (max-width: 550px) {
-  .author-box {
-    margin: 32px 0 0 0;
-    padding: 20px;
-  }
-  
-  .author-box-inner {
-    flex-direction: column;
+/* ==========================================================================
+   RESPONSIVE MOBILE BREAKPOINT
+   ========================================================================== */
+@media (max-width: 640px) {
+  .google-author-box {
+    flex-direction: column; /* Tukar susunan ke bawah untuk skrin telefon */
     align-items: center;
     text-align: center;
-    gap: 12px;
+    padding: 32px 24px;
+    gap: 20px;
+  }
+
+  .google-author-img {
+    width: 72px;
+    height: 72px;
   }
   
-  .author-avatar img {
-    width: 56px;
-    height: 56px;
-  }
-  
-  .author-name {
-    font-size: 0.95rem;
-  }
-  
-  .author-bio {
-    font-size: 0.85rem;
-  }
-  
-  .author-description {
-    font-size: 0.85rem;
-  }
-  
-  .author-link {
-    font-size: 0.8rem;
+  .google-author-desc {
+    margin-bottom: 16px !important;
   }
 }
-
 /* ========================================== */
 /* Contact Form (Hubungi Page)                */
 /* ========================================== */

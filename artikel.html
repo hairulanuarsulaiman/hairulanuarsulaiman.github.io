@@ -11,7 +11,7 @@ description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berk
   "@type": "Blog",
   "name": "Artikel Kewangan Halal – Hairul Anuar Sulaiman",
   "description": "Pendidikan kewangan Islam percuma untuk individu dan keluarga di Malaysia yang mahu membina asas kewangan dan pelaburan halal.",
-  "url": "https://hairulanuarsulaiman.github.io/artikel.html",
+  "url": "https://hairulanuarsulaiman.github.io/artikel/",
   "author": {
     "@type": "Person",
     "name": "Hairul Anuar Bin Sulaiman",
@@ -20,38 +20,66 @@ description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berk
 }
 </script>
 
-<section class="articles-section" aria-labelledby="articles-heading">
-  <div class="container">
-    
-    <div class="articles-heading">
-      <p class="section-eyebrow">Hab Ilmu</p>
-      <h1 id="articles-heading">Artikel Kewangan Halal</h1>
-      <p>
-        Keputusan kewangan yang baik bermula dengan kefahaman yang betul. Terokai panduan ringkas berkaitan perlindungan takaful, pelaburan unit trust patuh Syariah, dan perancangan persaraan yang ditulis khusus untuk membantu anda membuat pilihan dengan lebih yakin.
-      </p>
-    </div>
-
-    <div class="articles-grid">
-
-      {% for post in site.posts %}
-      <article class="article-card">
-        <span class="article-category">{{ post.category }}</span>
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.description }}</p>
-        <a href="{{ post.url | relative_url }}">Baca Artikel →</a>
-      </article>
-      {% endfor %}
-
-    </div>
-
-    <div class="articles-footer">
-      <p style="color: var(--slate-400); font-style: italic;">
-        Lebih banyak artikel akan datang. Penulisan baharu akan dikemas kini secara berkala.
-      </p>
-    </div>
-
+<!-- ========================================== -->
+<!-- 1. HEADER HAB ILMU                         -->
+<!-- ========================================== -->
+<section class="google-layout-section" style="padding-bottom: 40px;">
+  <div class="google-center-header" style="max-width: 720px; margin: 0 auto;">
+    <p class="google-eyebrow">Hub Pengetahuan</p>
+    <h1 id="articles-heading" style="font-size: clamp(2.25rem, 5vw, 3.25rem); color: var(--navy); font-weight: 800; letter-spacing: -0.03em; margin: 0 0 16px 0;">
+      Artikel Kewangan Halal
+    </h1>
+    <p class="google-related-intro" style="text-align: center;">
+      Keputusan kewangan yang bijak bermula dengan kefahaman yang betul. Terokai panduan ringkas berkaitan perlindungan Takaful, pelaburan Unit Trust patuh Syariah, dan perancangan persaraan untuk membantu anda membuat pilihan dengan lebih yakin.
+    </p>
   </div>
 </section>
 
-<!-- ✅ CTA Section using Include -->
+<!-- ========================================== -->
+<!-- 2. GRID SENARAI ARTIKEL (LOOPING DINAMIK)  -->
+<!-- ========================================== -->
+<section class="google-layout-section" style="background-color: var(--bg-track); padding-top: 64px; padding-bottom: 64px;">
+  <div class="google-flex-grid" style="max-width: 1140px; margin: 0 auto;">
+
+    {% for post in site.posts %}
+      <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px; display: flex; flex-direction: column; height: 100%;">
+        <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+          
+          <!-- Tag Kategori Gaya Google -->
+          <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; display: inline-block;">
+            {{ post.category }}
+          </span>
+          
+          <!-- Tajuk Artikel (Maksima 2 baris untuk kekemasan) -->
+          <h3 style="font-size: 1.25rem; font-weight: 700; line-height: 1.4; color: var(--navy); margin: 0 0 12px 0; letter-spacing: -0.02em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+            {{ post.title }}
+          </h3>
+          
+          <!-- Deskripsi Ringkas -->
+          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.6; margin: 0 0 24px 0; flex-grow: 1;">
+            {{ post.description | truncate: 120 }}
+          </p>
+          
+          <!-- Butang Tindakan Kaki Kad -->
+          <span class="google-related-action-text" style="font-size: 0.9rem; font-weight: 600; color: var(--navy); margin-top: auto; display: inline-block; transition: var(--transition-smooth);">
+            Baca Artikel →
+          </span>
+          
+        </a>
+      </article>
+    {% endfor %}
+
+  </div>
+
+  <!-- Footer Halaman Peringatan -->
+  <div style="max-width: 720px; margin: 48px auto 0 auto; text-align: center;">
+    <p style="color: var(--text-secondary); font-style: italic; font-size: 0.9rem;">
+      Lebih banyak artikel akan datang. Penulisan baharu dikemas kini secara berkala.
+    </p>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 3. DYNAMIC GLOBAL CALL TO ACTION           -->
+<!-- ========================================== -->
 {% include cta-section.html %}

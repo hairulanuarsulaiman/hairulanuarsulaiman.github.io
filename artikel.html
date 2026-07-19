@@ -39,11 +39,13 @@ description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berk
 <!-- 2. GRID SENARAI ARTIKEL (LOOPING DINAMIK)  -->
 <!-- ========================================== -->
 <section class="google-layout-section" style="background-color: var(--bg-track); padding-top: 64px; padding-bottom: 64px;">
-  <div class="google-flex-grid" style="max-width: 1140px; margin: 0 auto;">
+  
+  <!-- Penukaran gaya inline grid bagi memastikan tiada pertindihan baris -->
+  <div class="google-flex-grid" style="max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
 
     {% for post in site.posts %}
-      <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px; display: flex; flex-direction: column; height: 100%;">
-        <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+      <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px; display: flex; flex-direction: column; height: 100%; box-sizing: border-box;">
+        <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%; flex-grow: 1;">
           
           <!-- Tag Kategori Gaya Google -->
           <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; display: inline-block;">

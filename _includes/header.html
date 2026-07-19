@@ -1,52 +1,31 @@
-<!-- ========================================== -->
-<!-- PAGE HEADER (Updated - Copy this EXACT)   -->
-<!-- ========================================== -->
-<header>
-  <nav aria-label="Navigasi Utama">
-    <div class="nav-container">
-      <a href="{{ site.baseurl }}/" class="logo">Hairul Anuar Sulaiman</a>
-      
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+<header class="google-site-header">
+  <nav class="google-nav-container" aria-label="Navigasi Utama">
+    <!-- Brand Logo/Name -->
+    <a href="/index.html" class="google-nav-logo">
+      Hairul Anuar Sulaiman
+    </a>
+    
+    <!-- Hidden checkbox for standard mobile menu toggle -->
+    <input type="checkbox" id="menu-toggle" class="google-menu-checkbox">
+    <label for="menu-toggle" class="google-menu-icon" aria-label="Buka Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-      <div class="nav-links">
-        <ul class="nav-list">
-          <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Utama</a></li>
-          <li><a href="{{ site.baseurl }}/tentang/" {% if page.url contains "tentang" %}class="active"{% endif %}>Tentang Saya</a></li>
-          
-          <!-- PERKHIDMATAN (Dropdown) -->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
-              Perkhidmatan <span class="caret">▾</span>
-            </a>
-            <ul class="dropdown-menu" aria-label="Submenu Perkhidmatan">
-              <li><a href="{{ site.baseurl }}/perkhidmatan/">📋 Lihat Semua Perkhidmatan</a></li>
-              <li><a href="{{ site.baseurl }}/takaful/">🛡 Perlindungan (Takaful)</a></li>
-              <li><a href="{{ site.baseurl }}/unittrust/">📈 Pelaburan (Unit Trust)</a></li>
-              <li><a href="{{ site.baseurl }}/persaraan/">🌿 Strategi Persaraan</a></li>
-            </ul>
-          </li>
-
-          <!-- SUMBER (Dropdown) -->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
-              Sumber <span class="caret">▾</span>
-            </a>
-            <ul class="dropdown-menu" aria-label="Submenu Sumber">
-              <li><a href="{{ site.baseurl }}/sumber/">📚 Semua Sumber & Artikel</a></li>
-              <li><a href="{{ site.baseurl }}/artikel/">📖 Artikel</a></li>
-              <li><a href="{{ site.baseurl }}/faq/">❓ FAQ</a></li>
-            </ul>
-          </li>
-
-          <li><a href="{{ site.baseurl }}/hubungi/">Hubungi</a></li>
-          <li><a href="{{ site.baseurl }}/kit-permulaan/" class="btn-nav-cta">📥 Kit Percuma</a></li>
-        </ul>
-      </div>
+    <!-- Navigation Links Links -->
+    <div class="google-nav-links">
+      <ul class="google-nav-list">
+        <li><a href="/index.html" class="{% if page.url == '/index.html' %}active{% endif %}">Home</a></li>
+        <li><a href="/tentang.html" class="{% if page.url == '/tentang.html' %}active{% endif %}">Tentang Saya</a></li>
+        <li><a href="/takaful.html" class="{% if page.url == '/takaful.html' %}active{% endif %}">Takaful</a></li>
+        <li><a href="/unittrust.html" class="{% if page.url == '/unittrust.html' %}active{% endif %}">Unit Trust</a></li>
+        <li><a href="/persaraan.html" class="{% if page.url == '/persaraan.html' %}active{% endif %}">Persaraan</a></li>
+        <li><a href="/faq.html" class="{% if page.url == '/faq.html' %}active{% endif %}">FAQ</a></li>
+        <li><a href="/artikel.html" class="{% if page.url == '/artikel.html' %}active{% endif %}">Artikel</a></li>
+        <!-- Premium Pill Action Button -->
+        <li><a href="/hubungi.html" class="google-btn-nav">Hubungi</a></li>
+      </ul>
     </div>
   </nav>
 </header>

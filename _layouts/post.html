@@ -1,32 +1,136 @@
 ---
-layout: base
+layout: default
 ---
 
-<article class="google-article">
-  <!-- 1. Header Halaman Artikel -->
-  <header class="google-article-header">
-    <div class="google-article-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
-      {% if page.category %}
-        <span class="google-article-divider">•</span>
-        <span class="google-article-category">{{ page.category }}</span>
-      {% endif %}
-    </div>
-    <h1 class="google-article-title">{{ page.title }}</h1>
-  </header>
-
-  <!-- 2. Kandungan Utama Fail Markdown (.md) -->
-  <div class="google-article-content">
-    {{ content }}
-  </div>
-
-  <!-- 3. Author Box (Jekyll Include yang telah kita bina) -->
-  <footer class="google-article-footer">
-    {% include author-box.html %}
+<!-- ========================================== -->
+<!-- 1. KEPALA ARTIKEL & MAKLUMAT META          -->
+<!-- ========================================== -->
+<article class="google-layout-section" style="padding-top: 48px; padding-bottom: 64px;">
+  <div style="max-width: 680px; margin: 0 auto; padding: 0 16px;">
     
-    <!-- Butang Kembali yang Minimalis -->
-    <div class="google-article-back">
-      <a href="/artikel.html">← Kembali ke Hub Pengetahuan</a>
+    <!-- Navigasi Halus (Breadcrumb) -->
+    <nav aria-label="Breadcrumb" style="margin-bottom: 24px; font-size: 0.85rem; font-weight: 500;">
+      <a href="{{ '/' | relative_url }}" style="color: var(--text-secondary); text-decoration: none;">Utama</a>
+      <span style="color: var(--border-subtle); margin: 0 8px;">/</span>
+      <a href="{{ '/artikel/' | relative_url }}" style="color: var(--text-secondary); text-decoration: none;">Artikel</a>
+      <span style="color: var(--border-subtle); margin: 0 8px;">/</span>
+      <span style="color: var(--accent-action); font-weight: 600; text-transform: uppercase;">{{ page.category }}</span>
+    </nav>
+
+    <!-- Tajuk Utama Artikel -->
+    <h1 style="font-size: clamp(2rem, 5vw, 2.75rem); color: var(--navy); font-weight: 800; letter-spacing: -0.03em; line-height: 1.25; margin: 0 0 20px 0;">
+      {{ page.title }}
+    </h1>
+
+    <!-- Deskripsi Pendek Halaman -->
+    {% if page.description %}
+      <p style="font-size: 1.15rem; line-height: 1.6; color: var(--text-secondary); margin: 0 0 28px 0; font-style: italic;">
+        {{ page.description }}
+      </p>
+    {% endif %}
+
+    <!-- Kad Penulis (E-E-A-T Optimization) -->
+    <div style="display: flex; align-items: center; gap: 16px; padding: 20px 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); margin-bottom: 40px;">
+      <img 
+        src="{{ '/assets/images/hairul-anuar.jpeg' | relative_url }}" 
+        alt="Hairul Anuar Sulaiman" 
+        style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border-subtle);"
+      >
+      <div>
+        <p style="margin: 0; font-weight: 700; color: var(--navy); font-size: 0.95rem;">
+          Hairul Anuar Sulaiman, <span style="font-size: 0.85rem; font-weight: 500; color: var(--accent-action);">Associate Shariah RFP</span>
+        </p>
+        <p style="margin: 4px 0 0 0; font-size: 0.8rem; color: var(--text-secondary);">
+          Diterbitkan pada {{ page.date | date: "%d %B %Y" }} • <span>{{ page.category }}</span>
+        </p>
+      </div>
     </div>
-  </footer>
+
+    <!-- ========================================== -->
+    <!-- 2. KANDUNGAN UTAMA (MARKDOWN OUTPUT)       -->
+    <!-- ========================================== -->
+    <div class="google-article-body" style="color: var(--text-main); font-size: 1.1rem; line-height: 1.85;">
+      
+      <!-- CSS Khusus untuk mencantikkan keluaran raw Markdown -->
+      <style>
+        .google-article-body p {
+          margin-bottom: 24px;
+        }
+        .google-article-body h2 {
+          font-size: 1.65rem;
+          color: var(--navy);
+          font-weight: 700;
+          margin-top: 48px;
+          margin-bottom: 16px;
+          letter-spacing: -0.02em;
+        }
+        .google-article-body h3 {
+          font-size: 1.35rem;
+          color: var(--navy);
+          font-weight: 700;
+          margin-top: 36px;
+          margin-bottom: 12px;
+          letter-spacing: -0.01em;
+        }
+        .google-article-body ul, .google-article-body ol {
+          margin-bottom: 28px;
+          padding-left: 24px;
+        }
+        .google-article-body li {
+          margin-bottom: 10px;
+        }
+        .google-article-body blockquote {
+          border-left: 4px solid var(--accent-action);
+          background-color: var(--bg-track);
+          padding: 20px 24px;
+          margin: 32px 0;
+          border-radius: 0 12px 12px 0;
+          font-style: italic;
+          color: var(--navy);
+        }
+        .google-article-body strong {
+          color: var(--navy);
+          font-weight: 700;
+        }
+        .google-article-body img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 16px;
+          margin: 32px 0;
+          box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03);
+        }
+        .google-article-body hr {
+          border: 0;
+          height: 1px;
+          background: var(--border-subtle);
+          margin: 40px 0;
+        }
+      </style>
+
+      {{ content }}
+
+    </div>
+
+    <!-- Petunjuk Kembali Ke Senarai Artikel -->
+    <div style="margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border-subtle); text-align: left;">
+      <a href="{{ '/artikel/' | relative_url }}" style="font-weight: 600; color: var(--navy); text-decoration: none; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px;">
+        ← Kembali ke Semua Artikel
+      </a>
+    </div>
+
+  </div>
 </article>
+
+<!-- ========================================== -->
+<!-- 3. DYNAMIC GLOBAL CALL TO ACTION           -->
+<!-- ========================================== -->
+{% include cta-section.html %}
+```
+eof
+
+### Kelebihan Magis Selepas Anda Memasang Fail Layout Ini:
+1. **Transformasi Menyeluruh Serta-merta:** Kesemua 6 fail markdown di dalam folder `_posts/` anda kini akan menggunakan reka bentuk baru ini secara automatik tanpa anda perlu mengubah sebaris kod pun di dalam fail markdown tersebut.
+2. **Kepatuhan SEO & E-E-A-T Google:** Google sangat menyukai artikel yang mempunyai nama penulis yang jelas, kelayakan profesional (Associate Shariah RFP), tarikh penerbitan, dan pautan patah balik yang bersih. Semua ini dibina terus di dalam layout ini.
+3. **Logik CTA Pintar Berfungsi:** Memandangkan kita telah meletakkan logik `page.layout == "post"` dalam `cta-section.html` sebelum ini, semua halaman artikel anda kini akan memaparkan teks CTA mesra pembaca: *"Ada Soalan Tentang Artikel Ini?"* secara automatik!
+
+Sila simpan fail layout ini di dalam folder `_layouts/post.html`. Seterusnya, adakah anda mahu berkongsi nama fail atau melihat salah satu contoh artikel markdown anda untuk kita uji kebersihannya?

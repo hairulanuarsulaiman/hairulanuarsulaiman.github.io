@@ -303,62 +303,155 @@ h1, h2, h3, h4 {
   }
 }
 
-/* 5. HERO SECTION — anchored navy, confident */
-.hero-section {
-  background: var(--navy);
-  color: white;
-  padding: clamp(60px, 10vw, 120px) 20px;
-  text-align: center;
+/* ==========================================================================
+   GOOGLE-INSPIRED MINIMALIST HERO SYSTEM
+   ========================================================================== */
+.google-hero {
+  background-color: var(--bg-pure);
+  padding: 120px 24px 80px 24px; /* Massive whitespace padding */
+  overflow: hidden;
 }
 
-.hero-content { max-width: 850px; margin: 0 auto; }
+.google-hero-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr; /* Dynamic asymmetric layout */
+  align-items: center;
+  gap: 64px;
+}
 
-.hero-h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+/* Typography Scale */
+.google-hero-eyebrow {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.google-hero-title {
+  font-size: clamp(2.5rem, 5vw, 3.75rem); /* Responsive fluid typography */
+  line-height: 1.15;
   font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  margin-bottom: 24px;
-  color: white;
+  color: var(--navy);
+  margin: 0 0 24px 0;
+  letter-spacing: -0.03em;
 }
 
-.hero-sub {
-  font-size: 1.3rem;
-  opacity: 0.9;
-  margin-bottom: 40px;
-  line-height: 1.6;
-  color: white;
+.google-hero-lead {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--text-main);
+  margin: 0 0 40px 0;
+  max-width: 600px;
 }
 
-.hero-outcomes{
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 30px;
-    color: white;
-    font-size: 1.1rem;
-    line-height: 1.8;
+/* Action Rows */
+.google-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-.hero-outcomes li{
-    margin-bottom: 8px;
+/* Pill Buttons */
+.google-btn-hero-primary {
+  display: inline-block;
+  background-color: var(--navy);
+  color: var(--bg-pure);
+  padding: 16px 32px;
+  border-radius: var(--radius-btn);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: var(--transition-smooth);
 }
 
-.check{
-    display: inline-block;
-    width: 1.5rem;
-    color: #E8D7A5;
+.google-btn-hero-primary:hover {
+  background-color: var(--accent-action);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  transform: translateY(-1px);
 }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+.google-btn-hero-secondary {
+  display: inline-block;
+  color: var(--navy);
+  padding: 16px 24px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: var(--transition-smooth);
 }
 
-.animate-resilience { opacity: 0; animation: fadeInUp 0.8s ease forwards; }
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
-.delay-3 { animation-delay: 0.6s; }
+.google-btn-hero-secondary:hover {
+  color: var(--accent-action);
+}
 
+/* Avatar Frame Architecture */
+.google-hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-hero-avatar-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 1 / 1;
+}
+
+.google-hero-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-card); /* Using signature large rounded corners */
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04);
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT OVERRIDES
+   ========================================================================== */
+@media (max-width: 968px) {
+  .google-hero {
+    padding: 80px 24px 60px 24px;
+  }
+
+  .google-hero-container {
+    grid-template-columns: 1fr; /* Switch to single stack */
+    text-align: center;
+    gap: 48px;
+  }
+
+  .google-hero-lead {
+    margin: 0 auto 32px auto;
+  }
+
+  .google-hero-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .google-hero-title {
+    font-size: 2.25rem;
+  }
+
+  .google-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .google-btn-hero-primary,
+  .google-btn-hero-secondary {
+    text-align: center;
+    width: 100%;
+  }
+}
 /* 6. BUTTONS — solid, Zurich-style */
 .btn-primary {
   background: var(--navy);
@@ -584,155 +677,157 @@ h1, h2, h3, h4 {
   border-color: var(--slate-100);
 }
 
-/* FOOTER */
-
-.site-footer{
-
-    background:var(--navy);
-
-    color:rgba(255,255,255,.85);
-
-    padding:80px 20px 32px;
-
+/* ==========================================================================
+   GOOGLE-INSPIRED MINIMALIST FOOTER SYSTEM
+   ========================================================================== */
+.google-site-footer {
+  background-color: var(--bg-track);
+  border-top: 1px solid var(--border-subtle);
+  padding: 80px 24px 48px 24px;
+  color: var(--text-main);
+  font-size: 0.95rem;
 }
 
-.footer-container{
-
-    max-width:1200px;
-
-    margin:0 auto;
-
+.google-footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-.footer-grid{
-
-    display:grid;
-
-    gap:48px;
-
+/* Upper Grid Architecture */
+.google-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 64px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-@media(min-width:768px){
-
-.footer-grid{
-
-    grid-template-columns:2fr 1fr 1fr;
-
+.google-footer-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
 }
 
+.google-footer-role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-action);
+  line-height: 1.5;
+  margin: 0 0 16px 0;
 }
 
-.footer-name{
-
-    margin-bottom:12px;
-
-    font-size:1.5rem;
-
-    color:#fff;
-
+.google-footer-bio {
+  max-width: 480px;
+  color: var(--text-main);
+  line-height: 1.65;
+  margin: 0;
 }
 
-.footer-role{
-
-    margin-bottom:22px;
-
-    color:var(--gold);
-
-    font-weight:600;
-
-    line-height:1.7;
-
+.google-footer-column h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+  margin: 0 0 20px 0;
 }
 
-.footer-section h4{
-
-    margin-bottom:22px;
-
-    color:#fff;
-
-    font-size:1rem;
-
+.google-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.footer-section p{
-
-    line-height:1.9;
-
-    color:rgba(255,255,255,.72);
-
+.google-footer-links li {
+  margin-bottom: 12px;
 }
 
-.footer-links{
-
-    list-style:none;
-
-    margin:0;
-
-    padding:0;
-
+.google-footer-links a {
+  text-decoration: none;
+  color: var(--text-main);
+  transition: var(--transition-smooth);
 }
 
-.footer-links li{
-
-    margin-bottom:14px;
-
+.google-footer-links a:hover {
+  color: var(--navy);
 }
 
-.footer-links a{
-
-    color:rgba(255,255,255,.72);
-
-    text-decoration:none;
-
-    transition:var(--transition);
-
+/* ==========================================================================
+   LOWER LAYER & REGULATORY ALIGNMENT
+   ========================================================================== */
+.google-footer-bottom {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
 }
 
-.footer-links a:hover{
-
-    color:#fff;
-
+.google-footer-legal-group {
+  max-width: 600px;
 }
 
-.footer-bottom{
-
-    margin-top:56px;
-
-    padding-top:28px;
-
-    text-align:center;
-
-    border-top:1px solid rgba(255,255,255,.12);
-
+.google-footer-disclaimer {
+  font-size: 0.85rem;
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0 0 8px 0;
 }
 
-.footer-disclaimer{
-
-    color:rgba(255,255,255,.65);
-
-    font-size:.92rem;
-
-    line-height:1.8;
-
+.google-footer-copyright {
+  font-size: 0.85rem;
+  color: var(--text-main);
+  opacity: 0.7;
+  margin: 0;
 }
 
-.footer-copyright{
-
-    margin-top:18px;
-
-    font-size:.85rem;
-
-    color:rgba(255,255,255,.45);
-
+.google-footer-utility-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-@media(max-width:767px){
-   .footer-section{
-      text-align:center;
-   }
-   .footer-links li{
-      margin-bottom:16px;
-   }
+.google-footer-utility-links a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: var(--transition-smooth);
+  white-space: nowrap;
+}
+
+.google-footer-utility-links a:hover {
+  color: var(--navy);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN SYSTEM OVERRIDES
+   ========================================================================== */
+@media (max-width: 768px) {
+  .google-site-footer {
+    padding: 60px 24px 32px 24px;
+  }
+
+  .google-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 32px;
+  }
+
+  .google-footer-bottom {
+    flex-direction: column-reverse; /* Puts institutional disclosure links on top for easy access */
+    gap: 24px;
+    padding-top: 24px;
+  }
+
+  .google-footer-utility-links {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 /* FINAL CALL TO ACTION */

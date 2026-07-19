@@ -1,37 +1,32 @@
 ---
-layout: default
+layout: base
 ---
 
-<article class="article-container">
-  
-  <header class="cta-content" aria-labelledby="post-heading">
-    <p class="section-eyebrow">{{ page.category }}</p>
-    <h1 id="post-heading" class="article-title">{{ page.title }}</h1>
-    <p class="article-intro">
-      <time datetime="{{ page.date | date_to_xmlschema }}" style="color: var(--slate-400);">
-        {{ page.date | date: "%-d-%m-%Y" }}
-      </time>
-    </p>
-    {% if page.description %}
-    <p class="article-intro">{{ page.description }}</p>
-    {% endif %}
+<article class="google-article">
+  <!-- 1. Header Halaman Artikel -->
+  <header class="google-article-header">
+    <div class="google-article-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
+      {% if page.category %}
+        <span class="google-article-divider">•</span>
+        <span class="google-article-category">{{ page.category }}</span>
+      {% endif %}
+    </div>
+    <h1 class="google-article-title">{{ page.title }}</h1>
   </header>
 
-  <div class="article-content">
+  <!-- 2. Kandungan Utama Fail Markdown (.md) -->
+  <div class="google-article-content">
     {{ content }}
   </div>
 
-  <!-- Author Box -->
-  {% include author-box.html %}
-
-  <!-- Disclaimer -->
-  <div class="disclaimer-container">
-    {% include disclaimer.md %}
-  </div>
-
-  {% include related-articles.html %}
-
+  <!-- 3. Author Box (Jekyll Include yang telah kita bina) -->
+  <footer class="google-article-footer">
+    {% include author-box.html %}
+    
+    <!-- Butang Kembali yang Minimalis -->
+    <div class="google-article-back">
+      <a href="/artikel.html">← Kembali ke Hub Pengetahuan</a>
+    </div>
+  </footer>
 </article>
-
-<!-- ✅ CTA Section (outside article, full-width) -->
-{% include cta-section.html %}

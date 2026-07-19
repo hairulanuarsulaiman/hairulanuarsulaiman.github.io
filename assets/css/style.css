@@ -1,44 +1,109 @@
-/* ============================================
-   HAIRUL ANUAR SULAIMAN - MASTER STYLESHEET
-   Perunding Kewangan Islam & Unit Trust
-   Zurich-inspired Swiss design, navy accent
-   ============================================ */
+/* ==========================================================================
+   THE "ABOUT.GOOGLE" MINIMALIST MASTER DESIGN SYSTEM
+   ========================================================================== */
 
-/* 1. MODERN VARIABLES */
 :root {
-  --navy: #1a365d;
-  --navy-light: #2b4a7a;          /* hover states */
-  --white: #ffffff;
-  --grey-bg: #f7f8fa;             /* Zurich-like alternating section background */
-  --slate-50: #f8fafc;
-  --slate-100: #f1f5f9;
-  --slate-200: #e2e8f0;
-  --slate-400: #94a3b8;
-  --slate-600: #475569;
-  --slate-900: #0f172a;
+  /* Google Inspired Minimalist Palette */
+  --bg-pure: #ffffff;            /* Base canvas */
+  --bg-track: #f8fafc;           /* Ultra-soft background track (slate-50) */
+  --navy: #0f172a;               /* Deep corporate gray-navy for high authority */
+  --text-main: #334155;          /* Softer text for extreme legibility (slate-700) */
+  --accent-action: #047857;      /* Clean compliant Sage Green for actions */
+  --border-subtle: #f1f5f9;      /* Hardly visible dividing lines (slate-100) */
 
-  --border-color: #e2e8f0;
-  --shadow-card: 0 2px 8px rgba(0,0,0,0.04);
-  --shadow-card-hover: 0 8px 24px rgba(0,0,0,0.08);
-  --transition: all 0.25s ease;
+  /* Typography Structure */
+  --font-global: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  
+  /* About.Google signature spacing & curves */
+  --radius-card: 24px;           /* Large, soft rounded corners */
+  --radius-btn: 100px;           /* Pill-shaped buttons */
+  --transition-smooth: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 2. GLOBAL RESET & BASE */
-* { box-sizing: border-box; }
-
+/* Global Foundations */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--slate-600);
-  background-color: var(--white);
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  font-family: var(--font-global);
+  background-color: var(--bg-pure);
+  color: var(--text-main);
+  line-height: 1.625;
+  letter-spacing: -0.01em;
 }
 
-h1, h2, h3, h4 { color: var(--navy); margin-top: 0; font-weight: 700; }
-a { color: var(--navy); transition: var(--transition); }
+/* Crisp, clean Google-style bold typography */
+h1, h2, h3, h4 {
+  font-family: var(--font-global);
+  color: var(--navy);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* ==========================================================================
+   LAYOUT LAYERS & COMPONENTS (Google-Affiliated Style)
+   ========================================================================== */
+.google-layout-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 24px; /* Generous breathing room */
+}
+
+.google-center-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.google-eyebrow {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+
+.google-center-header h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.google-flex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+/* The Subtle Borderless Card System */
+.google-minimal-card {
+  background-color: var(--bg-track);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 40px;
+  transition: var(--transition-smooth);
+}
+
+/* Subtle, high-end hover that shifts background slightly instead of dramatic floating */
+.google-minimal-card:hover {
+  background-color: var(--bg-pure);
+  border-color: var(--navy);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.04);
+}
+
+.google-card-emoji {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.google-minimal-card h3 {
+  font-size: 1.35rem;
+  margin: 0 0 12px 0;
+}
+
+.google-minimal-card p {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--text-main);
+  line-height: 1.7;
+}
 
 /* 3. NAVIGATION — solid white, Zurich-clean */
 header nav {

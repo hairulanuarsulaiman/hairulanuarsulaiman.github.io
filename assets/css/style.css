@@ -2437,3 +2437,558 @@ font-weight:600;
   }
 }
 
+/* ========================================== */
+/* FT × Swiss Typography & Colour System       */
+/* ========================================== */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Colours */
+  --ft-bg: #FAFAF8;
+  --ft-text-primary: #1F2937;
+  --ft-text-secondary: #6B7280;
+  --ft-accent: #1A7A5A;
+  --ft-accent-hover: #135F45;
+  --ft-border: #E5E7EB;
+  --ft-white: #FFFFFF;
+  --ft-card-bg: #F4F4F0;
+
+  /* Typography */
+  --ft-font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --ft-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+/* ========================================== */
+/* HERO SECTION — FT × Swiss                  */
+/* ========================================== */
+
+.hero-ft {
+  padding: 60px 0 40px 0;
+  background: var(--ft-bg);
+}
+
+.hero-ft-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-ft-eyebrow {
+  font-family: var(--ft-font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ft-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px 0;
+}
+
+.hero-ft-title {
+  font-family: var(--ft-font-serif);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--ft-text-primary);
+  line-height: 1.15;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-ft-description {
+  font-family: var(--ft-font-sans);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+}
+
+.hero-ft-description strong {
+  color: var(--ft-text-primary);
+  font-weight: 600;
+}
+
+.hero-ft-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+/* ========================================== */
+/* BUTTONS — FT × Swiss                       */
+/* ========================================== */
+
+.btn-ft-primary {
+  display: inline-block;
+  font-family: var(--ft-font-sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ft-white);
+  background: var(--ft-accent);
+  padding: 12px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.btn-ft-primary:hover {
+  background: var(--ft-accent-hover);
+}
+
+.btn-ft-secondary {
+  display: inline-block;
+  font-family: var(--ft-font-sans);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--ft-text-primary);
+  background: transparent;
+  padding: 12px 28px;
+  border: 1px solid var(--ft-text-primary);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-ft-secondary:hover {
+  background: var(--ft-text-primary);
+  color: var(--ft-white);
+}
+
+/* ========================================== */
+/* PHILOSOPHY SECTION — FT × Swiss           */
+/* ========================================== */
+
+.section-philosophy-ft {
+  padding: 48px 0;
+  background: var(--ft-white);
+}
+
+.philosophy-ft-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.philosophy-ft-eyebrow {
+  font-family: var(--ft-font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ft-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px 0;
+}
+
+.philosophy-ft-title {
+  font-family: var(--ft-font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--ft-text-primary);
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+}
+
+.philosophy-ft-subtitle {
+  font-family: var(--ft-font-sans);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.philosophy-ft-body {
+  font-family: var(--ft-font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+}
+
+/* ========================================== */
+/* CONCEPT SECTION — FT × Swiss              */
+/* ========================================== */
+
+.section-concept-ft {
+  padding: 48px 0;
+  background: var(--ft-bg);
+}
+
+.concept-ft-content {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title-ft {
+  font-family: var(--ft-font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--ft-text-primary);
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.concept-ft-subtitle {
+  font-family: var(--ft-font-sans);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 auto 16px auto;
+}
+
+.concept-ft-link {
+  font-family: var(--ft-font-sans);
+  font-size: 0.95rem;
+  color: var(--ft-text-secondary);
+  margin: 0 0 24px 0;
+}
+
+.concept-ft-link a {
+  color: var(--ft-accent);
+  text-decoration: underline;
+}
+
+.concept-ft-link a:hover {
+  color: var(--ft-accent-hover);
+}
+
+.concept-ft-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.concept-ft-card {
+  background: var(--ft-white);
+  padding: 28px 24px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--ft-border);
+}
+
+.concept-ft-icon {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.concept-ft-card h3 {
+  font-family: var(--ft-font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ft-text-primary);
+  margin: 0 0 8px 0;
+}
+
+.concept-ft-card p {
+  font-family: var(--ft-font-sans);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========================================== */
+/* GOALS SECTION — FT × Swiss                */
+/* ========================================== */
+
+.section-goals-ft {
+  padding: 48px 0;
+  background: var(--ft-white);
+}
+
+.goals-ft-subtitle {
+  font-family: var(--ft-font-sans);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+
+.goals-ft-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.goal-ft-card {
+  background: var(--ft-card-bg);
+  padding: 24px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.goal-ft-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.goal-ft-card h3 {
+  font-family: var(--ft-font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ft-text-primary);
+  margin: 0 0 6px 0;
+}
+
+.goal-ft-card p {
+  font-family: var(--ft-font-sans);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ========================================== */
+/* PLANS SECTION — FT × Swiss                */
+/* ========================================== */
+
+.section-plans-ft {
+  padding: 48px 0;
+  background: var(--ft-bg);
+}
+
+.plans-ft-subtitle {
+  font-family: var(--ft-font-sans);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+
+.plans-ft-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.plan-ft-card {
+  background: var(--ft-white);
+  padding: 28px 24px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--ft-border);
+}
+
+.plan-ft-icon {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.plan-ft-card h3 {
+  font-family: var(--ft-font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ft-text-primary);
+  margin: 0 0 8px 0;
+}
+
+.plan-ft-card p {
+  font-family: var(--ft-font-sans);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ========================================== */
+/* PROCESS SECTION — FT × Swiss              */
+/* ========================================== */
+
+.section-process-ft {
+  padding: 48px 0;
+  background: var(--ft-white);
+}
+
+.process-ft-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 40px auto;
+}
+
+.process-ft-eyebrow {
+  font-family: var(--ft-font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ft-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 4px 0;
+}
+
+.process-ft-subtitle {
+  font-family: var(--ft-font-sans);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.process-ft-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.process-ft-step {
+  background: var(--ft-card-bg);
+  padding: 24px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.step-ft-number {
+  font-family: var(--ft-font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--ft-accent);
+  margin-bottom: 8px;
+}
+
+.process-ft-step h3 {
+  font-family: var(--ft-font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ft-text-primary);
+  margin: 0 0 6px 0;
+}
+
+.process-ft-step p {
+  font-family: var(--ft-font-sans);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ========================================== */
+/* PROVIDERS SECTION — FT × Swiss            */
+/* ========================================== */
+
+.section-providers-ft {
+  padding: 48px 0;
+  background: var(--ft-bg);
+}
+
+.providers-ft-subtitle {
+  font-family: var(--ft-font-sans);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto 12px auto;
+  text-align: center;
+}
+
+.providers-ft-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 24px;
+  max-width: 720px;
+  margin: 24px auto;
+  list-style: none;
+  padding: 0;
+}
+
+.providers-ft-list li {
+  font-family: var(--ft-font-sans);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--ft-text-primary);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--ft-border);
+}
+
+.providers-ft-disclaimer {
+  font-family: var(--ft-font-sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--ft-text-secondary);
+  text-align: center;
+  max-width: 640px;
+  margin: 16px auto 0 auto;
+  font-style: italic;
+}
+
+/* ========================================== */
+/* RESPONSIVE — FT × Swiss                   */
+/* ========================================== */
+
+@media (max-width: 768px) {
+  .hero-ft-title {
+    font-size: 2.2rem;
+  }
+
+  .concept-ft-grid,
+  .goals-ft-grid,
+  .plans-ft-grid,
+  .process-ft-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .providers-ft-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-ft-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-ft-title {
+    font-size: 1.8rem;
+  }
+
+  .concept-ft-grid,
+  .goals-ft-grid,
+  .plans-ft-grid,
+  .process-ft-steps,
+  .providers-ft-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-ft-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-ft-primary,
+  .btn-ft-secondary {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+}
+

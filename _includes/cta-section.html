@@ -1,22 +1,34 @@
-<!-- CTA Section — Standardized -->
-<section class="cta-section" aria-labelledby="cta-heading">
-  <div class="container">
-    <div class="cta-content">
-      
-      <p class="section-eyebrow">Mahu Berbincang?</p>
-      
-      <h2 id="cta-heading">Ada Soalan Tentang Artikel Ini?</h2>
-      
-      <p>
-        Setiap situasi kewangan adalah unik. Mari bincangkan bagaimana ilmu dalam artikel ini 
-        boleh diaplikasikan kepada keadaan anda secara peribadi. Sesi 30 minit pertama adalah percuma.
+<!-- Google-Inspired Dynamic Call to Action -->
+<section class="google-layout-section" style="background-color: var(--navy); color: var(--bg-pure); text-align: center;">
+  <div style="max-width: 680px; margin: 0 auto; padding: 40px 0;">
+    
+    <!-- Logik Dinamik Mengesan Halaman Konten (Artikel vs Halaman Biasa) -->
+    {% if page.layout == "post" or page.collection == "posts" %}
+      <!-- Jika dibuka di halaman Artikel/Blog -->
+      <h2 style="color: var(--bg-pure); font-size: 2.25rem; margin-bottom: 20px; letter-spacing: -0.03em;">
+        Ada Soalan Tentang Artikel Ini?
+      </h2>
+      <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.7; margin-bottom: 40px;">
+        Jika ada bahagian dalam penulisan ini yang memerlukan penjelasan lanjut, atau anda ingin membincangkan topik ini secara peribadi, saya sedia membantu anda.
       </p>
-      
-      <nav class="cta-buttons" aria-label="Pilihan Konsultasi">
-        <a href="https://wa.me/601127657730" class="btn-primary" target="_blank" rel="noopener noreferrer">💬 WhatsApp Saya</a>
-        <a href="/hubungi/" class="btn-secondary">📅 Tempah Janji Temu</a>
-      </nav>
-      
-    </div>
+    {% else %}
+      <!-- Jika dibuka di Halaman Perkhidmatan (Takaful, Unit Trust, Persaraan, dll) -->
+      <h2 style="color: var(--bg-pure); font-size: 2.25rem; margin-bottom: 20px; letter-spacing: -0.03em;">
+        Mari Mulakan Dengan Satu Perbualan
+      </h2>
+      <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.7; margin-bottom: 40px;">
+        Tiada sebarang paksaan untuk melanggan produk kewangan. Kita mulakan dengan satu perbualan yang tenang bagi memetakan kedudukan semasa portfolio dan matlamat masa depan anda.
+      </p>
+    {% endif %}
+
+    <!-- Butang Tindakan Tunggal yang Konsisten -->
+    <a href="https://wa.me/{{ site.phone | remove: '+' | remove: ' ' }}" 
+       class="google-btn-hero-primary" 
+       style="background-color: var(--bg-pure); color: var(--navy);" 
+       target="_blank" 
+       rel="noopener noreferrer">
+      Hubungi Saya Melalui WhatsApp
+    </a>
+    
   </div>
 </section>

@@ -1,394 +1,299 @@
 ---
 layout: default
-title: Keputusan Kewangan Yang Lebih Yakin
+title: Keputusan Kewangan Yang Lebih Yakin | Hairul Anuar Sulaiman
 description: Membantu individu dan keluarga di Malaysia membuat keputusan kewangan yang lebih yakin melalui nasihat Takaful dan pelaburan unit amanah patuh Syariah.
 ---
 
 <!-- ========================================== -->
-<!-- 01. Hero -->
+<!-- 1. HERO SECTION (GAYA ABOUT.GOOGLE SPLIT)  -->
 <!-- ========================================== -->
+<section class="google-hero" aria-labelledby="hero-heading">
+  <div class="google-hero-container">
+    
+    <!-- Lajur Kiri: Teks Penceritaan Utama -->
+    <div class="google-hero-content">
+      <span class="google-hero-eyebrow">Memahami dahulu. Membuat keputusan kemudian.</span>
+      <h1 id="hero-heading" class="google-hero-title">
+        Membantu Anda Membuat Keputusan Kewangan Yang Lebih Yakin
+      </h1>
+      <p class="google-hero-lead">
+        Keputusan kewangan yang baik bermula dengan kefahaman, bukan desakan tekanan. Saya membantu anda meneliti pilihan portfolio yang ada. Sama ada untuk perlindungan, pelaburan, atau persaraan—setiap langkah dirancang agar jelas, praktikal, dan selaras dengan prinsip Syariah.
+      </p>
+      
+      <ul style="list-style: none; padding: 0; margin: 0 0 32px 0; color: var(--text-main); font-weight: 500;">
+        <li style="margin-bottom: 12px;"><span style="color: var(--accent-action); margin-right: 8px;" aria-hidden="true">✔</span> Lindungi perkara yang paling penting</li>
+        <li style="margin-bottom: 12px;"><span style="color: var(--accent-action); margin-right: 8px;" aria-hidden="true">✔</span> Kembangkan simpanan secara berdisiplin</li>
+        <li style="margin-bottom: 0;"><span style="color: var(--accent-action); margin-right: 8px;" aria-hidden="true">✔</span> Bina masa depan yang lebih teratur</li>
+      </ul>
+      
+      <div class="google-hero-actions">
+        <a href="https://wa.me/{{ site.phone | remove: '+' | remove: ' ' }}" class="google-btn-hero-primary" target="_blank" rel="noopener noreferrer">Mulakan Perbualan</a>
+        <a href="{{ '/artikel/' | relative_url }}" class="google-btn-hero-secondary">Terokai Artikel</a>
+      </div>
+    </div>
 
-<section class="hero-section" aria-labelledby="hero-heading">
-  <div class="hero-content">
-    
-    <picture>
-      <!-- AVIF -->
-      <source 
-        srcset="/assets/images/hero-320.avif 320w,
-                /assets/images/hero-640.avif 640w,
-                /assets/images/hero-1024.avif 1024w,
-                /assets/images/hero-1920.avif 1920w"
-        sizes="(max-width: 480px) 320px,
-               (max-width: 768px) 640px,
-               (max-width: 1200px) 1024px,
-               1920px"
-        type="image/avif">
+    <!-- Lajur Kanan: Gambar Profil Korporat Responsif -->
+    <div class="google-hero-visual" style="display: flex; justify-content: center; align-items: center;">
+      <figure class="google-hero-image-container" style="max-width: 420px; aspect-ratio: 1 / 1; border-radius: 50%; overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04);">
+        <picture>
+          <!-- AVIF -->
+          <source 
+            srcset="{{ '/assets/images/hero-320.avif' | relative_url }} 320w,
+                    {{ '/assets/images/hero-640.avif' | relative_url }} 640w,
+                    {{ '/assets/images/hero-1024.avif' | relative_url }} 1024w"
+            sizes="(max-width: 480px) 320px, (max-width: 768px) 640px, 1024px"
+            type="image/avif">
 
-      <!-- WebP -->
-      <source 
-        srcset="/assets/images/hero-320.webp 320w,
-                /assets/images/hero-640.webp 640w,
-                /assets/images/hero-1024.webp 1024w,
-                /assets/images/hero-1920.webp 1920w"
-        sizes="(max-width: 480px) 320px,
-               (max-width: 768px) 640px,
-               (max-width: 1200px) 1024px,
-               1920px"
-        type="image/webp">
+          <!-- WebP -->
+          <source 
+            srcset="{{ '/assets/images/hero-320.webp' | relative_url }} 320w,
+                    {{ '/assets/images/hero-640.webp' | relative_url }} 640w,
+                    {{ '/assets/images/hero-1024.webp' | relative_url }} 1024w"
+            sizes="(max-width: 480px) 320px, (max-width: 768px) 640px, 1024px"
+            type="image/webp">
 
-      <!-- Fallback JPEG -->
-      <img 
-        src="/assets/images/hairul-anuar.jpeg" 
-        alt="Hairul Anuar Sulaiman - Perunding Kewangan Islam & Unit Trust berdaftar FIMM" 
-        class="hero-photo"
-        fetchpriority="high"
-        decoding="async"
-        width="1920"
-        height="1080">
-    </picture>
-    
-    <p class="hero-eyebrow">Memahami dahulu. Membuat keputusan kemudian.</p>
-    
-    <h1 id="hero-heading" class="hero-h1">Membantu Anda Membuat Keputusan Kewangan Yang Lebih Yakin</h1>
-    
-    <p class="hero-sub">
-      Keputusan kewangan yang baik bermula dengan kefahaman, bukan tekanan. Saya membantu anda dan keluarga meneliti pilihan yang ada. Sama ada untuk perlindungan, pelaburan, atau persaraan—setiap langkah dirancang agar jelas, praktikal, dan selaras dengan prinsip Syariah.
+          <!-- Fallback JPEG -->
+          <img 
+            src="{{ '/assets/images/hairul-anuar.jpeg' | relative_url }}" 
+            alt="Hairul Anuar Sulaiman - Perunding Kewangan Islam & Unit Trust" 
+            class="google-hero-flagship-img"
+            style="border-radius: 50%; aspect-ratio: 1 / 1; object-fit: cover;"
+            fetchpriority="high"
+            decoding="async"
+            width="640"
+            height="640"
+          >
+        </picture>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 2. TAULIAH KAWAL SELIA & STATUS RASMI       -->
+<!-- ========================================== -->
+<section class="google-layout-section" style="background-color: var(--bg-track);" aria-labelledby="credentials-heading">
+  <div class="google-center-header">
+    <p class="google-eyebrow">Profesional • Telus • Beretika</p>
+    <h2 id="credentials-heading">Komited Kepada Standard Industri Kewangan</h2>
+    <p class="google-related-intro" style="margin-top: 12px; text-align: center; max-width: 760px; margin-left: auto; margin-right: auto;">
+      Bbagi memastikan ketelusan mutlak, maklumat kelayakan saya dipaparkan menggunakan istilah rasmi yang ditetapkan oleh badan kawal selia dan organisasi profesional di Malaysia.
     </p>
-    
-    <ul class="hero-outcomes">
-        <li><span class="check" aria-hidden="true">✔</span> Lindungi perkara yang penting</li>
-        <li><span class="check" aria-hidden="true">✔</span> Kembangkan simpanan secara berdisiplin</li>
-        <li><span class="check" aria-hidden="true">✔</span> Bina masa depan yang lebih teratur</li>
-    </ul>
-    
-    <nav class="hero-btns" aria-label="Pilihan Utama">
-      <a href="https://wa.me/601127657730" class="btn-primary" target="_blank" rel="noopener noreferrer">💬 Mulakan Perbualan</a>
-      <a href="/artikel.html" class="btn-secondary">📖 Terokai Artikel</a>
-    </nav>
   </div>
-</section>
-
-<!-- ========================================== -->
-<!-- 02. Professional Credentials -->
-<!-- ========================================== -->
-
-<section class="credentials-section" aria-labelledby="credentials-heading">
-  <div class="container">
-    
-    <div class="credentials-heading">
-      <p class="section-eyebrow">Profesional • Telus • Beretika</p>
-      <h2 id="credentials-heading">Komited kepada standard profesional dan komunikasi yang telus.</h2>
-      <p>Bagi memastikan ketelusan dan ketepatan, maklumat profesional saya dipersembahkan menggunakan istilah rasmi yang ditetapkan oleh badan kawal selia dan organisasi profesional yang berkaitan.</p>
-    </div>
-    
-    <div class="credentials-grid">
-      <article class="credentials-card">
-        <h3>Islamic Financial Adviser Representative (IFAR)</h3>
-        <p>Dilantik oleh Phillip Wealth Planners Sdn. Bhd., dengan pengkhususan penasihatan kewangan bagi penyelesaian Takaful.</p>
-      </article>
-      
-      <article class="credentials-card">
-        <h3>Unit Trust Scheme Consultant</h3>
-        <p>Berdaftar dengan Federation of Investment Managers Malaysia (FIMM).</p>
-      </article>
-      
-      <article class="credentials-card">
-        <h3>Associate Shariah Registered Financial Planner</h3>
-        <p>Ahli Bersekutu Malaysian Financial Planning Council (MFPC).</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================== -->
-<!-- 03. Financial Planning Journey -->
-<!-- ========================================== -->
   
-<section class="journey-section" aria-labelledby="journey-heading">
-  <div class="container">
-    <div class="journey-heading">
-      <p class="section-eyebrow">Langkah Yang Tersusun</p>
-      <h2 id="journey-heading">Perjalanan Kewangan Anda</h2>
-      <p>
-        Setiap perjalanan kewangan adalah berbeza. 
-        Namun, proses yang teratur membantu anda membuat keputusan dengan lebih jelas, 
-        tenang dan selaras dengan prinsip Syariah.
-      </p>
-    </div>
+  <div class="google-flex-grid" style="max-width: 1080px; margin: 0 auto;">
+    <article class="google-minimal-card" style="background-color: var(--bg-pure);">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">MFPC</div>
+      <h3>Associate Shariah Registered Financial Planner</h3>
+      <p>Memegang status kelayakan profesional bersekutu yang diiktiraf secara rasmi oleh Malaysian Financial Planning Council (MFPC).</p>
+    </article>
     
-    <ol class="journey-steps">
-      <li class="journey-step">
-        <div class="step-number" aria-hidden="true"><span>01</span></div>
-        <div class="step-content">
-          <h3>Memahami Matlamat Anda</h3>
-          <p>Mendengar keutamaan, matlamat dan kebimbangan kewangan anda.</p>
-        </div>
-      </li>
-      
-      <li class="journey-step">
-        <div class="step-number" aria-hidden="true"><span>02</span></div>
-        <div class="step-content">
-          <h3>Menilai Kedudukan Semasa</h3>
-          <p>Meneliti pendapatan, komitmen, perlindungan dan simpanan sedia ada.</p>
-        </div>
-      </li>
-      
-      <li class="journey-step">
-        <div class="step-number" aria-hidden="true"><span>03</span></div>
-        <div class="step-content">
-          <h3>Merangka Penyelesaian Yang Bersesuaian</h3>
-          <p>Mencadangkan langkah yang selaras dengan keperluan, kemampuan dan prinsip Syariah.</p>
-        </div>
-      </li>
-      
-      <li class="journey-step">
-        <div class="step-number" aria-hidden="true"><span>04</span></div>
-        <div class="step-content">
-          <h3>Melaksanakan Secara Berperingkat</h3>
-          <p>Membantu anda melaksanakan penyelesaian secara berperingkat mengikut keutamaan dan kemampuan.</p>
-        </div>
-      </li>
-      
-      <li class="journey-step">
-        <div class="step-number" aria-hidden="true"><span>05</span></div>
-        <div class="step-content">
-          <h3>Semakan Berkala</h3>
-          <p>Kehidupan sentiasa berubah. Strategi kewangan juga perlu disemak agar terus selaras dengan matlamat dan keperluan anda.</p>
-        </div>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- ========================================== -->
-<!-- 04. Financial Planning Areas -->
-<!-- ========================================== -->
-
-<section class="planning-section" aria-labelledby="planning-heading">
-  <div class="container">
-    <div class="planning-heading">
-      <p class="section-eyebrow">Fokus Penyelesaian</p>
-      <h2 id="planning-heading">Tiga Bidang Fokus Utama</h2>
-      <p>Setiap individu dan keluarga mempunyai keutamaan kewangan yang berbeza. 
-        Tiga bidang ini saling melengkapi untuk membantu anda melindungi apa yang penting, 
-        membina kekayaan secara berdisiplin dan menyediakan strategi persaraan yang lebih kukuh.</p>
-    </div>
+    <article class="google-minimal-card" style="background-color: var(--bg-pure);">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">BNM</div>
+      <h3>Islamic Financial Adviser Representative (IFAR)</h3>
+      <p>Pelantikan rasmi di bawah syarikat perunding korporat **Phillip Wealth Planners Sdn Bhd**, terhad bagi skop penasihatan produk Takaful sahaja.</p>
+    </article>
     
-    <div class="planning-grid">
-      <article class="planning-card">
-        <h3>🛡 Perlindungan Kewangan</h3>
-        <p>Mengenalpasti penyelesaian perlindungan kewangan untuk mengurus risiko yang boleh menjejaskan diri, keluarga dan matlamat kewangan anda.</p>
-        <a href="/takaful.html" class="btn-primary">Terokai Perlindungan →</a>
-      </article>
-      
-      <article class="planning-card">
-        <h3>📈 Pelaburan & Pembinaan Kekayaan</h3>
-        <p>Membantu anda membina simpanan dan pelaburan secara berdisiplin untuk mencapai matlamat kewangan jangka sederhana dan panjang.</p>
-        <a href="/unittrust.html" class="btn-primary">Terokai Pelaburan →</a>
-      </article>
-      
-      <article class="planning-card">
-        <h3>🌿 Strategi Persaraan</h3>
-        <p>Merangka penyelesaian persaraan agar anda dapat mengekalkan gaya hidup yang diinginkan pada masa hadapan.</p>
-        <a href="/persaraan.html" class="btn-primary">Terokai Persaraan →</a>
-      </article>
-    </div>
+    <article class="google-minimal-card" style="background-color: var(--bg-pure);">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">FIMM</div>
+      <h3>Unit Trust Scheme Consultant</h3>
+      <p>Berdaftar secara sah sebagai perunding unit amanah dengan Federation of Investment Managers Malaysia (FIMM) di bawah platform **Phillip Mutual Berhad**.</p>
+    </article>
   </div>
 </section>
 
 <!-- ========================================== -->
-<!-- 05. What You Can Expect -->
+<!-- 3. PILIRAN ALIRAN KERJA PERJALANAN KEWANGAN -->
 <!-- ========================================== -->
+<section class="google-layout-section" aria-labelledby="journey-heading">
+  <div class="google-center-header">
+    <p class="google-eyebrow">Langkah Yang Tersusun</p>
+    <h2 id="journey-heading">Perjalanan Kewangan Anda</h2>
+    <p class="google-related-intro" style="margin-top: 12px; text-align: center; max-width: 760px; margin-left: auto; margin-right: auto;">
+      Setiap perjalanan portfolio peribadi adalah berbeza. Namun, proses yang teratur membantu anda membuat keputusan dengan lebih jelas, tenang dan selaras dengan prinsip Syariah.
+    </p>
+  </div>
+  
+  <div class="google-flex-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; max-width: 1140px; margin: 0 auto;">
+    <article class="google-minimal-card" style="padding: 24px;">
+      <div style="font-size: 1.25rem; font-weight: 700; color: var(--accent-action); margin-bottom: 8px;">01</div>
+      <h3 style="font-size: 1.15rem;">Memahami Matlamat</h3>
+      <p style="font-size: 0.9rem; margin: 0;">Mendengar secara aktif keutamaan, sasaran masa depan, dan kebimbangan utama kewangan anda.</p>
+    </article>
+    <article class="google-minimal-card" style="padding: 24px;">
+      <div style="font-size: 1.25rem; font-weight: 700; color: var(--accent-action); margin-bottom: 8px;">02</div>
+      <h3 style="font-size: 1.15rem;">Menilai Kedudukan</h3>
+      <p style="font-size: 0.9rem; margin: 0;">Meneliti status aliran tunai, komitmen liabiliti, jaringan perlindungan, dan aset sedia ada.</p>
+    </article>
+    <article class="google-minimal-card" style="padding: 24px;">
+      <div style="font-size: 1.25rem; font-weight: 700; color: var(--accent-action); margin-bottom: 8px;">03</div>
+      <h3 style="font-size: 1.15rem;">Merangka Solusi</h3>
+      <p style="font-size: 0.9rem; margin: 0;">Mencadangkan pelan tindakan tersesuaikan yang sepadan dengan kemampuan serta patuh Syariah.</p>
+    </article>
+    <article class="google-minimal-card" style="padding: 24px;">
+      <div style="font-size: 1.25rem; font-weight: 700; color: var(--accent-action); margin-bottom: 8px;">04</div>
+      <h3 style="font-size: 1.15rem;">Pelaksanaan Fasa</h3>
+      <p style="font-size: 0.9rem; margin: 0;">Membantu anda mengurus peruntukan instrumen secara teratur mengikut keutamaan aliran modal.</p>
+    </article>
+    <article class="google-minimal-card" style="padding: 24px;">
+      <div style="font-size: 1.25rem; font-weight: 700; color: var(--accent-action); margin-bottom: 8px;">05</div>
+      <h3 style="font-size: 1.15rem;">Semakan Berkala</h3>
+      <p style="font-size: 0.9rem; margin: 0;">Menyesuaikan semula alokasi strategi pelaburan setahun sekali mengikut fasa perubahan status hidup anda.</p>
+    </article>
+  </div>
+</section>
 
-<section class="expect-section" aria-labelledby="expect-heading">
-  <div class="container">
-    <div class="expect-heading">
-      <p class="section-eyebrow">Pendekatan Profesional</p>
-      <h2 id="expect-heading">Apa Yang Anda Boleh Jangkakan</h2>
-      <p>
-        Setiap sesi dimulakan dengan memahami keadaan,
-        matlamat dan keutamaan kewangan anda. Fokus saya
-        ialah membantu anda membuat keputusan yang jelas,
-        praktikal dan selaras dengan prinsip Syariah.
+<!-- ========================================== -->
+<!-- 4. BIDANG FOCUS UTAMA                      -->
+<!-- ========================================== -->
+<section class="google-layout-section" style="background-color: var(--bg-track);" aria-labelledby="planning-heading">
+  <div class="google-center-header">
+    <p class="google-eyebrow">Fokus Penyelesaian</p>
+    <h2 id="planning-heading">Tiga Bidang Fokus Utama</h2>
+    <p class="google-related-intro" style="margin-top: 12px; text-align: center; max-width: 760px; margin-left: auto; margin-right: auto;">
+      Tiga komponen utama ini saling melengkapi untuk mengurus risiko, membina simpanan secara berdisiplin, dan memastikan ketersediaan dana di hari tua.
+    </p>
+  </div>
+  
+  <div class="google-flex-grid" style="max-width: 1080px; margin: 0 auto;">
+    <article class="google-minimal-card" style="background-color: var(--bg-pure); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <h3 style="font-size: 1.35rem; margin-top: 0;">🛡️ Perlindungan Takaful</h3>
+        <p>Mengenal pasti jaringan pelan penggantian pendapatan untuk mengurus risiko mengejut yang boleh menjejaskan kebajikan kewangan ahli keluarga.</p>
+      </div>
+      <a href="{{ '/takaful/' | relative_url }}" class="google-related-action-text" style="text-decoration: none; font-weight: 600; margin-top: 16px; display: inline-block;">Terokai Perlindungan →</a>
+    </article>
+    
+    <article class="google-minimal-card" style="background-color: var(--bg-pure); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <h3 style="font-size: 1.35rem; margin-top: 0;">📈 Pelaburan Unit Trust</h3>
+        <p>Membina pembentukan modal melalui dana amanah patuh Syariah secara konsisten bagi mencapai objektif dana jangka sederhana dan panjang.</p>
+      </div>
+      <a href="{{ '/unittrust/' | relative_url }}" class="google-related-action-text" style="text-decoration: none; font-weight: 600; margin-top: 16px; display: inline-block;">Terokai Pelaburan →</a>
+    </article>
+    
+    <article class="google-minimal-card" style="background-color: var(--bg-pure); display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <h3 style="font-size: 1.35rem; margin-top: 0;">🌿 Strategi Persaraan</h3>
+        <p>Merangka penyelesaian persaraan bebas riba berasaskan agihan pasif tunai berkala untuk memastikan pengekalan gaya hidup impian anda.</p>
+      </div>
+      <a href="{{ '/persaraan/' | relative_url }}" class="google-related-action-text" style="text-decoration: none; font-weight: 600; margin-top: 16px; display: inline-block;">Terokai Persaraan →</a>
+    </article>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 5. APA YANG BANDA BOLEH JANGKAKAN          -->
+<!-- ========================================== -->
+<section class="google-layout-section" aria-labelledby="expect-heading">
+  <div class="google-center-header">
+    <p class="google-eyebrow">Pendekatan Profesional</p>
+    <h2 id="expect-heading">Apa Yang Anda Boleh Jangkakan</h2>
+  </div>
+
+  <div class="google-flex-grid" style="max-width: 1080px; margin: 0 auto;">
+    <article class="google-minimal-card">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">01</div>
+      <h3>Mendengar Dahulu</h3>
+      <p>Saya meluangkan masa memahami struktur komitmen dan kebimbangan khusus anda secara mendalam sebelum membentangkan sebarang cadangan.</p>
+    </article>
+    <article class="google-minimal-card">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">02</div>
+      <h3>Penjelasan Terbuka</h3>
+      <p>Membantu anda meneliti mekanisme instrumen kewangan secara telus supaya setiap pilihan dibuat berlandaskan data maklumat yang jelas.</p>
+    </article>
+    <article class="google-minimal-card">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">03</div>
+      <h3>Membina Strategi Bersama</h3>
+      <p>Instrumen hanyalah alat. Fokus utama kita adalah menyusun gandingan agihan yang realistik, selamat, dan selesa dengan keupayaan poket anda.</p>
+    </article>
+    <article class="google-minimal-card">
+      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">04</div>
+      <h3>Hubungan Jangka Panjang</h3>
+      <p>Kehidupan akan berkembang. Sesi semakan tahunan membantu memastikan kedudukan perl Perlindungan dan pelaburan kekal relevan dengan fasa semasa.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 6. PANDUAN ARTIKEL PILIHAN (DINAMIK/SEMI)  -->
+<!-- ========================================== -->
+<section class="google-layout-section" style="background-color: var(--bg-track);" aria-labelledby="articles-heading">
+  <div class="google-center-header">
+    <p class="google-eyebrow">Pilihan Bacaan</p>
+    <h2 id="articles-heading">Mulakan Dengan Artikel Pilihan</h2>
+    <p class="google-related-intro" style="margin-top: 12px; text-align: center; max-width: 760px; margin-left: auto; margin-right: auto;">
+      Sebahagian besar keputusan kewangan yang matang bermula dengan pembacaan asas yang betul. Terokai intipati kertas panduan ringkas ini:
+    </p>
+  </div>
+  
+  <div class="google-flex-grid" style="max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px; display: flex; flex-direction: column; height: 100%;">
+      <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; display: inline-block;">Pelaburan</span>
+      <h3 style="font-size: 1.25rem; color: var(--navy); margin-bottom: 12px;">Cara Mulakan Regular Savings Plan Dengan RM100 Sebulan</h3>
+      <p style="font-size: 0.95rem; line-height: 1.6; flex-grow: 1; margin-bottom: 24px;">Ketahui bagaimana pelaburan bulanan yang konsisten dapat membantu membina dana untuk matlamat kewangan jangka sederhana dan panjang.</p>
+      <a href="{{ '/artikel/' | relative_url }}" class="google-related-action-text" style="text-decoration: none; font-weight: 600; margin-top: auto;">Baca Artikel →</a>
+    </article>
+    
+    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px; display: flex; flex-direction: column; height: 100%;">
+      <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; display: inline-block;">Perlindungan</span>
+      <h3 style="font-size: 1.25rem; color: var(--navy); margin-bottom: 12px;">5 Perbezaan Utama Antara Takaful dan Insurans Konvensional</h3>
+      <p style="font-size: 0.95rem; line-height: 1.6; flex-grow: 1; margin-bottom: 24px;">Fahami perbezaan asas antara takaful dan insurans konvensional supaya anda dapat membuat pilihan yang lebih jelas dan selaras dengan prinsip Syariah.</p>
+      <a href="{{ '/artikel/' | relative_url }}" class="google-related-action-text" style="text-decoration: none; font-weight: 600; margin-top: auto;">Baca Artikel →</a>
+    </article>
+    
+    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px; display: flex; flex-direction: column; height: 100%;">
+      <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; display: inline-block;">Pelaburan</span>
+      <h3 style="font-size: 1.25rem; color: var(--navy); margin-bottom: 12px;">Adakah Pelaburan Unit Trust Itu Halal?</h3>
+      <p style="font-size: 0.95rem; line-height: 1.6; flex-grow: 1; margin-bottom: 24px;">Ketahui bagaimana dana patuh Syariah disaring serta perkara penting yang perlu diketahui sebelum memulakan pelaburan.</p>
+      <a href="{{ '/artikel/' | relative_url }}" class="google-related-action-text" style="text-decoration: none; font-weight: 600; margin-top: auto;">Baca Artikel →</a>
+    </article>
+  </div>
+  
+  <div style="text-align: center; margin-top: 48px;">
+    <a href="{{ '/artikel/' | relative_url }}" class="google-btn-hero-secondary">Lihat Semua Artikel →</a>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 7. SOALAN LAZIM (GEO OPTIMIZED ENGINE)     -->
+<!-- ========================================== -->
+<section class="google-layout-section" aria-labelledby="faq-heading">
+  <div class="google-center-header" style="margin-bottom: 48px;">
+    <p class="google-eyebrow">Kefahaman Pantas</p>
+    <h2 id="faq-heading">Soalan Lazim Kewangan Halal</h2>
+  </div>
+
+  <div style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px;">
+    <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 20px;">
+      <h3 style="font-size: 1.15rem; color: var(--navy); margin: 0 0 8px 0;">Apakah itu IFAR dan mengapa saya perlu berurusan dengan IFAR?</h3>
+      <p style="margin: 0; line-height: 1.7; color: var(--text-main);">
+        **IFAR** (Islamic Financial Adviser Representative) adalah wakil penasihat kewangan Islam di bawah syarikat penasihat kewangan berlesen Bank Negara Malaysia. Saya dilantik oleh **Phillip Wealth Planners Sdn Bhd** khusus untuk skop produk Takaful. Berurusan dengan wakil sah menjamin ketelusan audit patuh Syariah tanpa desakan komersial.
       </p>
     </div>
 
-    <div class="expect-grid">
-      <article class="expect-card">
-        <div class="expect-number" aria-hidden="true">01</div>
-        <h3>Mendengar Dahulu</h3>
-        <p>Saya memahami keadaan, matlamat dan kebimbangan kewangan anda sebelum mencadangkan sebarang penyelesaian.</p>
-      </article>
-
-      <article class="expect-card">
-        <div class="expect-number" aria-hidden="true">02</div>
-        <h3>Memberi Penjelasan</h3>
-        <p>Saya membantu anda memahami pilihan yang ada supaya setiap keputusan dibuat dengan yakin dan berdasarkan maklumat yang jelas.</p>
-      </article>
-
-      <article class="expect-card">
-        <div class="expect-number" aria-hidden="true">03</div>
-        <h3>Membina Strategi Bersama</h3>
-        <p>Produk kewangan hanyalah alat. Bersama-sama, kita akan memilih instrumen yang sesuai dengan keperluan, kemampuan dan matlamat kewangan anda.</p>
-      </article>
-
-      <article class="expect-card">
-        <div class="expect-number" aria-hidden="true">04</div>
-        <h3>Hubungan Jangka Panjang</h3>
-        <p>Kehidupan sentiasa berubah. Semakan berkala membantu memastikan strategi kewangan anda terus selaras dengan perubahan kehidupan dan matlamat masa hadapan.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================== -->
-  <!-- 06. Knowledge Hub -->
-  <!-- ========================================== -->
-
-  <section class="articles-section" aria-labelledby="articles-heading">
-    <div class="container">
-      <div class="articles-heading">
-        <p class="section-eyebrow">Pilihan Bacaan</p>
-        <h2 id="articles-heading">Mulakan Dengan Artikel Pilihan</h2>
-        <p>Sebahagian besar keputusan kewangan yang baik bermula dengan kefahaman yang betul. 
-          Berikut ialah beberapa artikel yang boleh membantu anda memahami asas perlindungan, 
-          pelaburan dan asas kewangan sebelum membuat sebarang keputusan.</p>
-      </div>
-      
-      <div class="articles-grid">
-        <!-- Article 1 -->
-        <article class="article-card">
-          <span class="article-category">Pelaburan</span>
-          <h3>Cara Mulakan Regular Savings Plan Dengan RM100 Sebulan</h3>
-          <p>Ketahui bagaimana pelaburan bulanan yang konsisten dapat membantu membina dana untuk matlamat kewangan jangka sederhana dan panjang.</p>
-          <a href="/artikel/memulakan-regular-savings/">Baca Artikel →</a>
-        </article>
-        
-        <!-- Article 2 -->
-        <article class="article-card">
-          <span class="article-category">Perlindungan</span>
-          <h3>5 Perbezaan Utama Antara Takaful dan Insurans Konvensional</h3>
-          <p>Fahami perbezaan asas antara takaful dan insurans konvensional supaya anda dapat membuat pilihan yang lebih jelas dan selaras dengan prinsip Syariah.</p>
-          <a href="/artikel/takaful-vs-insurans/">Baca Artikel →</a>
-        </article>
-        
-        <!-- Article 3 -->
-        <article class="article-card">
-          <span class="article-category">Pelaburan</span>
-          <h3>Adakah Pelaburan Unit Trust Itu Halal?</h3>
-          <p>Ketahui bagaimana dana patuh Syariah disaring serta perkara penting yang perlu diketahui sebelum memulakan pelaburan.</p>
-          <a href="/artikel/unit-trust-halal/">Baca Artikel →</a>
-        </article>
-      </div>
-      
-      <div class="articles-footer">
-        <a href="/artikel/" class="btn-secondary">Lihat Semua Artikel →</a>
-      </div>
-    </div>
-  </section>
-
-<!-- ========================================== -->
-<!-- 06.5. FAQ (Generative Engine Optimization) -->
-<!-- ========================================== -->
-
-<section class="faq-section" aria-labelledby="faq-heading">
-  <div class="container">
-    <div class="faq-heading">
-      <p class="section-eyebrow">Soalan Lazim</p>
-      <h2 id="faq-heading">Soalan Yang Selalu Ditanya Tentang Kewangan Islam</h2>
-      <p>
-        Berikut adalah jawapan kepada beberapa soalan yang sering saya terima daripada profesional 
-        seperti anda. Setiap jawapan adalah ringkas, jelas, dan berdasarkan prinsip Syariah serta 
-        garis panduan kawal selia di Malaysia.
+    <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 20px;">
+      <h3 style="font-size: 1.15rem; color: var(--navy); margin: 0 0 8px 0;">Apakah perbezaan utama antara Takaful dan insurans konvensional?</h3>
+      <p style="margin: 0; line-height: 1.7; color: var(--text-main);">
+        Perbezaannya terletak pada kontrak akad. Insurans konvensional berasaskan transaksi jual beli risiko komersial yang mengandungi elemen *gharar* (ketidakpastian) dan *riba*. Manakala **Takaful** bersandarkan pakatan taawun, menggunakan dana sumbangan **tabarru'** (derma ikhlas) sesama ahli untuk saling melindungi musibah.
       </p>
     </div>
 
-    <dl class="faq-list">
-      <div class="faq-item">
-        <dt>Apakah itu IFAR dan mengapa saya perlu berurusan dengan IFAR yang dilantik oleh Phillip Wealth Planners?</dt>
-        <dd>
-          <strong>IFAR</strong> (Islamic Financial Adviser Representative) adalah wakil penasihat kewangan Islam 
-          yang dilantik oleh syarikat perunding kewangan berlesen di bawah Bank Negara Malaysia. 
-          Saya, Hairul Anuar, dilantik oleh <strong>Phillip Wealth Planners Sdn. Bhd.</strong>, 
-          sebuah syarikat yang diiktiraf dan diawasi oleh pihak berkuasa. Berurusan dengan IFAR 
-          memastikan anda mendapat nasihat yang patuh Syariah, telus, dan profesional—bukan sekadar 
-          jualan produk semata-mata.
-        </dd>
-      </div>
-
-      <div class="faq-item">
-        <dt>Apakah perbezaan utama antara Takaful dan insurans konvensional?</dt>
-        <dd>
-          Perbezaan asasnya terletak pada <strong>konsep</strong>. Insurans konvensional adalah kontrak 
-          jual-beli risiko yang mengandungi elemen <em>gharar</em> (ketidakpastian) dan <em>riba</em>, 
-          yang tidak dibenarkan dalam Islam. Manakala <strong>Takaful</strong> berasaskan konsep 
-          <strong>tabarru'</strong> (saling menderma). Setiap peserta menyumbang ke dalam dana bersama 
-          untuk saling membantu jika mana-mana peserta ditimpa musibah. Takaful adalah halal, telus, 
-          dan diuruskan oleh lembaga Syariah yang bebas.
-        </dd>
-      </div>
-
-      <div class="faq-item">
-        <dt>Adakah pelaburan Unit Trust yang patuh Syariah benar-benar halal? Bagaimana saya tahu?</dt>
-        <dd>
-          Ya, ia halal jika diuruskan dengan betul. Dana Unit Trust patuh Syariah wajib mempunyai 
-          <strong>Lembaga Penasihat Syariah</strong> yang dilantik oleh Suruhanjaya Sekuriti Malaysia. 
-          Lembaga ini akan menyaring setiap saham yang dilaburkan—memastikan perniagaan tidak terlibat 
-          dengan arak, perjudian, daging babi, riba, dan aktiviti haram lain. Saya hanya 
-          mengesyorkan dana yang telah menerima pensijilan patuh Syariah daripada badan berwibawa. 
-          Sebagai perunding berdaftar <strong>FIMM (F01040203)</strong>, saya bertanggungjawab untuk 
-          memastikan pelaburan anda mematuhi garis panduan ini.
-        </dd>
-      </div>
-
-      <div class="faq-item">
-        <dt>Berapa banyak wang yang saya perlukan untuk bersara dengan selesa pada umur 60 tahun?</dt>
-        <dd>
-          Secara kasarnya, anda memerlukan <strong>80% daripada pendapatan bulanan terakhir</strong> 
-          anda untuk mengekalkan gaya hidup yang sama selama 20–25 tahun selepas persaraan. 
-          Contohnya, jika gaji anda RM10,000 sebulan, anda perlu bersedia dengan simpanan sekitar 
-          <strong>RM2.4 juta hingga RM3 juta</strong> pada umur 60 tahun (dengan mengambil kira inflasi 3–4% setahun). 
-          Jangan risau—dengan strategi pelaburan Unit Trust dan simpanan berdisiplin (contohnya 
-          RM500 sebulan dengan pulangan 8% setahun), matlamat ini boleh dicapai. Saya boleh bantu 
-          anda kira secara peribadi dalam sesi perundingan percuma.
-        </dd>
-      </div>
-
-      <div class="faq-item">
-        <dt>Perlukah saya membayar untuk sesi perundingan pertama dengan Hairul?</dt>
-        <dd>
-          <strong>Tidak!</strong> Sesi perundingan pertama selama 30 minit adalah <strong>PERCUMA</strong> 
-          dan tanpa sebarang kewajipan. Saya percaya setiap keputusan kewangan yang baik bermula 
-          dengan kefahaman yang jelas. Dalam sesi ini, saya akan mendengar matlamat anda, meneliti 
-          kedudukan kewangan semasa (secara umum), dan memberi pandangan awal tentang langkah-langkah 
-          yang boleh anda ambil. Tiada jualan keras—hanya perbualan yang jujur dan profesional.
-        </dd>
-      </div>
-    </dl>
-
-    <div class="faq-footer">
-      <p>Masih ada soalan lain? Jangan malu untuk bertanya.</p>
-      <a href="/faq.html" class="btn-secondary">Lihat Soalan Lain →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================== -->
-<!-- 07. Final Call To Action -->
-<!-- ========================================== -->
-
-<section class="cta-section" aria-labelledby="cta-heading">
-  <div class="container">
-    <div class="cta-content">
-      <p class="section-eyebrow">Mulakan Perbualan</p>
-      <h2 id="cta-heading">Setiap Perjalanan Bermula Dengan Satu Perbualan</h2>
-      <p>
-        Tidak pasti dari mana hendak bermula? Itu perkara yang biasa. Sama ada anda ingin menyemak polisi sedia ada, mula menyimpan, atau sekadar bertanya soalan asas, mari luangkan masa berbincang tanpa sebarang komitmen.
+    <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 20px;">
+      <h3 style="font-size: 1.15rem; color: var(--navy); margin: 0 0 8px 0;">Adakah pelaburan Unit Trust patuh Syariah benar-benar halal?</h3>
+      <p style="margin: 0; line-height: 1.7; color: var(--text-main);">
+        Ya. Setiap dana Islamik wajib melantik panel penasihat Syariah bebas syarikat (contoh: Amanie Advisors) untuk menapis aktiviti teras ekuiti daripada elemen arak, judi, riba dan babi. Pendaftaran saya sebagai perunding unit amanah di bawah **FIMM (F01040203)** tertakluk penuh pada garis panduan Suruhanjaya Sekuriti Malaysia.
       </p>
-      <nav class="cta-buttons" aria-label="Pilihan Konsultasi">
-        <a href="https://wa.me/601127657730" class="btn-primary" target="_blank" rel="noopener noreferrer">💬 Mulakan Perbualan</a>
-        <a href="/hubungi.html" class="btn-secondary">Tempah Perbualan →</a>
-      </nav>
     </div>
   </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="{{ '/faq/' | relative_url }}" class="google-btn-hero-secondary">Lihat Soalan Lain →</a>
+  </div>
 </section>
+
+<!-- ========================================== -->
+<!-- 8. DYNAMIC GLOBAL CALL TO ACTION           -->
+<!-- ========================================== -->
+{% include cta-section.html %}

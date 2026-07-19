@@ -1329,158 +1329,137 @@ h1, h2, h3, h4 {
     border:1px solid rgba(0,0,0,.08);
 }
 
-/* KNOWLEDGE HUB ARTICLE SYSTEM */
-
-.article-container{
-   max-width:820px;
-   margin:0 auto;
-   padding:60px 20px 80px;
+/* ==========================================================================
+   GOOGLE-INSPIRED ARTICLE READABILITY SYSTEM
+   ========================================================================== */
+.google-article {
+  max-width: 720px; /* Lebar optimum untuk pembacaan teks panjang */
+  margin: 0 auto;
+  padding: 80px 24px;
 }
 
-.article-back{
-   margin-bottom:40px;
+.google-article-header {
+  margin-bottom: 48px;
+  text-align: left;
 }
 
-.article-back a{
-   text-decoration:none;
-   font-weight:600;
+.google-article-meta {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
 }
 
-.article-meta{
-   font-size:.9rem;
-   color:var(--slate-400);
-   margin-bottom:14px;
+.google-article-divider {
+  margin: 0 8px;
+  color: var(--border-subtle);
 }
 
-.article-title{
-   margin-bottom:28px;
-   line-height:1.2;
-   font-size:clamp(2rem,4vw,3rem);
+.google-article-category {
+  color: var(--accent-action);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
-/* 1. Style the container (<figure>) */
-.article-cover {
-    display: block;
-    width: 100%;
-    max-width: 850px;
-    margin: 0 auto 40px;
-    border-radius: 12px;
-    overflow: hidden; /* Forces the image inside to respect the curved corners */
+.google-article-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.2;
+  color: var(--navy);
+  margin: 0;
+  letter-spacing: -0.03em;
 }
 
-/* 2. Style the actual image (<img>) inside the container */
-.article-cover img {
-    display: block; /* Removes the tiny white gap browsers put below images */
-    width: 100%;    /* Forces the image to shrink/grow to fit the container */
-    height: auto;   /* Maintains perfect aspect ratio so it doesn't stretch */
-    object-fit: cover;
+/* Style Untuk Elemen Markdown Dalam Kandungan */
+.google-article-content {
+  font-size: 1.125rem; /* Saiz teks yang sedikit besar untuk keselesaan mata */
+  line-height: 1.8;
+  color: var(--text-main);
 }
 
-.article-intro{
-   font-size:1.2rem;
-   line-height:1.9;
-   color:var(--slate-600);
-   margin-bottom:40px;
+.google-article-content p {
+  margin: 0 0 28px 0;
 }
 
-.article-content p{
-   margin-bottom:26px;
-   line-height:1.9;
+.google-article-content h2 {
+  font-size: 1.75rem;
+  margin: 56px 0 20px 0;
+  letter-spacing: -0.025em;
 }
 
-.article-content h2{
-   margin-top:60px;
-   margin-bottom:20px;
+.google-article-content h3 {
+  font-size: 1.35rem;
+  margin: 40px 0 16px 0;
 }
 
-.article-content strong{
-   color:var(--navy);
-   font-weight:700;
+/* Implimentasi Imej Gaya Google */
+.google-article-content img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card); /* Memakai sudut melengkung 24px */
+  margin: 32px 0;
+  border: 1px solid var(--border-subtle);
 }
 
-.article-content ul,
-.article-content ol{
-   margin-bottom:28px;
-   padding-left:24px;
-   line-height:1.9;
+/* Sistem Petikan (Blockquote) */
+.google-article-content blockquote {
+  margin: 40px 0;
+  padding: 24px 32px;
+  background-color: var(--bg-track);
+  border-left: 4px solid var(--navy);
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  font-style: italic;
 }
 
-.article-content li{
-   margin-bottom:10px;
+.google-article-content blockquote p {
+  margin: 0;
+  color: var(--navy);
 }
 
-.article-callout{
-   margin:48px 0;
-   padding:28px;
-   background:var(--slate-50);
-   border-left:4px solid var(--navy);
-   border-radius:8px;
+/* Senarai Point (Lists) */
+.google-article-content ul,
+.google-article-content ol {
+  margin: 0 0 32px 0;
+  padding-left: 24px;
 }
 
-.article-quote{
-   margin:36px 0;
-   padding-left:24px;
-   border-left:3px solid #B08D57;
-   font-style:italic;
+.google-article-content li {
+  margin-bottom: 12px;
 }
 
-.article-quote p{
-   margin:0;
+/* Footer & Navigasi Halaman */
+.google-article-footer {
+  margin-top: 64px;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 40px;
 }
 
-.article-cta{
-   margin-top:60px;
-   padding:40px;
-   background:var(--navy);
-   color:white;
-   border-radius:12px;
-   text-align:center;
+.google-article-back {
+  margin-top: 40px;
+  text-align: center;
 }
 
-.article-cta p{
-   max-width:620px;
-   margin:18px auto 30px;
+.google-article-back a {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition-smooth);
 }
 
-@media (max-width:768px){
-   .article-cta{
-      padding:30px 24px;
-   }
+.google-article-back a:hover {
+  color: var(--navy);
 }
 
-.article-cta-buttons{
-    display:flex;
-    justify-content:center;
-    gap:16px;
-    flex-wrap:wrap;
-}
-
-.article-disclaimer{
-   margin-top:40px;
-   font-size:.9rem;
-   color:var(--slate-400);
-   font-style:italic;
-}
-
-.author-photo{
-    display:block;
-    width:130px;
-    height:130px;
-    margin:0 auto 40px;
-    border-radius:50%;
-    object-fit:cover;
-}
-
-.article-quote cite{
-
-display:block;
-
-margin-top:1rem;
-
-font-style:normal;
-
-font-weight:600;
-
+/* Adjustments Untuk Skrin Telefon */
+@media (max-width: 640px) {
+  .google-article {
+    padding: 48px 20px;
+  }
+  .google-article-content {
+    font-size: 1.05rem;
+  }
 }
 
 /* ========================================== */

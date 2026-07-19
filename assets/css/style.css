@@ -452,6 +452,42 @@ h1, h2, h3, h4 {
     width: 100%;
   }
 }
+
+/* ==========================================================================
+   GOOGLE-INSPIRED HERO FLAGSHIP IMAGE SYSTEM
+   ========================================================================== */
+.google-hero-image-container {
+  margin: 0;
+  width: 100%;
+  border-radius: var(--radius-card); /* Mengekalkan kelengkungan 24px */
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04);
+  background-color: var(--bg-track); /* Papar warna lembut sementara imej dimuat turun */
+}
+
+.google-hero-flagship-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Mengunci nisbah imej 1600x900px anda */
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Kesan zum mikro yang sangat halus apabila pengguna melintasi imej */
+.google-hero-image-container:hover .google-hero-flagship-img {
+  transform: scale(1.02);
+}
+
+/* Pengoptimuman Responsif untuk Skrin Tablet/Telefon */
+@media (max-width: 968px) {
+  .google-hero-image-container {
+    max-width: 540px; /* Menghalang imej menjadi terlalu besar pada mod satu lajur */
+    margin: 0 auto;
+  }
+}
+
 /* 6. BUTTONS — solid, Zurich-style */
 .btn-primary {
   background: var(--navy);

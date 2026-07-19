@@ -105,78 +105,157 @@ h1, h2, h3, h4 {
   line-height: 1.7;
 }
 
-/* 3. NAVIGATION — solid white, Zurich-clean */
-header nav {
-  background: var(--white);
-  border-bottom: 1px solid var(--border-color);
+/* ==========================================================================
+   GOOGLE-INSPIRED NAVIGATION HEADER SYSTEM
+   ========================================================================== */
+.google-site-header {
+  background-color: var(--bg-pure);
+  border-bottom: 1px solid var(--border-subtle);
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 12px 0;
+  padding: 16px 0;
 }
 
-.nav-container {
-  max-width: 1200px;
+.google-nav-container {
+  max-width: 1140px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
-.logo {
-  font-weight: 800;
-  font-size: 1.4rem;
+/* Typography Identity - Clean, sans-serif, bold, tight tracking */
+.google-nav-logo {
+  font-family: var(--font-global);
+  font-weight: 700;
+  font-size: 1.25rem;
   color: var(--navy);
   text-decoration: none;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.03em;
+  transition: var(--transition-smooth);
 }
 
-#menu-toggle { display: none; }
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  width: 30px;
-  height: 22px;
-  z-index: 1100;
+.google-nav-logo:hover {
+  opacity: 0.8;
 }
 
-.menu-icon span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: var(--navy);
-  border-radius: 2px;
-  transition: var(--transition);
-  margin-bottom: 5px;
-}
-
-.menu-icon span:last-child { margin-bottom: 0; }
-
-.nav-links {
+.google-nav-list {
   display: flex;
-  gap: 20px;
   align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
+.google-nav-list a {
   text-decoration: none;
-  color: var(--slate-600);
-  font-weight: 600;
-  font-size: 1rem;
-  white-space: nowrap;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-  transition: var(--transition);
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition-smooth);
+  padding: 6px 0;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+/* Subtle typography shift on hover instead of line styling decoration */
+.google-nav-list a:hover,
+.google-nav-list a.active {
   color: var(--navy);
-  border-bottom-color: var(--navy);
+}
+
+/* The iconic google pill button style */
+.google-btn-nav {
+  background-color: var(--navy) !important;
+  color: var(--bg-pure) !important;
+  padding: 10px 24px !important;
+  border-radius: var(--radius-btn);
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+}
+
+.google-btn-nav:hover {
+  background-color: var(--accent-action) !important; /* Elegant color transition to Sage Green */
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+/* Mobile Hiding Core Setup */
+.google-menu-checkbox { display: none; }
+
+/* ==========================================================================
+   MOBILE INTERFACE BREAKPOINT
+   ========================================================================== */
+@media (max-width: 768px) {
+  .google-menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .google-menu-icon span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--navy);
+    border-radius: 2px;
+    transition: var(--transition-smooth);
+  }
+
+  .google-nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-pure);
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
+    border-top: 1px solid var(--border-subtle);
+    padding: 24px;
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: var(--transition-smooth);
+    z-index: 999;
+  }
+
+  /* Reveal drawer mechanism */
+  .google-menu-checkbox:checked ~ .google-nav-links {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .google-nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .google-nav-list a {
+    display: block;
+    font-size: 1.05rem;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .google-btn-nav {
+    text-align: center;
+    margin-top: 8px;
+    border-bottom: none !important;
+  }
+  
+  /* Hamburger Transformations */
+  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
 }
 
 /* 4. HAMBURGER TRANSFORMATIONS (MOBILE) */

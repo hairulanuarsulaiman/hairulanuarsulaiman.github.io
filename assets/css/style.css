@@ -3519,3 +3519,32 @@ h1, h2, h3, h4 {
     gap: 12px 16px;
   }
 }
+
+/* Container Utama */
+.google-main-content {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Floating WhatsApp Button Style */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25d366;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}

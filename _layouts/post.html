@@ -2,124 +2,39 @@
 layout: default
 ---
 
-<!-- ========================================== -->
-<!-- 1. KEPALA ARTIKEL & MAKLUMAT META          -->
-<!-- ========================================== -->
-<article class="google-layout-section" style="padding-top: 48px; padding-bottom: 64px;">
-  <div style="max-width: 680px; margin: 0 auto; padding: 0 16px;">
+<article style="background: var(--bg-pure); padding-top: 48px; padding-bottom: 64px;">
+  <!-- Container Lebar Teks Google Standard (680px) -->
+  <div style="max-width: 680px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;">
     
-    <!-- Navigasi Halus (Breadcrumb) -->
-    <nav aria-label="Breadcrumb" style="margin-bottom: 24px; font-size: 0.85rem; font-weight: 500;">
-      <a href="{{ '/' | relative_url }}" style="color: var(--text-secondary); text-decoration: none;">Utama</a>
-      <span style="color: var(--border-subtle); margin: 0 8px;">/</span>
-      <a href="{{ '/artikel/' | relative_url }}" style="color: var(--text-secondary); text-decoration: none;">Artikel</a>
-      <span style="color: var(--border-subtle); margin: 0 8px;">/</span>
-      <span style="color: var(--accent-action); font-weight: 600; text-transform: uppercase;">{{ page.category }}</span>
-    </nav>
+    <!-- Kategori Header -->
+    <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 12px;">
+      {{ page.category }}
+    </span>
 
-    <!-- Tajuk Utama Artikel -->
-    <h1 style="font-size: clamp(2rem, 5vw, 2.75rem); color: var(--navy); font-weight: 800; letter-spacing: -0.03em; line-height: 1.25; margin: 0 0 20px 0;">
+    <!-- Tajuk Artikel Google Style -->
+    <h1 style="font-size: 2.25rem; font-weight: 700; color: var(--navy); line-height: 1.25; margin: 0 0 24px 0; letter-spacing: -0.02em;">
       {{ page.title }}
     </h1>
 
-    <!-- Deskripsi Pendek Halaman -->
-    {% if page.description %}
-      <p style="font-size: 1.15rem; line-height: 1.6; color: var(--text-secondary); margin: 0 0 28px 0; font-style: italic;">
-        {{ page.description }}
-      </p>
-    {% endif %}
-
-    <!-- Kad Penulis (E-E-A-T Optimization) -->
-    <div style="display: flex; align-items: center; gap: 16px; padding: 20px 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); margin-bottom: 40px;">
-      <img 
-        src="{{ '/assets/images/hairul-anuar.jpeg' | relative_url }}" 
-        alt="Hairul Anuar Sulaiman" 
-        style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border-subtle);"
-      >
+    <!-- Author Byline (blog.google Signature) -->
+    <div style="display: flex; align-items: center; gap: 16px; padding-bottom: 32px; margin-bottom: 40px; border-bottom: 1px solid var(--border-subtle);">
+      <img src="{{ '/assets/images/profile.jpeg' | relative_url }}" alt="Hairul Anuar Sulaiman" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
       <div>
-        <p style="margin: 0; font-weight: 700; color: var(--navy); font-size: 0.95rem;">
-          Hairul Anuar Sulaiman, <span style="font-size: 0.85rem; font-weight: 500; color: var(--accent-action);">Associate Shariah RFP</span>
-        </p>
-        <p style="margin: 4px 0 0 0; font-size: 0.8rem; color: var(--text-secondary);">
-          Diterbitkan pada {{ page.date | date: "%d %B %Y" }} • <span>{{ page.category }}</span>
-        </p>
+        <div style="font-size: 0.95rem; font-weight: 700; color: var(--navy);">Hairul Anuar Sulaiman</div>
+        <div style="font-size: 0.8rem; color: var(--text-secondary);">Associate Shariah Registered Financial Planner • {{ page.date | date: "%d %b %Y" }}</div>
       </div>
     </div>
 
-    <!-- ========================================== -->
-    <!-- 2. KANDUNGAN UTAMA (MARKDOWN OUTPUT)       -->
-    <!-- ========================================== -->
-    <div class="google-article-body" style="color: var(--text-main); font-size: 1.1rem; line-height: 1.85;">
-      
-      <!-- CSS Khusus untuk mencantikkan keluaran raw Markdown -->
-      <style>
-        .google-article-body p {
-          margin-bottom: 24px;
-        }
-        .google-article-body h2 {
-          font-size: 1.65rem;
-          color: var(--navy);
-          font-weight: 700;
-          margin-top: 48px;
-          margin-bottom: 16px;
-          letter-spacing: -0.02em;
-        }
-        .google-article-body h3 {
-          font-size: 1.35rem;
-          color: var(--navy);
-          font-weight: 700;
-          margin-top: 36px;
-          margin-bottom: 12px;
-          letter-spacing: -0.01em;
-        }
-        .google-article-body ul, .google-article-body ol {
-          margin-bottom: 28px;
-          padding-left: 24px;
-        }
-        .google-article-body li {
-          margin-bottom: 10px;
-        }
-        .google-article-body blockquote {
-          border-left: 4px solid var(--accent-action);
-          background-color: var(--bg-track);
-          padding: 20px 24px;
-          margin: 32px 0;
-          border-radius: 0 12px 12px 0;
-          font-style: italic;
-          color: var(--navy);
-        }
-        .google-article-body strong {
-          color: var(--navy);
-          font-weight: 700;
-        }
-        .google-article-body img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 16px;
-          margin: 32px 0;
-          box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03);
-        }
-        .google-article-body hr {
-          border: 0;
-          height: 1px;
-          background: var(--border-subtle);
-          margin: 40px 0;
-        }
-      </style>
-
+    <!-- Kandungan Teks Markdown -->
+    <div style="font-size: 1.1rem; line-height: 1.85; color: var(--text-main);">
       {{ content }}
+    </div>
 
   </div>
-
-    <!-- Panggil kod Related Articles premium anda di sini -->
-{% include related-articles.html %}
-
-    </div>
 </article>
 
+<!-- Stream Artikel Berkaitan Gaya blog.google -->
+{% include related-articles.html %}
 
-
-<!-- ========================================== -->
-<!-- 3. DYNAMIC GLOBAL CALL TO ACTION           -->
-<!-- ========================================== -->
+<!-- Global CTA -->
 {% include cta-section.html %}

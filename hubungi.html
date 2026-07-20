@@ -9,14 +9,14 @@ description: Mulakan perbualan tanpa tekanan tentang takaful perlindungan, pelab
 {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  "url": "https://hairulanuarsulaiman.github.io/hubungi/",
+  "url": "{{ site.url }}{{ page.url }}",
   "mainEntity": {
     "@type": "Person",
     "name": "Hairul Anuar Bin Sulaiman",
     "jobTitle": "Islamic Financial Adviser Representative & Unit Trust Scheme Consultant",
-    "telephone": "+601127657730",
+    "telephone": "{{ site.phone }}",
     "email": "hairul.financial@gmail.com",
-    "image": "https://hairulanuarsulaiman.github.io/assets/images/hairul-anuar.jpeg",
+    "image": "{{ '/assets/images/hairul-anuar.jpeg' | absolute_url }}",
     "areaServed": "Malaysia"
   }
 }
@@ -25,13 +25,13 @@ description: Mulakan perbualan tanpa tekanan tentang takaful perlindungan, pelab
 <!-- ========================================== -->
 <!-- 1. HERO SECTION                            -->
 <!-- ========================================== -->
-<section class="google-layout-section" style="padding-bottom: 40px;">
-  <div class="google-center-header" style="max-width: 720px; margin: 0 auto;">
-    <p class="google-eyebrow">Titik Permulaan</p>
-    <h1 style="font-size: clamp(2.25rem, 5vw, 3.25rem); color: var(--navy); font-weight: 800; letter-spacing: -0.03em; margin: 0 0 16px 0;">
+<section class="google-stream-section" style="padding-bottom: 32px;">
+  <div class="google-stream-container" style="max-width: 760px; text-align: center;">
+    <span class="google-stream-eyebrow">Titik Permulaan</span>
+    <h1 class="google-stream-title" style="font-size: 2.25rem;">
       Mari Bincangkan Langkah Pertama Anda
     </h1>
-    <p class="google-related-intro" style="text-align: center;">
+    <p class="google-stream-desc" style="margin: 12px auto 0 auto;">
       Tiada sebarang tekanan kewangan mahupun komitmen serta-merta. Hanya satu perbualan telus untuk melihat kedudukan portfolio semasa anda, dan merangka perlindungan Takaful, pelaburan, atau persaraan yang paling sesuai.
     </p>
   </div>
@@ -40,28 +40,44 @@ description: Mulakan perbualan tanpa tekanan tentang takaful perlindungan, pelab
 <!-- ========================================== -->
 <!-- 2. PILIHAN HUBUNGAN PANTAS (GRID)          -->
 <!-- ========================================== -->
-<section class="google-layout-section" style="background-color: var(--bg-track); padding-top: 64px; padding-bottom: 64px;">
-  <div class="google-flex-grid" style="max-width: 850px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+<section class="google-stream-section" style="background-color: var(--bg-pure);">
+  <div class="google-stream-container" style="max-width: 850px;">
     
-    <!-- Kad WhatsApp -->
-    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 40px 32px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-      <div style="width: 100%;">
-        <span style="font-size: 2.5rem; display: block; margin-bottom: 16px;" aria-hidden="true">💬</span>
-        <h3 style="font-size: 1.35rem; color: var(--navy); margin-bottom: 12px;">Pusat Mesej WhatsApp</h3>
-        <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.6; margin-bottom: 24px;"> Pilihan paling pantas. Anda boleh bertanyakan soalan asas, mendapatkan pandangan awal, atau terus menetapkan jadual janji temu. </p>
-      </div>
-      <a href="https://wa.me/{{ site.phone | remove: '+' | remove: ' ' }}" class="google-btn-hero-primary" style="background-color: #25D366; color: white;" target="_blank" rel="noopener noreferrer">WhatsApp Saya</a>
-    </article>
+    <div class="google-stream-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      
+      <!-- Kad WhatsApp -->
+      <article class="google-blog-card" style="text-align: center; align-items: center;">
+        <div>
+          <span style="font-size: 2.5rem; display: block; margin-bottom: 16px;" aria-hidden="true">💬</span>
+          <h3 class="google-card-title">Pusat Mesej WhatsApp</h3>
+          <p class="google-card-excerpt" style="-webkit-line-clamp: initial;">
+            Pilihan paling pantas. Anda boleh bertanyakan soalan asas, mendapatkan pandangan awal, atau terus menetapkan jadual janji temu.
+          </p>
+        </div>
+        <div style="margin-top: 24px;">
+          <a href="https://wa.me/{{ site.phone }}" class="google-btn-primary" style="background-color: #25D366; text-decoration: none;" target="_blank" rel="noopener noreferrer">
+            WhatsApp Saya →
+          </a>
+        </div>
+      </article>
 
-    <!-- Kad E-mel -->
-    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 40px 32px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-      <div style="width: 100%;">
-        <span style="font-size: 2.5rem; display: block; margin-bottom: 16px;" aria-hidden="true">📧</span>
-        <h3 style="font-size: 1.35rem; color: var(--navy); margin-bottom: 12px;">Komunikasi E-mel</h3>
-        <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.6; margin-bottom: 24px;"> Lebih selesa berurusan secara rasmi? Hantarkan butiran fail soalan atau keperluan anda dan saya akan maklum balas dalam tempoh 24 jam. </p>
-      </div>
-      <a href="mailto:hairul.financial@gmail.com" class="google-btn-hero-primary" style="background-color: var(--navy); color: white;">Hantar E-mel</a>
-    </article>
+      <!-- Kad E-mel -->
+      <article class="google-blog-card" style="text-align: center; align-items: center;">
+        <div>
+          <span style="font-size: 2.5rem; display: block; margin-bottom: 16px;" aria-hidden="true">📧</span>
+          <h3 class="google-card-title">Komunikasi E-mel</h3>
+          <p class="google-card-excerpt" style="-webkit-line-clamp: initial;">
+            Lebih selesa berurusan secara rasmi? Hantarkan butiran soalan atau keperluan anda dan saya akan maklum balas dalam tempoh 24 jam.
+          </p>
+        </div>
+        <div style="margin-top: 24px;">
+          <a href="mailto:hairul.financial@gmail.com" class="google-btn-primary" style="text-decoration: none;">
+            Hantar E-mel →
+          </a>
+        </div>
+      </article>
+
+    </div>
 
   </div>
 </section>
@@ -69,73 +85,90 @@ description: Mulakan perbualan tanpa tekanan tentang takaful perlindungan, pelab
 <!-- ========================================== -->
 <!-- 3. BORANG PESANAN DENGAN STYLE GOOGLE      -->
 <!-- ========================================== -->
-<section class="google-layout-section" style="padding-top: 64px; padding-bottom: 64px;" aria-labelledby="form-heading">
-  <div class="google-center-header" style="margin-bottom: 32px;">
-    <h2 id="form-heading" style="font-size: 2rem;">Tinggalkan Pesanan Ringkas</h2>
+<section class="google-stream-section" aria-labelledby="form-heading">
+  <div class="google-stream-container" style="max-width: 680px;">
+    
+    <div class="google-stream-header" style="text-align: center; margin-bottom: 32px;">
+      <h2 id="form-heading" class="google-stream-title" style="font-size: 1.75rem;">
+        Tinggalkan Pesanan Ringkas
+      </h2>
+    </div>
+    
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+      <input type="hidden" name="access_key" value="075d23be-667c-4d60-8301-66ec3731d89d">
+      <input type="checkbox" name="botcheck" style="display: none;">
+      
+      <!-- Input Nama -->
+      <input type="text" name="name" placeholder="Nama Penuh Anda" required 
+             style="width: 100%; padding: 14px 18px; font-size: 1rem; border: 1px solid #dadce0; border-radius: 12px; background-color: #ffffff; color: var(--navy); box-sizing: border-box;" 
+             aria-label="Nama Penuh Anda">
+      
+      <!-- Input E-mel -->
+      <input type="email" name="email" placeholder="Alamat E-mel Anda" required 
+             style="width: 100%; padding: 14px 18px; font-size: 1rem; border: 1px solid #dadce0; border-radius: 12px; background-color: #ffffff; color: var(--navy); box-sizing: border-box;" 
+             aria-label="Alamat E-mel Anda">
+      
+      <!-- Dropdown Perkhidmatan -->
+      <select name="service" required 
+              style="width: 100%; padding: 14px 18px; font-size: 1rem; border: 1px solid #dadce0; border-radius: 12px; background-color: #ffffff; color: var(--navy); box-sizing: border-box;" 
+              aria-label="Pilih jenis perkhidmatan">
+        <option value="">Saya ingin tahu lebih lanjut tentang...</option>
+        <option value="Takaful Perlindungan">Takaful – Perlindungan Pendapatan & Hayat</option>
+        <option value="Unit Trust">Unit Trust Islamik – Simpanan Berkala</option>
+        <option value="Persaraan">Perancangan Persaraan Bebas Riba</option>
+        <option value="Semakan Percuma">Semakan Kewangan Halal Percuma (30 Min)</option>
+        <option value="Umum">Pertanyaan Umum</option>
+      </select>
+      
+      <!-- Kawasan Teks Mesej -->
+      <textarea name="message" placeholder="Ceritakan serba sedikit tentang keperluan atau soalan anda..." rows="5" required 
+                style="width: 100%; padding: 14px 18px; font-size: 1rem; border: 1px solid #dadce0; border-radius: 12px; background-color: #ffffff; color: var(--navy); box-sizing: border-box; resize: vertical;" 
+                aria-label="Mesej atau pertanyaan anda"></textarea>
+      
+      <!-- Butang Hantar -->
+      <button type="submit" class="google-btn-primary" style="width: 100%; border: none; cursor: pointer; padding: 16px; font-size: 1rem;">
+        Hantar Pertanyaan →
+      </button>
+      
+      <div id="form-result" style="text-align: center; margin-top: 12px; font-weight: 600; font-size: 1rem;" aria-live="polite"></div>
+    </form>
+    
+    <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 20px;">
+      🔒 Maklumat peribadi anda dirahsiakan dan dilindungi sepenuhnya di bawah Dasar Privasi.
+    </p>
+
   </div>
-  
-  <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 20px; max-width: 600px; margin: 0 auto;">
-    <input type="hidden" name="access_key" value="075d23be-667c-4d60-8301-66ec3731d89d">
-    <input type="checkbox" name="botcheck" style="display: none;">
-    
-    <!-- Input Nama -->
-    <input type="text" name="name" placeholder="Nama Penuh Anda" required 
-           style="width: 100%; padding: 14px 18px; font-size: 1rem; font-family: var(--font-global); border: 1px solid var(--border-subtle); border-radius: 12px; background-color: var(--bg-track); color: var(--navy); box-sizing: border-box;" 
-           aria-label="Nama Penuh Anda">
-    
-    <!-- Input E-mel -->
-    <input type="email" name="email" placeholder="Alamat E-mel Anda" required 
-           style="width: 100%; padding: 14px 18px; font-size: 1rem; font-family: var(--font-global); border: 1px solid var(--border-subtle); border-radius: 12px; background-color: var(--bg-track); color: var(--navy); box-sizing: border-box;" 
-           aria-label="Alamat E-mel Anda">
-    
-    <!-- Dropdown Perkhidmatan -->
-    <select name="service" required 
-            style="width: 100%; padding: 14px 18px; font-size: 1rem; font-family: var(--font-global); border: 1px solid var(--border-subtle); border-radius: 12px; background-color: var(--bg-track); color: var(--navy); box-sizing: border-box; appearance: none; -webkit-appearance: none; -moz-appearance: none;" 
-            aria-label="Pilih jenis perkhidmatan">
-      <option value="">Saya ingin tahu lebih lanjut tentang...</option>
-      <option value="Takaful Perlindungan">Takaful – Perlindungan Pendapatan & Hayat</option>
-      <option value="Unit Trust">Unit Trust Islamik – Simpanan Berkala</option>
-      <option value="Persaraan">Perancangan Persaraan Bebas Riba</option>
-      <option value="Semakan Percuma">Semakan Kewangan Halal Percuma (30 Min)</option>
-      <option value="Umum">Pertanyaan Umum</option>
-    </select>
-    
-    <!-- Kawasan Teks Mesej -->
-    <textarea name="message" placeholder="Ceritakan serba sedikit tentang keperluan atau soalan anda..." rows="5" required 
-              style="width: 100%; padding: 14px 18px; font-size: 1rem; font-family: var(--font-global); border: 1px solid var(--border-subtle); border-radius: 12px; background-color: var(--bg-track); color: var(--navy); box-sizing: border-box; resize: vertical;" 
-              aria-label="Mesej atau pertanyaan anda"></textarea>
-    
-    <!-- Butang Hantar -->
-    <button type="submit" class="google-btn-hero-primary" style="width: 100%; border: none; cursor: pointer; padding: 16px;">
-      Hantar Pertanyaan →
-    </button>
-    
-    <div id="form-result" style="text-align: center; margin-top: 12px; font-weight: 600; font-size: 1rem;" aria-live="polite"></div>
-  </form>
-  
-  <p style="text-align: center; font-size: 0.85rem; color: var(--text-secondary); margin-top: 20px;">
-    🔒 Maklumat peribadi anda dirahsiakan dan dilindungi sepenuhnya di bawah Dasar Privasi.
-  </p>
 </section>
 
 <!-- ========================================== -->
 <!-- 4. MAKLUMAT KONSULTASI & KEPATUHAN KAWAL   -->
 <!-- ========================================== -->
-<section class="google-layout-section" style="background-color: var(--bg-track); text-align: center;" aria-labelledby="consultation-heading">
-  <div style="max-width: 800px; margin: 0 auto;">
-    <h2 id="consultation-heading" style="font-size: 1.75rem; color: var(--navy); margin-bottom: 24px;">Maklumat Penasihatan Resmi</h2>
-    <p style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; margin-bottom: 12px;"><strong>Konsultasi Atas Talian:</strong> Terbuka ke seluruh Malaysia menggunakan aplikasi <strong>Google Meet / Zoom</strong>.</p>
-    <p style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; margin-bottom: 24px;"><strong>Kawasan Sesi Fizikal:</strong> Pertemuan berjadual di sekitar <strong>Kota Tinggi, Johor Bahru, dan Kluang</strong>.</p>
+<section class="google-stream-section" style="background-color: var(--bg-pure); text-align: center;" aria-labelledby="consultation-heading">
+  <div class="google-stream-container" style="max-width: 800px;">
+    
+    <h2 id="consultation-heading" class="google-stream-title" style="font-size: 1.75rem; margin-bottom: 24px;">
+      Maklumat Penasihatan Rasmi
+    </h2>
+    
+    <p style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; margin-bottom: 12px;">
+      <strong>Konsultasi Atas Talian:</strong> Terbuka ke seluruh Malaysia menggunakan aplikasi <strong>Google Meet / Zoom</strong>.
+    </p>
+    <p style="font-size: 1.05rem; color: var(--text-main); line-height: 1.7; margin-bottom: 24px;">
+      <strong>Kawasan Sesi Fizikal:</strong> Pertemuan berjadual di sekitar <strong>Kota Tinggi, Johor Bahru, dan Kluang</strong>.
+    </p>
     
     <!-- Lencana Masa Gaya Google -->
-    <div style="background-color: var(--navy); color: white; padding: 10px 24px; border-radius: 30px; font-weight: 700; font-size: 0.95rem; display: inline-block; margin-bottom: 32px; letter-spacing: 0.02em;">
+    <div style="background-color: var(--navy); color: #ffffff; padding: 10px 24px; border-radius: 30px; font-weight: 700; font-size: 0.95rem; display: inline-block; margin-bottom: 32px; letter-spacing: 0.02em;">
       🕒 Sesi 30 minit pertama adalah PERCUMA
     </div>
     
     <p style="max-width: 720px; margin: 0 auto; font-style: italic; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
       Nombor Pendaftaran FIMM: <strong>F01040203</strong> | Wakil IFAR Dilantik Oleh: Phillip Wealth Planners Sdn Bhd<br>
-      <a href="https://www.bnm.gov.my/regulations/fsp-directory/far" target="_blank" rel="noopener noreferrer" style="color: var(--navy); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--accent-action);">→ Semak dan sahkan status IFAR saya di portal rasmi Direktori FAR Bank Negara Malaysia</a>
+      <a href="https://www.bnm.gov.my/regulations/fsp-directory/far" target="_blank" rel="noopener noreferrer" style="color: var(--navy); font-weight: 600; text-decoration: underline;">
+        → Semak dan sahkan status IFAR saya di portal rasmi Direktori FAR Bank Negara Malaysia
+      </a>
     </p>
+
   </div>
 </section>
 

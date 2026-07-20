@@ -1,7 +1,7 @@
 <header class="google-site-header">
   <nav class="google-nav-container" aria-label="Navigasi Utama">
     <!-- Nama Jenama / Logo -->
-    <a href="/index.html" class="google-nav-logo">
+    <a href="{{ '/' | relative_url }}" class="google-nav-logo">
       Hairul Anuar Sulaiman
     </a>
     
@@ -20,19 +20,19 @@
           <a href="{{ '/' | relative_url }}" class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}">Home</a>
         </li>
         <li>
-          <a href="{{ '/tentang/' | relative_url }}" class="{% if page.url contains '/tentang/' %}active{% endif %}">Tentang Saya</a>
+          <a href="{{ '/tentang/' | relative_url }}" class="{% if page.url contains '/tentang' %}active{% endif %}">Tentang Saya</a>
         </li>
         <li>
-          <a href="{{ '/takaful/' | relative_url }}" class="{% if page.url contains '/takaful/' %}active{% endif %}">Takaful</a>
+          <a href="{{ '/takaful/' | relative_url }}" class="{% if page.url contains '/takaful' %}active{% endif %}">Takaful</a>
         </li>
         <li>
-          <a href="{{ '/unittrust/' | relative_url }}" class="{% if page.url contains '/unittrust/' %}active{% endif %}">Unit Trust</a>
+          <a href="{{ '/unittrust/' | relative_url }}" class="{% if page.url contains '/unittrust' %}active{% endif %}">Unit Trust</a>
         </li>
         <li>
-          <a href="{{ '/persaraan/' | relative_url }}" class="{% if page.url contains '/persaraan/' %}active{% endif %}">Persaraan</a>
+          <a href="{{ '/persaraan/' | relative_url }}" class="{% if page.url contains '/persaraan' %}active{% endif %}">Persaraan</a>
         </li>
         <li>
-          <a href="{{ '/faq/' | relative_url }}" class="{% if page.url contains '/faq/' %}active{% endif %}">FAQ</a>
+          <a href="{{ '/faq/' | relative_url }}" class="{% if page.url contains '/faq' %}active{% endif %}">FAQ</a>
         </li>
         <li>
           <a href="{{ '/artikel/' | relative_url }}" class="{% if page.url contains '/artikel' %}active{% endif %}">Artikel</a>

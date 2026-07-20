@@ -2907,3 +2907,297 @@ h1, h2, h3, h4 {
   }
 }
 
+/* ==========================================================================
+   BLOG.GOOGLE DESIGN SYSTEM (EDITORIAL & STREAM CARDS)
+   ========================================================================== */
+
+/* 1. Article Layout & Byline (_layouts/post.html) */
+.google-article-wrapper {
+  background: var(--bg-pure);
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+
+.google-article-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.google-article-category {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.google-article-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.02em;
+}
+
+.google-byline-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 32px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.google-byline-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.google-byline-author {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.google-byline-meta {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.google-article-content {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: var(--text-main);
+}
+
+/* 2. Related Articles Stream (_includes/related-articles.html) */
+.google-stream-section {
+  background-color: var(--bg-track);
+  padding: 72px 20px;
+  border-top: 1px solid var(--border-subtle);
+  box-sizing: border-box;
+}
+
+.google-stream-container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.google-stream-header {
+  margin-bottom: 40px;
+}
+
+.google-stream-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.google-stream-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 12px 0;
+  letter-spacing: -0.02em;
+}
+
+.google-stream-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 680px;
+  line-height: 1.6;
+}
+
+.google-stream-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.google-blog-card {
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.google-blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.google-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.google-card-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.google-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--navy);
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+}
+
+.google-card-excerpt {
+  font-size: 0.925rem;
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; overflow: hidden;
+}
+
+.google-card-action {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.google-stream-btn-wrapper {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.google-pill-btn-secondary {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 24px;
+  border: 1px solid var(--navy);
+  background: transparent;
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.google-pill-btn-secondary:hover {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+/* 3. Call To Action Section (_includes/cta-section.html) */
+.google-cta-section {
+  background-color: var(--bg-pure);
+  padding: 80px 20px;
+  border-top: 1px solid var(--border-subtle);
+  box-sizing: border-box;
+}
+
+.google-cta-card {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--bg-track);
+  border: 1px solid #dadce0;
+  border-radius: 24px;
+  padding: 56px 32px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.google-cta-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.google-cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.google-cta-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin: 0 auto 36px auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.google-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.google-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: 28px;
+  background-color: var(--navy);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.google-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 28px;
+  border: 1px solid #dadce0;
+  background-color: #ffffff;
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.google-cta-disclaimer {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 24px;
+  margin-bottom: 0;
+}

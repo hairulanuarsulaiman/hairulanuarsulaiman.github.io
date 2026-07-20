@@ -252,3 +252,9 @@ We will never:
 • recommend products without understanding needs
 
 • publish content we would not be comfortable explaining face-to-face
+
+# Every page ends with the same invitation.
+
+Regardless of which page a visitor reads, every conversation concludes with the same calm invitation to continue the discussion. 
+
+This consistency reinforces trust, reflects our advisory approach, and reminds visitors that financial planning begins with understanding rather than persuasion.

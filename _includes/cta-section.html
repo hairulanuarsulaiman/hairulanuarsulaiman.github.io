@@ -1,34 +1,39 @@
-<!-- Google-Inspired Dynamic Call to Action -->
-<section class="google-layout-section" style="background-color: var(--navy); color: var(--bg-pure); text-align: center;">
-  <div style="max-width: 680px; margin: 0 auto; padding: 40px 0;">
+<!-- ========================================== -->
+<!-- GOOGLE BLOG STYLE CALL TO ACTION SECTION   -->
+<!-- ========================================== -->
+<section style="background-color: var(--bg-pure); padding: 80px 20px; border-top: 1px solid var(--border-subtle); box-sizing: border-box;">
+  <div style="max-width: 850px; margin: 0 auto; background: var(--bg-track); border: 1px solid #dadce0; border-radius: 24px; padding: 56px 32px; text-align: center; box-sizing: border-box;">
     
-    <!-- Logik Dinamik Mengesan Halaman Konten (Artikel vs Halaman Biasa) -->
-    {% if page.layout == "post" or page.collection == "posts" %}
-      <!-- Jika dibuka di halaman Artikel/Blog -->
-      <h2 style="color: var(--bg-pure); font-size: 2.25rem; margin-bottom: 20px; letter-spacing: -0.03em;">
-        Ada Soalan Tentang Artikel Ini?
-      </h2>
-      <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.7; margin-bottom: 40px;">
-        Jika ada bahagian dalam penulisan ini yang memerlukan penjelasan lanjut, atau anda ingin membincangkan topik ini secara peribadi, saya sedia membantu anda.
-      </p>
-    {% else %}
-      <!-- Jika dibuka di Halaman Perkhidmatan (Takaful, Unit Trust, Persaraan, dll) -->
-      <h2 style="color: var(--bg-pure); font-size: 2.25rem; margin-bottom: 20px; letter-spacing: -0.03em;">
-        Mari Mulakan Dengan Satu Perbualan
-      </h2>
-      <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; line-height: 1.7; margin-bottom: 40px;">
-        Tiada sebarang paksaan untuk melanggan produk kewangan. Kita mulakan dengan satu perbualan yang tenang bagi memetakan kedudukan semasa portfolio dan matlamat masa depan anda.
-      </p>
-    {% endif %}
+    <!-- Eyebrow -->
+    <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 12px;">
+      Sesi Konsultasi Kewangan
+    </span>
 
-    <!-- Butang Tindakan Tunggal yang Konsisten -->
-    <a href="https://wa.me/{{ site.phone | remove: '+' | remove: ' ' }}" 
-       class="google-btn-hero-primary" 
-       style="background-color: var(--bg-pure); color: var(--navy);" 
-       target="_blank" 
-       rel="noopener noreferrer">
-      Hubungi Saya Melalui WhatsApp
-    </a>
-    
+    <!-- Headline Google Style -->
+    <h2 style="font-size: 2rem; font-weight: 700; color: var(--navy); margin: 0 0 16px 0; letter-spacing: -0.02em; line-height: 1.3;">
+      Mari Mulakan Dengan Satu Perbualan
+    </h2>
+
+    <!-- Subtitle -->
+    <p style="font-size: 1.05rem; color: var(--text-secondary); margin: 0 auto 36px auto; max-width: 600px; line-height: 1.6;">
+      Rancang simpanan, pelaburan Unit Trust, dan perlindungan Takaful anda secara berstruktur serta patuh Syariah bersama penasihat bertauliah.
+    </p>
+
+    <!-- Action Buttons (Google Signature Pill Buttons) -->
+    <div style="display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap;">
+      <a href="https://wa.me/60123456789" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; padding: 14px 32px; border-radius: 28px; background-color: var(--navy); color: #ffffff; text-decoration: none; font-size: 0.95rem; font-weight: 600; transition: background-color 0.2s ease;">
+        Hubungi Melalui WhatsApp →
+      </a>
+      
+      <a href="{{ '/pendedahan/' | relative_url }}" style="display: inline-flex; align-items: center; justify-content: center; padding: 14px 28px; border-radius: 28px; border: 1px solid #dadce0; background-color: #ffffff; color: var(--navy); text-decoration: none; font-size: 0.95rem; font-weight: 600; transition: background-color 0.2s ease;">
+        Pendedahan Kawal Selia
+      </a>
+    </div>
+
+    <!-- Small Disclaimer Note -->
+    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 24px; margin-bottom: 0;">
+      Perkhidmatan penasihatan profesional di bawah pelantikan Phillip Wealth Planners & Phillip Mutual Berhad.
+    </p>
+
   </div>
 </section>

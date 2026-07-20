@@ -7,8 +7,8 @@
   
   <title>{% if page.title %}{{ page.title }} | {% endif %}Hairul Anuar Sulaiman</title>
   
-  <link rel="icon" type="image/png" sizes="512x512" href="{{ site.baseurl }}/assets/images/favicon.png">
-  <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
   
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
@@ -19,13 +19,12 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
-  <!-- Menggunakan imej 16:9 yang lebih berautoriti tinggi sebagai paparan media sosial default -->
-  <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/assets/images/perlindungan-takaful-pendapatan-sedia-hadapi-risiko.webp{% endif %}">
+  <meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/images/perlindungan-takaful-pendapatan-sedia-hadapi-risiko.webp' | absolute_url }}{% endif %}">
   <meta property="og:locale" content="ms_MY">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Fail CSS Utama Baharu -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   {% if page.schema %}
   <!-- Page-specific JSON-LD (Skema Khusus Halaman) -->
@@ -45,7 +44,7 @@
     "name": "Hairul Anuar Sulaiman",
     "description": "{{ site.description }}",
     "url": "{{ site.url }}",
-    "image": "{{ site.url }}/assets/images/hairul-anuar.jpeg",
+    "image": "{{ '/assets/images/profile.jpeg' | absolute_url }}",
     "telephone": "{{ site.phone }}",
     "areaServed": "Malaysia",
     "address": {
@@ -60,7 +59,7 @@
 
 <body>
 
-  <!-- NAVIGASI UTAMA (GAYA ABOUT.GOOGLE) -->
+  <!-- NAVIGASI UTAMA (GAYA BLOG.GOOGLE) -->
   {% include header.html %}
 
   <!-- KANDUNGAN UNIK HALAMAN -->

@@ -5,48 +5,47 @@ description: Kenali Hairul Anuar Bin Sulaiman. Membantu individu dan keluarga di
 ---
 
 <!-- ========================================== -->
-<!-- 1. HERO PROFILE SECTION (GAYA ABOUT.GOOGLE)-->
+<!-- 1. HERO PROFILE SECTION                    -->
 <!-- ========================================== -->
 <section class="google-hero" aria-labelledby="about-heading">
-  <div class="google-hero-container" style="grid-template-columns: 0.8fr 1.2fr; gap: 48px;">
+  <div class="google-hero-container" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
     
     <!-- Lajur Visual: Gambar Profil Responsif -->
-    <div class="google-hero-visual">
-      <figure class="google-hero-image-container" style="max-width: 320px; aspect-ratio: 1 / 1; border-radius: 50%;">
+    <div class="google-hero-visual" style="display: flex; justify-content: center; align-items: center;">
+      <div class="google-blog-card" style="padding: 0; border-radius: 50%; width: 280px; height: 280px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
         <picture>
           <!-- AVIF -->
           <source 
             srcset="{{ '/assets/images/hero-320.avif' | relative_url }} 320w,
                     {{ '/assets/images/hero-640.avif' | relative_url }} 640w"
-            sizes="(max-width: 480px) 320px, 640px"
+            sizes="(max-width: 480px) 280px, 320px"
             type="image/avif">
 
           <!-- WebP -->
           <source 
             srcset="{{ '/assets/images/hero-320.webp' | relative_url }} 320w,
                     {{ '/assets/images/hero-640.webp' | relative_url }} 640w"
-            sizes="(max-width: 480px) 320px, 640px"
+            sizes="(max-width: 480px) 280px, 320px"
             type="image/webp">
 
           <!-- Fallback JPEG -->
           <img 
             src="{{ '/assets/images/hairul-anuar.jpeg' | relative_url }}" 
             alt="Hairul Anuar Sulaiman - Perunding Kewangan Islam & Unit Trust" 
-            class="google-hero-flagship-img"
-            style="border-radius: 50%; aspect-ratio: 1 / 1;"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
             loading="eager"
             decoding="async"
             width="640"
             height="640"
           >
         </picture>
-      </figure>
+      </div>
     </div>
 
     <!-- Lajur Teks: Nama & Jawatan Rasmi -->
-    <div class="google-hero-content" style="text-align: left;">
+    <div class="google-hero-content">
       <span class="google-hero-eyebrow">Profil Profesional</span>
-      <h1 id="about-heading" class="google-hero-title" style="font-size: clamp(2.25rem, 4vw, 3.25rem); margin-bottom: 16px;">
+      <h1 id="about-heading" class="google-hero-title">
         Hairul Anuar Bin Sulaiman
       </h1>
       <p style="font-size: 1.15rem; line-height: 1.6; color: var(--accent-action); font-weight: 600; margin: 0 0 24px 0;">
@@ -55,8 +54,8 @@ description: Kenali Hairul Anuar Bin Sulaiman. Membantu individu dan keluarga di
         Unit Trust Scheme Consultant
       </p>
       <div class="google-hero-actions">
-        <a href="https://wa.me/{{ site.phone | remove: '+' | remove: ' ' }}" class="google-btn-hero-primary" target="_blank" rel="noopener noreferrer">Hubungi Saya</a>
-        <a href="#misi" class="google-btn-hero-secondary">Baca Misi Saya ↓</a>
+        <a href="https://wa.me/{{ site.phone }}" class="google-btn-primary" target="_blank" rel="noopener noreferrer">Hubungi Saya →</a>
+        <a href="#misi" class="google-btn-secondary">Baca Misi Saya</a>
       </div>
     </div>
 
@@ -66,109 +65,147 @@ description: Kenali Hairul Anuar Bin Sulaiman. Membantu individu dan keluarga di
 <!-- ========================================== -->
 <!-- 2. MISI SAYA                               -->
 <!-- ========================================== -->
-<section class="google-layout-section" style="background-color: var(--bg-track);" id="misi" aria-labelledby="mission-heading">
-  <div class="google-center-header" style="max-width: 720px; margin: 0 auto; text-align: left;">
-    <p class="google-eyebrow">Prinsip & Kepercayaan</p>
-    <h2 id="mission-heading" style="font-size: 2rem; margin-bottom: 24px;">Misi Saya</h2>
-    <div style="font-size: 1.1rem; color: var(--text-main); line-height: 1.8;">
+<section class="google-stream-section" id="misi" aria-labelledby="mission-heading">
+  <div class="google-stream-container" style="max-width: 760px;">
+    
+    <div class="google-stream-header">
+      <span class="google-stream-eyebrow">Prinsip & Kepercayaan</span>
+      <h2 id="mission-heading" class="google-stream-title">Misi Saya</h2>
+    </div>
+
+    <div style="font-size: 1.05rem; color: var(--text-main); line-height: 1.8;">
       <p style="margin-bottom: 20px;">Saya percaya setiap individu dan keluarga di Malaysia berhak mendapat bimbingan kewangan yang jujur dan patuh Syariah – tanpa desakan tekanan, tanpa istilah teknikal yang rumit, dan tanpa produk yang bercampur riba.</p>
       <p style="margin-bottom: 20px;">Sejak tahun 2013, saya telah mendampingi ramai klien – daripada profesional muda yang baru membina tapak kerjaya sehinggalah ketua keluarga yang mencari ketenangan aliran tunai di hari tua. Saya membantu menavigasi perjalanan aset mereka dengan betul, menjelaskan bagaimana Takaful bertindak sebagai jaring keselamatan risiko dan bagaimana Unit Trust boleh dikumpul secara berdisiplin.</p>
       <p style="margin-bottom: 0;">Setiap klien membawa naratif unik. Ada yang keliru tentang titik permulaan, ada yang terbeban dengan komitmen bulanan, dan ada yang mahu memastikan pengurusan harta diurus mengikut hukum syarak. Peranan saya adalah untuk mendengar dan menasihati — bukan semata-mata mengejar transaksi penjualan.</p>
     </div>
+
   </div>
 </section>
 
 <!-- ========================================== -->
 <!-- 3. BAGAIMANA SAYA BEKERJA (GRID KAD)       -->
 <!-- ========================================== -->
-<section class="google-layout-section" aria-labelledby="approach-heading">
-  <div class="google-center-header">
-    <p class="google-eyebrow">Aliran Budaya Kerja</p>
-    <h2 id="approach-heading">Bagaimana Saya Bekerja</h2>
-  </div>
+<section class="google-stream-section" style="background-color: var(--bg-pure);" aria-labelledby="approach-heading">
+  <div class="google-stream-container">
+    
+    <div class="google-stream-header" style="text-align: center; max-width: 720px; margin-left: auto; margin-right: auto;">
+      <span class="google-stream-eyebrow">Aliran Budaya Kerja</span>
+      <h2 id="approach-heading" class="google-stream-title">Bagaimana Saya Bekerja</h2>
+    </div>
 
-  <div class="google-flex-grid">
-    <article class="google-minimal-card">
-      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">01</div>
-      <h3>Dengar Dahulu</h3>
-      <p>Setiap perbincangan bermula dengan memahami matlamat hidup, komitmen, dan kebimbangan anda secara mendalam. Tiada templat pukal untuk semua orang.</p>
-    </article>
-    <article class="google-minimal-card">
-      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">02</div>
-      <h3>Ketulenan Syariah</h3>
-      <p>Saya hanya menawarkan instrumen kewangan yang disaring dan disahkan oleh Penasihat Syariah bertauliah – bebas daripada unsur riba, gharar, dan maisir.</p>
-    </article>
-    <article class="google-minimal-card">
-      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">03</div>
-      <h3>Ketelusan Mutlak</h3>
-      <p>Semua struktur kos, unjuran risiko pasaran, dan proses kerja dijelaskan secara terbuka dari awal. Anda tidak akan terperangkap dengan terma yang mengelirukan.</p>
-    </article>
-    <article class="google-minimal-card">
-      <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-action); margin-bottom: 12px;">04</div>
-      <h3>Dampingan Berkala</h3>
-      <p>Hubungan kita bukan sekadar transaksi satu kali. Portfolio anda akan disemak secara berkala bagi memastikan ia sentiasa selari apabila fasa kehidupan berubah.</p>
-    </article>
+    <div class="google-stream-grid">
+      <article class="google-blog-card">
+        <div>
+          <span style="font-size: 1.25rem; font-weight: 700; color: var(--accent-action); display: block; margin-bottom: 12px;">01</span>
+          <h3 class="google-card-title">Dengar Dahulu</h3>
+          <p class="google-card-excerpt">Setiap perbincangan bermula dengan memahami matlamat hidup, komitmen, dan kebimbangan anda secara mendalam. Tiada templat pukal untuk semua orang.</p>
+        </div>
+      </article>
+
+      <article class="google-blog-card">
+        <div>
+          <span style="font-size: 1.25rem; font-weight: 700; color: var(--accent-action); display: block; margin-bottom: 12px;">02</span>
+          <h3 class="google-card-title">Ketulenan Syariah</h3>
+          <p class="google-card-excerpt">Saya hanya menawarkan instrumen kewangan yang disaring dan disahkan oleh Penasihat Syariah bertauliah – bebas daripada unsur riba, gharar, dan maisir.</p>
+        </div>
+      </article>
+
+      <article class="google-blog-card">
+        <div>
+          <span style="font-size: 1.25rem; font-weight: 700; color: var(--accent-action); display: block; margin-bottom: 12px;">03</span>
+          <h3 class="google-card-title">Ketelusan Mutlak</h3>
+          <p class="google-card-excerpt">Semua struktur kos, unjuran risiko pasaran, dan proses kerja dijelaskan secara terbuka dari awal. Anda tidak akan terperangkap dengan terma yang mengelirukan.</p>
+        </div>
+      </article>
+
+      <article class="google-blog-card">
+        <div>
+          <span style="font-size: 1.25rem; font-weight: 700; color: var(--accent-action); display: block; margin-bottom: 12px;">04</span>
+          <h3 class="google-card-title">Dampingan Berkala</h3>
+          <p class="google-card-excerpt">Hubungan kita bukan sekadar transaksi satu kali. Portfolio anda akan disemak secara berkala bagi memastikan ia sentiasa selari apabila fasa kehidupan berubah.</p>
+        </div>
+      </article>
+    </div>
+
   </div>
 </section>
 
 <!-- ========================================== -->
 <!-- 4. STATUS PENDAFTARAN & TAULIAH KAWAL SELIA-->
 <!-- ========================================== -->
-<section class="google-layout-section" style="background-color: var(--bg-track);" aria-labelledby="credentials-heading">
-  <div class="google-center-header" style="max-width: 720px; margin: 0 auto; text-align: left; margin-bottom: 40px;">
-    <p class="google-eyebrow">Pematuhan Undang-Undang</p>
-    <h2 id="credentials-heading" style="font-size: 2rem;">Status Pendaftaran & Tauliah Rasmi</h2>
-  </div>
-
-  <div class="google-flex-grid" style="grid-template-columns: 1fr; max-width: 850px; margin: 0 auto; gap: 20px;">
-    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px;">
-      <p style="margin: 0; line-height: 1.7;">
-        🛡️ <strong>Islamic Financial Adviser Representative (IFAR):</strong> Merupakan pelantikan rasmi di bawah perkhidmatan korporat <strong>Phillip Wealth Planners Sdn Bhd</strong>, dengan skop tugasan yang difokuskan khusus bagi penyelesaian produk Takaful sahaja. Status pelantikan boleh disemak secara sah di <a href="https://www.bnm.gov.my/regulations/fsp-directory/far" target="_blank" rel="noopener noreferrer" style="color: var(--navy); font-weight: 600;">Direktori FAR Bank Negara Malaysia</a>.
-      </p>
-    </article>
+<section class="google-stream-section" aria-labelledby="credentials-heading">
+  <div class="google-stream-container" style="max-width: 850px;">
     
-    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px;">
-      <p style="margin: 0; line-height: 1.7;">
-        💼 <strong>Unit Trust Scheme Consultant:</strong> Berdaftar secara sah dengan Federation of Investment Managers Malaysia (FIMM) di bawah nombor pendaftaran korporat <strong>F01040203</strong>. Pengedaran dana unit trust Islamik diuruskan melalui platform penasihatan <strong>Phillip Mutual Berhad</strong>.
-      </p>
-    </article>
-    
-    <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px;">
-      <p style="margin: 0; line-height: 1.7;">
-        📜 <strong>Associate Shariah Registered Financial Planner:</strong> Memegang status keahlian profesional bersekutu yang diiktiraf oleh <strong>Malaysian Financial Planning Council (MFPC)</strong>.
-      </p>
-    </article>
-  </div>
+    <div class="google-stream-header" style="text-align: center;">
+      <span class="google-stream-eyebrow">Pematuhan Undang-Undang</span>
+      <h2 id="credentials-heading" class="google-stream-title">Status Pendaftaran & Tauliah Rasmi</h2>
+    </div>
 
-  <div style="max-width: 850px; margin: 32px auto 0 auto; font-style: italic; font-size: 0.85rem; color: var(--text-secondary); text-align: center;">
-    <p>Pelaburan dana unit trust melibatkan risiko pasaran. Pelabur dinasihatkan untuk meneliti Prospektus rasmi sebelum mengambil sebarang keputusan pelaburan.</p>
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+      <article class="google-blog-card">
+        <div>
+          <p style="margin: 0; line-height: 1.7; color: var(--text-main);">
+            🛡️ <strong>Islamic Financial Adviser Representative (IFAR):</strong> Merupakan pelantikan rasmi di bawah perkhidmatan korporat <strong>Phillip Wealth Planners Sdn Bhd</strong>, dengan skop tugasan yang difokuskan khusus bagi penyelesaian produk Takaful sahaja. Status pelantikan boleh disemak secara sah di <a href="https://www.bnm.gov.my/regulations/fsp-directory/far" target="_blank" rel="noopener noreferrer" style="color: var(--navy); font-weight: 600; text-decoration: underline;">Direktori FAR Bank Negara Malaysia</a>.
+          </p>
+        </div>
+      </article>
+
+      <article class="google-blog-card">
+        <div>
+          <p style="margin: 0; line-height: 1.7; color: var(--text-main);">
+            💼 <strong>Unit Trust Scheme Consultant:</strong> Berdaftar secara sah dengan Federation of Investment Managers Malaysia (FIMM) di bawah nombor pendaftaran korporat <strong>F01040203</strong>. Pengedaran dana unit trust Islamik diuruskan melalui platform penasihatan <strong>Phillip Mutual Berhad</strong>.
+          </p>
+        </div>
+      </article>
+
+      <article class="google-blog-card">
+        <div>
+          <p style="margin: 0; line-height: 1.7; color: var(--text-main);">
+            📜 <strong>Associate Shariah Registered Financial Planner:</strong> Memegang status keahlian profesional bersekutu yang diiktiraf oleh <strong>Malaysian Financial Planning Council (MFPC)</strong>.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div style="max-width: 850px; margin: 32px auto 0 auto; font-style: italic; font-size: 0.85rem; color: var(--text-secondary); text-align: center;">
+      <p>Pelaburan dana unit trust melibatkan risiko pasaran. Pelabur dinasihatkan untuk meneliti Prospektus rasmi sebelum mengambil sebarang keputusan pelaburan.</p>
+    </div>
+
   </div>
 </section>
 
 <!-- ========================================== -->
 <!-- 5. KAWASAN KHIDMAT                         -->
 <!-- ========================================== -->
-<section class="google-layout-section" aria-labelledby="service-area-heading">
-  <div class="google-center-header" style="max-width: 720px; margin: 0 auto; text-align: left;">
-    <p class="google-eyebrow">Lokasi & Capaian</p>
-    <h2 id="service-area-heading" style="font-size: 2rem; margin-bottom: 24px;">Kawasan Khidmat Konsultasi</h2>
-    <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main); margin-bottom: 32px;">
-      Bagi memastikan anda menerima tumpuan pengiraan yang optimum, semua sesi perbincangan dijalankan secara eksklusif melalui temu janji berjadual.
-    </p>
-  </div>
-
-  <div class="google-flex-grid" style="max-width: 850px; margin: 0 auto; gap: 32px;">
-    <article class="google-minimal-card" style="text-align: center;">
-      <span style="font-size: 2.5rem; display: block; margin-bottom: 12px;" aria-hidden="true">📍</span>
-      <h3>Pertemuan Fizikal</h3>
-      <p>Sesi konsultasi secara bersemuka boleh diatur secara berjadual di sekitar kawasan <strong>Johor (Kota Tinggi, Johor Bahru, dan Kluang)</strong>.</p>
-    </article>
+<section class="google-stream-section" style="background-color: var(--bg-pure);" aria-labelledby="service-area-heading">
+  <div class="google-stream-container" style="max-width: 850px;">
     
-    <article class="google-minimal-card" style="text-align: center;">
-      <span style="font-size: 2.5rem; display: block; margin-bottom: 12px;" aria-hidden="true">💻</span>
-      <h3>Sesi Atas Talian</h3>
-      <p>Bagi profesional di luar kawasan Johor, sesi pemetaan portfolio dijalankan secara digital ke seluruh Malaysia menggunakan <strong>Google Meet atau Zoom</strong>.</p>
-    </article>
+    <div class="google-stream-header" style="text-align: center;">
+      <span class="google-stream-eyebrow">Lokasi & Capaian</span>
+      <h2 id="service-area-heading" class="google-stream-title">Kawasan Khidmat Konsultasi</h2>
+      <p class="google-stream-desc" style="margin: 12px auto 0 auto;">
+        Bagi memastikan anda menerima tumpuan pengiraan yang optimum, semua sesi perbincangan dijalankan secara eksklusif melalui temu janji berjadual.
+      </p>
+    </div>
+
+    <div class="google-stream-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <article class="google-blog-card" style="text-align: center;">
+        <div>
+          <span style="font-size: 2.5rem; display: block; margin-bottom: 12px;" aria-hidden="true">📍</span>
+          <h3 class="google-card-title">Pertemuan Fizikal</h3>
+          <p class="google-card-excerpt" style="-webkit-line-clamp: initial; margin: 0;">Sesi konsultasi secara bersemuka boleh diatur secara berjadual di sekitar kawasan <strong>Johor (Kota Tinggi, Johor Bahru, dan Kluang)</strong>.</p>
+        </div>
+      </article>
+
+      <article class="google-blog-card" style="text-align: center;">
+        <div>
+          <span style="font-size: 2.5rem; display: block; margin-bottom: 12px;" aria-hidden="true">💻</span>
+          <h3 class="google-card-title">Sesi Atas Talian</h3>
+          <p class="google-card-excerpt" style="-webkit-line-clamp: initial; margin: 0;">Bagi profesional di luar kawasan Johor, sesi pemetaan portfolio dijalankan secara digital ke seluruh Malaysia menggunakan <strong>Google Meet atau Zoom</strong>.</p>
+        </div>
+      </article>
+    </div>
+
   </div>
 </section>
 

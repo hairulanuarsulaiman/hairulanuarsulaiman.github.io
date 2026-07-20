@@ -2,39 +2,27 @@
 layout: default
 ---
 
-<article style="background: var(--bg-pure); padding-top: 48px; padding-bottom: 64px;">
-  <!-- Container Lebar Teks Google Standard (680px) -->
-  <div style="max-width: 680px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;">
+<article class="google-article-wrapper">
+  <div class="google-article-container">
     
-    <!-- Kategori Header -->
-    <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 12px;">
-      {{ page.category }}
-    </span>
+    <span class="google-article-category">{{ page.category }}</span>
 
-    <!-- Tajuk Artikel Google Style -->
-    <h1 style="font-size: 2.25rem; font-weight: 700; color: var(--navy); line-height: 1.25; margin: 0 0 24px 0; letter-spacing: -0.02em;">
-      {{ page.title }}
-    </h1>
+    <h1 class="google-article-title">{{ page.title }}</h1>
 
-    <!-- Author Byline (blog.google Signature) -->
-    <div style="display: flex; align-items: center; gap: 16px; padding-bottom: 32px; margin-bottom: 40px; border-bottom: 1px solid var(--border-subtle);">
-      <img src="{{ '/assets/images/profile.jpeg' | relative_url }}" alt="Hairul Anuar Sulaiman" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+    <div class="google-byline-container">
+      <img src="{{ '/assets/images/profile.jpeg' | relative_url }}" alt="Hairul Anuar Sulaiman" class="google-byline-avatar">
       <div>
-        <div style="font-size: 0.95rem; font-weight: 700; color: var(--navy);">Hairul Anuar Sulaiman</div>
-        <div style="font-size: 0.8rem; color: var(--text-secondary);">Associate Shariah Registered Financial Planner • {{ page.date | date: "%d %b %Y" }}</div>
+        <div class="google-byline-author">Hairul Anuar Sulaiman</div>
+        <div class="google-byline-meta">Associate Shariah Registered Financial Planner • {{ page.date | date: "%d %b %Y" }}</div>
       </div>
     </div>
 
-    <!-- Kandungan Teks Markdown -->
-    <div style="font-size: 1.1rem; line-height: 1.85; color: var(--text-main);">
+    <div class="google-article-content">
       {{ content }}
     </div>
 
   </div>
 </article>
 
-<!-- Stream Artikel Berkaitan Gaya blog.google -->
 {% include related-articles.html %}
-
-<!-- Global CTA -->
 {% include cta-section.html %}

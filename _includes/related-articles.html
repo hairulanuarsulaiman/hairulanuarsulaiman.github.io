@@ -1,42 +1,63 @@
-<!-- Related Articles — Inside Article Stream (With Side Padding for Mobile/iPad) -->
+<!-- ========================================== -->
+<!-- PANDUAN ARTIKEL PILIHAN (DINAMIK)          -->
+<!-- ========================================== -->
 {% assign current_category = page.category %}
 {% assign related_posts = "" | split: "" %}
 
 {% for post in site.posts %}
-  {% if post.category == current_category and post.url != page.url %}
-    {% assign related_posts = related_posts | push: post %}
+  {% if post.url != page.url %}
+    {% if post.category == current_category %}
+      {% assign related_posts = related_posts | push: post %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 
-{% if related_posts.size > 0 %}
+<!-- Jika tiada artikel dalam kategori sama, ambil artikel terkini -->
+{% if related_posts.size == 0 %}
+  {% for post in site.posts %}
+    {% if post.url != page.url %}
+      {% assign related_posts = related_posts | push: post %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
 {% assign sorted_related = related_posts | sort: 'date' | reverse %}
 
-<!-- Tambah padding-left: 20px & padding-right: 20px untuk jarak tepi skrin -->
-<div style="margin-top: 56px; margin-bottom: 64px; padding: 40px 20px 32px 20px; border-top: 1px solid var(--border-subtle); box-sizing: border-box;">
-  <div style="margin-bottom: 24px;">
-    <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; margin-bottom: 4px;">Hub Pengetahuan</span>
-    <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--navy); margin: 0 0 6px 0; letter-spacing: -0.02em;">Bacaan Lanjut</h3>
-    <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
-      Artikel pilihan untuk membantu anda memahami pengurusan risiko dan perancangan kewangan dengan lebih mendalam.
+<section class="google-layout-section" style="background-color: var(--bg-track); padding-top: 64px; padding-bottom: 64px;" aria-labelledby="articles-heading">
+  <div class="google-center-header" style="padding-left: 20px; padding-right: 20px;">
+    <p class="google-eyebrow">Pilihan Bacaan</p>
+    <h2 id="articles-heading" style="color: var(--navy); font-weight: 700; letter-spacing: -0.02em;">Mulakan Dengan Artikel Pilihan</h2>
+    <p class="google-related-intro" style="margin-top: 12px; text-align: center; max-width: 760px; margin-left: auto; margin-right: auto; color: var(--text-secondary);">
+      Sebahagian besar keputusan kewangan yang matang bermula dengan pembacaan asas yang betul. Terokai intipati kertas panduan ringkas ini:
     </p>
   </div>
   
-  <!-- Grid Khas Padat untuk Lebar Teks 680px (2 Lajur Maksimum) -->
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+  <div class="google-flex-grid" style="max-width: 1080px; margin: 32px auto 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; padding-left: 20px; padding-right: 20px; box-sizing: border-box;">
     {% assign counter = 0 %}
     {% for post in sorted_related %}
-      {% if counter < 2 %} <!-- Had 2 kad sahaja -->
-        <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 24px; border-left: 3px solid var(--navy); box-sizing: border-box; display: flex; flex-direction: column; height: 100%;">
-          <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%; flex-grow: 1;">
-            <span style="font-size: 0.75rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; display: block; margin-bottom: 8px;">{{ post.category }}</span>
-            <h4 style="font-size: 1.1rem; font-weight: 700; line-height: 1.4; color: var(--navy); margin: 0 0 8px 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; letter-spacing: -0.01em;">{{ post.title }}</h4>
-            <p style="font-size: 0.85rem; color: var(--text-main); line-height: 1.5; margin: 0 0 16px 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; flex-grow: 1;">{{ post.description | truncate: 90 }}</p>
-            <span style="font-size: 0.85rem; font-weight: 600; color: var(--navy); margin-top: auto; display: inline-block;">Baca Artikel →</span>
+      {% if counter < 3 %}
+        <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px; display: flex; flex-direction: column; height: 100%; border-left: 4px solid var(--navy); box-sizing: border-box;">
+          <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; display: inline-block;">
+            {{ post.category | default: "Kewangan" }}
+          </span>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--navy); margin: 0 0 12px 0; line-height: 1.4;">
+            {{ post.title }}
+          </h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-main); flex-grow: 1; margin: 0 0 24px 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+            {{ post.description }}
+          </p>
+          <a href="{{ post.url | relative_url }}" class="google-related-action-text" style="text-decoration: none; font-weight: 600; color: var(--navy); margin-top: auto; display: inline-block;">
+            Baca Artikel →
           </a>
         </article>
         {% assign counter = counter | plus: 1 %}
       {% endif %}
     {% endfor %}
   </div>
-</div>
-{% endif %}
+  
+  <div style="text-align: center; margin-top: 48px;">
+    <a href="{{ '/artikel/' | relative_url }}" class="google-btn-hero-secondary" style="display: inline-block; padding: 12px 24px; border-radius: 24px; border: 1px solid var(--navy); color: var(--navy); text-decoration: none; font-weight: 600;">
+      Lihat Semua Artikel →
+    </a>
+  </div>
+</section>

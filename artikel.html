@@ -11,7 +11,7 @@ description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berk
   "@type": "Blog",
   "name": "Artikel Kewangan Halal – Hairul Anuar Sulaiman",
   "description": "Pendidikan kewangan Islam percuma untuk individu dan keluarga di Malaysia yang mahu membina asas kewangan dan pelaburan halal.",
-  "url": "https://hairulanuarsulaiman.github.io/artikel/",
+  "url": "{{ site.url }}{{ page.url }}",
   "author": {
     "@type": "Person",
     "name": "Hairul Anuar Bin Sulaiman",
@@ -23,13 +23,13 @@ description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berk
 <!-- ========================================== -->
 <!-- 1. HEADER HAB ILMU                         -->
 <!-- ========================================== -->
-<section class="google-layout-section" style="padding-bottom: 40px;">
-  <div class="google-center-header" style="max-width: 720px; margin: 0 auto;">
-    <p class="google-eyebrow">Hub Pengetahuan</p>
-    <h1 id="articles-heading" style="font-size: clamp(2.25rem, 5vw, 3.25rem); color: var(--navy); font-weight: 800; letter-spacing: -0.03em; margin: 0 0 16px 0;">
+<section class="google-stream-section" style="padding-bottom: 32px;">
+  <div class="google-stream-container" style="max-width: 760px; text-align: center;">
+    <span class="google-stream-eyebrow">Hub Pengetahuan</span>
+    <h1 class="google-stream-title" style="font-size: 2.25rem;">
       Artikel Kewangan Halal
     </h1>
-    <p class="google-related-intro" style="text-align: center;">
+    <p class="google-stream-desc" style="margin: 12px auto 0 auto;">
       Keputusan kewangan yang bijak bermula dengan kefahaman yang betul. Terokai panduan ringkas berkaitan perlindungan Takaful, pelaburan Unit Trust patuh Syariah, dan perancangan persaraan untuk membantu anda membuat pilihan dengan lebih yakin.
     </p>
   </div>
@@ -38,46 +38,47 @@ description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berk
 <!-- ========================================== -->
 <!-- 2. GRID SENARAI ARTIKEL (LOOPING DINAMIK)  -->
 <!-- ========================================== -->
-<section class="google-layout-section" style="background-color: var(--bg-track); padding-top: 64px; padding-bottom: 64px;">
-  
-  <!-- Penukaran gaya inline grid bagi memastikan tiada pertindihan baris -->
-  <div class="google-flex-grid" style="max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+<section class="google-stream-section" style="background-color: var(--bg-pure);">
+  <div class="google-stream-container">
+    
+    <div class="google-stream-grid">
+      {% for post in site.posts %}
+        <article class="google-blog-card">
+          <a href="{{ post.url | relative_url }}" class="google-card-link">
+            <div>
+              <!-- Tag Kategori Google Style -->
+              <span class="google-card-category">
+                {{ post.category | default: "Kewangan" }}
+              </span>
+              
+              <!-- Tajuk Artikel -->
+              <h2 class="google-card-title" style="font-size: 1.2rem;">
+                {{ post.title }}
+              </h2>
+              
+              <!-- Deskripsi Ringkas -->
+              <p class="google-card-excerpt">
+                {{ post.description | default: post.excerpt | strip_html | truncate: 120 }}
+              </p>
+            </div>
+            
+            <!-- Butang Pautan -->
+            <div class="google-card-action">
+              <span>Baca Artikel</span>
+              <span style="margin-left: 6px; font-size: 1.1rem;">→</span>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
 
-    {% for post in site.posts %}
-      <article class="google-minimal-card" style="background-color: var(--bg-pure); padding: 32px; display: flex; flex-direction: column; height: 100%; box-sizing: border-box;">
-        <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%; flex-grow: 1;">
-          
-          <!-- Tag Kategori Gaya Google -->
-          <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; display: inline-block;">
-            {{ post.category }}
-          </span>
-          
-          <!-- Tajuk Artikel (Maksima 2 baris untuk kekemasan) -->
-          <h3 style="font-size: 1.25rem; font-weight: 700; line-height: 1.4; color: var(--navy); margin: 0 0 12px 0; letter-spacing: -0.02em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-            {{ post.title }}
-          </h3>
-          
-          <!-- Deskripsi Ringkas -->
-          <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.6; margin: 0 0 24px 0; flex-grow: 1;">
-            {{ post.description | truncate: 120 }}
-          </p>
-          
-          <!-- Butang Tindakan Kaki Kad -->
-          <span class="google-related-action-text" style="font-size: 0.9rem; font-weight: 600; color: var(--navy); margin-top: auto; display: inline-block; transition: var(--transition-smooth);">
-            Baca Artikel →
-          </span>
-          
-        </a>
-      </article>
-    {% endfor %}
+    <!-- Footer Halaman Peringatan -->
+    <div style="max-width: 720px; margin: 48px auto 0 auto; text-align: center;">
+      <p style="color: var(--text-secondary); font-style: italic; font-size: 0.9rem; margin: 0;">
+        Lebih banyak artikel akan datang. Penulisan baharu dikemas kini secara berkala.
+      </p>
+    </div>
 
-  </div>
-
-  <!-- Footer Halaman Peringatan -->
-  <div style="max-width: 720px; margin: 48px auto 0 auto; text-align: center;">
-    <p style="color: var(--text-secondary); font-style: italic; font-size: 0.9rem;">
-      Lebih banyak artikel akan datang. Penulisan baharu dikemas kini secara berkala.
-    </p>
   </div>
 </section>
 

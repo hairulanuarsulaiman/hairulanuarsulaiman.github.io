@@ -1,4 +1,4 @@
-<!-- Related Articles — Inside Article Stream (Max 680px Alignment) -->
+<!-- Related Articles — Inside Article Stream (Max 680px Alignment with Bottom Spacing) -->
 {% assign current_category = page.category %}
 {% assign related_posts = "" | split: "" %}
 
@@ -11,7 +11,8 @@
 {% if related_posts.size > 0 %}
 {% assign sorted_related = related_posts | sort: 'date' | reverse %}
 
-<div style="margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border-subtle); box-sizing: border-box;">
+<!-- Penambahan margin-bottom dan padding-bottom untuk memberi ruang bernafas sebelum seksyen CTA -->
+<div style="margin-top: 56px; margin-bottom: 64px; padding-top: 40px; padding-bottom: 32px; border-top: 1px solid var(--border-subtle); box-sizing: border-box;">
   <div style="margin-bottom: 24px;">
     <span style="font-size: 0.8rem; font-weight: 600; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; margin-bottom: 4px;">Hub Pengetahuan</span>
     <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--navy); margin: 0 0 6px 0; letter-spacing: -0.02em;">Bacaan Lanjut</h3>

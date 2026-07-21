@@ -1,15 +1,31 @@
-<aside class="google-author-box" aria-label="Maklumat Penulis">
-  <div class="google-author-avatar-container">
-    <img src="/assets/images/hairul-anuar.jpeg" alt="Hairul Anuar Bin Sulaiman" class="google-author-img" loading="lazy">
+<div class="google-blog-card" style="margin-top: 48px; padding: 28px; background-color: var(--bg-track);">
+  <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+    
+    <!-- Gambar Profil -->
+    <img 
+      src="{{ '/assets/images/profile.jpeg' | relative_url }}" 
+      alt="Hairul Anuar Bin Sulaiman" 
+      style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid #ffffff;"
+    >
+    
+    <!-- Info Penulis -->
+    <div style="flex: 1; min-width: 240px;">
+      <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-action); text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 4px;">
+        Ditulis Oleh
+      </span>
+      <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--navy); margin: 0 0 4px 0;">
+        Hairul Anuar Bin Sulaiman
+      </h4>
+      <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0 0 8px 0; font-weight: 500;">
+        Associate Shariah Registered Financial Planner • IFAR • Unit Trust Consultant
+      </p>
+      <p style="font-size: 0.9rem; color: var(--text-main); line-height: 1.5; margin: 0 0 12px 0;">
+        Membantu individu dan keluarga Muslim membuat keputusan kewangan yang lebih yakin berlandaskan prinsip Syariah.
+      </p>
+      <a href="{{ '/tentang/' | relative_url }}" style="font-size: 0.85rem; font-weight: 600; color: var(--navy); text-decoration: underline;">
+        Kenali Penulis Lebih Lanjut →
+      </a>
+    </div>
+
   </div>
-  <div class="google-author-details">
-    <h3 class="google-author-name">Ditulis oleh Hairul Anuar Bin Sulaiman</h3>
-    <p class="google-author-bio">
-      <strong>Islamic Financial Adviser Representative (IFAR)</strong> dan <strong>Unit Trust Scheme Consultant</strong>.
-    </p>
-    <p class="google-author-desc">
-      Membantu profesional dan keluarga di Malaysia membina dana persaraan yang mampan, bebas riba, dan dilindungi sepenuhnya melalui penyelesaian kewangan patuh Syariah.
-    </p>
-    <a href="/tentang.html" class="google-author-link">Ketahui lebih lanjut tentang misi saya →</a>
-  </div>
-</aside>
+</div>

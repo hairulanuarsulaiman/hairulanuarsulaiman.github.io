@@ -9,7 +9,7 @@ category: Perlindungan
 <!-- 1. HERO SECTION                            -->
 <!-- ========================================== -->
 <section class="google-hero" aria-labelledby="takaful-hero-heading">
-  <div class="google-hero-container">
+  <div class="google-hero-container" style="align-items: center;">
     
     <!-- Lajur Teks -->
     <div class="google-hero-content">
@@ -30,16 +30,17 @@ category: Perlindungan
       </div>
     </div>
 
-    <!-- Lajur Visual Hero -->
-    <div class="google-hero-visual">
-      <div class="google-blog-card" style="padding: 0; overflow: hidden;">
+    <!-- Lajur Visual Hero — Hero Banner Standalone (Gaya blog.google) -->
+    <div class="google-hero-visual" style="width: 100%;">
+      <div style="width: 100%; border-radius: 20px; overflow: hidden; border: 1px solid #dadce0; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);">
         <img 
           src="{{ '/assets/images/perlindungan-takaful-pendapatan-sedia-hadapi-risiko.webp' | relative_url }}" 
           alt="Seorang lelaki berdiri menghadap awan ribut gelap di laluan terbuka sambil memegang payung biru sebagai simbol perlindungan Takaful penggantian pendapatan keluarga" 
-          style="width: 100%; height: auto; display: block; border-radius: 16px;"
+          style="width: 100%; height: 100%; max-height: 480px; object-fit: cover; display: block;"
           width="1600"
           height="900"
           loading="eager"
+          fetchpriority="high"
         >
       </div>
     </div>

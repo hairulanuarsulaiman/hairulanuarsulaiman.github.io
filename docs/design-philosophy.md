@@ -314,3 +314,14 @@ Timelessness is the goal.
 # Show ideas, not people.
 
 Whenever possible, use landscapes, architecture, nature, light, texture, and meaningful objects to communicate financial concepts. Let visitors imagine themselves in the story rather than showing them someone else’s story.
+
+
+### Image Accessibility
+
+All images should include meaningful alt text written in Bahasa Melayu (Malaysia), consistent with the primary language of the website.
+
+Alt text should describe the visible scene naturally and objectively, rather than the purpose of the image or the topic of the page.
+
+Example:
+
+"Laluan yang tenang di hutan hujan Malaysia pada awal pagi, dengan kabus nipis dan cahaya matahari yang menembusi celah pepohon."

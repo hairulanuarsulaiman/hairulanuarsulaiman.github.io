@@ -8,7 +8,7 @@ description: Membantu individu dan keluarga di Malaysia membuat keputusan kewang
 <!-- 1. HERO SECTION                            -->
 <!-- ========================================== -->
 <section class="google-hero" aria-labelledby="hero-heading">
-  <div class="google-hero-container" style="display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 40px; align-items: start;">
+  <div class="google-hero-container">
     
     <!-- Lajur Kiri: Teks Penceritaan Utama -->
     <div class="google-hero-content">
@@ -20,10 +20,10 @@ description: Membantu individu dan keluarga di Malaysia membuat keputusan kewang
         Keputusan kewangan yang baik bermula dengan kefahaman, bukan desakan tekanan. Saya membantu anda meneliti pilihan portfolio yang ada. Sama ada untuk perlindungan, pelaburan, atau persaraan—setiap langkah dirancang agar jelas, praktikal, dan selaras dengan prinsip Syariah.
       </p>
       
-      <ul style="list-style: none; padding: 0; margin: 0 0 32px 0; color: var(--text-main); font-weight: 600; line-height: 1.8;">
-        <li style="margin-bottom: 8px;"><span style="color: var(--accent-action); margin-right: 8px;" aria-hidden="true">✔</span> Lindungi perkara yang paling penting</li>
-        <li style="margin-bottom: 8px;"><span style="color: var(--accent-action); margin-right: 8px;" aria-hidden="true">✔</span> Kembangkan simpanan secara berdisiplin</li>
-        <li style="margin-bottom: 0;"><span style="color: var(--accent-action); margin-right: 8px;" aria-hidden="true">✔</span> Bina masa depan yang lebih teratur</li>
+      <ul class="google-hero-list">
+        <li><span class="check-icon" aria-hidden="true">✔</span> Lindungi perkara yang paling penting</li>
+        <li><span class="check-icon" aria-hidden="true">✔</span> Kembangkan simpanan secara berdisiplin</li>
+        <li><span class="check-icon" aria-hidden="true">✔</span> Bina masa depan yang lebih teratur</li>
       </ul>
       
       <div class="google-hero-actions">
@@ -33,12 +33,11 @@ description: Membantu individu dan keluarga di Malaysia membuat keputusan kewang
     </div>
 
     <!-- Lajur Kanan: Gambar Hero (Gaya blog.google 4:3 Aspect Ratio) -->
-    <div class="google-hero-visual" style="width: 100%; align-self: start;">
-      <div style="width: 100%; aspect-ratio: 4 / 3; border-radius: 20px; overflow: hidden; border: 1px solid #dadce0; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);">
+    <div class="google-hero-visual">
+      <div class="google-hero-frame">
         <img 
           src="{{ '/assets/images/homepage/malaysia-rainforest-path-morning-mist.webp' | relative_url }}" 
           alt="Laluan yang tenang di hutan hujan Malaysia pada awal pagi, dengan kabus nipis dan cahaya matahari yang menembusi celah pepohon." 
-          style="width: 100%; height: 100%; object-fit: cover; display: block;"
           width="1200"
           height="900"
           loading="eager"
@@ -49,6 +48,7 @@ description: Membantu individu dan keluarga di Malaysia membuat keputusan kewang
 
   </div>
 </section>
+
 
 
 <!-- ========================================== -->

@@ -1,144 +1,106 @@
 /* ==========================================================================
-   THE "ABOUT.GOOGLE" MINIMALIST MASTER DESIGN SYSTEM
+   BLOG.GOOGLE (THE KEYWORD) MASTER DESIGN SYSTEM
+   Brand: Hairulanuar Financial / HAS Wealth Advisory
    ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   1. DESIGN TOKENS & SYSTEM FOUNDATIONS
+   -------------------------------------------------------------------------- */
 :root {
   /* Google Inspired Minimalist Palette */
   --bg-pure: #ffffff;            /* Base canvas */
-  --bg-track: #f8fafc;           /* Ultra-soft background track (slate-50) */
-  --navy: #0f172a;               /* Deep corporate gray-navy for high authority */
-  --text-main: #334155;          /* Softer text for extreme legibility (slate-700) */
-  --accent-action: #047857;      /* Clean compliant Sage Green for actions */
-  --border-subtle: #f1f5f9;      /* Hardly visible dividing lines (slate-100) */
+  --bg-track: #f8fafc;           /* Soft surface background (slate-50) */
+  --navy: #0f172a;               /* Deep slate-navy for primary headings & authority */
+  --text-main: #334155;          /* Highly legible body text (slate-700) */
+  --text-secondary: #64748b;     /* Muted metadata & subheadings (slate-500) */
+  --accent-action: #047857;      /* Clean Syariah-compliant Sage Green */
+  --border-subtle: #dadce0;      /* Standard Google card & divider border */
+  --border-light: #f1f5f9;       /* Soft inner dividers */
 
   /* Typography Structure */
   --font-global: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  
-  /* About.Google signature spacing & curves */
-  --radius-card: 24px;           /* Large, soft rounded corners */
-  --radius-btn: 100px;           /* Pill-shaped buttons */
-  --transition-smooth: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Geometry & Curves */
+  --radius-card: 20px;           /* Standard blog.google rounded card corners */
+  --radius-btn: 100px;           /* Signature Google pill buttons */
+  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Global Foundations */
+/* Base Reset & Foundations */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: var(--font-global);
   background-color: var(--bg-pure);
   color: var(--text-main);
-  line-height: 1.625;
+  line-height: 1.65;
   letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Crisp, clean Google-style bold typography */
-h1, h2, h3, h4 {
+/* Crisp Google-style typography */
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-global);
   color: var(--navy);
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
+  margin-top: 0;
 }
 
-/* ==========================================================================
-   LAYOUT LAYERS & COMPONENTS (Google-Affiliated Style)
-   ========================================================================== */
+p {
+  margin-top: 0;
+}
+
+/* Main Container Layout */
+.google-main-content {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .google-layout-section {
-  max-width: 1100px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 100px 24px; /* Generous breathing room */
+  padding: 80px 24px;
 }
 
-.google-center-header {
-  text-align: center;
-  margin-bottom: 64px;
-}
-
-.google-eyebrow {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 12px;
-}
-
-.google-center-header h2 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-.google-flex-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-}
-
-/* The Subtle Borderless Card System */
-.google-minimal-card {
-  background-color: var(--bg-track);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-card);
-  padding: 40px;
-  transition: var(--transition-smooth);
-}
-
-/* Subtle, high-end hover that shifts background slightly instead of dramatic floating */
-.google-minimal-card:hover {
-  background-color: var(--bg-pure);
-  border-color: var(--navy);
-  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.04);
-}
-
-.google-card-emoji {
-  font-size: 2rem;
-  display: inline-block;
-  margin-bottom: 18px;
-}
-
-.google-minimal-card h3 {
-  font-size: 1.35rem;
-  margin: 0 0 12px 0;
-}
-
-.google-minimal-card p {
-  font-size: 1rem;
-  margin: 0;
-  color: var(--text-main);
-  line-height: 1.7;
-}
-
-/* ==========================================================================
-   GOOGLE-INSPIRED NAVIGATION HEADER SYSTEM
-   ========================================================================== */
+/* --------------------------------------------------------------------------
+   2. HEADER & NAVIGATION SYSTEM
+   -------------------------------------------------------------------------- */
 .google-site-header {
-  background-color: var(--bg-pure);
-  border-bottom: 1px solid var(--border-subtle);
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 16px 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: var(--transition-smooth);
 }
 
 .google-nav-container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 16px 24px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  justify-content: space-between;
 }
 
-/* Typography Identity - Clean, sans-serif, bold, tight tracking */
 .google-nav-logo {
-  font-family: var(--font-global);
+  font-size: 1.15rem;
   font-weight: 700;
-  font-size: 1.25rem;
   color: var(--navy);
   text-decoration: none;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   transition: var(--transition-smooth);
 }
 
 .google-nav-logo:hover {
-  opacity: 0.8;
+  color: var(--accent-action);
 }
 
 .google-nav-list {
@@ -152,3109 +114,10 @@ h1, h2, h3, h4 {
 
 .google-nav-list a {
   text-decoration: none;
-  color: var(--text-main);
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: var(--transition-smooth);
-  padding: 6px 0;
-}
-
-/* Subtle typography shift on hover instead of line styling decoration */
-.google-nav-list a:hover,
-.google-nav-list a.active {
-  color: var(--navy);
-}
-
-/* The iconic google pill button style */
-.google-btn-nav {
-  background-color: var(--navy) !important;
-  color: var(--bg-pure) !important;
-  padding: 10px 24px !important;
-  border-radius: var(--radius-btn);
-  font-weight: 600 !important;
-  font-size: 0.9rem !important;
-}
-
-.google-btn-nav:hover {
-  background-color: var(--accent-action) !important; /* Elegant color transition to Sage Green */
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
-}
-
-/* Mobile Hiding Core Setup */
-.google-menu-checkbox { display: none; }
-
-/* ==========================================================================
-   MOBILE INTERFACE BREAKPOINT
-   ========================================================================== */
-@media (max-width: 768px) {
-  .google-menu-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 16px;
-    cursor: pointer;
-    z-index: 1100;
-  }
-
-  .google-menu-icon span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: var(--navy);
-    border-radius: 2px;
-    transition: var(--transition-smooth);
-  }
-
-  .google-nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: var(--bg-pure);
-    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
-    border-top: 1px solid var(--border-subtle);
-    padding: 24px;
-    transform: translateY(-120%);
-    opacity: 0;
-    transition: var(--transition-smooth);
-    z-index: 999;
-  }
-
-  /* Reveal drawer mechanism */
-  .google-menu-checkbox:checked ~ .google-nav-links {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  .google-nav-list {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 16px;
-  }
-
-  .google-nav-list a {
-    display: block;
-    font-size: 1.05rem;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--border-subtle);
-  }
-
-  .google-btn-nav {
-    text-align: center;
-    margin-top: 8px;
-    border-bottom: none !important;
-  }
-  
-  /* Hamburger Transformations */
-  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(2) {
-    opacity: 0;
-  }
-  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
-}
-
-/* 4. HAMBURGER TRANSFORMATIONS (MOBILE) */
-@media (max-width: 768px) {
-  .menu-icon { display: flex; }
-
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: white;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 20px 30px;
-    gap: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-bottom: 2px solid var(--navy);
-    transform: translateY(-120%);
-    opacity: 0;
-    transition: transform 0.4s ease, opacity 0.3s ease;
-    z-index: 999;
-  }
-
-  #menu-toggle:checked ~ .nav-links {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  #menu-toggle:checked ~ .menu-icon span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  #menu-toggle:checked ~ .menu-icon span:nth-child(2) { opacity: 0; }
-
-  #menu-toggle:checked ~ .menu-icon span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-  }
-
-  .nav-links a {
-    font-size: 1.1rem;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--slate-100);
-    width: 100%;
-  }
-}
-
-/* ==========================================================================
-   GOOGLE-INSPIRED MINIMALIST HERO SYSTEM
-   ========================================================================== */
-.google-hero {
-  background-color: var(--bg-pure);
-  padding: 120px 24px 80px 24px; /* Massive whitespace padding */
-  overflow: hidden;
-}
-
-.google-hero-container {
-  max-width: 1140px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr; /* Dynamic asymmetric layout */
-  align-items: center;
-  gap: 64px;
-}
-
-/* Typography Scale */
-.google-hero-eyebrow {
-  display: inline-block;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 16px;
-}
-
-.google-hero-title {
-  font-size: clamp(2.5rem, 5vw, 3.75rem); /* Responsive fluid typography */
-  line-height: 1.15;
-  font-weight: 800;
-  color: var(--navy);
-  margin: 0 0 24px 0;
-  letter-spacing: -0.03em;
-}
-
-.google-hero-lead {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  color: var(--text-main);
-  margin: 0 0 40px 0;
-  max-width: 600px;
-}
-
-/* Action Rows */
-.google-hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-/* Pill Buttons */
-.google-btn-hero-primary {
-  display: inline-block;
-  background-color: var(--navy);
-  color: var(--bg-pure);
-  padding: 16px 32px;
-  border-radius: var(--radius-btn);
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: var(--transition-smooth);
-}
-
-.google-btn-hero-primary:hover {
-  background-color: var(--accent-action);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-  transform: translateY(-1px);
-}
-
-.google-btn-hero-secondary {
-  display: inline-block;
-  color: var(--navy);
-  padding: 16px 24px;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: var(--transition-smooth);
-}
-
-.google-btn-hero-secondary:hover {
-  color: var(--accent-action);
-}
-
-/* Avatar Frame Architecture */
-.google-hero-visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.google-hero-avatar-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 340px;
-  aspect-ratio: 1 / 1;
-}
-
-.google-hero-avatar {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: var(--radius-card); /* Using signature large rounded corners */
-  border: 1px solid var(--border-subtle);
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04);
-}
-
-/* ==========================================================================
-   RESPONSIVE LAYOUT OVERRIDES
-   ========================================================================== */
-@media (max-width: 968px) {
-  .google-hero {
-    padding: 80px 24px 60px 24px;
-  }
-
-  .google-hero-container {
-    grid-template-columns: 1fr; /* Switch to single stack */
-    text-align: center;
-    gap: 48px;
-  }
-
-  .google-hero-lead {
-    margin: 0 auto 32px auto;
-  }
-
-  .google-hero-actions {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .google-hero-title {
-    font-size: 2.25rem;
-  }
-
-  .google-hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .google-btn-hero-primary,
-  .google-btn-hero-secondary {
-    text-align: center;
-    width: 100%;
-  }
-}
-
-/* ==========================================================================
-   GOOGLE-INSPIRED HERO FLAGSHIP IMAGE SYSTEM
-   ========================================================================== */
-.google-hero-image-container {
-  margin: 0;
-  width: 100%;
-  border-radius: var(--radius-card); /* Mengekalkan kelengkungan 24px */
-  overflow: hidden;
-  border: 1px solid var(--border-subtle);
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04);
-  background-color: var(--bg-track); /* Papar warna lembut sementara imej dimuat turun */
-}
-
-.google-hero-flagship-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9; /* Mengunci nisbah imej 1600x900px anda */
-  object-fit: cover;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Kesan zum mikro yang sangat halus apabila pengguna melintasi imej */
-.google-hero-image-container:hover .google-hero-flagship-img {
-  transform: scale(1.02);
-}
-
-/* Pengoptimuman Responsif untuk Skrin Tablet/Telefon */
-@media (max-width: 968px) {
-  .google-hero-image-container {
-    max-width: 540px; /* Menghalang imej menjadi terlalu besar pada mod satu lajur */
-    margin: 0 auto;
-  }
-}
-
-.google-main-content {
-  min-height: 70vh; /* Memastikan pengaki tidak melompat ke atas jika kandungan halaman pendek */
-  display: block;
-}
-
-/* 6. BUTTONS — solid, Zurich-style */
-.btn-primary {
-  background: var(--navy);
-  color: white;
-  padding: 16px 36px;
-  border-radius: 6px;                 /* slightly softer */
-  font-weight: 700;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid var(--navy);
-  transition: var(--transition);
-  cursor:pointer;
-}
-
-.btn-primary:hover {
-  background: var(--navy-light);
-  border-color: var(--navy-light);
-  transform: translateY(-1px);
-}
-
-.btn-secondary {
-   background: transparent;
-   color: var(--navy);
-   padding: 14px 34px;
-   border-radius: 6px;
-   font-weight: 700;
-   font-size: 1rem;
-   text-decoration: none;
-   display: inline-block;
-   border: 2px solid var(--navy);
-   transition: var(--transition);
-   cursor:pointer;
-
-}
-
-.btn-secondary:hover {
-   background: var(--navy);
-   color: #fff;
-   transform: translateY(-1px);
-
-}
-
-.hero-btns{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:18px;
-
-    flex-wrap:wrap;
-
-    margin-top:40px;
-
-}
-
-.hero-btns .btn-secondary{
-
-    color:#fff;
-
-    border-color:#fff;
-
-}
-
-.hero-btns .btn-secondary:hover{
-
-    background:rgba(255,255,255,.10);
-
-    color:#fff;
-
-}
-
-/* PROFESSIONAL CREDENTIALS */
-
-.credentials-section {
-    padding: 80px 20px;
-    background: var(--slate-50);
-}
-
-.credentials-heading {
-    max-width: 720px;
-    margin: 0 auto 60px;
-    text-align: center;
-}
-
-.credentials-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-    margin-top:50px;
-}
-
-.credentials-card {
-    background:white;
-    border:1px solid var(--slate-200);
-    border-radius:12px;
-    padding:30px;
-}
-
-/* 8. ALTERNATING SECTION BACKGROUNDS — Zurich rhythm */
-.container {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 100px 20px;
-}
-
-/* Full-width grey stripe for sections with the class .section-grey */
-.section-grey {
-  background-color: var(--grey-bg);
-  padding: 100px 0;
-}
-
-.section-grey .container {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-/* 9. CARDS — structured, soft shadow on hover, Zurich feel */
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.card {
-  background: var(--white);
-  border: 1px solid var(--border-color);
-  padding: 40px 35px;
-  border-radius: 6px;
-  transition: var(--transition);
-  display: flex;
-  flex-direction: column;
-  box-shadow: var(--shadow-card);
-}
-
-.card:hover {
-  box-shadow: var(--shadow-card-hover);
-  transform: translateY(-4px);
-  border-color: var(--navy);
-}
-
-.card-step {
-  color: var(--navy);
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  display: block;
-}
-
-.card h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.icon-box { font-size: 3rem; margin-bottom: 20px; }
-
-.card p { color: var(--slate-600); flex-grow: 1; margin-bottom: 30px; }
-
-.text-link {
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--navy);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: var(--transition);
-}
-
-.text-link:hover { color: var(--navy-light); }
-
-/* 10. TESTIMONIALS — Zurich-style simple quotes */
-.testimonial-grid blockquote {
-  background: var(--white);
-  padding: 20px;
-  border-left: 4px solid var(--navy);
-  font-style: italic;
-  font-size: 1.1rem;
-  border-radius: 6px;
-  box-shadow: var(--shadow-card);
-}
-.testimonial-grid footer {
-  margin-top: 10px;
-  font-weight: bold;
-  font-style: normal;
-  color: var(--navy);
-}
-
-/* 11. LEAD MAGNET — prominent navy card */
-.lead-magnet-container { padding: 0 20px; margin-bottom: 100px; }
-
-.lead-magnet {
-  background: var(--navy);
-  color: white;
-  padding: clamp(40px, 8vw, 80px) 40px;
-  border-radius: 8px;                 /* slightly softer, still structured */
-  text-align: center;
-  max-width: 950px;
-  margin: 0 auto;
-}
-
-.lead-magnet h2 {
-  color: white;
-  font-size: clamp(1.6rem, 4vw, 2.2rem);
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.lead-magnet .btn-primary {
-  background: white;
-  color: var(--navy);
-  border: 1px solid white;
-  font-weight: 700;
-  padding: 16px 36px;
-  border-radius: 6px;
-}
-
-.lead-magnet .btn-primary:hover {
-  background: var(--slate-100);
-  border-color: var(--slate-100);
-}
-
-/* ==========================================================================
-   GOOGLE-INSPIRED MINIMALIST FOOTER SYSTEM
-   ========================================================================== */
-.google-site-footer {
-  background-color: var(--bg-track);
-  border-top: 1px solid var(--border-subtle);
-  padding: 80px 24px 48px 24px;
-  color: var(--text-main);
-  font-size: 0.95rem;
-}
-
-.google-footer-container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-/* Upper Grid Architecture */
-.google-footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 64px;
-  padding-bottom: 48px;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.google-footer-name {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 8px;
-  letter-spacing: -0.02em;
-}
-
-.google-footer-role {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--accent-action);
-  line-height: 1.5;
-  margin: 0 0 16px 0;
-}
-
-.google-footer-bio {
-  max-width: 480px;
-  color: var(--text-main);
-  line-height: 1.65;
-  margin: 0;
-}
-
-.google-footer-column h4 {
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--navy);
-  margin: 0 0 20px 0;
-}
-
-.google-footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.google-footer-links li {
-  margin-bottom: 12px;
-}
-
-.google-footer-links a {
-  text-decoration: none;
-  color: var(--text-main);
-  transition: var(--transition-smooth);
-}
-
-.google-footer-links a:hover {
-  color: var(--navy);
-}
-
-/* ==========================================================================
-   LOWER LAYER & REGULATORY ALIGNMENT
-   ========================================================================== */
-.google-footer-bottom {
-  padding-top: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.google-footer-legal-group {
-  max-width: 600px;
-}
-
-.google-footer-disclaimer {
-  font-size: 0.85rem;
-  color: var(--text-main);
-  line-height: 1.6;
-  margin: 0 0 8px 0;
-}
-
-.google-footer-copyright {
-  font-size: 0.85rem;
-  color: var(--text-main);
-  opacity: 0.7;
-  margin: 0;
-}
-
-.google-footer-utility-links {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.google-footer-utility-links a {
-  text-decoration: none;
-  font-size: 0.875rem;
-  color: var(--text-main);
-  font-weight: 500;
-  transition: var(--transition-smooth);
-  white-space: nowrap;
-}
-
-.google-footer-utility-links a:hover {
-  color: var(--navy);
-}
-
-/* ==========================================================================
-   RESPONSIVE DESIGN SYSTEM OVERRIDES
-   ========================================================================== */
-@media (max-width: 768px) {
-  .google-site-footer {
-    padding: 60px 24px 32px 24px;
-  }
-
-  .google-footer-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding-bottom: 32px;
-  }
-
-  .google-footer-bottom {
-    flex-direction: column-reverse; /* Puts institutional disclosure links on top for easy access */
-    gap: 24px;
-    padding-top: 24px;
-  }
-
-  .google-footer-utility-links {
-    flex-direction: column;
-    gap: 12px;
-  }
-}
-
-/* FINAL CALL TO ACTION */
-
-.cta-section{
-   padding:80px 20px;
-   background:#ffffff;
-}
-
-.cta-content{
-
-    max-width:720px;
-
-    margin:0 auto;
-
-    text-align:center;
-
-}
-
-
-.cta-content h2{
-
-    margin-bottom:24px;
-
-}
-
-.cta-content p{
-
-    max-width:620px;
-
-    margin:0 auto 40px;
-
-    line-height:1.8;
-
-    color:#555;
-
-}
-
-.cta-buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:16px;
-
-    flex-wrap:wrap;
-
-}
-
-/* 14. Floating WhatsApp button */
-.floating-whatsapp {
-  position: fixed;        /* Makes it float over the page */
-  bottom: 20px;           /* Distance from bottom */
-  right: 20px;            /* Distance from right */
-  z-index: 9999;          /* Ensures it stays on top of other content */
-  background: #25D366;
-  color: white;
-  padding: 12px 20px;     /* Added padding to make it a button */
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  text-decoration: none;  /* Removes underline */
-  font-weight: bold;
-  display: flex;          /* Helps center the icon and text */
-  align-items: center;
-  transition: background 0.3s ease;
-}
-
-.floating-whatsapp:hover {
-  background: #1ebd54;
-}
-
-/* 15. RESPONSIVE MEDIA QUERIES */
-
-/* IPAD & TABLET */
-@media (max-width: 1024px) {
-  .grid-3 { gap: 20px; }
-}
-
-/* MOBILE OPTIMIZATION */
-@media (max-width: 768px) {
-  .container { padding: 60px 15px; }
-
-  .hero-sub { font-size: 1.1rem; }
-
-  .hero-btns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .btn-primary, .btn-secondary {
-    width: 100%;
-    max-width: 320px;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .trust-items { flex-direction: column; gap: 12px; }
-
-  .card { padding: 30px 25px; }
-
-  .lead-magnet { padding: 50px 25px; }
-
-  .site-footer { text-align: left; }
-
-  body { padding-bottom: 80px; }
-
-  /* Reset alternating backgrounds on mobile for simplicity */
-  section:nth-of-type(even) .container {
-    background-color: transparent;
-  }
-}
-
-/* SMALL MOBILE */
-@media (max-width: 480px) {
-  .logo { font-size: 1.1rem; }
-
-  .hero-section {
-    padding: 60px 15px 40px;
-  }
-
-  .hero-h1 { font-size: 1.8rem; }
-
-  .card-step { font-size: 0.75rem; }
-  .text-link { font-size: 0.9rem; }
-}
-
-/* REDUCED MOTION PREFERENCE */
-@media (prefers-reduced-motion: reduce) {
-  .animate-resilience {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-}
-
-/* Utility grid (unchanged) */
-.why-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-@media (min-width: 769px) {
-  .why-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* HERO EYEBROW*/
-
-.hero-eyebrow{
-   display:inline-block;
-   margin-bottom:20px;
-   padding:6px 14px;
-   border-radius:999px;
-   
-   font-size:0.85rem;
-   font-weight:600;
-   letter-spacing:0.08em;
-   text-transform:uppercase;
-   
-   color:#E8D7A5;
-   border:1px solid rgba(255,255,255,.25);
-}
-
-/* HERO PHOTO HOMEPAGE */
-
-.hero-photo{
-    display: block;
-    width: 140px;
-    height: 140px;
-
-    margin: 0 auto 24px;
-
-    border-radius: 50%;
-    object-fit: cover;
-
-    border:3px solid rgba(255,255,255,.15);
-
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-
-/* FINANCIAL PLANNING AREAS */
-
-.planning-section{
-
-    padding:80px 20px;
-
-    background:#ffffff;
-
-}
-.planning-heading{
-
-    max-width:760px;
-
-    margin:0 auto 60px;
-
-    text-align:center;
-
-}
-.planning-grid{
-
-    display:grid;
-
-    gap:32px;
-
-}
-@media(min-width:768px){
-
-.planning-grid{
-
-    grid-template-columns:repeat(3,1fr);
-
-}
-
-}
-.planning-card{
-
-    display:flex;
-    flex-direction:column;
-
-    height:100%;
-
-    background:#fff;
-
-    padding:36px 30px;
-
-    border-radius:16px;
-
-    border:1px solid rgba(0,0,0,.08);
-
-}
-.planning-card h3{
-
-    margin-bottom:18px;
-
-    font-size:1.3rem;
-
-}
-.planning-card p{
-
-    margin-bottom:28px;
-
-    line-height:1.8;
-
-    color:#555;
-
-}
-.planning-card .btn-primary{
-
-    margin-top:auto;
-
-}
-
-/* FINANCIAL PLANNING JOURNEY */
-
-.journey-section{
-   padding:80px 20px;
-   background:#f8f8f6;
-}
-
-.journey-heading{
-   max-width:760px;
-   margin:0 auto 60px;
-   text-align:center;
-}
-
-
-.journey-steps{
-   list-style:none;
-   max-width:820px;
-   margin:0 auto;
-   padding:0;
-}
-
-.journey-step{
-   padding:0 0 48px;
-}
-
-.journey-step:last-child{
-   padding-bottom:0;
-}
-
-.step-number{
-   display:flex;
-   align-items:center;
-   margin-bottom:20px;
-}
-
-.step-number span{
-   display:flex;
-   align-items:center;
-   justify-content:center;
-   width:42px;
-   height:42px;
-   border-radius:50%;
-   background:var(--navy);
-   color:#fff;
-   font-weight:700;
-   font-size:.95rem;
-   flex-shrink:0;
-}
-
-.step-number::after{
-
-    content:"";
-
-    flex:1;
-
-    height:1px;
-
-    margin-left:16px;
-
-    background:rgba(0,0,0,.12);
-
-}
-
-.step-content{
-
-    padding-left:58px;
-
-}
-
-.step-content h3{
-
-    margin-bottom:14px;
-
-    font-size:1.35rem;
-
-}
-
-.step-content p{
-
-    color:#555;
-
-    line-height:1.8;
-
-    margin:0;
-
-}
-
-/* WHAT YOU CAN EXPECT */
-
-.expect-section{
-   padding:80px 20px;
-   background:#f8f8f6;
-}
-
-.expect-heading{
-   max-width:760px;
-   margin:0 auto 60px;
-   text-align:center;
-}
-
-.expect-grid{
-   display:grid;
-   gap:32px;
-}
-
-@media(min-width:768px){
-   .expect-grid{
-      grid-template-columns:repeat(2,1fr);
-   }
-}
-
-.expect-card{
-   display:flex;
-   flex-direction:column;
-   padding:36px 32px;
-   background:#fff;
-   border:1px solid rgba(0,0,0,.08);
-   border-radius:16px;
-}
-
-.expect-number{
-   width:48px;
-   height:48px;
-   margin-bottom:22px;
-   display:flex;
-   
-   align-items:center;
-   justify-content:center;
-   border-radius:50%;
-   background:var(--navy);
-   
-   color:#fff;
-   font-weight:700;
-   font-size:1rem;
-}
-
-.expect-card h3{
-   margin-bottom:16px;
-   font-size:1.35rem;
-}
-
-.expect-card p{
-   margin:0;
-   color:#555;
-   line-height:1.8;
-}
-
-/* KNOWLEDGE HUB */
-
-.articles-section{
-   padding:80px 20px;
-   background:#ffffff;
-}
-
-.articles-heading{
-   max-width:760px;
-   margin:0 auto 60px;
-   text-align:center;
-}
-
-.articles-grid{
-   display:grid;
-   gap:32px;
-}
-
-@media(min-width:768px){
-   .articles-grid{
-      grid-template-columns:repeat(3,1fr);
-   }
-}
-
-.article-card{
-   display:flex;
-   flex-direction:column;
-   height:100%;
-   padding:36px 30px;
-   
-   background:#fff;
-   border:1px solid rgba(0,0,0,.08);
-   border-radius:16px;
-   transition: transform .25s ease, border-color .25s ease;
-}
-
-.article-card:hover{
-   transform:translateY(-4px);
-   border-color:rgba(11,31,58,.20);
-}
-
-.article-category{
-   display:inline-block;
-   margin-bottom:22px;
-   font-size:.82rem;
-   font-weight:600;
-   
-   letter-spacing:.08em;
-   text-transform:uppercase;
-   color:#B08D57;
-}
-
-.article-card h3{
-   margin-bottom:18px;
-   font-size:1.3rem;
-   line-height:1.4;
-}
-
-.article-card p{
-   margin-bottom:28px;
-   color:#555;
-   line-height:1.8;
-}
-
-.article-card a{
-   margin-top:auto;
-   font-weight:600;
-   color:var(--navy);
-   text-decoration:none;
-}
-
-.article-card a:hover{
-   text-decoration:underline;
-}
-
-.articles-footer{
-   margin-top:56px;
-   text-align:center;
-}
-
-/* SHARED EYEBROW COMPONENT */
-
-.section-eyebrow{
-    display:inline-block;
-    margin-bottom:18px;
-    padding:6px 14px;
-    border-radius:999px;
-
-    font-size:.85rem;
-    font-weight:600;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-
-    color:#B08D57;
-    border:1px solid rgba(0,0,0,.08);
-}
-
-/* ==========================================================================
-   GOOGLE-INSPIRED ARTICLE READABILITY SYSTEM
-   ========================================================================== */
-.google-article {
-  max-width: 720px; /* Lebar optimum untuk pembacaan teks panjang */
-  margin: 0 auto;
-  padding: 80px 24px;
-}
-
-.google-article-header {
-  margin-bottom: 48px;
-  text-align: left;
-}
-
-.google-article-meta {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-  margin-bottom: 16px;
-  letter-spacing: 0.02em;
-}
-
-.google-article-divider {
-  margin: 0 8px;
-  color: var(--border-subtle);
-}
-
-.google-article-category {
-  color: var(--accent-action);
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-
-.google-article-title {
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  line-height: 1.2;
-  color: var(--navy);
-  margin: 0;
-  letter-spacing: -0.03em;
-}
-
-/* Style Untuk Elemen Markdown Dalam Kandungan */
-.google-article-content {
-  font-size: 1.125rem; /* Saiz teks yang sedikit besar untuk keselesaan mata */
-  line-height: 1.8;
-  color: var(--text-main);
-}
-
-.google-article-content p {
-  margin: 0 0 28px 0;
-}
-
-.google-article-content h2 {
-  font-size: 1.75rem;
-  margin: 56px 0 20px 0;
-  letter-spacing: -0.025em;
-}
-
-.google-article-content h3 {
-  font-size: 1.35rem;
-  margin: 40px 0 16px 0;
-}
-
-/* Implimentasi Imej Gaya Google */
-.google-article-content img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-card); /* Memakai sudut melengkung 24px */
-  margin: 32px 0;
-  border: 1px solid var(--border-subtle);
-}
-
-/* Sistem Petikan (Blockquote) */
-.google-article-content blockquote {
-  margin: 40px 0;
-  padding: 24px 32px;
-  background-color: var(--bg-track);
-  border-left: 4px solid var(--navy);
-  border-radius: 0 var(--radius-card) var(--radius-card) 0;
-  font-style: italic;
-}
-
-.google-article-content blockquote p {
-  margin: 0;
-  color: var(--navy);
-}
-
-/* Senarai Point (Lists) */
-.google-article-content ul,
-.google-article-content ol {
-  margin: 0 0 32px 0;
-  padding-left: 24px;
-}
-
-.google-article-content li {
-  margin-bottom: 12px;
-}
-
-/* Footer & Navigasi Halaman */
-.google-article-footer {
-  margin-top: 64px;
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 40px;
-}
-
-.google-article-back {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.google-article-back a {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-  text-decoration: none;
-  font-weight: 500;
-  transition: var(--transition-smooth);
-}
-
-.google-article-back a:hover {
-  color: var(--navy);
-}
-
-/* Adjustments Untuk Skrin Telefon */
-@media (max-width: 640px) {
-  .google-article {
-    padding: 48px 20px;
-  }
-  .google-article-content {
-    font-size: 1.05rem;
-  }
-}
-
-/* ==========================================================================
-   GOOGLE-INSPIRED AUTHOR BOX COMPONENT
-   ========================================================================== */
-.google-author-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 32px;
-  background-color: var(--bg-track);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-card); /* Memakai standard bucu bulat 24px */
-  padding: 40px;
-  margin: 64px 0 40px 0;
-}
-
-/* Avatar Layout */
-.google-author-avatar-container {
-  flex-shrink: 0;
-}
-
-.google-author-img {
-  display: block;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%; /* Gambar penulis kekal bulat untuk identiti profesional */
-  object-fit: cover;
-  border: 1px solid var(--border-subtle);
-}
-
-/* Details Layout */
-.google-author-details {
-  flex: 1;
-}
-
-.google-author-name {
-  font-family: var(--font-global) !important; /* Menggunakan sans-serif untuk E-E-A-T metadata */
-  font-size: 1.15rem !important;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 8px 0 !important;
-  letter-spacing: -0.02em;
-}
-
-.google-author-bio {
-  font-size: 0.95rem;
-  color: var(--navy);
-  margin: 0 0 6px 0 !important;
-  line-height: 1.5;
-}
-
-.google-author-bio strong {
-  color: var(--accent-action); /* Highlight jawatan rasmi dengan warna Sage Green */
-  font-weight: 600;
-}
-
-.google-author-desc {
-  font-size: 0.95rem;
-  color: var(--text-main);
-  line-height: 1.6;
-  margin: 0 0 20px 0 !important;
-}
-
-/* Action Link */
-.google-author-link {
-  display: inline-block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--navy);
-  text-decoration: none;
-  transition: var(--transition-smooth);
-}
-
-.google-author-link:hover {
-  color: var(--accent-action);
-}
-
-/* ==========================================================================
-   RESPONSIVE MOBILE BREAKPOINT
-   ========================================================================== */
-@media (max-width: 640px) {
-  .google-author-box {
-    flex-direction: column; /* Tukar susunan ke bawah untuk skrin telefon */
-    align-items: center;
-    text-align: center;
-    padding: 32px 24px;
-    gap: 20px;
-  }
-
-  .google-author-img {
-    width: 72px;
-    height: 72px;
-  }
-  
-  .google-author-desc {
-    margin-bottom: 16px !important;
-  }
-}
-/* ========================================== */
-/* Contact Form (Hubungi Page)                */
-/* ========================================== */
-
-.form-input,
-.form-select,
-.form-textarea {
-  width: 100%;
-  padding: 14px 16px;
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-  font-size: 1rem;
-  font-family: inherit;
-  color: var(--navy);
-  background-color: #ffffff;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover & Focus States (For good User Experience) */
-.form-input:focus,
-.form-select:focus,
-.form-textarea:focus {
-  outline: none;
-  border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1); /* Subtle navy glow */
-}
-
-/* Placeholder text color */
-.form-input::placeholder,
-.form-textarea::placeholder {
-  color: #94a3b8; /* Slate-400 equivalent */
-}
-
-/* Specific styling for the text area */
-.form-textarea {
-  resize: vertical; /* Prevents user from breaking the layout horizontally */
-  min-height: 120px;
-}
-
-/* ========================================== */
-/* NAVIGATION WITH DROPDOWN (Upgrade)        */
-/* ========================================== */
-
-/* Reset list style for nav */
-.nav-list {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list a {
-  text-decoration: none;
-  color: #1a3a3a;
-  font-weight: 500;
-  padding: 0.5rem 0;
-  transition: color 0.2s ease;
-  white-space: nowrap;
-  font-size: 0.95rem;
-}
-
-.nav-list a:hover,
-.nav-list a.active {
-  color: #1a7a5a;
-}
-
-/* Dropdown Parent */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-toggle {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-.caret {
-  font-size: 0.65rem;
-  transition: transform 0.25s ease;
-  margin-left: 2px;
-}
-
-.dropdown.open .caret {
-  transform: rotate(180deg);
-}
-
-/* Dropdown Menu (Desktop) */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 230px;
-  background: #ffffff;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.10);
-  border-radius: 12px;
-  padding: 0.5rem 0;
-  list-style: none;
-  margin: 0.5rem 0 0 0;
-  z-index: 1000;
-  border: 1px solid #eef2f0;
-}
-
-.dropdown-menu li {
-  display: block;
-}
-
-.dropdown-menu a {
-  display: block;
-  padding: 0.6rem 1.5rem;
-  color: #1a3a3a;
-  font-weight: 400;
-  white-space: nowrap;
-  transition: background 0.15s ease;
-  font-size: 0.95rem;
-}
-
-.dropdown-menu a:hover {
-  background: #f4f8f6;
-  color: #1a7a5a;
-}
-
-/* Show dropdown on HOVER (Desktop) AND when .open class toggled (Mobile) */
-.dropdown:hover .dropdown-menu,
-.dropdown.open .dropdown-menu {
-  display: block;
-}
-
-/* CTA Button in Nav - Stands out */
-.btn-nav-cta {
-  background-color: #1a7a5a;
-  color: #ffffff !important;
-  padding: 0.5rem 1.5rem !important;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: background 0.3s ease, transform 0.1s ease;
-}
-
-.btn-nav-cta:hover {
-  background-color: #135f45 !important;
-  color: #ffffff !important;
-  transform: scale(1.03);
-}
-
-/* ========================================== */
-/* MOBILE RESPONSIVE (Hamburger Menu)        */
-/* ========================================== */
-
-@media (max-width: 768px) {
-  /* Hide desktop nav links by default */
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #ffffff;
-    padding: 1.5rem 1.5rem;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-    border-top: 1px solid #e2e8f0;
-    max-height: 80vh;
-    overflow-y: auto;
-  }
-
-  /* Show when hamburger checked */
-  #menu-toggle:checked ~ .nav-links {
-    display: block;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.5rem;
-  }
-
-  .nav-list a {
-    padding: 0.7rem 0;
-    border-bottom: 1px solid #f0f3f2;
-    white-space: normal;
-    font-size: 1rem;
-  }
-
-  .btn-nav-cta {
-    text-align: center;
-    margin-top: 0.5rem;
-    border-bottom: none !important;
-  }
-
-  /* Mobile Dropdown Menu - Static (not absolute) */
-  .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    border: none;
-    padding: 0 0 0 1.2rem;
-    margin: 0.2rem 0 0 0;
-    border-left: 3px solid #1a7a5a;
-    border-radius: 0;
-    background: transparent;
-  }
-
-  .dropdown-menu a {
-    padding: 0.5rem 0;
-    border-bottom: none !important;
-    font-size: 0.95rem;
-  }
-
-  .dropdown-menu a:hover {
-    background: transparent;
-    color: #1a7a5a;
-  }
-
-  .dropdown.open .dropdown-menu {
-    display: block;
-  }
-}
-
-/* ========================================== */
-/* FAQ Section - Generative AI Friendly       */
-/* ========================================== */
-
-.faq-section {
-  background-color: #f8faf9;
-  padding: 4rem 0;
-  border-top: 1px solid #e2e8f0;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.faq-heading {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 3rem auto;
-}
-
-.faq-list {
-  max-width: 850px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.faq-item {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 1.8rem 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  border-left: 6px solid #1a7a5a;
-  transition: box-shadow 0.25s ease;
-}
-
-.faq-item:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
-}
-
-.faq-item dt {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #1a3a3a;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
-}
-
-.faq-item dt::before {
-  content: "❓ ";
-  font-size: 1.1rem;
-}
-
-.faq-item dd {
-  margin-left: 0;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #2d4a4a;
-}
-
-.faq-item dd strong {
-  color: #1a7a5a;
-  font-weight: 600;
-}
-
-.faq-item dd em {
-  font-style: italic;
-  color: #4a6a6a;
-}
-
-.faq-footer {
-  text-align: center;
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e2e8f0;
-}
-
-.faq-footer p {
-  margin-bottom: 1rem;
-  color: #3a5a5a;
-  font-weight: 500;
-}
-
-/* Responsif Mobile */
-@media (max-width: 640px) {
-  .faq-item {
-    padding: 1.2rem 1.2rem;
-  }
-  .faq-item dt {
-    font-size: 1rem;
-  }
-  .faq-item dd {
-    font-size: 0.95rem;
-  }
-}
-
-/* Article Figure Styling — Swiss Minimalist */
-.article-figure {
-  margin: 0 0 30px 0;
-}
-
-.article-figure img {
-  border-radius: 8px;
-  width: 100%;
-  height: auto;
-  transition: opacity 0.2s ease;
-  background-color: var(--slate-100);
-}
-
-.article-figure img:hover {
-  opacity: 0.95;
-}
-
-/* ========================================== */
-/* Disclaimer — Article Footer                */
-/* ========================================== */
-
-.disclaimer-container {
-  margin-top: 24px;
-}
-
-.disclaimer-container p {
-  font-style: italic;
-  font-size: 0.85rem;
-  color: #6a8a8a;
-  line-height: 1.7;
-  margin: 0;
-}
-
-/* ==========================================================================
-   GOOGLE-INSPIRED RELATED ARTICLES SYSTEM
-   ========================================================================== */
-.google-related-header {
-  text-align: left;
-  margin-bottom: 40px;
-  max-width: 720px;
-}
-
-.google-related-main-title {
-  font-size: 1.75rem;
-  margin: 0 0 12px 0;
-  letter-spacing: -0.025em;
-}
-
-.google-related-intro {
-  color: var(--text-secondary);
-  font-size: 1.05rem;
-  margin: 0;
-}
-
-/* Re-skinning Google Card khusus untuk Related Posts */
-.google-related-card {
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.google-related-link-wrapper {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.google-related-category {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 12px;
-  display: inline-block;
-}
-
-.google-related-card h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.4;
-  color: var(--navy);
-  margin: 0 0 12px 0;
-  letter-spacing: -0.02em;
-  /* Menghadkan tajuk panjang kepada maksima 2 baris sahaja supaya grid sentiasa kemas */
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.google-related-card p {
-  font-size: 0.95rem;
-  color: var(--text-main);
-  line-height: 1.6;
-  margin: 0 0 24px 0;
-  flex-grow: 1; /* Menolak teks tindakan ke bawah kad secara konsisten */
-}
-
-.google-related-action-text {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--navy);
-  transition: var(--transition-smooth);
-  margin-top: auto;
-}
-
-/* Kesan interaktif minimalis gaya Google */
-.google-related-card:hover .google-related-action-text {
-  color: var(--accent-action);
-  transform: translateX(4px);
-}
-
-/* ========================================== */
-/* Platform Section — for unittrust.html      */
-/* ========================================== */
-
-.section-platform {
-  padding: 48px 0;
-  background: #f8faf9;
-}
-
-.platform-content {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.platform-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin: 24px 0;
-}
-
-.platform-card {
-  background: #ffffff;
-  padding: 28px 24px;
-  border-radius: 12px;
-  text-align: center;
-  border: 1px solid #e8edec;
-}
-
-.platform-icon {
-  font-size: 2.2rem;
-  margin-bottom: 8px;
-}
-
-.platform-card h3 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #1a3a3a;
-  margin: 0 0 8px 0;
-}
-
-.platform-card p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #4a6a6a;
-  margin: 0;
-}
-
-.platform-card p strong {
-  color: #1a3a3a;
-  font-weight: 600;
-}
-
-.platform-disclaimer {
-  font-size: 0.85rem;
-  color: #6a8a8a;
-  text-align: center;
-  max-width: 720px;
-  margin: 16px auto 0 auto;
-  font-style: italic;
-  line-height: 1.6;
-}
-
-/* ========================================== */
-/* Responsive for Platform Section            */
-/* ========================================== */
-
-@media (max-width: 768px) {
-  .platform-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .platform-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ========================================== */
-/* Approach Section — for persaraan.html      */
-/* ========================================== */
-
-.section-approach {
-  padding: 48px 0;
-  background: #f8faf9;
-}
-
-.approach-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.approach-card {
-  background: #ffffff;
-  padding: 24px 20px;
-  border-radius: 12px;
-  text-align: center;
-  border: 1px solid #e8edec;
-}
-
-.approach-icon {
-  font-size: 2rem;
-  margin-bottom: 8px;
-}
-
-.approach-card h3 {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #1a3a3a;
-  margin: 0 0 6px 0;
-}
-
-.approach-card p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #4a6a6a;
-  margin: 0;
-}
-
-.approach-disclaimer {
-  font-size: 0.85rem;
-  color: #6a8a8a;
-  text-align: center;
-  max-width: 720px;
-  margin: 24px auto 0 auto;
-  font-style: italic;
-  line-height: 1.6;
-}
-
-/* ========================================== */
-/* Responsive for Approach Section            */
-/* ========================================== */
-
-@media (max-width: 768px) {
-  .approach-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .approach-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ========================================
-   Philosophy Section
-======================================== */
-
-.section-philosophy{
-    padding:80px 0;
-    background:#fff;
-}
-
-.section-philosophy-content{
-    max-width:760px;
-    margin:0 auto;
-}
-
-.section-philosophy-content p{
-    font-size:1.08rem;
-    line-height:1.9;
-    color:var(--slate-600);
-    margin-bottom:1.25rem;
-}
-
-/* ========================================== */
-/* Philosophy Section — for takaful.html      */
-/* ========================================== */
-
-.section-philosophy {
-  padding: 48px 0;
-  background: #ffffff;
-}
-
-.section-philosophy-content {
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.section-philosophy-content p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #4a6a6a;
-  margin: 16px 0;
-}
-
-.section-philosophy-content .section-eyebrow {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #1a7a5a;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin: 0 0 8px 0;
-}
-
-.section-philosophy-content .section-title {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #1a3a3a;
-  margin: 0 0 8px 0;
-  letter-spacing: -0.01em;
-}
-
-.section-philosophy-content .section-subtitle {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #4a6a6a;
-  max-width: 640px;
-  margin: 0 auto 16px auto;
-}
-
-/* ========================================== */
-/* Related Articles — Card-Based Design       */
-/* ========================================== */
-
-.related-articles {
-  margin: 40px 0 0 0;
-  padding: 40px 0 24px 0;
-  border-top: 1px solid #e5e7eb;
-}
-
-.related-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.related-title {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #1a3a3a;
-  margin: 0 0 4px 0;
-}
-
-.related-intro {
-  font-size: 0.95rem;
-  color: #4a6a6a;
-  margin: 0 0 20px 0;
-  line-height: 1.6;
-}
-
-.related-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.related-card {
-  background: #f8faf9;
-  border-radius: 12px;
-  padding: 20px;
-  transition: all 0.15s ease;
-  border: 1px solid transparent;
-}
-
-.related-card:hover {
-  background: #f0f4f8;
-  border-color: #e0e8e6;
-}
-
-.related-card-link {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.related-card-category {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: #1a7a5a;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 2px;
-}
-
-.related-card-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #1a3a3a;
-  margin: 0;
-  line-height: 1.4;
-  transition: color 0.15s ease;
-}
-
-.related-card:hover .related-card-title {
-  color: #1a7a5a;
-}
-
-.related-card-excerpt {
-  font-size: 0.85rem;
-  color: #4a6a6a;
-  margin: 4px 0 0 0;
-  line-height: 1.5;
-}
-
-/* ========================================== */
-/* Responsive for Related Articles            */
-/* ========================================== */
-
-@media (max-width: 768px) {
-  .related-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .related-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .related-card {
-    padding: 16px;
-  }
-}
-
-/* ========================================== */
-/* FT × Swiss Typography & Colour System       */
-/* ========================================== */
-
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
-
-:root {
-  /* Colours */
-  --ft-bg: #FAFAF8;
-  --ft-text-primary: #1F2937;
-  --ft-text-secondary: #6B7280;
-  --ft-accent: #1A7A5A;
-  --ft-accent-hover: #135F45;
-  --ft-border: #E5E7EB;
-  --ft-white: #FFFFFF;
-  --ft-card-bg: #F4F4F0;
-
-  /* Typography */
-  --ft-font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --ft-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-}
-
-/* ========================================== */
-/* HERO SECTION — FT × Swiss                  */
-/* ========================================== */
-
-.hero-ft {
-  padding: 60px 0 40px 0;
-  background: var(--ft-bg);
-}
-
-.hero-ft-content {
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hero-ft-eyebrow {
-  font-family: var(--ft-font-sans);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--ft-accent);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin: 0 0 8px 0;
-}
-
-.hero-ft-title {
-  font-family: var(--ft-font-serif);
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: var(--ft-text-primary);
-  line-height: 1.15;
-  margin: 0 0 16px 0;
-  letter-spacing: -0.02em;
-}
-
-.hero-ft-description {
-  font-family: var(--ft-font-sans);
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.7;
-  margin: 0 0 12px 0;
-}
-
-.hero-ft-description strong {
-  color: var(--ft-text-primary);
-  font-weight: 600;
-}
-
-.hero-ft-actions {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 8px;
-}
-
-/* ========================================== */
-/* BUTTONS — FT × Swiss                       */
-/* ========================================== */
-
-.btn-ft-primary {
-  display: inline-block;
-  font-family: var(--ft-font-sans);
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--ft-white);
-  background: var(--ft-accent);
-  padding: 12px 28px;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.2s ease;
-}
-
-.btn-ft-primary:hover {
-  background: var(--ft-accent-hover);
-}
-
-.btn-ft-secondary {
-  display: inline-block;
-  font-family: var(--ft-font-sans);
-  font-weight: 500;
-  font-size: 0.95rem;
-  color: var(--ft-text-primary);
-  background: transparent;
-  padding: 12px 28px;
-  border: 1px solid var(--ft-text-primary);
-  border-radius: 4px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.btn-ft-secondary:hover {
-  background: var(--ft-text-primary);
-  color: var(--ft-white);
-}
-
-/* ========================================== */
-/* PHILOSOPHY SECTION — FT × Swiss           */
-/* ========================================== */
-
-.section-philosophy-ft {
-  padding: 48px 0;
-  background: var(--ft-white);
-}
-
-.philosophy-ft-content {
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.philosophy-ft-eyebrow {
-  font-family: var(--ft-font-sans);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--ft-accent);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin: 0 0 8px 0;
-}
-
-.philosophy-ft-title {
-  font-family: var(--ft-font-serif);
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--ft-text-primary);
-  line-height: 1.2;
-  margin: 0 0 12px 0;
-  letter-spacing: -0.01em;
-}
-
-.philosophy-ft-subtitle {
-  font-family: var(--ft-font-sans);
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.6;
-  margin: 0 0 16px 0;
-}
-
-.philosophy-ft-body {
-  font-family: var(--ft-font-sans);
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.7;
-  margin: 0 0 12px 0;
-}
-
-/* ========================================== */
-/* CONCEPT SECTION — FT × Swiss              */
-/* ========================================== */
-
-.section-concept-ft {
-  padding: 48px 0;
-  background: var(--ft-bg);
-}
-
-.concept-ft-content {
-  max-width: 960px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.section-title-ft {
-  font-family: var(--ft-font-serif);
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--ft-text-primary);
-  line-height: 1.2;
-  margin: 0 0 12px 0;
-  letter-spacing: -0.01em;
-  text-align: center;
-}
-
-.concept-ft-subtitle {
-  font-family: var(--ft-font-sans);
-  font-size: 1.05rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.6;
-  max-width: 640px;
-  margin: 0 auto 16px auto;
-}
-
-.concept-ft-link {
-  font-family: var(--ft-font-sans);
-  font-size: 0.95rem;
-  color: var(--ft-text-secondary);
-  margin: 0 0 24px 0;
-}
-
-.concept-ft-link a {
-  color: var(--ft-accent);
-  text-decoration: underline;
-}
-
-.concept-ft-link a:hover {
-  color: var(--ft-accent-hover);
-}
-
-.concept-ft-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin: 0 auto;
-}
-
-.concept-ft-card {
-  background: var(--ft-white);
-  padding: 28px 24px;
-  border-radius: 8px;
-  text-align: center;
-  border: 1px solid var(--ft-border);
-}
-
-.concept-ft-icon {
-  font-size: 2.2rem;
-  margin-bottom: 8px;
-}
-
-.concept-ft-card h3 {
-  font-family: var(--ft-font-sans);
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--ft-text-primary);
-  margin: 0 0 8px 0;
-}
-
-.concept-ft-card p {
-  font-family: var(--ft-font-sans);
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* ========================================== */
-/* GOALS SECTION — FT × Swiss                */
-/* ========================================== */
-
-.section-goals-ft {
-  padding: 48px 0;
-  background: var(--ft-white);
-}
-
-.goals-ft-subtitle {
-  font-family: var(--ft-font-sans);
-  font-size: 1.05rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.6;
-  max-width: 640px;
-  margin: 0 auto 32px auto;
-  text-align: center;
-}
-
-.goals-ft-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.goal-ft-card {
-  background: var(--ft-card-bg);
-  padding: 24px 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.goal-ft-icon {
-  font-size: 2rem;
-  margin-bottom: 8px;
-}
-
-.goal-ft-card h3 {
-  font-family: var(--ft-font-sans);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--ft-text-primary);
-  margin: 0 0 6px 0;
-}
-
-.goal-ft-card p {
-  font-family: var(--ft-font-sans);
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* ========================================== */
-/* PLANS SECTION — FT × Swiss                */
-/* ========================================== */
-
-.section-plans-ft {
-  padding: 48px 0;
-  background: var(--ft-bg);
-}
-
-.plans-ft-subtitle {
-  font-family: var(--ft-font-sans);
-  font-size: 1.05rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.6;
-  max-width: 640px;
-  margin: 0 auto 32px auto;
-  text-align: center;
-}
-
-.plans-ft-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.plan-ft-card {
-  background: var(--ft-white);
-  padding: 28px 24px;
-  border-radius: 8px;
-  text-align: center;
-  border: 1px solid var(--ft-border);
-}
-
-.plan-ft-icon {
-  font-size: 2.2rem;
-  margin-bottom: 8px;
-}
-
-.plan-ft-card h3 {
-  font-family: var(--ft-font-sans);
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--ft-text-primary);
-  margin: 0 0 8px 0;
-}
-
-.plan-ft-card p {
-  font-family: var(--ft-font-sans);
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* ========================================== */
-/* PROCESS SECTION — FT × Swiss              */
-/* ========================================== */
-
-.section-process-ft {
-  padding: 48px 0;
-  background: var(--ft-white);
-}
-
-.process-ft-heading {
-  text-align: center;
-  max-width: 720px;
-  margin: 0 auto 40px auto;
-}
-
-.process-ft-eyebrow {
-  font-family: var(--ft-font-sans);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--ft-accent);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin: 0 0 4px 0;
-}
-
-.process-ft-subtitle {
-  font-family: var(--ft-font-sans);
-  font-size: 1.05rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.6;
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-.process-ft-steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  max-width: 960px;
-  margin: 0 auto;
-  list-style: none;
-  padding: 0;
-}
-
-.process-ft-step {
-  background: var(--ft-card-bg);
-  padding: 24px 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.step-ft-number {
-  font-family: var(--ft-font-serif);
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--ft-accent);
-  margin-bottom: 8px;
-}
-
-.process-ft-step h3 {
-  font-family: var(--ft-font-sans);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--ft-text-primary);
-  margin: 0 0 6px 0;
-}
-
-.process-ft-step p {
-  font-family: var(--ft-font-sans);
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* ========================================== */
-/* PROVIDERS SECTION — FT × Swiss            */
-/* ========================================== */
-
-.section-providers-ft {
-  padding: 48px 0;
-  background: var(--ft-bg);
-}
-
-.providers-ft-subtitle {
-  font-family: var(--ft-font-sans);
-  font-size: 1.05rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  line-height: 1.6;
-  max-width: 720px;
-  margin: 0 auto 12px auto;
-  text-align: center;
-}
-
-.providers-ft-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px 24px;
-  max-width: 720px;
-  margin: 24px auto;
-  list-style: none;
-  padding: 0;
-}
-
-.providers-ft-list li {
-  font-family: var(--ft-font-sans);
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: var(--ft-text-primary);
-  padding: 6px 0;
-  border-bottom: 1px solid var(--ft-border);
-}
-
-.providers-ft-disclaimer {
-  font-family: var(--ft-font-sans);
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: var(--ft-text-secondary);
-  text-align: center;
-  max-width: 640px;
-  margin: 16px auto 0 auto;
-  font-style: italic;
-}
-
-/* ========================================== */
-/* RESPONSIVE — FT × Swiss                   */
-/* ========================================== */
-
-@media (max-width: 768px) {
-  .hero-ft-title {
-    font-size: 2.2rem;
-  }
-
-  .concept-ft-grid,
-  .goals-ft-grid,
-  .plans-ft-grid,
-  .process-ft-steps {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .providers-ft-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .hero-ft-description {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-ft-title {
-    font-size: 1.8rem;
-  }
-
-  .concept-ft-grid,
-  .goals-ft-grid,
-  .plans-ft-grid,
-  .process-ft-steps,
-  .providers-ft-list {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-ft-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn-ft-primary,
-  .btn-ft-secondary {
-    width: 100%;
-    max-width: 280px;
-    text-align: center;
-  }
-}
-
-/* ==========================================================================
-   BLOG.GOOGLE DESIGN SYSTEM (EDITORIAL & STREAM CARDS)
-   ========================================================================== */
-
-/* 1. Article Layout & Byline (_layouts/post.html) */
-.google-article-wrapper {
-  background: var(--bg-pure);
-  padding-top: 48px;
-  padding-bottom: 64px;
-}
-
-.google-article-container {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.google-article-category {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.google-article-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--navy);
-  line-height: 1.25;
-  margin: 0 0 24px 0;
-  letter-spacing: -0.02em;
-}
-
-.google-byline-container {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding-bottom: 32px;
-  margin-bottom: 40px;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.google-byline-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.google-byline-author {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--navy);
-}
-
-.google-byline-meta {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-}
-
-.google-article-content {
-  font-size: 1.1rem;
-  line-height: 1.85;
-  color: var(--text-main);
-}
-
-/* 2. Related Articles Stream (_includes/related-articles.html) */
-.google-stream-section {
-  background-color: var(--bg-track);
-  padding: 72px 20px;
-  border-top: 1px solid var(--border-subtle);
-  box-sizing: border-box;
-}
-
-.google-stream-container {
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.google-stream-header {
-  margin-bottom: 40px;
-}
-
-.google-stream-eyebrow {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.google-stream-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 12px 0;
-  letter-spacing: -0.02em;
-}
-
-.google-stream-desc {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  margin: 0;
-  max-width: 680px;
-  line-height: 1.6;
-}
-
-.google-stream-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
-.google-blog-card {
-  background: #ffffff;
-  border: 1px solid #dadce0;
-  border-radius: 16px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-sizing: border-box;
-}
-
-.google-blog-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.google-card-link {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.google-card-category {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.google-card-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.4;
-  color: var(--navy);
-  margin: 0 0 12px 0;
-  letter-spacing: -0.01em;
-}
-
-.google-card-excerpt {
   font-size: 0.925rem;
-  color: var(--text-main);
-  line-height: 1.6;
-  margin: 0 0 24px 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical; overflow: hidden;
-}
-
-.google-card-action {
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--navy);
-}
-
-.google-stream-btn-wrapper {
-  margin-top: 48px;
-  text-align: center;
-}
-
-.google-pill-btn-secondary {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 24px;
-  border: 1px solid var(--navy);
-  background: transparent;
-  color: var(--navy);
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.google-pill-btn-secondary:hover {
-  background: var(--navy);
-  color: #ffffff;
-}
-
-/* 3. Call To Action Section (_includes/cta-section.html) */
-.google-cta-section {
-  background-color: var(--bg-pure);
-  padding: 80px 20px;
-  border-top: 1px solid var(--border-subtle);
-  box-sizing: border-box;
-}
-
-.google-cta-card {
-  max-width: 850px;
-  margin: 0 auto;
-  background: var(--bg-track);
-  border: 1px solid #dadce0;
-  border-radius: 24px;
-  padding: 56px 32px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.google-cta-eyebrow {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.google-cta-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 16px 0;
-  letter-spacing: -0.02em;
-  line-height: 1.3;
-}
-
-.google-cta-desc {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  margin: 0 auto 36px auto;
-  max-width: 600px;
-  line-height: 1.6;
-}
-
-.google-cta-buttons {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.google-btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 32px;
-  border-radius: 28px;
-  background-color: var(--navy);
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
-}
-
-.google-btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 28px;
-  border: 1px solid #dadce0;
-  background-color: #ffffff;
-  color: var(--navy);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
-}
-
-.google-cta-disclaimer {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-top: 24px;
-  margin-bottom: 0;
-}
-
-/* ==========================================================================
-   GOOGLE BLOG SITE HEADER & NAVIGATION SYSTEM
-   ========================================================================== */
-
-.google-site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid #dadce0;
-  transition: all 0.2s ease;
-}
-
-.google-nav-container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
-.google-nav-logo {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--navy);
-  text-decoration: none;
-  letter-spacing: -0.01em;
-  transition: color 0.2s ease;
-}
-
-.google-nav-logo:hover {
-  color: var(--accent-action);
-}
-
-.google-nav-list {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.google-nav-list a {
-  text-decoration: none;
-  font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-secondary);
-  transition: color 0.2s ease;
+  transition: var(--transition-smooth);
   position: relative;
   padding: 4px 0;
 }
@@ -3265,7 +128,6 @@ h1, h2, h3, h4 {
   font-weight: 600;
 }
 
-/* Indicator garisan bawah gaya Google untuk menu aktif */
 .google-nav-list a.active::after {
   content: "";
   position: absolute;
@@ -3277,30 +139,27 @@ h1, h2, h3, h4 {
   border-radius: 2px;
 }
 
-/* Butang Pill 'Hubungi' Signature Google */
+/* Pill CTA Button in Header */
 .google-nav-list .google-btn-nav {
-  padding: 8px 20px;
-  border-radius: 20px;
-  background-color: var(--navy);
-  color: #ffffff !important;
-  font-weight: 600;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  padding: 8px 22px !important;
+  border-radius: var(--radius-btn) !important;
+  background-color: var(--navy) !important;
+  color: var(--bg-pure) !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
 }
 
 .google-nav-list .google-btn-nav:hover {
-  background-color: #1a2536; /* Warna navy gelap sikit bila hover */
+  background-color: var(--accent-action) !important;
   transform: translateY(-1px);
 }
 
 .google-nav-list .google-btn-nav::after {
-  display: none; /* Buang indicator garisan di butang */
-}
-
-/* Checkbox Toggle Hidden */
-.google-menu-checkbox {
   display: none;
 }
 
+/* Mobile Navigation Controls */
+.google-menu-checkbox { display: none; }
 .google-menu-icon {
   display: none;
   cursor: pointer;
@@ -3315,45 +174,39 @@ h1, h2, h3, h4 {
   height: 2px;
   background-color: var(--navy);
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: var(--transition-smooth);
 }
 
-/* --------------------------------------------------------------------------
-   RESPONSIVE NAVIGATION (MOBILE & IPAD MENU DRAWER)
-   -------------------------------------------------------------------------- */
 @media (max-width: 868px) {
-  .google-menu-icon {
-    display: flex;
-  }
+  .google-menu-icon { display: flex; }
 
   .google-nav-links {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #ffffff;
-    border-bottom: 1px solid #dadce0;
+    background-color: var(--bg-pure);
+    border-bottom: 1px solid var(--border-subtle);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
   }
 
   .google-nav-list {
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    padding: 24px;
     gap: 16px;
   }
 
-  .google-nav-list li {
-    width: 100%;
-  }
+  .google-nav-list li { width: 100%; }
 
   .google-nav-list a {
     display: block;
     font-size: 1rem;
     padding: 8px 0;
+    border-bottom: 1px solid var(--border-light);
   }
 
   .google-nav-list .google-btn-nav {
@@ -3361,34 +214,503 @@ h1, h2, h3, h4 {
     text-align: center;
     margin-top: 8px;
     width: 100%;
-    box-sizing: border-box;
+    border-bottom: none !important;
   }
 
-  /* Buka Menu Bawah Apabila Checkbox Ditekan */
-  .google-menu-checkbox:checked ~ .google-nav-links {
-    max-height: 450px;
-  }
+  .google-menu-checkbox:checked ~ .google-nav-links { max-height: 450px; }
 
-  /* Animasi Ikon Hamburger ke 'X' */
   .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
   }
-  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(2) {
-    opacity: 0;
-  }
+  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(2) { opacity: 0; }
   .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
 }
 
-/* ==========================================================================
-   GOOGLE BLOG SITE FOOTER SYSTEM
-   ========================================================================== */
+/* --------------------------------------------------------------------------
+   3. HERO SECTION & 4:3 VISUAL SYSTEM
+   -------------------------------------------------------------------------- */
+.google-hero {
+  background-color: var(--bg-pure);
+  padding: 80px 24px 60px 24px;
+}
 
+.google-hero-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .google-hero-container {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 48px;
+  }
+}
+
+.google-hero-eyebrow {
+  display: inline-block;
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.google-hero-title {
+  font-size: clamp(2.1rem, 3.8vw, 3.25rem);
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 0 0 20px 0;
+}
+
+.google-hero-lead {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0 0 24px 0;
+}
+
+/* Bullet list in Hero */
+.google-hero-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  color: var(--text-main);
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.google-hero-list li { margin-bottom: 8px; }
+.google-hero-list li:last-child { margin-bottom: 0; }
+.google-hero-list .check-icon {
+  color: var(--accent-action);
+  margin-right: 8px;
+}
+
+/* Responsive 4:3 Hero Image Frame */
+.google-hero-visual {
+  width: 100%;
+  align-self: start;
+}
+
+.google-hero-frame {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+  background-color: var(--bg-track);
+}
+
+.google-hero-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hero Action Buttons */
+.google-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.google-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: var(--radius-btn);
+  background-color: var(--navy);
+  color: var(--bg-pure);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+}
+
+.google-btn-primary:hover {
+  background-color: var(--accent-action);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  transform: translateY(-1px);
+}
+
+.google-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-pure);
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+}
+
+.google-btn-secondary:hover {
+  border-color: var(--navy);
+  background-color: var(--bg-track);
+}
+
+@media (max-width: 480px) {
+  .google-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .google-btn-primary, .google-btn-secondary {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. STREAM & CARD GRID SYSTEM (BLOG.GOOGLE CARDS)
+   -------------------------------------------------------------------------- */
+.google-stream-section {
+  background-color: var(--bg-track);
+  padding: 80px 24px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.google-stream-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.google-stream-header {
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.google-stream-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.google-stream-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 12px 0;
+}
+
+.google-stream-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 680px;
+}
+
+.google-flex-grid,
+.google-stream-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.google-blog-card,
+.google-minimal-card {
+  background: var(--bg-pure);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition-smooth);
+}
+
+.google-blog-card:hover,
+.google-minimal-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.05);
+  border-color: var(--navy);
+}
+
+.google-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.google-card-category {
+  font-size: 0.775rem;
+  font-weight: 700;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.google-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--navy);
+  margin: 0 0 12px 0;
+}
+
+.google-card-excerpt {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  line-height: 1.65;
+  margin: 0 0 24px 0;
+}
+
+.google-card-action {
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* --------------------------------------------------------------------------
+   5. ARTICLE CONTENT & READABILITY SYSTEM
+   -------------------------------------------------------------------------- */
+.google-article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.google-article-category {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.google-article-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.2;
+  color: var(--navy);
+  margin: 0 0 24px 0;
+}
+
+.google-byline-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.google-byline-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-subtle);
+}
+
+.google-byline-author {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.google-byline-meta {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+}
+
+.google-article-content {
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: var(--text-main);
+}
+
+.google-article-content p { margin-bottom: 28px; }
+.google-article-content h2 { font-size: 1.75rem; margin: 52px 0 20px 0; }
+.google-article-content h3 { font-size: 1.35rem; margin: 36px 0 16px 0; }
+
+.google-article-content img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+  margin: 32px 0;
+  border: 1px solid var(--border-subtle);
+}
+
+.google-article-content blockquote {
+  margin: 36px 0;
+  padding: 24px 32px;
+  background-color: var(--bg-track);
+  border-left: 4px solid var(--navy);
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  font-style: italic;
+}
+
+.google-article-content blockquote p { margin: 0; color: var(--navy); }
+
+/* --------------------------------------------------------------------------
+   6. E-E-A-T AUTHOR BOX & CTA COMPONENTS
+   -------------------------------------------------------------------------- */
+.google-author-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  background-color: var(--bg-track);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 40px;
+  margin: 64px 0 40px 0;
+}
+
+.google-author-avatar-container { flex-shrink: 0; }
+
+.google-author-img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-subtle);
+}
+
+.google-author-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 6px 0;
+}
+
+.google-author-bio {
+  font-size: 0.95rem;
+  color: var(--navy);
+  margin: 0 0 8px 0;
+}
+
+.google-author-bio strong { color: var(--accent-action); }
+
+.google-author-desc {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.google-author-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.google-author-link:hover { color: var(--accent-action); }
+
+@media (max-width: 640px) {
+  .google-author-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px 24px;
+  }
+}
+
+/* Call To Action Section */
+.google-cta-section {
+  background-color: var(--bg-pure);
+  padding: 80px 24px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.google-cta-card {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--bg-track);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 56px 32px;
+  text-align: center;
+}
+
+.google-cta-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-action);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.google-cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 16px 0;
+}
+
+.google-cta-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin: 0 auto 36px auto;
+  max-width: 600px;
+}
+
+.google-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25d366;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: var(--radius-btn);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  transition: var(--transition-smooth);
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------------------------------------------------------------
+   7. FOOTER SYSTEM
+   -------------------------------------------------------------------------- */
 .google-site-footer {
   background-color: var(--bg-track);
-  border-top: 1px solid #dadce0;
-  padding: 64px 20px 40px 20px;
+  border-top: 1px solid var(--border-subtle);
+  padding: 64px 24px 40px 24px;
   color: var(--text-main);
   font-size: 0.9rem;
 }
@@ -3403,27 +725,25 @@ h1, h2, h3, h4 {
   grid-template-columns: 2fr 1fr;
   gap: 48px;
   padding-bottom: 48px;
-  border-bottom: 1px solid #dadce0;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .google-footer-name {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--navy);
   margin: 0 0 8px 0;
-  letter-spacing: -0.01em;
 }
 
 .google-footer-role {
   font-weight: 600;
-  color: var(--navy);
-  line-height: 1.5;
+  color: var(--accent-action);
   margin: 0 0 16px 0;
 }
 
 .google-footer-bio {
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.65;
   margin: 0;
   max-width: 520px;
 }
@@ -3431,7 +751,7 @@ h1, h2, h3, h4 {
 .google-footer-column h4 {
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--accent-action);
+  color: var(--navy);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin: 0 0 16px 0;
@@ -3449,7 +769,7 @@ h1, h2, h3, h4 {
 .google-footer-links a {
   text-decoration: none;
   color: var(--text-secondary);
-  transition: color 0.2s ease;
+  transition: var(--transition-smooth);
 }
 
 .google-footer-links a:hover {
@@ -3457,7 +777,6 @@ h1, h2, h3, h4 {
   font-weight: 600;
 }
 
-/* Footer Bottom Section */
 .google-footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -3469,7 +788,7 @@ h1, h2, h3, h4 {
 
 .google-footer-disclaimer {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   margin: 0 0 8px 0;
   max-width: 600px;
   line-height: 1.5;
@@ -3479,7 +798,6 @@ h1, h2, h3, h4 {
   font-size: 0.8rem;
   color: var(--text-secondary);
   margin: 0;
-  font-weight: 500;
 }
 
 .google-footer-utility-links {
@@ -3488,124 +806,24 @@ h1, h2, h3, h4 {
   margin: 0;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .google-footer-utility-links a {
   font-size: 0.8rem;
   color: var(--text-secondary);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: var(--transition-smooth);
 }
 
-.google-footer-utility-links a:hover {
-  color: var(--navy);
-  text-decoration: underline;
-}
+.google-footer-utility-links a:hover { color: var(--navy); }
 
-/* Penyesuaian Responsif iPad & Mobile */
 @media (max-width: 768px) {
   .google-footer-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  
   .google-footer-bottom {
     flex-direction: column;
     align-items: flex-start;
   }
-  
-  .google-footer-utility-links {
-    gap: 12px 16px;
-  }
 }
-
-/* Container Utama */
-.google-main-content {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Floating WhatsApp Button Style */
-.floating-whatsapp {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  background-color: #25d366;
-  color: #ffffff;
-  padding: 12px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 999;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.floating-whatsapp:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* ==========================================================================
-   BLOG.GOOGLE RESPONSIVE HERO GRID & VISUAL (4:3 RATIO FIX)
-   ========================================================================== */
-
-/* 1. Grid Responsif Hero (Stack 1-lajur pada Mobile, 2-lajur pada Desktop) */
-.google-hero-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  align-items: start;
-}
-
-@media (min-width: 768px) {
-  .google-hero-container {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-    gap: 40px;
-  }
-}
-
-/* 2. Bingkai Kad Gambar Hero Nisbah 4:3 */
-.google-hero-frame {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border-radius: var(--radius-card, 20px);
-  overflow: hidden;
-  border: 1px solid #dadce0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  background-color: var(--bg-track, #f8fafc);
-}
-
-.google-hero-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* 3. Senarai Pilihan (Bullet List) Hero */
-.google-hero-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 32px 0;
-  color: var(--text-main);
-  font-weight: 600;
-  line-height: 1.8;
-}
-
-.google-hero-list li {
-  margin-bottom: 8px;
-}
-
-.google-hero-list li:last-child {
-  margin-bottom: 0;
-}
-
-.google-hero-list .check-icon {
-  color: var(--accent-action);
-  margin-right: 8px;
-}
-

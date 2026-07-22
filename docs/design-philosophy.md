@@ -308,3 +308,9 @@ the design should still feel professional.
 Avoid following temporary design trends.
 
 Timelessness is the goal.
+
+---
+
+# Show ideas, not people.
+
+Whenever possible, use landscapes, architecture, nature, light, texture, and meaningful objects to communicate financial concepts. Let visitors imagine themselves in the story rather than showing them someone else’s story.

@@ -3548,3 +3548,64 @@ h1, h2, h3, h4 {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
+
+/* ==========================================================================
+   BLOG.GOOGLE RESPONSIVE HERO GRID & VISUAL (4:3 RATIO FIX)
+   ========================================================================== */
+
+/* 1. Grid Responsif Hero (Stack 1-lajur pada Mobile, 2-lajur pada Desktop) */
+.google-hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .google-hero-container {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 40px;
+  }
+}
+
+/* 2. Bingkai Kad Gambar Hero Nisbah 4:3 */
+.google-hero-frame {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-card, 20px);
+  overflow: hidden;
+  border: 1px solid #dadce0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background-color: var(--bg-track, #f8fafc);
+}
+
+.google-hero-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 3. Senarai Pilihan (Bullet List) Hero */
+.google-hero-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  color: var(--text-main);
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.google-hero-list li {
+  margin-bottom: 8px;
+}
+
+.google-hero-list li:last-child {
+  margin-bottom: 0;
+}
+
+.google-hero-list .check-icon {
+  color: var(--accent-action);
+  margin-right: 8px;
+}
+

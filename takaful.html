@@ -6,37 +6,41 @@ category: Perlindungan
 ---
 
 <!-- ========================================== -->
-<!-- 1. HERO SECTION                            -->
+<!-- 1. HERO SECTION (BLOG.GOOGLE SPLIT CARD)   -->
 <!-- ========================================== -->
 <section class="google-hero" aria-labelledby="takaful-hero-heading">
-  <div class="google-hero-container" style="display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 40px; align-items: start;">
+  <div class="google-hero-container google-hero-featured-grid">
     
-    <!-- Lajur Kiri: Teks -->
-    <div class="google-hero-content">
-      <span class="google-hero-eyebrow">Perlindungan Kewangan</span>
-      <h1 id="takaful-hero-heading" class="google-hero-title" style="font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.25; letter-spacing: -0.02em; margin-bottom: 20px;">
-        Pendapatan Anda Menyokong Kehidupan Hari Ini. Lindunginya Agar Kehidupan Itu Dapat Diteruskan.
-      </h1>
-      <p class="google-hero-lead" style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 16px;">
-        Pendapatan anda membiayai kehidupan hari ini dan membantu membina masa depan keluarga.
-      </p>
-      <p style="font-size: 1rem; color: var(--text-main); line-height: 1.7; margin-bottom: 32px;">
-        Melindunginya ialah salah satu langkah asas dalam perancangan kewangan yang menyeluruh. Sama ada anda baru memulakan kerjaya, membina keluarga atau mengembangkan perniagaan, saya membantu anda merancang perlindungan Takaful yang selari dengan kehidupan dan matlamat kewangan anda.
-      </p>
-      
+    <!-- Lajur Kiri: Kad Teks Berwarna (Tinted Content Card) -->
+    <div class="google-hero-card-content">
+      <div>
+        <span class="google-hero-eyebrow">Perlindungan Kewangan</span>
+        
+        <h1 id="takaful-hero-heading" class="google-hero-title">
+          Pendapatan Anda Menyokong Kehidupan Hari Ini. Lindunginya Agar Kehidupan Itu Dapat Diteruskan.
+        </h1>
+        
+        <p class="google-hero-lead">
+          Pendapatan anda membiayai kehidupan hari ini dan membantu membina masa depan keluarga.
+        </p>
+        
+        <p style="font-size: 0.975rem; color: var(--text-main); line-height: 1.7; margin-bottom: 32px;">
+          Melindunginya ialah salah satu langkah asas dalam perancangan kewangan yang menyeluruh. Sama ada anda baru memulakan kerjaya, membina keluarga atau mengembangkan perniagaan, saya membantu anda merancang perlindungan Takaful yang selari dengan kehidupan dan matlamat kewangan anda.
+        </p>
+      </div>
+
       <div class="google-hero-actions">
         <a href="https://wa.me/{{ site.phone }}" class="google-btn-primary" target="_blank" rel="noopener noreferrer">💬 Mulakan Perbualan</a>
         <a href="#mengapa" class="google-btn-secondary">Ketahui Proses ↓</a>
       </div>
     </div>
 
-    <!-- Lajur Kanan: Gambar Hero (Gaya blog.google 4:3 Aspect Ratio) -->
-    <div class="google-hero-visual" style="width: 100%; align-self: start;">
-      <div style="width: 100%; aspect-ratio: 4 / 3; border-radius: 20px; overflow: hidden; border: 1px solid #dadce0; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);">
+    <!-- Lajur Kanan: Kad Visual Gambar Pokok Berakar Kukuh (Nisbah 4:3) -->
+    <div class="google-hero-visual" style="width: 100%;">
+      <div class="google-hero-card-visual">
         <img 
-          src="{{ '/assets/images/perlindungan-takaful-pendapatan-sedia-hadapi-risiko.webp' | relative_url }}" 
-          alt="Seorang lelaki berdiri menghadap awan ribut gelap di laluan terbuka sambil memegang payung biru sebagai simbol perlindungan Takaful penggantian pendapatan keluarga" 
-          style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          src="{{ '/assets/images/takaful/hero-takaful-rooted-tree-malaysia.webp' | relative_url }}" 
+          alt="Pokok besar berakar kukuh di landskap semula jadi Malaysia pada waktu pagi dengan cahaya matahari lembut menembusi dedaunan." 
           width="1200"
           height="900"
           loading="eager"

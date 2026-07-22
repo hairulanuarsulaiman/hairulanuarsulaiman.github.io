@@ -866,9 +866,11 @@ p {
   margin: 0 0 16px 0;
 }
 
+/* Kad Gambar Hero (Stretch to match Content Card height) */
 .google-hero-card-visual {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;                  /* Mengikut tinggi kad teks secara automatik */
+  min-height: 380px;             /* Ketinggian minima yang selamat */
   border-radius: var(--radius-card, 24px);
   overflow: hidden;
   border: 1px solid var(--border-subtle, #dadce0);
@@ -879,12 +881,12 @@ p {
 .google-hero-card-visual img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;             /* Memastikan gambar dipotong kemas tanpa penyet */
   display: block;
 }
 
-@media (max-width: 640px) {
-  .google-hero-card-content {
-    padding: 28px 20px;
-  }
+/* Memastikan kontena visual mengambil tinggi penuh grid */
+.google-hero-visual {
+  width: 100%;
+  height: 100%;
 }

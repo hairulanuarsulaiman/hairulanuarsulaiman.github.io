@@ -486,12 +486,29 @@ p {
 }
 
 /* --------------------------------------------------------------------------
-   5. ARTICLE CONTENT & READABILITY SYSTEM
+   5. ARTICLE CONTENT & READABILITY SYSTEM (BLOG.GOOGLE EDITORIAL)
    -------------------------------------------------------------------------- */
-.google-article {
+.google-article,
+.google-article-wrapper,
+.google-article-container {
   max-width: 720px;
   margin: 0 auto;
-  padding: 80px 24px;
+  padding: 48px 24px;
+  box-sizing: border-box;
+}
+
+/* Ensure images inside Markdown articles stay within the centered column */
+.google-article img,
+.google-article-content img,
+.article-figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-card, 20px);
+  margin: 32px 0;
+  border: 1px solid var(--border-subtle, #dadce0);
+  display: block;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
 }
 
 .google-article-category {
@@ -505,10 +522,11 @@ p {
 }
 
 .google-article-title {
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  line-height: 1.2;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  line-height: 1.25;
   color: var(--navy);
   margin: 0 0 24px 0;
+  letter-spacing: -0.025em;
 }
 
 .google-byline-container {
@@ -540,21 +558,28 @@ p {
 }
 
 .google-article-content {
-  font-size: 1.125rem;
-  line-height: 1.85;
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: var(--text-main);
 }
 
-.google-article-content p { margin-bottom: 28px; }
-.google-article-content h2 { font-size: 1.75rem; margin: 52px 0 20px 0; }
-.google-article-content h3 { font-size: 1.35rem; margin: 36px 0 16px 0; }
+.google-article-content p {
+  margin-bottom: 24px;
+}
 
-.google-article-content img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius-card);
-  margin: 32px 0;
-  border: 1px solid var(--border-subtle);
+.google-article-content h2 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 48px 0 20px 0;
+  letter-spacing: -0.02em;
+}
+
+.google-article-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 36px 0 16px 0;
 }
 
 .google-article-content blockquote {
@@ -566,8 +591,10 @@ p {
   font-style: italic;
 }
 
-.google-article-content blockquote p { margin: 0; color: var(--navy); }
-
+.google-article-content blockquote p {
+  margin: 0;
+  color: var(--navy);
+}
 /* --------------------------------------------------------------------------
    6. E-E-A-T AUTHOR BOX & CTA COMPONENTS
    -------------------------------------------------------------------------- */

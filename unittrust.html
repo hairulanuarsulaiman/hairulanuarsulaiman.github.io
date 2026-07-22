@@ -6,42 +6,51 @@ category: Pelaburan
 ---
 
 <!-- ========================================== -->
-<!-- 1. HERO SECTION                            -->
+<!-- 1. HERO SECTION (BLOG.GOOGLE SPLIT CARD)   -->
 <!-- ========================================== -->
 <section class="google-hero" aria-labelledby="unittrust-hero-heading">
-  <div class="google-hero-container">
+  <div class="google-hero-container google-hero-featured-grid">
     
-    <!-- Lajur Teks -->
-    <div class="google-hero-content">
-      <span class="google-hero-eyebrow">Pelaburan & Pembinaan Kekayaan</span>
-      <h1 id="unittrust-hero-heading" class="google-hero-title">
-        Pelaburan Yang Baik Tidak Bermula Dengan Mencari Pulangan Tertinggi.
-      </h1>
-      <p class="google-hero-lead">
-        Ia bermula dengan memahami matlamat kewangan anda.
-      </p>
-      <p style="font-size: 1.05rem; color: var(--text-main); line-height: 1.8; margin-bottom: 32px;">
-        Sama ada anda ingin membina simpanan pendidikan anak, menyediakan dana persaraan atau mengembangkan kekayaan secara berperingkat, saya membantu anda melabur dengan disiplin, bukan emosi.
-      </p>
-      
+    <!-- Lajur Kiri: Kad Teks Tinted (50% Width) -->
+    <div class="google-hero-card-content">
+      <div>
+        <span class="google-hero-eyebrow">Pelaburan & Pembinaan Kekayaan</span>
+        
+        <h1 id="unittrust-hero-heading" class="google-hero-title">
+          Pelaburan Yang Baik Tidak Bermula Dengan Mencari Pulangan Tertinggi.
+        </h1>
+        
+        <p class="google-hero-lead">
+          Ia bermula dengan memahami matlamat kewangan anda.
+        </p>
+        
+        <p style="font-size: 0.975rem; color: var(--text-main); line-height: 1.7; margin-bottom: 32px;">
+          Sama ada anda ingin membina simpanan pendidikan anak, menyediakan dana persaraan atau mengembangkan kekayaan secara berperingkat, saya membantu anda melabur dengan disiplin, bukan emosi.
+        </p>
+      </div>
+
       <div class="google-hero-actions">
         <a href="https://wa.me/{{ site.phone }}" class="google-btn-primary" target="_blank" rel="noopener noreferrer">💬 Mulakan Perbualan</a>
         <a href="#mengapa" class="google-btn-secondary">Ketahui Pendekatan ↓</a>
       </div>
     </div>
 
-    <!-- Lajur Visual Frame Google Style -->
+    <!-- Lajur Kanan: Kad Visual Gambar Anak Pokok (Equal Height, 50% Width) -->
     <div class="google-hero-visual">
-      <div class="google-blog-card" style="text-align: center; padding: 48px 32px; width: 100%;">
-        <span style="font-size: 4.5rem; display: block; margin-bottom: 16px;" aria-hidden="true">📈</span>
-        <p style="font-weight: 700; color: var(--navy); margin: 0; font-size: 1.1rem;">Pertumbuhan Aset Berdisiplin</p>
-        <span style="font-size: 0.85rem; color: var(--text-secondary); display: block; margin-top: 6px;">Meluaskan Potensi Simpanan Jangka Panjang</span>
+      <div class="google-hero-card-visual">
+        <img 
+          src="{{ '/assets/images/unit-trust/unit-trust-young-tree-cultivated-landscape.webp' | relative_url }}" 
+          alt="Anak pokok yang tumbuh di kawasan tanaman berteres dengan cahaya pagi dan landskap menghijau di Malaysia." 
+          width="1200"
+          height="900"
+          loading="eager"
+          fetchpriority="high"
+        >
       </div>
     </div>
 
   </div>
 </section>
-
 <!-- ========================================== -->
 <!-- 2. MENGAPA MELABUR?                        -->
 <!-- ========================================== -->

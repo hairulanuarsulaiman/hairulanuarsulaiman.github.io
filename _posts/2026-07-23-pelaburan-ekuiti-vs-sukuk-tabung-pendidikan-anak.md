@@ -5,7 +5,7 @@ category: Pelaburan
 date: 2026-07-23
 permalink: /artikel/pelaburan-ekuiti-vs-sukuk-tabung-pendidikan-anak/
 author: "Hairul Anuar Bin Sulaiman"
-image: "/assets/images/artikel/art-08-ekuiti-vs-sukuk-education.webp"
+image: "/assets/images/artikel/art-08-young-tree-education-fund.webp"
 description: "Panduan ibu bapa membina dana pendidikan anak secara bersasar mengikut garis masa (time horizon) menggunakan gabungan ekuiti dan sukuk patuh Syariah."
 ---
 
@@ -17,8 +17,8 @@ description: "Panduan ibu bapa membina dana pendidikan anak secara bersasar meng
 ---
 
 {% include image.html 
-   src="/assets/images/artikel/art-08-ekuiti-vs-sukuk-education.webp" 
-   alt="Tumbuhan hijau kecil tumbuh di atas susunan syiling emas berlatarbelakangkan landskap yang tenang." %}
+   src="/assets/images/artikel/art-08-young-tree-education-fund.webp" 
+   alt="Pokok muda yang sihat tumbuh di tepi tasik yang tenang dalam landskap semula jadi Malaysia pada waktu pagi." %}
 
 Sebagai ibu bapa, salah satu matlamat kewangan terpenting yang ingin kita capai ialah memastikan dana pendidikan anak-anak mencukupi apabila tiba masanya mereka melangkah ke menara gading.
 

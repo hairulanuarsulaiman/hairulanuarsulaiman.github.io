@@ -2,27 +2,78 @@
 layout: default
 ---
 
-<article class="google-article-wrapper">
+<!-- ========================================== -->
+<!-- GEO & SEO STRUCTURED DATA (JSON-LD)        -->
+<!-- ========================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | jsonify }},
+  "image": "{{ page.image | default: '/assets/images/hairul-anuar.jpeg' | absolute_url }}",
+  "author": {
+    "@type": "Person",
+    "name": "Hairul Anuar Bin Sulaiman",
+    "jobTitle": "Associate Shariah Registered Financial Planner",
+    "url": "{{ '/tentang/' | absolute_url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hairulanuar Financial",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/assets/images/hairul-anuar.jpeg' | absolute_url }}"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "articleSection": {{ page.category | jsonify }}
+}
+</script>
+
+<!-- ========================================== -->
+<!-- EDITORIAL ARTICLE CONTAINER                -->
+<!-- ========================================== -->
+<article class="google-article-wrapper" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="google-article-container">
     
-    <span class="google-article-category">{{ page.category }}</span>
+    {% if page.category %}
+      <span class="google-article-category" itemprop="articleSection">{{ page.category }}</span>
+    {% endif %}
 
-    <h1 class="google-article-title">{{ page.title }}</h1>
+    <h1 class="google-article-title" itemprop="headline">{{ page.title }}</h1>
 
-    <div class="google-byline-container">
-      <img src="{{ '/assets/images/hairul-anuar.jpeg' | relative_url }}" alt="Hairul Anuar Sulaiman" class="google-byline-avatar">
+    <!-- Byline Meta Section -->
+    <div class="google-byline-container" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <img 
+        src="{{ '/assets/images/hairul-anuar.jpeg' | relative_url }}" 
+        alt="Hairul Anuar Bin Sulaiman" 
+        class="google-byline-avatar"
+        itemprop="image"
+      >
       <div>
-        <div class="google-byline-author">Hairul Anuar Bin Sulaiman</div>
-        <div class="google-byline-meta">Associate Shariah Registered Financial Planner • {{ page.date | date: "%d %b %Y" }}</div>
+        <div class="google-byline-author" itemprop="name">Hairul Anuar Bin Sulaiman</div>
+        <div class="google-byline-meta">
+          <span itemprop="jobTitle">Associate Shariah Registered Financial Planner</span> • 
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ page.date | date: "%d %b %Y" }}
+          </time>
+        </div>
       </div>
     </div>
 
-    <div class="google-article-content">
+    <!-- Main Content Body -->
+    <div class="google-article-content" itemprop="articleBody">
       {{ content }}
     </div>
 
-
-   {% include author-box.html %} 
+    <!-- E-E-A-T Author Box Component -->
+    {% include author-box.html %} 
     
   </div>
 </article>

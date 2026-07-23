@@ -6,41 +6,52 @@ category: Persaraan
 ---
 
 <!-- ========================================== -->
-<!-- 1. HERO SECTION                            -->
+<!-- 1. HERO SECTION (BLOG.GOOGLE SPLIT CARD)   -->
 <!-- ========================================== -->
 <section class="google-hero" aria-labelledby="persaraan-hero-heading">
-  <div class="google-hero-container">
+  <div class="google-hero-container google-hero-featured-grid">
     
-    <!-- Lajur Teks -->
-    <div class="google-hero-content">
-      <span class="google-hero-eyebrow">Perancangan Jangka Panjang</span>
-      <h1 id="persaraan-hero-heading" class="google-hero-title">
-        Kehidupan Selepas Bekerja Bermula Dengan Keputusan Yang Anda Buat Hari Ini.
-      </h1>
-      <p class="google-hero-lead">
-        Ramai orang membayangkan persaraan sebagai penghujung kerjaya. Saya melihatnya sebagai permulaan satu fasa kehidupan yang baharu.
-      </p>
-      <p style="font-size: 1.05rem; color: var(--text-main); line-height: 1.8; margin-bottom: 32px;">
-        Persaraan yang tenang tidak berlaku secara kebetulan. Ia dibina melalui keputusan kecil yang dibuat secara konsisten sepanjang kehidupan bekerja. Sama ada anda baru memulakan kerjaya atau semakin menghampiri usia persaraan, masih ada perkara yang boleh dirancang hari ini.
-      </p>
-      
+    <!-- Lajur Kiri: Kad Teks Tinted (50% Width) -->
+    <div class="google-hero-card-content">
+      <div>
+        <span class="google-hero-eyebrow">Perancangan Jangka Panjang</span>
+        
+        <h1 id="persaraan-hero-heading" class="google-hero-title">
+          Kehidupan Selepas Bekerja Bermula Dengan Keputusan Yang Anda Buat Hari Ini.
+        </h1>
+        
+        <p class="google-hero-lead">
+          Ramai orang membayangkan persaraan sebagai penghujung kerjaya. Saya melihatnya sebagai permulaan satu fasa kehidupan yang baharu.
+        </p>
+        
+        <p style="font-size: 0.975rem; color: var(--text-main); line-height: 1.7; margin-bottom: 32px;">
+          Persaraan yang tenang tidak berlaku secara kebetulan. Ia dibina melalui keputusan kecil yang dibuat secara konsisten sepanjang kehidupan bekerja. Sama ada anda baru memulakan kerjaya atau semakin menghampiri usia persaraan, masih ada perkara yang boleh dirancang hari ini.
+        </p>
+      </div>
+
       <div class="google-hero-actions">
         <a href="https://wa.me/{{ site.phone }}" class="google-btn-primary" target="_blank" rel="noopener noreferrer">💬 Mulakan Perbualan</a>
         <a href="#mengapa" class="google-btn-secondary">Ketahui Lebih Lanjut ↓</a>
       </div>
     </div>
 
-    <!-- Lajur Visual Frame Google Style -->
+    <!-- Lajur Kanan: Kad Visual Gambar Tasik Tenang (Equal Height, 50% Width) -->
     <div class="google-hero-visual">
-      <div class="google-blog-card" style="text-align: center; padding: 48px 32px; width: 100%;">
-        <span style="font-size: 4.5rem; display: block; margin-bottom: 16px;" aria-hidden="true">🌿</span>
-        <p style="font-weight: 700; color: var(--navy); margin: 0; font-size: 1.1rem;">Ketenangan Hari Tua</p>
-        <span style="font-size: 0.85rem; color: var(--text-secondary); display: block; margin-top: 6px;">Kebebasan Memilih Gaya Hidup Masa Hadapan</span>
+      <div class="google-hero-card-visual">
+        <img 
+          src="{{ '/assets/images/retirement/retirement-calm-lake-sunrise-malaysia.webp' | relative_url }}" 
+          alt="Tasik yang tenang di Malaysia pada waktu pagi dengan kabus nipis, pantulan air yang damai dan hutan menghijau di sekelilingnya." 
+          width="1200"
+          height="900"
+          loading="eager"
+          fetchpriority="high"
+        >
       </div>
     </div>
 
   </div>
 </section>
+
 
 <!-- ========================================== -->
 <!-- 2. MENGAPA PERSARAAN PENTING?             -->

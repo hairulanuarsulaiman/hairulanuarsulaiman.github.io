@@ -5,7 +5,7 @@ category: Takaful
 date: 2026-07-22
 permalink: /artikel/gaji-rm5000-sebulan-berapa-takaful-pendapatan-cukup/
 author: "Hairul Anuar Bin Sulaiman"
-image: "/assets/images/artikel/hero-takaful-rooted-tree-malaysia.webp"
+image: "/assets/images/artikel/article-05-penyakit-kritikal.webp"
 description: "Panduan praktikal dan formula mengira jumlah perlindungan Takaful penggantian pendapatan untuk individu bergaji RM5,000 sebulan di Malaysia."
 ---
 
@@ -17,8 +17,8 @@ description: "Panduan praktikal dan formula mengira jumlah perlindungan Takaful 
 ---
 
 {% include image.html 
-   src="/assets/images/artikel/hero-takaful-rooted-tree-malaysia.webp" 
-   alt="Akar pokok besar yang kukuh menampung batang dan daun hijau di padang yang tenang." %}
+   src="/assets/images/artikel/article-05-penyakit-kritikal.webp" 
+   alt="Pemandangan cahaya matahari pagi memasuki bilik yang tenang." %}
 
 Apabila membincangkan tentang Takaful, soalan paling kerap ditanya bukannya *"Syarikat mana paling bagus?"*, sebaliknya:
 

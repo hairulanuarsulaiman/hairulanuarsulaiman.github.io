@@ -12,7 +12,8 @@ description: "Fahami bagaimana dana unit trust patuh Syariah disaring oleh Suruh
 > **Ringkasan Eksekutif (Key Takeaways):**
 > * **Tidak Semua Unit Trust Halal:** Unit trust konvensional boleh melabur dalam institusi berasaskan Riba, judi, atau bon faedah, manakala dana **patuh Syariah** dikaitkan secara eksklusif dengan aset yang diluluskan syarak.
 > * **Saringan Dua Peringkat SC:** Suruhanjaya Sekuriti Malaysia (SC) menetapkan **Saringan Aktiviti Perniagaan** dan **Saringan Nisbah Kewangan** (seperti paras hutang berasaskan Riba) dua kali setahun.
-> * **Pemantauan Berterusan:** Setiap dana Syariah dipantau oleh Penasihat Syariah berdaftar (contohnya Amanie Advisors). Jika status saham berubah menjadi tidak patuh Syariah, ia wajib dilupuskan (*cleansing process*).
+> * **Pemantauan Berterusan:** Setiap dana Syariah dipantau oleh Penasihat Syariah berdaftar yang diluluskan SC. Jika status saham berubah menjadi tidak patuh Syariah, ia wajib dilupuskan (*cleansing process*).
+
 
 ---
 
@@ -50,14 +51,14 @@ Hanya ekuiti yang melepasi kedua-dua peringkat tapisan ini sahaja yang layak dim
 
 ## 3. Tadbir Urus & Peranan Penasihat Syariah
 
-Setiap dana unit trust Islamik diwajibkan oleh undang-undang untuk mempunyai **Penasihat Syariah** berdaftar yang diluluskan oleh SC. Tugas mereka ialah memantau perjalanan dan instrumen dana sepanjang masa.
+Setiap dana unit trust Islamik diwajibkan oleh undang-undang untuk mempunyai **Penasihat Syariah** berdaftar (sama ada jawatankuasa dalaman atau firma penasihat Syariah bertauliah) yang diluluskan oleh Suruhanjaya Sekuriti Malaysia. 
 
-Sebagai contoh, dana Islamik yang ditawarkan oleh Phillip Mutual Berhad dipantau oleh **Amanie Advisors Sdn. Bhd.**, sebuah firma penasihat Syariah bebas yang diiktiraf di peringkat antarabangsa.
+Tugas utama mereka ialah memantau perjalanan, instrumen, dan pecahan portfolio dana secara berkala agar sentiasa patuh syarak sepanjang masa.
 
 ### Apa Jadi Jika Saham Menjadi Tidak Patuh Syariah?
 Jika sesebuah syarikat yang dipegang oleh dana tersebut kehilangan status patuh Syariah semasa semakan berkala SC:
-* Penasihat Syariah akan mengarahkan pengurus dana melupuskan (*divest*) saham tersebut dalam tempoh yang ditetapkan.
-* Sebarang keuntungan modal (*capital gain*) daripada pelupusan tersebut wajib disalurkan kepada badan kebajikan menerusi proses **Pembersihan Purification Dana**.
+* Penasihat Syariah akan mengarahkan pengurus dana melupuskan (*divest*) saham tersebut dalam tempoh yang ditetapkan mengikut garis panduan rasmi.
+* Sebarang keuntungan modal (*capital gain*) yang terhasil daripada pelupusan tersebut wajib disalurkan kepada badan kebajikan menerusi proses **Pembersihan Purification Dana**.
 
 ---
 

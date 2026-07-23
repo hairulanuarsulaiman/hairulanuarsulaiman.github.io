@@ -5,62 +5,69 @@ description: Kenali Hairul Anuar Bin Sulaiman. Membantu individu dan keluarga di
 ---
 
 <!-- ========================================== -->
-<!-- 1. HERO PROFILE SECTION                    -->
+<!-- 1. HERO PROFILE SECTION (FEATURED CARD)    -->
 <!-- ========================================== -->
 <section class="google-hero" aria-labelledby="about-heading">
-  <div class="google-hero-container" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+  <div class="google-hero-container google-hero-featured-grid">
     
-    <!-- Lajur Visual: Gambar Profil Responsif -->
-    <div class="google-hero-visual" style="display: flex; justify-content: center; align-items: center;">
-      <div class="google-blog-card" style="padding: 0; border-radius: 50%; width: 280px; height: 280px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
-        <picture>
-          <!-- AVIF -->
-          <source 
-            srcset="{{ '/assets/images/hero-320.avif' | relative_url }} 320w,
-                    {{ '/assets/images/hero-640.avif' | relative_url }} 640w"
-            sizes="(max-width: 480px) 280px, 320px"
-            type="image/avif">
+    <!-- Lajur Kiri: Kad Teks Tinted (50% Width) -->
+    <div class="google-hero-card-content">
+      <div>
+        <span class="google-hero-eyebrow">Profil Profesional</span>
+        
+        <h1 id="about-heading" class="google-hero-title">
+          Hairul Anuar Bin Sulaiman
+        </h1>
+        
+        <p style="font-size: 1.05rem; line-height: 1.6; color: var(--accent-action); font-weight: 600; margin: 0 0 20px 0;">
+          Associate Shariah Registered Financial Planner<br>
+          Islamic Financial Adviser Representative (IFAR)<br>
+          Unit Trust Scheme Consultant
+        </p>
 
-          <!-- WebP -->
-          <source 
-            srcset="{{ '/assets/images/hero-320.webp' | relative_url }} 320w,
-                    {{ '/assets/images/hero-640.webp' | relative_url }} 640w"
-            sizes="(max-width: 480px) 280px, 320px"
-            type="image/webp">
-
-          <!-- Fallback JPEG -->
-          <img 
-            src="{{ '/assets/images/hairul-anuar.jpeg' | relative_url }}" 
-            alt="Hairul Anuar Sulaiman - Perunding Kewangan Islam & Unit Trust" 
-            style="width: 100%; height: 100%; object-fit: cover; display: block;"
-            loading="eager"
-            decoding="async"
-            width="640"
-            height="640"
-          >
-        </picture>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 28px;">
+          Membantu individu dan keluarga membina asas kewangan yang kukuh, teratur, dan selaras dengan prinsip Syariah melalui perancangan holistik.
+        </p>
       </div>
-    </div>
 
-    <!-- Lajur Teks: Nama & Jawatan Rasmi -->
-    <div class="google-hero-content">
-      <span class="google-hero-eyebrow">Profil Profesional</span>
-      <h1 id="about-heading" class="google-hero-title">
-        Hairul Anuar Bin Sulaiman
-      </h1>
-      <p style="font-size: 1.15rem; line-height: 1.6; color: var(--accent-action); font-weight: 600; margin: 0 0 24px 0;">
-        Associate Shariah Registered Financial Planner<br>
-        Islamic Financial Adviser Representative (IFAR)<br>
-        Unit Trust Scheme Consultant
-      </p>
       <div class="google-hero-actions">
         <a href="https://wa.me/{{ site.phone }}" class="google-btn-primary" target="_blank" rel="noopener noreferrer">Hubungi Saya →</a>
         <a href="#misi" class="google-btn-secondary">Baca Misi Saya</a>
       </div>
     </div>
 
+    <!-- Lajur Kanan: Kad Visual Gambar Profil (Equal Height, 50% Width) -->
+    <div class="google-hero-visual">
+      <div class="google-hero-card-visual" style="display: flex; justify-content: center; align-items: center; background-color: #f4f8f6;">
+        <div style="width: 260px; height: 260px; border-radius: 50%; overflow: hidden; border: 4px solid var(--bg-pure); box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);">
+          <picture>
+            <source 
+              srcset="{{ '/assets/images/hero-320.avif' | relative_url }} 320w,
+                      {{ '/assets/images/hero-640.avif' | relative_url }} 640w"
+              sizes="260px"
+              type="image/avif">
+            <source 
+              srcset="{{ '/assets/images/hero-320.webp' | relative_url }} 320w,
+                      {{ '/assets/images/hero-640.webp' | relative_url }} 640w"
+              sizes="260px"
+              type="image/webp">
+            <img 
+              src="{{ '/assets/images/hairul-anuar.jpeg' | relative_url }}" 
+              alt="Hairul Anuar Sulaiman - Perunding Kewangan Islam & Unit Trust" 
+              style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              loading="eager"
+              decoding="async"
+              width="640"
+              height="640"
+            >
+          </picture>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 <!-- ========================================== -->
 <!-- 2. MISI SAYA                               -->

@@ -63,10 +63,16 @@ Pendekatan terbaik yang digunakan oleh perancang kewangan profesional ialah **Pe
 
 Daripada mengekalkan profil risiko yang sama selama 18 tahun, ibu bapa secara berdisiplin mengubah agihan aset (*asset allocation*) seiring dengan usia anak:
 
-```text
-[Umur 0-10 Tahunan]  ---> 80% Ekuiti  + 20% Sukuk  (Mengejar Pertumbuhan)
-[Umur 11-14 Tahunan] ---> 50% Ekuiti  + 50% Sukuk  (Mengimbangi Risiko)
-[Umur 15-18 Tahunan] ---> 20% Ekuiti  + 80% Sukuk  (Kunci Keuntungan & Pelihara Modal)
+> * **Umur 0–10 Tahun:** `80% Ekuiti + 20% Sukuk`  
+>   *(Fasa Mengejar Pertumbuhan Modal)*
+> 
+> * **Umur 11–14 Tahun:** `50% Ekuiti + 50% Sukuk`  
+>   *(Fasa Mengimbangi Risiko & Mengunci Sebahagian Keuntungan)*
+> 
+> * **Umur 15–18 Tahun:** `20% Ekuiti + 80% Sukuk / Pasaran Wang`  
+>   *(Fasa Memelihara Modal Sebelum Kemasukan Universiti)*
+
+---
 
 ## Kesimpulan: Mula Dengan Garis Masa Yang Jelas
 

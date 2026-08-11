@@ -906,3 +906,31 @@ p {
     align-items: flex-start;
   }
 }
+
+/* Remove or comment out this block */
+.floating-whatsapp {
+  display: none; /* Add this line if you want to leave the class in CSS */
+}
+
+/* ==========================================================================
+   OPTION 3: EDITORIAL DESK EXTENSIONS
+   ========================================================================== */
+
+/* Clean top divider for borderless narrative columns */
+.editorial-divider-top {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 24px;
+}
+
+/* Subtle border card option for credentials */
+.editorial-card-subtle {
+  background-color: var(--bg-pure);
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  transition: var(--transition-smooth);
+}
+
+.editorial-card-subtle:hover {
+  border-color: var(--border-subtle);
+}

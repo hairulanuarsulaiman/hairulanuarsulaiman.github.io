@@ -934,3 +934,54 @@ p {
 .editorial-card-subtle:hover {
   border-color: var(--border-subtle);
 }
+
+/* ==========================================================================
+   UNIFORM CALM CTA COMPONENT
+   ========================================================================== */
+.calm-cta-section {
+  background-color: var(--bg-pure);
+  border-top: 1px solid var(--border-light);
+  padding: 100px 24px;
+}
+
+.calm-cta-card {
+  background-color: var(--bg-track);
+  border: 1px solid var(--border-light);
+  box-shadow: none;
+  padding: 64px 36px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: var(--radius-card);
+}
+
+.calm-cta-eyebrow {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.calm-cta-title {
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  color: var(--navy);
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.calm-cta-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-main);
+  max-width: 640px;
+  margin: 0 auto 32px auto;
+}
+
+.calm-cta-buttons {
+  display: flex;
+  justify-content: center;
+}

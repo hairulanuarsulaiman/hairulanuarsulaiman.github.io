@@ -985,3 +985,113 @@ p {
   display: flex;
   justify-content: center;
 }
+
+/* ==========================================================================
+   HOMEPAGE & EDITORIAL DESK EXTENSIONS
+   ========================================================================== */
+
+/* Hero overrides for clean typography focus */
+.hero-card-clean {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.hero-visual-frame {
+  border: 1px solid var(--border-light);
+  box-shadow: none;
+}
+
+.hero-list-clean {
+  font-weight: 500;
+  color: var(--text-main);
+  margin-bottom: 36px;
+}
+
+.hero-list-clean li {
+  margin-bottom: 10px;
+}
+
+.hero-bullet-dash {
+  color: var(--navy);
+  margin-right: 8px;
+}
+
+/* Credentials section cards */
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.credential-card {
+  background-color: var(--bg-pure);
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+}
+
+.credential-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Scope & Process layout */
+.scope-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.scope-pillar-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 24px;
+}
+
+.scope-pillar-icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.process-sub-block {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 48px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+}
+
+.process-step-num {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.process-step-title {
+  font-size: 0.95rem;
+  color: var(--navy);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.process-step-desc {
+  font-size: 0.875rem;
+  color: var(--text-main);
+  line-height: 1.5;
+  margin: 0;
+}

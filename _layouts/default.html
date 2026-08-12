@@ -3,92 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="PNhnhspweDAttE-7hsHlMj_7_Lx6NbWMzrXxvobkciM" />
-  
-  <title>{% if page.title %}{{ page.title }} | {% endif %}Hairul Anuar Sulaiman</title>
-  
-  <link rel="icon" type="image/png" sizes="512x512" href="{{ '/assets/images/favicon.png' | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
-  
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
-  <meta name="author" content="{{ site.author }}">
-
-  <!-- Open Graph / Meta Sosial Gaya Google Corporate -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}Hairul Anuar Sulaiman">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
-  <meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/images/perlindungan-takaful-pendapatan-sedia-hadapi-risiko.webp' | absolute_url }}{% endif %}">
-  <meta property="og:locale" content="ms_MY">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Fail CSS Utama Baharu -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-  {% if page.schema %}
-  <!-- Page-specific JSON-LD (Skema Khusus Halaman) -->
-  {{ page.schema }}
-  {% endif %}
-
-  {% if page.faq_schema %}
-  <!-- FAQ Page JSON-LD (Skema FAQ Google AI-Friendly) -->
-  {{ page.faq_schema }}
-  {% endif %}
-
-  <!-- Global Site Schema (Skema Standard Kewangan) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FinancialService",
-    "name": "Hairul Anuar Sulaiman",
-    "description": "{{ site.description }}",
-    "url": "{{ site.url }}",
-    "image": "{{ '/assets/images/profile.jpeg' | absolute_url }}",
-    "telephone": "{{ site.phone }}",
-    "areaServed": "Malaysia",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "{{ site.city }}",
-      "addressRegion": "{{ site.state }}",
-      "addressCountry": "Malaysia"
-    }
-  }
-  </script>
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
 </head>
-
 <body>
 
-  <!-- NAVIGASI UTAMA (GAYA BLOG.GOOGLE) -->
+  <!-- 1. GLOBAL HEADER INCLUDE -->
   {% include header.html %}
 
-  <!-- KANDUNGAN UNIK HALAMAN -->
-  <main class="google-main-content">
-    {{ content }}
-  </main>
+  <!-- 2. PAGE CONTENT -->
+  {{ content }}
 
-  <!-- PENGAKI HALAMAN MINIMALIS -->
+  <!-- 3. GLOBAL FOOTER INCLUDE -->
   {% include footer.html %}
-
-  <!-- Floating WhatsApp Action Button -->
-  <aside>
-    <a href="https://wa.me/{{ site.phone }}" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Hubungi saya melalui WhatsApp">💬 WhatsApp</a>
-  </aside>
-
-  <!-- Skrip Ringkas Mengawal Penutupan Menu Drawer Selepas Pautan Ditekan -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const menuLinks = document.querySelectorAll('.google-nav-list a');
-      menuLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          const checkbox = document.getElementById('menu-toggle');
-          if (checkbox && checkbox.checked) {
-            checkbox.checked = false;
-          }
-        });
-      });
-    });
-  </script>
 
 </body>
 </html>

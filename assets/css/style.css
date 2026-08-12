@@ -1,1097 +1,386 @@
 /* ==========================================================================
-   BLOG.GOOGLE (THE KEYWORD) MASTER DESIGN SYSTEM
-   Brand: Hairul Anuar Bin Sulaiman
+   QUIET LUXURY DESIGN SYSTEM (MASTER STYLESHEET)
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
 
-/* --------------------------------------------------------------------------
-   1. DESIGN TOKENS & SYSTEM FOUNDATIONS
-   -------------------------------------------------------------------------- */
 :root {
-  /* Google Inspired Minimalist Palette */
-  --bg-pure: #ffffff;            /* Base canvas */
-  --bg-track: #f8fafc;           /* Soft surface background (slate-50) */
-  --navy: #0f172a;               /* Deep slate-navy for primary headings & authority */
-  --text-main: #334155;          /* Highly legible body text (slate-700) */
-  --text-secondary: #64748b;     /* Muted metadata & subheadings (slate-500) */
-  --accent-action: #047857;      /* Clean Syariah-compliant Sage Green */
-  --border-subtle: #dadce0;      /* Standard Google card & divider border */
-  --border-light: #f1f5f9;       /* Soft inner dividers */
+  /* Quiet Luxury Parchment Palette */
+  --bg-parchment: #f7f5f0;
+  --bg-parchment-subtle: #f2efe9;
+  --text-obsidian: #18181b;
+  --text-body: #3f3e3a;
+  --text-muted: #716b61;
+  --border-parchment: #e7e3d8;
+  --accent-emerald: #047857;
 
-  /* Typography Structure */
-  --font-global: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-
-  /* Geometry & Curves */
-  --radius-card: 24px;           /* Standard blog.google rounded card corners */
-  --radius-btn: 100px;           /* Signature Google pill buttons */
-  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Editorial Typography Families */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Base Reset & Foundations */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
+/* Global Canvas Reset */
 body {
   margin: 0;
-  font-family: var(--font-global);
-  background-color: var(--bg-pure);
-  color: var(--text-main);
-  line-height: 1.65;
+  padding: 0;
+  background-color: var(--bg-parchment);
+  color: var(--text-body);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 1.85;
   letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
 }
 
-/* ==========================================================================
-   BLOG.GOOGLE HARMONIZED TYPOGRAPHY SYSTEM
-   ========================================================================== */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-global);
-  color: var(--navy);
-  font-weight: 600;                 /* Match H1 semi-bold editorial weight */
-  letter-spacing: -0.02em;          /* Tight Google tracking */
-  margin-top: 0;
-  line-height: 1.35;
-}
-
-h2, .google-section-title {
-  font-size: clamp(1.35rem, 2vw, 1.65rem);
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-
-h3, .google-card-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  margin-bottom: 12px;
-}
-
-p {
-  margin-top: 0;
-}
-
-/* Main Container Layout */
-.google-main-content {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.google-layout-section {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 80px 24px;
-}
-
-.google-center-header {
+/* Masthead Header */
+.luxury-masthead {
+  padding: 48px 24px 40px 24px;
   text-align: center;
-  margin-bottom: 48px;
+  border-bottom: 1px solid var(--border-parchment);
+  background-color: var(--bg-parchment-subtle);
 }
 
-.google-center-header h2 {
-  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
-  font-weight: 600;
-  color: var(--navy);
-  margin-bottom: 12px;
-}
-
-/* --------------------------------------------------------------------------
-   2. HEADER & NAVIGATION SYSTEM
-   -------------------------------------------------------------------------- */
-.google-site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border-subtle);
-  transition: var(--transition-smooth);
-}
-
-.google-nav-container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 16px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.google-nav-logo {
+.luxury-monogram {
+  font-family: var(--font-serif);
   font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--navy);
-  text-decoration: none;
-  letter-spacing: -0.02em;
-  transition: var(--transition-smooth);
-}
-
-.google-nav-logo:hover {
-  color: var(--accent-action);
-}
-
-.google-nav-list {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.google-nav-list a {
-  text-decoration: none;
-  font-size: 0.925rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  transition: var(--transition-smooth);
-  position: relative;
-  padding: 4px 0;
-}
-
-.google-nav-list a:hover,
-.google-nav-list a.active {
-  color: var(--navy);
   font-weight: 600;
-}
-
-.google-nav-list a.active::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--navy);
-  border-radius: 2px;
-}
-
-/* Pill CTA Button in Header */
-.google-nav-list .google-btn-nav {
-  padding: 8px 22px !important;
-  border-radius: var(--radius-btn) !important;
-  background-color: var(--navy) !important;
-  color: var(--bg-pure) !important;
-  font-weight: 600 !important;
-  font-size: 0.9rem !important;
-}
-
-.google-nav-list .google-btn-nav:hover {
-  background-color: var(--accent-action) !important;
-  transform: translateY(-1px);
-}
-
-.google-nav-list .google-btn-nav::after {
-  display: none;
-}
-
-/* Mobile Navigation Controls */
-.google-menu-checkbox { display: none; }
-.google-menu-icon {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 5px;
-  padding: 4px;
-}
-
-.google-menu-icon span {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background-color: var(--navy);
-  border-radius: 2px;
-  transition: var(--transition-smooth);
-}
-
-@media (max-width: 868px) {
-  .google-menu-icon { display: flex; }
-
-  .google-nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: var(--bg-pure);
-    border-bottom: 1px solid var(--border-subtle);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
-  }
-
-  .google-nav-list {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 16px;
-  }
-
-  .google-nav-list li { width: 100%; }
-
-  .google-nav-list a {
-    display: block;
-    font-size: 1rem;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--border-light);
-  }
-
-  .google-nav-list .google-btn-nav {
-    display: inline-block;
-    text-align: center;
-    margin-top: 8px;
-    width: 100%;
-    border-bottom: none !important;
-  }
-
-  .google-menu-checkbox:checked ~ .google-nav-links { max-height: 450px; }
-
-  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(2) { opacity: 0; }
-  .google-menu-checkbox:checked ~ .google-menu-icon span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
-}
-
-/* --------------------------------------------------------------------------
-   3. HERO SECTION & FEATURED SPLIT CARD (50/50 EQUAL HEIGHT)
-   -------------------------------------------------------------------------- */
-.google-hero {
-  background-color: var(--bg-pure);
-  padding: 60px 24px 40px 24px;
-}
-
-.google-hero-container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-/* Balanced 50/50 Grid Layout */
-.google-hero-featured-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-  align-items: stretch;
-}
-
-@media (min-width: 868px) {
-  .google-hero-featured-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-}
-
-.google-hero-eyebrow {
-  display: inline-block;
-  font-size: 0.825rem;
-  font-weight: 700;
-  color: var(--accent-action);
+  color: var(--text-obsidian);
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
-/* Left Tinted Content Card */
-.google-hero-card-content {
-  background-color: #f4f8f6;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-card);
-  padding: 40px 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.google-hero-card-content .google-hero-title {
-  font-size: clamp(1.4rem, 2.1vw, 1.85rem);
-  font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
-  color: var(--navy);
-  margin: 0 0 16px 0;
-}
-
-.google-hero-lead {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: var(--text-secondary);
-  margin: 0 0 20px 0;
-}
-
-/* Bullet list inside Hero */
-.google-hero-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 32px 0;
-  color: var(--text-main);
-  font-weight: 600;
-  line-height: 1.8;
-}
-
-.google-hero-list li { margin-bottom: 8px; }
-.google-hero-list li:last-child { margin-bottom: 0; }
-.google-hero-list .check-icon {
-  color: var(--accent-action);
-  margin-right: 8px;
-}
-
-/* Right Equal-Height Image Card Frame */
-.google-hero-visual {
-  width: 100%;
-  height: 100%;
-}
-
-.google-hero-card-visual {
-  width: 100%;
-  height: 100%;
-  min-height: 380px;
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  border: 1px solid var(--border-subtle);
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
-  background-color: var(--bg-track);
-}
-
-.google-hero-card-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Hero Action Buttons */
-.google-hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.google-btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: var(--radius-btn);
-  background-color: var(--navy);
-  color: var(--bg-pure);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: var(--transition-smooth);
-}
-
-.google-btn-primary:hover {
-  background-color: var(--accent-action);
-  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
-  transform: translateY(-1px);
-}
-
-.google-btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 24px;
-  border-radius: var(--radius-btn);
-  border: 1px solid var(--border-subtle);
-  background-color: var(--bg-pure);
-  color: var(--navy);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: var(--transition-smooth);
-}
-
-.google-btn-secondary:hover {
-  border-color: var(--navy);
-  background-color: var(--bg-track);
-}
-
-@media (max-width: 640px) {
-  .google-hero-card-content {
-    padding: 28px 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .google-hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .google-btn-primary, .google-btn-secondary {
-    text-align: center;
-    width: 100%;
-  }
-}
-
-/* --------------------------------------------------------------------------
-   4. STREAM & CARD GRID SYSTEM (BLOG.GOOGLE CARDS)
-   -------------------------------------------------------------------------- */
-.google-stream-section {
-  background-color: var(--bg-track);
-  padding: 80px 24px;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.google-stream-container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.google-stream-header {
-  margin-bottom: 48px;
-  text-align: left;
-}
-
-.google-stream-eyebrow {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.google-stream-title {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--navy);
-  margin: 0 0 12px 0;
-}
-
-.google-stream-desc {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  margin: 0;
-  max-width: 680px;
-}
-
-.google-flex-grid,
-.google-stream-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-}
-
-.google-blog-card,
-.google-minimal-card {
-  background: var(--bg-pure);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-card);
-  padding: 36px 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: var(--transition-smooth);
-}
-
-.google-blog-card:hover,
-.google-minimal-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.05);
-  border-color: var(--navy);
-}
-
-.google-card-link {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.google-card-category {
-  font-size: 0.775rem;
-  font-weight: 700;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.google-card-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.35;
-  color: var(--navy);
-  margin: 0 0 12px 0;
-}
-
-.google-card-excerpt {
-  font-size: 0.95rem;
-  color: var(--text-main);
-  line-height: 1.65;
-  margin: 0 0 24px 0;
-}
-
-.google-card-action {
-  margin-top: auto;
+.luxury-name {
   font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--navy);
+  font-weight: 500;
+  color: var(--text-obsidian);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
-/* --------------------------------------------------------------------------
-   5. ARTICLE CONTENT & READABILITY SYSTEM (BLOG.GOOGLE EDITORIAL)
-   -------------------------------------------------------------------------- */
-.google-article,
-.google-article-wrapper,
-.google-article-container {
-  max-width: 720px;
+.luxury-title-sub {
+  font-size: 0.725rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 4px;
+}
+
+/* Master Editorial Canvas (640px Column) */
+.luxury-canvas {
+  max-width: 640px;
   margin: 0 auto;
-  padding: 48px 24px;
+  padding: 90px 24px 140px 24px;
   box-sizing: border-box;
 }
 
-.google-article img,
-.google-article-content img,
-.article-figure img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: var(--radius-card);
-  margin: 32px 0;
-  border: 1px solid var(--border-subtle);
-  display: block;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+/* Stage Sections & Spacing */
+.luxury-section {
+  margin-bottom: 110px;
 }
 
-.google-article-category {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.google-article-title {
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  line-height: 1.25;
-  font-weight: 600;
-  color: var(--navy);
-  margin: 0 0 24px 0;
-  letter-spacing: -0.025em;
-}
-
-.google-byline-container {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding-bottom: 24px;
-  margin-bottom: 40px;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.google-byline-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid var(--border-subtle);
-}
-
-.google-byline-author {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--navy);
-}
-
-.google-byline-meta {
-  font-size: 0.825rem;
-  color: var(--text-secondary);
-}
-
-.google-article-content {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: var(--text-main);
-}
-
-.google-article-content p {
-  margin-bottom: 24px;
-}
-
-.google-article-content h2 {
-  font-size: 1.65rem;
-  font-weight: 600;
-  color: var(--navy);
-  margin: 48px 0 20px 0;
-  letter-spacing: -0.02em;
-}
-
-.google-article-content h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--navy);
-  margin: 36px 0 16px 0;
-}
-
-.google-article-content blockquote {
-  margin: 36px 0;
-  padding: 24px 32px;
-  background-color: var(--bg-track);
-  border-left: 4px solid var(--navy);
-  border-radius: 0 var(--radius-card) var(--radius-card) 0;
-  font-style: italic;
-}
-
-.google-article-content blockquote p {
-  margin: 0;
-  color: var(--navy);
-}
-
-/* --------------------------------------------------------------------------
-   6. E-E-A-T AUTHOR BOX & CTA COMPONENTS
-   -------------------------------------------------------------------------- */
-.google-author-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 32px;
-  background-color: var(--bg-track);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-card);
-  padding: 40px;
-  margin: 64px 0 40px 0;
-}
-
-.google-author-avatar-container { flex-shrink: 0; }
-
-.google-author-img {
-  display: block;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid var(--border-subtle);
-}
-
-.google-author-name {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 6px 0;
-}
-
-.google-author-bio {
-  font-size: 0.95rem;
-  color: var(--navy);
-  margin: 0 0 8px 0;
-}
-
-.google-author-bio strong { color: var(--accent-action); }
-
-.google-author-desc {
-  font-size: 0.95rem;
-  color: var(--text-main);
-  line-height: 1.6;
-  margin: 0 0 20px 0;
-}
-
-.google-author-link {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--navy);
-  text-decoration: none;
-}
-
-.google-author-link:hover { color: var(--accent-action); }
-
-@media (max-width: 640px) {
-  .google-author-box {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 32px 24px;
-  }
-}
-
-/* Call To Action Section */
-.google-cta-section {
-  background-color: var(--bg-pure);
-  padding: 80px 24px;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.google-cta-card {
-  max-width: 850px;
-  margin: 0 auto;
-  background: var(--bg-track);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-card);
-  padding: 56px 32px;
+.luxury-section-center {
   text-align: center;
+  padding-top: 10px;
 }
 
-.google-cta-eyebrow {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--accent-action);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.google-cta-title {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--navy);
-  margin: 0 0 16px 0;
-}
-
-.google-cta-desc {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  margin: 0 auto 36px auto;
-  max-width: 600px;
-}
-
-.google-cta-buttons {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* Floating WhatsApp Button */
-.floating-whatsapp {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  background-color: #25d366;
-  color: #ffffff;
-  padding: 12px 22px;
-  border-radius: var(--radius-btn);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  z-index: 999;
-  transition: var(--transition-smooth);
-}
-
-.floating-whatsapp:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* --------------------------------------------------------------------------
-   7. FOOTER SYSTEM
-   -------------------------------------------------------------------------- */
-.google-site-footer {
-  background-color: var(--bg-track);
-  border-top: 1px solid var(--border-subtle);
-  padding: 64px 24px 40px 24px;
-  color: var(--text-main);
-  font-size: 0.9rem;
-}
-
-.google-footer-container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.google-footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 48px;
-  padding-bottom: 48px;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.google-footer-name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin: 0 0 8px 0;
-}
-
-.google-footer-role {
-  font-weight: 600;
-  color: var(--accent-action);
-  margin: 0 0 16px 0;
-}
-
-.google-footer-bio {
-  color: var(--text-secondary);
-  line-height: 1.65;
-  margin: 0;
-  max-width: 520px;
-}
-
-.google-footer-column h4 {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--navy);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin: 0 0 16px 0;
-}
-
-.google-footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.google-footer-links a {
-  text-decoration: none;
-  color: var(--text-secondary);
-  transition: var(--transition-smooth);
-}
-
-.google-footer-links a:hover {
-  color: var(--navy);
-  font-weight: 600;
-}
-
-.google-footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-top: 32px;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.google-footer-disclaimer {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  margin: 0 0 8px 0;
-  max-width: 600px;
-  line-height: 1.5;
-}
-
-.google-footer-copyright {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  margin: 0;
-}
-
-.google-footer-utility-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.google-footer-utility-links a {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  text-decoration: none;
-  transition: var(--transition-smooth);
-}
-
-.google-footer-utility-links a:hover { color: var(--navy); }
-
-@media (max-width: 768px) {
-  .google-footer-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-  .google-footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* Remove or comment out this block */
-.floating-whatsapp {
-  display: none; /* Add this line if you want to leave the class in CSS */
-}
-
-/* ==========================================================================
-   OPTION 3: EDITORIAL DESK EXTENSIONS
-   ========================================================================== */
-
-/* Clean top divider for borderless narrative columns */
-.editorial-divider-top {
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 24px;
-}
-
-/* Subtle border card option for credentials */
-.editorial-card-subtle {
-  background-color: var(--bg-pure);
-  padding: 32px;
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
-  transition: var(--transition-smooth);
-}
-
-.editorial-card-subtle:hover {
-  border-color: var(--border-subtle);
-}
-
-/* ==========================================================================
-   UNIFORM CALM CTA COMPONENT
-   ========================================================================== */
-.calm-cta-section {
-  background-color: var(--bg-pure);
-  border-top: 1px solid var(--border-light);
-  padding: 100px 24px;
-}
-
-.calm-cta-card {
-  background-color: var(--bg-track);
-  border: 1px solid var(--border-light);
-  box-shadow: none;
-  padding: 64px 36px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: var(--radius-card);
-}
-
-.calm-cta-eyebrow {
-  color: var(--text-secondary);
-  font-weight: 600;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.calm-cta-title {
-  font-size: clamp(1.8rem, 3vw, 2.3rem);
-  color: var(--navy);
-  margin-top: 8px;
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-
-.calm-cta-desc {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--text-main);
-  max-width: 640px;
-  margin: 0 auto 32px auto;
-}
-
-.calm-cta-buttons {
-  display: flex;
-  justify-content: center;
-}
-
-/* ==========================================================================
-   HOMEPAGE & EDITORIAL DESK EXTENSIONS
-   ========================================================================== */
-
-/* Hero overrides for clean typography focus */
-.hero-card-clean {
-  background-color: transparent;
+.luxury-divider {
   border: none;
-  padding: 0;
+  border-top: 1px solid var(--border-parchment);
+  margin: 0 0 110px 0;
 }
 
-.hero-visual-frame {
-  border: 1px solid var(--border-light);
-  box-shadow: none;
+/* Typography Hierarchy */
+.luxury-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  display: block;
+  margin-bottom: 16px;
 }
 
-.hero-list-clean {
-  font-weight: 500;
-  color: var(--text-main);
+.luxury-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  font-weight: 600;
+  color: var(--text-obsidian);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px 0;
+}
+
+.luxury-subheading {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: var(--text-obsidian);
+  letter-spacing: -0.015em;
+  margin: 0 0 24px 0;
+}
+
+.luxury-subheading-cta {
+  font-size: clamp(2rem, 3.8vw, 2.6rem);
+}
+
+.luxury-prose {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  line-height: 1.85;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.luxury-prose-lead {
+  font-size: 1.125rem;
   margin-bottom: 36px;
 }
 
-.hero-list-clean li {
-  margin-bottom: 10px;
+.luxury-prose-cta {
+  margin: 0 auto 40px auto;
 }
 
-.hero-bullet-dash {
-  color: var(--navy);
-  margin-right: 8px;
+/* Buttons */
+.luxury-btn-primary {
+  display: inline-block;
+  padding: 18px 42px;
+  border-radius: 2px;
+  background-color: var(--text-obsidian);
+  color: var(--bg-parchment);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
 }
 
-/* Credentials section cards */
-.credentials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+.luxury-btn-primary:hover {
+  opacity: 0.9;
 }
 
-.credential-card {
-  background-color: var(--bg-pure);
-  padding: 32px;
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
+/* Gallery Figure Frame (Automatic 3:2 Crop) */
+.luxury-figure {
+  margin: 0 0 110px 0;
+  padding: 12px;
+  background-color: var(--bg-parchment-subtle);
+  border: 1px solid var(--border-parchment);
+  border-radius: 2px;
 }
 
-.credential-badge {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--navy);
-  letter-spacing: 0.05em;
+.luxury-figure img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
   display: block;
-  margin-bottom: 8px;
 }
 
-/* Scope & Process layout */
-.scope-pillars-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  margin-bottom: 64px;
+.luxury-figcaption {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 14px;
+  text-align: center;
+  font-style: italic;
+  font-family: var(--font-serif);
 }
 
-.scope-pillar-item {
+/* Vertical Bordered List Items */
+.luxury-border-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 24px;
+  gap: 32px;
 }
 
-.scope-pillar-icon {
-  width: 28px;
-  height: 28px;
-  margin-bottom: 16px;
-  display: block;
+.luxury-border-item {
+  padding-left: 24px;
+  border-left: 2px solid var(--text-obsidian);
 }
 
-.process-sub-block {
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 48px;
-}
-
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 24px;
-}
-
-.process-step-num {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--text-secondary);
+.luxury-item-badge {
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   display: block;
   margin-bottom: 4px;
 }
 
-.process-step-title {
-  font-size: 0.95rem;
-  color: var(--navy);
-  display: block;
-  margin-bottom: 4px;
+.luxury-item-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-obsidian);
+  margin: 0 0 6px 0;
 }
 
-.process-step-desc {
-  font-size: 0.875rem;
-  color: var(--text-main);
-  line-height: 1.5;
+.luxury-item-title-scope {
+  font-size: 1.2rem;
+}
+
+.luxury-item-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
   margin: 0;
+  font-weight: 300;
+}
+
+.luxury-scope-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.luxury-scope-item {
+  border-left: 2px solid var(--text-obsidian);
+  padding-left: 24px;
+}
+
+/* Article Page Typography Extensions */
+.luxury-article-tag {
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: var(--accent-emerald);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.luxury-article-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.luxury-article-meta-divider {
+  color: var(--border-parchment);
+}
+
+.luxury-article-body h2 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-obsidian);
+  margin: 48px 0 20px 0;
+  letter-spacing: -0.015em;
+}
+
+.luxury-article-body h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-obsidian);
+  margin: 36px 0 16px 0;
+}
+
+.luxury-article-body p {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  line-height: 1.85;
+  margin-bottom: 28px;
+  font-weight: 300;
+}
+
+/* Article Sign-Off Block */
+.luxury-author-block {
+  margin: 48px 0 64px 0;
+  padding-left: 20px;
+  border-left: 2px solid var(--text-obsidian);
+}
+
+.luxury-author-text {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 300;
+}
+
+.luxury-author-text strong {
+  color: var(--text-obsidian);
+  font-weight: 500;
+}
+
+/* Global Footer Architecture */
+.luxury-footer {
+  border-top: 1px solid var(--border-parchment);
+  background-color: var(--bg-parchment-subtle);
+  padding: 64px 24px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.luxury-footer-container {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.luxury-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--border-parchment);
+  padding-bottom: 24px;
+}
+
+.luxury-footer-nav a {
+  color: var(--text-obsidian);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.825rem;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+}
+
+.luxury-footer-nav a:hover {
+  color: var(--accent-emerald);
+}
+
+.luxury-footer-disclaimer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+.luxury-footer-disclaimer strong {
+  color: var(--text-obsidian);
+  font-weight: 500;
+}
+
+.luxury-footer-identity {
+  border-top: 1px solid var(--border-parchment);
+  padding-top: 24px;
+  text-align: center;
+}
+
+.luxury-footer-name {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-obsidian);
+  margin: 0 0 4px 0;
+}
+
+.luxury-footer-copy {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }

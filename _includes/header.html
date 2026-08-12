@@ -1,46 +1,18 @@
-<header class="google-site-header">
-  <nav class="google-nav-container" aria-label="Navigasi Utama">
-    <!-- Nama Jenama / Logo -->
-    <a href="{{ '/' | relative_url }}" class="google-nav-logo">
-      Hairul Anuar Sulaiman
-    </a>
-    
-    <!-- Mekanisme Toggle Menu Mudah Alih (CSS Only) -->
-    <input type="checkbox" id="menu-toggle" class="google-menu-checkbox">
-    <label for="menu-toggle" class="google-menu-icon" aria-label="Buka Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+<!-- GLOBAL QUIET LUXURY MASTHEAD & NAVIGATION -->
+<header class="luxury-masthead">
+  <div class="luxury-monogram">
+    <a href="{{ '/' | relative_url }}">H. A. S.</a>
+  </div>
+  <div class="luxury-name">HAIRUL ANUAR BIN SULAIMAN</div>
+  <span class="luxury-title-sub">Associate Shariah Registered Financial Planner</span>
 
-    <!-- Senarai Pautan Navigasi -->
-    <div class="google-nav-links">
-      <ul class="google-nav-list">
-        <li>
-          <a href="{{ '/' | relative_url }}" class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}">Home</a>
-        </li>
-        <li>
-          <a href="{{ '/tentang/' | relative_url }}" class="{% if page.url contains '/tentang' %}active{% endif %}">Tentang Saya</a>
-        </li>
-        <li>
-          <a href="{{ '/takaful/' | relative_url }}" class="{% if page.url contains '/takaful' %}active{% endif %}">Takaful</a>
-        </li>
-        <li>
-          <a href="{{ '/unittrust/' | relative_url }}" class="{% if page.url contains '/unittrust' %}active{% endif %}">Unit Trust</a>
-        </li>
-        <li>
-          <a href="{{ '/persaraan/' | relative_url }}" class="{% if page.url contains '/persaraan' %}active{% endif %}">Persaraan</a>
-        </li>
-        <li>
-          <a href="{{ '/faq/' | relative_url }}" class="{% if page.url contains '/faq' %}active{% endif %}">FAQ</a>
-        </li>
-        <li>
-          <a href="{{ '/artikel/' | relative_url }}" class="{% if page.url contains '/artikel' %}active{% endif %}">Artikel</a>
-        </li>
-        <li>
-          <a href="{{ '/hubungi/' | relative_url }}" class="google-btn-nav">Hubungi</a>
-        </li>
-      </ul>
-    </div>
+  <!-- MINIMAL EDITORIAL NAVIGATION -->
+  <nav class="luxury-nav">
+    <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Falsafah</a>
+    <a href="{{ '/takaful/' | relative_url }}" class="{% if page.url contains '/takaful/' %}active{% endif %}">Takaful</a>
+    <a href="{{ '/unittrust/' | relative_url }}" class="{% if page.url contains '/unittrust/' %}active{% endif %}">Unit Trust</a>
+    <a href="{{ '/persaraan/' | relative_url }}" class="{% if page.url contains '/persaraan/' %}active{% endif %}">Persaraan</a>
+    <a href="{{ '/artikel/' | relative_url }}" class="{% if page.url contains '/artikel/' %}active{% endif %}">Hub Pengetahuan</a>
+    <a href="{{ '/faq/' | relative_url }}" class="{% if page.url contains '/faq/' %}active{% endif %}">FAQ</a>
   </nav>
 </header>

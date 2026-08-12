@@ -2,81 +2,73 @@
 layout: default
 ---
 
-<!-- ========================================== -->
-<!-- GEO & SEO STRUCTURED DATA (JSON-LD)        -->
-<!-- ========================================== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ page.url | absolute_url }}"
-  },
-  "headline": {{ page.title | jsonify }},
-  "description": {{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | jsonify }},
-  "image": "{{ page.image | default: '/assets/images/hairul-anuar.jpeg' | absolute_url }}",
-  "author": {
-    "@type": "Person",
-    "name": "Hairul Anuar Bin Sulaiman",
-    "jobTitle": "Associate Shariah Registered Financial Planner",
-    "url": "{{ '/tentang/' | absolute_url }}"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Hairulanuar Financial",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ '/assets/images/hairul-anuar.jpeg' | absolute_url }}"
-    }
-  },
-  "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
-  "articleSection": {{ page.category | jsonify }}
-}
-</script>
+<!-- MASTHEAD HEADER -->
+<header class="luxury-masthead">
+  <div class="luxury-monogram">H. A. S.</div>
+  <div class="luxury-name">HAIRUL ANUAR BIN SULAIMAN</div>
+  <span class="luxury-title-sub">Associate Shariah Registered Financial Planner</span>
+</header>
 
-<!-- ========================================== -->
-<!-- EDITORIAL ARTICLE CONTAINER                -->
-<!-- ========================================== -->
-<article class="google-article-wrapper" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="google-article-container">
-    
-    {% if page.category %}
-      <span class="google-article-category" itemprop="articleSection">{{ page.category }}</span>
+<!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
+<main class="luxury-canvas">
+
+  <!-- 1. ARTICLE HEADER -->
+  <header style="margin-bottom: 60px;">
+    <span class="luxury-article-tag">
+      {{ page.category | uppercase }}
+    </span>
+
+    <h1 class="luxury-heading" style="margin-bottom: 16px;">
+      {{ page.title }}
+    </h1>
+
+    <div class="luxury-article-meta">
+      <span>{{ page.date | date: "%d %B %Y" }}</span>
+      <span class="luxury-article-meta-divider">•</span>
+      <span>{{ page.read_time | default: "5" }} minit bacaan</span>
+    </div>
+
+    {% if page.excerpt %}
+      <p class="luxury-prose luxury-prose-lead">
+        {{ page.excerpt }}
+      </p>
     {% endif %}
+  </header>
 
-    <h1 class="google-article-title" itemprop="headline">{{ page.title }}</h1>
-
-    <!-- Byline Meta Section -->
-    <div class="google-byline-container" itemprop="author" itemscope itemtype="https://schema.org/Person">
+  <!-- 2. OPTIONAL FEATURED VISUAL PLATE -->
+  {% if page.image %}
+    <figure class="luxury-figure">
       <img 
-        src="{{ '/assets/images/hairul-anuar.jpeg' | relative_url }}" 
-        alt="Hairul Anuar Bin Sulaiman" 
-        class="google-byline-avatar"
-        itemprop="image"
+        src="{{ page.image | relative_url }}" 
+        alt="{{ page.image_alt | default: page.title }}"
+        width="1200"
+        height="800"
+        loading="eager"
       >
-      <div>
-        <div class="google-byline-author" itemprop="name">Hairul Anuar Bin Sulaiman</div>
-        <div class="google-byline-meta">
-          <span itemprop="jobTitle">Associate Shariah Registered Financial Planner</span> • 
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {{ page.date | date: "%d %b %Y" }}
-          </time>
-        </div>
-      </div>
-    </div>
+      {% if page.image_caption %}
+        <figcaption class="luxury-figcaption">
+          {{ page.image_caption }}
+        </figcaption>
+      {% endif %}
+    </figure>
+    <hr class="luxury-divider">
+  {% endif %}
 
-    <!-- Main Content Body -->
-    <div class="google-article-content" itemprop="articleBody">
-      {{ content }}
-    </div>
+  <!-- 3. ARTICLE BODY PROSE -->
+  <article class="luxury-article-body">
+    {{ content }}
+  </article>
 
-    <!-- E-E-A-T Author Box Component -->
-    {% include author-box.html %} 
-    
+  <hr class="luxury-divider">
+
+  <!-- 4. MINIMALIST AUTHOR SIGN-OFF -->
+  <div class="luxury-author-block">
+    <p class="luxury-author-text">
+      Artikel ini disunting oleh <strong>Hairul Anuar Bin Sulaiman</strong>, Associate Shariah Registered Financial Planner (ShRFP).
+    </p>
   </div>
-</article>
 
-{% include related-articles.html %}
-{% include conversation.html %}
+  <!-- 5. UNIFORM CALM INVITATION -->
+  {% include conversation.html %}
+
+</main>

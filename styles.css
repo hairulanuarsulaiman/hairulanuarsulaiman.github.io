@@ -1,7 +1,7 @@
 /* ==========================================================================
    QUIET LUXURY DESIGN SYSTEM (MASTER STYLESHEET)
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
   /* Quiet Luxury Parchment Palette */
@@ -14,7 +14,7 @@
   --accent-emerald: #047857;
 
   /* Editorial Typography Families */
-  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-serif: 'Old Standard TT', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -42,7 +42,7 @@ body {
 .luxury-monogram {
   font-family: var(--font-serif);
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-obsidian);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -138,20 +138,20 @@ body {
 
 .luxury-heading {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 4.5vw, 2.8rem);
-  font-weight: 600;
+  font-size: clamp(2.1rem, 4.8vw, 2.9rem);
+  font-weight: 700;
   color: var(--text-obsidian);
   line-height: 1.25;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin: 0 0 24px 0;
 }
 
 .luxury-subheading {
   font-family: var(--font-serif);
   font-size: 1.85rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-obsidian);
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   margin: 0 0 24px 0;
 }
 
@@ -237,7 +237,7 @@ body {
 }
 
 .luxury-figcaption {
-  font-size: 0.8rem;
+  font-size: 0.825rem;
   color: var(--text-muted);
   margin-top: 14px;
   text-align: center;
@@ -269,14 +269,14 @@ body {
 
 .luxury-item-title {
   font-family: var(--font-serif);
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: var(--text-obsidian);
   margin: 0 0 6px 0;
 }
 
 .luxury-item-title-scope {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .luxury-item-desc {
@@ -333,17 +333,17 @@ body {
 
 .luxury-article-body h2 {
   font-family: var(--font-serif);
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.65rem;
+  font-weight: 700;
   color: var(--text-obsidian);
   margin: 48px 0 20px 0;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
 }
 
 .luxury-article-body h3 {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: var(--text-obsidian);
   margin: 36px 0 16px 0;
 }
@@ -397,7 +397,7 @@ body {
 .luxury-footer-nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Horizontally centers quicklinks */
+  justify-content: center;
   align-items: center;
   gap: 16px 28px;
   list-style: none;
@@ -449,7 +449,7 @@ body {
 .luxury-footer-name {
   font-family: var(--font-serif);
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-obsidian);
   margin: 0 0 4px 0;
 }

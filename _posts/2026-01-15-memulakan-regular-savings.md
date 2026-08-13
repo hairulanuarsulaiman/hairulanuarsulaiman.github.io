@@ -6,6 +6,8 @@ date: 2026-01-15
 permalink: /artikel/memulakan-regular-savings/
 author: "Hairul Anuar Bin Sulaiman"
 image: "/assets/images/artikel/article-01-memulakan-regular-savings.webp"
+image_alt: "Anak pokok yang tumbuh secara berasingan di padang hijau lapang pada waktu pagi."
+image_caption: "Pertumbuhan mampan bermula daripada benih yang ditanam secara konsisten."
 description: "Ketahui bagaimana Regular Savings Plan (RSP) membantu anda membina tabiat melabur secara konsisten mengikut kemampuan dan matlamat kewangan anda."
 ---
 

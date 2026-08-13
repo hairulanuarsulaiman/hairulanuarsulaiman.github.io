@@ -6,6 +6,8 @@ date: 2026-07-14
 permalink: /artikel/adakah-saya-sudah-bersedia-untuk-bersara/
 author: "Hairul Anuar Bin Sulaiman"
 image: "/assets/images/artikel/article-04-bersedia-untuk-bersara.webp"
+image_alt: "Pokok matang berdiri di tengah padang hijau yang luas pada waktu pagi dengan cahaya keemasan."
+image_caption: "Kematangan modal dan perancangan awal memberikan kebebasan dalam menentukan fasa persaraan anda."
 description: "Persaraan bukan sekadar tentang berhenti bekerja, tetapi kebebasan gaya hidup. Ketahui 5 soalan penting untuk menilai kesediaan persaraan anda."
 ---
 
@@ -15,10 +17,6 @@ description: "Persaraan bukan sekadar tentang berhenti bekerja, tetapi kebebasan
 > * **Diversifikasi Sumber:** Meluaskan punca pendapatan selain simpanan asas KWSP — seperti pelaburan patuh Syariah dan aset hartanah — memberikan perlindungan kewangan yang lebih kukuh.
 
 ---
-
-{% include image.html 
-   src="/assets/images/artikel/article-04-bersedia-untuk-bersara.webp" 
-   alt="Pokok matang berdiri di tengah padang hijau yang luas pada waktu pagi dengan cahaya keemasan." %}
 
 Hakikatnya, persaraan bukan sekadar tentang berhenti bekerja atau mencapai umur persaraan wajib.
 
@@ -48,7 +46,7 @@ Memahami komitmen dan aliran tunai semasa merupakan langkah paling awal untuk me
 
 ---
 
-### 3. Adakah Anggaran Anda Mengambil Kira Factor Inflasi?
+### 3. Adakah Anggaran Anda Mengambil Kira Faktor Inflasi?
 
 Kadar inflasi mengurangkan kuasa beli wang tunai secara beransur-ansur dari semasa ke semasa. Nisbah belanja RM3,000 sebulan hari ini mungkin memerlukan RM5,000 atau lebih dalam tempoh 15 hingga 20 tahun akan datang.
 

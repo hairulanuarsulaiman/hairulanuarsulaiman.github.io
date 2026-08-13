@@ -20,69 +20,77 @@ description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berk
 }
 </script>
 
-<!-- ========================================== -->
-<!-- 1. HEADER HAB ILMU                         -->
-<!-- ========================================== -->
-<section class="google-stream-section" style="padding-bottom: 32px;">
-  <div class="google-stream-container" style="max-width: 760px; text-align: center;">
-    <span class="google-stream-eyebrow">Hub Pengetahuan</span>
-    <h1 class="google-stream-title" style="font-size: 2.25rem;">
-      Artikel Kewangan Halal
+<!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
+<main class="luxury-canvas">
+
+  <!-- ========================================== -->
+  <!-- STAGE I: HUB PENGETAHUAN HEADER            -->
+  <!-- ========================================== -->
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">
+      III. HUB PENGETAHUAN & MONOGRAF
+    </span>
+
+    <h1 class="luxury-heading">
+      Artikel Kewangan Halal & Panduan Pelaburan
     </h1>
-    <p class="google-stream-desc" style="margin: 12px auto 0 auto;">
+
+    <p class="luxury-prose luxury-prose-lead">
       Keputusan kewangan yang bijak bermula dengan kefahaman yang betul. Terokai panduan ringkas berkaitan perlindungan Takaful, pelaburan Unit Trust patuh Syariah, dan perancangan persaraan untuk membantu anda membuat pilihan dengan lebih yakin.
     </p>
-  </div>
-</section>
+  </section>
 
-<!-- ========================================== -->
-<!-- 2. GRID SENARAI ARTIKEL (LOOPING DINAMIK)  -->
-<!-- ========================================== -->
-<section class="google-stream-section" style="background-color: var(--bg-pure);">
-  <div class="google-stream-container">
-    
-    <div class="google-stream-grid">
+  <hr class="luxury-divider">
+
+  <!-- ========================================== -->
+  <!-- STAGE II: LISTING ARTIKEL (DYNAMIC LOOP)   -->
+  <!-- ========================================== -->
+  <section class="luxury-section">
+    <div class="luxury-border-list">
       {% for post in site.posts %}
-        <article class="google-blog-card">
-          <a href="{{ post.url | relative_url }}" class="google-card-link">
-            <div>
-              <!-- Tag Kategori Google Style -->
-              <span class="google-card-category">
-                {{ post.category | default: "Kewangan" }}
-              </span>
-              
-              <!-- Tajuk Artikel -->
-              <h2 class="google-card-title" style="font-size: 1.2rem;">
-                {{ post.title }}
-              </h2>
-              
-              <!-- Deskripsi Ringkas -->
-              <p class="google-card-excerpt">
-                {{ post.description | default: post.excerpt | strip_html | truncate: 120 }}
-              </p>
-            </div>
-            
-            <!-- Butang Pautan -->
-            <div class="google-card-action">
-              <span>Baca Artikel</span>
-              <span style="margin-left: 6px; font-size: 1.1rem;">→</span>
-            </div>
-          </a>
+        <article class="luxury-border-item">
+          <span class="luxury-item-badge">
+            {{ post.category | default: "KEWANAGAN" | uppercase }}
+          </span>
+
+          <h2 class="luxury-item-title">
+            <a href="{{ post.url | relative_url }}" class="luxury-article-link">
+              {{ post.title }}
+            </a>
+          </h2>
+
+          <div class="luxury-article-meta">
+            <span>{{ post.date | date: "%d %B %Y" }}</span>
+            {% if post.read_time %}
+              <span class="luxury-article-meta-divider">•</span>
+              <span>{{ post.read_time }} minit bacaan</span>
+            {% endif %}
+          </div>
+
+          <p class="luxury-item-desc">
+            {{ post.description | default: post.excerpt | strip_html | truncate: 160 }}
+          </p>
+
+          <div style="margin-top: 16px;">
+            <a href="{{ post.url | relative_url }}" class="luxury-btn-secondary">
+              Baca Panduan →
+            </a>
+          </div>
         </article>
       {% endfor %}
     </div>
 
-    <!-- Footer Halaman Peringatan -->
-    <div style="max-width: 720px; margin: 48px auto 0 auto; text-align: center;">
-      <p style="color: var(--text-secondary); font-style: italic; font-size: 0.9rem; margin: 0;">
-        Lebih banyak artikel akan datang. Penulisan baharu dikemas kini secara berkala.
-      </p>
+    <!-- Peringatan Kemaskini -->
+    <div class="luxury-author-block" style="margin-top: 64px; text-align: center;">
+      Penulisan baharu dikemas kini secara berkala berasaskan data dan prinsip kewangan Syariah terkini.
     </div>
+  </section>
 
-  </div>
-</section>
+  <hr class="luxury-divider">
 
-<!-- ========================================== -->
-<!-- 3. DYNAMIC GLOBAL CALL TO ACTION           -->
-<!-- ========================================== -->
-{% include conversation.html %}
+  <!-- ========================================== -->
+  <!-- STAGE III: NEXT STEP (UNIFORM INVITATION)  -->
+  <!-- ========================================== -->
+  {% include conversation.html %}
+
+</main>

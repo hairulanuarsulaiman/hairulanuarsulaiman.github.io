@@ -3,7 +3,11 @@
 <!-- ========================================== -->
 <section id="jemputan" class="luxury-section-center">
   <span class="luxury-eyebrow">
-    V. BIMBINGAN, BUKAN DESAKAN
+    {% if page.layout == 'post' %}
+      BIMBINGAN, BUKAN DESAKAN
+    {% else %}
+      V. BIMBINGAN, BUKAN DESAKAN
+    {% endif %}
   </span>
 
   <h2 class="luxury-subheading luxury-subheading-cta">

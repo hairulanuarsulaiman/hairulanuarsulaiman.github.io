@@ -6,6 +6,8 @@ date: 2026-07-23
 permalink: /artikel/pelaburan-ekuiti-vs-sukuk-tabung-pendidikan-anak/
 author: "Hairul Anuar Bin Sulaiman"
 image: "/assets/images/artikel/art-08-young-tree-education-fund.webp"
+image_alt: "Pokok muda yang sihat tumbuh di tepi tasik yang tenang dalam landskap semula jadi Malaysia pada waktu pagi."
+image_caption: "Keseimbangan antara potensi pertumbuhan modal dan pemeliharaan nilai mengikut fasa usia anak."
 description: "Panduan ibu bapa membina dana pendidikan anak secara bersasar mengikut garis masa (time horizon) menggunakan gabungan ekuiti dan sukuk patuh Syariah."
 ---
 
@@ -16,15 +18,11 @@ description: "Panduan ibu bapa membina dana pendidikan anak secara bersasar meng
 
 ---
 
-{% include image.html 
-   src="/assets/images/artikel/art-08-young-tree-education-fund.webp" 
-   alt="Pokok muda yang sihat tumbuh di tepi tasik yang tenang dalam landskap semula jadi Malaysia pada waktu pagi." %}
-
 Sebagai ibu bapa, salah satu matlamat kewangan terpenting yang ingin kita capai ialah memastikan dana pendidikan anak-anak mencukupi apabila tiba masanya mereka melangkah ke menara gading.
 
 Namun, dengan kadar inflasi pendidikan universiti yang meningkat secara purata **4% hingga 6% setahun**, bergantung sepenuhnya kepada akaun simpanan biasa berisiko menyebabkan sasaran dana tidak mencukupi.
 
-Untuk membina tabung pendidikan yang efisien, ibu bapa perlu memahami dua instrumen pelaburan patuh Syariah utama: **Ekuiti (Saham)** dan **Sukuk (Bonn Islamik)**.
+Untuk membina tabung pendidikan yang efisien, ibu bapa perlu memahami dua instrumen pelaburan patuh Syariah utama: **Ekuiti (Saham)** dan **Sukuk (Bidaan/Bon Islamik)**.
 
 ---
 
@@ -35,7 +33,7 @@ Untuk membina tabung pendidikan yang efisien, ibu bapa perlu memahami dua instru
 | **Sifat Pelaburan** | Pemilikan ekuiti/pegangan dalam syarikat | Pelaburan dalam aset/sertifikat keberhutangan Islamik |
 | **Matlamat Utama** | Pertumbuhan Modal (*Capital Growth*) | Kestabilan & Pendapatan (*Capital Preservation*) |
 | **Tahap Risiko** | Sederhana Hingga Tinggi | Rendah Hingga Sederhana |
-| **Potensi Pulangan** | Tinggi (Terdedah naik turun pasaran) | Stabil & Konsisten |
+| **Potensi Pulangan** | Tinggi (Terdedah turun naik pasaran) | Stabil & Konsisten |
 
 ---
 

@@ -57,10 +57,10 @@ Mari kita lihat bagaimana DCA berfungsi dalam tempoh 4 bulan sewaktu pasaran men
 
 ### Simulasi Pelaburan Berkala (RM500 / Bulan)
 
-* **Bulan 1 (Pasaran Normal):** Harga RM1.00 / unit $\rightarrow$ Menerima **500 unit**.
-* **Bulan 2 (Pasaran Jatuh):** Harga jatuh ke RM0.50 / unit $\rightarrow$ Menerima **1,000 unit**.
-* **Bulan 3 (Pasaran Mula Pulih):** Harga naik ke RM0.80 / unit $\rightarrow$ Menerima **625 unit**.
-* **Bulan 4 (Pasaran Pulih Sepenuhnya):** Harga kembali ke RM1.00 / unit $\rightarrow$ Menerima **500 unit**.
+* **Bulan 1 (Pasaran Normal):** Harga RM1.00 / unit → Menerima **500 unit**.
+* **Bulan 2 (Pasaran Jatuh):** Harga jatuh ke RM0.50 / unit → Menerima **1,000 unit**.
+* **Bulan 3 (Pasaran Mula Pulih):** Harga naik ke RM0.80 / unit → Menerima **625 unit**.
+* **Bulan 4 (Pasaran Pulih Sepenuhnya):** Harga kembali ke RM1.00 / unit → Menerima **500 unit**.
 
 **Hasil Akhir:**
 Jumlah modal dilaburkan ialah **RM2,000** dengan jumlah pengumpulan sebanyak **2,625 unit**. 

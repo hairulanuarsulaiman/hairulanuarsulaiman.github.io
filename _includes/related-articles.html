@@ -19,44 +19,34 @@
 
 {% assign sorted_related = related_posts | sort: 'date' | reverse %}
 
-<section class="google-stream-section">
-  <div class="google-stream-container">
-    
-    <div class="google-stream-header">
-      <span class="google-stream-eyebrow">Hub Pengetahuan</span>
-      <h2 class="google-stream-title">Bacaan Pilihan Terkini</h2>
-      <p class="google-stream-desc">
-        Kefahaman asas yang jelas untuk membantu anda membuat keputusan kewangan dan perancangan persaraan yang matang.
-      </p>
-    </div>
+<div class="luxury-border-list">
+  {% assign counter = 0 %}
+  {% for post in sorted_related %}
+    {% if counter < 3 %}
+      <article class="luxury-border-item">
+        <span class="luxury-item-badge">
+          {{ post.category | default: "PENGETAHUAN" | uppercase }}
+        </span>
+        
+        <h3 class="luxury-item-title">
+          <a href="{{ post.url | relative_url }}" class="luxury-article-link">
+            {{ post.title }}
+          </a>
+        </h3>
 
-    <div class="google-stream-grid">
-      {% assign counter = 0 %}
-      {% for post in sorted_related %}
-        {% if counter < 3 %}
-          <article class="google-blog-card">
-            <a href="{{ post.url | relative_url }}" class="google-card-link">
-              <div>
-                <span class="google-card-category">{{ post.category | default: "Kewangan" }}</span>
-                <h3 class="google-card-title">{{ post.title }}</h3>
-                <p class="google-card-excerpt">{{ post.description }}</p>
-              </div>
-              <div class="google-card-action">
-                <span>Baca Panduan</span>
-                <span style="margin-left: 6px; font-size: 1.1rem;">→</span>
-              </div>
-            </a>
-          </article>
-          {% assign counter = counter | plus: 1 %}
+        {% if post.description or post.excerpt %}
+          <p class="luxury-item-desc">
+            {{ post.description | default: post.excerpt | strip_html | truncate: 140 }}
+          </p>
         {% endif %}
-      {% endfor %}
-    </div>
+      </article>
+      {% assign counter = counter | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+</div>
 
-    <div class="google-stream-btn-wrapper">
-      <a href="{{ '/artikel/' | relative_url }}" class="google-pill-btn-secondary">
-        Lihat Semua Artikel →
-      </a>
-    </div>
-
-  </div>
-</section>
+<div class="luxury-article-btn-wrapper">
+  <a href="{{ '/artikel/' | relative_url }}" class="luxury-btn-secondary">
+    Lihat Semua Artikel →
+  </a>
+</div>

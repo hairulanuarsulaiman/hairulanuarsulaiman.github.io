@@ -430,20 +430,22 @@ body {
   color: var(--accent-emerald);
 }
 
+/* Updated Spacing & Alignment for Option 1 */
 .luxury-article-btn-wrapper {
-  margin-top: 40px;
+  margin-top: 56px;
+  padding-left: 24px; /* Aligns link with article prose */
 }
 
 .luxury-btn-secondary {
   display: inline-block;
-  font-size: 0.85rem;
+  font-size: 0.825rem;
   font-weight: 500;
   color: var(--text-obsidian);
   text-decoration: none;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   border-bottom: 1.5px solid var(--text-obsidian);
-  padding-bottom: 2px;
+  padding-bottom: 4px;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -451,4 +453,3 @@ body {
   color: var(--accent-emerald);
   border-color: var(--accent-emerald);
 }
-

@@ -2,18 +2,11 @@
 layout: default
 ---
 
-<!-- MASTHEAD HEADER -->
-<header class="luxury-masthead">
-  <div class="luxury-monogram">H. A. S.</div>
-  <div class="luxury-name">HAIRUL ANUAR BIN SULAIMAN</div>
-  <span class="luxury-title-sub">Associate Shariah Registered Financial Planner</span>
-</header>
-
 <!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
 <main class="luxury-canvas">
 
   <!-- 1. ARTICLE HEADER -->
-  <header style="margin-bottom: 60px;">
+  <header style="margin-bottom: 48px;">
     <span class="luxury-article-tag">
       {{ page.category | uppercase }}
     </span>
@@ -27,12 +20,6 @@ layout: default
       <span class="luxury-article-meta-divider">•</span>
       <span>{{ page.read_time | default: "5" }} minit bacaan</span>
     </div>
-
-    {% if page.excerpt %}
-      <p class="luxury-prose luxury-prose-lead">
-        {{ page.excerpt }}
-      </p>
-    {% endif %}
   </header>
 
   <!-- 2. OPTIONAL FEATURED VISUAL PLATE -->
@@ -54,7 +41,7 @@ layout: default
     <hr class="luxury-divider">
   {% endif %}
 
-  <!-- 3. ARTICLE BODY PROSE -->
+  <!-- 3. ARTICLE BODY PROSE (RENDERS CONTENT ONCE) -->
   <article class="luxury-article-body">
     {{ content }}
   </article>

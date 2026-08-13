@@ -52,10 +52,21 @@ Sebaliknya, ia dipindahkan secara terus kepada akaun bank penerima Hibah dalam t
 
 Semasa mengisi borang penamaan Takaful, terdapat dua pilihan status penama yang membawa implikasi undang-undang yang sangat berbeza:
 
-| Jenis Penamaan | Status Undang-Undang | Peranan Penerima Pampasan |
-| :--- | :--- | :--- |
-| **Wasi (Pengurus / Executor)** | Harta Pusaka | Menerima pampasan sebagai **pengurus sahaja**. Wang tersebut wajib diagihkan mengikut hukum Faraid kepada semua waris yang berhak. |
-| **Penerima Hibah (Beneficiary)** | Hak Mutlak | Menerima pampasan sebagai **pemilik mutlak**. Wang tersebut tidak tertakluk kepada Faraid dan tidak boleh dituntut oleh waris lain. |
+### Opsyen A: Penamaan Secara Wasi (Pengurus / Executor)
+
+* **Status Undang-Undang:** Wang pampasan dikira sebahagian daripada **Harta Pusaka** si mati.
+* **Peranan Penerima:** Bertindak sebagai **Pemegang Amanah / Pengurus sahaja** (bukan pemilik wang).
+* **Kewajipan Agihan:** Wajib melunaskan hutang si mati dan mengagihkan selebihnya mengikut hukum **Faraid** kepada semua waris yang berhak.
+* **Akses Tunai:** Terikat dengan proses pentadbiran pusaka di pejabat tanah atau mahkamah.
+
+---
+
+### Opsyen B: Penamaan Secara Hibah (Beneficiary / Hak Mutlak)
+
+* **Status Undang-Undang:** Dikategorikan sebagai **Hak Mutlak** penama melalui akad pemberian kasih sayang.
+* **Peranan Penerima:** Menjadi **Pemilik Mutlak** dana pampasan Takaful secara sah.
+* **Kewajipan Agihan:** **Tidak tertakluk kepada Faraid** dan tidak boleh dituntut oleh waris lain.
+* **Akses Tunai:** **Kecairan Serta-Merta** — disalurkan terus ke akaun bank penama untuk kelangsungan hidup.
 
 ---
 

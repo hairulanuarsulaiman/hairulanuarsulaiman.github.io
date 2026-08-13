@@ -6,6 +6,8 @@ date: 2026-05-02
 permalink: /artikel/unit-trust-halal/
 author: "Hairul Anuar Bin Sulaiman"
 image: "/assets/images/artikel/article-03-unit-trust-halal.webp"
+image_alt: "Sungai yang tenang mengalir perlahan pada waktu pagi"
+image_caption: "Ketenangan fikiran bermula dengan ketelusan dan kepatuhan Syariah yang jelas."
 description: "Fahami bagaimana dana unit trust patuh Syariah disaring oleh Suruhanjaya Sekuriti dan dipantau Penasihat Syariah supaya anda dapat melabur dengan yakin."
 ---
 
@@ -14,12 +16,7 @@ description: "Fahami bagaimana dana unit trust patuh Syariah disaring oleh Suruh
 > * **Saringan Dua Peringkat SC:** Suruhanjaya Sekuriti Malaysia (SC) menetapkan **Saringan Aktiviti Perniagaan** dan **Saringan Nisbah Kewangan** (seperti paras hutang berasaskan Riba) dua kali setahun.
 > * **Pemantauan Berterusan:** Setiap dana Syariah dipantau oleh Penasihat Syariah berdaftar yang diluluskan SC. Jika status saham berubah menjadi tidak patuh Syariah, ia wajib dilupuskan (*cleansing process*).
 
-
 ---
-
-{% include image.html 
-   src="/assets/images/artikel/article-03-unit-trust-halal.webp" 
-   alt="Sungai yang tenang mengalir perlahan pada waktu pagi" %}
 
 Ramai pelabur Muslim tertanya-tanya sama ada semua dana unit trust yang berada di pasaran adalah patuh Syariah. Hakikatnya, **tidak semua dana unit trust itu patuh Syariah**.
 

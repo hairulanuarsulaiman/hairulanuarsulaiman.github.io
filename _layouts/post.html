@@ -6,7 +6,7 @@ layout: default
 <main class="luxury-canvas">
 
   <!-- 1. ARTICLE HEADER -->
-  <header style="margin-bottom: 48px;">
+  <header style="margin-bottom: 36px;">
     <span class="luxury-article-tag">
       {{ page.category | uppercase }}
     </span>
@@ -22,9 +22,9 @@ layout: default
     </div>
   </header>
 
-  <!-- 2. AUTOMATIC GALLERY-FRAMED VISUAL (APPROACH A) -->
+  <!-- 2. AUTOMATIC GALLERY-FRAMED VISUAL (TIGHTENED SPACING) -->
   {% if page.image %}
-    <figure class="luxury-figure">
+    <figure class="luxury-figure" style="margin-bottom: 36px;">
       <img 
         src="{{ page.image | relative_url }}" 
         alt="{{ page.image_alt | default: page.title }}"
@@ -38,15 +38,15 @@ layout: default
         </figcaption>
       {% endif %}
     </figure>
-    <hr class="luxury-divider">
+    <hr class="luxury-divider" style="margin-bottom: 40px;">
   {% endif %}
 
-  <!-- 3. ARTICLE BODY PROSE (NO MANUAL IMAGE TAGS IN BODY) -->
+  <!-- 3. ARTICLE BODY PROSE -->
   <article class="luxury-article-body">
     {{ content }}
   </article>
 
-  <hr class="luxury-divider">
+  <hr class="luxury-divider" style="margin-top: 60px; margin-bottom: 60px;">
 
   <!-- 4. MINIMALIST AUTHOR SIGN-OFF -->
   <div class="luxury-author-block">

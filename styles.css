@@ -49,6 +49,11 @@ body {
   margin-bottom: 6px;
 }
 
+.luxury-monogram a {
+  color: var(--text-obsidian);
+  text-decoration: none;
+}
+
 .luxury-name {
   font-size: 0.9rem;
   font-weight: 500;
@@ -65,6 +70,35 @@ body {
   text-transform: uppercase;
   display: block;
   margin-top: 4px;
+}
+
+/* Navigation Styling in Masthead */
+.luxury-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-parchment);
+}
+
+.luxury-nav a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.luxury-nav a:hover,
+.luxury-nav a.active {
+  color: var(--text-obsidian);
+  font-weight: 600;
+  border-bottom: 1.5px solid var(--text-obsidian);
+  padding-bottom: 2px;
 }
 
 /* Master Editorial Canvas (640px Column) */
@@ -161,6 +195,29 @@ body {
   opacity: 0.9;
 }
 
+.luxury-article-btn-wrapper {
+  margin-top: 56px;
+  padding-left: 24px;
+}
+
+.luxury-btn-secondary {
+  display: inline-block;
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--text-obsidian);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid var(--text-obsidian);
+  padding-bottom: 4px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.luxury-btn-secondary:hover {
+  color: var(--accent-emerald);
+  border-color: var(--accent-emerald);
+}
+
 /* Gallery Figure Frame (Automatic 3:2 Crop) */
 .luxury-figure {
   margin: 0 0 110px 0;
@@ -240,7 +297,17 @@ body {
   padding-left: 24px;
 }
 
-/* Article Page Typography Extensions */
+/* Article Page Extensions */
+.luxury-article-link {
+  color: var(--text-obsidian);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.luxury-article-link:hover {
+  color: var(--accent-emerald);
+}
+
 .luxury-article-tag {
   font-size: 0.725rem;
   font-weight: 600;
@@ -330,12 +397,19 @@ body {
 .luxury-footer-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px 24px;
+  justify-content: center; /* Horizontally centers quicklinks */
+  align-items: center;
+  gap: 16px 28px;
   list-style: none;
   padding: 0;
   margin: 0;
   border-bottom: 1px solid var(--border-parchment);
   padding-bottom: 24px;
+  text-align: center;
+}
+
+.luxury-footer-nav li {
+  display: inline-block;
 }
 
 .luxury-footer-nav a {
@@ -343,7 +417,8 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 0.825rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   transition: color 0.2s ease;
 }
 
@@ -383,73 +458,4 @@ body {
   margin: 0;
   font-size: 0.75rem;
   color: var(--text-muted);
-}
-
-/* Navigation Styling in Masthead */
-.luxury-monogram a {
-  color: var(--text-obsidian);
-  text-decoration: none;
-}
-
-.luxury-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 18px 28px;
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid var(--border-parchment);
-}
-
-.luxury-nav a {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--text-muted);
-  text-decoration: none;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  transition: color 0.2s ease;
-}
-
-.luxury-nav a:hover,
-.luxury-nav a.active {
-  color: var(--text-obsidian);
-  font-weight: 600;
-  border-bottom: 1.5px solid var(--text-obsidian);
-  padding-bottom: 2px;
-}
-
-/* Related Articles / Knowledge Hub List Extensions */
-.luxury-article-link {
-  color: var(--text-obsidian);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.luxury-article-link:hover {
-  color: var(--accent-emerald);
-}
-
-/* Updated Spacing & Alignment for Option 1 */
-.luxury-article-btn-wrapper {
-  margin-top: 56px;
-  padding-left: 24px; /* Aligns link with article prose */
-}
-
-.luxury-btn-secondary {
-  display: inline-block;
-  font-size: 0.825rem;
-  font-weight: 500;
-  color: var(--text-obsidian);
-  text-decoration: none;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border-bottom: 1.5px solid var(--text-obsidian);
-  padding-bottom: 4px;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.luxury-btn-secondary:hover {
-  color: var(--accent-emerald);
-  border-color: var(--accent-emerald);
 }

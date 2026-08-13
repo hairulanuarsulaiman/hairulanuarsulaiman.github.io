@@ -6,6 +6,8 @@ date: 2026-07-17
 permalink: /artikel/money-market-fund-syariah/
 author: "Hairul Anuar Bin Sulaiman"
 image: "/assets/images/artikel/article-06-money-market-fund.webp"
+image_alt: "Tasik yang tenang pada waktu pagi dengan pantulan cahaya keemasan."
+image_caption: "Kecairan tinggi dan ketenangan dalam pengurusan modal jangka pendek."
 description: "Fahami apa itu Money Market Fund patuh Syariah, kelebihannya berbanding akaun simpanan & FD, serta fungsinya untuk simpanan jangka pendek dan perniagaan."
 ---
 
@@ -15,10 +17,6 @@ description: "Fahami apa itu Money Market Fund patuh Syariah, kelebihannya berba
 > * **Jaminan Syariah:** Hanya melabur dalam instrumen yang disaring dan dipantau berterusan oleh Penasihat Syariah berdaftar yang diluluskan Suruhanjaya Sekuriti Malaysia.
 
 ---
-
-{% include image.html 
-   src="/assets/images/artikel/article-06-money-market-fund.webp" 
-   alt="Tasik yang tenang pada waktu pagi dengan pantulan cahaya keemasan." %}
 
 Tidak semua wang mempunyai tujuan atau garis masa yang sama.
 
@@ -34,7 +32,7 @@ Money Market Fund ialah sejenis dana unit trust yang melabur secara khusus dalam
 
 Antara instrumen pasaran wang Islamik yang lazim digunakan termasuk:
 
-- **Sukuk Korporat Jangka Pendek:** Instrumen keberhutangan Islamik berrisiko rendah.
+- **Sukuk Korporat Jangka Pendek:** Instrumen keberhutangan Islamik berisiko rendah.
 - **Deposit Aset Patuh Syariah:** Simpanan berjangka Islamik di bank-bank berlesen.
 - **Instrumen Pasaran Wang Islamik:** Aset kecairan tinggi yang diluluskan oleh Suruhanjaya Sekuriti Malaysia.
 
@@ -53,7 +51,7 @@ Antara instrumen pasaran wang Islamik yang lazim digunakan termasuk:
 
 ---
 
-## 3. Contoh Contoh Struktur: Phillip Master Islamic Cash Fund (PMICF)
+## 3. Contoh Struktur: Phillip Master Islamic Cash Fund (PMICF)
 
 Sebagai gambaran praktikal, salah satu contoh Money Market Fund patuh Syariah yang berada di pasaran Malaysia ialah **Phillip Master Islamic Cash Fund (PMICF)** yang diuruskan oleh Phillip Mutual Berhad.
 

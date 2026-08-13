@@ -16,8 +16,6 @@ description: "Ketahui bagaimana Regular Savings Plan (RSP) membantu anda membina
 
 ---
 
-{% include image.html src="/assets/images/artikel/article-01-memulakan-regular-savings.webp" alt="Anak pokok yang sihat tumbuh di padang hijau yang luas pada waktu pagi dengan cahaya keemasan." %}
-
 Ramai orang beranggapan bahawa pelaburan memerlukan modal yang besar. Ada juga yang memilih untuk menunggu sehingga mempunyai wang yang "mencukupi" sebelum mula melabur.
 
 Hakikatnya, membina tabiat melabur secara konsisten selalunya lebih penting daripada bermula dengan jumlah yang besar.

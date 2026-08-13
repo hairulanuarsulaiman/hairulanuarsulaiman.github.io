@@ -1,0 +1,49 @@
+<!-- ==========================================================================
+   QUIET LUXURY HERO PLATE (RESPONSIVE PERFORMANCE FRAME)
+   ========================================================================== -->
+<div class="luxury-hero-section">
+  <figure class="luxury-figure luxury-hero-figure">
+    <picture class="luxury-hero-picture">
+      <!-- 1. Next-Gen AVIF (Maximum Compression & Speed for Modern Browsers) -->
+      <source 
+        type="image/avif" 
+        srcset="
+          {{ '/assets/images/hero-320.avif' | relative_url }} 320w,
+          {{ '/assets/images/hero-640.avif' | relative_url }} 640w,
+          {{ '/assets/images/hero-1024.avif' | relative_url }} 1024w,
+          {{ '/assets/images/hero-1920.avif' | relative_url }} 1920w
+        "
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 640px"
+      >
+
+      <!-- 2. Next-Gen WebP (Broad Support for Mobile & Desktop) -->
+      <source 
+        type="image/webp" 
+        srcset="
+          {{ '/assets/images/hero-320.webp' | relative_url }} 320w,
+          {{ '/assets/images/hero-640.webp' | relative_url }} 640w,
+          {{ '/assets/images/hero-1024.webp' | relative_url }} 1024w,
+          {{ '/assets/images/hero-1920.webp' | relative_url }} 1920w
+        "
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 640px"
+      >
+
+      <!-- 3. Universal Fallback Image (JPG) -->
+      <img 
+        src="{{ '/assets/images/hero-fallback.jpg' | relative_url }}" 
+        alt="Hairul Anuar Bin Sulaiman - Associate Shariah Registered Financial Planner"
+        width="1024"
+        height="683"
+        loading="eager" 
+        fetchpriority="high"
+        class="luxury-hero-img"
+      >
+    </picture>
+
+    {% if include.caption %}
+      <figcaption class="luxury-figcaption">
+        {{ include.caption }}
+      </figcaption>
+    {% endif %}
+  </figure>
+</div>

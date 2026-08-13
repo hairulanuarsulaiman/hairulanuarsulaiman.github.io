@@ -6,6 +6,8 @@ date: 2026-01-20
 permalink: /artikel/takaful-vs-insurans/
 author: "Hairul Anuar Bin Sulaiman"
 image: "/assets/images/artikel/article-02-takaful-vs-insurans.webp"
+image_alt: "Seseorang memegang payung ketika berjalan dalam hujan."
+image_caption: "Perlindungan kewangan dibina atas asas saling membantu dan patuh Syariah."
 description: "Fahami perbezaan utama antara Takaful dan insurans konvensional dari segi akad, pemilikan dana, dan pematuhan Syariah untuk membuat keputusan yang yakin."
 ---
 
@@ -15,10 +17,6 @@ description: "Fahami perbezaan utama antara Takaful dan insurans konvensional da
 > * **Pemilikan & Lebihan Dana:** Dana Takaful kekal milik peserta secara kolektif (diuruskan syarikat sebagai *Wakil*), di mana lebihan risiko (*underwriting surplus*) boleh diagihkan semula kepada peserta.
 
 ---
-
-{% include image.html 
-   src="/assets/images/artikel/article-02-takaful-vs-insurans.webp" 
-   alt="Seseorang memegang payung ketika berjalan dalam hujan." %}
 
 Walaupun kedua-duanya bertujuan memberikan perlindungan kewangan, Takaful dan insurans konvensional dibina berasaskan prinsip yang sangat berbeza.
 
@@ -31,7 +29,7 @@ Tujuan artikel ini bukan untuk membuktikan bahawa satu pilihan sentiasa lebih ba
 ## 1. Asas Kontrak: Saling Bantu vs Jual Beli
 
 - **Takaful:** Dalam Takaful, peserta menyumbang ke dalam dana bersama berdasarkan konsep *Tabarru'* (sumbangan kebajikan). Dana ini digunakan untuk saling membantu peserta lain yang ditimpa musibah. Pengendali Takaful bertindak sebagai pengurus (*Wakil*) mengikut akad yang dipersetujui dan bukannya pemilik dana.
-- **Insurans Konvensional:**Merupakan kontrak jual beli (*Mu’awadah*) di mana pemegang polisi membayar premium untuk membeli jaminan pampasan, manakala syarikat insurans menanggung risiko sebagai penjual.
+- **Insurans Konvensional:** Merupakan kontrak jual beli (*Mu’awadah*) di mana pemegang polisi membayar premium untuk membeli jaminan pampasan, manakala syarikat insurans menanggung risiko sebagai penjual.
 
 > *"Dan hendaklah kamu bertolong-tolongan dalam perkara kebajikan dan ketakwaan."*  
 > — **Surah Al-Ma'idah, ayat 2**

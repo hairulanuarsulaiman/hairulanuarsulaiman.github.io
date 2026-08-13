@@ -6,6 +6,8 @@ date: 2026-07-17
 permalink: /artikel/perlindungan-penyakit-kritikal/
 author: "Hairul Anuar Bin Sulaiman"
 image: "/assets/images/artikel/article-05-penyakit-kritikal.webp"
+image_alt: "Pemandangan cahaya matahari pagi memasuki bilik hospital yang tenang melalui tingkap besar."
+image_caption: "Ketenangan pemulihan disokong oleh pertahanan kewangan yang kukuh untuk keluarga."
 description: "Fahami bagaimana pampasan penyakit kritikal membantu melindungi pampasan pendapatan, simpanan, dan masa depan keluarga apabila berdepan penyakit serius."
 ---
 
@@ -15,10 +17,6 @@ description: "Fahami bagaimana pampasan penyakit kritikal membantu melindungi pa
 > * **Perlindungan Simpanan Persaraan:** Memastikan tabung simpanan, KWSP, dan pelaburan jangka panjang tidak terpaksa dileburkan demi menampung kos sara hidup sewaktu tidak berupaya.
 
 ---
-
-{% include image.html 
-   src="/assets/images/artikel/article-05-penyakit-kritikal.webp" 
-   alt="Pemandangan cahaya matahari pagi memasuki bilik hospital yang tenang melalui tingkap besar." %}
 
 Ramai orang menganggap penyakit kritikal sebagai sesuatu yang jauh atau hanya berlaku kepada orang lain. 
 
@@ -68,7 +66,7 @@ Jumlah pampasan yang disyorkan biasanya berasaskan **3 hingga 5 tahun pendapatan
 
 ---
 
-## 4. Perkara Penting Yang Perlu Dipahami Sebelum Memilih
+## 4. Perkara Penting Yang Perlu Difahami Sebelum Memilih
 
 1. **Definisi & Peringkat Penyakit:** Fahami sama ada pelan tersebut melindungi peringkat awal (*early stage*) atau peringkat akhir (*advanced stage*).
 2. **Tempoh Menunggu (*Waiting Period*):** Sijil Takaful biasanya mempunyai tempoh menunggu (contohnya 30 hingga 90 hari daripada tarikh sijil berkuat kuasa) sebelum tuntutan penyakit kritikal boleh dibuat.

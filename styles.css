@@ -459,3 +459,17 @@ body {
   font-size: 0.75rem;
   color: var(--text-muted);
 }
+
+/* Footer Direct Verification Links */
+.luxury-footer-link {
+  color: var(--text-obsidian);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.luxury-footer-link:hover {
+  color: var(--accent-emerald);
+}
+

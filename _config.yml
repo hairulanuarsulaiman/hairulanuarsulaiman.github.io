@@ -1,7 +1,7 @@
 # Site settings
 title: Hairul Anuar Sulaiman
 author: Hairul Anuar Bin Sulaiman
-email: hairul@example.com  # Update with your email
+email: hairul.financial@gmail.com  # Update with your email
 description: >-
   Membantu individu dan keluarga di Malaysia membuat keputusan 
   kewangan yang lebih yakin berlandaskan prinsip Syariah.
@@ -16,6 +16,13 @@ state: "Johor"
 # Build settings
 markdown: kramdown
 permalink: /:title/
+future: true    # Builds all articles regardless of date
+
+# Pagination settings
+plugins:
+  - jekyll-paginate
+paginate: 10
+paginate_path: "/artikel/page:num/"
 
 # Exclude these files
 exclude:

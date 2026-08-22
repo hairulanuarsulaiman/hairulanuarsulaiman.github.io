@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "“Saya Tak Percaya Takaful”: Memahami Punca Sifat Ragu Dan Cara Menilainya Semula"
+title: "Mengapa Ramai Tidak Percaya Takaful? Menilai Antara Mitos, Realiti, dan Pengalaman Lampau"
 category: Takaful
 date: 2026-08-21
 permalink: /artikel/mengapa-ramai-tidak-percaya-takaful/
 author: "Hairul Anuar Bin Sulaiman"
-image: "/assets/images/artikel/art-12-percaya-takaful.webp"
-image_alt: "Buku nota ringkas, kacamata, dan pen di atas meja kayu gelap dengan pencahayaan lembut."
-image_caption: "Kepercayaan dibina melalui pemahaman terma secara telus, bukan janji manis."
-description: "Pernah berasa ragu atau kecewa dengan takaful? Fahami punca sebenar salah faham ini berlaku dan cara menilai pelan perlindungan secara objektif."
+image: "/assets/images/artikel/art-12-sebab-ramai-tidak-percaya-takaful.webp"
+image_alt: "Rumah Api Tanjung Tuan (Cape Rachado) tersergam indah di atas bukit menghadap Selat Melaka di dalam kabus pagi."
+image_caption: "Kepercayaan tidak lahir daripada persepsi, tetapi daripada panduan yang jelas dan telus menerusi kabus keraguan."
+description: "Sikap prasangka terhadap takaful selalunya berpunca daripada pengalaman buruk atau kekeliruan produk. Fahami cara menilai takaful secara objektif tanpa andaian."
 ---
 
 > **Ringkasan Eksekutif (Key Takeaways):**

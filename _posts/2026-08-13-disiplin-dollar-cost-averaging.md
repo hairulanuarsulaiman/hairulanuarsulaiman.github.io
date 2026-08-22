@@ -5,9 +5,9 @@ category: Pelaburan
 date: 2026-08-13
 permalink: /artikel/disiplin-dollar-cost-averaging/
 author: "Hairul Anuar Bin Sulaiman"
-image: "/assets/images/artikel/art-10-dollar-cost-averaging.webp"
-image_alt: "Buku nota perancangan dan cawan seramik di atas meja kayu dengan pencahayaan tenang."
-image_caption: "Disiplin pelaburan berkala menghapuskan emosi dan ketidakpastian sewaktu pasaran tidak menentu."
+image: "/assets/images/artikel/art-09-disiplin-dollar-cost-averaging.webp"
+image_alt: "Ladang teh bertingkat di Cameron Highlands yang teratur dan tersusun di bawah sinar matahari pagi."
+image_caption: "Disiplin pelaburan berkala ibarat teres ladang teh yang tersusun rapi, memanfaatkan setiap cerun pasaran untuk pembentukan modal jangka panjang."
 description: "Fahami bagaimana strategi Dollar-Cost Averaging (DCA) membantu pelabur membina modal secara konsisten tanpa perlu meramal pergerakan pasaran."
 ---
 

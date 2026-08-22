@@ -5,9 +5,9 @@ category: Pelaburan
 date: 2026-07-23
 permalink: /artikel/pelaburan-ekuiti-vs-sukuk-tabung-pendidikan-anak/
 author: "Hairul Anuar Bin Sulaiman"
-image: "/assets/images/artikel/art-08-young-tree-education-fund.webp"
-image_alt: "Pokok muda yang sihat tumbuh di tepi tasik yang tenang dalam landskap semula jadi Malaysia pada waktu pagi."
-image_caption: "Keseimbangan antara potensi pertumbuhan modal dan pemeliharaan nilai mengikut fasa usia anak."
+image: "/assets/images/artikel/art-08-pelaburan-ekuiti-vs-sukuk-tabung-pendidikan-anak.webp"
+image_alt: "Topi akademik dan buku-buku berilid kulit di atas meja kayu gelap di bawah limpahan cahaya matahari pagi."
+image_caption: "Perancangan dana pendidikan adalah pelaburan jangka panjang demi membuka pintu peluang dan masa depan anak-anak."
 description: "Panduan ibu bapa membina dana pendidikan anak secara bersasar mengikut garis masa (time horizon) menggunakan gabungan ekuiti dan sukuk patuh Syariah."
 ---
 

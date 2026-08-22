@@ -356,47 +356,47 @@ body {
   font-weight: 300;
 }
 
-/* LUXURY AUTHOR BOX */
+/* LUXURY AUTHOR BOX - FINAL POLISH */
 .luxury-author-box {
   display: flex;
-  align-items: flex-start; /* Snaps avatar gracefully to the top */
-  gap: 1.25rem;
+  align-items: flex-start;
+  gap: 1rem;
   margin: 40px 0 56px 0;
   padding: 0;
 }
 
 .luxury-author-avatar {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  margin-top: 2px; /* Fine-tuned vertical optics */
+  margin-top: 1px;
 }
 
 .luxury-author-meta {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.3rem;
 }
 
 .luxury-author-text {
   font-size: 0.875rem;
   line-height: 1.5;
-  color: var(--text-muted, #555555);
+  color: var(--text-obsidian, #222222); /* Darkened slightly for crisp readability */
   margin: 0;
   font-weight: 300;
 }
 
 .luxury-author-text strong {
   color: var(--text-obsidian, #111111);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .luxury-author-bio {
   font-size: 0.8125rem;
   line-height: 1.4;
-  color: var(--text-muted, #666666);
+  color: var(--text-muted, #444444); /* Raised contrast slightly from #666 */
   margin: 0;
   font-weight: 300;
 }

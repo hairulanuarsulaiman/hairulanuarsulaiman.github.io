@@ -6,8 +6,8 @@ date: 2026-08-23
 permalink: /artikel/takaful-untuk-yang-sudah-ada-penyakit/
 author: "Hairul Anuar Bin Sulaiman"
 image: "/assets/images/artikel/art-13-takaful-penyakit.webp"
-image_alt: "Buku nota, pen, dan kacamata di atas meja kayu gelap dengan pencahayaan lembut."
-image_caption: "Memahami pilihan perlindungan kewangan bagi individu yang mempunyai sejarah kesihatan."
+image_alt: "Pemandangan tasik tenang di waktu subuh dengan kabus lembut dan sinaran matahari terbit di sebalik banjaran gunung."
+image_caption: "Ketenangan fikiran lahir daripada memahami pilihan perlindungan yang masih wujud untuk keluarga."
 description: "Pernah disahkan menghidap darah tinggi, kencing manis, atau penyakit kritikal dan menganggap pintu takaful telah tertutup rapat? Fahami hakikat underwriting dan pilihan pelan yang masih wujud."
 ---
 

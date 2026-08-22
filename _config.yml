@@ -1,14 +1,14 @@
 # Site settings
 title: Hairul Anuar Sulaiman
 author: Hairul Anuar Bin Sulaiman
-email: hairul.financial@gmail.com  # Update with your email
+email: hairul.financial@gmail.com
 description: >-
   Membantu individu dan keluarga di Malaysia membuat keputusan 
   kewangan yang lebih yakin berlandaskan prinsip Syariah.
 
 # URL settings
 url: "https://hairulanuarsulaiman.github.io"
-baseurl: ""  # Leave empty for root domain
+baseurl: ""
 phone: "+601127657730"
 city: "Kota Tinggi"
 state: "Johor"
@@ -16,7 +16,7 @@ state: "Johor"
 # Build settings
 markdown: kramdown
 permalink: /:title/
-future: true    # Builds all articles regardless of date
+future: true
 
 # Pagination settings
 plugins:

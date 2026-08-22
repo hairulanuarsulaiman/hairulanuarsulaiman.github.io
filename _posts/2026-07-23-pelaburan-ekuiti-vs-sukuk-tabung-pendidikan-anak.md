@@ -28,12 +28,19 @@ Untuk membina tabung pendidikan yang efisien, ibu bapa perlu memahami dua instru
 
 ## 1. Memahami Perbezaan Ekuiti dan Sukuk
 
-| Ciri Pelaburan | Ekuiti Patuh Syariah (Saham) | Sukuk Patuh Syariah (Bond Islamik) |
-| :--- | :--- | :--- |
-| **Sifat Pelaburan** | Pemilikan ekuiti/pegangan dalam syarikat | Pelaburan dalam aset/sertifikat keberhutangan Islamik |
-| **Matlamat Utama** | Pertumbuhan Modal (*Capital Growth*) | Kestabilan & Pendapatan (*Capital Preservation*) |
-| **Tahap Risiko** | Sederhana Hingga Tinggi | Rendah Hingga Sederhana |
-| **Potensi Pulangan** | Tinggi (Terdedah turun naik pasaran) | Stabil & Konsisten |
+Daripada memaksa perbandingan dalam jadual yang sempit di skrin telefon, fahami dua watak utama ini mengikut peranan masing-masing:
+
+**Ekuiti Patuh Syariah (Saham)**
+* **Sifat Utama:** Pemilikan sebahagian pegangan dalam syarikat yang berkembang.
+* **Matlamat:** Pertumbuhan Modal (*Capital Growth*) untuk mengatasi inflasi.
+* **Tahap Risiko:** Sederhana hingga Tinggi (terdedah kepada pergerakan pasaran).
+* **Profil Pulangan:** Potensi pulangan tinggi dalam jangka panjang.
+
+**Sukuk Patuh Syariah (Bon Islamik)**
+* **Sifat Utama:** Pelaburan dalam aset atau sijil keberhutangan Islamik yang stabil.
+* **Matlamat:** Pemeliharaan Modal & Pendapatan (*Capital Preservation*).
+* **Tahap Risiko:** Rendah hingga Sederhana.
+* **Profil Pulangan:** Pulangan yang lebih stabil, tenang, dan konsisten.
 
 ---
 

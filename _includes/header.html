@@ -1,13 +1,15 @@
 <!-- GLOBAL QUIET LUXURY MASTHEAD & NAVIGATION -->
-<header class="luxury-masthead">
-  <div class="luxury-monogram">
-    <a href="{{ '/' | relative_url }}">H. A. S.</a>
+<header class="luxury-masthead" role="banner">
+  <div class="luxury-brand-identity">
+    <a href="{{ '/' | relative_url }}" class="luxury-brand-link" title="Hairul Anuar Bin Sulaiman - Laman Utama">
+      <div class="luxury-monogram">H. A. S.</div>
+      <h1 class="luxury-name">HAIRUL ANUAR BIN SULAIMAN</h1>
+    </a>
+    <p class="luxury-title-sub">Associate Shariah Registered Financial Planner</p>
   </div>
-  <div class="luxury-name">HAIRUL ANUAR BIN SULAIMAN</div>
-  <span class="luxury-title-sub">Associate Shariah Registered Financial Planner</span>
 
   <!-- MAIN EDITORIAL NAVIGATION -->
-  <nav class="luxury-nav">
+  <nav class="luxury-nav" aria-label="Navigasi Utama">
     <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Utama</a>
     <a href="{{ '/takaful/' | relative_url }}" class="{% if page.url contains '/takaful/' %}active{% endif %}">Takaful</a>
     <a href="{{ '/unittrust/' | relative_url }}" class="{% if page.url contains '/unittrust/' %}active{% endif %}">Unit Trust</a>

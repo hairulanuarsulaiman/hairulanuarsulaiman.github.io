@@ -405,7 +405,7 @@ body {
 .luxury-footer {
   width: 100%;
   padding: 64px 0 40px 0;
-  border-top: 1px solid var(--border-parchment);
+  border-top: 1px solid var(--border-parchment); /* Enforces crisp top rule */
   margin-top: 80px;
   background-color: transparent;
 }

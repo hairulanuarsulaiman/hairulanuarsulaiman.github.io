@@ -383,53 +383,35 @@ body {
 .luxury-author-text {
   font-size: 0.875rem;
   line-height: 1.5;
-  color: var(--text-obsidian, #222222); /* Darkened slightly for crisp readability */
+  color: var(--text-obsidian);
   margin: 0;
   font-weight: 300;
 }
 
 .luxury-author-text strong {
-  color: var(--text-obsidian, #111111);
+  color: var(--text-obsidian);
   font-weight: 600;
 }
 
 .luxury-author-bio {
   font-size: 0.8125rem;
   line-height: 1.4;
-  color: var(--text-muted, #444444); /* Raised contrast slightly from #666 */
+  color: var(--text-muted);
   margin: 0;
   font-weight: 300;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 480px) {
-  .luxury-author-box {
-    gap: 0.875rem;
-    margin: 32px 0 48px 0;
-  }
-  .luxury-author-avatar {
-    width: 52px;
-    height: 52px;
-  }
-  .luxury-author-text {
-    font-size: 0.8125rem;
-  }
-  .luxury-author-bio {
-    font-size: 0.75rem;
-  }
 }
 
 /* QUIET LUXURY GRID FOOTER */
 .luxury-footer {
   width: 100%;
   padding: 64px 0 40px 0;
-  border-top: 1px solid var(--border-color, #e5e5e5);
+  border-top: 1px solid var(--border-parchment);
   margin-top: 80px;
   background-color: transparent;
 }
 
 .luxury-footer-inner {
-  max-width: 960px; /* Expands to anchor desktop layout */
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -440,28 +422,28 @@ body {
   grid-template-columns: 2fr 1.25fr 1.5fr;
   gap: 3rem;
   margin-bottom: 48px;
-  text-align: left; /* Left-aligned for high editorial readability */
+  text-align: left;
 }
 
 .footer-brand-name {
-  font-family: var(--font-serif, "Playfair Display", Georgia, serif);
+  font-family: var(--font-serif);
   font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--text-obsidian, #111111);
-  margin: 0 0 6px 0;
+  font-weight: 700;
+  color: var(--text-obsidian);
+  margin: 0 0 4px 0;
 }
 
 .footer-brand-title {
   font-size: 0.8125rem;
-  color: var(--text-muted, #555555);
+  color: var(--text-muted);
   font-weight: 300;
-  margin: 0 0 12px 0;
+  margin: 0 0 8px 0;
   line-height: 1.4;
 }
 
-.footer-brand-firm {
-  font-size: 0.75rem;
-  color: var(--text-muted, #777777);
+.footer-brand-roles {
+  font-size: 0.78125rem;
+  color: var(--text-muted);
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
@@ -472,7 +454,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-obsidian, #111111);
+  color: var(--text-obsidian);
   margin: 0 0 16px 0;
 }
 
@@ -487,56 +469,83 @@ body {
 
 .footer-nav-list a {
   font-size: 0.8125rem;
-  color: var(--text-muted, #555555);
+  color: var(--text-muted);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .footer-nav-list a:hover {
-  color: var(--text-obsidian, #111111);
+  color: var(--text-obsidian);
 }
 
 .footer-reg-text {
   font-size: 0.8125rem;
-  line-height: 1.5;
-  color: var(--text-muted, #555555);
+  line-height: 1.6;
+  color: var(--text-muted);
   font-weight: 300;
   margin: 0;
 }
 
 .footer-reg-text a {
-  color: var(--text-obsidian, #111111);
+  color: var(--text-obsidian);
   text-decoration: underline;
   text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.footer-reg-text a:hover {
+  color: var(--accent-emerald);
 }
 
 /* BOTTOM BASELINE & DISCLAIMER */
 .luxury-footer-bottom {
-  border-top: 1px solid var(--border-color, #e5e5e5);
+  border-top: 1px solid var(--border-parchment);
   padding-top: 24px;
 }
 
 .footer-disclaimer-text {
   font-size: 0.71875rem;
   line-height: 1.6;
-  color: var(--text-muted, #777777);
+  color: var(--text-muted);
   font-weight: 300;
   margin: 0 0 16px 0;
   text-align: left;
 }
 
+.footer-disclaimer-text strong {
+  color: var(--text-obsidian);
+  font-weight: 500;
+}
+
 .footer-copyright-bar {
   font-size: 0.75rem;
-  color: var(--text-muted, #888888);
+  color: var(--text-muted);
   font-weight: 300;
   text-align: left;
 }
 
-/* RESPONSIVE MOBILE BREAKPOINT */
+/* RESPONSIVE MOBILE BREAKPOINTS */
 @media (max-width: 768px) {
   .luxury-footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .luxury-author-box {
+    gap: 0.875rem;
+    margin: 32px 0 48px 0;
+  }
+  .luxury-author-avatar {
+    width: 52px;
+    height: 52px;
+  }
+  .luxury-author-text {
+    font-size: 0.8125rem;
+  }
+  .luxury-author-bio {
+    font-size: 0.75rem;
   }
 }

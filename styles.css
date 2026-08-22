@@ -379,6 +379,15 @@ body {
   flex-direction: column;
 }
 
+.luxury-author-byline {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--text-muted, #666666);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 2px 0;
+}
+
 .luxury-author-name {
   font-size: 1rem;
   font-weight: 500;

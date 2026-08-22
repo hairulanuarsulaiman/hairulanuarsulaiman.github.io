@@ -1,32 +1,59 @@
 <!-- GLOBAL QUIET LUXURY FOOTER -->
 <footer class="luxury-footer">
-  <div class="luxury-footer-container">
+  <div class="luxury-footer-inner">
+    
+    <!-- TOP GRID SECTION -->
+    <div class="luxury-footer-grid">
+      
+      <!-- COL 1: IDENTITY & BRAND -->
+      <div class="footer-col brand-col">
+        <p class="footer-brand-name">Hairul Anuar Bin Sulaiman</p>
+        <p class="footer-brand-title">
+          Associate Shariah Registered Financial Planner
+        </p>
+        <p class="footer-brand-firm">
+          Phillip Wealth Planners Sdn Bhd<br>
+          Phillip Mutual Berhad
+        </p>
+      </div>
 
-    <!-- REGULATORY & STATUTORY DISCLOSURES -->
-    <div class="luxury-footer-disclaimer">
-      <p>
-        <strong>Pemberitahuan Kawal Selia & Status Kelayakan:</strong><br>
-        Hairul Anuar Bin Sulaiman merupakan <strong>Associate Shariah Registered Financial Planner</strong> yang dianugerahkan oleh <em>Malaysian Financial Planning Council</em> (MFPC). Beliau dilantik oleh <em>Phillip Wealth Planners Sdn Bhd</em> sebagai <a href="https://www.bnm.gov.my/regulations/fsp-directory/far" target="_blank" rel="noopener noreferrer" class="luxury-footer-link">Islamic Financial Adviser Representative (IFAR)</a>, serta <em>Unit Trust Scheme Consultant</em> yang dilantik oleh <em>Phillip Mutual Berhad</em> dan berdaftar di bawah <a href="https://www.fimm.com.my/search/" target="_blank" rel="noopener noreferrer" class="luxury-footer-link">Federation of Investment Managers Malaysia (FIMM)</a>.
-      </p>
+      <!-- COL 2: EDITORIAL DIRECTORY -->
+      <div class="footer-col nav-col">
+        <p class="footer-col-heading">Kandungan</p>
+        <ul class="footer-nav-list">
+          <li><a href="{{ '/takaful/' | relative_url }}">Perancangan Takaful</a></li>
+          <li><a href="{{ '/unittrust/' | relative_url }}">Pelaburan Unit Trust</a></li>
+          <li><a href="{{ '/persaraan/' | relative_url }}">Strategi Persaraan</a></li>
+          <li><a href="{{ '/artikel/' | relative_url }}">Pusat Bacaan</a></li>
+          <li><a href="{{ '/faq/' | relative_url }}">Soalan Lazim (FAQ)</a></li>
+        </ul>
+      </div>
 
-      <p>
-        <strong>Penafian Kandungan:</strong><br>
-        Segala maklumat dan artikel yang terdapat di laman web ini disediakan semata-mata untuk tujuan pendidikan dan kesedaran umum sahaja. Ia tidak boleh dianggap sebagai satu tawaran jualan, desakan, atau nasihat kewangan rasmi sebelum penilaian keperluan peribadi dilakukan secara menyeluruh.
-      </p>
+      <!-- COL 3: REGULATORY DIRECTORY -->
+      <div class="footer-col reg-col">
+        <p class="footer-col-heading">Kawal Selia</p>
+        <p class="footer-reg-text">
+          Dilantik sebagai <strong>IFAR</strong> di bawah <a href="https://www.bnm.gov.my/regulations/fsp-directory/far" target="_blank" rel="noopener noreferrer">Bank Negara Malaysia</a> dan Perunding Unit Trust berdaftar di bawah <a href="https://www.fimm.com.my/search/" target="_blank" rel="noopener noreferrer">FIMM</a>.
+        </p>
+      </div>
+
     </div>
 
-    <!-- IDENTITY & COPYRIGHT -->
-    <div class="luxury-footer-identity">
-      <p class="luxury-footer-name">Hairul Anuar Bin Sulaiman</p>
-      <p class="luxury-footer-copy">
-        Associate Shariah Registered Financial Planner • &copy; {{ 'now' | date: "%Y" }}. Hak Cipta Terpelihara.
+    <!-- BOTTOM BASELINE (FULL-WIDTH RULE & DISCLAIMER) -->
+    <div class="luxury-footer-bottom">
+      <p class="footer-disclaimer-text">
+        <strong>Pemberitahuan & Penafian:</strong> Segala maklumat dan artikel di laman web ini disediakan semata-mata untuk tujuan pendidikan dan kesedaran umum. Ia tidak boleh dianggap sebagai satu tawaran jualan, desakan, atau nasihat kewangan rasmi sebelum penilaian keperluan peribadi dilakukan secara menyeluruh.
       </p>
+
+      <div class="footer-copyright-bar">
+        <p>&copy; {{ 'now' | date: "%Y" }} Hairul Anuar Bin Sulaiman. Hak Cipta Terpelihara.</p>
+      </div>
     </div>
 
   </div>
 </footer>
 
-<!-- JSON-LD STRUCTURED DATA FOR E-E-A-T & GEO (GOOGLE / PERPLEXITY / GEMINI) -->
+<!-- JSON-LD STRUCTURED DATA FOR E-E-A-T & GEO -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

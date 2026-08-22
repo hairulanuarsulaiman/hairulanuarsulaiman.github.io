@@ -5,9 +5,9 @@ category: Takaful
 date: 2026-08-13
 permalink: /artikel/hibah-takaful-vs-faraid/
 author: "Hairul Anuar Bin Sulaiman"
-image: "/assets/images/artikel/art-09-hibah-takaful-faraid.webp"
-image_alt: "Dokumen dan pen di atas meja kayu yang kemas dengan pencahayaan lembut pada waktu pagi."
-image_caption: "Kecairan tunai serta-merta memastikan kebajikan keluarga kekal terpelihara sewaktu proses pentadbiran pusaka dijalankan."
+image: "/assets/images/artikel/art-10-hibah-takaful-vs-faraid.webp"
+image_alt: "Bekas air batu berukir yang dialiri pancuran air buluh jernih di dalam taman tropika yang tenang."
+image_caption: "Kecairan tunai serta-merta ibarat aliran air yang berterusan, memastikan kebajikan harian keluarga kekal terpelihara sewaktu proses pusaka dijalankan."
 description: "Fahami perbezaan peranan Hibah Takaful dan Faraid dalam menguruskan harta pusaka serta bagaimana ia menyediakan kecairan tunai untuk keluarga."
 ---
 
@@ -72,15 +72,15 @@ Semasa mengisi borang penamaan Takaful, terdapat dua pilihan status penama yang 
 
 ## 4. Mengapa Setiap Keluarga Memerlukan Kecairan Tunai (*Liquidity*)?
 
-Tujuan utama merangka Hibah Takaful bukannya untuk menafikan hak waris Faraid lain, tetapi untuk menyediakan **Dana Kecairan Bertindak Pantas (*Emergency Cashflow*)**.
+Tujuan utama merangka Hibah Takaful bukannya untuk menafikan hak waris Faraid lain, tetapi untuk menyediakan **Dana Cair Pantas (*Emergency Cashflow*)**.
 
 Satu siri perbelanjaan penting perlu ditanggung oleh keluarga serta-merta selepas kematian pencari nafkah:
 
 - **Perbelanjaan Sara Hidup Harian:** Belanja dapur, persekolahan anak-anak, dan ansuran bulanan rumah/kenderaan sementara tunggu proses pusaka.
-- **Kos Pentadbiran Pusaka:** Yuran guaman, komsyen syarikat amanah, atau bayaran carian pejabat tanah untuk memproses agihan Faraid.
+- **Kos Pentadbiran Pusaka:** Yuran guaman, komisen syarikat amanah, atau bayaran carian pejabat tanah untuk memproses agihan Faraid.
 - **Penyelesaian Hutang Segera:** Melunaskan hutang jangka pendek si mati yang perlu diselesaikan sebelum agihan harta dibuat.
 
-Tanpa pampasan Hibah Takaful yang cecair, balu dan anak-anak berisiko mengalami tekanan kewangan yang meruncing walaupun si mati meninggalkan hartanah bernilai jutaan ringgit yang masih terikat.
+Tanpa pampasan Hibah Takaful yang cair, balu dan anak-anak berisiko mengalami tekanan kewangan yang meruncing walaupun si mati meninggalkan hartanah bernilai jutaan ringgit yang masih terikat.
 
 ---
 

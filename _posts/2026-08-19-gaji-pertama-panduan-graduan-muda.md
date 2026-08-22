@@ -5,9 +5,9 @@ category: Perancangan
 date: 2026-08-19
 permalink: /artikel/gaji-pertama-panduan-graduan-muda/
 author: "Hairul Anuar Bin Sulaiman"
-image: "/assets/images/artikel/art-11-gaji-pertama.webp"
-image_alt: "Buku nota perancangan ringkas, pen, dan cawan kopi di atas meja kayu dengan pencahayaan tenang."
-image_caption: "Mengurus gaji pertama memerlukan ketenangan fikiran dan pemisahan antara keperluan sebenar dengan kehendak orang lain."
+image: "/assets/images/artikel/art-11-gaji-pertama-panduan-graduan-muda.webp"
+image_alt: "Taman batu Zen dengan corak pasir berombak yang kemas dan batu sungai di bawah cahaya matahari pagi."
+image_caption: "Mengurus gaji pertama memerlukan ketenangan, kejelasan arah, dan keupayaan menapis bunyi bising persekitaran."
 description: "Dikelilingi pelbagai nasihat tentang kereta baru, pinjaman peribadi, atau hartanah? Fahami cara menyusun keutamaan kewangan gaji pertama anda tanpa tekanan."
 ---
 

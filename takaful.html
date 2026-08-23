@@ -33,17 +33,20 @@ image: "/assets/images/takaful/hero-takaful-architectural-shelter.jpg"
   </section>
 
   <!-- GALLERY-FRAMED VISUAL (IDEAS, NOT PEOPLE) -->
-  <figure class="luxury-figure">
-    <img 
-      src="{{ '/assets/images/takaful/hero-takaful-rooted-tree-malaysia.webp' | relative_url }}" 
-      alt="Pokok besar berakar kukuh di landskap semula jadi Malaysia pada waktu pagi dengan cahaya matahari lembut menembusi dedaunan." 
-      width="1200"
-      height="800"
-      loading="eager"
-      fetchpriority="high"
-    >
+ <figure class="luxury-figure">
+    <picture>
+      <source srcset="{{ '/assets/images/takaful/hero-takaful-architectural-shelter.webp' | relative_url }}" type="image/webp">
+      <img 
+        src="{{ '/assets/images/takaful/hero-takaful-architectural-shelter.jpg' | relative_url }}" 
+        alt="Seni bina seni bina Islamik dengan arked batu travertine dan kolam pantulan yang tenang di bawah cahaya pagi." 
+        width="1200"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
+      >
+    </picture>
     <figcaption class="luxury-figcaption">
-      Akar yang kukuh memberi ketenangan — perlindungan kewangan ialah asas kestabilan keluarga.
+      Struktur yang kukuh memberi ketenangan — perlindungan kewangan ialah asas kestabilan keluarga dan perniagaan.
     </figcaption>
   </figure>
 

@@ -31,39 +31,26 @@ Sebelum membuat sebarang keputusan atau pelan tindakan, luangkan sedikit masa un
 ## Lima Soalan Penting Penilaian Kesediaan Persaraan
 
 ### 1. Bagaimanakah Gaya Hidup Yang Anda Mahukan Selepas Bersara?
-
 Setiap individu mempunyai gambaran persaraan yang berbeza. Ada yang mahu meluangkan lebih masa untuk beribadah dan melancong, ada yang mahu memfokuskan aktiviti kemasyarakatan, atau sekadar menikmati kehidupan desa yang tenang bersama keluarga.
 
 Memahami gambaran gaya hidup pilihan ini membantu menentukan anggaran keperluan aliran tunai bulanan yang realistik.
 
----
-
 ### 2. Berapakah Perbelanjaan Bulanan Sebenar Anda Hari Ini?
-
 Ramai orang mengetahui angka pendapatan kasar mereka, tetapi kurang pasti jumlah sebenar perbelanjaan asas yang diperlukan untuk mengekalkan gaya hidup semasa.
 
 Memahami komitmen dan aliran tunai semasa merupakan langkah paling awal untuk mengunjurkan keperluan simpanan selepas tamat fasa kerjaya.
 
----
-
 ### 3. Adakah Anggaran Anda Mengambil Kira Faktor Inflasi?
-
 Kadar inflasi mengurangkan kuasa beli wang tunai secara beransur-ansur dari semasa ke semasa. Nisbah belanja RM3,000 sebulan hari ini mungkin memerlukan RM5,000 atau lebih dalam tempoh 15 hingga 20 tahun akan datang.
 
 Oleh itu, perancangan persaraan bukan sekadar mengumpul wang tunai statik, tetapi memastikan simpanan tersebut berkembang menerusi instrumen yang mampu mengatasi kadar inflasi.
 
----
-
 ### 4. Pelbagai Mana Sumber Pendapatan Persaraan Anda?
-
 Bagi kebanyakan rakyat Malaysia, simpanan KWSP merupakan tunggak utama. Namun begitu, bergantung kepada satu sumber sahaja berisiko terdedah kepada kehabisan dana (*outliving your savings*).
 
 Pertimbangkan sama ada anda mempunyai portfolio sokongan lain seperti pelaburan unit trust patuh Syariah, pendapatan sewaan, atau aset cecair lain yang boleh menjana pendapatan pasif secara berterusan.
 
----
-
 ### 5. Bilakah Masa Terbaik Untuk Mula Menyusun Strategi?
-
 Tiada jawapan tunggal yang sesuai untuk semua orang. Namun dari sudut statistik kewangan, semakin awal anda mula menyusun strategi, semakin besar manfaat gandaan masa (*compounding effect*) yang anda nikmati.
 
 Bermula lebih awal memberi ruang untuk mengurus risiko secara tenang tanpa perlu mengambil beban kewangan yang berat di penghujung usia kerjaya.

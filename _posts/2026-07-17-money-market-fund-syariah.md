@@ -45,12 +45,25 @@ Aset kecairan tinggi lain yang diluluskan dan dipantau secara rasmi oleh Suruhan
 
 ## 2. Perbandingan: MMF vs Akaun Simpanan, FD & Ekuiti
 
-| Jenis Instrumen | Perbandingan Pulangan | Tahap Kecairan (Pengeluaran) | Tahap Risiko |
-| :--- | :--- | :--- | :--- |
-| **Akaun Simpanan Biasa** | Sangat Rendah | Serta-merta (Hari yang sama) | Sangat Rendah |
-| **Simpanan Tetap (FD)** | Sederhana / Tetap | Dihadkan (Penalti jika dikeluarkan awal) | Sangat Rendah |
-| **Money Market Fund (MMF)** | Kompetitif / Lebih Tinggi | Tinggi (Tanpa penalti pengeluaran) | Rendah |
-| **Dana Ekuiti (Saham)** | Tinggi (Berdasarkan pasaran) | Fleksibel tetapi terdedah turun naik | Tinggi |
+### Akaun Simpanan Biasa
+* **Pulangan:** Sangat Rendah
+* **Kecairan:** Serta-merta (Hari yang sama)
+* **Tahap Risiko:** Sangat Rendah
+
+### Simpanan Tetap (FD)
+* **Pulangan:** Sederhana / Tetap
+* **Kecairan:** Dihadkan (Penalti jika dikeluarkan awal)
+* **Tahap Risiko:** Sangat Rendah
+
+### Money Market Fund (MMF)
+* **Pulangan:** Kompetitif / Lebih Tinggi
+* **Kecairan:** Tinggi (Tanpa penalti pengeluaran)
+* **Tahap Risiko:** Rendah
+
+### Dana Ekuiti (Saham)
+* **Pulangan:** Tinggi (Berdasarkan pasaran)
+* **Kecairan:** Fleksibel tetapi terdedah turun naik
+* **Tahap Risiko:** Tinggi
 
 ---
 

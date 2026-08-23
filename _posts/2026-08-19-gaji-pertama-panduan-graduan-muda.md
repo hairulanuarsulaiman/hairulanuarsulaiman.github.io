@@ -37,24 +37,23 @@ Ramai anak muda terperangkap dalam hutang bukan kerana mereka tidak bijak, tetap
 
 Sebelum menandatangani sebarang komitmen jangka panjang (seperti pinjaman kereta 9 tahun atau pembiayaan peribadi):
 
-* **Kereta Baharu vs. Pengangkutan Praktikal:** Kereta ialah aset susut nilai (*depreciating asset*). Keutamaan awal ialah pengangkutan yang selamat dan menjimatkan untuk ke tempat kerja, bukannya ansuran bulanan yang memakan 40% daripada gaji bersih anda.
-* **Bahaya Pinjaman Peribadi (*Personal Loan*):** Elakkan mengambil pembiayaan peribadi untuk gaya hidup, percutian, atau "modal permulaan" yang belum pasti. Ini adalah perangkap aliran tunai paling sukar dipulihkan bagi eksekutif muda.
+### Kereta Baharu vs. Pengangkutan Praktikal
+Kereta ialah aset susut nilai (*depreciating asset*). Keutamaan awal ialah pengangkutan yang selamat dan menjimatkan untuk ke tempat kerja, bukannya ansuran bulanan yang memakan 40% daripada gaji bersih anda.
+
+### Bahaya Pinjaman Peribadi (Personal Loan)
+Elakkan mengambil pembiayaan peribadi untuk gaya hidup, percutian, atau "modal permulaan" yang belum pasti. Ini adalah perangkap aliran tunai paling sukar dipulihkan bagi eksekutif muda.
 
 ---
 
-## 2. Tiga Asas Utama Sebelum Memikirkan Pelaburan Kompleks
+## 2. Tiga Asas Utama Sebelum Pelaburan Kompleks
 
 Sebelum anda terpengaruh dengan produk pelaburan berisiko tinggi atau cadangan komitmen besar, pastikan tiga tiang asas ini kukuh terlebih dahulu:
 
 ### Tiang 1: Tabung Kecemasan Cair (1 hingga 3 Bulan)
 Mulakan dengan mengumpul sekurang-kurangnya **1 hingga 3 bulan gaji bersih** di dalam akaun simpanan cair yang mudah dicapai. Tabung ini adalah "penampan" supaya anda tidak perlu meminjam jika berlaku kecemasan seperti pembaikan kenderaan atau keperluan mendesak.
 
----
-
 ### Tiang 2: Perlindungan Perubatan & Pendapatan Awal
 Waktu terbaik untuk memiliki perlindungan *Medical Card* atau Takaful ialah sewaktu anda masih muda dan sihat, kerana kadar caruman adalah paling rendah dan tiada sejarah perubatan lampau (*pre-existing conditions*).
-
----
 
 ### Tiang 3: Nisbah Simpanan Automatik
 Tidak perlu memikirkan formula yang terlalu rumit pada bulan pertama. Tetapkan potongan automatik serendah **10% hingga 20%** daripada gaji bersih terus ke akaun simpanan atau pelaburan berisiko rendah sebaik sahaja gaji masuk.
@@ -63,9 +62,14 @@ Tidak perlu memikirkan formula yang terlalu rumit pada bulan pertama. Tetapkan p
 
 ## 3. Ikut Buku, Ejen, atau Penasihat Kewangan?
 
-* **Buku Kewangan:** Bagus untuk membina kefahaman konsep dan mindset, tetapi cadangan di dalam buku selalunya bersifat umum dan tidak mengambil kira struktur cukai atau komitmen peribadi anda di Malaysia.
-* **Ejen Produk:** Kebanyakan ejen berfokus kepada penjualan produk khusus. Dengar cadangan mereka, tetapi minta masa untuk membuat penilaian secara objektif.
-* **Penasihat Kewangan Bertauliah:** Seorang penasihat kewangan yang baik tidak akan mendesak anda membeli produk pada hari pertama. Mereka akan mendengar matlamat anda, menganalisis aliran tunai, dan membantu anda membuat keputusan mengikut kemampuan sebenar.
+### Buku Kewangan
+Bagus untuk membina kefahaman konsep dan *mindset*, tetapi cadangan di dalam buku selalunya bersifat umum dan tidak mengambil kira struktur cukai atau komitmen peribadi anda di Malaysia.
+
+### Ejen Produk
+Kebanyakan ejen berfokus kepada penjualan produk khusus. Dengar cadangan mereka, tetapi minta masa untuk membuat penilaian secara objektif.
+
+### Penasihat Kewangan Bertauliah
+Seorang penasihat kewangan yang baik tidak akan mendesak anda membeli produk pada hari pertama. Mereka akan mendengar matlamat anda, menganalisis aliran tunai, dan membantu anda membuat keputusan mengikut kemampuan sebenar.
 
 ---
 

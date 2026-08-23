@@ -32,17 +32,13 @@ Apabila situasi ini berlaku, tindak balas semula jadi kita adalah untuk menjauhi
 
 ## 1. Tiga Punca Utama Keraguan Terhadap Takaful
 
-### A. Jualan Berasaskan "Jangkaan Palsu" (*Mis-selling*)
+### Jualan Berasaskan "Jangkaan Palsu" (Mis-selling)
 Sebahagian masyarakat membeli takaful berdasarkan janji lisan seperti *"semua bil hospital ditanggung 100%"* atau *"ini pelan simpanan berpuluh ribu"*. Apabila realiti tidak seperti yang dijanjikan sewaktu membuat tuntutan, rasa dikhianati akan timbul.
 
----
-
-### B. Ketidakfahaman Mengenai Terma Pengecualian (*Exclusions*)
+### Ketidakfahaman Mengenai Terma Pengecualian (Exclusions)
 Setiap sijil takaful mempunyai syarat kelayakan dan tempoh menunggu (*waiting period*). Penyakit sedia ada (*pre-existing conditions*) yang tidak diisytiharkan sewaktu permohonan sering menjadi punca utama tuntutan ditolak di kemudian hari.
 
----
-
-### C. Anggapan Bahawa Takaful Ialah "Pelan Pelaburan"
+### Anggapan Bahawa Takaful Ialah "Pelan Pelaburan"
 Takaful pada asasnya ialah instrumen **perlindungan risiko dan perkongsian kerugian (*Tabarru'*)**, bukannya instrumen untuk mengaut keuntungan pelaburan. Apabila nilai tunai (*cash value*) tidak setinggi yang dibayangkan, peserta berasa rugi.
 
 ---
@@ -51,15 +47,11 @@ Takaful pada asasnya ialah instrumen **perlindungan risiko dan perkongsian kerug
 
 Sekiranya anda masih berasa ragu-ragu, anda tidak perlu mendesak diri untuk "percaya" secara membuta tuli. Sebaliknya, tukarkan pendekatan anda daripada emosi kepada **penilaian objektif**:
 
-### Langkah 1: Baca *Product Disclosure Sheet* (PDS)
+### Langkah 1: Baca Product Disclosure Sheet (PDS)
 Jangan bergantung kepada penerangan lisan semata-mata. Minta dokumen PDS daripada penasihat anda. Di situ tercatat secara jelas apa yang dilindungi, apa yang dikecualikan, dan tempoh kelayakan tuntutan.
-
----
 
 ### Langkah 2: Isytihar Status Kesihatan Secara Jujur
 Kejujuran sewaktu mengisi borang permohonan (*principle of utmost good faith*) ialah kunci utama kelancaran tuntutan pada masa hadapan. Isytiharkan semua rekod kesihatan lampau, walaupun ia kelihatan kecil.
-
----
 
 ### Langkah 3: Asingkan Matlamat Perlindungan Dan Pelaburan
 Gunakan takaful khas untuk melindungi risiko pendapatan dan kos perubatan. Untuk tujuan simpanan atau pelaburan jangka panjang, gunakan instrumen yang khusus untuk pertumbuhan modal seperti unit amanah, hartanah, atau akaun simpanan khusus.

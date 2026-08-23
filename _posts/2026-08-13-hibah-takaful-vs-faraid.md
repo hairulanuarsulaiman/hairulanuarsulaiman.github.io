@@ -70,15 +70,20 @@ Semasa mengisi borang penamaan Takaful, terdapat dua pilihan status penama yang 
 
 ---
 
-## 4. Mengapa Setiap Keluarga Memerlukan Kecairan Tunai (*Liquidity*)?
+## 4. Mengapa Setiap Keluarga Memerlukan Kecairan Tunai (Liquidity)?
 
 Tujuan utama merangka Hibah Takaful bukannya untuk menafikan hak waris Faraid lain, tetapi untuk menyediakan **Dana Cair Pantas (*Emergency Cashflow*)**.
 
 Satu siri perbelanjaan penting perlu ditanggung oleh keluarga serta-merta selepas kematian pencari nafkah:
 
-- **Perbelanjaan Sara Hidup Harian:** Belanja dapur, persekolahan anak-anak, dan ansuran bulanan rumah/kenderaan sementara tunggu proses pusaka.
-- **Kos Pentadbiran Pusaka:** Yuran guaman, komisen syarikat amanah, atau bayaran carian pejabat tanah untuk memproses agihan Faraid.
-- **Penyelesaian Hutang Segera:** Melunaskan hutang jangka pendek si mati yang perlu diselesaikan sebelum agihan harta dibuat.
+### Perbelanjaan Sara Hidup Harian
+Belanja dapur, persekolahan anak-anak, dan ansuran bulanan rumah/kenderaan sementara menunggu proses pusaka selesai.
+
+### Kos Pentadbiran Pusaka
+Yuran guaman, komisen syarikat amanah, atau bayaran carian pejabat tanah untuk memproses agihan Faraid.
+
+### Penyelesaian Hutang Segera
+Melunaskan hutang jangka pendek si mati yang perlu diselesaikan sebelum agihan harta dibuat.
 
 Tanpa pampasan Hibah Takaful yang cair, balu dan anak-anak berisiko mengalami tekanan kewangan yang meruncing walaupun si mati meninggalkan hartanah bernilai jutaan ringgit yang masih terikat.
 

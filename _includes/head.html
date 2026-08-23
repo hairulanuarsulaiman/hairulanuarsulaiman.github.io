@@ -5,7 +5,7 @@
   <!-- SEO TITLE & METADATA -->
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
-  <meta name="author" content="Hairul Anuar Bin Sulaiman">
+  <meta name="author" content="{{ site.author }}">
   <meta name="robots" content="index, follow">
 
   <!-- CANONICAL URL -->
@@ -24,7 +24,7 @@
   {% else %}
     <meta property="og:image" content="{{ '/assets/images/homepage/malaysia-rainforest-path-morning-mist.jpg' | absolute_url }}">
   {% endif %}
-  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:type" content="image/webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="800">
 
@@ -36,6 +36,44 @@
     <meta name="twitter:image" content="{{ page.image | absolute_url }}">
   {% else %}
     <meta name="twitter:image" content="{{ '/assets/images/homepage/malaysia-rainforest-path-morning-mist.jpg' | absolute_url }}">
+  {% endif %}
+
+  <!-- STRUCTURED SCHEMA MARKUP (JSON-LD) -->
+  {% if page.layout == 'post' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "image": [{{ page.image | absolute_url | jsonify }}],
+    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": {{ page.author | default: site.author | jsonify }}
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": {{ site.author | jsonify }}
+    },
+    "description": {{ page.description | strip_html | strip_newlines | jsonify }}
+  }
+  </script>
+  {% else %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "telephone": {{ site.phone | jsonify }},
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": {{ site.city | jsonify }},
+      "addressRegion": {{ site.state | jsonify }},
+      "addressCountry": "MY"
+    }
+  }
+  </script>
   {% endif %}
 
   <!-- STYLESHEETS -->

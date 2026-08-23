@@ -26,12 +26,15 @@ Apakah faktor penarik sebenar yang membuatkan ramai profesional, peniaga, dan ke
 
 ---
 
-## 1. Kemudahan & Delegasi Kepakaran (*Delegated Management*)
+## 1. Kemudahan & Delegasi Kepakaran (Delegated Management)
 
 Membina portfolio saham atau sukuk secara peribadi memerlukan tiga perkara utama: **masa, pengetahuan teknikal, dan kawalan emosi**.
 
-* **Cabaran Pelabur Individu:** Kebanyakan individu mempunyai kerjaya sibuk, keluarga, dan komitmen harian. Menganalisis penyata kewangan syarikat atau memantau pergerakan pasaran setiap hari adalah perkara yang memenatkan.
-* **Solusi Unit Amanah:** Anda menyerahkan tugas penilaian instrumen kepada **pengurus dana profesional (*Fund Manager*)** yang disokong oleh pasukan penyelidik khas. Anda tidak perlu membuat keputusan emosi sewaktu pasaran turun naik—pasukan profesional yang menguruskannya untuk anda.
+### Cabaran Pelabur Individu
+Kebanyakan individu mempunyai kerjaya sibuk, keluarga, dan komitmen harian. Menganalisis penyata kewangan syarikat atau memantau pergerakan pasaran setiap hari adalah perkara yang memenatkan.
+
+### Solusi Unit Amanah
+Anda menyerahkan tugas penilaian instrumen kepada **pengurus dana profesional (*Fund Manager*)** yang disokong oleh pasukan penyelidik khas. Anda tidak perlu membuat keputusan emosi sewaktu pasaran turun naik—pasukan profesional yang menguruskannya untuk anda.
 
 ---
 
@@ -51,12 +54,15 @@ Kejayaan pelaburan jangka panjang bergantung kepada **konsistensi, bukannya perc
 
 Melalui kemudahan potongan bulanan automatik (*Regular Savings Plan*):
 
-* Pelaburan dilakukan secara berdisiplin tanpa perlu diingatkan setiap bulan.
-* Anda memanfaatkan strategi *Dollar-Cost Averaging* (DCA)—membeli lebih banyak unit apabila harga rendah dan kurang unit apabila harga tinggi secara automatik.
+### Pelaburan Disiplin
+Pelaburan dilakukan secara konsisten setiap bulan tanpa bergantung kepada dorongan emosi atau ingatan harian.
+
+### Purata Kos Dolar (DCA)
+Anda memanfaatkan strategi *Dollar-Cost Averaging*—membeli lebih banyak unit apabila harga rendah dan kurang unit apabila harga tinggi secara automatik.
 
 ---
 
-## 4. Perlindungan Struktur Institusi & Pemegang Amanah (*Trustee*)
+## 4. Perlindungan Struktur Institusi & Pemegang Amanah (Trustee)
 
 Satu kelebihan utama unit amanah yang jarang disedari ialah aspek keselamatan struktur kewangan.
 
@@ -68,6 +74,6 @@ Pengasingan aset ini memastikan dana anda sentiasa dilindungi dan diuruskan meng
 
 ## Kesimpulan: Alat Untuk Mencapai Matlamat, Bukan Hanya Pulangan
 
-Unit amanah hanyalah sebuah jentera. Ia direka untuk membantu anda mengumpul dana persaraan, tabung pendidikan anak-anak, atau deposit hartanah secara sistematik tanpa mengganggu kualiti hidup atau kerjaya harian anda.
+Unit amanah hanyalah sebuah jentera. Ia direka untuk membantu anda mengumpul dana persaraan, tabung pendidikan anak-anak, atau deposit hartanah secara systematikan tanpa mengganggu kualiti hidup atau kerjaya harian anda.
 
 Apabila anda memahami peranannya secara jelas, pelaburan tidak lagi menjadi satu perkara yang mendedahkan emosi, melainkan satu proses pembinaan kekayaan yang tenang dan tersusun.

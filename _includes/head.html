@@ -1,0 +1,43 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO TITLE & METADATA -->
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  <meta name="author" content="Hairul Anuar Bin Sulaiman">
+  <meta name="robots" content="index, follow">
+
+  <!-- CANONICAL URL -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  <!-- OPEN GRAPH / WHATSAPP / LINKEDIN PREVIEWS -->
+  <meta property="og:locale" content="ms_MY">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  {% if page.image %}
+    <meta property="og:image" content="{{ page.image | absolute_url }}">
+  {% else %}
+    <meta property="og:image" content="{{ '/assets/images/homepage/malaysia-rainforest-path-morning-mist.jpg' | absolute_url }}">
+  {% endif %}
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="800">
+
+  <!-- TWITTER CARDS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  {% if page.image %}
+    <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+  {% else %}
+    <meta name="twitter:image" content="{{ '/assets/images/homepage/malaysia-rainforest-path-morning-mist.jpg' | absolute_url }}">
+  {% endif %}
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+</head>

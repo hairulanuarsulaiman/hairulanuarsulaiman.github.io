@@ -37,7 +37,7 @@ Mengapa 10 tahun? Kerana tempoh ini memberikan masa yang cukup untuk pasangan at
 **Formula:**  
 *Jumlah Perlindungan = Pendapatan Tahunan × 10 Tahun*
 
-### Pengiraan Untuk Gaji RM5,000:
+### Pengiraan Untuk Gaji RM5,000
 
 * **Pendapatan Sebulan:** RM5,000
 * **Pendapatan Setahun:** RM5,000 × 12 bulan = **RM60,000**
@@ -54,8 +54,8 @@ Bayangkan senario di mana pencari nafkah tidak lagi dapat bekerja. Jika pampasan
 ### Kaedah A: Pengeluaran Secara Berperingkat (Direct Cashflow)
 Keluarga mengeluarkan **RM5,000 sebulan** daripada dana pampasan tersebut untuk membayar sewa/pembiayaan rumah, belanja dapur, dan persekolahan anak-anak. Dana ini bertahan tepat selama **120 bulan (10 tahun)** tanpa mengganggu gaya hidup sedia ada.
 
-### Kaedah B: Agihan Instrumen Berrisiko Rendah (Capital Preservation)
-Jika dana pampasan RM600,000 tersebut ditempatkan di dalam instrumen patuh Syariah berrisiko rendah yang memulangkan kadar sekitar **5% setahun**:
+### Kaedah B: Agihan Instrumen Berisiko Rendah (Capital Preservation)
+Jika dana pampasan RM600,000 tersebut ditempatkan di dalam instrumen patuh Syariah berisiko rendah yang memulangkan kadar sekitar **5% setahun**:
 
 *Pulangan Tahunan = RM600,000 × 5% = RM30,000 setahun (RM2,500 sebulan)*
 
@@ -67,8 +67,11 @@ Pulangan dividen ini sahaja sudah mampu menampung 50% daripada kelangsungan asas
 
 Jawapannya: **Tidak semestinya secara mendadak.** Perancangan kewangan adalah berasaskan keutamaan dan kemampuan. Jika bajet semasa anda belum mengizinkan untuk memiliki perlindungan RM600,000 serta-merta, anda boleh memulakan dengan strategi berfasa:
 
-1. **Fasa 1 (Perlindungan Asas):** Sediakan 3–5 tahun pendapatan (RM180,000 – RM300,000).
-2. **Fasa 2 (Peningkatan Berperingkat):** Tingkatkan jumlah perlindungan seiring dengan kenaikan gaji atau pertambahan ahli keluarga.
+### Fasa 1: Perlindungan Asas (3–5 Tahun Pendapatan)
+Sediakan dana asas pampasan sekitar **RM180,000 hingga RM300,000** terlebih dahulu untuk mengunci ruang perlindungan awal keluarga.
+
+### Fasa 2: Peningkatan Berperingkat
+Tingkatkan jumlah perlindungan secara teratur seiring dengan kenaikan gaji, pertambahan komitmen, atau pertambahan ahli keluarga.
 
 ---
 

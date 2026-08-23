@@ -28,43 +28,50 @@ Persoalannya: **Adakah pintu perlindungan takaful benar-benar telah tertutup rap
 
 ---
 
-## 1. Hakikat *Underwriting*: Bagaimana Risiko Dinilai?
+## 1. Hakikat Underwriting: Bagaimana Risiko Dinilai?
 
 Prinsip asas takaful ialah perkongsian risiko (*Tabarru'*) di kalangan peserta yang berada dalam keadaan risiko setara. Apabila anda memohon pelan takaful dengan sejarah kesihatan lampau, pihak syarikat takaful akan menilai permohonan melalui proses *underwriting*.
 
 Bergantung kepada tahap keseriusan dan kawalan penyakit anda, keputusan permohonan biasanya terbahagi kepada 4 kategori:
 
-* **Lulus Standard:** Diterima pada kadar caruman biasa (biasanya untuk penyakit ringan yang terkawal sepenuhnya).
-* **Penambahan Caruman (*Loading*):** Lulus untuk dilindungi, tetapi kadar caruman bulanan ditingkatkan bagi mengimbangi risiko kesihatan anda.
-* **Pengecualian (*Exclusion*):** Pelan diluluskan, tetapi komplikasi kesihatan berkaitan penyakit sedia ada anda tidak dilindungi.
-* **Penolakan Permohonan (*Decline*):** Permohonan pelan biasa tidak dapat diterima kerana risiko kesihatan yang terlalu tinggi.
+### Lulus Standard
+Diterima pada kadar caruman biasa (biasanya untuk penyakit ringan yang terkawal sepenuhnya).
+
+### Penambahan Caruman (Loading)
+Lulus untuk dilindungi, tetapi kadar caruman bulanan ditingkatkan bagi mengimbangi risiko kesihatan anda.
+
+### Pengecualian (Exclusion)
+Pelan diluluskan, tetapi komplikasi kesihatan berkaitan penyakit sedia ada anda tidak dilindungi.
+
+### Penolakan Permohonan (Decline)
+Permohonan pelan biasa tidak dapat diterima kerana risiko kesihatan yang terlalu tinggi.
 
 ---
 
-## 2. Pilihan Untuk Kes Kronik: Pelan Kelulusan Dijamin (*Guaranteed Acceptance*)
+## 2. Pilihan Untuk Kes Kronik: Pelan Kelulusan Dijamin (Guaranteed Acceptance)
 
 Sekiranya anda berada dalam kategori di mana permohonan pelan *Medical Card* atau perlindungan hayat biasa telah ditolak, adakah masih ada instrumen yang boleh digunakan?
 
 Jawapannya: **Ya, melalui Pelan Kelulusan Dijamin (*Guaranteed Issuance Offer / GAO*).**
 
-### Ciri-Ciri Utama Pelan *Guaranteed Acceptance*:
+### Ciri-Ciri Utama Pelan Guaranteed Acceptance:
 * **Tanpa Pemeriksaan Kesihatan:** Permohonan tidak memerlukan anda menjalani ujian perubatan atau menjawab soalan kesihatan yang rumit.
 * **Kelulusan Dijamin:** Permohonan diterima secara automatik mengikut syarat umur pelan.
 * **Tujuan Utama:** Menyediakan pampasan tunai khas untuk menyelesaikan baki hutang, kos pengurusan harta, atau simpanan sara hidup asas untuk waris sekiranya anda meninggal dunia.
 
 ---
 
-## 3. Pertimbangan Utama Sebelum Mengambil Pelan *Guaranteed Acceptance*
+## 3. Pertimbangan Utama Sebelum Mengambil Pelan Guaranteed Acceptance
 
 Sebagai seorang penasihat kewangan, adalah penting untuk menyatakan bahawa pelan ini mempunyai struktur dan kompromi yang perlu difahami secara jelas:
 
-### A. Kadar Caruman Yang Lebih Tinggi
+### Kadar Caruman Yang Lebih Tinggi
 Disebabkan risiko syarikat takaful adalah tinggi (kerana menerima peserta tanpa tapisan kesihatan), kadar caruman bulanan bagi pelan ini adalah lebih tinggi berbanding pelan biasa.
 
-### B. Manfaat Terhad & Tempoh Menunggu (*Waiting Period*)
+### Manfaat Terhad & Tempoh Menunggu (Waiting Period)
 Kebanyakan pelan *Guaranteed Acceptance* mengehadkan pembayaran pampasan penuh dalam tempoh 1 hingga 2 tahun pertama bagi kematian akibat penyakit (selalunya hanya memulangkan jumlah caruman yang telah dibayar). Namun, pampasan akibat kemalangan biasanya dilindungi serta-merta.
 
-### C. Tiada Perlindungan Bil Hospital
+### Tiada Perlindungan Bil Hospital
 Pelan jenis ini tidak berfungsi sebagai *Medical Card* untuk membayar kos rawatan hospital swasta harian anda. Ia berfokus secara khusus kepada pampasan hayat tunai (*lump-sum payout*).
 
 ---

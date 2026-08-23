@@ -6,7 +6,7 @@ date: 2026-07-23
 permalink: /artikel/pelaburan-ekuiti-vs-sukuk-tabung-pendidikan-anak/
 author: "Hairul Anuar Bin Sulaiman"
 image: "/assets/images/artikel/art-08-pelaburan-ekuiti-vs-sukuk-tabung-pendidikan-anak.webp"
-image_alt: "Topi akademik dan buku-buku berilid kulit di atas meja kayu gelap di bawah limpahan cahaya matahari pagi."
+image_alt: "Topi akademik dan buku-buku berjilid kulit di atas meja kayu gelap di bawah limpahan cahaya matahari pagi."
 image_caption: "Perancangan dana pendidikan adalah pelaburan jangka panjang demi membuka pintu peluang dan masa depan anak-anak."
 description: "Panduan ibu bapa membina dana pendidikan anak secara bersasar mengikut garis masa (time horizon) menggunakan gabungan ekuiti dan sukuk patuh Syariah."
 ---
@@ -30,13 +30,13 @@ Untuk membina tabung pendidikan yang efisien, ibu bapa perlu memahami dua instru
 
 Daripada memaksa perbandingan dalam jadual yang sempit di skrin telefon, fahami dua watak utama ini mengikut peranan masing-masing:
 
-**Ekuiti Patuh Syariah (Saham)**
+### Ekuiti Patuh Syariah (Saham)
 * **Sifat Utama:** Pemilikan sebahagian pegangan dalam syarikat yang berkembang.
 * **Matlamat:** Pertumbuhan Modal (*Capital Growth*) untuk mengatasi inflasi.
 * **Tahap Risiko:** Sederhana hingga Tinggi (terdedah kepada pergerakan pasaran).
 * **Profil Pulangan:** Potensi pulangan tinggi dalam jangka panjang.
 
-**Sukuk Patuh Syariah (Bon Islamik)**
+### Sukuk Patuh Syariah (Bon Islamik)
 * **Sifat Utama:** Pelaburan dalam aset atau sijil keberhutangan Islamik yang stabil.
 * **Matlamat:** Pemeliharaan Modal & Pendapatan (*Capital Preservation*).
 * **Tahap Risiko:** Rendah hingga Sederhana.
@@ -44,7 +44,7 @@ Daripada memaksa perbandingan dalam jadual yang sempit di skrin telefon, fahami 
 
 ---
 
-## 2. Garis Masa (*Time Horizon*): Kunci Pemilihan Pelaburan
+## 2. Garis Masa (Time Horizon): Kunci Pemilihan Pelaburan
 
 Tiada jawapan mutlak bahawa Ekuiti "lebih baik" daripada Sukuk atau sebaliknya. Faktor penentu paling utama ialah **umur anak anda hari ini**.
 
@@ -68,14 +68,17 @@ Pendekatan terbaik yang digunakan oleh perancang kewangan profesional ialah **Pe
 
 Daripada mengekalkan profil risiko yang sama selama 18 tahun, ibu bapa secara berdisiplin mengubah agihan aset (*asset allocation*) seiring dengan usia anak:
 
-> * **Umur 0–10 Tahun:** `80% Ekuiti + 20% Sukuk`  
->   *(Fasa Mengejar Pertumbuhan Modal)*
-> 
-> * **Umur 11–14 Tahun:** `50% Ekuiti + 50% Sukuk`  
->   *(Fasa Mengimbangi Risiko & Mengunci Sebahagian Keuntungan)*
-> 
-> * **Umur 15–18 Tahun:** `20% Ekuiti + 80% Sukuk / Pasaran Wang`  
->   *(Fasa Memelihara Modal Sebelum Kemasukan Universiti)*
+### Umur 0–10 Tahun
+`80% Ekuiti + 20% Sukuk`  
+*(Fasa Mengejar Pertumbuhan Modal)*
+
+### Umur 11–14 Tahun
+`50% Ekuiti + 50% Sukuk`  
+*(Fasa Mengimbangi Risiko & Mengunci Sebahagian Keuntungan)*
+
+### Umur 15–18 Tahun
+`20% Ekuiti + 80% Sukuk / Pasaran Wang`  
+*(Fasa Memelihara Modal Sebelum Kemasukan Universiti)*
 
 ---
 

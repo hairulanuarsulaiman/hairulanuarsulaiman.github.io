@@ -30,28 +30,30 @@ Hakikatnya, musibah penyakit kritikal bukan sekadar tentang bil rawatan di hospi
 
 Perlindungan Penyakit Kritikal ialah pelan Takaful yang memberikan **bayaran pampasan tunai sekaligus (*lump-sum*)** secara terus kepada anda apabila didiagnosis dengan mana-mana penyakit serius yang tersenarai dalam sijil Takaful.
 
-### Perbezaan Fungsi Kewangan:
-- **Kad Perubatan:** Membayar bil rawatan hospital, pembedahan, dan ubat-ubatan secara terus kepada pihak hospital. (Wang tidak masuk ke akaun anda).
-- **Pampasan Penyakit Kritikal:** Tunai dipindahkan terus ke akaun bank anda. Tiada syarat bagaimana wang tersebut mesti dibelanjakan — anda bebas menggunakannya untuk sewa rumah, belanja dapur, ubat tambahan, atau bayaran ansuran bulanan.
+### Perbezaan Fungsi Kewangan
 
-### Contoh Penyakit Yang Lazim Dilindungi:
-- Kanser (Cancer)
-- Serangan Jantung (Heart Attack)
-- Strok (Stroke)
-- Kegagalan Buah Pinggang Kronik (End-Stage Kidney Failure)
-- Pembedahan Pintasan Arteri Koronari (Coronary Artery By-Pass Surgery)
+* **Kad Perubatan:** Membayar bil rawatan hospital, pembedahan, dan ubat-ubatan secara terus kepada pihak hospital (wang tidak masuk ke akaun anda).
+* **Pampasan Penyakit Kritikal:** Tunai dipindahkan terus ke akaun bank anda. Anda bebas menggunakannya untuk sewa rumah, belanja dapur, ubat tambahan, atau bayaran ansuran bulanan.
+
+### Contoh Penyakit Yang Lazim Dilindungi
+
+* Kanser (*Cancer*)
+* Serangan Jantung (*Heart Attack*)
+* Strok (*Stroke*)
+* Kegagalan Buah Pinggang Kronik (*End-Stage Kidney Failure*)
+* Pembedahan Pintasan Arteri Koronari (*Coronary Artery By-Pass Surgery*)
 
 ---
 
 ## 2. Mengapa Perlindungan Ini Tersangat Penting?
 
-### A. Penggantian Pendapatan Sewaktu Pemulihan
+### Penggantian Pendapatan Sewaktu Pemulihan
 Rawatan penyakit kritikal memerlukan masa pemulihan yang panjang (selalunya 1 hingga 3 tahun). Dalam tempoh ini, anda mungkin terpaksa mengambil cuti tanpa gaji atau berhenti bekerja. Pampasan tunai ini bertindak menggantikan gaji anda yang terhenti.
 
-### B. Kos Luar Jangka & Rawatan Alternatif
-Kad perubatan tidak menampung kos pengangkutan ke hospital, ubat-ubatan khas yang tidak ditanggung insurans/Takaful hospital, makanan bernutrisi khas, atau khidmat penjaga (*caregiver*) di rumah.
+### Kos Luar Jangka & Rawatan Alternatif
+Kad perubatan tidak menampung kos pengangkutan ke hospital, ubat-ubatan khas yang tidak ditanggung hospital, makanan bernutrisi khas, atau khidmat penjaga (*caregiver*) di rumah.
 
-### C. Melindungi Simpanan & Aset Jangka Panjang
+### Melindungi Simpanan & Aset Jangka Panjang
 Tanpa pampasan tunai yang mencukupi, ramai pesakit terpaksa mengeluarkannya daripada akaun simpanan kecemasan, menjual hartanah pada harga rugi, atau mengosongkan akaun simpanan persaraan KWSP.
 
 ---
@@ -66,11 +68,16 @@ Jumlah pampasan yang disyorkan biasanya berasaskan **3 hingga 5 tahun pendapatan
 
 ---
 
-## 4. Perkara Penting Yang Perlu Difahami Sebelum Memilih
+## 4. Perkara Penting Sebelum Memilih
 
-1. **Definisi & Peringkat Penyakit:** Fahami sama ada pelan tersebut melindungi peringkat awal (*early stage*) atau peringkat akhir (*advanced stage*).
-2. **Tempoh Menunggu (*Waiting Period*):** Sijil Takaful biasanya mempunyai tempoh menunggu (contohnya 30 hingga 90 hari daripada tarikh sijil berkuat kuasa) sebelum tuntutan penyakit kritikal boleh dibuat.
-3. **Pengecualian (*Exclusions*):** Fahami penyakit sedia ada (*pre-existing conditions*) yang tidak dilindungi.
+### Definisi & Peringkat Penyakit
+Fahami sama ada pelan tersebut melindungi peringkat awal (*early stage*) atau peringkat akhir (*advanced stage*).
+
+### Tempoh Menunggu (Waiting Period)
+Sijil Takaful biasanya mempunyai tempoh menunggu (contohnya 30 hingga 90 hari daripada tarikh sijil berkuat kuasa) sebelum tuntutan penyakit kritikal boleh dibuat.
+
+### Pengecualian (Exclusions)
+Fahami penyakit sedia ada (*pre-existing conditions*) atau syarat khusus yang tidak dilindungi di bawah sijil.
 
 ---
 

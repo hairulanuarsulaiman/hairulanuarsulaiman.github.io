@@ -28,8 +28,11 @@ Tujuan artikel ini bukan untuk membuktikan bahawa satu pilihan sentiasa lebih ba
 
 ## 1. Asas Kontrak: Saling Bantu vs Jual Beli
 
-- **Takaful:** Dalam Takaful, peserta menyumbang ke dalam dana bersama berdasarkan konsep *Tabarru'* (sumbangan kebajikan). Dana ini digunakan untuk saling membantu peserta lain yang ditimpa musibah. Pengendali Takaful bertindak sebagai pengurus (*Wakil*) mengikut akad yang dipersetujui dan bukannya pemilik dana.
-- **Insurans Konvensional:** Merupakan kontrak jual beli (*Mu’awadah*) di mana pemegang polisi membayar premium untuk membeli jaminan pampasan, manakala syarikat insurans menanggung risiko sebagai penjual.
+### Takaful (Akad Tabarru' & Wakil)
+Dalam Takaful, peserta menyumbang ke dalam dana bersama berdasarkan konsep *Tabarru'* (sumbangan kebajikan). Dana ini digunakan untuk saling membantu peserta lain yang ditimpa musibah. Pengendali Takaful bertindak sebagai pengurus (*Wakil*) mengikut akad yang dipersetujui dan bukannya pemilik dana.
+
+### Insurans Konvensional (Akad Mu'awadah)
+Merupakan kontrak jual beli (*Mu’awadah*) di mana pemegang polisi membayar premium untuk membeli jaminan pampasan, manakala syarikat insurans menanggung risiko sebagai penjual.
 
 > *"Dan hendaklah kamu bertolong-tolongan dalam perkara kebajikan dan ketakwaan."*  
 > — **Surah Al-Ma'idah, ayat 2**
@@ -38,29 +41,41 @@ Tujuan artikel ini bukan untuk membuktikan bahawa satu pilihan sentiasa lebih ba
 
 ## 2. Riba (Faedah): Pendekatan Yang Berbeza
 
-- **Takaful:** Dana sumbangan diuruskan secara Islamik. Pulangan pelaburan wajib bersumberkan aset patuh Syariah. Peserta tidak menerima atau membayar Riba dalam apa jua bentuk.
-- **Insurans Konvensional:** Sebahagian besar dana premium dilaburkan dalam instrumen faedah (seperti bon konvensional dan pinjaman). Pulangan pelaburan boleh datang daripada instrumen yang mengandungi Riba.
+### Pengurusan Dana Takaful
+Dana sumbangan diuruskan secara Islamik. Pulangan pelaburan wajib bersumberkan aset patuh Syariah. Peserta tidak menerima atau membayar Riba dalam apa jua bentuk.
+
+### Pengurusan Dana Insurans Konvensional
+Sebahagian besar dana premium dilaburkan dalam instrumen faedah (seperti bon konvensional dan pinjaman). Pulangan pelaburan boleh datang daripada instrumen yang mengandungi Riba.
 
 ---
 
 ## 3. Gharar (Ketidakpastian) Dalam Kontrak
 
-- **Takaful:** Sumbangan *Tabarru'* dibuat atas dasar kerelaan dan kebajikan (*pemberian*). Dalam hukum muamalat Islam, ketidakpastian (*Gharar*) dimaafkan dalam kontrak kebajikan kerana niat utamanya ialah tolong-menolong, bukannya mengaut keuntungan perdagangan.
-- **Insurans Konvensional:** Polisi insurans dikategorikan sebagai kontrak jual beli. Apabila berlaku jual beli yang mengandungi ketidakpastian besar (sama ada pampasan akan berlaku atau tidak berbanding jumlah premium yang dibayar), ia mengandungi *Gharar* melampau yang dilarang dalam Islam.
+### Kebajikan Dalam Takaful
+Sumbangan *Tabarru'* dibuat atas dasar kerelaan dan kebajikan (*pemberian*). Dalam hukum muamalat Islam, ketidakpastian (*Gharar*) dimaafkan dalam kontrak kebajikan kerana niat utamanya ialah tolong-menolong, bukannya mengaut keuntungan perdagangan.
+
+### Komersial Dalam Insurans Konvensional
+Polisi insurans dikategorikan sebagai kontrak jual beli. Apabila berlaku jual beli yang mengandungi ketidakpastian besar (sama ada pampasan akan berlaku atau tidak berbanding jumlah premium yang dibayar), ia mengandungi *Gharar* melampau yang dilarang dalam Islam.
 
 ---
 
 ## 4. Pemilikan Dana & Lebihannya
 
-- **Takaful:** Dana sumbangan adalah milik peserta secara kolektif. Syarikat Takaful bertindak sebagai pengurus (*Wakil*) dan dibayar yuran perkhidmatan (*Ujrah*). Jika terdapat lebihan dana risiko pada akhir tahun, ia boleh diagihkan semula kepada peserta.
-- **Insurans Konvensional:** Premium yang dibayar menjadi hak milik mutlak syarikat insurans. Segala keuntungan daripada pengurusan risiko dan pelaburan menjadi milik pemegang saham syarikat.
+### Hak Milik Kolektif Peserta Takaful
+Dana sumbangan adalah milik peserta secara kolektif. Syarikat Takaful bertindak sebagai pengurus (*Wakil*) dan dibayar yuran perkhidmatan (*Ujrah*). Jika terdapat lebihan dana risiko pada akhir tahun, ia boleh diagihkan semula kepada peserta.
+
+### Hak Milik Mutlak Syarikat Insurans
+Premium yang dibayar menjadi hak milik mutlak syarikat insurans. Segala keuntungan daripada pengurusan risiko dan pelaburan menjadi milik pemegang saham syarikat.
 
 ---
 
 ## 5. Pengawasan Syariah Rasmi
 
-- **Takaful:** Setiap pengendali Takaful diwajibkan oleh undang-undang mempunyai Jawatankuasa Penasihat Syariah (*Shariah Committee*) yang meluluskan setiap produk, kontrak, dan instrumen pelaburan, selain dipantau oleh Bank Negara Malaysia (BNM).
-- **Insurans Konvensional:** Tiada lapisan pengawasan atau tadbir urus Syariah dalam operasi mahupun portfolio pelaburannya.
+### Tadbir Urus Syariah Takaful
+Setiap pengendali Takaful diwajibkan oleh undang-undang mempunyai Jawatankuasa Penasihat Syariah (*Shariah Committee*) yang meluluskan setiap produk, kontrak, dan instrumen pelaburan, selain dipantau oleh Bank Negara Malaysia (BNM).
+
+### Struktur Operasi Konvensional
+Tiada lapisan pengawasan atau tadbir urus Syariah dalam operasi mahupun portfolio pelaburannya.
 
 ---
 

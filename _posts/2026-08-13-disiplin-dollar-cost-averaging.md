@@ -30,20 +30,21 @@ Namun, bagi pelabur yang menggunakan strategi **Dollar-Cost Averaging (DCA)**, k
 
 DCA ialah strategi pelaburan di mana anda melaburkan **jumlah wang yang tetap pada sela masa yang teratur** (contohnya RM500 setiap bulan), tanpa menghiraukan sama ada pasaran sedang naik, rata, atau turun.
 
-Melalui pendekatan ini:
+### Sewaktu Pasaran Naik
+Harga unit lebih tinggi, maka peruntukan wang yang sama akan memperoleh jumlah unit yang lebih sedikit.
 
-* **Sewaktu Pasaran Naik:** Harga unit lebih tinggi, maka anda mendapat jumlah unit yang lebih sedikit.
-* **Sewaktu Pasaran Turun:** Harga unit lebih rendah, maka jumlah wang yang sama akan membeli lebih banyak unit.
+### Sewaktu Pasaran Turun
+Harga unit lebih rendah, maka jumlah wang yang sama akan membeli lebih banyak unit pelaburan.
 
 ---
 
-## 2. Mengapa *Market Timing* Selalunya Gagal?
+## 2. Mengapa Market Timing Selalunya Gagal?
 
 Ramai pelabur terperangkap dengan impian untuk "membeli pada harga paling rendah dan menjual pada harga paling tinggi" (*buy low, sell high*). 
 
 Dalam realiti:
 
-### Mitos Meramal Pasaran (*Market Timing*)
+### Mitos Meramal Pasaran (Market Timing)
 
 * **Rasa Takut Sewaktu Pasaran Turun:** Pelabur menangguhkan pelaburan kerana menunggu harga jatuh lagi, tetapi akhirnya terlepas peluang apabila pasaran melantun semula dengan pantas.
 * **Tamak Sewaktu Pasaran Puncak:** Pelabur baru mula masuk apabila pasaran sudah naik tinggi kerana terpengaruh dengan berita gembira, berisiko membeli pada harga termahal.
@@ -62,7 +63,7 @@ Mari kita lihat bagaimana DCA berfungsi dalam tempoh 4 bulan sewaktu pasaran men
 * **Bulan 3 (Pasaran Mula Pulih):** Harga naik ke RM0.80 / unit → Menerima **625 unit**.
 * **Bulan 4 (Pasaran Pulih Sepenuhnya):** Harga kembali ke RM1.00 / unit → Menerima **500 unit**.
 
-**Hasil Akhir:**
+### Hasil Akhir Simulasi
 Jumlah modal dilaburkan ialah **RM2,000** dengan jumlah pengumpulan sebanyak **2,625 unit**. 
 
 Purata kos seunit anda ialah **RM0.76** (RM2,000 ÷ 2,625 unit)—jauh lebih rendah berbanding harga asal RM1.00. Apabila harga kembali ke RM1.00, nilai portfolio anda kini bernilai **RM2,625** (keuntungan 31.25%) walaupun harga pasaran sekadar kembali ke paras asal!
@@ -71,17 +72,13 @@ Purata kos seunit anda ialah **RM0.76** (RM2,000 ÷ 2,625 unit)—jauh lebih ren
 
 ## 4. Kelebihan Utama DCA Untuk Perancangan Jangka Panjang
 
-### Kelebihan 1: Automation & Disiplin
+### Automation & Disiplin
 Pelaburan berkala secara potongan automatik (*RSP / Direct Debit*) memastikan pelan kewangan anda berjalan secara konsisten tanpa perlu bergantung kepada kehendak harian.
 
----
-
-### Kelebihan 2: Mengurangkan Risiko Kesilapan Masa
+### Mengurangkan Risiko Kesilapan Masa
 Dengan membahagikan modal secara berperingkat, anda tidak berisiko melaburkan seluruh modal sekelip mata tepat sebelum pasaran jatuh.
 
----
-
-### Kelebihan 3: Ketenangan Fikiran (*Peace of Mind*)
+### Ketenangan Fikiran (Peace of Mind)
 Anda tidak perlu risau membaca berita ekonomi harian. Kejatuhan pasaran tidak lagi mencetuskan panik, sebaliknya dilihat sebagai fasa pengumpulan unit tambahan.
 
 ---

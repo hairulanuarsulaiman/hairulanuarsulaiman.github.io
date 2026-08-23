@@ -78,13 +78,20 @@ Setiap orang mempunyai perjalanan kewangan yang berbeza. Regular Savings Plan me
 
 Sebelum memulakan pelaburan, luangkan sedikit masa untuk memastikan beberapa perkara berikut:
 
-1. **Dana Kecemasan Asas:** Pastikan anda mempunyai simpanan tunai yang cukup untuk kelangsungan harian.
-2. **Objektif Jelas:** Tentukan sama ada pelaburan ini untuk jangka masa sederhana atau panjang.
-3. **Kefahaman Risiko:** Fahami bahawa setiap pelaburan mempunyai naik turun nilai pasaran.
-4. **Kesesuaian Dana:** Pilih dana yang sepadan dengan toleransi risiko anda.
-5. **Pematuhan Syariah:** Bagi pelabur Muslim, pastikan dana yang dipilih disaring dan dipantau mengikut prinsip Syariah yang sah.
+### 1. Dana Kecemasan Asas
+Pastikan anda mempunyai simpanan tunai yang cukup untuk kelangsungan harian dan keperluan mendesak sebelum menguntukkan dana ke dalam instrumen pelaburan.
 
-Pelaburan yang baik bermula dengan kefahaman, bukan tergesa-gesa.
+### 2. Objektif Jelas
+Tentukan sasaran kewangan anda secara spesifik, sama ada pelaburan ini ditujukan untuk jangka masa sederhana atau panjang seperti tabung persaraan atau pendidikan anak.
+
+### 3. Kefahaman Risiko
+Fahami bahawa setiap pelaburan mempunyai naik turun nilai pasaran. Penetapan jangka masa yang betul membantu anda menguruskan turun naik harga dengan lebih tenang.
+
+### 4. Kesesuaian Dana
+Pilih dana unit trust yang sepadan dengan profil dan toleransi risiko anda agar portfolio yang dibina kekal selari dengan matlamat asal.
+
+### 5. Pematuhan Syariah
+Bagi pelabur Muslim, pastikan dana yang dipilih disaring dan dipantau secara rasmi mengikut prinsip Syariah yang sah untuk memastikan keberkatan hasil pelaburan.
 
 ---
 

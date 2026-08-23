@@ -30,11 +30,14 @@ Jika anda mencari instrumen yang selamat untuk menyimpan modal jangka pendek tan
 
 Money Market Fund ialah sejenis dana unit trust yang melabur secara khusus dalam instrumen kewangan jangka pendek — biasanya berprestasi kurang daripada satu tahun.
 
-Antara instrumen pasaran wang Islamik yang lazim digunakan termasuk:
+### Sukuk Korporat Jangka Pendek
+Instrumen keberhutangan Islamik berisiko rendah yang diterbitkan oleh korporat berkredibiliti tinggi.
 
-- **Sukuk Korporat Jangka Pendek:** Instrumen keberhutangan Islamik berisiko rendah.
-- **Deposit Aset Patuh Syariah:** Simpanan berjangka Islamik di bank-bank berlesen.
-- **Instrumen Pasaran Wang Islamik:** Aset kecairan tinggi yang diluluskan oleh Suruhanjaya Sekuriti Malaysia.
+### Deposit Aset Patuh Syariah
+Simpanan berjangka Islamik di bank-bank berlesen yang memberikan pulangan berjadual mengikut akad Syariah.
+
+### Instrumen Pasaran Wang Islamik
+Aset kecairan tinggi lain yang diluluskan dan dipantau secara rasmi oleh Suruhanjaya Sekuriti Malaysia (SC).
 
 **Objektif Utama:** Memelihara modal asal (*capital preservation*) sambil menjana pulangan yang lebih kompetitif berbanding akaun simpanan asas.
 
@@ -57,11 +60,17 @@ Sebagai gambaran praktikal, salah satu contoh Money Market Fund patuh Syariah ya
 
 Dana ini direka khusus untuk memberikan pulangan yang lebih baik berbanding simpanan biasa sambil mengekalkan tahap kecairan (*liquidity*) yang tinggi.
 
-### Ciri-Ciri Utama Dana Pasaran Wang:
-- **Pelaburan Permulaan Mesra:** Boleh dimulakan dengan modal serendah RM10.
-- **Tiada Tempoh Matang (*No Lock-In*):** Anda bebas mengeluarkan wang pada bila-bila masa mengikut keperluan.
-- **Tiada Caj Pengeluaran:** Tiada caj jualan (*sales charge*) atau caj pengeluaran dikenakan.
-- **Tadbir Urus Syariah Rasmi:** Dipantau secara berterusan oleh Penasihat Syariah berdaftar yang diluluskan oleh Suruhanjaya Sekuriti Malaysia.
+### Pelaburan Permulaan Mesra
+Akses mudah untuk melabur yang boleh dimulakan dengan modal fleksibel serendah RM10.
+
+### Tiada Tempoh Matang (No Lock-In)
+Anda bebas mengeluarkan wang pada bila-bila masa mengikut keperluan tanpa terikat tempoh matang.
+
+### Tiada Caj Pengeluaran
+Tiada caj jualan (*sales charge*) atau caj pengeluaran dikenakan semasa transaksi.
+
+### Tadbir Urus Syariah Rasmi
+Dipantau secara berterusan oleh Penasihat Syariah berdaftar yang diluluskan oleh Suruhanjaya Sekuriti Malaysia.
 
 ---
 
@@ -72,18 +81,23 @@ Dana ini direka khusus untuk memberikan pulangan yang lebih baik berbanding simp
 - **Tabung Matlamat Dekat:** Simpanan untuk deposit rumah, perkahwinan, atau percutian dalam tempoh 1–2 tahun.
 - **Parking Lot Pelaburan:** Tempat menyimpan wang sementara menunggu peluang pelaburan ekuiti yang sesuai.
 
-### B. Perniagaan & PKS (*Corporate Idle Cash*)
+### B. Perniagaan & PKS (Corporate Idle Cash)
 Daripada membiarkan tunai lebihan syarikat (*idle cash*) duduk tanpa pulangan di dalam akaun semasa perniagaan, pemilik syarikat boleh mengalihkan sebahagian tunai tersebut ke dalam Money Market Fund patuh Syariah. 
 
 Ini membolehkan tunai syarikat terus menghasilkan pulangan harian sambil kekal sedia dikeluarkan untuk keperluan modal kerja (*working capital*).
 
 ---
 
-## 5. Perkara Penting Yang Perlu Difahami Sebelum Melabur
+## 5. Perkara Penting Sebelum Melabur
 
-1. **Pulangan Tidak Dijamin:** Walaupun risikonya sangat rendah dan stabil, pulangan MMF tidak dijamin seperti Simpanan Tetap konvensional dan bergantung pada kadar keuntungan pasaran wang semasa.
-2. **Kaji Prospektus & Factsheet:** Fahami yuran pengurusan (*management fee*) dan kaji Lembaran Notis Dana sebelum membuat keputusan.
-3. **Pematuhan Syariah:** Pastikan dana yang anda pilih mempunyai pendaftaran patuh Syariah yang sah daripada SC.
+### 1. Pulangan Tidak Dijamin
+Walaupun risikonya sangat rendah dan stabil, pulangan MMF tidak dijamin seperti Simpanan Tetap konvensional dan bergantung pada kadar keuntungan pasaran wang semasa.
+
+### 2. Kaji Prospektus & Factsheet
+Fahami yuran pengurusan (*management fee*) dan kaji Lembaran Notis Dana sebelum membuat keputusan pelaburan.
+
+### 3. Pematuhan Syariah
+Pastikan dana yang anda pilih mempunyai pendaftaran dan kelulusan patuh Syariah yang sah daripada SC.
 
 ---
 

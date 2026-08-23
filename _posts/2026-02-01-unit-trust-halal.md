@@ -30,8 +30,11 @@ Secara asasnya, unit trust (amanah saham) ialah instrumen kolektif yang mengumpu
 
 Di sinilah titik kritikalnya: **Aset apakah yang dibeli oleh pengurus dana tersebut?**
 
-* **Unit Trust Konvensional:** Boleh melabur dalam syarikat perbankan berasaskan Riba, perjudian, pengeluaran arak, insurans konvensional, atau bon berasaskan faedah. Pulangan pelaburan anda berisiko bersumberkan aktiviti yang dilarang.
-* **Unit Trust Patuh Syariah:** Hanya melabur dalam syarikat dan instrumen yang melepasi tapisan ketat yang ditetapkan oleh Majlis Penasihat Syariah. Ini memastikan setiap sen pelaburan anda kekal selari dengan prinsip Syariah.
+### Unit Trust Konvensional
+Boleh melabur dalam syarikat perbankan berasaskan Riba, perjudian, pengeluaran arak, insurans konvensional, atau bon berasaskan faedah. Pulangan pelaburan anda berisiko bersumberkan aktiviti yang dilarang.
+
+### Unit Trust Patuh Syariah
+Hanya melabur dalam syarikat dan instrumen yang melepasi tapisan ketat yang ditetapkan oleh Majlis Penasihat Syariah. Ini memastikan setiap sen pelaburan anda kekal selari dengan prinsip Syariah.
 
 ---
 
@@ -39,8 +42,11 @@ Di sinilah titik kritikalnya: **Aset apakah yang dibeli oleh pengurus dana terse
 
 Di Malaysia, Majlis Penasihat Syariah Suruhanjaya Sekuriti Malaysia (SC) menerbitkan senarai saham patuh Syariah yang dikemas kini dua kali setahun (Mei dan November). Proses tapisan ini melibatkan dua peringkat utama:
 
-1. **Saringan Aktiviti Perniagaan:** Syarikat tidak boleh terlibat dalam aktiviti haram seperti arak, judi, Riba, insurans konvensional, makanan tidak halal, dan hiburan tidak patuh syarak.
-2. **Saringan Nisbah Kewangan:** Memastikan nisbah hutang berasaskan Riba dan akaun simpanan konvensional syarikat berbanding jumlah aset kekal di bawah penanda aras (*benchmark*) yang ditetapkan oleh SC.
+### 1. Saringan Aktiviti Perniagaan
+Syarikat tidak boleh terlibat dalam aktiviti haram seperti arak, judi, Riba, insurans konvensional, makanan tidak halal, dan hiburan tidak patuh syarak.
+
+### 2. Saringan Nisbah Kewangan
+Memastikan nisbah hutang berasaskan Riba dan akaun simpanan konvensional syarikat berbanding jumlah aset kekal di bawah penanda aras (*benchmark*) yang ditetapkan oleh SC.
 
 Hanya ekuiti yang melepasi kedua-dua peringkat tapisan ini sahaja yang layak dimasukkan ke dalam portfolio unit trust Islamik.
 
@@ -63,9 +69,14 @@ Jika sesebuah syarikat yang dipegang oleh dana tersebut kehilangan status patuh 
 
 Sebagai pelabur, anda boleh menyemak kelayakan dana menerusi langkah praktikal berikut:
 
-- **Semak Label "Syariah / Islamik":** Pastikan perkataan ini tertera pada Lembaran Notis (Factsheet) dan Prospektus Induk dana.
-- **Pengesahan Penasihat Syariah:** Semak panel Penasihat Syariah yang dilantik dalam dokumen rasmi dana.
-- **Konsultasi Berlesen:** Dapatkan nasihat daripada **Perunding Unit Trust yang berdaftar** dengan Federation of Investment Managers Malaysia (FIMM) untuk menyusun portfolio yang sepadan dengan kriteria risiko anda.
+### Semak Label "Syariah / Islamik"
+Pastikan perkataan ini tertera pada Lembaran Notis (Factsheet) dan Prospektus Induk dana.
+
+### Pengesahan Penasihat Syariah
+Semak panel Penasihat Syariah yang dilantik dalam dokumen rasmi dana.
+
+### Konsultasi Berlesen
+Dapatkan nasihat daripada **Perunding Unit Trust yang berdaftar** dengan Federation of Investment Managers Malaysia (FIMM) untuk menyusun portfolio yang sepadan dengan kriteria risiko anda.
 
 ---
 

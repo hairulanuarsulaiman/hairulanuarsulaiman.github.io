@@ -13,7 +13,7 @@ description: "Adakah unit amanah hanya tentang risiko dan kuasa penggandaan? Ket
 
 > **Ringkasan Eksekutif (Key Takeaways):**
 > * **Di Sebalik Angka & Graf:** Meskipun aspek pengurangan risiko (*diversification*) dan kuasa penggandaan (*compounding*) ialah kriteria teknikal utama, pemangkin utama pelabur memilih unit amanah selalunya berpusat kepada faktor kemudahan (*convenience*) dan ketenangan fikiran.
-> * **Kepakaran Teragih (*Professional Management*):** Unit amanah membolehkan pelabur individu mewakilkan tugas menganalisis pasaran kepada pengurus dana bertauliah tanpa perlu mengorbankan masa kerjaya harian mereka.
+> * **Pengurusan Dana Profesional (*Professional Fund Management*):** Unit amanah membolehkan pelabur individu mewakilkan tugas menganalisis pasaran kepada pengurus dana bertauliah tanpa perlu mengorbankan masa kerjaya harian mereka.
 > * **Kawal Selia & Keselamatan Aset:** Struktur pemegang amanah (*Trustee*) yang diasingkan daripada syarikat pengurusan dana memberikan tahap perlindungan institusi yang kukuh.
 
 ---
@@ -40,7 +40,7 @@ Anda menyerahkan tugas penilaian instrumen kepada **pengurus dana profesional (*
 
 ## 2. Akses Modal Rendah Ke Pasaran Berkualiti Institusi
 
-Secara individu, membelakangkan RM100 sebulan tidak akan cukup untuk membeli saham pelbagai syarikat gergasi global atau instrumen sukuk korporat yang memerlukan modal minima ratusan ribu ringgit.
+Secara individu, mengasingkan RM100 sebulan tidak akan cukup untuk membeli saham pelbagai syarikat gergasi global atau instrumen sukuk korporat yang memerlukan modal minima ratusan ribu ringgit.
 
 Unit amanah berfungsi mengumpulkan dana daripada ribuan pelabur kecil menjadi satu tabung raksasa. 
 

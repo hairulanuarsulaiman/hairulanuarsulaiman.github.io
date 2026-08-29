@@ -46,9 +46,6 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
     </p>
   </section>
 
-   <!-- DEBUG: Check if paginator has posts -->
-  <p style="color: red; text-align: center; font-weight: bold;">Number of posts: {{ paginator.posts | size }}</p>
-
   <hr class="luxury-divider">
 
   <!-- ========================================== -->

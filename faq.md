@@ -1,0 +1,245 @@
+---
+layout: default
+title: Soalan Lazim (FAQ) | Hairul Anuar Sulaiman
+description: Jawapan ringkas dan telus mengenai Takaful, pelaburan Unit Trust patuh Syariah, perancangan persaraan, dan status kawal selia di Malaysia.
+category: FAQ
+image: "/assets/images/homepage/homepage-architectural-path.jpg"
+permalink: /faq/
+---
+
+<!-- FAQPage Schema for Search Engine Visibility -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Bagaimanakah proses penasihatan kewangan ini dijalankan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Proses penasihatan dirangka menerusi 5 fasa utama: I. Memahami objektif kewangan anda, II. Menilai kedudukan sedia ada, III. Merangka cadangan patuh Syariah, IV. Melaksana langkah keutamaan, dan V. Menyemak pelan secara berkala."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Saya baru bekerja dan belum berkahwin. Perlukah saya mengambil Takaful?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya. Pendapatan anda ialah aset paling utama. Perlindungan asas penting bagi mengurus risiko penyakit kritikal atau kehilangan upaya, serta mengelakkan kebergantungan kewangan kepada keluarga."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Berapakah jumlah minimum untuk mula melabur dalam Unit Trust patuh Syariah?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anda boleh mula melabur menerusi Regular Savings Plan (RSP) Phillip Mutual Berhad dengan sumbangan berkala mengikut kemampuan dan matlamat jangka panjang anda."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Adakah dana Unit Trust yang ditawarkan benar-benar patuh Syariah?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya. Setiap dana patuh Syariah disaring dan dipantau oleh Penasihat Syariah bertauliah (seperti Amanie Advisors Sdn Bhd). Aset pelaburan dijamin bebas daripada unsur riba, perjudian, arak, dan perbankan konvensional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bagaimanakah cara mengesahkan status pendaftaran rasmi Hairul?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Status kawal selia saya boleh disemak secara dalam talian melalui pendaftaran Perunding Skim Unit Amanah FIMM dan direktori Islamic Financial Adviser Representative (IFAR) Bank Negara Malaysia di bawah Phillip Wealth Planners Sdn Bhd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah yuran atau caj yang dikenakan untuk sesi perbualan awal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sesi perbualan dan penerokaan awal tidak mengenakan sebarang caj. Segala struktur yuran pelaburan atau sumbangan Takaful dinyatakan secara telus di dalam dokumen rasmi prospektus sebelum sebarang keputusan dibuat."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
+<main class="luxury-canvas">
+
+  <!-- ========================================== -->
+  <!-- STAGE I: HERO & HEADER                     -->
+  <!-- ========================================== -->
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">
+      PUSAT BANTUAN & RUJUKAN
+    </span>
+
+    <h1 class="luxury-heading">
+      Soalan Lazim (FAQ)
+    </h1>
+
+    <p class="luxury-prose luxury-prose-lead">
+      Jawapan ringkas dan telus untuk soalan yang kerap ditanya mengenai perlindungan Takaful, pelaburan Unit Trust patuh Syariah, perancangan persaraan, dan status kawal selia di Malaysia.
+    </p>
+  </section>
+
+  <hr class="luxury-divider">
+
+  <!-- ========================================== -->
+  <!-- STAGE II: PROSES PENASIATAN (5-STEP FLOW)  -->
+  <!-- ========================================== -->
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">
+      ALIRAN KERJA PENASIATAN
+    </span>
+
+    <h2 class="luxury-subheading">
+      Bagaimanakah Proses Penasihatan Dijalankan?
+    </h2>
+
+    <p class="luxury-prose">
+      Proses penasihatan kewangan dirangka secara tersusun menerusi 5 fasa utama bagi memastikan setiap keputusan dibuat berasaskan kefahaman mendalam dan persetujuan anda:
+    </p>
+
+    <div class="luxury-border-list">
+      <div class="luxury-border-item">
+        <span class="luxury-item-badge">FASA I</span>
+        <h3 class="luxury-item-title">Memahami</h3>
+        <p class="luxury-item-desc">
+          Mendengar dan mengumpul maklumat berkenaan latar belakang, keutamaan, dan objektif kewangan peribadi atau keluarga anda.
+        </p>
+      </div>
+
+      <div class="luxury-border-item">
+        <span class="luxury-item-badge">FASA II</span>
+        <h3 class="luxury-item-title">Menilai</h3>
+        <p class="luxury-item-desc">
+          Meneliti tahap perlindungan sedia ada, aliran tunai, serta profil risiko sebelum sebarang strategi dirangka.
+        </p>
+      </div>
+
+      <div class="luxury-border-item">
+        <span class="luxury-item-badge">FASA III</span>
+        <h3 class="luxury-item-title">Merangka</h3>
+        <p class="luxury-item-desc">
+          Menyediakan cadangan pelan dan portfolio patuh Syariah yang praktikal serta selari dengan garis masa matlamat anda.
+        </p>
+      </div>
+
+      <div class="luxury-border-item">
+        <span class="luxury-item-badge">FASA IV</span>
+        <h3 class="luxury-item-title">Melaksana</h3>
+        <p class="luxury-item-desc">
+          Menguruskan pendaftaran dan agihan modal mengikut keutamaan yang dipersetujui tanpa sebarang desakan.
+        </p>
+      </div>
+
+      <div class="luxury-border-item">
+        <span class="luxury-item-badge">FASA V</span>
+        <h3 class="luxury-item-title">Menyemak</h3>
+        <p class="luxury-item-desc">
+          Membuat semakan berkala dari semasa ke semasa bagi memastikan pelan kewangan kekal relevan mengikut fasa kehidupan anda.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="luxury-divider">
+
+  <!-- ========================================== -->
+  <!-- STAGE III: SOALAN LAZIM UMUM               -->
+  <!-- ========================================== -->
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">
+      JAWAPAN RINGKAS & TELUS
+    </span>
+
+    <h2 class="luxury-subheading">
+      Soalan Kerap Ditanya
+    </h2>
+
+    <div class="luxury-border-list">
+      
+      <!-- Q1 -->
+      <div class="luxury-border-item">
+        <h3 class="luxury-item-title">
+          Saya baru bekerja dan belum berkahwin. Perlukah saya mengambil Takaful sekarang?
+        </h3>
+        <p class="luxury-item-desc">
+          Ya. Pendapatan anda ialah aset paling penting. Perlindungan awal membantu mengurus risiko penyakit kritikal atau kehilangan upaya, serta memastikan kebajikan kewangan anda terjamin tanpa membebankan ahli keluarga.
+        </p>
+      </div>
+
+      <!-- Q2 -->
+      <div class="luxury-border-item">
+        <h3 class="luxury-item-title">
+          Berapakah jumlah minimum untuk mula melabur dalam Unit Trust patuh Syariah?
+        </h3>
+        <p class="luxury-item-desc">
+          Anda boleh bermula secara berdisiplin menerusi simpanan pelaburan berkala mengikut kemampuan anda. Wang didebitkan secara automatik setiap bulan untuk membina pembentukan modal jangka panjang.
+        </p>
+      </div>
+
+      <!-- Q3 -->
+      <div class="luxury-border-item">
+        <h3 class="luxury-item-title">
+          Adakah dana Unit Trust yang ditawarkan benar-benar patuh Syariah?
+        </h3>
+        <p class="luxury-item-desc">
+          Ya. Semua dana patuh Syariah disaring oleh Penasihat Syariah bertauliah (seperti Amanie Advisors Sdn Bhd). Aset pelaburan dipastikan bebas daripada unsur riba, perjudian, arak, dan perbankan konvensional.
+        </p>
+      </div>
+
+      <!-- Q4 -->
+      <div class="luxury-border-item">
+        <h3 class="luxury-item-title">
+          Saya berusia 30-an. Adakah terlalu awal untuk merancang persaraan?
+        </h3>
+        <p class="luxury-item-desc">
+          Tidak. Masa ialah aset paling berharga dalam pelaburan. Lebih awal anda bermula, lebih besar peluang pertumbuhan modal menerusi faedah gubahan bagi menyokong simpanan KWSP sedia ada.
+        </p>
+      </div>
+
+      <!-- Q5 -->
+      <div class="luxury-border-item">
+        <h3 class="luxury-item-title">
+          Bagaimanakah cara mengesahkan status pendaftaran rasmi Hairul?
+        </h3>
+        <p class="luxury-item-desc">
+          Status pendaftaran saya boleh disemak secara dalam talian menerusi pendaftaran Perunding Skim Unit Amanah FIMM dan direktori Islamic Financial Adviser Representative (IFAR) Bank Negara Malaysia di bawah <strong>Phillip Wealth Planners Sdn Bhd</strong>.
+        </p>
+      </div>
+
+      <!-- Q6 -->
+      <div class="luxury-border-item">
+        <h3 class="luxury-item-title">
+          Apakah yuran atau caj yang dikenakan untuk sesi perbualan awal?
+        </h3>
+        <p class="luxury-item-desc">
+          Sesi perbualan dan penerokaan awal adalah percuma. Untuk pelaburan atau Takaful, segala struktur caj dinyatakan secara jelas di dalam dokumen rasmi prospektus sebelum sebarang keputusan dibuat.
+        </p>
+      </div>
+
+      <!-- Q7 -->
+      <div class="luxury-border-item">
+        <h3 class="luxury-item-title">
+          Apakah perbezaan antara Takaful dan insurans konvensional?
+        </h3>
+        <p class="luxury-item-desc">
+          Takaful berasaskan konsep saling membantu (<em>Ta'awun</em>) dan caruman tabungan (<em>Tabarru'</em>) yang dikawal selia oleh Jawatankuasa Syariah. Insurans konvensional pula berasaskan kontrak jual beli risiko yang mengandungi unsur ketidakpastian (gharar) dan riba.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="luxury-divider">
+
+  <!-- ========================================== -->
+  <!-- STAGE IV: NEXT STEP (UNIFORM INVITATION)   -->
+  <!-- ========================================== -->
+  {% include conversation.html %}
+
+</main>

@@ -15,7 +15,6 @@ state: "Johor"
 
 # Build settings
 markdown: kramdown
-permalink: /:title/
 future: true
 
 # Pagination settings
@@ -33,7 +32,7 @@ exclude:
   - vendor
   - .gitignore
 
-# Collections (for services, if needed)
+# Collections
 collections:
   services:
     output: true
@@ -49,3 +48,4 @@ defaults:
       type: "posts"
     values:
       layout: post
+      permalink: /artikel/:title/

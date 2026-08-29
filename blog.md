@@ -45,49 +45,49 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE II: LISTING ALL ARTIKEL              -->
-  <!-- ========================================== -->
-  <section class="luxury-section">
-    <div class="luxury-border-list">
-      {% for post in site.posts %}
-        <article class="luxury-border-item">
-          <span class="luxury-item-badge">
-            {{ post.category | default: "KEWANGAN" | upcase }}
-          </span>
+<!-- ========================================== -->
+<!-- STAGE II: LISTING ALL ARTIKEL (GRID VIEW)  -->
+<!-- ========================================== -->
+<section class="luxury-section">
+  <div class="luxury-article-grid">
+    {% for post in site.posts %}
+      <article class="luxury-article-card">
+        <span class="luxury-item-badge">
+          {{ post.category | default: "KEWANGAN" | upcase }}
+        </span>
 
-          <h2 class="luxury-item-title">
-            <a href="{{ post.url | relative_url }}" class="luxury-article-link">
-              {{ post.title }}
-            </a>
-          </h2>
+        <h2 class="luxury-item-title">
+          <a href="{{ post.url | relative_url }}" class="luxury-article-link">
+            {{ post.title }}
+          </a>
+        </h2>
 
-          <div class="luxury-article-meta">
-            <span>{{ post.date | date: "%d %B %Y" }}</span>
-            {% if post.read_time %}
-              <span class="luxury-article-meta-divider">•</span>
-              <span>{{ post.read_time }} minit bacaan</span>
-            {% endif %}
-          </div>
+        <div class="luxury-article-meta">
+          <span>{{ post.date | date: "%d %B %Y" }}</span>
+          {% if post.read_time %}
+            <span class="luxury-article-meta-divider">•</span>
+            <span>{{ post.read_time }} minit bacaan</span>
+          {% endif %}
+        </div>
 
-          <p class="luxury-item-desc">
-            {{ post.description | default: post.excerpt | strip_html | truncate: 160 }}
-          </p>
+        <p class="luxury-item-desc">
+          {{ post.description | default: post.excerpt | strip_html | truncate: 160 }}
+        </p>
 
-          <div style="margin-top: 16px;">
-            <a href="{{ post.url | relative_url }}" class="luxury-btn-secondary">
-              Baca Panduan →
-            </a>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
+        <div style="margin-top: 16px;">
+          <a href="{{ post.url | relative_url }}" class="luxury-btn-secondary">
+            Baca Panduan →
+          </a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
 
-    <!-- Peringatan Kemaskini -->
-    <div class="luxury-author-block" style="margin-top: 64px; text-align: center;">
-      Penulisan baharu dikemas kini secara berkala berasaskan data dan prinsip kewangan Syariah terkini.
-    </div>
-  </section>
+  <!-- Peringatan Kemaskini -->
+  <div class="luxury-author-block" style="margin-top: 64px; text-align: center;">
+    Penulisan baharu dikemas kini secara berkala berasaskan data dan prinsip kewangan Syariah terkini.
+  </div>
+</section>
 
   <hr class="luxury-divider">
 

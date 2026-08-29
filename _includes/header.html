@@ -11,11 +11,11 @@
   <!-- MAIN EDITORIAL NAVIGATION -->
   <nav class="luxury-nav" aria-label="Navigasi Utama">
     <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Utama</a>
-    <a href="{{ '/takaful.html' | relative_url }}" class="{% if page.url contains 'takaful' %}active{% endif %}">Takaful</a>
-    <a href="{{ '/unittrust.html' | relative_url }}" class="{% if page.url contains 'unittrust' %}active{% endif %}">Unit Trust</a>
-    <a href="{{ '/persaraan.html' | relative_url }}" class="{% if page.url contains 'persaraan' %}active{% endif %}">Persaraan</a>
+    <a href="{{ '/takaful/' | relative_url }}" class="{% if page.url contains '/takaful/' %}active{% endif %}">Takaful</a>
+    <a href="{{ '/unittrust/' | relative_url }}" class="{% if page.url contains '/unittrust/' %}active{% endif %}">Unit Trust</a>
+    <a href="{{ '/persaraan/' | relative_url }}" class="{% if page.url contains '/persaraan/' %}active{% endif %}">Persaraan</a>
     <a href="{{ '/artikel/' | relative_url }}" class="{% if page.url contains '/artikel/' %}active{% endif %}">Bacaan</a>
-    <a href="{{ '/faq.html' | relative_url }}" class="{% if page.url contains 'faq' %}active{% endif %}">FAQ</a>
+    <a href="{{ '/faq/' | relative_url }}" class="{% if page.url contains '/faq/' %}active{% endif %}">FAQ</a>
     <a href="{{ '/hubungi/' | relative_url }}" class="{% if page.url contains '/hubungi/' %}active{% endif %}">Hubungi</a>
   </nav>
 </header>

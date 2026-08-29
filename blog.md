@@ -2,6 +2,9 @@
 layout: default
 title: Artikel Kewangan Halal & Panduan Pelaburan | Hairul Anuar Sulaiman
 permalink: /artikel/
+pagination:
+  enabled: true
+  collection: posts
 description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berkaitan takaful, pelaburan unit trust, dan perancangan persaraan bebas riba di Malaysia.
 category: Artikel
 image: "/assets/images/homepage/homepage-architectural-path.jpg"

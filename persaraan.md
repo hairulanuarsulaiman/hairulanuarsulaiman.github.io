@@ -47,7 +47,7 @@ permalink: /persaraan/
       >
     </picture>
     <figcaption class="luxury-figcaption">
-      Ketenangan hasil perancangan berdisiplin — menikmati persaraan selesa, berkat, dan bebas bimbang dari sudut pandang yang lapang.
+      Ketenangan hasil perancangan berdisiplin — menikmati persaraan selesa, berkat dan tanpa bimbang dari sudut pandang yang luas.
     </figcaption>
   </figure>
 

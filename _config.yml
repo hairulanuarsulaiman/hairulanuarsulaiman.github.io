@@ -19,10 +19,17 @@ future: true
 
 # Pagination settings
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
-paginate: 10
-paginate_path: "/artikel/page:num/"
+
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page:num/'
+  title: ':title - Halaman :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Exclude these files
 exclude:

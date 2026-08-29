@@ -3,6 +3,7 @@ layout: post
 title: "Sibuk Membina Aset Tetapi Lupa Mengunci Pintu Balik: Risiko Tersembunyi Bagi Pasangan Kerjaya"
 category: Perancangan
 date: 2026-08-26
+permalink: /artikel/sibuk-membina-aset-tetapi-lupa-mengunci-pintu-balik/
 author: "Hairul Anuar Bin Sulaiman"
 image: "/assets/images/artikel/art-15-pintu-perlindungan-kekayaan-keluarga.webp"
 image_alt: "Kubu Rumeli Fortress yang tersergam indah di tebing Selat Bosphorus dengan benteng batu yang kukuh."

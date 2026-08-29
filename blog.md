@@ -2,9 +2,6 @@
 layout: default
 title: Artikel Kewangan Halal & Panduan Pelaburan | Hairul Anuar Sulaiman
 permalink: /artikel/
-pagination:
-  enabled: true
-  collection: posts
 description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berkaitan takaful, pelaburan unit trust, dan perancangan persaraan bebas riba di Malaysia.
 category: Artikel
 image: "/assets/images/homepage/homepage-architectural-path.jpg"
@@ -49,11 +46,11 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
   <hr class="luxury-divider">
 
   <!-- ========================================== -->
-  <!-- STAGE II: LISTING ARTIKEL (PAGINATED LOOP) -->
+  <!-- STAGE II: LISTING ALL ARTIKEL              -->
   <!-- ========================================== -->
   <section class="luxury-section">
     <div class="luxury-border-list">
-      {% for post in paginator.posts %}
+      {% for post in site.posts %}
         <article class="luxury-border-item">
           <span class="luxury-item-badge">
             {{ post.category | default: "KEWANGAN" | upcase }}
@@ -85,33 +82,6 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
         </article>
       {% endfor %}
     </div>
-
-    <!-- ========================================== -->
-    <!-- PAGINATION NAVIGATION CONTROLS             -->
-    <!-- ========================================== -->
-    {% if paginator.total_pages > 1 %}
-      <nav class="luxury-pagination" style="margin-top: 48px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 24px;">
-        <div>
-          {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | relative_url }}" class="luxury-btn-secondary">
-              ← Halaman Sebelumnya
-            </a>
-          {% endif %}
-        </div>
-
-        <span style="font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.7;">
-          Halaman {{ paginator.page }} daripada {{ paginator.total_pages }}
-        </span>
-
-        <div>
-          {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | relative_url }}" class="luxury-btn-secondary">
-              Halaman Seterusnya →
-            </a>
-          {% endif %}
-        </div>
-      </nav>
-    {% endif %}
 
     <!-- Peringatan Kemaskini -->
     <div class="luxury-author-block" style="margin-top: 64px; text-align: center;">

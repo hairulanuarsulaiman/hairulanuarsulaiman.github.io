@@ -1,0 +1,179 @@
+---
+layout: default
+title: Perlindungan Takaful & Kewangan Syariah | Hairul Anuar Sulaiman
+description: Membantu individu, keluarga, dan pemilik perniagaan merancang perlindungan Takaful perubatan dan pendapatan yang selari dengan matlamat kewangan.
+category: Perlindungan
+image: "/assets/images/takaful/hero-takaful-architectural-shelter.jpg"
+permalink: /takaful/
+---
+
+<!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
+<main class="luxury-canvas">
+
+  <!-- ========================================== -->
+  <!-- STAGE I: HERO (THE PROMISE & MANIFESTO)    -->
+  <!-- ========================================== -->
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">
+      I. PERLINDUNGAN KEWANGAN & INCOME REPLACEMENT
+    </span>
+
+    <h1 class="luxury-heading">
+      Pendapatan Anda Menyokong Kehidupan Hari Ini. Lindunginya Agar Kehidupan Itu Dapat Diteruskan.
+    </h1>
+
+    <p class="luxury-prose luxury-prose-lead">
+      Melindunginya ialah salah satu langkah asas dalam perancangan kewangan yang menyeluruh. Sama ada anda baru memulakan kerjaya, membina keluarga atau mengembangkan perniagaan, saya membantu anda merancang perlindungan Takaful yang selari dengan matlamat anda.
+    </p>
+
+    <div>
+      <a href="#jemputan" class="luxury-btn-primary">
+        Mulakan Perbualan →
+      </a>
+    </div>
+  </section>
+
+  <!-- GALLERY-FRAMED VISUAL (IDEAS, NOT PEOPLE) -->
+  <figure class="luxury-figure">
+    <picture>
+      <source srcset="{{ '/assets/images/takaful/hero-takaful-architectural-shelter.webp' | relative_url }}" type="image/webp">
+      <img 
+        src="{{ '/assets/images/takaful/hero-takaful-architectural-shelter.jpg' | relative_url }}" 
+        alt="Seni bina seni bina Islamik dengan arked batu travertine dan kolam pantulan yang tenang di bawah cahaya pagi." 
+        width="1200"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
+      >
+    </picture>
+    <figcaption class="luxury-figcaption">
+      Struktur yang kukuh memberi ketenangan — perlindungan kewangan ialah asas kestabilan keluarga dan perniagaan.
+    </figcaption>
+  </figure>
+
+  <hr class="luxury-divider">
+
+  <!-- ========================================== -->
+  <!-- STAGE II: CONTEXT (WHY PROTECTION MATTERS) -->
+  <!-- ========================================== -->
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">
+      II. ASAS KEWANGAN
+    </span>
+
+    <h2 class="luxury-subheading">
+      Mengapa Perlindungan Penting?
+    </h2>
+
+    <p class="luxury-prose">
+      Ramai antara kita bekerja setiap hari untuk mencapai matlamat yang hampir sama: memberi kehidupan yang lebih baik kepada keluarga, membayar komitmen harian, membina simpanan, dan melabur untuk masa hadapan. Namun, kesemua usaha ini bergantung kepada satu tunjang utama — <strong>Pendapatan</strong>.
+    </p>
+
+    <p class="luxury-prose">
+      Apabila pendapatan terganggu akibat kematian, kehilangan upaya, atau penyakit kritikal, kesannya sering melangkaui kehilangan wang semata-mata. Ia boleh mengubah perjalanan hidup sebuah keluarga. Perlindungan kewangan membantu mengurangkan risiko tersebut agar keluarga mempunyai ruang dan masa untuk menyesuaikan diri.
+    </p>
+  </section>
+
+  <hr class="luxury-divider">
+
+  <!-- ========================================== -->
+  <!-- STAGE III: PHILOSOPHY & SHARIAH MECHANICS  -->
+  <!-- ========================================== -->
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">
+      III. FALSAFAH & PRINSIP SYARIAH
+    </span>
+
+    <h2 class="luxury-subheading">
+      Memahami Takaful & Konsep Ta'awun
+    </h2>
+
+    <p class="luxury-prose">
+      Saya percaya perlindungan yang baik tidak bermula dengan memilih produk, tetapi bermula dengan memahami perjalanan hidup anda. Setiap keluarga mempunyai tanggungjawab dan matlamat yang berbeza. Oleh itu, cadangan perlindungan tidak sepatutnya diseragamkan.
+    </p>
+
+    <p class="luxury-prose">
+      Takaful berasaskan konsep saling membantu (<em>Ta'awun</em>), di mana peserta bersetuju menyumbang ke dalam dana bersama (<em>Tabarru'</em>) bagi membantu peserta lain yang ditimpa musibah. Dana ini diuruskan secara patuh Syariah dan dipantau oleh Jawatankuasa Syariah bagi memastikan kebebasan daripada unsur riba, gharar, dan maisir.
+    </p>
+
+    <div class="luxury-author-block">
+      Sebagai <strong>Islamic Financial Adviser Representative (IFAR)</strong> yang dilantik oleh Phillip Wealth Planners, saya mempunyai akses kepada pelbagai pengendali Takaful di Malaysia untuk meneliti pilihan yang terbaik bagi anda.
+    </div>
+  </section>
+
+  <hr class="luxury-divider">
+
+  <!-- ========================================== -->
+  <!-- STAGE IV: SOLUTION (WHAT TO PROTECT)       -->
+  <!-- ========================================== -->
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">
+      IV. MATLAMAT PERLINDUNGAN
+    </span>
+
+    <h2 class="luxury-subheading">
+      Apakah Yang Ingin Dilindungi?
+    </h2>
+
+    <p class="luxury-prose">
+      Empat komponen utama ini menjadi fokus dalam membina strategi penggantian pendapatan dan perlindungan aset keluarga:
+    </p>
+
+    <div class="luxury-border-list">
+      <div class="luxury-border-item">
+        <span class="luxury-item-badge">01. PENDAPATAN</span>
+        <h3 class="luxury-item-title">Penggantian Pendapatan (Income Replacement)</h3>
+        <p class="luxury-item-desc">
+          Memastikan keluarga mengekalkan sumber kewangan asas apabila berlaku risiko kematian atau kehilangan upaya kekal.
+        </p>
+      </div>
+
+      <div class="luxury-border-item">
+        <span class="luxury-item-badge">02. KEHIDUPAN KELUARGA</span>
+        <h3 class="luxury-item-title">Penyelesaian Komitmen Harian</h3>
+        <p class="luxury-item-desc">
+          Membolehkan ansuran rumah, perbelanjaan isi rumah, dan pendidikan anak-anak diteruskan tanpa gangguan.
+        </p>
+      </div>
+
+      <div class="luxury-border-item">
+        <span class="luxury-item-badge">03. SIMPANAN</span>
+        <h3 class="luxury-item-title">Perlindungan Aset & Modal</h3>
+        <p class="luxury-item-desc">
+          Memastikan simpanan persaraan dan tabung pendidikan tidak terhakis akibat kos rawatan penyakit kritikal.
+        </p>
+      </div>
+
+      <div class="luxury-border-item">
+        <span class="luxury-item-badge">04. PILIHAN</span>
+        <h3 class="luxury-item-title">Masa & Kebebasan Keputusan</h3>
+        <p class="luxury-item-desc">
+          Memberikan keluarga ruang masa yang selesa untuk membuat keputusan kewangan yang matang tanpa tekanan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="luxury-divider">
+
+  <!-- KNOWLEDGE HUB MODULE -->
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">
+      BACAAN PENGETAHUAN TAKAFUL
+    </span>
+
+    <h2 class="luxury-subheading">
+      Artikel Pilihan Mengenai Perlindungan
+    </h2>
+
+    {% include related-articles.html %}
+  </section>
+
+  <hr class="luxury-divider">
+
+  <!-- ========================================== -->
+  <!-- STAGE V: NEXT STEP (THE CALM INVITATION)   -->
+  <!-- ========================================== -->
+  {% include conversation.html %}
+
+</main>

@@ -70,79 +70,49 @@ Sebuah keluarga mungkin mempunyai seorang anak lelaki yang telah menjaga ibu bap
 
 Wasiat dan Hibah adalah alat perancangan harta yang membolehkan anda menentukan bagaimana harta anda diagihkan selepas kematian, selaras dengan prinsip Syariah.
 
-<!-- Comparison: Tanpa Wasiat vs Dengan Wasiat / Hibah -->
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+<div class="luxury-border-list" style="margin: 2rem 0;">
 
-  <!-- LEFT COLUMN: Tanpa Wasiat -->
-  <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-    <h3 style="font-family: 'Old Standard TT', serif; font-size: 1.1rem; font-weight: 700; color: #18181b; margin: 0 0 0.5rem 0; border-bottom: 2px solid #e7e3d8; padding-bottom: 0.5rem;">Tanpa Wasiat</h3>
-
-    <div style="padding-left: 16px; border-left: 2px solid #18181b;">
-      <span style="font-size: 0.725rem; font-weight: 600; color: #716b61; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px;">Kawalan</span>
-      <p style="font-size: 0.9rem; color: #716b61; margin: 0; font-weight: 300;">Harta diagihkan mengikut formula Faraid sahaja.</p>
-    </div>
-
-    <div style="padding-left: 16px; border-left: 2px solid #18181b;">
-      <span style="font-size: 0.725rem; font-weight: 600; color: #716b61; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px;">Masa</span>
-      <p style="font-size: 0.9rem; color: #716b61; margin: 0; font-weight: 300;">Proses pentadbiran yang panjang dan rumit.</p>
-    </div>
-
-    <div style="padding-left: 16px; border-left: 2px solid #18181b;">
-      <span style="font-size: 0.725rem; font-weight: 600; color: #716b61; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px;">Konflik</span>
-      <p style="font-size: 0.9rem; color: #716b61; margin: 0; font-weight: 300;">Berisiko tinggi untuk perselisihan keluarga.</p>
-    </div>
-
-    <div style="padding-left: 16px; border-left: 2px solid #18181b;">
-      <span style="font-size: 0.725rem; font-weight: 600; color: #716b61; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px;">Kos</span>
-      <p style="font-size: 0.9rem; color: #716b61; margin: 0; font-weight: 300;">Kos guaman dan pentadbiran yang tinggi.</p>
-    </div>
-
-    <div style="padding-left: 16px; border-left: 2px solid #18181b;">
-      <span style="font-size: 0.725rem; font-weight: 600; color: #716b61; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px;">Ketenangan</span>
-      <p style="font-size: 0.9rem; color: #716b61; margin: 0; font-weight: 300;">Keluarga berdepan tekanan tambahan.</p>
-    </div>
+  <div class="luxury-border-item">
+    <span class="luxury-item-badge">Kawalan</span>
+    <h3 style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; color: var(--text-obsidian); margin: 4px 0 6px 0;">Tanpa Wasiat:</h3>
+    <p class="luxury-item-desc" style="margin-bottom: 6px;">Harta diagihkan mengikut formula Faraid sahaja.</p>
+    <h3 style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; color: var(--text-obsidian); margin: 12px 0 6px 0;">Dengan Wasiat / Hibah:</h3>
+    <p class="luxury-item-desc">Anda boleh menetapkan bahagian tertentu untuk waris atau pihak lain.</p>
   </div>
 
-  <!-- RIGHT COLUMN: Dengan Wasiat / Hibah -->
-  <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-    <h3 style="font-family: 'Old Standard TT', serif; font-size: 1.1rem; font-weight: 700; color: #18181b; margin: 0 0 0.5rem 0; border-bottom: 2px solid #e7e3d8; padding-bottom: 0.5rem;">Dengan Wasiat / Hibah</h3>
+  <div class="luxury-border-item">
+    <span class="luxury-item-badge">Masa</span>
+    <h3 style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; color: var(--text-obsidian); margin: 4px 0 6px 0;">Tanpa Wasiat:</h3>
+    <p class="luxury-item-desc" style="margin-bottom: 6px;">Proses pentadbiran yang panjang dan rumit.</p>
+    <h3 style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; color: var(--text-obsidian); margin: 12px 0 6px 0;">Dengan Wasiat / Hibah:</h3>
+    <p class="luxury-item-desc">Proses lebih cepat dan terurus.</p>
+  </div>
 
-    <div style="padding-left: 16px; border-left: 2px solid #18181b;">
-      <span style="font-size: 0.725rem; font-weight: 600; color: #716b61; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px;">Kawalan</span>
-      <p style="font-size: 0.9rem; color: #716b61; margin: 0; font-weight: 300;">Anda boleh menetapkan bahagian tertentu untuk waris atau pihak lain.</p>
-    </div>
+  <div class="luxury-border-item">
+    <span class="luxury-item-badge">Konflik</span>
+    <h3 style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; color: var(--text-obsidian); margin: 4px 0 6px 0;">Tanpa Wasiat:</h3>
+    <p class="luxury-item-desc" style="margin-bottom: 6px;">Berisiko tinggi untuk perselisihan keluarga.</p>
+    <h3 style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; color: var(--text-obsidian); margin: 12px 0 6px 0;">Dengan Wasiat / Hibah:</h3>
+    <p class="luxury-item-desc">Mengurangkan risiko konflik kerana arahan jelas.</p>
+  </div>
 
-    <div style="padding-left: 16px; border-left: 2px solid #18181b;">
-      <span style="font-size: 0.725rem; font-weight: 600; color: #716b61; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px;">Masa</span>
-      <p style="font-size: 0.9rem; color: #716b61; margin: 0; font-weight: 300;">Proses lebih cepat dan terurus.</p>
-    </div>
+  <div class="luxury-border-item">
+    <span class="luxury-item-badge">Kos</span>
+    <h3 style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; color: var(--text-obsidian); margin: 4px 0 6px 0;">Tanpa Wasiat:</h3>
+    <p class="luxury-item-desc" style="margin-bottom: 6px;">Kos guaman dan pentadbiran yang tinggi.</p>
+    <h3 style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; color: var(--text-obsidian); margin: 12px 0 6px 0;">Dengan Wasiat / Hibah:</h3>
+    <p class="luxury-item-desc">Kos lebih terkawal dan boleh dirancang.</p>
+  </div>
 
-    <div style="padding-left: 16px; border-left: 2px solid #18181b;">
-      <span style="font-size: 0.725rem; font-weight: 600; color: #716b61; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px;">Konflik</span>
-      <p style="font-size: 0.9rem; color: #716b61; margin: 0; font-weight: 300;">Mengurangkan risiko konflik kerana arahan jelas.</p>
-    </div>
-
-    <div style="padding-left: 16px; border-left: 2px solid #18181b;">
-      <span style="font-size: 0.725rem; font-weight: 600; color: #716b61; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px;">Kos</span>
-      <p style="font-size: 0.9rem; color: #716b61; margin: 0; font-weight: 300;">Kos lebih terkawal dan boleh dirancang.</p>
-    </div>
-
-    <div style="padding-left: 16px; border-left: 2px solid #18181b;">
-      <span style="font-size: 0.725rem; font-weight: 600; color: #716b61; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px;">Ketenangan</span>
-      <p style="font-size: 0.9rem; color: #716b61; margin: 0; font-weight: 300;">Keluarga diberi ketenangan dan kejelasan.</p>
-    </div>
+  <div class="luxury-border-item">
+    <span class="luxury-item-badge">Ketenangan</span>
+    <h3 style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; color: var(--text-obsidian); margin: 4px 0 6px 0;">Tanpa Wasiat:</h3>
+    <p class="luxury-item-desc" style="margin-bottom: 6px;">Keluarga berdepan tekanan tambahan.</p>
+    <h3 style="font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; color: var(--text-obsidian); margin: 12px 0 6px 0;">Dengan Wasiat / Hibah:</h3>
+    <p class="luxury-item-desc">Keluarga diberi ketenangan dan kejelasan.</p>
   </div>
 
 </div>
-
-<!-- Mobile Responsiveness: Stack on small screens -->
-<style>
-  @media (max-width: 640px) {
-    .md-content div[style*="grid-template-columns: 1fr 1fr;"] {
-      grid-template-columns: 1fr !important;
-    }
-  }
-</style>
 
 **Hibah** adalah instrumen yang sangat berguna dalam perancangan harta Islam. Ia membolehkan anda menghibahkan harta tertentu kepada individu atau institusi semasa hidup anda, yang kemudiannya tidak lagi menjadi sebahagian daripada harta pusaka. Ini memberi anda lebih kawalan dan fleksibiliti dalam perancangan harta.
 

@@ -142,5 +142,3 @@ Meninggal dunia tanpa wasiat bukanlah satu perkara yang boleh dipandang ringan. 
 Dengan meluangkan masa untuk merancang hari ini, anda memberikan hadiah terbesar kepada keluarga anda: **ketenangan fikiran**. Mereka akan tahu bahawa harta yang anda usahakan selama ini akan diagihkan mengikut kehendak anda, dengan lancar dan adil.
 
 Perancangan harta adalah tentang melindungi legasi dan orang yang anda sayangi.
-
-{% include conversation.html %}

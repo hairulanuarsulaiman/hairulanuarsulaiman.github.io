@@ -42,7 +42,7 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
     </h1>
 
     <p class="luxury-prose luxury-prose-lead">
-      Keputusan kewangan yang bijak bermula dengan pemahaman yang betul. Terokai panduan ringkas berkaitan perlindungan Takaful, pelaburan Unit Trust patuh Syariah, dan perancangan persaraan untuk membantu anda membuat pilihan dengan lebih yakin.
+      Keputusan kewangan yang bijak bermula dengan kefahaman yang betul. Terokai panduan ringkas berkaitan perlindungan Takaful, pelaburan Unit Trust patuh Syariah, dan perancangan persaraan untuk membantu anda membuat pilihan dengan lebih yakin.
     </p>
   </section>
 

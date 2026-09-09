@@ -48,49 +48,76 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
 
   <hr class="luxury-divider">
 
-<!-- ========================================== -->
-<!-- STAGE II: LISTING ALL ARTIKEL (GRID VIEW)  -->
-<!-- ========================================== -->
-<section class="luxury-section">
-  <div class="luxury-article-grid">
-    {% for post in site.posts %}
-      <article class="luxury-article-card">
-        <span class="luxury-item-badge">
-          {{ post.category | default: "KEWANGAN" | upcase }}
-        </span>
+  <!-- ========================================== -->
+  <!-- STAGE II: LISTING ARTIKEL (PAGINATED GRID) -->
+  <!-- ========================================== -->
+  <section class="luxury-section">
+    <div class="luxury-article-grid">
+      {% for post in paginator.posts %}
+        <article class="luxury-article-card">
+          <span class="luxury-item-badge">
+            {{ post.category | default: "KEWANGAN" | upcase }}
+          </span>
 
-        <h2 class="luxury-item-title">
-          <a href="{{ post.url | relative_url }}" class="luxury-article-link">
-            {{ post.title }}
-          </a>
-        </h2>
+          <h2 class="luxury-item-title">
+            <a href="{{ post.url | relative_url }}" class="luxury-article-link">
+              {{ post.title }}
+            </a>
+          </h2>
 
-        <div class="luxury-article-meta">
-          <span>{{ post.date | date: "%d %B %Y" }}</span>
-          {% if post.read_time %}
-            <span class="luxury-article-meta-divider">•</span>
-            <span>{{ post.read_time }} minit bacaan</span>
+          <div class="luxury-article-meta">
+            <span>{{ post.date | date: "%d %B %Y" }}</span>
+            {% if post.read_time %}
+              <span class="luxury-article-meta-divider">•</span>
+              <span>{{ post.read_time }} minit bacaan</span>
+            {% endif %}
+          </div>
+
+          <p class="luxury-item-desc">
+            {{ post.description | default: post.excerpt | strip_html | truncate: 160 }}
+          </p>
+
+          <div style="margin-top: 16px;">
+            <a href="{{ post.url | relative_url }}" class="luxury-btn-secondary">
+              Baca Panduan →
+            </a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    <!-- ========================================== -->
+    <!-- PAGINATION NAVIGATION                     -->
+    <!-- ========================================== -->
+    {% if paginator.total_pages > 1 %}
+      <nav class="luxury-pagination" style="margin-top: 48px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-parchment); padding-top: 24px;">
+        <div>
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}" class="luxury-btn-secondary">
+              ← Halaman Sebelumnya
+            </a>
           {% endif %}
         </div>
 
-        <p class="luxury-item-desc">
-          {{ post.description | default: post.excerpt | strip_html | truncate: 160 }}
-        </p>
+        <span style="font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.7;">
+          Halaman {{ paginator.page }} daripada {{ paginator.total_pages }}
+        </span>
 
-        <div style="margin-top: 16px;">
-          <a href="{{ post.url | relative_url }}" class="luxury-btn-secondary">
-            Baca Panduan →
-          </a>
+        <div>
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}" class="luxury-btn-secondary">
+              Halaman Seterusnya →
+            </a>
+          {% endif %}
         </div>
-      </article>
-    {% endfor %}
-  </div>
+      </nav>
+    {% endif %}
 
-  <!-- Peringatan Kemaskini -->
-  <div class="luxury-author-block" style="margin-top: 64px; text-align: center;">
-    Penulisan baharu dikemas kini secara berkala berasaskan data dan prinsip kewangan Syariah terkini.
-  </div>
-</section>
+    <!-- Peringatan Kemaskini -->
+    <div class="luxury-author-block" style="margin-top: 64px; text-align: center;">
+      Penulisan baharu dikemas kini secara berkala berasaskan data dan prinsip kewangan Syariah terkini.
+    </div>
+  </section>
 
   <hr class="luxury-divider">
 

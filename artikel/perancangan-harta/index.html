@@ -1,0 +1,53 @@
+---
+layout: default
+title: "Perlindungan Kewangan | Koleksi Artikel"
+permalink: /artikel/perancangan-harta/
+description: "Koleksi lengkap panduan berkaitan perlindungan pendapatan, Takaful, pengurusan krisis perubatan dan pembatalan hutang."
+---
+
+<main class="luxury-canvas">
+  <!-- HEADER SECTION -->
+  <section class="luxury-section">
+    <a href="/artikel/" class="luxury-btn-secondary" style="margin-bottom: 32px; display: inline-block;">← Kembali ke Hub Utama</a>
+    
+    <span class="luxury-eyebrow">PILAR 1</span>
+    <h1 class="luxury-heading">Perancangan Harta</h1>
+    <p class="luxury-prose luxury-prose-lead">
+      Panduan menyeluruh untuk melindungi gaya hidup keluarga anda daripada risiko kewangan, pengurusan krisis perubatan, dan strategi pembatalan hutang.
+    </p>
+  </section>
+
+  <hr class="luxury-divider">
+
+  <!-- DYNAMIC ARTICLE GRID -->
+  <section class="luxury-section">
+    <div class="luxury-article-grid">
+      {% assign spoke_posts = site.posts | where: "category", "Perancangan Harta" %}
+      {% for post in spoke_posts %}
+        <article class="luxury-article-card">
+          <h2 class="luxury-item-title" style="font-size: 1.25rem;">
+            <a href="{{ post.url | relative_url }}" class="luxury-article-link">{{ post.title }}</a>
+          </h2>
+          <div class="luxury-article-meta">
+            <span>{{ post.date | date: "%d %B %Y" }}</span>
+            {% if post.read_time %}
+              <span class="luxury-article-meta-divider">•</span>
+              <span>{{ post.read_time }} minit bacaan</span>
+            {% endif %}
+          </div>
+          <p class="luxury-item-desc">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+          <div style="margin-top: 16px;">
+            <a href="{{ post.url | relative_url }}" class="luxury-btn-secondary">Baca Panduan →</a>
+          </div>
+        </article>
+      {% else %}
+        <p class="luxury-prose">Kemas kini artikel baharu sedang dijalankan. Sila semak semula dalam masa terdekat.</p>
+      {% endfor %}
+    </div>
+  </section>
+  
+  <hr class="luxury-divider">
+
+  <!-- CONVERSION CTA -->
+  {% include conversation.html %}
+</main>

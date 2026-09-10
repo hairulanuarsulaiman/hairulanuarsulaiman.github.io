@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Adakah Saya Sudah Bersedia Untuk Bersara?"
-category: Persaraan
+category: Perancangan Persaraan
 date: 2026-07-14
 permalink: /artikel/adakah-saya-sudah-bersedia-untuk-bersara/
 author: "Hairul Anuar Bin Sulaiman"

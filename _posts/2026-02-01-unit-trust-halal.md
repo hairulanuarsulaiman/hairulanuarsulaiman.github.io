@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Adakah Pelaburan Unit Trust Itu Halal?"
-category: Pelaburan
+category: Pelaburan Patuh Syariah
 date: 2026-05-02
 permalink: /artikel/unit-trust-halal/
 author: "Hairul Anuar Bin Sulaiman"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hibah Takaful vs Faraid: Mengapa Pengurusan Harta Bermula Dengan Kefahaman, Bukan Pertikaian"
-category: Takaful
+category: Perancangan Harta
 date: 2026-08-13
 permalink: /artikel/hibah-takaful-vs-faraid/
 author: "Hairul Anuar Bin Sulaiman"

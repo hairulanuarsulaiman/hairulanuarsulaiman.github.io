@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mengapa Ramai Tidak Percaya Takaful? Menilai Antara Mitos, Realiti, dan Pengalaman Lampau"
-category: Takaful
+category: Perlindungan Kewangan
 date: 2026-08-21
 permalink: /artikel/mengapa-ramai-tidak-percaya-takaful/
 author: "Hairul Anuar Bin Sulaiman"

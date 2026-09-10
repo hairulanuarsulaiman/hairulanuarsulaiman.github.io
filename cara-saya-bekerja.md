@@ -49,11 +49,11 @@ permalink: /cara-saya-bekerja/
     </span>
 
 <h2 class="luxury-subheading">
-  Understand Before You Decide
+  Satu Pendekatan Yang Jelas
 </h2>
 
 <p class="luxury-prose">
-  Setiap perbincangan tidak semestinya memerlukan tahap yang sama. Namun, enam prinsip ini menjadi kerangka asas saya dalam menilai sesuatu keputusan kewangan.
+  Setiap perbincangan tidak semestinya memerlukan tahap yang sama. Namun, enam peringkat ini menjadi kerangka asas saya dalam menilai sesuatu keputusan kewangan.
 </p>
 
 <div class="luxury-border-list">

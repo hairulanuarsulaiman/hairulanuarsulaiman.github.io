@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "“Dah Ada Penyakit, Mana Boleh Ambil Takaful Lagi?”: Mitos, Realiti, dan Pilihan Yang Ada"
-category: Takaful
+category: Perlindungan Kewangan
 date: 2026-08-23
 permalink: /artikel/takaful-untuk-yang-sudah-ada-penyakit/
 author: "Hairul Anuar Bin Sulaiman"

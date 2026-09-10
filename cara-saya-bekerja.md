@@ -1,10 +1,10 @@
 ---
-
 layout: default
 title: Cara Saya Bekerja | The Hairul Approach
 description: Memahami pendekatan Hairul dalam membantu anda menilai, mengutamakan dan membuat keputusan kewangan berkaitan perlindungan, pelaburan dan persaraan.
 category: Cara Saya Bekerja
----------------------------
+permalink: /cara-saya-bekerja/
+---
 
 <!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
 

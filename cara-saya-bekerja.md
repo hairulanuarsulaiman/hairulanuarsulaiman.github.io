@@ -21,7 +21,6 @@ permalink: /cara-saya-bekerja/
       I. CARA SAYA BEKERJA
     </span>
 
-```
 <h1 class="luxury-heading">
   The Hairul Approach
 </h1>
@@ -33,7 +32,6 @@ permalink: /cara-saya-bekerja/
 <p class="luxury-prose">
   Pendekatan saya dibina untuk membantu anda memahami pilihan dengan lebih jelas sebelum membuat keputusan berkaitan perlindungan, pelaburan atau persaraan.
 </p>
-```
 
   </section>
 
@@ -50,7 +48,6 @@ permalink: /cara-saya-bekerja/
       II. ENAM PERINGKAT
     </span>
 
-```
 <h2 class="luxury-subheading">
   Understand Before You Decide
 </h2>
@@ -110,7 +107,6 @@ permalink: /cara-saya-bekerja/
   </div>
 
 </div>
-```
 
   </section>
 
@@ -127,7 +123,6 @@ permalink: /cara-saya-bekerja/
       III. DISIPLIN PENASIHATAN
     </span>
 
-```
 <h2 class="luxury-subheading">
   Soalan Yang Perlu Ditanya Sebelum Membuat Keputusan
 </h2>
@@ -163,7 +158,6 @@ permalink: /cara-saya-bekerja/
   </div>
 
 </div>
-```
 
   </section>
 
@@ -180,7 +174,6 @@ permalink: /cara-saya-bekerja/
       IV. DALAM AMALAN
     </span>
 
-```
 <h2 class="luxury-subheading">
   Satu Pendekatan, Pelbagai Keputusan
 </h2>
@@ -219,7 +212,6 @@ permalink: /cara-saya-bekerja/
   </div>
 
 </div>
-```
 
   </section>
 
@@ -236,7 +228,6 @@ permalink: /cara-saya-bekerja/
       V. UNTUK ANDA
     </span>
 
-```
 <h2 class="luxury-subheading">
   Anda Tetap Membuat Keputusan
 </h2>
@@ -252,7 +243,6 @@ permalink: /cara-saya-bekerja/
 <p class="luxury-prose">
   Matlamatnya bukan untuk menghapuskan semua ketidakpastian. Matlamatnya ialah supaya anda memahami keputusan yang sedang dipertimbangkan dan lebih yakin dengan langkah yang dipilih.
 </p>
-```
 
   </section>
 

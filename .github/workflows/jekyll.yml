@@ -1,7 +1,5 @@
 name: Build and Deploy Jekyll Site
 
-# Re-trigger workflow
-
 on:
   push:
     branches:

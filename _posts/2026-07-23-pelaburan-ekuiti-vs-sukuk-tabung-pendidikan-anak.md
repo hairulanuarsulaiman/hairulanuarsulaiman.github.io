@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pelaburan Ekuiti vs Sukuk: Mana Satu Sesuai Untuk Tabung Pendidikan Anak?"
-category: Pelaburan
+category: Pelaburan Patuh Syariah
 date: 2026-07-23
 permalink: /artikel/pelaburan-ekuiti-vs-sukuk-tabung-pendidikan-anak/
 author: "Hairul Anuar Bin Sulaiman"

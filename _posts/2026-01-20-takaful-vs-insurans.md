@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Memahami Perbezaan Antara Takaful dan Insurans Konvensional"
-category: Takaful
+category: "Perlindungan Kewangan"
 date: 2026-01-20
 permalink: /artikel/takaful-vs-insurans/
 author: "Hairul Anuar Bin Sulaiman"

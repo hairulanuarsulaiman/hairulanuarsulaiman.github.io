@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gaji RM5,000 Sebulan: Berapa Perlindungan Takaful Pendapatan Yang Cukup?"
-category: Takaful
+category: Perlindungan Kewangan
 date: 2026-07-22
 permalink: /artikel/gaji-rm5000-sebulan-berapa-takaful-pendapatan-cukup/
 author: "Hairul Anuar Bin Sulaiman"

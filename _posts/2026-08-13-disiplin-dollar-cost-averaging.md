@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Disiplin Dollar-Cost Averaging (DCA): Mengapa Pasaran Turun Adalah Peluang, Bukan Ancaman"
-category: Pelaburan
+category: Pelaburan Patuh Syariah
 date: 2026-08-13
 permalink: /artikel/disiplin-dollar-cost-averaging/
 author: "Hairul Anuar Bin Sulaiman"

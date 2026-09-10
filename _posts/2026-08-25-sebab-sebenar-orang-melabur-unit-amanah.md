@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mengapa Ramai Memilih Unit Amanah? Tiga Faktor Penarik Sebenar Di Sebalik Angka Dan Graf"
-category: Pelaburan
+category: Pelaburan Patuh Syariah
 date: 2026-08-25
 permalink: /artikel/sebab-sebenar-orang-melabur-unit-amanah/
 author: "Hairul Anuar Bin Sulaiman"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bagaimana Regular Savings Plan Membantu Anda Membina Simpanan Secara Berdisiplin"
-category: "Pelaburan Patuh Syariah"
+category: Pelaburan Patuh Syariah
 date: 2026-01-15
 permalink: /artikel/memulakan-regular-savings/
 author: "Hairul Anuar Bin Sulaiman"

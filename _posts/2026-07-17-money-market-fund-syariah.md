@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Apa Itu Money Market Fund Patuh Syariah dan Bagaimana Ia Berfungsi?"
-category: Pelaburan
+category: Pelaburan Patuh Syariah
 date: 2026-07-17
 permalink: /artikel/money-market-fund-syariah/
 author: "Hairul Anuar Bin Sulaiman"

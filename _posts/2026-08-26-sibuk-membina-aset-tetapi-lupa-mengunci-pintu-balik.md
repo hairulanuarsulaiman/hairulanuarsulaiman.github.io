@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sibuk Membina Aset Tetapi Lupa Mengunci Pintu Balik: Risiko Tersembunyi Bagi Pasangan Kerjaya"
-category: Perancangan
+category: Perlindungan Kewangan
 date: 2026-08-26
 permalink: /artikel/sibuk-membina-aset-tetapi-lupa-mengunci-pintu-balik/
 author: "Hairul Anuar Bin Sulaiman"

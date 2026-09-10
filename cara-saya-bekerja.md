@@ -1,10 +1,11 @@
 ---
+
 layout: default
 title: Cara Saya Bekerja | The Hairul Approach
 description: Memahami pendekatan Hairul dalam membantu anda menilai, mengutamakan dan membuat keputusan kewangan berkaitan perlindungan, pelaburan dan persaraan.
 category: Cara Saya Bekerja
 permalink: /cara-saya-bekerja/
----
+------------------------------
 
 <!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
 
@@ -21,6 +22,7 @@ permalink: /cara-saya-bekerja/
       I. CARA SAYA BEKERJA
     </span>
 
+```
 <h1 class="luxury-heading">
   The Hairul Approach
 </h1>
@@ -32,6 +34,7 @@ permalink: /cara-saya-bekerja/
 <p class="luxury-prose">
   Pendekatan saya dibina untuk membantu anda memahami pilihan dengan lebih jelas sebelum membuat keputusan berkaitan perlindungan, pelaburan atau persaraan.
 </p>
+```
 
   </section>
 
@@ -48,12 +51,13 @@ permalink: /cara-saya-bekerja/
       II. ENAM PERINGKAT
     </span>
 
+```
 <h2 class="luxury-subheading">
   Satu Pendekatan Yang Jelas
 </h2>
 
 <p class="luxury-prose">
-  Setiap perbincangan tidak semestinya memerlukan tahap yang sama. Namun, enam peringkat ini menjadi kerangka asas saya dalam menilai sesuatu keputusan kewangan.
+  Setiap perbincangan tidak semestinya melalui semua peringkat dengan kedalaman yang sama. Namun, enam peringkat ini menjadi kerangka asas saya dalam menilai sesuatu keputusan kewangan.
 </p>
 
 <div class="luxury-border-list">
@@ -78,7 +82,7 @@ permalink: /cara-saya-bekerja/
     <span class="luxury-item-badge">03</span>
     <h3 class="luxury-item-title">Prioritise — Utamakan</h3>
     <p class="luxury-item-desc">
-      Tidak semua perkara perlu diselesaikan serentak. Kami menentukan perkara yang patut diberi perhatian terlebih dahulu berdasarkan keperluan, risiko, kemampuan dan objektif.
+      Tidak semua perkara perlu diselesaikan serentak. Kita menentukan perkara yang patut diberi perhatian terlebih dahulu berdasarkan keperluan, risiko, kemampuan dan objektif.
     </p>
   </div>
 
@@ -102,11 +106,12 @@ permalink: /cara-saya-bekerja/
     <span class="luxury-item-badge">06</span>
     <h3 class="luxury-item-title">Review — Semak Semula</h3>
     <p class="luxury-item-desc">
-      Kehidupan dan keadaan kewangan berubah. Pelan perlu disemak apabila matlamat, tanggungjawab, kemampuan atau keadaan kewangan berubah.
+      Kehidupan berubah, begitu juga keadaan kewangan. Pelan perlu disemak apabila matlamat, tanggungjawab, kemampuan atau keperluan berubah.
     </p>
   </div>
 
 </div>
+```
 
   </section>
 
@@ -123,6 +128,7 @@ permalink: /cara-saya-bekerja/
       III. DISIPLIN PENASIHATAN
     </span>
 
+```
 <h2 class="luxury-subheading">
   Soalan Yang Perlu Ditanya Sebelum Membuat Keputusan
 </h2>
@@ -158,6 +164,7 @@ permalink: /cara-saya-bekerja/
   </div>
 
 </div>
+```
 
   </section>
 
@@ -174,6 +181,7 @@ permalink: /cara-saya-bekerja/
       IV. DALAM AMALAN
     </span>
 
+```
 <h2 class="luxury-subheading">
   Satu Pendekatan, Pelbagai Keputusan
 </h2>
@@ -212,6 +220,7 @@ permalink: /cara-saya-bekerja/
   </div>
 
 </div>
+```
 
   </section>
 
@@ -228,6 +237,7 @@ permalink: /cara-saya-bekerja/
       V. UNTUK ANDA
     </span>
 
+```
 <h2 class="luxury-subheading">
   Anda Tetap Membuat Keputusan
 </h2>
@@ -243,6 +253,7 @@ permalink: /cara-saya-bekerja/
 <p class="luxury-prose">
   Matlamatnya bukan untuk menghapuskan semua ketidakpastian. Matlamatnya ialah supaya anda memahami keputusan yang sedang dipertimbangkan dan lebih yakin dengan langkah yang dipilih.
 </p>
+```
 
   </section>
 
@@ -250,7 +261,7 @@ permalink: /cara-saya-bekerja/
 
   <!-- ========================================== -->
 
-  <!-- STAGE VI: CALM INVITATION                 -->
+  <!-- STAGE VI: CALM INVITATION                  -->
 
   <!-- ========================================== -->
 

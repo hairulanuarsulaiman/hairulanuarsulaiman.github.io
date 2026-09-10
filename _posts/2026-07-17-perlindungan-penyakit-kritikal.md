@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Memahami Perlindungan Penyakit Kritikal: Mengapa Kad Perubatan Sahaja Tidak Cukup?"
-category: Takaful
+category: Perlindungan Kewangan
 date: 2026-07-17
 permalink: /artikel/perlindungan-penyakit-kritikal/
 author: "Hairul Anuar Bin Sulaiman"

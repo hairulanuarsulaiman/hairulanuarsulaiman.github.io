@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gaji Pertama & Bunyi Bising di Sekeliling: Panduan Kewangan Sebenar Untuk Graduan Muda"
-category: Perancangan Kewangan
+category: Perlindungan Kewangan
 date: 2026-08-19
 permalink: /artikel/gaji-pertama-panduan-graduan-muda/
 author: "Hairul Anuar Bin Sulaiman"

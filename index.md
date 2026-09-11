@@ -264,67 +264,60 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
   <hr class="luxury-divider">
 
 
-  <!-- ========================================== -->
-  <!-- STAGE V: APPLICATIONS                      -->
-  <!-- ========================================== -->
+<!-- ========================================== -->
+<!-- STAGE V: DECISION MOMENTS                  -->
+<!-- ========================================== -->
 
-  <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      V. SKOP PENASIHATAN
-    </span>
+<section class="luxury-section">
+  <span class="luxury-eyebrow">
+    V. TIGA KEADAAN. SATU PENDEKATAN.
+  </span>
 
-    <h2 class="luxury-subheading">
-      Keputusan Berbeza. Pendekatan Yang Sama.
-    </h2>
+  <h2 class="luxury-subheading">
+    Bila Anda Perlukan Kejelasan
+  </h2>
 
-    <p class="luxury-prose">
-      Keperluan kewangan setiap orang berbeza. Pendekatan yang sama digunakan untuk memahami keadaan, menilai keperluan dan menentukan langkah yang sesuai—sama ada berkaitan perlindungan, pelaburan atau persaraan.
-    </p>
+  <p class="luxury-prose">
+    Tidak semua orang datang dengan soalan yang sama. Ada yang baru mahu bermula, ada yang mahu memastikan apa yang sudah ada mencukupi, dan ada yang perlu menyusun beberapa perkara yang saling berkaitan.
+  </p>
 
+  <div class="luxury-scope-stack">
 
-    <div class="luxury-scope-stack">
+    <div class="luxury-scope-item">
+      <h3 class="luxury-item-title luxury-item-title-scope">
+        Saya Baru Nak Mula
+      </h3>
 
-      <div class="luxury-scope-item">
-
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          Perlindungan Takaful
-        </h3>
-
-        <p class="luxury-item-desc">
-          Menilai keperluan perlindungan untuk mengurus risiko kewangan yang boleh menjejaskan pendapatan dan kebajikan keluarga.
-        </p>
-
-      </div>
-
-
-      <div class="luxury-scope-item">
-
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          Pelaburan Unit Trust
-        </h3>
-
-        <p class="luxury-item-desc">
-          Membina simpanan dan pelaburan secara berdisiplin melalui dana amanah patuh Syariah bagi mencapai matlamat kewangan jangka sederhana dan panjang.
-        </p>
-
-      </div>
-
-
-      <div class="luxury-scope-item">
-
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          Strategi Persaraan
-        </h3>
-
-        <p class="luxury-item-desc">
-          Merancang keperluan kewangan untuk persaraan supaya sumber pendapatan dan simpanan dapat disusun dengan lebih teratur bagi jangka panjang.
-        </p>
-
-      </div>
-
+      <p class="luxury-item-desc">
+        Saya baru bermula. Apa yang patut saya lakukan dahulu, dan apa yang boleh ditangguhkan?
+      </p>
     </div>
 
-  </section>
+
+    <div class="luxury-scope-item">
+      <h3 class="luxury-item-title luxury-item-title-scope">
+        Saya Nak Semak
+      </h3>
+
+      <p class="luxury-item-desc">
+        Saya sudah ada beberapa keputusan kewangan. Adakah ia masih sesuai, mencukupi dan tersusun dengan baik?
+      </p>
+    </div>
+
+
+    <div class="luxury-scope-item">
+      <h3 class="luxury-item-title luxury-item-title-scope">
+        Saya Perlu Susun
+      </h3>
+
+      <p class="luxury-item-desc">
+        Saya mempunyai beberapa keperluan dan komitmen. Bagaimana semuanya patut diutamakan dan disusun?
+      </p>
+    </div>
+
+  </div>
+
+</section>
 
 
   <hr class="luxury-divider">

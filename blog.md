@@ -1,129 +1,376 @@
 ---
 layout: default
-title: Artikel Kewangan Halal & Panduan Pelaburan | Hairul Anuar Sulaiman
+title: Hub Pengetahuan Kewangan | Hairul Anuar Sulaiman
 permalink: /artikel/
 pagination:
   enabled: true
   collection: posts
-description: Pendidikan dan panduan kewangan Islam percuma. Terokai artikel berkaitan takaful, pelaburan unit trust, dan perancangan persaraan bebas riba di Malaysia.
-category: Artikel
+description: Artikel dan panduan untuk membantu individu dan keluarga memahami persoalan kewangan, menilai pilihan dan membuat keputusan kewangan dengan lebih yakin dan teratur.
+category: Hub Pengetahuan
 image: "/assets/images/homepage/homepage-architectural-path.jpg"
 ---
 
-<!-- Page-specific Blog Schema -->
+<!-- =========================================================
+     JSON-LD — Knowledge Hub
+     ========================================================= -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "Artikel Kewangan Halal – Hairul Anuar Sulaiman",
-  "description": "Pendidikan kewangan Islam percuma untuk individu dan keluarga di Malaysia yang mahu membina asas kewangan dan pelaburan halal.",
+  "name": "Hub Pengetahuan Kewangan – Hairul Anuar Sulaiman",
+  "description": "Artikel dan panduan untuk membantu individu dan keluarga memahami persoalan kewangan, menilai pilihan dan membuat keputusan kewangan dengan lebih yakin dan teratur.",
   "url": "{{ site.url }}{{ page.url }}",
   "author": {
     "@type": "Person",
     "name": "Hairul Anuar Bin Sulaiman",
-    "jobTitle": "Islamic Financial Adviser Representative & Unit Trust Scheme Consultant"
+    "jobTitle": "Associate Shariah Registered Financial Planner"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Hairul Anuar Bin Sulaiman"
   }
 }
 </script>
 
-<!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
-<main class="luxury-canvas">
 
-  <!-- ========================================== -->
-  <!-- STAGE I: HUB PENGETAHUAN HEADER            -->
-  <!-- ========================================== -->
-  <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      III. HUB PENGETAHUAN & MONOGRAF
-    </span>
+<!-- =========================================================
+     KNOWLEDGE HUB
+     ========================================================= -->
 
-    <h1 class="luxury-heading">
-      Artikel Kewangan Halal & Panduan Pelaburan
+<div class="luxury-canvas">
+
+  <!-- =======================================================
+       I. HUB PENGETAHUAN
+       ======================================================= -->
+
+  <section class="hero">
+
+    <div class="stage-label">
+      I. HUB PENGETAHUAN
+    </div>
+
+    <h1>
+      Memahami Sebelum Membuat Keputusan
     </h1>
 
-    <p class="luxury-prose luxury-prose-lead">
-      Keputusan kewangan yang bijak bermula dengan kefahaman yang betul. Terokai panduan ringkas berkaitan perlindungan Takaful, pelaburan Unit Trust patuh Syariah, dan perancangan persaraan untuk membantu anda membuat pilihan dengan lebih yakin.
+    <p class="hero-lead">
+      Artikel dan panduan untuk membantu anda memahami persoalan kewangan,
+      menilai pilihan dan menentukan perkara yang patut diberi keutamaan —
+      sebelum membuat keputusan.
     </p>
+
   </section>
 
-  <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE II: LISTING ARTIKEL (PAGINATED GRID) -->
-  <!-- ========================================== -->
-  <section class="luxury-section">
-    <div class="luxury-article-grid">
+  <!-- =======================================================
+       II. PILIH MENGIKUT KEADAAN ANDA
+       ======================================================= -->
+
+  <section class="section">
+
+    <div class="stage-label">
+      II. PILIH MENGIKUT KEADAAN ANDA
+    </div>
+
+    <h2>
+      Apa yang anda sedang cuba fahami?
+    </h2>
+
+    <p class="section-intro">
+      Setiap orang datang dengan keadaan yang berbeza. Mulakan dengan
+      persoalan yang paling hampir dengan keadaan anda sekarang.
+    </p>
+
+
+    <div class="decision-grid">
+
+
+      <!-- =================================================
+           SPOKE 1 — STARTING
+           ================================================= -->
+
+      <article class="decision-card">
+
+        <div class="decision-number">
+          01
+        </div>
+
+        <h3>
+          Saya Baru Nak Mula
+        </h3>
+
+        <p>
+          Anda baru bekerja, baru berkeluarga, atau baru mula memikirkan
+          tentang perlindungan, simpanan dan pelaburan. Fahami asas dahulu
+          sebelum menentukan apa yang perlu dibuat.
+        </p>
+
+        <div class="decision-question">
+          “Apa yang patut saya buat dahulu?”
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           SPOKE 2 — CHECKING
+           ================================================= -->
+
+      <article class="decision-card">
+
+        <div class="decision-number">
+          02
+        </div>
+
+        <h3>
+          Saya Nak Semak
+        </h3>
+
+        <p>
+          Anda sudah mempunyai Takaful, simpanan, pelaburan atau rancangan
+          kewangan. Sekarang anda mahu tahu sama ada apa yang anda ada
+          masih sesuai dengan keadaan dan keperluan semasa.
+        </p>
+
+        <div class="decision-question">
+          “Apa yang saya ada sekarang, cukup ke?”
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           SPOKE 3 — STRUCTURING
+           ================================================= -->
+
+      <article class="decision-card">
+
+        <div class="decision-number">
+          03
+        </div>
+
+        <h3>
+          Saya Perlu Susun
+        </h3>
+
+        <p>
+          Anda mempunyai beberapa keperluan kewangan pada masa yang sama.
+          Anda mahu menentukan keutamaan dan memahami bagaimana semuanya
+          boleh disusun dengan lebih teratur.
+        </p>
+
+        <div class="decision-question">
+          “Macam mana nak susun semua ini?”
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- =======================================================
+       III. ARTIKEL TERKINI
+       ======================================================= -->
+
+  <section class="section" id="artikel-terkini">
+
+    <div class="stage-label">
+      III. ARTIKEL TERKINI
+    </div>
+
+    <h2>
+      Panduan Untuk Membantu Anda Berfikir Dengan Lebih Jelas
+    </h2>
+
+    <p class="section-intro">
+      Bahan bacaan yang ditulis untuk membantu anda memahami persoalan,
+      menilai pilihan dan membuat keputusan kewangan dengan lebih teratur.
+    </p>
+
+
+    <!-- =====================================================
+         ARTICLE GRID
+         ===================================================== -->
+
+    <div class="article-grid">
+
       {% for post in paginator.posts %}
-        <article class="luxury-article-card">
-          <span class="luxury-item-badge">
-            {{ post.category | default: "KEWANGAN" | upcase }}
-          </span>
 
-          <h2 class="luxury-item-title">
-            <a href="{{ post.url | relative_url }}" class="luxury-article-link">
+        <article class="article-card">
+
+          <!-- Category -->
+          {% if post.category %}
+            <div class="article-category">
+              {{ post.category }}
+            </div>
+          {% endif %}
+
+
+          <!-- Title -->
+          <h3 class="article-title">
+
+            <a href="{{ post.url | relative_url }}">
               {{ post.title }}
             </a>
-          </h2>
 
-          <div class="luxury-article-meta">
-            <span>{{ post.date | date: "%d %B %Y" }}</span>
-            {% if post.read_time %}
-              <span class="luxury-article-meta-divider">•</span>
-              <span>{{ post.read_time }} minit bacaan</span>
+          </h3>
+
+
+          <!-- Meta -->
+          <div class="article-meta">
+
+            {% if post.date %}
+              <span>
+                {{ post.date | date: "%d %B %Y" }}
+              </span>
             {% endif %}
+
+            {% if post.read_time %}
+              <span aria-hidden="true">·</span>
+              <span>
+                {{ post.read_time }} min membaca
+              </span>
+            {% endif %}
+
           </div>
 
-          <p class="luxury-item-desc">
-            {{ post.description | default: post.excerpt | strip_html | truncate: 160 }}
+
+          <!-- Description -->
+          <p class="article-excerpt">
+
+            {% if post.description %}
+              {{ post.description }}
+            {% else %}
+              {{ post.excerpt
+                | strip_html
+                | strip_newlines
+                | truncate: 160
+              }}
+            {% endif %}
+
           </p>
 
-          <div style="margin-top: 16px;">
-            <a href="{{ post.url | relative_url }}" class="luxury-btn-secondary">
-              Baca Panduan →
-            </a>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
 
-    <!-- ========================================== -->
-    <!-- PAGINATION NAVIGATION                     -->
-    <!-- ========================================== -->
-    {% if paginator.total_pages > 1 %}
-      <nav class="luxury-pagination" style="margin-top: 48px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-parchment); padding-top: 24px;">
-        <div>
-          {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | relative_url }}" class="luxury-btn-secondary">
-              ← Halaman Sebelumnya
-            </a>
-          {% endif %}
+          <!-- CTA -->
+          <a
+            class="article-link"
+            href="{{ post.url | relative_url }}"
+            aria-label="Baca {{ post.title }}"
+          >
+            Baca →
+          </a>
+
+        </article>
+
+      {% else %}
+
+        <div class="article-empty">
+
+          <p>
+            Artikel baharu sedang disediakan.
+          </p>
+
         </div>
 
-        <span style="font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.7;">
-          Halaman {{ paginator.page }} daripada {{ paginator.total_pages }}
+      {% endfor %}
+
+    </div>
+
+
+    <!-- =====================================================
+         PAGINATION
+         ===================================================== -->
+
+    {% if paginator.total_pages > 1 %}
+
+      <nav
+        class="pagination"
+        aria-label="Navigasi artikel"
+      >
+
+        {% if paginator.previous_page %}
+
+          <a
+            href="{{ paginator.previous_page_path | relative_url }}"
+            class="pagination-prev"
+            aria-label="Artikel sebelumnya"
+          >
+            ← Sebelumnya
+          </a>
+
+        {% endif %}
+
+
+        <span class="pagination-current">
+          {{ paginator.page }} / {{ paginator.total_pages }}
         </span>
 
-        <div>
-          {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | relative_url }}" class="luxury-btn-secondary">
-              Halaman Seterusnya →
-            </a>
-          {% endif %}
-        </div>
+
+        {% if paginator.next_page %}
+
+          <a
+            href="{{ paginator.next_page_path | relative_url }}"
+            class="pagination-next"
+            aria-label="Artikel seterusnya"
+          >
+            Seterusnya →
+          </a>
+
+        {% endif %}
+
       </nav>
+
     {% endif %}
 
-    <!-- Peringatan Kemaskini -->
-    <div class="luxury-author-block" style="margin-top: 64px; text-align: center;">
-      Penulisan baharu dikemas kini secara berkala berasaskan data dan prinsip kewangan Syariah terkini.
-    </div>
   </section>
 
-  <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE III: NEXT STEP (UNIFORM INVITATION)  -->
-  <!-- ========================================== -->
-  {% include conversation.html %}
+  <!-- =======================================================
+       IV. PENDEKATAN HAIRUL
+       ======================================================= -->
 
-</main>
+  <section class="section approach-reminder">
+
+    <div class="stage-label">
+      IV. PENDEKATAN HAIRUL
+    </div>
+
+    <h2>
+      Memahami keadaan sebelum menentukan apa yang patut dilakukan.
+    </h2>
+
+    <p class="section-intro">
+      Artikel membantu anda memahami persoalan. Dalam perbualan sebenar,
+      pendekatan saya bermula dengan memahami keadaan anda, menilai
+      keperluan, menentukan keutamaan dan kemudian melihat pilihan yang
+      sesuai.
+    </p>
+
+    <p>
+      Anda tetap membuat keputusan. Peranan saya adalah membantu anda
+      melihat keadaan dengan lebih jelas sebelum keputusan itu dibuat.
+    </p>
+
+    <p class="section-action">
+      <a href="{{ '/cara-saya-bekerja/' | relative_url }}">
+        Lihat Cara Saya Bekerja →
+      </a>
+    </p>
+
+  </section>
+
+
+  <!-- =======================================================
+       V. PERBUALAN
+       ======================================================= -->
+
+  <section class="section conversation-section">
+
+    {% include conversation.html %}
+
+  </section>
+
+</div>

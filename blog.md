@@ -2,18 +2,12 @@
 layout: default
 title: Hub Pengetahuan Kewangan | Hairul Anuar Sulaiman
 permalink: /artikel/
-pagination:
-  enabled: true
-  collection: posts
 description: Artikel dan panduan untuk membantu individu dan keluarga memahami persoalan kewangan, menilai pilihan dan membuat keputusan kewangan dengan lebih yakin dan teratur.
 category: Hub Pengetahuan
 image: "/assets/images/homepage/homepage-architectural-path.jpg"
 ---
 
-<!-- =========================================================
-     JSON-LD — Knowledge Hub
-     ========================================================= -->
-
+<!-- JSON-LD — Knowledge Hub -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -25,352 +19,230 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
     "@type": "Person",
     "name": "Hairul Anuar Bin Sulaiman",
     "jobTitle": "Associate Shariah Registered Financial Planner"
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": "Hairul Anuar Bin Sulaiman"
   }
 }
 </script>
 
-
-<!-- =========================================================
-     KNOWLEDGE HUB
-     ========================================================= -->
-
-<div class="luxury-canvas">
+<main class="luxury-canvas">
 
   <!-- =======================================================
-       I. HUB PENGETAHUAN
+       HUB PENGETAHUAN
        ======================================================= -->
 
-  <section class="hero">
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">HUB PENGETAHUAN</span>
 
-    <div class="stage-label">
-      I. HUB PENGETAHUAN
-    </div>
-
-    <h1>
+    <h1 class="luxury-heading">
       Memahami Sebelum Membuat Keputusan
     </h1>
 
-    <p class="hero-lead">
-      Artikel dan panduan untuk membantu anda memahami persoalan kewangan,
-      menilai pilihan dan menentukan perkara yang patut diberi keutamaan —
-      sebelum membuat keputusan.
+    <p class="luxury-prose luxury-prose-lead">
+      Artikel dan panduan untuk membantu anda memahami persoalan kewangan, menilai pilihan dan menentukan perkara yang patut diberi keutamaan — sebelum membuat keputusan.
     </p>
-
   </section>
 
+  <hr class="luxury-divider">
 
   <!-- =======================================================
-       II. PILIH MENGIKUT KEADAAN ANDA
+       PILIH MENGIKUT KEADAAN ANDA
        ======================================================= -->
 
-  <section class="section">
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">PILIH MENGIKUT KEADAAN ANDA</span>
 
-    <div class="stage-label">
-      II. PILIH MENGIKUT KEADAAN ANDA
-    </div>
-
-    <h2>
+    <h2 class="luxury-subheading">
       Apa yang anda sedang cuba fahami?
     </h2>
 
-    <p class="section-intro">
-      Setiap orang datang dengan keadaan yang berbeza. Mulakan dengan
-      persoalan yang paling hampir dengan keadaan anda sekarang.
+    <p class="luxury-prose">
+      Setiap orang datang dengan keadaan yang berbeza. Mulakan dengan persoalan yang paling hampir dengan keadaan anda sekarang.
     </p>
 
+    <div class="luxury-scope-stack">
 
-    <div class="decision-grid">
-
-
-      <!-- =================================================
-           SPOKE 1 — STARTING
-           ================================================= -->
-
-      <article class="decision-card">
-
-        <div class="decision-number">
-          01
-        </div>
-
-        <h3>
-          Saya Baru Nak Mula
+      <div class="luxury-scope-item">
+        <h3 class="luxury-item-title luxury-item-title-scope">
+          <a href="{{ '/artikel/perlindungan-kewangan/' | relative_url }}" class="luxury-article-link">
+            01. Saya Baru Nak Mula
+          </a>
         </h3>
-
-        <p>
-          Anda baru bekerja, baru berkeluarga, atau baru mula memikirkan
-          tentang perlindungan, simpanan dan pelaburan. Fahami asas dahulu
-          sebelum menentukan apa yang perlu dibuat.
+        <p class="luxury-item-desc">
+          Anda baru bekerja, baru berkeluarga, atau baru mula memikirkan tentang perlindungan, simpanan dan pelaburan. Fahami asas dahulu sebelum menentukan apa yang perlu dibuat.
         </p>
+        <p class="luxury-item-desc" style="font-style: italic; margin-top: 8px;">
+          "Apa yang patut saya buat dahulu?"
+        </p>
+      </div>
 
-        <div class="decision-question">
-          “Apa yang patut saya buat dahulu?”
-        </div>
-
-      </article>
-
-
-      <!-- =================================================
-           SPOKE 2 — CHECKING
-           ================================================= -->
-
-      <article class="decision-card">
-
-        <div class="decision-number">
-          02
-        </div>
-
-        <h3>
-          Saya Nak Semak
+      <div class="luxury-scope-item">
+        <h3 class="luxury-item-title luxury-item-title-scope">
+          <a href="{{ '/artikel/pelaburan-patuh-syariah/' | relative_url }}" class="luxury-article-link">
+            02. Saya Nak Semak
+          </a>
         </h3>
-
-        <p>
-          Anda sudah mempunyai Takaful, simpanan, pelaburan atau rancangan
-          kewangan. Sekarang anda mahu tahu sama ada apa yang anda ada
-          masih sesuai dengan keadaan dan keperluan semasa.
+        <p class="luxury-item-desc">
+          Anda sudah mempunyai Takaful, simpanan, pelaburan atau rancangan kewangan. Sekarang anda mahu tahu sama ada apa yang anda ada masih sesuai dengan keadaan dan keperluan semasa.
         </p>
+        <p class="luxury-item-desc" style="font-style: italic; margin-top: 8px;">
+          "Apa yang saya ada sekarang, cukup ke?"
+        </p>
+      </div>
 
-        <div class="decision-question">
-          “Apa yang saya ada sekarang, cukup ke?”
-        </div>
-
-      </article>
-
-
-      <!-- =================================================
-           SPOKE 3 — STRUCTURING
-           ================================================= -->
-
-      <article class="decision-card">
-
-        <div class="decision-number">
-          03
-        </div>
-
-        <h3>
-          Saya Perlu Susun
+      <div class="luxury-scope-item">
+        <h3 class="luxury-item-title luxury-item-title-scope">
+          <a href="{{ '/artikel/perancangan-harta/' | relative_url }}" class="luxury-article-link">
+            03. Saya Perlu Susun
+          </a>
         </h3>
-
-        <p>
-          Anda mempunyai beberapa keperluan kewangan pada masa yang sama.
-          Anda mahu menentukan keutamaan dan memahami bagaimana semuanya
-          boleh disusun dengan lebih teratur.
+        <p class="luxury-item-desc">
+          Anda mempunyai beberapa keperluan kewangan pada masa yang sama. Anda mahu menentukan keutamaan dan memahami bagaimana semuanya boleh disusun dengan lebih teratur.
         </p>
-
-        <div class="decision-question">
-          “Macam mana nak susun semua ini?”
-        </div>
-
-      </article>
+        <p class="luxury-item-desc" style="font-style: italic; margin-top: 8px;">
+          "Macam mana nak susun semua ini?"
+        </p>
+      </div>
 
     </div>
-
   </section>
 
+  <hr class="luxury-divider">
 
   <!-- =======================================================
-       III. ARTIKEL TERKINI
+       PERLINDUNGAN KEWANGAN
        ======================================================= -->
 
-  <section class="section" id="artikel-terkini">
+  {% assign perlindungan_posts = site.posts | where: "category", "Perlindungan Kewangan" %}
+  {% if perlindungan_posts.size > 0 %}
+  <section class="luxury-section" style="margin-bottom: 64px;">
+    <span class="luxury-eyebrow">PERLINDUNGAN KEWANGAN</span>
+    <h2 class="luxury-subheading" style="font-size: 1.5rem;">Melindungi Apa Yang Anda Bina</h2>
 
-    <div class="stage-label">
-      III. ARTIKEL TERKINI
-    </div>
-
-    <h2>
-      Panduan Untuk Membantu Anda Berfikir Dengan Lebih Jelas
-    </h2>
-
-    <p class="section-intro">
-      Bahan bacaan yang ditulis untuk membantu anda memahami persoalan,
-      menilai pilihan dan membuat keputusan kewangan dengan lebih teratur.
-    </p>
-
-
-    <!-- =====================================================
-         ARTICLE GRID
-         ===================================================== -->
-
-    <div class="article-grid">
-
-      {% for post in paginator.posts %}
-
-        <article class="article-card">
-
-          <!-- Category -->
-          {% if post.category %}
-            <div class="article-category">
-              {{ post.category }}
-            </div>
-          {% endif %}
-
-
-          <!-- Title -->
-          <h3 class="article-title">
-
-            <a href="{{ post.url | relative_url }}">
-              {{ post.title }}
-            </a>
-
+    <div class="luxury-article-grid">
+      {% for post in perlindungan_posts %}
+        <article class="luxury-article-card">
+          <h3 class="luxury-item-title" style="font-size: 1.15rem;">
+            <a href="{{ post.url | relative_url }}" class="luxury-article-link">{{ post.title }}</a>
           </h3>
-
-
-          <!-- Meta -->
-          <div class="article-meta">
-
-            {% if post.date %}
-              <span>
-                {{ post.date | date: "%d %B %Y" }}
-              </span>
-            {% endif %}
-
-            {% if post.read_time %}
-              <span aria-hidden="true">·</span>
-              <span>
-                {{ post.read_time }} min membaca
-              </span>
-            {% endif %}
-
-          </div>
-
-
-          <!-- Description -->
-          <p class="article-excerpt">
-
-            {% if post.description %}
-              {{ post.description }}
-            {% else %}
-              {{ post.excerpt
-                | strip_html
-                | strip_newlines
-                | truncate: 160
-              }}
-            {% endif %}
-
-          </p>
-
-
-          <!-- CTA -->
-          <a
-            class="article-link"
-            href="{{ post.url | relative_url }}"
-            aria-label="Baca {{ post.title }}"
-          >
-            Baca →
-          </a>
-
+          <p class="luxury-item-desc">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
         </article>
-
-      {% else %}
-
-        <div class="article-empty">
-
-          <p>
-            Artikel baharu sedang disediakan.
-          </p>
-
-        </div>
-
       {% endfor %}
-
     </div>
 
-
-    <!-- =====================================================
-         PAGINATION
-         ===================================================== -->
-
-    {% if paginator.total_pages > 1 %}
-
-      <nav
-        class="pagination"
-        aria-label="Navigasi artikel"
-      >
-
-        {% if paginator.previous_page %}
-
-          <a
-            href="{{ paginator.previous_page_path | relative_url }}"
-            class="pagination-prev"
-            aria-label="Artikel sebelumnya"
-          >
-            ← Sebelumnya
-          </a>
-
-        {% endif %}
-
-
-        <span class="pagination-current">
-          {{ paginator.page }} / {{ paginator.total_pages }}
-        </span>
-
-
-        {% if paginator.next_page %}
-
-          <a
-            href="{{ paginator.next_page_path | relative_url }}"
-            class="pagination-next"
-            aria-label="Artikel seterusnya"
-          >
-            Seterusnya →
-          </a>
-
-        {% endif %}
-
-      </nav>
-
-    {% endif %}
-
+    <div style="margin-top: 24px;">
+      <a href="{{ '/artikel/perlindungan-kewangan/' | relative_url }}" class="luxury-btn-secondary">Lihat Semua Artikel Perlindungan →</a>
+    </div>
   </section>
-
+  {% endif %}
 
   <!-- =======================================================
-       IV. PENDEKATAN HAIRUL
+       PELABURAN PATUH SYARIAH
        ======================================================= -->
 
-  <section class="section approach-reminder">
+  {% assign pelaburan_posts = site.posts | where: "category", "Pelaburan Patuh Syariah" %}
+  {% if pelaburan_posts.size > 0 %}
+  <section class="luxury-section" style="margin-bottom: 64px;">
+    <span class="luxury-eyebrow">PELABURAN PATUH SYARIAH</span>
+    <h2 class="luxury-subheading" style="font-size: 1.5rem;">Membina Kekayaan Dengan Disiplin</h2>
 
-    <div class="stage-label">
-      IV. PENDEKATAN HAIRUL
+    <div class="luxury-article-grid">
+      {% for post in pelaburan_posts %}
+        <article class="luxury-article-card">
+          <h3 class="luxury-item-title" style="font-size: 1.15rem;">
+            <a href="{{ post.url | relative_url }}" class="luxury-article-link">{{ post.title }}</a>
+          </h3>
+          <p class="luxury-item-desc">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+        </article>
+      {% endfor %}
     </div>
 
-    <h2>
+    <div style="margin-top: 24px;">
+      <a href="{{ '/artikel/pelaburan-patuh-syariah/' | relative_url }}" class="luxury-btn-secondary">Lihat Semua Artikel Pelaburan →</a>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- =======================================================
+       PERANCANGAN PERSARAAN
+       ======================================================= -->
+
+  {% assign persaraan_posts = site.posts | where: "category", "Perancangan Persaraan" %}
+  {% if persaraan_posts.size > 0 %}
+  <section class="luxury-section" style="margin-bottom: 64px;">
+    <span class="luxury-eyebrow">PERANCANGAN PERSARAAN</span>
+    <h2 class="luxury-subheading" style="font-size: 1.5rem;">Menyediakan Hari Tua Yang Tenang</h2>
+
+    <div class="luxury-article-grid">
+      {% for post in persaraan_posts %}
+        <article class="luxury-article-card">
+          <h3 class="luxury-item-title" style="font-size: 1.15rem;">
+            <a href="{{ post.url | relative_url }}" class="luxury-article-link">{{ post.title }}</a>
+          </h3>
+          <p class="luxury-item-desc">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div style="margin-top: 24px;">
+      <a href="{{ '/artikel/perancangan-persaraan/' | relative_url }}" class="luxury-btn-secondary">Lihat Semua Artikel Persaraan →</a>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- =======================================================
+       PERANCANGAN HARTA
+       ======================================================= -->
+
+  {% assign harta_posts = site.posts | where: "category", "Perancangan Harta" %}
+  {% if harta_posts.size > 0 %}
+  <section class="luxury-section" style="margin-bottom: 64px;">
+    <span class="luxury-eyebrow">PERANCANGAN HARTA</span>
+    <h2 class="luxury-subheading" style="font-size: 1.5rem;">Merancang Legasi Anda</h2>
+
+    <div class="luxury-article-grid">
+      {% for post in harta_posts %}
+        <article class="luxury-article-card">
+          <h3 class="luxury-item-title" style="font-size: 1.15rem;">
+            <a href="{{ post.url | relative_url }}" class="luxury-article-link">{{ post.title }}</a>
+          </h3>
+          <p class="luxury-item-desc">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div style="margin-top: 24px;">
+      <a href="{{ '/artikel/perancangan-harta/' | relative_url }}" class="luxury-btn-secondary">Lihat Semua Artikel Perancangan Harta →</a>
+    </div>
+  </section>
+  {% endif %}
+
+  <hr class="luxury-divider">
+
+  <!-- =======================================================
+       PENDEKATAN SAYA
+       ======================================================= -->
+
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">PENDEKATAN SAYA</span>
+
+    <h2 class="luxury-subheading">
       Memahami keadaan sebelum menentukan apa yang patut dilakukan.
     </h2>
 
-    <p class="section-intro">
-      Artikel membantu anda memahami persoalan. Dalam perbualan sebenar,
-      pendekatan saya bermula dengan memahami keadaan anda, menilai
-      keperluan, menentukan keutamaan dan kemudian melihat pilihan yang
-      sesuai.
+    <p class="luxury-prose">
+      Artikel membantu anda memahami persoalan. Dalam perbualan sebenar, pendekatan saya bermula dengan memahami keadaan anda, menilai keperluan, menentukan keutamaan dan kemudian melihat pilihan yang sesuai.
     </p>
 
-    <p>
-      Anda tetap membuat keputusan. Peranan saya adalah membantu anda
-      melihat keadaan dengan lebih jelas sebelum keputusan itu dibuat.
+    <p class="luxury-prose">
+      Anda tetap membuat keputusan. Peranan saya adalah membantu anda melihat keadaan dengan lebih jelas sebelum keputusan itu dibuat.
     </p>
-
-    <p class="section-action">
-      <a href="{{ '/cara-saya-bekerja/' | relative_url }}">
-        Lihat Cara Saya Bekerja →
-      </a>
-    </p>
-
   </section>
 
+  <hr class="luxury-divider">
 
   <!-- =======================================================
-       V. PERBUALAN
+       PERBUALAN
        ======================================================= -->
 
-  <section class="section conversation-section">
+  {% include conversation.html %}
 
-    {% include conversation.html %}
-
-  </section>
-
-</div>
+</main>

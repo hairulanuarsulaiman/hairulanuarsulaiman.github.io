@@ -91,5 +91,3 @@ Kisah klien ini mengingatkan kita bahawa kad perubatan adalah satu alat, bukan j
 Namun, yang lebih penting daripada memahami bil adalah bersyukur atas nikmat kesihatan yang kembali. Seperti klien saya, walaupun beliau keliru tentang bayaran lebih RM200, beliau tetap bersyukur kerana sakitnya telah sembuh.
 
 Dengan memahami sijil Takaful anda dan bertanya soalan yang betul, anda boleh mengelakkan kekeliruan dan menikmati ketenangan fikiran yang sebenar—bahawa anda dilindungi, dan anda tahu bagaimana perlindungan itu berfungsi.
-
-{% include conversation.html %}

@@ -9,7 +9,7 @@ image: "/assets/images/artikel/art-15-pintu-perlindungan-kekayaan-keluarga.webp"
 image_alt: "Kubu Rumeli Fortress yang tersergam indah di tebing Selat Bosphorus dengan benteng batu yang kukuh."
 image_caption: "Kekuatan strategik sebenar bukan sekadar membina empayar, tetapi memastikan setiap laluan risiko dikawal rapi."
 description: "Gigih mengumpul hartanah, tunai, dan perniagaan untuk persaraan tetapi mengabaikan perlindungan pendapatan? Fahami mengapa pertahanan kewangan sama penting dengan pertumbuhan aset."
-featured: true
+featured: yes
 ---
 
 

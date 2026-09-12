@@ -7,16 +7,11 @@ image: "/assets/images/retirement/retirement-architectural-deck.jpg"
 permalink: /persaraan/
 ---
 
-<!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
 <main class="luxury-canvas">
 
-  <!-- ========================================== -->
-  <!-- STAGE I: HERO (THE PROMISE & MANIFESTO)    -->
-  <!-- ========================================== -->
+  <!-- HERO -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      I. PERANCANGAN JANGKA PANJANG & DANA PERSARAAN
-    </span>
+    <span class="luxury-eyebrow">PERANCANGAN JANGKA PANJANG & DANA PERSARAAN</span>
 
     <h1 class="luxury-heading">
       Kehidupan Selepas Bekerja Bermula Dengan Keputusan Yang Anda Buat Hari Ini.
@@ -27,13 +22,13 @@ permalink: /persaraan/
     </p>
 
     <div>
-      <a href="#jemputan" class="luxury-btn-primary">
+      <a href="{{ '/hubungi/' | relative_url }}" class="luxury-btn-primary">
         Mulakan Perbualan →
       </a>
     </div>
   </section>
 
-  <!-- GALLERY-FRAMED VISUAL (IDEAS, NOT PEOPLE) -->
+  <!-- IMAGE -->
   <figure class="luxury-figure">
     <picture>
       <source srcset="{{ '/assets/images/retirement/retirement-architectural-deck.webp' | relative_url }}" type="image/webp">
@@ -53,13 +48,9 @@ permalink: /persaraan/
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE II: CONTEXT (REALITY OF RETIREMENT)  -->
-  <!-- ========================================== -->
+  <!-- CONTEXT -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      II. REALITI MASA HADAPAN
-    </span>
+    <span class="luxury-eyebrow">REALITI MASA HADAPAN</span>
 
     <h2 class="luxury-subheading">
       Mengapa Perancangan Persaraan Penting?
@@ -76,13 +67,9 @@ permalink: /persaraan/
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE III: PHILOSOPHY & TIME AS AN ASSET   -->
-  <!-- ========================================== -->
+  <!-- PHILOSOPHY -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      III. FALSAFAH NASIHAT & PENJANAAN MODAL
-    </span>
+    <span class="luxury-eyebrow">FALSAFAH NASIHAT & PENJANAAN MODAL</span>
 
     <h2 class="luxury-subheading">
       Impak Konsistensi & Masa
@@ -97,19 +84,15 @@ permalink: /persaraan/
     </p>
 
     <div class="luxury-author-block">
-      Sebagai seorang <strong>Associate Shariah Registered Financial Planner (ShRFP)</strong>, saya membantu anda menyemak kecukupan tabung KWSP serta merangka portfolio tambahan patuh Syariah untuk menampung jurang pendapatan persaraan anda.
+      Sebagai seorang <strong>Associate Shariah Registered Financial Planner (ShARP RFP)</strong>, saya membantu anda menyemak kecukupan tabung KWSP serta merangka portfolio tambahan patuh Syariah untuk menampung jurang pendapatan persaraan anda.
     </div>
   </section>
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE IV: SOLUTION (THE 3 PILLARS)         -->
-  <!-- ========================================== -->
+  <!-- SOLUTION -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      IV. PILAR STRATEGI PERSARAAN
-    </span>
+    <span class="luxury-eyebrow">PILAR STRATEGI PERSARAAN</span>
 
     <h2 class="luxury-subheading">
       Tiga Asas Persaraan Yang Kukuh
@@ -148,24 +131,36 @@ permalink: /persaraan/
 
   <hr class="luxury-divider">
 
-  <!-- KNOWLEDGE HUB MODULE -->
+  <!-- RELATED ARTICLES (PERSARAAN ONLY) -->
+  {% assign persaraan_posts = site.posts | where: "category", "Perancangan Persaraan" %}
+  {% if persaraan_posts.size > 0 %}
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      BACAAN PENGETAHUAN PERSARAAN
-    </span>
+    <span class="luxury-eyebrow">BACAAN PENGETAHUAN PERSARAAN</span>
 
     <h2 class="luxury-subheading">
       Artikel Pilihan Perancangan Persaraan
     </h2>
 
-    {% include related-articles.html %}
+    <div class="luxury-article-grid">
+      {% for post in persaraan_posts limit: 3 %}
+        <article class="luxury-article-card">
+          <h3 class="luxury-item-title" style="font-size: 1.15rem;">
+            <a href="{{ post.url | relative_url }}" class="luxury-article-link">{{ post.title }}</a>
+          </h3>
+          <p class="luxury-item-desc">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div style="margin-top: 24px;">
+      <a href="{{ '/artikel/perancangan-persaraan/' | relative_url }}" class="luxury-btn-secondary">Lihat Semua Artikel Persaraan →</a>
+    </div>
   </section>
+  {% endif %}
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE V: NEXT STEP (THE CALM INVITATION)   -->
-  <!-- ========================================== -->
+  <!-- CTA -->
   {% include conversation.html %}
 
 </main>

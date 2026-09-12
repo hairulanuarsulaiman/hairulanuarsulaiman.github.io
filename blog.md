@@ -44,68 +44,52 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
   <hr class="luxury-divider">
 
   <!-- =======================================================
-       PILIH MENGIKUT KEADAAN ANDA
+       MULA DI SINI — FEATURED ARTICLE
        ======================================================= -->
 
+  {% assign featured_post = site.posts | where: "featured", true | first %}
+  {% if featured_post %}
   <section class="luxury-section">
-    <span class="luxury-eyebrow">PILIH MENGIKUT KEADAAN ANDA</span>
+    <span class="luxury-eyebrow">MULA DI SINI</span>
 
     <h2 class="luxury-subheading">
-      Apa yang anda sedang cuba fahami?
+      Bacaan Asas Untuk Kefahaman Anda
     </h2>
 
+    <figure class="luxury-figure">
+      <img
+        src="{{ featured_post.image | relative_url }}"
+        alt="{{ featured_post.image_alt | default: featured_post.title }}"
+        width="1200"
+        height="800"
+        loading="eager"
+      >
+      {% if featured_post.image_caption %}
+        <figcaption class="luxury-figcaption">
+          {{ featured_post.image_caption }}
+        </figcaption>
+      {% endif %}
+    </figure>
+
+    <h3 class="luxury-item-title" style="font-size: 1.5rem; margin-top: 32px;">
+      <a href="{{ featured_post.url | relative_url }}" class="luxury-article-link">
+        {{ featured_post.title }}
+      </a>
+    </h3>
+
     <p class="luxury-prose">
-      Setiap orang datang dengan keadaan yang berbeza. Mulakan dengan persoalan yang paling hampir dengan keadaan anda sekarang.
+      {{ featured_post.description | default: featured_post.excerpt | strip_html | truncate: 200 }}
     </p>
 
-    <div class="luxury-scope-stack">
-
-      <div class="luxury-scope-item">
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          <a href="{{ '/artikel/perlindungan-kewangan/' | relative_url }}" class="luxury-article-link">
-            01. Saya Baru Nak Mula
-          </a>
-        </h3>
-        <p class="luxury-item-desc">
-          Anda baru bekerja, baru berkeluarga, atau baru mula memikirkan tentang perlindungan, simpanan dan pelaburan. Fahami asas dahulu sebelum menentukan apa yang perlu dibuat.
-        </p>
-        <p class="luxury-item-desc" style="font-style: italic; margin-top: 8px;">
-          "Apa yang patut saya buat dahulu?"
-        </p>
-      </div>
-
-      <div class="luxury-scope-item">
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          <a href="{{ '/artikel/pelaburan-patuh-syariah/' | relative_url }}" class="luxury-article-link">
-            02. Saya Nak Semak
-          </a>
-        </h3>
-        <p class="luxury-item-desc">
-          Anda sudah mempunyai Takaful, simpanan, pelaburan atau rancangan kewangan. Sekarang anda mahu tahu sama ada apa yang anda ada masih sesuai dengan keadaan dan keperluan semasa.
-        </p>
-        <p class="luxury-item-desc" style="font-style: italic; margin-top: 8px;">
-          "Apa yang saya ada sekarang, cukup ke?"
-        </p>
-      </div>
-
-      <div class="luxury-scope-item">
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          <a href="{{ '/artikel/perancangan-harta/' | relative_url }}" class="luxury-article-link">
-            03. Saya Perlu Susun
-          </a>
-        </h3>
-        <p class="luxury-item-desc">
-          Anda mempunyai beberapa keperluan kewangan pada masa yang sama. Anda mahu menentukan keutamaan dan memahami bagaimana semuanya boleh disusun dengan lebih teratur.
-        </p>
-        <p class="luxury-item-desc" style="font-style: italic; margin-top: 8px;">
-          "Macam mana nak susun semua ini?"
-        </p>
-      </div>
-
+    <div>
+      <a href="{{ featured_post.url | relative_url }}" class="luxury-btn-secondary">
+        Baca Panduan →
+      </a>
     </div>
   </section>
 
   <hr class="luxury-divider">
+  {% endif %}
 
   <!-- =======================================================
        PERLINDUNGAN KEWANGAN

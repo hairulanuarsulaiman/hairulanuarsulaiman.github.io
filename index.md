@@ -79,7 +79,7 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
 
       <div class="luxury-scope-item">
         <h3 class="luxury-item-title luxury-item-title-scope">
-          <a href="{{ '/artikel/perlindungan-kewangan/' | relative_url }}" class="luxury-article-link">
+          <a href="{{ '/artikel/' | relative_url }}" class="luxury-article-link">
             Saya Baru Nak Mula
           </a>
         </h3>
@@ -90,7 +90,7 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
 
       <div class="luxury-scope-item">
         <h3 class="luxury-item-title luxury-item-title-scope">
-          <a href="{{ '/artikel/pelaburan-patuh-syariah/' | relative_url }}" class="luxury-article-link">
+          <a href="{{ '/artikel/' | relative_url }}" class="luxury-article-link">
             Saya Nak Semak
           </a>
         </h3>
@@ -101,7 +101,7 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
 
       <div class="luxury-scope-item">
         <h3 class="luxury-item-title luxury-item-title-scope">
-          <a href="{{ '/artikel/perancangan-harta/' | relative_url }}" class="luxury-article-link">
+          <a href="{{ '/artikel/' | relative_url }}" class="luxury-article-link">
             Saya Perlu Susun
           </a>
         </h3>

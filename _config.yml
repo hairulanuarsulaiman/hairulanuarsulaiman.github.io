@@ -38,6 +38,8 @@ exclude:
   - node_modules
   - vendor
   - .gitignore
+  - docs
+  - assets/docs
 
 # Collections
 collections:

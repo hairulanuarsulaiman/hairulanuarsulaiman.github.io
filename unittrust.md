@@ -2,21 +2,16 @@
 layout: default
 title: Pelaburan Unit Trust Patuh Syariah | Hairul Anuar Sulaiman
 description: Membantu anda membina kekayaan secara berdisiplin melalui pelaburan Unit Trust patuh Syariah yang selari dengan matlamat kewangan jangka panjang.
-category: Pelaburan
+category: Pelaburan Patuh Syariah
 image: "/assets/images/unit-trust/unit-trust-architectural-terrace.jpg"
 permalink: /unittrust/
 ---
 
-<!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
 <main class="luxury-canvas">
 
-  <!-- ========================================== -->
-  <!-- STAGE I: HERO (THE PROMISE & MANIFESTO)    -->
-  <!-- ========================================== -->
+  <!-- HERO -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      I. PELABURAN & PEMBINAAN KEKAYAAN
-    </span>
+    <span class="luxury-eyebrow">PELABURAN & PEMBINAAN KEKAYAAN</span>
 
     <h1 class="luxury-heading">
       Pelaburan Yang Baik Tidak Bermula Dengan Mencari Pulangan Tertinggi.
@@ -27,13 +22,13 @@ permalink: /unittrust/
     </p>
 
     <div>
-      <a href="#jemputan" class="luxury-btn-primary">
+      <a href="{{ '/hubungi/' | relative_url }}" class="luxury-btn-primary">
         Mulakan Perbualan →
       </a>
     </div>
   </section>
 
-  <!-- GALLERY-FRAMED VISUAL (IDEAS, NOT PEOPLE) -->
+  <!-- IMAGE -->
   <figure class="luxury-figure">
     <picture>
       <source srcset="{{ '/assets/images/unit-trust/unit-trust-architectural-terrace.webp' | relative_url }}" type="image/webp">
@@ -53,13 +48,9 @@ permalink: /unittrust/
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE II: CONTEXT (WHY INVEST?)           -->
-  <!-- ========================================== -->
+  <!-- CONTEXT -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      II. HAKISAN INFLASI & PEMBENTUKAN MODAL
-    </span>
+    <span class="luxury-eyebrow">HAKISAN INFLASI & PEMBENTUKAN MODAL</span>
 
     <h2 class="luxury-subheading">
       Mengapa Melabur?
@@ -76,13 +67,9 @@ permalink: /unittrust/
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE III: PHILOSOPHY & REGULATORY ACCESS  -->
-  <!-- ========================================== -->
+  <!-- PHILOSOPHY -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      III. FALSAFAH NASIHAT & DISIPLIN
-    </span>
+    <span class="luxury-eyebrow">FALSAFAH NASIHAT & DISIPLIN</span>
 
     <h2 class="luxury-subheading">
       Memahami Unit Trust Patuh Syariah
@@ -103,13 +90,9 @@ permalink: /unittrust/
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE IV: SOLUTION (WHAT ARE YOU BUILDING?)-->
-  <!-- ========================================== -->
+  <!-- SOLUTION -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      IV. MATLAMAT PORTFOLIO
-    </span>
+    <span class="luxury-eyebrow">MATLAMAT PORTFOLIO</span>
 
     <h2 class="luxury-subheading">
       Apakah Yang Sedang Anda Bina?
@@ -156,24 +139,36 @@ permalink: /unittrust/
 
   <hr class="luxury-divider">
 
-  <!-- KNOWLEDGE HUB MODULE -->
+  <!-- RELATED ARTICLES (PELABURAN ONLY) -->
+  {% assign pelaburan_posts = site.posts | where: "category", "Pelaburan Patuh Syariah" %}
+  {% if pelaburan_posts.size > 0 %}
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      BACAAN PENGETAHUAN PELABURAN
-    </span>
+    <span class="luxury-eyebrow">BACAAN PENGETAHUAN PELABURAN</span>
 
     <h2 class="luxury-subheading">
       Artikel Pilihan Mengenai Unit Trust
     </h2>
 
-    {% include related-articles.html %}
+    <div class="luxury-article-grid">
+      {% for post in pelaburan_posts limit: 3 %}
+        <article class="luxury-article-card">
+          <h3 class="luxury-item-title" style="font-size: 1.15rem;">
+            <a href="{{ post.url | relative_url }}" class="luxury-article-link">{{ post.title }}</a>
+          </h3>
+          <p class="luxury-item-desc">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div style="margin-top: 24px;">
+      <a href="{{ '/artikel/pelaburan-patuh-syariah/' | relative_url }}" class="luxury-btn-secondary">Lihat Semua Artikel Pelaburan →</a>
+    </div>
   </section>
+  {% endif %}
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE V: NEXT STEP (THE CALM INVITATION)   -->
-  <!-- ========================================== -->
+  <!-- CTA -->
   {% include conversation.html %}
 
 </main>

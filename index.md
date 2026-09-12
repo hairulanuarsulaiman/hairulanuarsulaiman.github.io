@@ -9,12 +9,12 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
 <main class="luxury-canvas">
 
   <!-- ========================================== -->
-  <!-- STAGE I: HERO                              -->
+  <!-- SECTION 1: HERO                            -->
   <!-- ========================================== -->
 
   <section class="luxury-section">
     <span class="luxury-eyebrow">
-      I. MEMAHAMI DAHULU. MEMBUAT KEPUTUSAN KEMUDIAN.
+      MEMAHAMI DAHULU. MEMBUAT KEPUTUSAN KEMUDIAN.
     </span>
 
     <h1 class="luxury-heading">
@@ -26,122 +26,22 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
     </p>
 
     <div>
-      <a href="#jemputan" class="luxury-btn-primary">
+      <a href="{{ '/hubungi/' | relative_url }}" class="luxury-btn-primary">
         Mulakan Perbualan →
       </a>
     </div>
   </section>
 
-
   <!-- ========================================== -->
-  <!-- STAGE II: THE HAIRUL APPROACH              -->
-  <!-- ========================================== -->
-
-  <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      II. SATU PENDEKATAN YANG JELAS
-    </span>
-
-    <h2 class="luxury-subheading">
-      The Hairul Approach
-    </h2>
-
-    <p class="luxury-prose">
-      Saya percaya keputusan kewangan yang baik tidak bermula dengan produk. Ia bermula dengan memahami keadaan, menilai keperluan, dan menentukan perkara yang patut diutamakan.
-    </p>
-
-    <div class="luxury-scope-stack">
-
-      <div class="luxury-scope-item">
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          01. Understand
-        </h3>
-
-        <p class="luxury-item-desc">
-          Memahami keadaan, matlamat dan perkara yang penting kepada anda.
-        </p>
-      </div>
-
-
-      <div class="luxury-scope-item">
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          02. Assess
-        </h3>
-
-        <p class="luxury-item-desc">
-          Menilai kedudukan semasa, keperluan dan risiko yang berkaitan.
-        </p>
-      </div>
-
-
-      <div class="luxury-scope-item">
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          03. Prioritise
-        </h3>
-
-        <p class="luxury-item-desc">
-          Menentukan perkara yang patut diberi perhatian terlebih dahulu.
-        </p>
-      </div>
-
-
-      <div class="luxury-scope-item">
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          04. Decide
-        </h3>
-
-        <p class="luxury-item-desc">
-          Meneliti pilihan dan membuat keputusan berdasarkan keadaan serta keutamaan anda.
-        </p>
-      </div>
-
-
-      <div class="luxury-scope-item">
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          05. Implement
-        </h3>
-
-        <p class="luxury-item-desc">
-          Melaksanakan keputusan yang telah dipersetujui dengan langkah yang jelas dan praktikal.
-        </p>
-      </div>
-
-
-      <div class="luxury-scope-item">
-        <h3 class="luxury-item-title luxury-item-title-scope">
-          06. Review
-        </h3>
-
-        <p class="luxury-item-desc">
-          Menilai semula apabila keadaan, keperluan atau matlamat kewangan berubah.
-        </p>
-      </div>
-
-    </div>
-
-    <div>
-      <a href="{{ '/cara-saya-bekerja/' | relative_url }}" class="luxury-btn-primary">
-        Lihat cara saya bekerja →
-      </a>
-    </div>
-  </section>
-
-
-  <hr class="luxury-divider">
-
-
-  <!-- ========================================== -->
-  <!-- IMAGE                                      -->
+  <!-- SECTION 2: IMAGE                           -->
   <!-- ========================================== -->
 
   <figure class="luxury-figure">
     <picture>
-
       <source
         srcset="{{ '/assets/images/homepage/homepage-architectural-path.webp' | relative_url }}"
         type="image/webp"
       >
-
       <img
         src="{{ '/assets/images/homepage/homepage-architectural-path.jpg' | relative_url }}"
         alt="Laluan batu travertine berturap rapi berlatarkan pohon pokok cypress dan cahaya pagi menuju ke horizon."
@@ -150,25 +50,78 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
         loading="eager"
         fetchpriority="high"
       >
-
     </picture>
-
     <figcaption class="luxury-figcaption">
       Asas yang kukuh dan berpanjangan — membina hala tuju kewangan dengan disiplin dan kejelasan jangka panjang.
     </figcaption>
   </figure>
 
-
   <hr class="luxury-divider">
 
-
   <!-- ========================================== -->
-  <!-- STAGE III: CREDENTIALS                     -->
+  <!-- SECTION 3: THREE DECISION MOMENTS          -->
   <!-- ========================================== -->
 
   <section class="luxury-section">
     <span class="luxury-eyebrow">
-      III. STATUS KAWAL SELIA & TAULIAH RASMI
+      TIGA KEADAAN. SATU PENDEKATAN.
+    </span>
+
+    <h2 class="luxury-subheading">
+      Bila Anda Perlukan Kejelasan
+    </h2>
+
+    <p class="luxury-prose">
+      Tidak semua orang datang dengan soalan yang sama. Ada yang baru mahu bermula, ada yang mahu memastikan apa yang sudah ada mencukupi, dan ada yang perlu menyusun beberapa perkara yang saling berkaitan.
+    </p>
+
+    <div class="luxury-scope-stack">
+
+      <div class="luxury-scope-item">
+        <h3 class="luxury-item-title luxury-item-title-scope">
+          <a href="{{ '/artikel/perlindungan-kewangan/' | relative_url }}" class="luxury-article-link">
+            Saya Baru Nak Mula
+          </a>
+        </h3>
+        <p class="luxury-item-desc">
+          Saya baru bermula. Apa yang patut saya lakukan dahulu, dan apa yang boleh ditangguhkan?
+        </p>
+      </div>
+
+      <div class="luxury-scope-item">
+        <h3 class="luxury-item-title luxury-item-title-scope">
+          <a href="{{ '/artikel/pelaburan-patuh-syariah/' | relative_url }}" class="luxury-article-link">
+            Saya Nak Semak
+          </a>
+        </h3>
+        <p class="luxury-item-desc">
+          Saya sudah ada beberapa keputusan kewangan. Adakah ia masih sesuai, mencukupi dan tersusun dengan baik?
+        </p>
+      </div>
+
+      <div class="luxury-scope-item">
+        <h3 class="luxury-item-title luxury-item-title-scope">
+          <a href="{{ '/artikel/perancangan-harta/' | relative_url }}" class="luxury-article-link">
+            Saya Perlu Susun
+          </a>
+        </h3>
+        <p class="luxury-item-desc">
+          Saya mempunyai beberapa keperluan dan komitmen. Bagaimana semuanya patut diutamakan dan disusun?
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="luxury-divider">
+
+  <!-- ========================================== -->
+  <!-- SECTION 4: CREDENTIALS                     -->
+  <!-- ========================================== -->
+
+  <section class="luxury-section">
+    <span class="luxury-eyebrow">
+      STATUS KAWAL SELIA & TAULIAH RASMI
     </span>
 
     <h2 class="luxury-subheading">
@@ -179,73 +132,44 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
       Bagi memastikan ketelusan mutlak, maklumat kelayakan saya dipaparkan mengikut istilah rasmi yang ditetapkan oleh badan kawal selia dan organisasi profesional di Malaysia:
     </p>
 
-
     <div class="luxury-border-list">
 
       <div class="luxury-border-item">
-
-        <span class="luxury-item-badge">
-          MFPC
-        </span>
-
-        <h3 class="luxury-item-title">
-          Associate Shariah Registered Financial Planner
-        </h3>
-
+        <span class="luxury-item-badge">MFPC</span>
+        <h3 class="luxury-item-title">Associate Shariah Registered Financial Planner</h3>
         <p class="luxury-item-desc">
-          Memegang status kelayakan profesional bersekutu yang diiktiraf secara rasmi oleh Malaysian Financial Planning Council (MFPC).
+          Memegang status kelayakan profesional bersekutu yang diiktiraf secara rasmi oleh Malaysian Financial Planning Council (MFPC) sebagai Associate Shariah Registered Financial Planner (Associate Shariah RFP). Status ini dikurniakan setelah memenuhi keperluan yang ditetapkan oleh MFPC dan berkuat kuasa mulai Ogos 2021.
         </p>
-
       </div>
 
-
       <div class="luxury-border-item">
-
-        <span class="luxury-item-badge">
-          PWP / IFAR
-        </span>
-
-        <h3 class="luxury-item-title">
-          Islamic Financial Adviser Representative
-        </h3>
-
+        <span class="luxury-item-badge">PWP / IFAR</span>
+        <h3 class="luxury-item-title">Islamic Financial Adviser Representative</h3>
         <p class="luxury-item-desc">
-          Pelantikan rasmi di bawah syarikat perunding korporat <strong>Phillip Wealth Planners Sdn Bhd</strong>, terhad bagi skop penasihatan produk Takaful sahaja.
+          Dilantik sebagai Islamic Financial Adviser's Representative (IFAR) oleh Phillip Wealth Planners Sdn Bhd, sebuah syarikat perunding kewangan yang diluluskan oleh Bank Negara Malaysia (BNM). Dalam kapasiti ini, saya menjalankan perkhidmatan perundingan kewangan Islam (Islamic financial advisory business) yang merangkumi analisis keperluan, syor, dan pengaturan kontrak bagi produk Takaful, selaras dengan Akta Perkhidmatan Kewangan Islam 2013 (IFSA).
         </p>
-
       </div>
 
-
       <div class="luxury-border-item">
-
-        <span class="luxury-item-badge">
-          FIMM
-        </span>
-
-        <h3 class="luxury-item-title">
-          Unit Trust Scheme Consultant
-        </h3>
-
+        <span class="luxury-item-badge">FIMM</span>
+        <h3 class="luxury-item-title">Unit Trust Scheme Consultant</h3>
         <p class="luxury-item-desc">
-          Berdaftar secara sah sebagai perunding skim unit amanah dengan Federation of Investment Managers Malaysia (FIMM) di bawah platform <strong>Phillip Mutual Berhad</strong>.
+          Berdaftar secara sah dengan Federation of Investment Managers Malaysia (FIMM) sebagai Unit Trust Scheme Consultant (UTS Consultant) sejak 21 Julai 2017 (No. FIMM: F01040203). Pendaftaran ini membolehkan saya memasarkan dan mengagihkan skim unit amanah (market and distribute Unit Trust Scheme) melalui Phillip Mutual Berhad, sebuah syarikat pengurusan unit amanah yang berdaftar dengan FIMM dan diluluskan oleh Suruhanjaya Sekuriti Malaysia.
         </p>
-
       </div>
 
     </div>
   </section>
 
-
   <hr class="luxury-divider">
 
-
   <!-- ========================================== -->
-  <!-- STAGE IV: EDUCATION                        -->
+  <!-- SECTION 5: KNOWLEDGE HUB PREVIEW           -->
   <!-- ========================================== -->
 
   <section class="luxury-section">
     <span class="luxury-eyebrow">
-      IV. HUB PENGETAHUAN
+      HUB PENGETAHUAN
     </span>
 
     <h2 class="luxury-subheading">
@@ -258,76 +182,19 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
 
     {% include related-articles.html %}
 
+    <div style="margin-top: 32px;">
+      <a href="{{ '/artikel/' | relative_url }}" class="luxury-btn-secondary">
+        Lihat Semua Artikel →
+      </a>
+    </div>
   </section>
 
-
   <hr class="luxury-divider">
-
-
-<!-- ========================================== -->
-<!-- STAGE V: DECISION MOMENTS                  -->
-<!-- ========================================== -->
-
-<section class="luxury-section">
-  <span class="luxury-eyebrow">
-    V. TIGA KEADAAN. SATU PENDEKATAN.
-  </span>
-
-  <h2 class="luxury-subheading">
-    Bila Anda Perlukan Kejelasan
-  </h2>
-
-  <p class="luxury-prose">
-    Tidak semua orang datang dengan soalan yang sama. Ada yang baru mahu bermula, ada yang mahu memastikan apa yang sudah ada mencukupi, dan ada yang perlu menyusun beberapa perkara yang saling berkaitan.
-  </p>
-
-  <div class="luxury-scope-stack">
-
-    <div class="luxury-scope-item">
-      <h3 class="luxury-item-title luxury-item-title-scope">
-        Saya Baru Nak Mula
-      </h3>
-
-      <p class="luxury-item-desc">
-        Saya baru bermula. Apa yang patut saya lakukan dahulu, dan apa yang boleh ditangguhkan?
-      </p>
-    </div>
-
-
-    <div class="luxury-scope-item">
-      <h3 class="luxury-item-title luxury-item-title-scope">
-        Saya Nak Semak
-      </h3>
-
-      <p class="luxury-item-desc">
-        Saya sudah ada beberapa keputusan kewangan. Adakah ia masih sesuai, mencukupi dan tersusun dengan baik?
-      </p>
-    </div>
-
-
-    <div class="luxury-scope-item">
-      <h3 class="luxury-item-title luxury-item-title-scope">
-        Saya Perlu Susun
-      </h3>
-
-      <p class="luxury-item-desc">
-        Saya mempunyai beberapa keperluan dan komitmen. Bagaimana semuanya patut diutamakan dan disusun?
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-
-  <hr class="luxury-divider">
-
 
   <!-- ========================================== -->
-  <!-- STAGE VI: CTA                              -->
+  <!-- SECTION 6: CTA                             -->
   <!-- ========================================== -->
 
   {% include conversation.html %}
-
 
 </main>

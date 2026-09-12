@@ -2,21 +2,16 @@
 layout: default
 title: Perlindungan Takaful & Kewangan Syariah | Hairul Anuar Sulaiman
 description: Membantu individu, keluarga, dan pemilik perniagaan merancang perlindungan Takaful perubatan dan pendapatan yang selari dengan matlamat kewangan.
-category: Perlindungan
+category: Perlindungan Kewangan
 image: "/assets/images/takaful/hero-takaful-architectural-shelter.jpg"
 permalink: /takaful/
 ---
 
-<!-- MASTER EDITORIAL CANVAS (640PX LANE) -->
 <main class="luxury-canvas">
 
-  <!-- ========================================== -->
-  <!-- STAGE I: HERO (THE PROMISE & MANIFESTO)    -->
-  <!-- ========================================== -->
+  <!-- HERO -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      I. PERLINDUNGAN KEWANGAN & INCOME REPLACEMENT
-    </span>
+    <span class="luxury-eyebrow">PERLINDUNGAN KEWANGAN & INCOME REPLACEMENT</span>
 
     <h1 class="luxury-heading">
       Pendapatan Anda Menyokong Kehidupan Hari Ini. Lindunginya Agar Kehidupan Itu Dapat Diteruskan.
@@ -27,19 +22,19 @@ permalink: /takaful/
     </p>
 
     <div>
-      <a href="#jemputan" class="luxury-btn-primary">
+      <a href="{{ '/hubungi/' | relative_url }}" class="luxury-btn-primary">
         Mulakan Perbualan →
       </a>
     </div>
   </section>
 
-  <!-- GALLERY-FRAMED VISUAL (IDEAS, NOT PEOPLE) -->
+  <!-- IMAGE -->
   <figure class="luxury-figure">
     <picture>
       <source srcset="{{ '/assets/images/takaful/hero-takaful-architectural-shelter.webp' | relative_url }}" type="image/webp">
       <img 
         src="{{ '/assets/images/takaful/hero-takaful-architectural-shelter.jpg' | relative_url }}" 
-        alt="Seni bina seni bina Islamik dengan arked batu travertine dan kolam pantulan yang tenang di bawah cahaya pagi." 
+        alt="Seni bina Islamik dengan arked batu travertine dan kolam pantulan yang tenang di bawah cahaya pagi." 
         width="1200"
         height="800"
         loading="eager"
@@ -53,13 +48,9 @@ permalink: /takaful/
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE II: CONTEXT (WHY PROTECTION MATTERS) -->
-  <!-- ========================================== -->
+  <!-- CONTEXT -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      II. ASAS KEWANGAN
-    </span>
+    <span class="luxury-eyebrow">ASAS KEWANGAN</span>
 
     <h2 class="luxury-subheading">
       Mengapa Perlindungan Penting?
@@ -76,13 +67,9 @@ permalink: /takaful/
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE III: PHILOSOPHY & SHARIAH MECHANICS  -->
-  <!-- ========================================== -->
+  <!-- PHILOSOPHY -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      III. FALSAFAH & PRINSIP SYARIAH
-    </span>
+    <span class="luxury-eyebrow">FALSAFAH & PRINSIP SYARIAH</span>
 
     <h2 class="luxury-subheading">
       Memahami Takaful & Konsep Ta'awun
@@ -103,13 +90,9 @@ permalink: /takaful/
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE IV: SOLUTION (WHAT TO PROTECT)       -->
-  <!-- ========================================== -->
+  <!-- SOLUTION -->
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      IV. MATLAMAT PERLINDUNGAN
-    </span>
+    <span class="luxury-eyebrow">MATLAMAT PERLINDUNGAN</span>
 
     <h2 class="luxury-subheading">
       Apakah Yang Ingin Dilindungi?
@@ -156,24 +139,36 @@ permalink: /takaful/
 
   <hr class="luxury-divider">
 
-  <!-- KNOWLEDGE HUB MODULE -->
+  <!-- RELATED ARTICLES (PERLINDUNGAN KEWANGAN ONLY) -->
+  {% assign perlindungan_posts = site.posts | where: "category", "Perlindungan Kewangan" %}
+  {% if perlindungan_posts.size > 0 %}
   <section class="luxury-section">
-    <span class="luxury-eyebrow">
-      BACAAN PENGETAHUAN TAKAFUL
-    </span>
+    <span class="luxury-eyebrow">BACAAN PENGETAHUAN PERLINDUNGAN</span>
 
     <h2 class="luxury-subheading">
       Artikel Pilihan Mengenai Perlindungan
     </h2>
 
-    {% include related-articles.html %}
+    <div class="luxury-article-grid">
+      {% for post in perlindungan_posts limit: 3 %}
+        <article class="luxury-article-card">
+          <h3 class="luxury-item-title" style="font-size: 1.15rem;">
+            <a href="{{ post.url | relative_url }}" class="luxury-article-link">{{ post.title }}</a>
+          </h3>
+          <p class="luxury-item-desc">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div style="margin-top: 24px;">
+      <a href="{{ '/artikel/perlindungan-kewangan/' | relative_url }}" class="luxury-btn-secondary">Lihat Semua Artikel Perlindungan →</a>
+    </div>
   </section>
+  {% endif %}
 
   <hr class="luxury-divider">
 
-  <!-- ========================================== -->
-  <!-- STAGE V: NEXT STEP (THE CALM INVITATION)   -->
-  <!-- ========================================== -->
+  <!-- CTA -->
   {% include conversation.html %}
 
 </main>

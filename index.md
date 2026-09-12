@@ -182,11 +182,6 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
 
     {% include related-articles.html %}
 
-    <div style="margin-top: 32px;">
-      <a href="{{ '/artikel/' | relative_url }}" class="luxury-btn-secondary">
-        Lihat Semua Artikel →
-      </a>
-    </div>
   </section>
 
   <hr class="luxury-divider">

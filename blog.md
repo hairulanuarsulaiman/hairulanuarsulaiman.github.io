@@ -47,7 +47,7 @@ image: "/assets/images/homepage/homepage-architectural-path.jpg"
        MULA DI SINI — FEATURED ARTICLE
        ======================================================= -->
 
-  {% assign featured_post = site.posts | where: "featured", true | first %}
+  {% assign featured_post = site.posts | where_exp: "post", "post.featured == true" | first %}
   {% if featured_post %}
   <section class="luxury-section">
     <span class="luxury-eyebrow">MULA DI SINI</span>
